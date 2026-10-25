@@ -1,0 +1,1 @@
+[{"prompt":"Trung bình và độ lệch chuẩn để chuẩn hóa nên tính từ tập nào?","options":["Chỉ tập train","Toàn bộ dữ liệu","Chỉ tập test"],"correct":0,"explanation":"Tránh rò rỉ thông tin từ test."},{"prompt":"1000 mẫu chia 70/15/15 cho tập test bao nhiêu mẫu?","options":["150","300","70"],"correct":0,"explanation":"15% của 1000 là 150."}]

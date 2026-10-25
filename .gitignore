@@ -1,0 +1,22 @@
+node_modules
+.next
+.env
+prisma/*.db*
+
+# Dependencies and build outputs
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and test artifacts
+prisma/*.db
+prisma/*.db-journal
+playwright-report/
+test-results/

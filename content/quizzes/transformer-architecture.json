@@ -1,0 +1,1 @@
+[{"prompt":"Với d_model=512 và 8 đầu, d_k bằng bao nhiêu?","options":["64","8","512"],"correct":0,"explanation":"d_k = d_model / h = 64."},{"prompt":"Positional encoding dùng để làm gì?","options":["Cho mô hình biết thứ tự vị trí","Giảm số tham số","Chuẩn hóa nhãn"],"correct":0,"explanation":"Attention thuần không phân biệt thứ tự nếu không có thông tin vị trí."}]

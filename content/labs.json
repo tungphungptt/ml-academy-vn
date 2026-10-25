@@ -1,0 +1,107 @@
+[
+ {
+  "id": "linear_regression",
+  "title": "Linear Regression",
+  "description": "Hồi quy tuyến tính bằng Gradient Descent trên dữ liệu y = 2x.",
+  "runtime": "pyodide",
+  "variants": [
+   "scratch",
+   "library"
+  ],
+  "expected": {
+   "scratch": "w=1.999 b=0.002 mse=0.000000",
+   "library": "w=2.000 b=0.000"
+  },
+  "notebooks": {
+   "scratch": "/notebooks/linear_regression_scratch.ipynb",
+   "library": "/notebooks/linear_regression_library.ipynb"
+  }
+ },
+ {
+  "id": "knn",
+  "title": "K-Nearest Neighbors",
+  "description": "Phân loại 2 lớp bằng KNN, đánh giá trên tập test.",
+  "runtime": "pyodide",
+  "variants": [
+   "scratch",
+   "library"
+  ],
+  "expected": {
+   "scratch": "Do chinh xac KNN (k=5): 1.000",
+   "library": "Do chinh xac KNN (k=5): 1.000"
+  },
+  "notebooks": {
+   "scratch": "/notebooks/knn_scratch.ipynb",
+   "library": "/notebooks/knn_library.ipynb"
+  }
+ },
+ {
+  "id": "kmeans",
+  "title": "K-Means",
+  "description": "Phân cụm 3 nhóm, báo cáo inertia.",
+  "runtime": "pyodide",
+  "variants": [
+   "scratch",
+   "library"
+  ],
+  "expected": {
+   "scratch": "Inertia: 69.24",
+   "library": "Inertia: 69.24"
+  },
+  "notebooks": {
+   "scratch": "/notebooks/kmeans_scratch.ipynb",
+   "library": "/notebooks/kmeans_library.ipynb"
+  }
+ },
+ {
+  "id": "logistic_regression",
+  "title": "Logistic Regression",
+  "description": "Phân loại nhị phân: sigmoid, cross-entropy và gradient descent.",
+  "runtime": "pyodide",
+  "variants": [
+   "scratch",
+   "library"
+  ],
+  "expected": {
+   "scratch": "loss=0.0575 accuracy=0.980",
+   "library": "accuracy=0.980"
+  },
+  "notebooks": {
+   "scratch": "/notebooks/logistic_regression_scratch.ipynb",
+   "library": "/notebooks/logistic_regression_library.ipynb"
+  }
+ },
+ {
+  "id": "perceptron",
+  "title": "Perceptron",
+  "description": "Luật cập nhật Perceptron trên dữ liệu khả tách tuyến tính.",
+  "runtime": "pyodide",
+  "variants": [
+   "scratch",
+   "library"
+  ],
+  "expected": {
+   "scratch": "epoch=2 loi_cuoi_epoch=0 accuracy=1.000",
+   "library": "accuracy=1.000"
+  },
+  "notebooks": {
+   "scratch": "/notebooks/perceptron_scratch.ipynb",
+   "library": "/notebooks/perceptron_library.ipynb"
+  }
+ },
+ {
+  "id": "mlp_torch",
+  "title": "MLP với PyTorch (XOR)",
+  "description": "Forward, loss, backward, optimizer. Cần PyTorch nên chỉ chạy local/Colab.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": null
+  },
+  "notebooks": {
+   "library": "/notebooks/mlp_torch_library.ipynb"
+  }
+ }
+]

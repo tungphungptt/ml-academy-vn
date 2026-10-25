@@ -1,0 +1,1 @@
+[{"prompt":"Đạo hàm của f(x)=(3x+1)² tại x=1 là bao nhiêu?","options":["24","8","6"],"correct":0,"explanation":"2(3x+1)·3 = 2·4·3 = 24."},{"prompt":"Gradient chỉ hướng nào?","options":["Hướng làm f tăng nhanh nhất","Hướng làm f giảm nhanh nhất","Hướng vuông góc với trục x"],"correct":0,"explanation":"Vì vậy gradient descent đi theo hướng ngược lại."}]

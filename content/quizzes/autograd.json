@@ -1,0 +1,1 @@
+[{"prompt":"Với f = a·b + c, a=2, b=-3, ∂f/∂a bằng bao nhiêu?","options":["-3","2","1"],"correct":0,"explanation":"∂f/∂a = b = -3."},{"prompt":"Vì sao phải gọi zero_grad() trong vòng lặp huấn luyện?","options":["Gradient mới được cộng dồn vào gradient cũ","Để tăng learning rate","Để xóa tham số"],"correct":0,"explanation":"PyTorch cộng dồn gradient mặc định."}]

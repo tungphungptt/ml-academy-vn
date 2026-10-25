@@ -1,0 +1,1 @@
+[{"prompt":"n=5, k=3, p=1, s=1 cho kích thước đầu ra là bao nhiêu?","options":["3","5","7"],"correct":1,"explanation":"⌊(5+2−3)/1⌋+1 = 5."},{"prompt":"Conv 3x3 từ 1 kênh lên 8 kênh (có bias) có bao nhiêu tham số?","options":["72","80","8"],"correct":1,"explanation":"3·3·1·8 + 8 = 80."}]

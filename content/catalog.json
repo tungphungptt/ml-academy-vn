@@ -1,0 +1,719 @@
+{
+ "courses": [
+  {
+   "slug": "python-math",
+   "title": "Track A: Nền tảng Toán và Python",
+   "description": "Python, NumPy, đại số tuyến tính, đạo hàm, xác suất.",
+   "level": "Beginner",
+   "modules": [
+    {
+     "title": "Công cụ",
+     "lessons": [
+      {
+       "t": "Python cho ML",
+       "f": "python-ml.md",
+       "s": "python-ml",
+       "src": [
+        {
+         "title": "Python Tutorial (docs.python.org)",
+         "url": "https://docs.python.org/3/tutorial/"
+        }
+       ]
+      },
+      {
+       "t": "NumPy, pandas và Matplotlib",
+       "f": "numpy-pandas.md",
+       "s": "numpy-pandas",
+       "src": [
+        {
+         "title": "NumPy: Absolute Beginners Guide",
+         "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+        },
+        {
+         "title": "pandas User Guide",
+         "url": "https://pandas.pydata.org/docs/user_guide/index.html"
+        },
+        {
+         "title": "Matplotlib User Guide",
+         "url": "https://matplotlib.org/stable/users/index.html"
+        }
+       ]
+      },
+      {
+       "t": "Vector và ma trận",
+       "f": "vectors-matrices.md",
+       "s": "vectors-matrices",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Linear Algebra",
+         "url": "https://d2l.ai/chapter_preliminaries/linear-algebra.html"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Toán",
+     "lessons": [
+      {
+       "t": "Đạo hàm và gradient",
+       "f": "derivatives.md",
+       "s": "derivatives",
+       "src": [
+        {
+         "title": "Stanford CS231n: Optimization (gradient và chain rule)",
+         "url": "https://cs231n.github.io/optimization-1/"
+        }
+       ]
+      },
+      {
+       "t": "Xác suất cơ bản",
+       "f": "probability.md",
+       "s": "probability",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Probability and Statistics",
+         "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+        }
+       ]
+      },
+      {
+       "t": "Metrics đánh giá mô hình",
+       "f": "metrics.md",
+       "s": "metrics",
+       "src": [
+        {
+         "title": "scikit-learn: Model evaluation",
+         "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        }
+       ]
+      },
+      {
+       "t": "Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu",
+       "f": "data-preparation.md",
+       "s": "data-preparation",
+       "src": [
+        {
+         "title": "scikit-learn: Preprocessing data",
+         "url": "https://scikit-learn.org/stable/modules/preprocessing.html"
+        },
+        {
+         "title": "scikit-learn: Imputation of missing values",
+         "url": "https://scikit-learn.org/stable/modules/impute.html"
+        }
+       ]
+      },
+      {
+       "t": "Thống kê mô tả và ước lượng tham số",
+       "f": "statistics.md",
+       "s": "statistics",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Probability and Statistics",
+         "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "ml-fundamentals",
+   "title": "Track B: Machine Learning căn bản",
+   "description": "Các thuật toán ML cổ điển.",
+   "level": "Intermediate",
+   "modules": [
+    {
+     "title": "Hồi quy",
+     "lessons": [
+      {
+       "t": "AI, Machine Learning và Deep Learning",
+       "f": "ml-intro.md",
+       "s": "ml-intro",
+       "src": [
+        {
+         "title": "scikit-learn: Machine learning tutorial (mô tả các dạng bài toán)",
+         "url": "https://scikit-learn.org/stable/tutorial/basic/tutorial.html"
+        },
+        {
+         "title": "Machine Learning cơ bản",
+         "url": "https://machinelearningcoban.com/"
+        }
+       ]
+      },
+      {
+       "t": "Linear Regression",
+       "f": "linear-regression.md",
+       "s": "linear-regression",
+       "src": [
+        {
+         "title": "scikit-learn User Guide: Linear Models",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html"
+        }
+       ]
+      },
+      {
+       "t": "Loss Functions: MSE, MAE, Huber, Cross-Entropy",
+       "f": "loss-functions.md",
+       "s": "loss-functions",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Linear Regression (loss)",
+         "url": "https://d2l.ai/chapter_linear-regression/index.html"
+        },
+        {
+         "title": "Stanford CS231n: Linear Classification",
+         "url": "https://cs231n.github.io/linear-classify/"
+        }
+       ]
+      },
+      {
+       "t": "Gradient Descent",
+       "f": "gradient-descent.md",
+       "s": "gradient-descent",
+       "src": [
+        {
+         "title": "Stanford CS231n: Optimization",
+         "url": "https://cs231n.github.io/optimization-1/"
+        },
+        {
+         "title": "scikit-learn User Guide: SGD",
+         "url": "https://scikit-learn.org/stable/modules/sgd.html"
+        }
+       ]
+      },
+      {
+       "t": "Polynomial Regression",
+       "f": "polynomial-regression.md",
+       "s": "polynomial-regression",
+       "src": [
+        {
+         "title": "scikit-learn: Polynomial regression",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions"
+        }
+       ]
+      },
+      {
+       "t": "Ridge và Lasso",
+       "f": "ridge-lasso.md",
+       "s": "ridge-lasso",
+       "src": [
+        {
+         "title": "scikit-learn: Ridge regression and classification",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
+        },
+        {
+         "title": "scikit-learn: Lasso",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#lasso"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Phân loại",
+     "lessons": [
+      {
+       "t": "Logistic Regression",
+       "f": "logistic-regression.md",
+       "s": "logistic-regression",
+       "src": [
+        {
+         "title": "scikit-learn: Logistic regression",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        }
+       ]
+      },
+      {
+       "t": "Softmax Regression",
+       "f": "softmax-regression.md",
+       "s": "softmax-regression",
+       "src": [
+        {
+         "title": "scikit-learn: Logistic regression (multinomial)",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        },
+        {
+         "title": "Dive into Deep Learning: Softmax Regression",
+         "url": "https://d2l.ai/chapter_linear-classification/index.html"
+        }
+       ]
+      },
+      {
+       "t": "KNN",
+       "f": "knn.md",
+       "s": "knn",
+       "src": [
+        {
+         "title": "scikit-learn User Guide: Nearest Neighbors",
+         "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+        },
+        {
+         "title": "Stanford CS231n: Image Classification (kNN)",
+         "url": "https://cs231n.github.io/classification/"
+        }
+       ]
+      },
+      {
+       "t": "Decision Tree",
+       "f": "decision-tree.md",
+       "s": "decision-tree",
+       "src": [
+        {
+         "title": "scikit-learn: Decision Trees",
+         "url": "https://scikit-learn.org/stable/modules/tree.html"
+        }
+       ]
+      },
+      {
+       "t": "Naive Bayes",
+       "f": "naive-bayes.md",
+       "s": "naive-bayes",
+       "src": [
+        {
+         "title": "scikit-learn: Naive Bayes",
+         "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+        }
+       ]
+      },
+      {
+       "t": "SVM",
+       "f": "svm.md",
+       "s": "svm",
+       "src": [
+        {
+         "title": "scikit-learn: Support Vector Machines",
+         "url": "https://scikit-learn.org/stable/modules/svm.html"
+        }
+       ]
+      },
+      {
+       "t": "Random Forest",
+       "f": "random-forest.md",
+       "s": "random-forest",
+       "src": [
+        {
+         "title": "scikit-learn: Ensembles (Random Forests)",
+         "url": "https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Học không giám sát",
+     "lessons": [
+      {
+       "t": "K-Means",
+       "f": "k-means.md",
+       "s": "k-means",
+       "src": [
+        {
+         "title": "scikit-learn User Guide: Clustering (K-Means)",
+         "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+        }
+       ]
+      },
+      {
+       "t": "PCA",
+       "f": "pca.md",
+       "s": "pca",
+       "src": [
+        {
+         "title": "scikit-learn: PCA",
+         "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+        }
+       ]
+      },
+      {
+       "t": "Gaussian Mixture Models",
+       "f": "gmm.md",
+       "s": "gmm",
+       "src": [
+        {
+         "title": "scikit-learn: Gaussian mixture models",
+         "url": "https://scikit-learn.org/stable/modules/mixture.html"
+        }
+       ]
+      },
+      {
+       "t": "Anomaly Detection",
+       "f": "anomaly-detection.md",
+       "s": "anomaly-detection",
+       "src": [
+        {
+         "title": "scikit-learn: Novelty and Outlier Detection",
+         "url": "https://scikit-learn.org/stable/modules/outlier_detection.html"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Đánh giá và ứng dụng",
+     "lessons": [
+      {
+       "t": "Bias-Variance và Overfitting",
+       "f": "bias-variance.md",
+       "s": "bias-variance",
+       "src": [
+        {
+         "title": "scikit-learn: Underfitting vs. Overfitting",
+         "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html"
+        }
+       ]
+      },
+      {
+       "t": "Cross-validation",
+       "f": "cross-validation.md",
+       "s": "cross-validation",
+       "src": [
+        {
+         "title": "scikit-learn: Cross-validation",
+         "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+       ]
+      },
+      {
+       "t": "Feature Engineering và Data Leakage",
+       "f": "feature-leakage.md",
+       "s": "feature-leakage",
+       "src": [
+        {
+         "title": "scikit-learn: Common pitfalls (data leakage)",
+         "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+       ]
+      },
+      {
+       "t": "Recommendation Systems",
+       "f": "recommendation.md",
+       "s": "recommendation",
+       "src": [
+        {
+         "title": "Machine Learning cơ bản",
+         "url": "https://machinelearningcoban.com/"
+        }
+       ]
+      },
+      {
+       "t": "Hyperparameter Tuning",
+       "f": "hyperparameter-tuning.md",
+       "s": "hyperparameter-tuning",
+       "src": [
+        {
+         "title": "scikit-learn: Tuning hyper-parameters",
+         "url": "https://scikit-learn.org/stable/modules/grid_search.html"
+        }
+       ]
+      },
+      {
+       "t": "Quy trình dự án Machine Learning",
+       "f": "ml-project-workflow.md",
+       "s": "ml-project-workflow",
+       "src": [
+        {
+         "title": "scikit-learn: Pipelines and composite estimators",
+         "url": "https://scikit-learn.org/stable/modules/compose.html"
+        },
+        {
+         "title": "scikit-learn: Model persistence",
+         "url": "https://scikit-learn.org/stable/model_persistence.html"
+        }
+       ]
+      },
+      {
+       "t": "Lưu mô hình và triển khai",
+       "f": "model-deployment.md",
+       "s": "model-deployment",
+       "src": [
+        {
+         "title": "scikit-learn: Model persistence",
+         "url": "https://scikit-learn.org/stable/model_persistence.html"
+        },
+        {
+         "title": "FastAPI documentation",
+         "url": "https://fastapi.tiangolo.com/"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "deep-learning",
+   "title": "Track C: Deep Learning",
+   "description": "Từ perceptron đến Transformer.",
+   "level": "Advanced",
+   "modules": [
+    {
+     "title": "Nền tảng",
+     "lessons": [
+      {
+       "t": "Perceptron",
+       "f": "perceptron.md",
+       "s": "perceptron",
+       "src": [
+        {
+         "title": "scikit-learn: Perceptron",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#perceptron"
+        },
+        {
+         "title": "Dive into Deep Learning: Multilayer Perceptrons",
+         "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        }
+       ]
+      },
+      {
+       "t": "MLP",
+       "f": "mlp.md",
+       "s": "mlp",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Multilayer Perceptrons",
+         "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        }
+       ]
+      },
+      {
+       "t": "Backpropagation",
+       "f": "backpropagation.md",
+       "s": "backpropagation",
+       "src": [
+        {
+         "title": "Stanford CS231n: Backpropagation",
+         "url": "https://cs231n.github.io/optimization-2/"
+        }
+       ]
+      },
+      {
+       "t": "Optimizers",
+       "f": "optimizers.md",
+       "s": "optimizers",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Optimization Algorithms",
+         "url": "https://d2l.ai/chapter_optimization/index.html"
+        },
+        {
+         "title": "Adam: A Method for Stochastic Optimization (Kingma và Ba)",
+         "url": "https://arxiv.org/abs/1412.6980"
+        }
+       ]
+      },
+      {
+       "t": "Automatic Differentiation (Autograd)",
+       "f": "autograd.md",
+       "s": "autograd",
+       "src": [
+        {
+         "title": "PyTorch Tutorials: Autograd",
+         "url": "https://docs.pytorch.org/tutorials/"
+        },
+        {
+         "title": "Stanford CS231n: Backpropagation",
+         "url": "https://cs231n.github.io/optimization-2/"
+        }
+       ]
+      },
+      {
+       "t": "Thực hành PyTorch: MLP và CNN",
+       "f": "pytorch-practice.md",
+       "s": "pytorch-practice",
+       "src": [
+        {
+         "title": "PyTorch Tutorials",
+         "url": "https://docs.pytorch.org/tutorials/"
+        }
+       ]
+      },
+      {
+       "t": "Activation Functions",
+       "f": "activations.md",
+       "s": "activations",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Multilayer Perceptrons",
+         "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        },
+        {
+         "title": "Stanford CS231n: Neural Networks",
+         "url": "https://cs231n.github.io/neural-networks-1/"
+        }
+       ]
+      },
+      {
+       "t": "Regularization và Learning Rate Scheduling",
+       "f": "dl-regularization.md",
+       "s": "dl-regularization",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Multilayer Perceptrons (Dropout, weight decay)",
+         "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        },
+        {
+         "title": "Stanford CS231n: Neural Networks Part 3",
+         "url": "https://cs231n.github.io/neural-networks-3/"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Kiến trúc",
+     "lessons": [
+      {
+       "t": "CNN",
+       "f": "cnn.md",
+       "s": "cnn",
+       "src": [
+        {
+         "title": "Stanford CS231n: Convolutional Networks",
+         "url": "https://cs231n.github.io/convolutional-networks/"
+        }
+       ]
+      },
+      {
+       "t": "Thực hành CNN: bộ lọc tích chập làm đặc trưng",
+       "f": "cnn-practice.md",
+       "s": "cnn-practice",
+       "src": [
+        {
+         "title": "Stanford CS231n: Convolutional Networks",
+         "url": "https://cs231n.github.io/convolutional-networks/"
+        },
+        {
+         "title": "scikit-learn: Digits dataset",
+         "url": "https://scikit-learn.org/stable/datasets/toy_dataset.html"
+        }
+       ]
+      },
+      {
+       "t": "RNN và LSTM",
+       "f": "rnn-lstm.md",
+       "s": "rnn-lstm",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Recurrent Neural Networks",
+         "url": "https://d2l.ai/chapter_recurrent-neural-networks/index.html"
+        },
+        {
+         "title": "Dive into Deep Learning: Modern RNNs",
+         "url": "https://d2l.ai/chapter_recurrent-modern/index.html"
+        }
+       ]
+      },
+      {
+       "t": "Attention và Transformer",
+       "f": "attention-transformer.md",
+       "s": "attention-transformer",
+       "src": [
+        {
+         "title": "Attention Is All You Need (Vaswani và cộng sự)",
+         "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+         "title": "Dive into Deep Learning: Attention and Transformers",
+         "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+        }
+       ]
+      },
+      {
+       "t": "Kiến trúc Transformer",
+       "f": "transformer-architecture.md",
+       "s": "transformer-architecture",
+       "src": [
+        {
+         "title": "Attention Is All You Need (Vaswani và cộng sự)",
+         "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+         "title": "Dive into Deep Learning: Transformer",
+         "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+        }
+       ]
+      },
+      {
+       "t": "Autoencoder",
+       "f": "autoencoder.md",
+       "s": "autoencoder",
+       "src": [
+        {
+         "title": "Dive into Deep Learning",
+         "url": "https://d2l.ai/"
+        },
+        {
+         "title": "scikit-learn: PCA",
+         "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+        }
+       ]
+      },
+      {
+       "t": "Transfer Learning",
+       "f": "transfer-learning.md",
+       "s": "transfer-learning",
+       "src": [
+        {
+         "title": "Stanford CS231n: Transfer Learning",
+         "url": "https://cs231n.github.io/transfer-learning/"
+        },
+        {
+         "title": "PyTorch Tutorials: Transfer Learning",
+         "url": "https://docs.pytorch.org/tutorials/"
+        }
+       ]
+      },
+      {
+       "t": "GAN, VAE và Diffusion",
+       "f": "gan-vae-diffusion.md",
+       "s": "gan-vae-diffusion",
+       "src": [
+        {
+         "title": "Generative Adversarial Nets (Goodfellow và cộng sự)",
+         "url": "https://arxiv.org/abs/1406.2661"
+        },
+        {
+         "title": "Auto-Encoding Variational Bayes (Kingma và Welling)",
+         "url": "https://arxiv.org/abs/1312.6114"
+        },
+        {
+         "title": "Denoising Diffusion Probabilistic Models (Ho và cộng sự)",
+         "url": "https://arxiv.org/abs/2006.11239"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Xử lý văn bản",
+     "lessons": [
+      {
+       "t": "Embeddings và biểu diễn văn bản",
+       "f": "embeddings.md",
+       "s": "embeddings",
+       "src": [
+        {
+         "title": "scikit-learn: Text feature extraction",
+         "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+        }
+       ]
+      },
+      {
+       "t": "Phân loại cảm xúc văn bản",
+       "f": "text-classification.md",
+       "s": "text-classification",
+       "src": [
+        {
+         "title": "scikit-learn: Working with text data",
+         "url": "https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

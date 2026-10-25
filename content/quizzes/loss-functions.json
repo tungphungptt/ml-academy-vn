@@ -1,0 +1,1 @@
+[{"prompt":"Với bốn sai số (1,1,1,10), loss nào bị ngoại lai chi phối mạnh hơn?","options":["MSE","MAE","Cả hai như nhau"],"correct":0,"explanation":"MSE bình phương nên 10² = 100 áp đảo; MAE chỉ cộng 10."},{"prompt":"BCE khi y=0 và p=0.8 xấp xỉ bao nhiêu?","options":["1.6094","0.2231","0"],"correct":0,"explanation":"−ln(1−0.8) = −ln 0.2 ≈ 1.6094."}]

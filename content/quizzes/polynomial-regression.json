@@ -1,0 +1,1 @@
+[{"prompt":"Vì sao hồi quy đa thức vẫn là mô hình tuyến tính?","options":["Nó tuyến tính theo các tham số w","Nó chỉ dùng bậc 1","Nó không có tham số"],"correct":0,"explanation":"Đặt φ(x)=(1,x,x²,...) thì ŷ = wᵀφ(x)."},{"prompt":"Vector đặc trưng bậc 3 cho x=2 là gì?","options":["(1,2,4,8)","(2,4,6,8)","(1,2,3,4)"],"correct":0,"explanation":"(1, x, x², x³) = (1, 2, 4, 8)."}]

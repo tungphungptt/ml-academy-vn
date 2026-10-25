@@ -1,0 +1,2 @@
+[{"prompt":"Với dữ liệu (1,2),(2,4),(3,6), cặp (w,b) nào cho MSE bằng 0?","options":["w=1, b=0","w=2, b=0","w=0, b=2"],"correct":1,"explanation":"y = 2x khớp hoàn toàn nên sai số bằng 0."},
+{"prompt":"Trong L = (1/N) Σ (y_i - ŷ_i)², N là gì?","options":["Số đặc trưng","Số mẫu","Số vòng lặp"],"correct":1,"explanation":"N là số mẫu dữ liệu; MSE là trung bình bình phương sai số trên N mẫu."}]

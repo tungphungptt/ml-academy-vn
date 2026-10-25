@@ -1,0 +1,41 @@
+{
+ "name": "ml-academy-vn",
+ "private": true,
+ "scripts": {
+  "dev": "next dev",
+  "build": "prisma generate && next build",
+  "start": "next start",
+  "db:push": "prisma db push",
+  "db:seed": "tsx prisma/seed.ts",
+  "setup": "npm i && prisma db push && tsx prisma/seed.ts",
+  "typecheck": "tsc --noEmit",
+  "test": "tsx --test tests/ml.test.ts tests/ml2.test.ts",
+  "local": "node scripts/local.mjs",
+  "prod": "node scripts/local.mjs --prod",
+  "verify": "tsc --noEmit && tsx --test tests/ml.test.ts tests/ml2.test.ts",
+  "check:links": "node scripts/check_links.mjs",
+  "e2e": "playwright test"
+ },
+ "dependencies": {
+  "next": "14.2.15",
+  "react": "18.3.1",
+  "react-dom": "18.3.1",
+  "@prisma/client": "5.20.0",
+  "zod": "3.23.8",
+  "bcryptjs": "2.4.3",
+  "jose": "5.9.3",
+  "react-markdown": "9.0.1",
+  "remark-math": "6.0.0",
+  "rehype-katex": "7.0.1",
+  "katex": "0.16.11"
+ },
+ "devDependencies": {
+  "prisma": "5.20.0",
+  "typescript": "5.6.2",
+  "tsx": "4.19.1",
+  "@types/node": "20.16.10",
+  "@types/react": "18.3.11",
+  "@types/bcryptjs": "2.4.6"
+ },
+ "version": "1.2.0"
+}

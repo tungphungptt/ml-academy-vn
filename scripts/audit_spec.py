@@ -1,0 +1,10 @@
+"""Đối chiếu các mục A1-C22 của đặc tả với catalog hiện có. full = có bài riêng; partial = được đề cập trong bài khác; missing = chưa có."""
+import json
+c = json.load(open("content/catalog.json")); have = {l["s"] for co in c["courses"] for m in co["modules"] for l in m["lessons"] if isinstance(l, dict)}
+S = {"A1": ("python-ml",), "A2": ("numpy-pandas",), "A3": ("vectors-matrices",), "A4": ("derivatives",), "A5": ("probability",), "A6": ("statistics",), "A7": ("data-preparation",), "A8": ("metrics",),
+ "B1": ("ml-intro",), "B2": ("linear-regression",), "B3": ("loss-functions",), "B4": ("gradient-descent",), "B5": ("ridge-lasso", "polynomial-regression"), "B6": ("logistic-regression",), "B7": ("softmax-regression",), "B8": ("knn",), "B9": ("k-means",), "B10": ("decision-tree",), "B11": ("random-forest",), "B12": ("naive-bayes",), "B13": ("svm",), "B14": ("perceptron", "mlp"), "B15": ("feature-leakage",), "B16": ("bias-variance",), "B17": ("cross-validation", "hyperparameter-tuning"), "B18": ("pca",), "B19": ("gmm",), "B20": ("recommendation",), "B21": ("anomaly-detection",), "B22": ("ml-project-workflow",),
+ "C1": ("mlp",), "C2": ("mlp",), "C3": ("activations",), "C4": ("mlp",), "C5": ("loss-functions",), "C6": ("backpropagation",), "C7": ("autograd",), "C8": ("optimizers",), "C9": ("dl-regularization",), "C10": ("dl-regularization",), "C11": ("pytorch-practice",), "C12": ("cnn",), "C13": ("cnn-practice", "pytorch-practice"), "C14": ("rnn-lstm",), "C15": ("embeddings",), "C16": ("attention-transformer",), "C17": ("transformer-architecture",), "C18": ("transfer-learning",), "C19": ("autoencoder",), "C20": ("gan-vae-diffusion",), "C21": ("text-classification",), "C22": ("model-deployment",)}
+full = [k for k, v in S.items() if v and all(not x.startswith("~") and x in have for x in v)]
+part = [k for k, v in S.items() if k not in full and any(x.lstrip("~") in have for x in v)]
+miss = [k for k in S if k not in full and k not in part]
+print(f"full {len(full)} | partial {len(part)}: {part} | missing {len(miss)}: {miss}")

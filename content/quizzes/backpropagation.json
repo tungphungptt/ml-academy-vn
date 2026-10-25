@@ -1,0 +1,1 @@
+[{"prompt":"Trong ví dụ bài (x=1,w1=2,w2=3,t=5), ∂L/∂w2 bằng bao nhiêu?","options":["2","3","6"],"correct":0,"explanation":"(ŷ−t)·h = 1·2 = 2."},{"prompt":"Nguyên lý toán học của backpropagation là gì?","options":["Chain rule","Định lý Bayes","Phân rã giá trị suy biến"],"correct":0,"explanation":"Gradient được nhân dần theo chain rule từ loss về tham số."}]

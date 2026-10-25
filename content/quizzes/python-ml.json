@@ -1,0 +1,1 @@
+[{"prompt":"sum(i*i for i in range(5)) bằng bao nhiêu?","options":["30","10","55"],"correct":0,"explanation":"0+1+4+9+16 = 30."},{"prompt":"Vì sao nên dùng môi trường ảo cho mỗi dự án?","options":["Tránh xung đột phiên bản thư viện giữa các dự án","Để code chạy nhanh hơn","Bắt buộc bởi Python"],"correct":0,"explanation":"Mỗi dự án có bộ thư viện và phiên bản riêng."}]

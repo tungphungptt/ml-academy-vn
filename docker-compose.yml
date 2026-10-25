@@ -1,0 +1,17 @@
+# Chạy: tạo file .env từ .env.example (đặt SESSION_SECRET dài >= 32 ký tự), rồi `docker compose up --build -d`
+# Mặc định truy cập qua HTTP; nếu có HTTPS (reverse proxy) hãy đặt COOKIE_SECURE=true trong .env.
+services:
+  web:
+    build: .
+    ports: ["3000:3000"]
+    env_file: .env
+    environment:
+      DATABASE_URL: "file:/data/app.db"
+      COOKIE_SECURE: "${COOKIE_SECURE:-false}"
+    volumes:
+      - mldata:/data
+      # Bỏ dấu # dòng dưới để các chỉnh sửa nội dung từ trang /admin được lưu lại khi tạo lại container:
+      # - ./content:/app/content
+    restart: unless-stopped
+volumes:
+  mldata: {}

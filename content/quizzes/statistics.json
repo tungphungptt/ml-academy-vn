@@ -1,0 +1,1 @@
+[{"prompt":"Với (2,4,4,4,5,5,7,9), phương sai tổng thể (chia N) bằng bao nhiêu?","options":["4","4.5714","32"],"correct":0,"explanation":"Tổng bình phương lệch là 32, chia N=8 được 4."},{"prompt":"MLE của phương sai phân phối chuẩn chia cho gì?","options":["N","N−1","N+1"],"correct":0,"explanation":"MLE dùng 1/N nên hơi chệch; phương sai mẫu dùng N−1."}]

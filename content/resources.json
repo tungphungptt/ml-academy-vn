@@ -1,0 +1,10 @@
+[
+{"title":"Machine Learning cơ bản","description":"Blog tiếng Việt về các thuật toán ML cơ bản; nguồn tham khảo thứ tự kiến thức.","topic":"ML cơ bản","kind":"course","url":"https://machinelearningcoban.com/"},
+{"title":"Dive into Deep Learning","description":"Giáo trình mở, có code, về Deep Learning.","topic":"Deep Learning","kind":"book","url":"https://d2l.ai/"},
+{"title":"PyTorch Tutorials","description":"Tài liệu hướng dẫn chính thức của PyTorch.","topic":"PyTorch","kind":"docs","url":"https://docs.pytorch.org/tutorials/"},
+{"title":"Stanford CS231n","description":"Khóa học Convolutional Neural Networks cho nhận dạng hình ảnh.","topic":"CNN","kind":"course","url":"https://cs231n.stanford.edu/"},
+{"title":"scikit-learn User Guide","description":"Hướng dẫn chính thức về các mô hình và công cụ của scikit-learn.","topic":"ML cơ bản","kind":"docs","url":"https://scikit-learn.org/stable/user_guide.html"},
+{"title":"Attention Is All You Need","description":"Bài báo gốc giới thiệu kiến trúc Transformer (Vaswani và cộng sự, 2017).","topic":"Transformer","kind":"paper","url":"https://arxiv.org/abs/1706.03762"},
+{"title":"Adam: A Method for Stochastic Optimization","description":"Bài báo gốc về bộ tối ưu Adam (Kingma và Ba).","topic":"Optimizers","kind":"paper","url":"https://arxiv.org/abs/1412.6980"},
+{"title":"Deep Residual Learning for Image Recognition","description":"Bài báo gốc về ResNet (He và cộng sự).","topic":"CNN","kind":"paper","url":"https://arxiv.org/abs/1512.03385"}
+]

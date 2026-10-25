@@ -1,0 +1,1 @@
+[{"prompt":"σ(0) bằng bao nhiêu?","options":["0","0.5","1"],"correct":1,"explanation":"σ(0)=1/(1+1)=0.5."},{"prompt":"Hàm mất mát thường dùng cho Logistic Regression là gì?","options":["Cross-entropy","MSE tuyệt đối","Hinge loss bắt buộc"],"correct":0,"explanation":"Cross-entropy khớp với mô hình xác suất Bernoulli và cho gradient (p−y)x."}]

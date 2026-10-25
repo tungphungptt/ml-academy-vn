@@ -1,0 +1,141 @@
+[
+ {
+  "slug": "du-doan-chi-so-tieu-duong",
+  "title": "Dự đoán tiến triển bệnh bằng Linear Regression",
+  "description": "Dự án hồi quy đầu tay: chuẩn bị dữ liệu, huấn luyện, đánh giá và so sánh với baseline.",
+  "level": "Beginner",
+  "datasetSlug": "diabetes",
+  "steps": [
+   "Tải dữ liệu và chia train/test (random_state cố định).",
+   "Huấn luyện baseline: dự đoán bằng giá trị trung bình.",
+   "Huấn luyện LinearRegression và Ridge.",
+   "So sánh MSE/R² trên tập test và nhận xét."
+  ],
+  "baseline": "Dự đoán bằng trung bình của tập train",
+  "metric": "MSE, R²",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/du-doan-chi-so-tieu-duong.ipynb"
+ },
+ {
+  "slug": "phan-loai-ung-thu-vu",
+  "title": "So sánh Logistic Regression, SVM và Random Forest",
+  "description": "So sánh nhiều mô hình trên cùng một dataset bằng cross-validation.",
+  "level": "Intermediate",
+  "datasetSlug": "breast-cancer",
+  "steps": [
+   "Chia dữ liệu, chuẩn hóa trong Pipeline để tránh data leakage.",
+   "Chạy 5-fold cross-validation cho 3 mô hình.",
+   "Báo cáo Precision, Recall, F1 và ma trận nhầm lẫn.",
+   "Chọn mô hình và giải thích lựa chọn."
+  ],
+  "baseline": "Logistic Regression có chuẩn hóa",
+  "metric": "F1-score, Recall",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/phan-loai-ung-thu-vu.ipynb"
+ },
+ {
+  "slug": "nhan-dang-chu-so",
+  "title": "Nhận dạng chữ số viết tay",
+  "description": "Từ KNN đến MLP trên ảnh 8x8, phân tích lỗi nhầm lẫn giữa các chữ số.",
+  "level": "Intermediate",
+  "datasetSlug": "digits",
+  "steps": [
+   "Xây baseline KNN.",
+   "Thử SVM với các kernel.",
+   "Vẽ confusion matrix và xem các ảnh bị đoán sai.",
+   "Thử MLP (scikit-learn hoặc PyTorch) và so sánh."
+  ],
+  "baseline": "KNN với k=5",
+  "metric": "Accuracy, confusion matrix",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/nhan-dang-chu-so.ipynb"
+ },
+ {
+  "slug": "phan-cum-khach-hang",
+  "title": "Phân cụm bằng K-Means và chọn số cụm",
+  "description": "Dự án học không giám sát trên dữ liệu tự sinh có cụm rõ ràng: chạy K-Means, chọn K bằng elbow và silhouette.",
+  "level": "Beginner",
+  "datasetSlug": null,
+  "steps": [
+   "Sinh dữ liệu bằng make_blobs với random_state cố định.",
+   "Chạy K-Means cho K từ 2 đến 8, vẽ inertia theo K.",
+   "Tính silhouette score cho từng K và chọn K.",
+   "Nhận xét khi cụm chồng lấn hoặc không tròn."
+  ],
+  "baseline": "Gán ngẫu nhiên điểm vào K cụm",
+  "metric": "Inertia, silhouette score",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/phan-cum-khach-hang.ipynb"
+ },
+ {
+  "slug": "so-sanh-mo-hinh",
+  "title": "So sánh nhiều mô hình trên cùng một dataset",
+  "description": "So sánh KNN, Logistic Regression, SVM và Random Forest công bằng bằng cùng pipeline và cross-validation.",
+  "level": "Intermediate",
+  "datasetSlug": "digits",
+  "steps": [
+   "Chia train/test một lần với random_state cố định.",
+   "Dựng Pipeline chuẩn hóa + mô hình cho từng thuật toán.",
+   "Chạy 5-fold cross-validation trên train, ghi trung bình và độ lệch chuẩn.",
+   "Đánh giá mô hình tốt nhất trên test đúng một lần.",
+   "Nhận xét: chênh lệch nhỏ có đáng tin không?"
+  ],
+  "baseline": "DummyClassifier(most_frequent)",
+  "metric": "Accuracy (CV), F1 macro",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/so-sanh-mo-hinh.ipynb"
+ },
+ {
+  "slug": "phan-loai-cam-xuc",
+  "title": "Phân loại cảm xúc văn bản",
+  "description": "Xây baseline TF-IDF + Logistic Regression. Notebook kèm một tập 40 câu nhận xét phim tiếng Việt do dự án tự biên soạn chỉ để chạy thử quy trình; kết quả trên tập này gần ngẫu nhiên, hãy chuyển sang một tập dữ liệu công khai có giấy phép rõ ràng.",
+  "level": "Intermediate",
+  "datasetSlug": null,
+  "steps": [
+   "Chạy notebook trên tập 40 câu mẫu: bạn sẽ thấy kết quả gần mức ngẫu nhiên vì tập quá nhỏ. Đó chính là bài học về nhu cầu dữ liệu.",
+   "Tìm một tập dữ liệu cảm xúc tiếng Việt công khai, ghi lại nguồn và giấy phép.",
+   "Vector hóa bằng TF-IDF (thử n-gram 1-2) và huấn luyện Logistic Regression.",
+   "Đánh giá bằng cross-validation và F1 macro trên dữ liệu thật.",
+   "Đọc các câu dự đoán sai (phủ định, mỉa mai) và đề xuất cải tiến."
+  ],
+  "baseline": "Dự đoán lớp phổ biến nhất",
+  "metric": "F1 macro",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/phan-loai-cam-xuc.ipynb"
+ },
+ {
+  "slug": "phat-hien-bat-thuong-log",
+  "title": "Phát hiện bất thường trong dữ liệu số",
+  "description": "Thử z-score, IQR và Isolation Forest trên dữ liệu có chèn ngoại lai, đánh giá bằng Precision/Recall.",
+  "level": "Intermediate",
+  "datasetSlug": null,
+  "steps": [
+   "Sinh dữ liệu chuẩn rồi chèn 2% điểm bất thường có nhãn.",
+   "Áp dụng z-score, IQR và IsolationForest.",
+   "So sánh Precision, Recall, F1 của từng phương pháp.",
+   "Giải thích vì sao accuracy không phù hợp ở đây."
+  ],
+  "baseline": "Dự đoán toàn bộ là bình thường",
+  "metric": "Precision, Recall, F1",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/phat-hien-bat-thuong-log.ipynb"
+ },
+ {
+  "slug": "pipeline-hoan-chinh",
+  "title": "Pipeline huấn luyện, đánh giá và lưu mô hình",
+  "description": "Dự án tổng hợp: từ dữ liệu thô tới mô hình đã lưu và API dự đoán.",
+  "level": "Advanced",
+  "datasetSlug": "breast-cancer",
+  "steps": [
+   "Chia dữ liệu và dựng Pipeline có tiền xử lý.",
+   "Tinh chỉnh bằng GridSearchCV.",
+   "Đánh giá trên test, ghi lại phiên bản thư viện.",
+   "Lưu bằng joblib và viết API dự đoán đơn giản.",
+   "Viết README mô tả cách tái lập kết quả."
+  ],
+  "baseline": "Logistic Regression có chuẩn hóa",
+  "metric": "Recall, F1",
+  "notebookStatus": "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab.",
+  "notebookUrl": "/notebooks/projects/pipeline-hoan-chinh.ipynb"
+ }
+]

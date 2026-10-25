@@ -1,0 +1,162 @@
+generator client { provider = "prisma-client-js" }
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+model User {
+  id String @id @default(cuid())
+  email String @unique
+  passwordHash String
+  role String @default("USER")
+  tokenVersion Int @default(0)
+  resets PasswordReset[]
+  createdAt DateTime @default(now())
+  progress LessonProgress[]
+  attempts QuizAttempt[]
+  bookmarks Bookmark[]
+  notes Note[]
+  study StudyTime[]
+}
+model Course {
+  id String @id @default(cuid())
+  slug String @unique
+  title String
+  description String
+  level String
+  published Boolean @default(true)
+  order Int
+  modules Module[]
+}
+model Module {
+  id String @id @default(cuid())
+  courseId String
+  title String
+  order Int
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  lessons Lesson[]
+}
+model Lesson {
+  id String @id @default(cuid())
+  slug String @unique
+  moduleId String
+  title String
+  level String
+  minutes Int
+  order Int
+  contentFile String?
+  module Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  quiz Quiz?
+  progress LessonProgress[]
+  bookmarks Bookmark[]
+  notes Note[]
+  study StudyTime[]
+  sources SourceReference[]
+}
+model LessonProgress {
+  userId String
+  lessonId String
+  completedAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@id([userId, lessonId])
+}
+model Quiz {
+  id String @id @default(cuid())
+  lessonId String @unique
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  questions QuizQuestion[]
+  attempts QuizAttempt[]
+}
+model QuizQuestion {
+  id String @id @default(cuid())
+  quizId String
+  prompt String
+  optionsJson String
+  correctIndex Int
+  explanation String
+  order Int
+  quiz Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+}
+model QuizAttempt {
+  id String @id @default(cuid())
+  userId String
+  quizId String
+  score Int
+  total Int
+  createdAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quiz Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+}
+model Bookmark {
+  userId String
+  lessonId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@id([userId, lessonId])
+}
+model Note {
+  id String @id @default(cuid())
+  userId String
+  lessonId String
+  body String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+}
+model SourceReference {
+  id String @id @default(cuid())
+  lessonId String
+  title String
+  url String
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+}
+model Dataset {
+  id String @id @default(cuid())
+  slug String @unique
+  name String
+  description String
+  task String
+  rows Int
+  features Int
+  url String
+  license String
+  loadCode String
+  baseline String
+}
+model Resource {
+  id String @id @default(cuid())
+  title String
+  description String
+  topic String
+  kind String
+  url String @unique
+}
+model Project {
+  id String @id @default(cuid())
+  slug String @unique
+  title String
+  description String
+  level String
+  datasetSlug String?
+  stepsJson String
+  baseline String
+  metric String
+  notebookStatus String
+  notebookUrl String?
+}
+model StudyTime {
+  userId String
+  lessonId String
+  seconds Int @default(0)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@id([userId, lessonId])
+}
+model PasswordReset {
+  id String @id @default(cuid())
+  userId String
+  tokenHash String @unique
+  expiresAt DateTime
+  usedAt DateTime?
+  createdAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
