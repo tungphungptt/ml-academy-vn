@@ -1,10 +1,10 @@
 # ML Academy VN (bản khởi đầu)
 
-Nền tảng học ML/DL tiếng Việt. **Đây là bộ khung chạy được theo thiết kế nhưng chưa được cài đặt/build/test.**
+Nền tảng học ML/DL tiếng Việt. Hướng dẫn triển khai và vòng đời dữ liệu hiện hành: [Render Blueprint](docs/render-deployment.md). Dùng Node.js 24 LTS. Các mục theo từng đợt bên dưới là lịch sử phát triển; không dùng hướng dẫn reset/xóa DB cũ cho production.
 
 ## Chạy
 ```bash
-cp .env.example .env   # đổi SESSION_SECRET và ADMIN_PASSWORD
+cp .env.example .env   # đặt SESSION_SECRET ngẫu nhiên >= 32 ký tự; admin là tùy chọn
 npm run setup          # cài gói, tạo DB SQLite, seed
 npm run dev            # http://localhost:3000
 ```
@@ -63,18 +63,16 @@ Giao diện mới (thẻ, lưới, hero, thanh điều hướng cố định, ki
 
 ## Triển khai
 
-**Một lệnh (localhost, chế độ phát triển):** `npm run local`: tự tạo `.env` (khóa phiên và mật khẩu admin ngẫu nhiên, in ra màn hình), cài gói, tạo DB SQLite, nạp nội dung, mở http://localhost:3000.
-**Một lệnh (bản tối ưu `next build` + `next start`):** `npm run prod`. Cờ: `-- --reset` xóa DB cũ và nạp lại nội dung (cần khi cập nhật bản mới), `PORT=4000` đổi cổng, `-- --dry` chỉ in các bước.
+Xem [hướng dẫn Render và quản lý dữ liệu](docs/render-deployment.md) trước khi triển khai.
 
-**Docker:** tạo `.env` từ `.env.example` (đặt `SESSION_SECRET` >= 32 ký tự và mật khẩu admin), rồi `docker compose up --build -d`. Dữ liệu SQLite nằm trong volume `mldata`; có healthcheck tại `/api/health`. Cập nhật: `docker compose up --build -d` (nội dung được nạp lại, tiến độ người dùng giữ nguyên; nếu thêm khóa học mới vào catalog hãy xóa volume hoặc thêm bằng trang /admin).
-
-**Biến môi trường:** `DATABASE_URL` (mặc định SQLite), `SESSION_SECRET` (bắt buộc, >= 32 ký tự; ứng dụng báo lỗi nếu thiếu), `ADMIN_EMAIL`/`ADMIN_PASSWORD` (tạo tài khoản quản trị khi nạp dữ liệu), `COOKIE_SECURE` (`false` khi dùng HTTP ngoài localhost; mặc định `true` ở production), `PORT`.
-
-**Bảo mật đã có:** mật khẩu băm bcrypt; cookie phiên httpOnly + SameSite=Lax; kiểm tra quyền admin ở server; giới hạn tần suất đăng nhập (8 lần/10 phút/IP) và đăng ký (5 lần/giờ/IP) *trong bộ nhớ một tiến trình*; chặn yêu cầu ghi từ nguồn lạ (kiểm tra `Origin` trong `src/middleware.ts`); header an toàn (nosniff, X-Frame-Options, Referrer-Policy, Permissions-Policy). **Chưa có:** Content-Security-Policy (vì Code Lab tải Pyodide từ CDN), giới hạn tần suất dùng chung giữa nhiều máy chủ, xác thực email, đặt lại mật khẩu. Hãy đặt sau HTTPS (reverse proxy) khi đưa ra Internet.
-
-**Sao lưu:** sao chép file SQLite (`prisma/dev.db` hoặc `/data/app.db` trong Docker). Chuyển sang PostgreSQL: đổi `provider` và `DATABASE_URL` trong `prisma/schema.prisma`, chạy `prisma db push` (chưa được thử trong dự án này).
-
-**Xử lý sự cố:** lỗi `SESSION_SECRET` -> kiểm tra `.env`; đăng nhập xong vẫn như chưa đăng nhập khi chạy qua HTTP -> đặt `COOKIE_SECURE=false`; bài mới không hiện -> `npm run local -- --reset`; `npm run verify` chạy typecheck và 22 unit test.
+- Local: `npm run setup`, rồi `npm run local`. Chưa có `.env` thì `npm run local` tạo khóa phiên ngẫu nhiên, không tạo admin mặc định.
+- Production local: `npm run prod` (build rồi start). Không còn cờ `--reset`; không tự xóa dữ liệu.
+- Docker: tạo `.env` từ `.env.example`, đặt `SESSION_SECRET` ngẫu nhiên ít nhất 32 ký tự, rồi `docker compose up --build -d`.
+- Render: `render.yaml` dùng Docker, Starter có phí và disk 1 GB. Không có dịch vụ Render nào được tạo bởi setup/test.
+- SQLite và bài học admin sửa lưu trên `/data`. Nội dung đóng gói trong image không bị disk che khuất.
+- Database rỗng được khởi tạo bằng migration và seed. Restart database đã có không tự migrate/seed. Database cũ cần backup, đối chiếu và baseline riêng.
+- Admin là tùy chọn: chỉ cung cấp `ADMIN_EMAIL` và mật khẩu mạnh khi chủ động chạy seed. Seed không ghi đè thông tin tài khoản hoặc dữ liệu đã chỉnh sửa.
+- `npm run verify` chạy typecheck strict và toàn bộ unit/integration regression test; `npm run e2e` chạy test trình duyệt trên dữ liệu riêng.
 
 ## Đã thêm ở đợt 19
 Thanh điều hướng mới (đánh dấu trang hiện tại, menu thu gọn trên điện thoại, tìm kiếm và đổi sáng/tối trong cùng thanh), trang chủ mới có minh họa mạng nơ-ron chuyển động, số liệu tự đếm, lộ trình 3 bước và các bài xem thử kèm hình; khối code trong bài có nhãn ngôn ngữ, nút Sao chép và tô màu Python; ô "Kết quả kỳ vọng" nổi bật; Playground có menu nhảy nhanh và mỗi demo là một thẻ riêng; favicon; footer; kiểu in (ẩn thanh điều hướng).
@@ -89,10 +87,10 @@ Tối ưu và triển khai: bộ nạp nội dung có cache (`src/lib/content.ts
 **Tài khoản:** quên mật khẩu qua *liên kết do quản trị viên tạo* (`/admin` → "Đặt lại mật khẩu"; token ngẫu nhiên 256-bit, chỉ lưu băm SHA-256, hết hạn sau 60 phút, dùng một lần); đổi hoặc đặt lại mật khẩu sẽ **đăng xuất các thiết bị khác** (`tokenVersion`). Chưa gửi email vì cần dịch vụ thư. **Admin:** soạn trực tiếp file Markdown/LaTeX của bài học (ghi vào `content/lessons/`, tên file được kiểm tra chặt, giới hạn 200 KB). **Dự án:** notebook thứ 8 (Phân loại cảm xúc) kèm tập 40 câu tự biên soạn; notebook chạy thật và cho thấy kết quả gần ngẫu nhiên vì tập quá nhỏ (bài học về nhu cầu dữ liệu). **Công cụ:** `npm run check:links` (kiểm tra mọi liên kết nguồn, cần Internet), bộ test Playwright trong `e2e/` (`npm i -D @playwright/test && npx playwright install chromium && npm run e2e`) *chưa được chạy khi phát triển*. 26 unit test.
 
 ## Chưa có / giới hạn đã biết
-- Chưa chạy `npm install`/`next build` với thư viện thật (không có mạng khi phát triển): đã kiểm tra cú pháp toàn bộ, typecheck bằng khai báo giả và chạy test logic, nhưng chưa mở giao diện trong trình duyệt hay chạy Prisma thật. Hãy chạy `npm run verify` rồi `npm run prod` và báo lỗi nếu có.
+- Kết quả kiểm thử và quy trình deploy hiện hành được mô tả tại [docs/render-deployment.md](docs/render-deployment.md). Không dùng khai báo giả để thay cho dependency thật.
 - Content-Security-Policy đang ở chế độ **chỉ báo cáo** (`Content-Security-Policy-Report-Only`): chưa chặn gì. Sau khi thử Code Lab mà Console không báo vi phạm, đổi tên header trong `next.config.js` để bật thật.
-- Chưa có: gửi email (xác thực email, quên mật khẩu tự động), giới hạn tần suất dùng chung giữa nhiều máy chủ, Monaco Editor (đang dùng ô soạn thảo tô màu tự viết), xem trước Markdown khi soạn bài trong /admin. Bộ test Playwright và `check_links` đã viết nhưng chưa chạy.
+- Chưa có: gửi email (xác thực email, quên mật khẩu tự động), giới hạn tần suất dùng chung giữa nhiều máy chủ, Monaco Editor (đang dùng ô soạn thảo tô màu tự viết), xem trước Markdown khi soạn bài trong /admin. Playwright đã chạy trên database thử nghiệm riêng; `check_links` chưa chạy.
 - Code PyTorch trong các bài (Autoencoder, Transfer Learning, Autograd, Thực hành PyTorch) và lab `mlp_torch` chưa được chạy; GAN/VAE/Diffusion mới ở mức giới thiệu (không có code huấn luyện); NLP bằng mô hình sâu chưa có bài thực hành. Dự án "Phân loại cảm xúc" chưa kèm dữ liệu (bạn tự chọn nguồn).
 - Các liên kết nguồn chưa được mở kiểm tra tự động.
 
-Thêm bài: thêm file `.md` vào `content/lessons`, khai báo trong `content/catalog.json`, chạy `npm run db:seed` (DB mới).
+Thêm bài: thêm file `.md` vào `content/lessons` và catalog cho database mới. Với database đã có, dùng trang admin để thêm/liên kết bài; seed không đồng bộ đè lên cây module/bài học đã tồn tại.

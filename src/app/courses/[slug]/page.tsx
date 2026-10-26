@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"; import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth"; import { courseProgress } from "@/lib/progress";
 export const dynamic = "force-dynamic";
-export default async function Course({ params }: { params: { slug: string } }) {
+export default async function Course({ params: pendingParams }: { params: Promise<{ slug: string }> }) {
+  const params = await pendingParams;
   const c = await db.course.findUnique({ where: { slug: params.slug }, include: { modules: { orderBy: { order: "asc" }, include: { lessons: { orderBy: { order: "asc" } } } } } });
   if (!c || !c.published) notFound();
   const u = await currentUser();

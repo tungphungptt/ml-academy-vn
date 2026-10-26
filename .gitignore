@@ -20,3 +20,5 @@ prisma/*.db
 prisma/*.db-journal
 playwright-report/
 test-results/
+.local/
+*.tsbuildinfo

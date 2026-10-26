@@ -10,10 +10,10 @@ const key = () => {
 const secureCookie = () => (process.env.COOKIE_SECURE ? process.env.COOKIE_SECURE !== "false" : process.env.NODE_ENV === "production");
 export async function createSession(userId: string, version = 0) {
   const t = await new SignJWT({ sub: userId, v: version }).setProtectedHeader({ alg: "HS256" }).setExpirationTime("7d").sign(key());
-  cookies().set("session", t, { httpOnly: true, sameSite: "lax", secure: secureCookie(), path: "/", maxAge: 604800 });
+  (await cookies()).set("session", t, { httpOnly: true, sameSite: "lax", secure: secureCookie(), path: "/", maxAge: 604800 });
 }
 export async function currentUser() {
-  const t = cookies().get("session")?.value;
+  const t = (await cookies()).get("session")?.value;
   if (!t) return null;
   try {
     const { payload } = await jwtVerify(t, key()); const u = await db.user.findUnique({ where: { id: String(payload.sub) } });

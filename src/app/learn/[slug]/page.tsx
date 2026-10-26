@@ -1,16 +1,17 @@
-import fs from "fs"; import path from "path"; import { notFound } from "next/navigation";
+import { notFound } from "next/navigation"; import { readLesson } from "@/lib/lessonFiles";
 import ReactMarkdown from "react-markdown"; import remarkMath from "remark-math"; import rehypeKatex from "rehype-katex";
 import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth";
 import { isValidElement } from "react"; import CodeBlock from "@/components/CodeBlock"; import { ReadingProgress, Toc, FocusToggle, StudyTimer } from "@/components/LessonTools"; import { slugifyHeading } from "@/lib/search"; import BookmarkNotes from "@/components/BookmarkNotes"; import LessonActions from "@/components/LessonActions"; import QuizForm from "@/components/QuizForm";
 export const dynamic = "force-dynamic";
-export default async function Lesson({ params }: { params: { slug: string } }) {
+export default async function Lesson({ params: pendingParams }: { params: Promise<{ slug: string }> }) {
+  const params = await pendingParams;
   const l = await db.lesson.findUnique({ where: { slug: params.slug }, include: { sources: true, module: { include: { course: true } }, quiz: { include: { questions: { orderBy: { order: "asc" } } } } } });
   if (!l || !l.contentFile) notFound();
   const u = await currentUser();
   const done = u ? !!(await db.lessonProgress.findUnique({ where: { userId_lessonId: { userId: u.id, lessonId: l.id } } })) : false;
   const bookmarked = u ? !!(await db.bookmark.findUnique({ where: { userId_lessonId: { userId: u.id, lessonId: l.id } } })) : false;
   const notes = u ? (await db.note.findMany({ where: { userId: u.id, lessonId: l.id }, orderBy: { id: "asc" } })).map(n => ({ id: n.id, body: n.body })) : [];
-  const md = fs.readFileSync(path.join(process.cwd(), "content/lessons", l.contentFile), "utf8");
+  const md = readLesson(l.contentFile);
   const qs = l.quiz?.questions.map(q => ({ id: q.id, prompt: q.prompt, options: JSON.parse(q.optionsJson) as string[] })) ?? [];
   const heads = md.split("\n").filter(x => x.startsWith("## ")).map(x => x.slice(3).trim()).map(t => ({ id: slugifyHeading(t), text: t }));
   const flat = (c: React.ReactNode): string => (Array.isArray(c) ? c.map(flat).join("") : typeof c === "string" ? c : "");

@@ -2,6 +2,12 @@ node_modules
 .next
 .git
 .env
-prisma/*.db
-prisma/*.db-journal
+.env.*
+!.env.example
+.local
+*.tsbuildinfo
+test-results
+playwright-report
+coverage
+prisma/*.db*
 *.log

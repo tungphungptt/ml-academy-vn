@@ -1,7 +1,8 @@
 import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth"; import ProgressRing from "@/components/ProgressRing"; import { courseProgress } from "@/lib/progress";
 export const dynamic = "force-dynamic";
 type SP = { q?: string; level?: string; status?: string };
-export default async function Courses({ searchParams }: { searchParams: SP }) {
+export default async function Courses({ searchParams: pendingSearchParams }: { searchParams: Promise<SP> }) {
+  const searchParams = await pendingSearchParams;
   const q = (searchParams.q ?? "").trim().toLowerCase(), level = searchParams.level ?? "", status = searchParams.status ?? "";
   const u = await currentUser();
   const done = new Set(u ? (await db.lessonProgress.findMany({ where: { userId: u.id } })).map(p => p.lessonId) : []);

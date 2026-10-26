@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export default function HeroArt() {
   const cols = [[40, 3], [130, 4], [220, 4], [310, 2]] as const; const ys = (n: number) => Array.from({ length: n }, (_, i) => 130 + (i - (n - 1) / 2) * 50);
   const lines: JSX.Element[] = [], nodes: JSX.Element[] = [];

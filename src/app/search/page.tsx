@@ -1,6 +1,7 @@
 import { searchDocs } from "@/lib/search"; import { getSearchDocs } from "@/lib/content";
 export const dynamic = "force-dynamic"; export const metadata = { title: "Tìm bài học | ML Academy VN" };
-export default function Search({ searchParams }: { searchParams: { q?: string } }) {
+export default async function Search({ searchParams: pendingSearchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const searchParams = await pendingSearchParams;
   const q = (searchParams.q ?? "").trim(); const docs = getSearchDocs(); const hits = searchDocs(docs, q);
   return <><h1>Tìm bài học</h1>
     <form role="search" style={{ display: "flex", gap: ".5rem" }}><input type="search" name="q" defaultValue={q} placeholder="Ví dụ: gradient, dao ham, softmax" aria-label="Từ khóa" style={{ flex: 1 }} autoFocus /><button className="primary">Tìm</button></form>

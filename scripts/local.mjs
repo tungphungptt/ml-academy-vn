@@ -1,25 +1,25 @@
-// Triển khai localhost bằng MỘT lệnh:  npm run local   (chế độ phát triển)  |  npm run prod  (build tối ưu + next start)
-// Cờ: --reset xóa DB cũ và nạp lại nội dung; PORT=4000 đổi cổng; --dry chỉ in các bước
-import { existsSync, readFileSync, writeFileSync, rmSync } from "node:fs";
+import { existsSync, writeFileSync } from "node:fs";
 import { randomBytes } from "node:crypto";
 import { spawnSync } from "node:child_process";
-const prod = process.argv.includes("--prod"), dry = process.argv.includes("--dry"), reset = process.argv.includes("--reset");
-const [maj, min] = process.versions.node.split(".").map(Number);
-if (maj < 18 || (maj === 18 && min < 17)) { console.error(`Cần Node.js >= 18.17 (khuyến nghị 20 LTS). Bản hiện tại: ${process.version}`); process.exit(1); }
-if (!existsSync(".env")) {
-  const pw = randomBytes(9).toString("base64url");
-  writeFileSync(".env", `DATABASE_URL="file:./dev.db"\nSESSION_SECRET="${randomBytes(32).toString("hex")}"\nADMIN_EMAIL="admin@example.com"\nADMIN_PASSWORD="${pw}"\n`);
-  console.log(`✔ Đã tạo .env. Tài khoản admin: admin@example.com / ${pw}  (có thể đổi trong .env rồi chạy lại với --reset)`);
+
+const prod = process.argv.includes("--prod"), dry = process.argv.includes("--dry");
+if (Number(process.versions.node.split(".")[0]) !== 24) throw new Error("Use Node.js 24 LTS");
+if (process.argv.includes("--reset")) throw new Error("Automatic reset was removed. Back up your database and manage development data explicitly.");
+if (!existsSync(".env") && !dry) {
+  writeFileSync(".env", `DATABASE_URL="file:./dev.db"\nSESSION_SECRET="${randomBytes(32).toString("hex")}"\nCOOKIE_SECURE="false"\n`, { flag: "wx", mode: 0o600 });
+  console.log("Created local .env; no admin account is provisioned.");
 }
-const env = { ...process.env }; env.COOKIE_SECURE ??= "false"; // chạy qua http://localhost nên không đặt cookie secure
-for (const l of readFileSync(".env", "utf8").split(/\r?\n/)) { const m = l.match(/^([A-Z_][A-Z0-9_]*)\s*=\s*"?(.*?)"?\s*$/); if (m && env[m[1]] === undefined) env[m[1]] = m[2]; }
-if (reset) for (const f of ["prisma/dev.db", "prisma/dev.db-journal"]) rmSync(f, { force: true });
-const run = (cmd) => {
-  console.log(`\n▶ ${cmd}`); if (dry) return;
-  const r = spawnSync(cmd, { stdio: "inherit", shell: true, env });
-  if (r.status !== 0) { console.error(`\n✖ Lệnh thất bại: ${cmd}\nHãy gửi lại thông báo lỗi phía trên để được hỗ trợ.`); process.exit(r.status ?? 1); }
+if (existsSync(".env")) process.loadEnvFile(".env");
+const env = { ...process.env, COOKIE_SECURE: process.env.COOKIE_SECURE ?? "false" };
+const run = (cmd, args) => {
+  console.log(`▶ ${cmd} ${args.join(" ")}`);
+  if (dry) return;
+  const r = spawnSync(cmd, args, { stdio: "inherit", env });
+  if (r.error) throw r.error;
+  if (r.status !== 0) process.exit(r.status ?? 1);
 };
-run("npm install"); run("npx prisma db push"); run("npx tsx prisma/seed.ts");
-const port = env.PORT || "3000";
-console.log(`\n✔ Sẵn sàng. Mở http://localhost:${port}  (dừng server: Ctrl+C)`);
-if (prod) { run("npx next build"); run(`npx next start -p ${port}`); } else run(`npx next dev -p ${port}`);
+if (!existsSync("node_modules/next")) run("npm", ["ci"]);
+run(process.execPath, ["node_modules/prisma/build/index.js", "generate"]);
+run(process.execPath, ["scripts/prepare-db.mjs"]);
+if (prod) run("npm", ["run", "build"]);
+run(process.execPath, ["node_modules/next/dist/bin/next", prod ? "start" : "dev", "-p", env.PORT || "3000"]);
