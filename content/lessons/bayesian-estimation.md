@@ -3,16 +3,22 @@
 
 ## Một phép kiểm tra dương chưa phải xác suất mắc bệnh
 Xác suất có điều kiện là $P(A\mid B)=P(A\cap B)/P(B)$ với $P(B)>0$. Quy tắc Bayes đảo chiều điều kiện:
-$$P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}.$$
+$$
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}.
+$$
 Giả sử tỷ lệ mắc bệnh 1%, sensitivity 90%, false-positive rate 5%. Trong 10.000 người, dự kiến 90 người bệnh có test dương và 495 người không bệnh có test dương. Vì vậy $P(\text{bệnh}\mid+)=90/585\approx0.154$, không phải 0.9. Các số là giả định minh họa, không phải số liệu y tế thực nghiệm.
 
 ## MLE và MAP tối ưu những đại lượng khác nhau
 Với $n$ phép thử Bernoulli độc lập cùng xác suất $p$, có $k$ lần thành công:
-$$\ell(p)=k\log p+(n-k)\log(1-p),\qquad \hat p_{MLE}=k/n.$$
+$$
+\ell(p)=k\log p+(n-k)\log(1-p),\qquad \hat p_{MLE}=k/n.
+$$
 Likelihood là hàm của tham số khi dữ liệu đã cố định, không phải phân phối xác suất trên tham số. Với biến liên tục, dùng mật độ và likelihood tích mật độ; xác suất một giá trị chính xác thường bằng 0.
 
 Chọn prior $p\sim\operatorname{Beta}(\alpha,\beta)$. Posterior là Beta$(k+\alpha,n-k+\beta)$. Nếu cả hai tham số posterior lớn hơn 1, mode nằm trong $(0,1)$:
-$$\hat p_{MAP}=\frac{k+\alpha-1}{n+\alpha+\beta-2}.$$
+$$
+\hat p_{MAP}=\frac{k+\alpha-1}{n+\alpha+\beta-2}.
+$$
 Posterior mean là $(k+\alpha)/(n+\alpha+\beta)$, khác MAP. Khi tham số posterior không lớn hơn 1, phải xét biên; không áp dụng công thức mode trong một cách vô điều kiện. Prior đều Beta$(1,1)$ cho MAP trùng MLE ở trường hợp nội điểm.
 
 ## Ví dụ và code CPU

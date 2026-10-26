@@ -22,6 +22,42 @@ def example(slug, number=0):
     return namespace
 
 class ReviewedMath(unittest.TestCase):
+    def test_linear_mse_example_and_both_partial_derivatives(self):
+        ns = example('linear-regression')
+        self.assertAlmostEqual(ns['mse'](1.5, 0.), 7/6)
+        np.testing.assert_allclose(ns['grad'], [-14/3, -2.], atol=1e-12)
+        np.testing.assert_allclose(ns['grad'], ns['numeric'], atol=1e-8, rtol=0)
+        # The packaged scratch lab uses the same mean-loss convention.
+        X = np.column_stack([ns['x'], np.ones(3)])
+        expected = 2 * X.T @ (X @ np.array([1.5, 0.]) - ns['y']) / len(X)
+        np.testing.assert_allclose(ns['grad'], expected)
+
+    def test_huber_branches_match_in_value_and_derivative(self):
+        delta = 1.7
+        huber = example('loss-functions')['huber']
+        with self.assertRaises(ValueError):
+            huber(2., 0.)
+        h = 1e-5
+        for e in [-delta, delta]:
+            self.assertAlmostEqual(huber(e, delta), .5*delta**2)
+            derivative = (huber(e+h, delta)-huber(e-h, delta))/(2*h)
+            self.assertAlmostEqual(derivative, e, places=4)
+
+    def test_adamw_decay_is_not_an_l2_term_in_the_data_loss(self):
+        import torch
+        decoupled = torch.nn.Parameter(torch.tensor(2., dtype=torch.float64))
+        coupled = torch.nn.Parameter(decoupled.detach().clone())
+        adamw = torch.optim.AdamW([decoupled], lr=.1, weight_decay=.1, eps=0.)
+        adam = torch.optim.Adam([coupled], lr=.1, weight_decay=.1, eps=0.)
+        # Identical MSE gradients; decay is applied differently by the optimizers.
+        for parameter, optimizer in [(decoupled, adamw), (coupled, adam)]:
+            (parameter - 3).square().backward()
+            self.assertAlmostEqual(parameter.grad.item(), -2.)
+            optimizer.step()
+        self.assertAlmostEqual(decoupled.item(), 2.*(1-.1*.1)+.1)
+        self.assertAlmostEqual(coupled.item(), 2.1)
+        self.assertNotAlmostEqual(decoupled.item(), coupled.item())
+
     def test_ridge_rank_deficient_example_matches_sklearn(self):
         ns = example('ridge-lasso')
         X, y = ns['X_singular'], ns['y']

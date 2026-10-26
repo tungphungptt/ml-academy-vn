@@ -1,1 +1,22 @@
-[{"prompt":"Trong ví dụ Momentum (θ0=4, η=0.1, β=0.9), θ sau 2 bước là bao nhiêu?","options":["1.84","2.56","3.2"],"correct":0,"explanation":"v2 = 0.9·8 + 6.4 = 13.6, θ2 = 3.2 − 1.36 = 1.84."},{"prompt":"Vì sao Adam hiệu chỉnh m và s bằng cách chia cho 1−β^t?","options":["Để tăng learning rate","Vì m, s khởi tạo bằng 0 nên bị lệch ở các bước đầu","Để tránh dùng epsilon"],"correct":1,"explanation":"Khởi tạo 0 làm các trung bình động nhỏ hơn thực tế ở đầu quá trình."}]
+[
+ {
+  "prompt": "Trong ví dụ Momentum ($\\theta_0=4,\\eta=0.1,\\beta=0.9$), θ sau 2 bước là bao nhiêu?",
+  "options": [
+   "1.84",
+   "2.56",
+   "3.2"
+  ],
+  "correct": 0,
+  "explanation": "$v_2=0.9\\cdot8+6.4=13.6$, $\\theta_2=3.2-1.36=1.84$."
+ },
+ {
+  "prompt": "Vì sao Adam hiệu chỉnh m và s bằng cách chia cho $1-\\beta^t$?",
+  "options": [
+   "Để tăng learning rate",
+   "Vì m, s khởi tạo bằng 0 nên bị lệch ở các bước đầu",
+   "Để tránh dùng epsilon"
+  ],
+  "correct": 1,
+  "explanation": "Khởi tạo 0 làm các trung bình động nhỏ hơn thực tế ở đầu quá trình."
+ }
+]

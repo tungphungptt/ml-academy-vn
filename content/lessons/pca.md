@@ -2,11 +2,13 @@
 **Mục tiêu:** hiểu PCA tìm hướng có phương sai lớn nhất.
 
 ## Vấn đề thực tế
-Dữ liệu nhiều chiều khó trực quan và tốn tài nguyên. PCA giữ lại ít chiều nhất nhưng giữ được nhiều thông tin (phương sai) nhất.
+Dữ liệu nhiều chiều khó trực quan và tốn tài nguyên. Với số chiều giữ lại đã chọn, PCA tìm phép chiếu tuyến tính giữ phương sai lớn nhất. Phương sai ở đây là mức phân tán, không đồng nghĩa mọi thông tin hữu ích cho bài toán dự đoán.
 
 ## Công thức
 Sau khi trừ trung bình mỗi cột, ma trận hiệp phương sai $C=\frac{1}{N-1}X^\top X$. Các thành phần chính là vector riêng của $C$; trị riêng $\lambda_k$ là phương sai dọc hướng đó:
-$$\text{tỉ lệ phương sai}_k=\frac{\lambda_k}{\sum_j\lambda_j}$$
+$$
+\text{tỉ lệ phương sai}_k=\frac{\lambda_k}{\sum_j\lambda_j}
+$$
 
 ![Các thành phần chính trong PCA](/img/pca.svg)
 
@@ -34,10 +36,14 @@ Giảm chiều tuyến tính, nhanh. Chỉ bắt cấu trúc tuyến tính, thà
 PCA chiếu dữ liệu lên các vector riêng của ma trận hiệp phương sai.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-PCA cần căn giữa; scale từng cột là quyết định theo đơn vị và mục tiêu, không luôn bắt buộc. Hướng có variance lớn có thể là nhiễu; nhãn không được dùng khi fit PCA. Một classifier có thể mất tín hiệu nếu giảm chiều chỉ dựa vào variance, xem [LDA](/learn/lda). SVD của dữ liệu centered cho cùng không gian chính, tránh tạo covariance lớn. TruncatedSVD thường dùng cho sparse text và không tự center giống PCA. Tính explained-variance ratio trên train; không dùng test để chọn k rồi gọi test là độc lập.
+PCA cần căn giữa; scale từng cột là quyết định theo đơn vị và mục tiêu, không luôn bắt buộc. Hướng có variance lớn có thể là nhiễu; nhãn không được dùng khi fit PCA.
+
+Một classifier có thể mất tín hiệu nếu giảm chiều chỉ dựa vào variance, xem [LDA](/learn/lda).
+
+SVD của dữ liệu centered cho cùng không gian chính, tránh tạo covariance lớn. TruncatedSVD thường dùng cho sparse text và không tự center giống PCA. Tính explained-variance ratio trên train; không dùng test để chọn k rồi gọi test là độc lập.
 
 ## Đáp án và tiêu chí chấm
-1. Mean=(1,0); covariance mẫu=[[1,0],[0,0]] cho N=3. (2 điểm).
+1. Trung bình $(1,0)$; ma trận hiệp phương sai mẫu $C=\begin{pmatrix}1&0\\0&0\end{pmatrix}$ cho $N=3$. (2 điểm).
 2. Fit trên train, lấy k nhỏ nhất sao cho tổng explained variance ratio ít nhất 0.95; scaling thay đổi số k nên phải ghi pipeline. (3 điểm).
 3. Dùng eigh cho covariance đối xứng, sắp trị riêng giảm dần rồi chiếu dữ liệu đã trừ mean train. Kiểm tra reconstruction và không so dấu eigenvector một cách cứng nhắc. (5 điểm).
 

@@ -1,1 +1,22 @@
-[{"prompt":"Với z=(2,1,0), xác suất lớp 0 xấp xỉ bao nhiêu?","options":["0.67","0.33","0.50"],"correct":0,"explanation":"e²/(e²+e¹+e⁰) ≈ 0.6652."},{"prompt":"Gradient của cross-entropy theo logits z_k là gì?","options":["p_k − 1[k=y]","z_k − y","p_k · y"],"correct":0,"explanation":"Kết quả gọn: xác suất dự đoán trừ nhãn one-hot."}]
+[
+ {
+  "prompt": "Với $z=(2,1,0)$, xác suất lớp 0 xấp xỉ bao nhiêu?",
+  "options": [
+   "0.67",
+   "0.33",
+   "0.50"
+  ],
+  "correct": 0,
+  "explanation": "$\\frac{e^2}{e^2+e^1+e^0}\\approx0.6652$."
+ },
+ {
+  "prompt": "Gradient của cross-entropy theo logits $z_k$ là gì?",
+  "options": [
+   "$p_k-\\mathbf1[k=y]$",
+   "$z_k-y$",
+   "$p_k\\cdot y$"
+  ],
+  "correct": 0,
+  "explanation": "Kết quả gọn: xác suất dự đoán trừ nhãn one-hot."
+ }
+]

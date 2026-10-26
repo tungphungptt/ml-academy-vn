@@ -1,1 +1,22 @@
-[{"prompt":"Lasso khác Ridge ở điểm nào?","options":["Có thể đưa trọng số về đúng 0","Không dùng λ","Luôn có nghiệm đóng đơn giản"],"correct":0,"explanation":"Phạt L1 tạo nghiệm thưa."},{"prompt":"Trong ví dụ Ridge, λ=14 cho w bằng bao nhiêu?","options":["1","2","0"],"correct":0,"explanation":"w = 28/(14+14) = 1."}]
+[
+ {
+  "prompt": "Lasso khác Ridge ở điểm nào?",
+  "options": [
+   "Có thể đưa trọng số về đúng 0",
+   "Không dùng λ",
+   "Luôn có nghiệm đóng đơn giản"
+  ],
+  "correct": 0,
+  "explanation": "Phạt L1 tạo nghiệm thưa."
+ },
+ {
+  "prompt": "Trong ví dụ Ridge, $\\lambda=14$ cho w bằng bao nhiêu?",
+  "options": [
+   "1",
+   "2",
+   "0"
+  ],
+  "correct": 0,
+  "explanation": "$w=28/(14+14)=1$."
+ }
+]

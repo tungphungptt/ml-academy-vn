@@ -1,9 +1,10 @@
 import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth"; import ProgressRing from "@/components/ProgressRing"; import { courseProgress } from "@/lib/progress";
+import { normalizeSearch } from "@/lib/search";
 export const dynamic = "force-dynamic";
 type SP = { q?: string; level?: string; status?: string };
 export default async function Courses({ searchParams: pendingSearchParams }: { searchParams: Promise<SP> }) {
   const searchParams = await pendingSearchParams;
-  const q = (searchParams.q ?? "").trim().toLowerCase(), level = searchParams.level ?? "", status = searchParams.status ?? "";
+  const q = normalizeSearch((searchParams.q ?? "").trim()), level = searchParams.level ?? "", status = searchParams.status ?? "";
   const u = await currentUser();
   const done = new Set(u ? (await db.lessonProgress.findMany({ where: { userId: u.id } })).map(p => p.lessonId) : []);
   const cs = await db.course.findMany({ where: { published: true }, orderBy: { order: "asc" }, include: { modules: { include: { lessons: true } } } });
@@ -11,7 +12,7 @@ export default async function Courses({ searchParams: pendingSearchParams }: { s
     const ls = c.modules.flatMap(m => m.lessons); const p = courseProgress(ls.map(l => ({ id: l.id, slug: l.slug, title: l.title, hasContent: !!l.contentFile })), done);
     return { c, ls, p, full: ls.filter(l => l.contentFile).length };
   }).filter(({ c, ls, p }) =>
-    (!q || [c.title, c.description, ...ls.flatMap(l => [l.title, l.slug])].some(t => t.toLowerCase().includes(q))) &&
+    (!q || [c.title, c.description, ...ls.flatMap(l => [l.title, l.slug])].some(t => normalizeSearch(t).includes(q))) &&
     (!level || c.level === level) &&
     (!status || !u || (status === "done" ? p.completed === p.total && p.total > 0 : status === "doing" ? p.completed > 0 && p.completed < p.total : p.completed === 0)));
   return <><h1>Khóa học</h1>

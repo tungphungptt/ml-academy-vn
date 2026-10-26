@@ -27,8 +27,8 @@ Trên môi trường kiểm tra Python 3.12/PyTorch 2.14.1+cpu, validation chọ
 Chia ngẫu nhiên cửa sổ chồng lấn trước khi kiểm tra thời gian; fit scaler trên toàn chuỗi; đánh giá nhiều bước nhưng đưa giá trị thật ở giữa như thể đó là dự đoán tự do; chọn hidden size bằng test; quên chuyển `eval()`/`no_grad()`.
 
 ## Bài tập tự đánh giá
-1. Target đầu tiên là thời điểm nào khi lookback=12?
-2. Nếu đầu vào chuẩn hóa và MSE=0,01, std train=2, MSE đơn vị gốc là bao nhiêu?
+1. Target đầu tiên là thời điểm nào khi lookback $=12$?
+2. Nếu đầu vào chuẩn hóa và $\operatorname{MSE}=0.01$, độ lệch chuẩn train $=2$, MSE đơn vị gốc là bao nhiêu?
 3. Đổi mục tiêu sang dự báo 10 bước không có quan sát mới: cần thay dữ liệu, baseline và protocol ra sao?
 
 ## Đáp án và tiêu chí chấm

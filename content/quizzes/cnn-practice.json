@@ -1,1 +1,22 @@
-[{"prompt":"Ảnh 8x8 qua kernel 2x2 (stride 1, không padding) cho kích thước bao nhiêu?","options":["7x7","6x6","8x8"],"correct":0,"explanation":"⌊(8−2)/1⌋ + 1 = 7."},{"prompt":"Vì sao bộ lọc chọn tay không thắng điểm ảnh thô trong thí nghiệm này?","options":["Ảnh 8x8 rất nhỏ nên điểm ảnh thô đã đủ thông tin","Vì tích chập luôn kém hơn","Vì Logistic Regression không dùng được đặc trưng"],"correct":0,"explanation":"Lợi thế của CNN rõ hơn với ảnh lớn và bộ lọc được học."}]
+[
+ {
+  "prompt": "Ảnh 8x8 qua kernel 2x2 (stride 1, không padding) cho kích thước bao nhiêu?",
+  "options": [
+   "7x7",
+   "6x6",
+   "8x8"
+  ],
+  "correct": 0,
+  "explanation": "$\\lfloor(8-2)/1\\rfloor+1=7$."
+ },
+ {
+  "prompt": "Vì sao bộ lọc chọn tay không thắng điểm ảnh thô trong thí nghiệm này?",
+  "options": [
+   "Ảnh 8x8 rất nhỏ nên điểm ảnh thô đã đủ thông tin",
+   "Vì tích chập luôn kém hơn",
+   "Vì Logistic Regression không dùng được đặc trưng"
+  ],
+  "correct": 0,
+  "explanation": "Lợi thế của CNN rõ hơn với ảnh lớn và bộ lọc được học."
+ }
+]

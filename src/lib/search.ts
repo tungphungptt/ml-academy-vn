@@ -1,11 +1,11 @@
 export type Doc = { slug: string; title: string; text: string };
 export type Hit = { slug: string; title: string; snippet: string; score: number };
-const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d");
+export const normalizeSearch = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d");
 export function searchDocs(docs: Doc[], q: string, limit = 20): Hit[] {
-  const terms = norm(q.trim()).split(/\s+/).filter(Boolean); if (terms.join("").length < 2) return [];
+  const terms = normalizeSearch(q.trim()).split(/\s+/).filter(Boolean); if (terms.join("").length < 2) return [];
   const hits: Hit[] = [];
   for (const d of docs) {
-    const nt = norm(d.title), nx = norm(d.text); let score = 0, first = -1, ok = true;
+    const nt = normalizeSearch(d.title), nx = normalizeSearch(d.text); let score = 0, first = -1, ok = true;
     for (const t of terms) {
       const i = nx.indexOf(t); const inTitle = nt.includes(t);
       if (i < 0 && !inTitle) { ok = false; break; }

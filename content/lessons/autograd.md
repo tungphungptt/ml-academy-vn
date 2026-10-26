@@ -63,9 +63,9 @@ Autograd ghi đồ thị tính toán và áp dụng chain rule ngược; gradien
 Autograd không tìm biểu thức đạo hàm tượng trưng đầy đủ và không dùng perturbation từng tham số: nó ghi phép toán và áp dụng chain rule. PyTorch chỉ cộng vào .grad của leaf được yêu cầu (trừ khi retain_grad), và backward lặp trên graph đã giải phóng có thể lỗi. Lớp V ở đây là demo một lần backward của cộng/nhân; nếu tái dùng nó mà không xóa gradient mọi nút, kết quả có thể cộng dồn sai ngoài mục đích minh họa. .detach() cắt đường đạo hàm; no_grad dùng cho bước không muốn ghi graph, không dùng để bọc forward cần học. Kiểm tra bằng sai phân trên ví dụ nhỏ và tránh in-place sửa tensor framework đang cần cho backward.
 
 ## Đáp án và tiêu chí chấm
-1. Với f=ab, a=3,b=4: df/da=4, df/db=3. (2 điểm).
+1. Với $f=ab$, $a=3,b=4$: $\partial f/\partial a=4$, $\partial f/\partial b=3$. (2 điểm).
 2. Thêm phép trừ với gradient về nhánh trái +r.grad, nhánh phải −r.grad; nếu cùng biến dùng hai lần, gradient phải được cộng chứ không ghi đè. (3 điểm).
-3. Đạo hàm tanh bằng 1−tanh²; lưu giá trị forward để backward dùng lại, kiểm tra trên các điểm không bão hòa quá mạnh. Dùng một graph mới hoặc reset mọi grad khi chạy lại demo V. (5 điểm).
+3. Đạo hàm tanh bằng $1-\tanh^2(x)$; lưu giá trị forward để backward dùng lại, kiểm tra trên các điểm không bão hòa quá mạnh. Dùng một graph mới hoặc reset mọi grad khi chạy lại demo V. (5 điểm).
 
 ## Nguồn tham khảo
 - [PyTorch Tutorials: Autograd](https://docs.pytorch.org/tutorials/).

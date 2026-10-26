@@ -7,7 +7,7 @@ Mạng sâu có rất nhiều tham số nên dễ overfit và khó huấn luyệ
 ## Công thức và ý tưởng
 - **Dropout (inverted):** khi huấn luyện, tắt ngẫu nhiên mỗi neuron với xác suất $1-p$ và chia đầu ra còn lại cho $p$ để kỳ vọng không đổi.
 - **Batch Normalization:** chuẩn hóa theo lô $\hat x=\frac{x-\mu_B}{\sqrt{\sigma_B^2+\epsilon}}$ rồi co giãn bằng tham số học được.
-- **Weight decay (L2):** cập nhật $w\leftarrow w-\eta(g+\lambda w)$.
+- **L2 trong SGD thuần:** cập nhật $w\leftarrow w-\eta(g+\lambda w)$.
 - **Early stopping:** dừng khi loss validation không cải thiện sau `patience` epoch và giữ mô hình tốt nhất.
 - **Lịch learning rate:** step decay $\eta_t=\eta_0\gamma^{\lfloor t/s\rfloor}$; cosine $\eta_t=\tfrac12\eta_0\big(1+\cos\tfrac{\pi t}{T}\big)$.
 - **Khởi tạo trọng số:** dùng phương sai phù hợp (Xavier/He) để tín hiệu không co lại hoặc nổ ra qua các lớp.
@@ -56,7 +56,7 @@ Ký hiệu p trong công thức dropout của bài là xác suất giữ; PyTorc
 
 ## Đáp án và tiêu chí chấm
 1. Với input toàn 1, xác suất giữ 0.5 và mask (1,0,1,0), inverted dropout cho (2,0,2,0). Khi eval không nhân lại 0.5 nếu đã dùng convention inverted. (2 điểm).
-2. Với η0=0.1, gamma=0.5, step_size=10, epoch=45 theo công thức bài cho 0.1·0.5^4=0.00625. Framework có convention thời điểm scheduler.step; nêu rõ index. (3 điểm).
+2. Với $\eta_0=0.1$, $\gamma=0.5$, `step_size=10`, epoch 45 theo công thức bài cho $0.1\cdot0.5^4=0.00625$. Framework có convention thời điểm scheduler.step; nêu rõ index. (3 điểm).
 3. Theo dõi val loss không gradient, cập nhật deepcopy(best_state) khi cải thiện, đếm patience, restore trước test. Không chỉ break rồi dùng trọng số epoch cuối kém hơn. (5 điểm).
 
 ## Nguồn tham khảo

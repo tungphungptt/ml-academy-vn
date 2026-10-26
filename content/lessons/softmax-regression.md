@@ -5,7 +5,9 @@
 Phân loại nhiều hơn hai lớp (ví dụ chữ số 0-9) cần một phân phối xác suất trên $K$ lớp.
 
 ## Công thức
-$$p_k=\frac{e^{z_k}}{\sum_j e^{z_j}},\qquad L=-\ln p_y,\qquad \frac{\partial L}{\partial z_k}=p_k-\mathbb 1[k=y]$$
+$$
+p_k=\frac{e^{z_k}}{\sum_j e^{z_j}},\qquad L=-\ln p_y,\qquad \frac{\partial L}{\partial z_k}=p_k-\mathbb 1[k=y]
+$$
 $z_k=\mathbf w_k^\top\mathbf x+b_k$ là điểm của lớp $k$, $y$ là lớp đúng. Để tránh tràn số, trừ $\max_j z_j$ khỏi mọi $z$ trước khi lấy mũ (kết quả không đổi).
 
 ![Logits và xác suất softmax](/img/softmax-regression.svg)
@@ -34,12 +36,12 @@ Mở rộng tự nhiên của Logistic Regression ($K=2$ cho kết quả tương
 Softmax chuẩn hóa điểm thành xác suất; gradient của cross-entropy theo logits là $p-y$.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-Các lớp loại trừ lẫn nhau cần phân phối softmax tổng bằng 1. Multi-label là bài toán khác: có thể dùng sigmoid độc lập và BCE. Với K=2, xác suất chỉ phụ thuộc chênh lệch hai logits, tương ứng sigmoid của chênh lệch đó, không phải mọi bộ trọng số đều duy nhất. Cộng cùng hằng vào logits không đổi phân phối. Khi xác suất rất nhỏ, tính CE bằng log-sum-exp trực tiếp ổn định hơn tính softmax rồi log; nhãn phải thuộc đúng K lớp.
+Các lớp loại trừ lẫn nhau cần phân phối softmax tổng bằng 1. Multi-label là bài toán khác: có thể dùng sigmoid độc lập và BCE. Với $K=2$, xác suất chỉ phụ thuộc chênh lệch hai logits, tương ứng sigmoid của chênh lệch đó, không phải mọi bộ trọng số đều duy nhất. Cộng cùng hằng vào logits không đổi phân phối. Khi xác suất rất nhỏ, tính CE bằng log-sum-exp trực tiếp ổn định hơn tính softmax rồi log; nhãn phải thuộc đúng K lớp.
 
 ## Đáp án và tiêu chí chấm
-1. Softmax (0,0,0)=(1/3,1/3,1/3). (2 điểm).
+1. $\operatorname{softmax}(0,0,0)=(1/3,1/3,1/3)$. (2 điểm).
 2. Thử cộng 1000 nhưng phải trừ max trước exp; so hai vector bằng allclose thay vì bằng tuyệt đối cho float. (3 điểm).
-3. Với X shape N×D, W D×K: logits=XW, P stable softmax, Y one-hot. Gradient Xᵀ(P−Y)/N; bias là mean(P−Y). Kiểm tra tổng probability và gradient bằng sai phân trên một bài nhỏ, rồi split dữ liệu trước fit. (5 điểm).
+3. Với $X\in\mathbb R^{N\times D}$, $W\in\mathbb R^{D\times K}$: logits $Z=XW+\mathbf1b^\top$, $P$ là softmax ổn định, $Y$ là nhãn one-hot. Gradient $\nabla_W L=X^\top(P-Y)/N$; $\nabla_b L=\sum_i(P_i-Y_i)/N$. Kiểm tra tổng probability và gradient bằng sai phân trên một bài nhỏ, rồi split dữ liệu trước fit. (5 điểm).
 
 ## Nguồn tham khảo
 - [scikit-learn: Logistic regression (multinomial)](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression).

@@ -5,7 +5,9 @@
 Phân loại văn bản (spam hay không) nhanh, ít dữ liệu, dễ cài đặt.
 
 ## Công thức
-$$P(c\mid\mathbf x)\propto P(c)\prod_{j}P(x_j\mid c)$$
+$$
+P(c\mid\mathbf x)\propto P(c)\prod_{j}P(x_j\mid c)
+$$
 $P(c)$ là xác suất tiên nghiệm của lớp, $P(x_j\mid c)$ là khả năng đặc trưng $x_j$ xuất hiện trong lớp $c$. "Naive" nghĩa là giả định các đặc trưng độc lập khi biết lớp.
 
 ![Xác suất trước và sau khi thấy từ](/img/naive-bayes.svg)
@@ -40,7 +42,7 @@ Naive Bayes nhân tiên nghiệm với khả năng từng đặc trưng, giả �
 Giả định là độc lập các feature **có điều kiện theo lớp**, không phải các feature độc lập vô điều kiện. GaussianNB dùng mật độ liên tục, MultinomialNB dùng count/feature không âm phù hợp mô hình multinomial, BernoulliNB mô hình hiện diện/vắng mặt. Laplace pseudocount dành cho biến rời rạc; var_smoothing của GaussianNB là ổn định phương sai, không đồng nghĩa cộng 1 vào mọi likelihood. Log probability tránh underflow nhưng cần log-sum-exp khi chuẩn hóa posterior. Dữ liệu phụ thuộc/tương quan có thể làm probability quá tự tin dù nhãn dự đoán vẫn tốt.
 
 ## Đáp án và tiêu chí chấm
-1. Khi P(free|ham)=0.1, posterior spam=0.2/(0.2+0.06)=10/13≈0.7692. (2 điểm).
+1. Khi $P(\text{free}\mid\text{ham})=0.1$, posterior $P(\text{spam}\mid\text{free})=0.2/(0.2+0.06)=10/13\approx0.7692$. (2 điểm).
 2. Dùng CountVectorizer+MultinomialNB trong pipeline, fit vocabulary/count model trên train. Không đưa feature âm từ StandardScaler vào MultinomialNB. (3 điểm).
 3. Đếm theo lớp, cộng alpha vào count và alpha·V vào mẫu số cho V từ. Cộng log prior và log likelihood, chuẩn hóa đúng; kiểm tra từ chưa gặp và lớp không có mẫu. (5 điểm).
 

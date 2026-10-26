@@ -251,9 +251,18 @@
    "expected": "1 [0.2, 0.4]"
   },
   {
+   "file": "content/lessons/linear-regression.md",
+   "block": 1,
+   "sha256": "6f40564290b35fa47f998e19d44caf400ff9f4266923fbdb64ec72a84f16535a",
+   "status": "pass",
+   "stdout": "mse=1.1667 dw=-4.6667 db=-2.0000",
+   "stderr": "",
+   "expected": "mse=1.1667 dw=-4.6667 db=-2.0000"
+  },
+  {
    "file": "content/lessons/loss-functions.md",
    "block": 1,
-   "sha256": "cdc0ee7c6a0293ceb8ab15ee0d9c1b949d1680336cb85a44a06b743f6b2010f7",
+   "sha256": "f8a2754708d44a0a131724c84ecaea61c141fd13465714fa8973f8e3018b23fc",
    "status": "pass",
    "stdout": "[4, 2, 1.5, 0.2231, 1.6094]",
    "stderr": "",

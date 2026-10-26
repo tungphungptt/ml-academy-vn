@@ -6,7 +6,9 @@ Gợi ý phim, sản phẩm: ta có ma trận đánh giá người dùng × mụ
 
 ## Công thức
 Collaborative filtering theo người dùng: tính độ tương đồng giữa hai người dùng trên các mục họ cùng đánh giá (ví dụ cosine), rồi dự đoán đánh giá của người dùng $u$ cho mục $i$ bằng trung bình có trọng số từ những người tương tự đã đánh giá $i$:
-$$\hat r_{ui}=\frac{\sum_{v}\operatorname{sim}(u,v)\,r_{vi}}{\sum_{v}\operatorname{sim}(u,v)}$$
+$$
+\hat r_{ui}=\frac{\sum_{v}\operatorname{sim}(u,v)\,r_{vi}}{\sum_{v}\operatorname{sim}(u,v)}
+$$
 Content-based filtering thì dùng đặc trưng của mục thay vì hành vi của người dùng khác.
 
 ![Dự đoán đánh giá còn thiếu](/img/recommendation.svg)
@@ -47,7 +49,7 @@ Content-based dùng thuộc tính item để tạo profile/tính similarity; ite
 ## Đáp án và tiêu chí chấm
 1. Cosine của hai vector trực giao (1,0),(0,1) bằng 0. (2 điểm).
 2. Thêm user thứ tư phải chỉ rõ co-rated items, similarity và rating item cần dự đoán. Không có dữ liệu cụ thể thì không thể bịa một prediction duy nhất. (3 điểm).
-3. Tính mean của mỗi user từ rating train quan sát, dùng residual rating; dự đoán μu+Σ sim(u,v)(rvi−μv)/Σ|sim(u,v)| với các láng giềng hợp lệ. Nêu fallback và không dùng rating test trong mean. (5 điểm).
+3. Tính mean của mỗi user từ rating train quan sát, dùng residual rating; dự đoán $\mu_u+\frac{\sum_v\operatorname{sim}(u,v)(r_{vi}-\mu_v)}{\sum_v|\operatorname{sim}(u,v)|}$ với các láng giềng hợp lệ. Nêu fallback và không dùng rating test trong mean. (5 điểm).
 
 ## Nguồn tham khảo
 - [Machine Learning cơ bản](https://machinelearningcoban.com/).

@@ -2,10 +2,12 @@
 **Mục tiêu:** hiểu mô hình hỗn hợp Gauss và "trách nhiệm" (responsibility), khác biệt với K-Means.
 
 ## Vấn đề thực tế
-K-Means gán mỗi điểm cứng vào một cụm và giả định cụm tròn. Gaussian Mixture Model (GMM) cho xác suất thuộc từng cụm và mô hình hóa được cụm hình elip.
+K-Means gán mỗi điểm cứng vào một cụm và phù hợp nhất với cụm đẳng hướng, độ phân tán tương tự. Gaussian Mixture Model (GMM) cho xác suất thuộc từng cụm và mô hình hóa được cụm hình elip.
 
 ## Công thức
-$$p(x)=\sum_{k=1}^{K}\pi_k\,\mathcal N(x\mid\mu_k,\Sigma_k),\qquad r_{k}(x)=\frac{\pi_k\,\mathcal N(x\mid\mu_k,\Sigma_k)}{\sum_j\pi_j\,\mathcal N(x\mid\mu_j,\Sigma_j)}$$
+$$
+p(x)=\sum_{k=1}^{K}\pi_k\,\mathcal N(x\mid\mu_k,\Sigma_k),\qquad r_{k}(x)=\frac{\pi_k\,\mathcal N(x\mid\mu_k,\Sigma_k)}{\sum_j\pi_j\,\mathcal N(x\mid\mu_j,\Sigma_j)}
+$$
 $\pi_k$ là trọng số thành phần ($\sum\pi_k=1$), $r_k(x)$ là xác suất điểm $x$ thuộc thành phần $k$. Thuật toán EM lặp: bước E tính $r_k$ cho mọi điểm, bước M cập nhật $\pi_k,\mu_k,\Sigma_k$ theo trung bình có trọng số $r_k$.
 
 ![Hai thành phần Gauss](/img/gmm.svg)
@@ -42,10 +44,10 @@ Phân cụm mềm, cụm hình elip. Giả định dữ liệu là hỗn hợp G
 GMM mô hình hóa dữ liệu bằng tổng các Gauss; EM luân phiên tính trách nhiệm và cập nhật tham số.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-EM tối đa hóa likelihood thông qua phân bố biến ẩn; mỗi bước E/M chính xác không làm log-likelihood giảm, nhưng không bảo đảm cực đại toàn cục. Với N_k=Σ_i r_ik, cập nhật π_k=N_k/N, μ_k=Σr_ik x_i/N_k và covariance weighted. GMM covariance tự do có thể tăng likelihood vô hạn khi một covariance co về 0 trên một điểm, nên dùng regularization như reg_covar và kiểm tra convergence. K-means gần với giới hạn hard assignment của các Gaussian isotropic có covariance chung nhỏ; đây là một giới hạn có điều kiện, không phải hai thuật toán luôn tương đương.
+EM tối đa hóa likelihood thông qua phân bố biến ẩn; mỗi bước E/M chính xác không làm log-likelihood giảm, nhưng không bảo đảm cực đại toàn cục. Với $N_k=\sum_i r_{ik}$, cập nhật $\pi_k=N_k/N$, $\mu_k=\sum_i r_{ik}x_i/N_k$ và hiệp phương sai có trọng số. GMM covariance tự do có thể tăng likelihood vô hạn khi một covariance co về 0 trên một điểm, nên dùng regularization như reg_covar và kiểm tra convergence. K-means gần với giới hạn hard assignment của các Gaussian isotropic có covariance chung nhỏ; đây là một giới hạn có điều kiện, không phải hai thuật toán luôn tương đương.
 
 ## Đáp án và tiêu chí chấm
-1. Tại x=2, hai mật độ đối xứng và prior bằng nhau, r1=r2=0.5. (2 điểm).
+1. Tại $x=2$, hai mật độ đối xứng và prior bằng nhau: $r_1=r_2=0.5$. (2 điểm).
 2. Fit các K trên train, tính BIC theo cùng convention và số chiều. BIC nhỏ hơn là tiêu chí chọn mô hình trong phạm vi giả định, không bảo đảm số nhóm xã hội “thật”. (3 điểm).
 3. Luân phiên responsibility stable log-sum-exp, weighted mean/variance và mixing weights. Kiểm tra Nk gần 0, variance floor và log-likelihood không giảm trong dung sai float. (5 điểm).
 

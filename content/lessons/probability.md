@@ -5,7 +5,9 @@
 Dữ liệu có nhiễu và bất định; mô hình ML thường là mô hình xác suất, và loss như cross-entropy xuất phát từ likelihood.
 
 ## Công thức
-$$\mathbb E[X]=\sum_x x\,P(x),\quad \operatorname{Var}(X)=\mathbb E[X^2]-\mathbb E[X]^2,\quad P(X=k)=\binom nk p^k(1-p)^{n-k}$$
+$$
+\mathbb E[X]=\sum_x x\,P(x),\quad \operatorname{Var}(X)=\mathbb E[X^2]-\mathbb E[X]^2,\quad P(X=k)=\binom nk p^k(1-p)^{n-k}
+$$
 Phân phối chuẩn có khoảng 68.27% xác suất trong khoảng $\mu\pm\sigma$. **Maximum Likelihood**: chọn tham số làm dữ liệu quan sát có xác suất lớn nhất. Với $n$ lần tung đồng xu cho $k$ mặt ngửa, hàm log-likelihood là $k\ln p+(n-k)\ln(1-p)$; đặt đạo hàm bằng 0 được $\hat p=k/n$.
 
 ![Phân phối chuẩn và khoảng một sigma](/img/probability.svg)
@@ -38,9 +40,9 @@ Kỳ vọng và phương sai tóm tắt phân phối; MLE chọn tham số làm 
 Một mô hình xác suất cần chỉ rõ biến ngẫu nhiên, miền giá trị và giả định lấy mẫu. Xác suất có điều kiện và độc lập khác nhau: X,Y độc lập không đồng nghĩa độc lập khi điều kiện thêm Z. Bayes kết hợp likelihood với prior; không đảo P(A|B) thành P(B|A). MLE có các bảo đảm tiệm cận dưới giả định nhận dạng/mô hình/lấy mẫu phù hợp, không tự nhất quán chỉ vì nhiều dữ liệu. [Bayes, MLE và MAP](/learn/bayesian-estimation) suy ra công thức và cho ví dụ base-rate.
 
 ## Đáp án và tiêu chí chấm
-1. Với X∈{0,1} và P(X=1)=p, E[X]=0·(1−p)+1·p=p. (2 điểm).
-2. MLE bằng 7/10=0.7. Đây là ước lượng từ dữ liệu, không phải chứng minh xác suất thật đúng bằng 0.7. (3 điểm).
-3. Với Gaussian variance cố định dương, đạo hàm log-likelihood theo μ là Σ(x_i−μ)/σ². Cho bằng 0 suy ra μ bằng trung bình; cần nêu độc lập cùng phân phối và phân biệt μ thật với ước lượng. (5 điểm).
+1. Với $X\in\{0,1\}$ và $P(X=1)=p$, $\mathbb E[X]=0\cdot(1-p)+1\cdot p=p$. (2 điểm).
+2. MLE bằng $7/10=0.7$. Đây là ước lượng từ dữ liệu, không phải chứng minh xác suất thật đúng bằng 0.7. (3 điểm).
+3. Với Gaussian variance cố định dương, đạo hàm log-likelihood theo $\mu$ là $\sum_i(x_i-\mu)/\sigma^2$. Cho bằng 0 suy ra $\hat\mu$ bằng trung bình; cần nêu độc lập cùng phân phối và phân biệt μ thật với ước lượng. (5 điểm).
 
 ## Nguồn tham khảo
 - [Dive into Deep Learning: Probability and Statistics](https://d2l.ai/chapter_preliminaries/probability.html).

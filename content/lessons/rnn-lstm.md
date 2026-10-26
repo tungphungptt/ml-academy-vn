@@ -6,7 +6,9 @@ Dữ liệu chuỗi (văn bản, chuỗi thời gian) có thứ tự và độ d
 
 ## Công thức
 RNN: $h_t=\tanh(W_h h_{t-1}+W_x x_t+b)$, cùng trọng số dùng ở mọi bước. Khi lan truyền ngược qua nhiều bước, gradient bị nhân nhiều lần nên dễ biến mất hoặc bùng nổ. LSTM thêm ô nhớ $c_t$ và các cổng $f_t,i_t,o_t\in(0,1)$:
-$$c_t=f_t\odot c_{t-1}+i_t\odot g_t,\qquad h_t=o_t\odot\tanh(c_t)$$
+$$
+c_t=f_t\odot c_{t-1}+i_t\odot g_t,\qquad h_t=o_t\odot\tanh(c_t)
+$$
 $f_t$ (cổng quên) quyết định giữ bao nhiêu $c_{t-1}$, $i_t$ (cổng vào) quyết định ghi bao nhiêu thông tin mới $g_t$, $\odot$ là nhân từng phần tử. GRU là biến thể gọn hơn.
 
 ![RNN trải theo thời gian](/img/rnn-lstm.svg)
@@ -38,11 +40,16 @@ LSTM nhớ phụ thuộc xa tốt hơn RNN thuần. Xử lý tuần tự nên kh
 RNN truyền trạng thái ẩn theo thời gian; LSTM dùng cổng để kiểm soát việc nhớ và quên.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-BPTT unroll graph theo thời gian với trọng số dùng chung; gradient là tổng đóng góp từ các bước. LSTM có đường cell giúp truyền thông tin, không bảo đảm nhớ vô hạn khi forget gate nhỏ. GRU dùng reset r và update z, ví dụ dạng kinh điển h̃=tanh(xWx+(r⊙hprev)Wh+b), h=z⊙hprev+(1−z)⊙h̃. Cần nêu convention: PyTorch đặt reset lên hạng tuyến tính hidden trong candidate theo cách có thể khác vị trí phép nhân ở công thức trên, nên không so trực tiếp từng weight khi tự cài. Padding phải được mask/packed hoặc dùng length hợp lệ. [Lab GRU CPU](/learn/sequence-models-cpu) cho dự báo một bước với split theo thời gian.
+BPTT unroll graph theo thời gian với trọng số dùng chung; gradient là tổng đóng góp từ các bước. LSTM có đường cell giúp truyền thông tin, không bảo đảm nhớ vô hạn khi forget gate nhỏ. GRU dùng reset $r_t$ và update $z_t$, ví dụ một quy ước dùng vector hàng:
+
+$$
+\begin{aligned}\tilde h_t&=\tanh\!\left(x_tW_x+(r_t\odot h_{t-1})W_h+b\right),\\h_t&=z_t\odot h_{t-1}+(1-z_t)\odot\tilde h_t.\end{aligned}
+$$
+Cần nêu convention: PyTorch đặt reset lên hạng tuyến tính hidden trong candidate theo cách có thể khác vị trí phép nhân ở công thức trên, nên không so trực tiếp từng weight khi tự cài. Padding phải được mask/packed hoặc dùng length hợp lệ. [Lab GRU CPU](/learn/sequence-models-cpu) cho dự báo một bước với split theo thời gian.
 
 ## Đáp án và tiêu chí chấm
-1. Tính từ giá trị chưa làm tròn: h3=tanh(0.5h2+0.5)≈0.2210. (2 điểm).
-2. Khi f=0.2, cprev=2,i=0.5,g=0.4: ct=0.4+0.2=0.6. (3 điểm).
+1. Tính từ giá trị chưa làm tròn: $h_3=\tanh(0.5h_2+0.5)\approx0.2210$. (2 điểm).
+2. Khi $f=0.2$, $c_{t-1}=2,i=0.5,g=0.4$: $c_t=0.4+0.2=0.6$. (3 điểm).
 3. Khai báo shape x,h,c và bốn cổng, sigmoid cho f/i/o, tanh cho candidate; kiểm tra từng phép nhân và output với batch nhỏ. Không quên state c khác state h. (5 điểm).
 
 ## Nguồn tham khảo

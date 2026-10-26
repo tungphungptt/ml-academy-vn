@@ -6,7 +6,9 @@ Cần biểu diễn nén của dữ liệu không nhãn (giảm chiều, khử n
 
 ## Công thức
 Encoder $\mathbf z=f_\theta(\mathbf x)$ nén đầu vào về mã (bottleneck) có chiều nhỏ; decoder $\hat{\mathbf x}=g_\phi(\mathbf z)$ khôi phục:
-$$L=\frac1N\sum_i\lVert\mathbf x_i-g_\phi(f_\theta(\mathbf x_i))\rVert^2$$
+$$
+L=\frac1N\sum_i\lVert\mathbf x_i-g_\phi(f_\theta(\mathbf x_i))\rVert^2
+$$
 Ở nghiệm tối ưu toàn cục với dữ liệu đã centered (hoặc bias thích hợp), encoder/decoder tuyến tính và squared loss cho cùng không gian con chính với PCA; không bảo đảm mọi lần SGD đạt nghiệm đó. Thêm hàm kích hoạt phi tuyến cho phép học đa tạp cong. Phát hiện bất thường: mẫu có lỗi tái tạo lớn bất thường so với dữ liệu bình thường.
 
 Với batch hàng $X$, encoder $A$ và decoder $B$ tuyến tính cho tái tạo $XAB$ có rank không quá chiều mã $k$. SVD cho chặn dưới của lỗi xấp xỉ hạng $k$; chọn $A=V_k$, $B=V_k^\top$ đạt tái tạo PCA $XV_kV_k^\top$. Đây là suy luận từ bài toán xấp xỉ hạng thấp, không phải khẳng định hai bộ weights bằng nhau. Xem nguồn SVD cụ thể bên dưới.

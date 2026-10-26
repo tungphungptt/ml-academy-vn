@@ -1,3 +1,32 @@
-[{"prompt":"Trong ví dụ bài học (q=(3,3), K=3), dự đoán là lớp nào?","options":["Lớp 0","Lớp 1","Không xác định"],"correct":1,"explanation":"Ba láng giềng gần nhất là C, B, D với 2 phiếu lớp 1 và 1 phiếu lớp 0."},
-{"prompt":"K rất nhỏ (ví dụ 1) thường dẫn tới điều gì?","options":["Ranh giới mượt, dễ underfit","Ranh giới lởm chởm, dễ overfit","Không thay đổi gì"],"correct":1,"explanation":"K nhỏ khiến dự đoán nhạy với từng điểm nhiễu."},
-{"prompt":"Vì sao cần chuẩn hóa đặc trưng trước khi dùng KNN?","options":["Để tăng số mẫu","Đặc trưng thang đo lớn sẽ áp đảo khoảng cách","Để thay đổi nhãn"],"correct":1,"explanation":"KNN dựa vào khoảng cách nên thang đo ảnh hưởng trực tiếp."}]
+[
+ {
+  "prompt": "Trong ví dụ bài học ($q=(3,3)$, $K=3$), dự đoán là lớp nào?",
+  "options": [
+   "Lớp 0",
+   "Lớp 1",
+   "Không xác định"
+  ],
+  "correct": 1,
+  "explanation": "Ba láng giềng gần nhất là C, B, D với 2 phiếu lớp 1 và 1 phiếu lớp 0."
+ },
+ {
+  "prompt": "K rất nhỏ (ví dụ 1) thường dẫn tới điều gì?",
+  "options": [
+   "Ranh giới mượt, dễ underfit",
+   "Ranh giới lởm chởm, dễ overfit",
+   "Không thay đổi gì"
+  ],
+  "correct": 1,
+  "explanation": "K nhỏ khiến dự đoán nhạy với từng điểm nhiễu."
+ },
+ {
+  "prompt": "Vì sao cần chuẩn hóa đặc trưng trước khi dùng KNN?",
+  "options": [
+   "Để tăng số mẫu",
+   "Đặc trưng thang đo lớn sẽ áp đảo khoảng cách",
+   "Để thay đổi nhãn"
+  ],
+  "correct": 1,
+  "explanation": "KNN dựa vào khoảng cách nên thang đo ảnh hưởng trực tiếp."
+ }
+]

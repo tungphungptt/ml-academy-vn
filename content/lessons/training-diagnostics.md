@@ -7,7 +7,7 @@ Kiểm tra một minibatch: shape, dtype, khoảng giá trị, nhãn, số lớp
 Một batch là số mẫu của một cập nhật; một epoch duyệt hết train, không phải một gradient step. Batch size ảnh hưởng số step, nhiễu và thống kê BatchNorm; khi đổi batch size, lịch learning rate tính theo step không còn cùng ý nghĩa. Ghi learning curves train và validation cùng đơn vị/reduction, đừng so tổng loss của hai tập khác kích thước.
 
 ## Khởi tạo và gradient
-Khởi tạo mọi neuron giống nhau giữ đối xứng và cản trở học đặc trưng khác nhau. Với ReLU và giả định độc lập/scale thích hợp, He dùng variance gần $2/fan\_in$; Xavier dùng gần $2/(fan\_in+fan\_out)$ cho các activation phù hợp. Đây là kiểm soát scale ban đầu, không phải bảo đảm hội tụ.
+Khởi tạo mọi neuron giống nhau giữ đối xứng và cản trở học đặc trưng khác nhau. Với ReLU và giả định độc lập/scale thích hợp, He dùng variance gần $2/\operatorname{fan\_in}$; Xavier dùng gần $2/(\operatorname{fan\_in}+\operatorname{fan\_out})$ cho các activation phù hợp. Đây là kiểm soát scale ban đầu, không phải bảo đảm hội tụ.
 
 Jacobian của mạng là tích các Jacobian lớp: có cả ma trận trọng số và đạo hàm activation. Dù $\sigma'(z)\le1/4$, không thể kết luận gradient toàn mạng nhỏ hơn $4^{-L}$ nếu chưa chặn norm trọng số. Theo dõi norm gradient; clipping đặt sau backward, trước optimizer step. Clipping không chữa dữ liệu NaN hoặc nhãn sai, và không sửa vanishing gradients.
 

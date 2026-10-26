@@ -43,8 +43,8 @@ Vòng lặp: zero_grad, forward, loss, backward, step; luôn kiểm tra shape tr
 Một vòng lặp học thực phải có train/validation/test, target có ý nghĩa và baseline. Tensor ngẫu nhiên trong đoạn kiểm tra CNN chỉ chứng minh shape/backward chạy, không chứng minh nhận dạng ảnh. [CNN CPU](/learn/cnn-cpu) dùng Digits thật và checkpoint theo validation; [chẩn đoán huấn luyện](/learn/training-diagnostics) giải thích dtype/axes/NaN. Epoch gồm nhiều minibatch step; zero_grad→forward→loss→backward→clip nếu cần→step. Train và eval không thay thế no_grad; khi lưu best state phải deepcopy hoặc ghi file, không giữ tham chiếu tới tensor tiếp tục bị update.
 
 ## Đáp án và tiêu chí chấm
-1. Conv2d(1,8,3) có 3·3·1·8+8=80 tham số. (2 điểm).
-2. Một phương án: sau pool còn N×8×14×14; Conv(8,16,3,padding=1) cho N×16×14×14. Nếu pool thêm 2 thì còn 16×7×7; phải đổi Linear tương ứng. (3 điểm).
+1. `Conv2d(1,8,3)` có $3\cdot3\cdot1\cdot8+8=80$ tham số. (2 điểm).
+2. Một phương án: sau pool còn $(N,8,14,14)$; Conv(8,16,3,padding=1) cho $(N,16,14,14)$. Nếu pool thêm 2 thì còn $16\times7\times7$; phải đổi Linear tương ứng. (3 điểm).
 3. Có thể dùng CNN CPU trong giáo trình thay cho tải MNIST. Ghi split, baseline, train/val curves, best checkpoint và test cuối. Không chấm đạt chỉ vì code in đúng shape. (5 điểm).
 
 ## Nguồn tham khảo

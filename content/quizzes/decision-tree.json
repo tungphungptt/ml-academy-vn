@@ -1,1 +1,22 @@
-[{"prompt":"Gini của nút có 3 mẫu lớp A và 3 mẫu lớp B là bao nhiêu?","options":["0","0.5","1"],"correct":1,"explanation":"1 − (0.5² + 0.5²) = 0.5."},{"prompt":"Cách chính để giảm overfit của cây là gì?","options":["Tăng độ sâu tối đa","Giới hạn max_depth hoặc min_samples_leaf","Xóa đặc trưng ngẫu nhiên"],"correct":1,"explanation":"Giới hạn độ phức tạp của cây giảm overfit."}]
+[
+ {
+  "prompt": "Gini của nút có 3 mẫu lớp A và 3 mẫu lớp B là bao nhiêu?",
+  "options": [
+   "0",
+   "0.5",
+   "1"
+  ],
+  "correct": 1,
+  "explanation": "$1-(0.5^2+0.5^2)=0.5$."
+ },
+ {
+  "prompt": "Cách chính để giảm overfit của cây là gì?",
+  "options": [
+   "Tăng độ sâu tối đa",
+   "Giới hạn max_depth hoặc min_samples_leaf",
+   "Xóa đặc trưng ngẫu nhiên"
+  ],
+  "correct": 1,
+  "explanation": "Giới hạn độ phức tạp của cây giảm overfit."
+ }
+]

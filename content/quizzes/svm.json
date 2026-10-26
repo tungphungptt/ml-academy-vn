@@ -1,22 +1,22 @@
 [
  {
-  "prompt": "Trong chuẩn tắc SVM (biên f=±1), với w=(3,4), độ rộng giữa hai biên bằng bao nhiêu?",
+  "prompt": "Trong chuẩn tắc SVM (biên $f=\\pm1$), với $w=(3,4)$, độ rộng giữa hai biên bằng bao nhiêu?",
   "options": [
    "0.4",
    "2",
    "5"
   ],
   "correct": 0,
-  "explanation": "Đã cố định scale chuẩn tắc: ||w||=5, độ rộng giữa f=−1 và f=1 bằng 2/5=0.4. Không suy đây là nghiệm tối ưu từ một w tùy ý."
+  "explanation": "Đã cố định scale chuẩn tắc: $\\lVert w\\rVert=5$, độ rộng giữa $f=-1$ và $f=1$ bằng $2/5=0.4$. Không suy đây là nghiệm tối ưu từ một w tùy ý."
  },
  {
-  "prompt": "Hinge loss khi y=1 và f=2 bằng bao nhiêu?",
+  "prompt": "Hinge loss khi $y=1$ và $f=2$ bằng bao nhiêu?",
   "options": [
    "0",
    "1",
    "2"
   ],
   "correct": 0,
-  "explanation": "max(0, 1 − 1·2) = 0."
+  "explanation": "$\\max(0,1-1\\cdot2)=0$."
  }
 ]

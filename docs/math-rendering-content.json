@@ -1,0 +1,1195 @@
+{
+ "baseline": "19596bcb59afdb752d71e9b44de9231f630d08bb",
+ "note": "Structural SSR evidence, not an automated proof of academic correctness. Baseline and current Markdown are both parsed with the current pipeline; before/after counts measure source delimiters.",
+ "summary": {
+  "lessons": 59,
+  "modifiedLessons": 49,
+  "equationsBefore": 901,
+  "equationsAfter": 1171,
+  "displayBefore": 0,
+  "displayAfter": 56,
+  "issues": 0
+ },
+ "lessons": [
+  {
+   "slug": "python-ml",
+   "file": "content/lessons/python-ml.md",
+   "changed": false,
+   "sha256": "43db924e039609d4e73c8a68a44aaedb5c2ad1c6ddc3100556d02d59e7146e86",
+   "before": {
+    "equations": 2,
+    "display": 0,
+    "mathml": 2,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 2,
+    "display": 0,
+    "mathml": 2,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "numpy-pandas",
+   "file": "content/lessons/numpy-pandas.md",
+   "changed": true,
+   "sha256": "c4df388ce1a2d99d263ea61b92f5bdc8104b3f88822f84ed3067279b02747995",
+   "before": {
+    "equations": 11,
+    "display": 0,
+    "mathml": 11,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 19,
+    "display": 0,
+    "mathml": 19,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "vectors-matrices",
+   "file": "content/lessons/vectors-matrices.md",
+   "changed": true,
+   "sha256": "370b0b4e94eb6e36fba5102dc607eb705e48d51935af4e0ad269d22f1bd24d77",
+   "before": {
+    "equations": 25,
+    "display": 0,
+    "mathml": 25,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 27,
+    "display": 1,
+    "mathml": 27,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "linear-algebra-decompositions",
+   "file": "content/lessons/linear-algebra-decompositions.md",
+   "changed": true,
+   "sha256": "65d8f1f99ccae9281f9ff811ac77e82c57f45bff8bdac70ab503d74799208c14",
+   "before": {
+    "equations": 33,
+    "display": 0,
+    "mathml": 33,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 33,
+    "display": 1,
+    "mathml": 33,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "derivatives",
+   "file": "content/lessons/derivatives.md",
+   "changed": true,
+   "sha256": "d1a739bad92e6f9d0f91846cedad18710d3972558b495e9caa3f38e5fef395ae",
+   "before": {
+    "equations": 20,
+    "display": 0,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 29,
+    "display": 1,
+    "mathml": 29,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "probability",
+   "file": "content/lessons/probability.md",
+   "changed": true,
+   "sha256": "77ec1cef4fa7382b7d858e6451e95afa3da4caad96a2f8b01977dd917b4ed80f",
+   "before": {
+    "equations": 17,
+    "display": 0,
+    "mathml": 17,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 24,
+    "display": 1,
+    "mathml": 24,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "statistics",
+   "file": "content/lessons/statistics.md",
+   "changed": true,
+   "sha256": "15f6d7f6c8ead8462dc09f3e686f3217f750efc1cc592d04f0200a6f754aa340",
+   "before": {
+    "equations": 25,
+    "display": 0,
+    "mathml": 25,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 32,
+    "display": 1,
+    "mathml": 32,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "bayesian-estimation",
+   "file": "content/lessons/bayesian-estimation.md",
+   "changed": true,
+   "sha256": "6fe9d68508524b8c171eddb5c5cded74f7d079ef27d3a1e0137b5c87b9efd319",
+   "before": {
+    "equations": 21,
+    "display": 0,
+    "mathml": 21,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 21,
+    "display": 3,
+    "mathml": 21,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "convex-optimization",
+   "file": "content/lessons/convex-optimization.md",
+   "changed": true,
+   "sha256": "f63f76e50d5b167b62c6c5b34dc80461f8d923ed0da1f91c6a7d860a841971df",
+   "before": {
+    "equations": 31,
+    "display": 0,
+    "mathml": 31,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 31,
+    "display": 1,
+    "mathml": 31,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "data-preparation",
+   "file": "content/lessons/data-preparation.md",
+   "changed": false,
+   "sha256": "3f3445861fa52bbef8daffdf8d3fe0e9f31af036062a71be94a63f5fbc3465e1",
+   "before": {
+    "equations": 10,
+    "display": 0,
+    "mathml": 10,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 10,
+    "display": 0,
+    "mathml": 10,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "metrics",
+   "file": "content/lessons/metrics.md",
+   "changed": true,
+   "sha256": "c16ab89dc4d2c64024b39da94aeef9c9a2731f1a773aa04f706611d58cce2f50",
+   "before": {
+    "equations": 11,
+    "display": 0,
+    "mathml": 11,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 21,
+    "display": 1,
+    "mathml": 21,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "ml-intro",
+   "file": "content/lessons/ml-intro.md",
+   "changed": true,
+   "sha256": "c4449946c7177f6ebce92429c81a644ef378daa15b321c6fe41d4b0cf357d1be",
+   "before": {
+    "equations": 1,
+    "display": 0,
+    "mathml": 1,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 2,
+    "display": 0,
+    "mathml": 2,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "linear-regression",
+   "file": "content/lessons/linear-regression.md",
+   "changed": true,
+   "sha256": "67fbede27c2c367a95f607575a29a012aff569e3e1335d279a7915606c2348a0",
+   "before": {
+    "equations": 20,
+    "display": 0,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 48,
+    "display": 5,
+    "mathml": 48,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "loss-functions",
+   "file": "content/lessons/loss-functions.md",
+   "changed": true,
+   "sha256": "bd582709e13bba9631b6fe4099e3e22b9401584fed80c7cd1b7c5a625e215c1b",
+   "before": {
+    "equations": 24,
+    "display": 0,
+    "mathml": 24,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 36,
+    "display": 2,
+    "mathml": 36,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "gradient-descent",
+   "file": "content/lessons/gradient-descent.md",
+   "changed": true,
+   "sha256": "555af95f061240f489e8b99f9fe9fe38ae748809e243ff76e0aba9ad1413e240",
+   "before": {
+    "equations": 31,
+    "display": 0,
+    "mathml": 31,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 34,
+    "display": 2,
+    "mathml": 34,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "ridge-lasso",
+   "file": "content/lessons/ridge-lasso.md",
+   "changed": true,
+   "sha256": "0dedb0ee283bf0d671fd61844790104ec970864a31193fa1d5c3f3c6dc109892",
+   "before": {
+    "equations": 26,
+    "display": 0,
+    "mathml": 26,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 37,
+    "display": 2,
+    "mathml": 37,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "polynomial-regression",
+   "file": "content/lessons/polynomial-regression.md",
+   "changed": true,
+   "sha256": "d7ffa6f3ce79d21cffb843bb839cdc95a93bba220f796be2ab1aba9248ea4cde",
+   "before": {
+    "equations": 18,
+    "display": 0,
+    "mathml": 18,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 20,
+    "display": 1,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "bias-variance",
+   "file": "content/lessons/bias-variance.md",
+   "changed": true,
+   "sha256": "adbf03faeeee73c4d6c1636bffc74d2e271d0f611e7e33773319df9ad85f55c1",
+   "before": {
+    "equations": 14,
+    "display": 0,
+    "mathml": 14,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 23,
+    "display": 1,
+    "mathml": 23,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "logistic-regression",
+   "file": "content/lessons/logistic-regression.md",
+   "changed": true,
+   "sha256": "87a1567397fb05c99849c41908af7e38a175932007638ef84de90f2ef92066c5",
+   "before": {
+    "equations": 24,
+    "display": 0,
+    "mathml": 24,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 29,
+    "display": 1,
+    "mathml": 29,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "softmax-regression",
+   "file": "content/lessons/softmax-regression.md",
+   "changed": true,
+   "sha256": "b6d822a56a30c53a1e3117c167e2c3a4e9e2fc55dd281b46316846daa855e826",
+   "before": {
+    "equations": 19,
+    "display": 0,
+    "mathml": 19,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 28,
+    "display": 1,
+    "mathml": 28,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "knn",
+   "file": "content/lessons/knn.md",
+   "changed": true,
+   "sha256": "c8d88fb284397913d9d3805cd53463df8c252768207b7aacbb72ed3887dd0e64",
+   "before": {
+    "equations": 29,
+    "display": 0,
+    "mathml": 29,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 32,
+    "display": 2,
+    "mathml": 32,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "decision-tree",
+   "file": "content/lessons/decision-tree.md",
+   "changed": true,
+   "sha256": "ec95bbd55cdad13e3369e063c0172c086506e1652eddd116e8eec7532b6b85ba",
+   "before": {
+    "equations": 10,
+    "display": 0,
+    "mathml": 10,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 14,
+    "display": 1,
+    "mathml": 14,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "naive-bayes",
+   "file": "content/lessons/naive-bayes.md",
+   "changed": true,
+   "sha256": "bc70775f43ef7b34428561266499c34ff3dfc82d7d6d37d26b2b54ebef788ae5",
+   "before": {
+    "equations": 11,
+    "display": 0,
+    "mathml": 11,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 13,
+    "display": 1,
+    "mathml": 13,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "svm",
+   "file": "content/lessons/svm.md",
+   "changed": true,
+   "sha256": "1fc7cb1a5d65c3622c364143b3211382c8e1bc887e25c6499010c4e5c7b61fa5",
+   "before": {
+    "equations": 27,
+    "display": 0,
+    "mathml": 27,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 38,
+    "display": 3,
+    "mathml": 38,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "random-forest",
+   "file": "content/lessons/random-forest.md",
+   "changed": true,
+   "sha256": "bf7a6e69ec9b31129e572376f39f77f743a988a47578f0bd201d02bcd41030f0",
+   "before": {
+    "equations": 12,
+    "display": 0,
+    "mathml": 12,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 18,
+    "display": 0,
+    "mathml": 18,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "k-means",
+   "file": "content/lessons/k-means.md",
+   "changed": true,
+   "sha256": "b34a30315a692cbf4fc87807957d58ba78e90544bde5fd1ba5feacf4b896d91b",
+   "before": {
+    "equations": 30,
+    "display": 0,
+    "mathml": 30,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 36,
+    "display": 1,
+    "mathml": 36,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "pca",
+   "file": "content/lessons/pca.md",
+   "changed": true,
+   "sha256": "d9adf905fcd73d84f5204fe95f559f13f340806a27fe27dcfa7e009fd4b53262",
+   "before": {
+    "equations": 13,
+    "display": 0,
+    "mathml": 13,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 16,
+    "display": 1,
+    "mathml": 16,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "lda",
+   "file": "content/lessons/lda.md",
+   "changed": true,
+   "sha256": "5e76249408595ec6a6a0e3ad339d208efd813829b28ab5f2dd9eda961eedf929",
+   "before": {
+    "equations": 15,
+    "display": 0,
+    "mathml": 15,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 15,
+    "display": 2,
+    "mathml": 15,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "gmm",
+   "file": "content/lessons/gmm.md",
+   "changed": true,
+   "sha256": "b197715478bacd68f0d0e070c863126f990a574aae7a125d05b13eeb2a7d3a67",
+   "before": {
+    "equations": 18,
+    "display": 0,
+    "mathml": 18,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 23,
+    "display": 1,
+    "mathml": 23,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "anomaly-detection",
+   "file": "content/lessons/anomaly-detection.md",
+   "changed": true,
+   "sha256": "aeef89a5ec113c29988c36016bb8695b5c15b6b21357efa621135b2068547963",
+   "before": {
+    "equations": 16,
+    "display": 0,
+    "mathml": 16,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 21,
+    "display": 2,
+    "mathml": 21,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "cross-validation",
+   "file": "content/lessons/cross-validation.md",
+   "changed": true,
+   "sha256": "52da2975eeeec5fe7e020871652d630333849b8014685c82f805de47e4f0c0cf",
+   "before": {
+    "equations": 12,
+    "display": 0,
+    "mathml": 12,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 12,
+    "display": 1,
+    "mathml": 12,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "feature-leakage",
+   "file": "content/lessons/feature-leakage.md",
+   "changed": false,
+   "sha256": "23cfc7e360f491b507cc30a4b0e48482d4972e0fea51189d42a5e1ec816b762a",
+   "before": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "tabular-pipeline",
+   "file": "content/lessons/tabular-pipeline.md",
+   "changed": false,
+   "sha256": "14d295896eb6412e61b93e0a7c71f9b36711c7f6de08eae979a38e8748a4f726",
+   "before": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "recommendation",
+   "file": "content/lessons/recommendation.md",
+   "changed": true,
+   "sha256": "21d5b3d61c46750f70be12386c382c8ec2badaaf73404ac8b4c681d68a37ab91",
+   "before": {
+    "equations": 22,
+    "display": 0,
+    "mathml": 22,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 23,
+    "display": 1,
+    "mathml": 23,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "hyperparameter-tuning",
+   "file": "content/lessons/hyperparameter-tuning.md",
+   "changed": false,
+   "sha256": "05cb58664c9965ba1ceeda1642ba9cb82a15eef174d8f18108f76951261f7a7e",
+   "before": {
+    "equations": 9,
+    "display": 0,
+    "mathml": 9,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 9,
+    "display": 0,
+    "mathml": 9,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "ml-project-workflow",
+   "file": "content/lessons/ml-project-workflow.md",
+   "changed": false,
+   "sha256": "63f12e4d683986844056feaeb9b040a9962b125cfe8867a37604d423578a9a9b",
+   "before": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "model-deployment",
+   "file": "content/lessons/model-deployment.md",
+   "changed": false,
+   "sha256": "50ce20ff4e6fcb7e694e752892d819826fc846e13b525e1bff33e294d105f338",
+   "before": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 0,
+    "display": 0,
+    "mathml": 0,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "perceptron",
+   "file": "content/lessons/perceptron.md",
+   "changed": true,
+   "sha256": "644e3cd78d0214ec2badb78c615adebdbf7646819fdbe8e1e122bbbddff98a6b",
+   "before": {
+    "equations": 14,
+    "display": 0,
+    "mathml": 14,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 25,
+    "display": 1,
+    "mathml": 25,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "activations",
+   "file": "content/lessons/activations.md",
+   "changed": true,
+   "sha256": "392994821e3d648d061c16602f9754a12ca86e0bfa1c11bf7952a3770fd8cf3d",
+   "before": {
+    "equations": 16,
+    "display": 0,
+    "mathml": 16,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 18,
+    "display": 1,
+    "mathml": 18,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "mlp",
+   "file": "content/lessons/mlp.md",
+   "changed": true,
+   "sha256": "a532daad8e3df40c66c678776c07daa5d1f64bed28cdfef0fad5aa2ede3c33c0",
+   "before": {
+    "equations": 20,
+    "display": 0,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 30,
+    "display": 1,
+    "mathml": 30,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "backpropagation",
+   "file": "content/lessons/backpropagation.md",
+   "changed": true,
+   "sha256": "d5c484e3d4ce4cd54abc89663b964dfd5e2501fa9a1d228af06936f92dcc62fb",
+   "before": {
+    "equations": 16,
+    "display": 0,
+    "mathml": 16,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 20,
+    "display": 1,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "autograd",
+   "file": "content/lessons/autograd.md",
+   "changed": true,
+   "sha256": "107bdc0c484604c99ddc75e8077ceb05b18de77df9dbb7f71d2fa9b678f2bd54",
+   "before": {
+    "equations": 11,
+    "display": 0,
+    "mathml": 11,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 16,
+    "display": 0,
+    "mathml": 16,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "optimizers",
+   "file": "content/lessons/optimizers.md",
+   "changed": true,
+   "sha256": "e5c9e98b9b7b10b84a950f2ff9a29c31c98703d0da29813b12746b020968bdd2",
+   "before": {
+    "equations": 27,
+    "display": 0,
+    "mathml": 27,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 37,
+    "display": 1,
+    "mathml": 37,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "training-diagnostics",
+   "file": "content/lessons/training-diagnostics.md",
+   "changed": true,
+   "sha256": "d5c8911992734076313a31c1f982ff5d0143830ff58df410333058af7dc18954",
+   "before": {
+    "equations": 8,
+    "display": 0,
+    "mathml": 8,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 8,
+    "display": 0,
+    "mathml": 8,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "dl-regularization",
+   "file": "content/lessons/dl-regularization.md",
+   "changed": true,
+   "sha256": "33a42a938d6bee8ac19624cbb1e4639529218e3902ac5979a7ed490624027dcd",
+   "before": {
+    "equations": 17,
+    "display": 0,
+    "mathml": 17,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 20,
+    "display": 0,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "pytorch-practice",
+   "file": "content/lessons/pytorch-practice.md",
+   "changed": true,
+   "sha256": "54988605194786eb5b7a4073dcb83a8b66e776870d4698a0bfb2aeb3fd34687f",
+   "before": {
+    "equations": 3,
+    "display": 0,
+    "mathml": 3,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 7,
+    "display": 0,
+    "mathml": 7,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "embeddings",
+   "file": "content/lessons/embeddings.md",
+   "changed": true,
+   "sha256": "72a7e6e03c36e996194e3507bbc29c3565f819340a1b1ab7b20c6b5d7796fb2d",
+   "before": {
+    "equations": 7,
+    "display": 0,
+    "mathml": 7,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 8,
+    "display": 1,
+    "mathml": 8,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "cnn",
+   "file": "content/lessons/cnn.md",
+   "changed": true,
+   "sha256": "5348cc9c6d74259ae5b423a9c5b7afe08fc1ddf5e8ea6987040bc41c7a8a6bfe",
+   "before": {
+    "equations": 21,
+    "display": 0,
+    "mathml": 21,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 30,
+    "display": 2,
+    "mathml": 30,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "cnn-practice",
+   "file": "content/lessons/cnn-practice.md",
+   "changed": false,
+   "sha256": "cb3bb835f54b0a7484303c40cb792d35f215e56fa7a40c62f20acae2b08d474b",
+   "before": {
+    "equations": 11,
+    "display": 0,
+    "mathml": 11,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 11,
+    "display": 0,
+    "mathml": 11,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "cnn-cpu",
+   "file": "content/lessons/cnn-cpu.md",
+   "changed": false,
+   "sha256": "d32a19826683fd8cac891a2f58a4093949b707ce9429f4cd4481a8e6b67f8e44",
+   "before": {
+    "equations": 7,
+    "display": 0,
+    "mathml": 7,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 7,
+    "display": 0,
+    "mathml": 7,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "rnn-lstm",
+   "file": "content/lessons/rnn-lstm.md",
+   "changed": true,
+   "sha256": "0932b9d111a0fc7c37c084ad077de57b0ed3570f868c05764940e9cf1ac8dafc",
+   "before": {
+    "equations": 19,
+    "display": 0,
+    "mathml": 19,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 26,
+    "display": 2,
+    "mathml": 26,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "sequence-models-cpu",
+   "file": "content/lessons/sequence-models-cpu.md",
+   "changed": true,
+   "sha256": "f1917f38d3018a300d4629cfd6a8c9ba72a341ba79b654a0269b891282338541",
+   "before": {
+    "equations": 5,
+    "display": 0,
+    "mathml": 5,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 8,
+    "display": 0,
+    "mathml": 8,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "attention-transformer",
+   "file": "content/lessons/attention-transformer.md",
+   "changed": true,
+   "sha256": "10c71c973425c2df9d5cd9a6bdcf3bacecd35d5e9d39694606622fd574795f2f",
+   "before": {
+    "equations": 20,
+    "display": 0,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 39,
+    "display": 1,
+    "mathml": 39,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "transformer-architecture",
+   "file": "content/lessons/transformer-architecture.md",
+   "changed": true,
+   "sha256": "c158267e31ac2232f86f655225b9bb691f2d3d12c75e670848b2bc819e912f19",
+   "before": {
+    "equations": 20,
+    "display": 0,
+    "mathml": 20,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 22,
+    "display": 1,
+    "mathml": 22,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "autoencoder",
+   "file": "content/lessons/autoencoder.md",
+   "changed": true,
+   "sha256": "fb028d0db06207c19132ce1ab7673ddaf6e899fcac767dae5d5b37be1da894d0",
+   "before": {
+    "equations": 18,
+    "display": 0,
+    "mathml": 18,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 18,
+    "display": 1,
+    "mathml": 18,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "transfer-learning",
+   "file": "content/lessons/transfer-learning.md",
+   "changed": true,
+   "sha256": "abc358189b95d9a06d7fc34768f41669e5ca2d2ed496bbaee8a4fcc3936974d4",
+   "before": {
+    "equations": 1,
+    "display": 0,
+    "mathml": 1,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 3,
+    "display": 0,
+    "mathml": 3,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "gan-vae-diffusion",
+   "file": "content/lessons/gan-vae-diffusion.md",
+   "changed": true,
+   "sha256": "25423d79fde9dae834da230c7f258e933acf4ca6f07159440c2b9817b13f88c8",
+   "before": {
+    "equations": 24,
+    "display": 0,
+    "mathml": 24,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 30,
+    "display": 1,
+    "mathml": 30,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "text-classification",
+   "file": "content/lessons/text-classification.md",
+   "changed": false,
+   "sha256": "68c90cc070ac2d0b82a81590392cf84dee2522a9889ea17be799f84eb462fa95",
+   "before": {
+    "equations": 3,
+    "display": 0,
+    "mathml": 3,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 3,
+    "display": 0,
+    "mathml": 3,
+    "invalid": false,
+    "unrendered": false
+   }
+  },
+  {
+   "slug": "neural-recommendation",
+   "file": "content/lessons/neural-recommendation.md",
+   "changed": true,
+   "sha256": "bcb96604577a49056fd5e3eb8f4fe5fb954d91d60b79e40aa2a7eb5482af88fe",
+   "before": {
+    "equations": 6,
+    "display": 0,
+    "mathml": 6,
+    "invalid": false,
+    "unrendered": false
+   },
+   "after": {
+    "equations": 9,
+    "display": 1,
+    "mathml": 9,
+    "invalid": false,
+    "unrendered": false
+   }
+  }
+ ]
+}

@@ -6,7 +6,9 @@ Một lần chia train/test cho ước lượng nhiễu, đặc biệt khi dữ 
 
 ## Công thức
 Chia dữ liệu thành $K$ phần (fold). Với mỗi $k=1..K$, huấn luyện trên $K-1$ fold, đánh giá trên fold còn lại:
-$$\text{CV}=\frac1K\sum_{k=1}^{K}\text{score}_k$$
+$$
+\text{CV}=\frac1K\sum_{k=1}^{K}\text{score}_k
+$$
 Dùng `StratifiedKFold` cho phân loại để giữ tỉ lệ lớp. Chọn siêu tham số bằng CV trên tập train; giữ riêng một tập test cuối cùng chỉ để đánh giá một lần.
 
 ![Sơ đồ 5-fold cross-validation](/img/kfold.svg)

@@ -5,8 +5,12 @@
 Phát hiện giao dịch gian lận, lỗi cảm biến, hoặc dòng log tấn công mạng: các mẫu hiếm khác hẳn phần còn lại và thường không có nhãn.
 
 ## Công thức
-$$z=\frac{x-\mu}{\sigma},\qquad \text{IQR}=Q_3-Q_1,\qquad \text{ngoại lai nếu } x<Q_1-1.5\,\text{IQR}\ \text{hoặc}\ x>Q_3+1.5\,\text{IQR}$$
-$$z^{\text{rob}}=\frac{0.6745\,(x-\operatorname{median})}{\operatorname{MAD}},\qquad \operatorname{MAD}=\operatorname{median}\big(|x_i-\operatorname{median}|\big)$$
+$$
+z=\frac{x-\mu}{\sigma},\qquad \text{IQR}=Q_3-Q_1,\qquad \text{ngoại lai nếu } x<Q_1-1.5\,\text{IQR}\ \text{hoặc}\ x>Q_3+1.5\,\text{IQR}
+$$
+$$
+z^{\text{rob}}=\frac{0.6745\,(x-\operatorname{median})}{\operatorname{MAD}},\qquad \operatorname{MAD}=\operatorname{median}\big(|x_i-\operatorname{median}|\big)
+$$
 Quy tắc thường dùng: $|z|>3$ là bất thường. Vấn đề: $\mu$ và $\sigma$ bị chính ngoại lai kéo lệch.
 
 ![Ngoại lai trên trục số](/img/anomaly-detection.svg)
@@ -36,10 +40,10 @@ Isolation Forest, One-Class SVM, Autoencoder (lỗi tái tạo lớn nghĩa là 
 z-score nhạy với chính ngoại lai; IQR và median/MAD bền vững hơn.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-Một outlier thống kê có thể là lỗi đo hoặc sự kiện quan trọng; gắn cờ trước khi xóa. Fit các ngưỡng/IQR/scale từ train hoặc dữ liệu tham chiếu phù hợp, không dùng toàn bộ test. Với MAD=0 phải dùng fallback/flag hoặc báo không áp dụng công thức, không chia cho 0. IsolationForest cho decision score không phải probability đã hiệu chỉnh; predict trả −1 cho bất thường. Chọn threshold cần validation có ý nghĩa nghiệp vụ; trong lớp hiếm báo precision/recall/PR thay vì chỉ accuracy.
+Một outlier thống kê có thể là lỗi đo hoặc sự kiện quan trọng; gắn cờ trước khi xóa. Fit các ngưỡng/IQR/scale từ train hoặc dữ liệu tham chiếu phù hợp, không dùng toàn bộ test. Với $\operatorname{MAD}=0$ phải dùng fallback/flag hoặc báo không áp dụng công thức, không chia cho 0. IsolationForest cho decision score không phải probability đã hiệu chỉnh; predict trả −1 cho bất thường. Chọn threshold cần validation có ý nghĩa nghiệp vụ; trong lớp hiếm báo precision/recall/PR thay vì chỉ accuracy.
 
 ## Đáp án và tiêu chí chấm
-1. Percentile tuyến tính mặc định cho (1,2,3,4,100): Q1=2, Q3=4, IQR=2, ngưỡng trên=7, nên 100 bị gắn cờ. (2 điểm).
+1. Percentile tuyến tính mặc định cho (1,2,3,4,100): $Q_1=2$, $Q_3=4$, $\operatorname{IQR}=2$, ngưỡng trên $=7$, nên 100 bị gắn cờ. (2 điểm).
 2. Hai ngoại lai có thể cùng làm mean/std tăng và che nhau. Báo cả z-score thường và median/MAD, ghi convention percentile. (3 điểm).
 3. Sinh dữ liệu 2D có nhãn chỉ để đánh giá, fit detector trên train đã định nghĩa (normal-only hoặc contaminated phải nói rõ), chọn threshold trên validation và vẽ score/prediction đúng quy ước −1. (5 điểm).
 

@@ -2,7 +2,7 @@
  {
   "id": "linear_regression",
   "title": "Linear Regression",
-  "description": "Hồi quy tuyến tính bằng Gradient Descent trên dữ liệu y = 2x.",
+  "description": "Hồi quy tuyến tính với $\\hat y=wx+b$, tối thiểu hóa $L=\\frac1N\\sum_i(\\hat y_i-y_i)^2$ trên dữ liệu $y=2x$. So sánh bản NumPy với scikit-learn.",
   "runtime": "pyodide",
   "variants": [
    "scratch",
@@ -39,7 +39,11 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "linear-regression",
+   "gradient-descent"
+  ]
  },
  {
   "id": "knn",
@@ -81,7 +85,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "knn"
+  ]
  },
  {
   "id": "kmeans",
@@ -123,7 +130,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "k-means"
+  ]
  },
  {
   "id": "logistic_regression",
@@ -165,7 +175,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "logistic-regression"
+  ]
  },
  {
   "id": "perceptron",
@@ -207,7 +220,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "perceptron"
+  ]
  },
  {
   "id": "mlp_torch",
@@ -235,7 +251,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "mlp"
+  ]
  },
  {
   "id": "softmax_regression",
@@ -277,7 +296,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "softmax-regression"
+  ]
  },
  {
   "id": "tabular_pipeline",
@@ -305,7 +327,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "tabular-pipeline"
+  ]
  },
  {
   "id": "cnn_cpu",
@@ -333,7 +358,11 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "cnn-cpu",
+   "cnn"
+  ]
  },
  {
   "id": "sequence_cpu",
@@ -361,7 +390,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "sequence-models-cpu"
+  ]
  },
  {
   "id": "neural_recommendation",
@@ -389,7 +421,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "neural-recommendation"
+  ]
  },
  {
   "id": "autoencoder_cpu",
@@ -417,7 +452,10 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "autoencoder"
+  ]
  },
  {
   "id": "transfer_cpu",
@@ -445,6 +483,9 @@
      "torch": "2.14.1+cpu"
     }
    }
-  }
+  },
+  "lessonSlugs": [
+   "transfer-learning"
+  ]
  }
 ]

@@ -85,3 +85,25 @@ nav a.cur{background:var(--acbg);color:var(--ac);font-weight:600}.burger{display
 .expected{background:color-mix(in srgb,var(--ok) 12%,transparent);border-left:4px solid var(--ok);padding:.5rem .9rem;border-radius:0 10px 10px 0}.expected::before{content:"✓ ";color:var(--ok);font-weight:700}
 .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.5rem}@media(max-width:600px){.foot{grid-template-columns:1fr}}
 @media print{nav,footer,.toc-fixed,.toc-inline,.topbar,.totop,.pager{display:none!important}.lesson{border:0}}
+/* Reading surfaces: contain wide equations/code without clipping the page. */
+main,.lesson,.card,fieldset{min-width:0}
+.lesson{line-height:1.85;overflow-wrap:break-word}
+.lesson p{margin:.9rem 0}.lesson h2,.lesson h3{scroll-margin-top:6rem}
+.lesson .katex{font-size:1.08em}.katex{color:inherit}
+.katex-display{display:block;max-width:100%;margin:1.4rem 0;padding:.9rem .4rem;overflow-x:auto;overflow-y:hidden;border-block:1px solid var(--bd);background:color-mix(in srgb,var(--acbg) 28%,var(--bg2));border-radius:8px}
+.katex-display>.katex{display:block;width:max-content;min-width:100%;text-align:center}
+.katex .katex-mathml{border:0} /* MathML remains available to screen readers. */
+.breadcrumb{font-size:.88rem;color:var(--mut);margin-top:0;overflow-wrap:anywhere}
+nav[aria-label="Kiến thức tiên quyết"]{position:static;display:block;padding:.2rem .8rem;background:var(--acbg);border:1px solid var(--bd);border-radius:10px;backdrop-filter:none;z-index:auto}
+.reading-estimate{font-size:.85rem;line-height:1.6}
+.row2{flex-wrap:wrap}.row2 h1{flex:1 1 20rem}.row2 button{flex-shrink:0}
+.opt{display:flex;align-items:baseline;gap:.5rem;padding:.6rem}.opt input{flex-shrink:0}
+legend{max-width:100%;overflow-wrap:break-word}fieldset{margin-block:1.5rem}
+.filters{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:1rem 0}
+.filters input{flex:1 1 14rem;min-width:0}.filters select{max-width:100%}
+.lab-description{max-width:70ch}select{max-width:100%}
+.codeblock{max-width:100%}.lesson a{overflow-wrap:anywhere}
+.lesson blockquote{color:var(--fg);font-size:.96em}
+.lesson figure{margin:1.4rem 0}.lesson figure img{margin:.5rem auto}.lesson figcaption{font-size:.85rem;text-align:center;color:var(--mut);line-height:1.5}
+@media(min-width:1300px) and (max-width:1449px){.toc-fixed{display:none}.toc-inline{display:block}}
+@media(max-width:600px){main{padding:1.1rem .8rem 2rem}.lesson{padding:1rem .85rem}.lesson .katex{font-size:1em}.katex-display{margin:1.1rem 0}.pager>*{max-width:100%;white-space:normal}.filters>*{max-width:100%}legend{font-size:.95rem}}

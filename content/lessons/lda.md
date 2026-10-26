@@ -6,12 +6,16 @@ Hai lớp có thể kéo dài rất mạnh theo trục ngang nhưng khác nhau c
 
 ## Fisher criterion và giới hạn số chiều
 Với trung bình lớp $\mu_c$ và trung bình chung $\mu$:
-$$S_W=\sum_c\sum_{i:y_i=c}(x_i-\mu_c)(x_i-\mu_c)^\top,\quad S_B=\sum_c n_c(\mu_c-\mu)(\mu_c-\mu)^\top.$$
+$$
+S_W=\sum_c\sum_{i:y_i=c}(x_i-\mu_c)(x_i-\mu_c)^\top,\quad S_B=\sum_c n_c(\mu_c-\mu)(\mu_c-\mu)^\top.
+$$
 Với hai lớp, tối đa hóa tỷ số $w^\top S_Bw/(w^\top S_Ww)$; nếu $S_W$ khả nghịch, hướng tối ưu tỷ lệ với $S_W^{-1}(\mu_1-\mu_0)$. Nên giải hệ thay vì tự nghịch đảo. Với $C$ lớp, số chiều phân biệt không quá $\min(d,C-1)$ vì rank của $S_B$ không quá $C-1$.
 
 ## LDA như classifier xác suất
 Giả sử các lớp có phân phối Gaussian và cùng covariance $\Sigma$. So sánh log posterior cho điểm tuyến tính:
-$$\delta_c(x)=x^\top\Sigma^{-1}\mu_c-\tfrac12\mu_c^\top\Sigma^{-1}\mu_c+\log\pi_c.$$
+$$
+\delta_c(x)=x^\top\Sigma^{-1}\mu_c-\tfrac12\mu_c^\top\Sigma^{-1}\mu_c+\log\pi_c.
+$$
 Chọn lớp có $\delta_c$ lớn nhất. Nếu cho phép covariance khác nhau theo lớp, ta được QDA với ranh giới bậc hai, không còn giả định LDA. Số chiều lớn/ít mẫu có thể làm covariance suy biến; shrinkage cải thiện ước lượng nhưng vẫn cần validation.
 
 ## Thực hành CPU trên Iris

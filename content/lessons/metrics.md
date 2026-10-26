@@ -6,7 +6,9 @@ Mô hình đúng 99% có thể vô dụng nếu chỉ 1% mẫu là ca bệnh. C�
 
 ## Công thức
 Từ confusion matrix (TP, FP, FN, TN):
-$$\text{Acc}=\frac{TP+TN}{N},\quad P=\frac{TP}{TP+FP},\quad R=\frac{TP}{TP+FN},\quad F_1=\frac{2PR}{P+R}$$
+$$
+\text{Acc}=\frac{TP+TN}{N},\quad P=\frac{TP}{TP+FP},\quad R=\frac{TP}{TP+FN},\quad F_1=\frac{2PR}{P+R}
+$$
 $P$ (precision): trong các mẫu dự đoán dương, bao nhiêu đúng. $R$ (recall): trong các mẫu dương thật, bắt được bao nhiêu.
 
 ![Ma trận nhầm lẫn](/img/confusion-matrix.svg)
@@ -36,12 +38,12 @@ Chỉ dùng accuracy khi dữ liệu mất cân bằng; tính metric trên tập
 Chọn metric theo chi phí của từng loại sai lầm, luôn đánh giá trên tập test.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-Với hồi quy, MAE có cùng đơn vị target, MSE có đơn vị bình phương, RMSE lấy căn; R² so với baseline mean và có thể âm trên test. Với classification, ROC-AUC xếp hạng score, không đo trực tiếp calibration hay chất lượng tại một threshold; dùng score/probability chứ không chỉ nhãn cứng. PR-AUC thường hữu ích khi lớp dương hiếm nhưng vẫn phụ thuộc prevalence và convention nội suy. Macro F1 cân các lớp như nhau, weighted F1 cân theo support. Threshold, chi phí FP/FN và positive label phải được định nghĩa trước đánh giá. Trong dataset breast-cancer của sklearn, 0 là malignant và 1 là benign: recall lớp 1 không tự là độ nhạy phát hiện ung thư.
+Với hồi quy, MAE có cùng đơn vị target, MSE có đơn vị bình phương, RMSE lấy căn; $R^2$ so với baseline mean và có thể âm trên test. Với classification, ROC-AUC xếp hạng score, không đo trực tiếp calibration hay chất lượng tại một threshold; dùng score/probability chứ không chỉ nhãn cứng. PR-AUC thường hữu ích khi lớp dương hiếm nhưng vẫn phụ thuộc prevalence và convention nội suy. Macro F1 cân các lớp như nhau, weighted F1 cân theo support. Threshold, chi phí FP/FN và positive label phải được định nghĩa trước đánh giá. Trong dataset breast-cancer của sklearn, 0 là malignant và 1 là benign: recall lớp 1 không tự là độ nhạy phát hiện ung thư.
 
 ## Đáp án và tiêu chí chấm
-1. Nếu giữ TP=40, FP=10, TN=30 và đổi FN=10 thì N=90: accuracy=70/90≈0.7778, precision=recall=F1=0.8. Không lén giữ N=100. Nếu giữ N bằng cách chuyển FN thành TP thì đó là một bảng nhầm lẫn khác. (2 điểm).
+1. Nếu giữ $TP=40,FP=10,TN=30$ và đổi $FN=10$ thì $N=90$: accuracy $=70/90\approx0.7778$, precision $=$ recall $=F_1=0.8$. Không lén giữ $N=100$. Nếu giữ N bằng cách chuyển FN thành TP thì đó là một bảng nhầm lẫn khác. (2 điểm).
 2. Dùng confusion_matrix với thứ tự labels rõ ràng và split riêng; đối chiếu tổng support với số mẫu test. (3 điểm).
-3. Baseline toàn 0 trên 1% dương có accuracy=99%, recall dương=0. Một đánh giá đạt cần báo prevalence, confusion matrix và metric dương/threshold, không chỉ accuracy. (5 điểm).
+3. Baseline toàn 0 trên 1% dương có accuracy $=99\%$, recall dương $=0$. Một đánh giá đạt cần báo prevalence, confusion matrix và metric dương/threshold, không chỉ accuracy. (5 điểm).
 
 ## Nguồn tham khảo
 - [scikit-learn: Model evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html).

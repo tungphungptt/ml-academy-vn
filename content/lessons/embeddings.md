@@ -6,7 +6,9 @@ Mô hình chỉ xử lý số, nên cần biến câu chữ thành vector sao ch
 
 ## Công thức
 **Bag-of-Words:** đếm số lần mỗi từ trong từ điển xuất hiện. **TF-IDF:** nhấn mạnh từ đặc trưng của văn bản và giảm trọng số từ xuất hiện ở hầu hết văn bản:
-$$\text{tfidf}(t,d)=\text{tf}(t,d)\cdot\text{idf}(t),\qquad \text{idf}(t)=\ln\frac{1+N}{1+\text{df}(t)}+1$$
+$$
+\text{tfidf}(t,d)=\text{tf}(t,d)\cdot\text{idf}(t),\qquad \text{idf}(t)=\ln\frac{1+N}{1+\text{df}(t)}+1
+$$
 (đúng với cài đặt mặc định của scikit-learn; sau đó vector được chuẩn hóa L2). **Embedding:** mỗi từ ứng với một hàng của ma trận $E\in\mathbb R^{V\times d}$ được học trong lúc huấn luyện; tra bảng tương đương nhân vector one-hot với $E$. Độ giống nhau đo bằng cosine.
 
 ![Ma trận tương đồng TF-IDF](/img/embeddings.svg)
@@ -40,7 +42,7 @@ TF-IDF biểu diễn văn bản theo từ trùng khớp; embedding là bảng tr
 TF-IDF là một biểu diễn sparse phụ thuộc vocabulary/IDF fit trên train; token chưa thấy có thể bị bỏ qua. Embedding là bảng vector được tối ưu theo một objective cụ thể, không tự có ngữ nghĩa nếu chưa huấn luyện. Word2vec/CBOW/skip-gram học quan hệ ngữ cảnh theo objective khác supervised classifier; embedding contextual của Transformer còn phụ thuộc cả câu. Padding ID và unknown ID cần chính sách rõ, đặc biệt khi tính loss/pooling. [Lab embedding recommender](/learn/neural-recommendation) thực sự học các hàng user/item, nhưng không được gọi nhầm là word embedding hoặc biểu diễn có ngữ nghĩa từng chiều.
 
 ## Đáp án và tiêu chí chấm
-1. Cosine=(1·1+0·1)/(1·sqrt(2))=1/sqrt(2)≈0.7071. (2 điểm).
+1. $\cos\theta=\frac{1\cdot1+0\cdot1}{1\cdot\sqrt2}=\frac1{\sqrt2}\approx0.7071$. (2 điểm).
 2. Nếu đang đánh giá, transform câu mới bằng vectorizer fit train; chỉ refit khi chủ động huấn luyện phiên bản mới và đánh giá lại. So số feature và zero-vector cho câu không có token biết trước. (3 điểm).
 3. Dùng pipeline TF-IDF+Logistic Regression, split theo nguồn người viết/thời gian nếu cần, metric macro F1 cho imbalance, chọn n-gram/threshold bằng train CV; không tuyên bố toy 8 câu là benchmark. (5 điểm).
 

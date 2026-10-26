@@ -40,7 +40,7 @@ Học bán giám sát kết hợp ít dữ liệu có nhãn và nhiều dữ li�
 
 ## Đáp án và tiêu chí chấm
 1. Năm ví dụ thuộc đúng ba nhóm trong đề: spam và dự đoán vỡ nợ có nhãn là classification; giá nhà và lượng điện tiêu thụ liên tục là regression; nhóm khách hàng chưa có nhãn là clustering. Nêu rõ target/nhãn của mỗi ví dụ. (2 điểm).
-2. Luôn đoán lớp 0 cho dữ liệu 90% lớp 0 được accuracy=0.9 nhưng recall lớp 1 bằng 0. Chưa chứng minh mô hình hữu ích. (3 điểm).
+2. Luôn đoán lớp 0 cho dữ liệu 90% lớp 0 được accuracy $=0.9$ nhưng recall lớp 1 bằng 0. Chưa chứng minh mô hình hữu ích. (3 điểm).
 3. Một đề xuất đạt cần nêu ai dùng dự đoán, feature nào có sẵn lúc predict, target/label tạo ra sao, cách split tránh leakage và baseline liên quan; không chấm theo việc gọi tên một mạng sâu. (5 điểm).
 
 ## Nguồn tham khảo

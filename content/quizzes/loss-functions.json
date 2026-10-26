@@ -7,17 +7,17 @@
    "Cả hai như nhau"
   ],
   "correct": 0,
-  "explanation": "MSE bình phương nên 10² = 100 áp đảo; MAE chỉ cộng 10."
+  "explanation": "MSE bình phương nên $10^2=100$ áp đảo; MAE chỉ cộng 10."
  },
  {
-  "prompt": "BCE khi y=0 và p=0.8 xấp xỉ bao nhiêu?",
+  "prompt": "BCE khi $y=0$ và $p=0.8$ xấp xỉ bao nhiêu?",
   "options": [
    "1.6094",
    "0.2231",
    "0"
   ],
   "correct": 0,
-  "explanation": "−ln(1−0.8) = −ln 0.2 ≈ 1.6094."
+  "explanation": "$-\\ln(1-0.8)=-\\ln0.2\\approx1.6094$."
  },
  {
   "prompt": "Dùng MSE trên probability cho classification có bị toán học cấm không?",
