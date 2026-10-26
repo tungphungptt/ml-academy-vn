@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** không.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Python cho ML.
 **Mục tiêu:** phân biệt AI, Machine Learning và Deep Learning, và nhận diện các dạng bài toán học máy.
 
 ## Vấn đề thực tế
@@ -34,3 +34,15 @@ Dùng ML khi luật đơn giản đã đủ; đánh giá trên chính dữ liệ
 
 ## Tóm tắt
 ML học quy luật từ dữ liệu; luôn so mô hình với baseline.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Học bán giám sát kết hợp ít dữ liệu có nhãn và nhiều dữ liệu chưa nhãn; pseudo-label là một cách nhưng có thể khuếch đại lỗi của mô hình đầu. Học tự giám sát tạo tín hiệu huấn luyện từ cấu trúc dữ liệu, không đồng nghĩa không cần dữ liệu hay không có objective. Semi-supervised khác active learning (chọn mẫu để xin nhãn). Học tăng cường tối ưu reward qua tương tác, không phải classification chỉ vì có nhãn “thưởng”. Luôn xác định đơn vị dự đoán, thời điểm biết feature/target, baseline và metric trước chọn mô hình.
+
+## Đáp án và tiêu chí chấm
+1. Năm ví dụ thuộc đúng ba nhóm trong đề: spam và dự đoán vỡ nợ có nhãn là classification; giá nhà và lượng điện tiêu thụ liên tục là regression; nhóm khách hàng chưa có nhãn là clustering. Nêu rõ target/nhãn của mỗi ví dụ. (2 điểm).
+2. Luôn đoán lớp 0 cho dữ liệu 90% lớp 0 được accuracy=0.9 nhưng recall lớp 1 bằng 0. Chưa chứng minh mô hình hữu ích. (3 điểm).
+3. Một đề xuất đạt cần nêu ai dùng dự đoán, feature nào có sẵn lúc predict, target/label tạo ra sao, cách split tránh leakage và baseline liên quan; không chấm theo việc gọi tên một mạng sâu. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Machine learning tutorial (mô tả các dạng bài toán)](https://scikit-learn.org/stable/getting_started.html).
+- [Machine Learning cơ bản](https://machinelearningcoban.com/).

@@ -1,0 +1,5 @@
+-r requirements-curriculum.txt
+# Optional notebook verification only; not installed in the Node/Docker app.
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==6.30.1

@@ -65,10 +65,13 @@ removed after confirming that no initializer is running.
 
 On an existing database, startup reads migration history, refuses missing,
 unfinished or unexpected migrations, and performs **no migration or seed**.
-Manual `npm run db:seed` adds missing courses and dataset/resource/project records
+Manual `npm run db:seed` adds missing courses, modules, lesson slugs and dataset/resource/project records
 but never overwrites existing edits, users, admin credentials, notes or progress.
-An existing course's module/lesson tree is deliberately left unchanged; add or
-update lessons through admin or a separately reviewed content migration.
+Existing lesson IDs, titles, quizzes, module membership and ordering are retained.
+New lessons append to matched modules (stable key, existing lesson anchors, then title).
+Back up and review on a database copy before manually adding release content to an existing deployment;
+startup never performs this reconciliation. Persistent Markdown overrides take precedence over bundled updates.
+See [curriculum audit](curriculum-audit.md) for the 50-to-59 regression test.
 
 For interrupted first setup, inspect the log and back up any created data.
 After resolving the cause, `npm run db:initialize -- --resume-bootstrap`

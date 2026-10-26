@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Cross-validation, Data Leakage, Metrics.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** Thực hành dữ liệu bảng: EDA, encoding và pipeline, Hyperparameter Tuning.
 **Mục tiêu:** nắm quy trình một dự án ML từ đầu đến cuối.
 
 ## Các bước
@@ -34,3 +34,15 @@ Accuracy trên một tập test nhỏ vẫn có sai số ngẫu nhiên; với b�
 
 ## Tóm tắt
 Baseline, pipeline, cross-validation, rồi test một lần: quy trình để kết quả đáng tin.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Một dự án cần data contract, nguồn/quyền sử dụng, đơn vị dự đoán và thời điểm target, không chỉ chuỗi fit/predict. Với dữ liệu breast-cancer sklearn, label 0 là malignant: nếu mục tiêu phát hiện bệnh phải chỉ rõ positive label hoặc recode, không đọc recall benign thành recall bệnh. Chốt metric và split trước search. Lưu model cùng pipeline, schema feature, phiên bản, seed và provenance; theo dõi drift input và chất lượng khi nhãn mới đến, không khẳng định drift input luôn làm accuracy giảm.
+
+## Đáp án và tiêu chí chấm
+1. Fit DummyClassifier trên cùng train; đối chiếu test metric và chi phí FP/FN với pipeline, không so hai split khác nhau. (2 điểm).
+2. Báo precision/recall/F1 với pos_label phù hợp và confusion matrix có nhãn rõ. Không tối ưu threshold trên test sau khi thấy recall thấp. (3 điểm).
+3. Search chỉ trên train/CV, refit best pipeline rồi đánh giá test một lần. Lưu pipeline, phiên bản và schema; chỉ reload artifact do mình kiểm soát. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Pipelines and composite estimators](https://scikit-learn.org/stable/modules/compose.html).
+- [scikit-learn: Model persistence](https://scikit-learn.org/stable/model_persistence.html).

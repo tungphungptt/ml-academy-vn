@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** MLP, Đạo hàm và gradient.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** Perceptron, Đạo hàm và gradient.
 **Mục tiêu:** biết các hàm kích hoạt phổ biến và ưu nhược điểm của từng loại.
 
 ## Vấn đề thực tế
@@ -27,7 +27,19 @@ Dùng sigmoid ở mọi lớp ẩn của mạng sâu; quên rằng đầu ra c�
 Mặc định lớp ẩn: ReLU (hoặc GELU với Transformer). Lớp đầu ra: tùy bài toán. Tanh có tâm ở 0 nên hay dùng trong RNN.
 
 ## Bài tập
-1. (Dễ) Tính $\sigma'(0)$. 2. (Vừa) Vẽ 4 hàm kích hoạt bằng Matplotlib. 3. (Khó) Giải thích vì sao gradient qua 10 lớp sigmoid nhỏ hơn $0.25^{10}$.
+1. (Dễ) Tính $\sigma'(0)$. 2. (Vừa) Vẽ 4 hàm kích hoạt bằng Matplotlib. 3. (Khó) Chặn tích 10 đạo hàm sigmoid và giải thích vì sao chưa thể suy cùng chặn cho gradient toàn mạng nếu không xét trọng số.
 
 ## Tóm tắt
 Hàm kích hoạt đưa tính phi tuyến vào mạng; ReLU là lựa chọn mặc định, sigmoid dễ gây gradient biến mất.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Chặn đạo hàm sigmoid bởi 1/4 chỉ chặn yếu tố activation, không chặn Jacobian toàn lớp nếu trọng số có norm lớn. Norm của tích Jacobian còn phụ thuộc ma trận trọng số, số lớp và các đường cộng/residual. ReLU có thể chết khi preactivation âm cho mọi input; LeakyReLU giữ slope âm nhỏ nhưng không chữa mọi lỗi tối ưu. GELU là lựa chọn thông dụng ở Transformer, không phải luôn hơn ReLU. Đầu ra hồi quy thường là linear; CE dùng logits nên không cần softmax thành một lớp riêng trước loss.
+
+## Đáp án và tiêu chí chấm
+1. σ′(0)=0.25. (2 điểm).
+2. Vẽ các hàm trên cùng miền và ghi trục; thêm đạo hàm nếu muốn phân tích gradient, không suy chất lượng mô hình chỉ từ hình activation. (3 điểm).
+3. Nếu xét riêng tích 10 đạo hàm sigmoid thì bị chặn bởi 0.25^10≈9.54e−7. Gradient mạng còn có trọng số; chỉ suy bound tương ứng khi đã chặn norm các trọng số (ví dụ ≤1 trong đường đang xét). Nêu phản ví dụ hệ số trọng số lớn, không lặp lại khẳng định sai vô điều kiện. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Multilayer Perceptrons](https://d2l.ai/chapter_multilayer-perceptrons/index.html).
+- [Stanford CS231n: Neural Networks](https://cs231n.github.io/neural-networks-1/).

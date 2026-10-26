@@ -1,0 +1,610 @@
+{
+ "base_commit": "5b88b1889456fecfa06fa2c4921f5abe15a72a24",
+ "count": 151,
+ "files": [
+  {
+   "path": "README.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/catalog.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/labs.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/activations.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/anomaly-detection.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/attention-transformer.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/autoencoder.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/autograd.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/backpropagation.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/bayesian-estimation.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/bias-variance.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/cnn-cpu.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/cnn-practice.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/cnn.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/convex-optimization.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/cross-validation.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/data-preparation.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/decision-tree.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/derivatives.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/dl-regularization.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/embeddings.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/feature-leakage.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/gan-vae-diffusion.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/gmm.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/gradient-descent.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/hyperparameter-tuning.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/k-means.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/knn.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/lda.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/linear-algebra-decompositions.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/linear-regression.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/logistic-regression.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/loss-functions.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/metrics.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/ml-intro.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/ml-project-workflow.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/mlp.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/model-deployment.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/naive-bayes.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/neural-recommendation.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/numpy-pandas.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/optimizers.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/pca.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/perceptron.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/polynomial-regression.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/probability.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/python-ml.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/pytorch-practice.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/random-forest.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/recommendation.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/ridge-lasso.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/rnn-lstm.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/sequence-models-cpu.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/softmax-regression.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/statistics.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/svm.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/tabular-pipeline.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/text-classification.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/training-diagnostics.md",
+   "status": "new"
+  },
+  {
+   "path": "content/lessons/transfer-learning.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/transformer-architecture.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/lessons/vectors-matrices.md",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/activations.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/autoencoder.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/bayesian-estimation.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/cnn-cpu.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/convex-optimization.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/dl-regularization.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/feature-leakage.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/hyperparameter-tuning.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/lda.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/linear-algebra-decompositions.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/loss-functions.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/neural-recommendation.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/random-forest.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/sequence-models-cpu.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/svm.json",
+   "status": "modified"
+  },
+  {
+   "path": "content/quizzes/tabular-pipeline.json",
+   "status": "new"
+  },
+  {
+   "path": "content/quizzes/training-diagnostics.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-audit.md",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-changes.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-coverage.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-execution.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-final-review.md",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-inventory-after.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-inventory-before.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-links.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-notebook-execution.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-practice.md",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-project-execution.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-pyodide-execution.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/curriculum-sources.json",
+   "status": "new"
+  },
+  {
+   "path": "docs/render-deployment.md",
+   "status": "modified"
+  },
+  {
+   "path": "e2e/curriculum.spec.ts",
+   "status": "new"
+  },
+  {
+   "path": "labs/autoencoder_cpu/library.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/cnn_cpu/library.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/neural_recommendation/library.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/sequence_cpu/library.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/softmax_regression/library.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/softmax_regression/scratch.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/tabular_pipeline/library.py",
+   "status": "new"
+  },
+  {
+   "path": "labs/transfer_cpu/library.py",
+   "status": "new"
+  },
+  {
+   "path": "prisma/seed-data.ts",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/autoencoder_cpu_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/cnn_cpu_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/kmeans_library.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/kmeans_scratch.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/knn_library.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/knn_scratch.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/linear_regression_library.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/linear_regression_scratch.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/logistic_regression_library.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/logistic_regression_scratch.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/mlp_torch_library.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/neural_recommendation_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/perceptron_library.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/perceptron_scratch.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/du-doan-chi-so-tieu-duong.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/nhan-dang-chu-so.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/phan-cum-khach-hang.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/phan-loai-cam-xuc.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/phan-loai-ung-thu-vu.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/phat-hien-bat-thuong-log.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/pipeline-hoan-chinh.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/projects/so-sanh-mo-hinh.ipynb",
+   "status": "modified"
+  },
+  {
+   "path": "public/notebooks/sequence_cpu_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/softmax_regression_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/softmax_regression_scratch.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/tabular_pipeline_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "public/notebooks/transfer_cpu_library.ipynb",
+   "status": "new"
+  },
+  {
+   "path": "requirements-curriculum-test.txt",
+   "status": "new"
+  },
+  {
+   "path": "requirements-curriculum.txt",
+   "status": "new"
+  },
+  {
+   "path": "scripts/audit_spec.py",
+   "status": "modified"
+  },
+  {
+   "path": "scripts/check_content.py",
+   "status": "modified"
+  },
+  {
+   "path": "scripts/check_curriculum_math.py",
+   "status": "new"
+  },
+  {
+   "path": "scripts/check_links.mjs",
+   "status": "modified"
+  },
+  {
+   "path": "scripts/check_notebooks.py",
+   "status": "new"
+  },
+  {
+   "path": "scripts/check_pyodide.mjs",
+   "status": "new"
+  },
+  {
+   "path": "scripts/gen_labs.py",
+   "status": "modified"
+  },
+  {
+   "path": "scripts/gen_project_notebooks.py",
+   "status": "modified"
+  },
+  {
+   "path": "scripts/run_lesson_code.py",
+   "status": "modified"
+  },
+  {
+   "path": "src/app/api/quiz/route.ts",
+   "status": "modified"
+  },
+  {
+   "path": "src/app/courses/page.tsx",
+   "status": "modified"
+  },
+  {
+   "path": "src/app/lab/page.tsx",
+   "status": "modified"
+  },
+  {
+   "path": "src/app/learn/[slug]/page.tsx",
+   "status": "modified"
+  },
+  {
+   "path": "src/app/search/page.tsx",
+   "status": "modified"
+  },
+  {
+   "path": "src/components/lab/CodeLab.tsx",
+   "status": "modified"
+  },
+  {
+   "path": "src/lib/content.ts",
+   "status": "modified"
+  },
+  {
+   "path": "src/lib/publishedContent.ts",
+   "status": "new"
+  },
+  {
+   "path": "tests/curriculum.test.ts",
+   "status": "new"
+  },
+  {
+   "path": "tests/persistence.test.ts",
+   "status": "modified"
+  }
+ ]
+}

@@ -1,1 +1,32 @@
-[{"prompt":"Random Forest giảm phương sai bằng cách nào?","options":["Gộp nhiều cây trên mẫu bootstrap và đặc trưng ngẫu nhiên","Tăng độ sâu một cây","Bỏ nhãn"],"correct":0,"explanation":"Trung bình hóa các cây ít tương quan giảm phương sai."},{"prompt":"Khoảng bao nhiêu phần mẫu gốc không nằm trong một mẫu bootstrap (N lớn)?","options":["≈ 37%","≈ 63%","50%"],"correct":0,"explanation":"(1−1/N)^N → e^{-1} ≈ 0.368."}]
+[
+ {
+  "prompt": "Random Forest giảm phương sai bằng cách nào?",
+  "options": [
+   "Gộp nhiều cây trên mẫu bootstrap và đặc trưng ngẫu nhiên",
+   "Tăng độ sâu một cây",
+   "Bỏ nhãn"
+  ],
+  "correct": 0,
+  "explanation": "Trung bình hóa các cây ít tương quan giảm phương sai."
+ },
+ {
+  "prompt": "Khoảng bao nhiêu phần mẫu gốc không nằm trong một mẫu bootstrap (N lớn)?",
+  "options": [
+   "≈ 37%",
+   "≈ 63%",
+   "50%"
+  ],
+  "correct": 0,
+  "explanation": "(1−1/N)^N → e^{-1} ≈ 0.368."
+ },
+ {
+  "prompt": "RandomForestClassifier của scikit-learn tổng hợp dự đoán các cây thế nào?",
+  "options": [
+   "Luôn majority vote trên nhãn cứng",
+   "Trung bình probability mỗi lớp của các cây rồi chọn lớp cao nhất",
+   "Chỉ dùng cây sâu nhất"
+  ],
+  "correct": 1,
+  "explanation": "Averaging probabilities có thể cho kết quả khác majority vote nhãn cứng; cần phân biệt API cụ thể với trực giác ensemble."
+ }
+]

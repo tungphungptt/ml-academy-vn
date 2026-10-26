@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** MLP, đạo hàm, chain rule.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** MLP, Đạo hàm và gradient.
 **Mục tiêu:** tính gradient qua mạng bằng chain rule.
 
 ## Vấn đề thực tế
@@ -27,3 +27,14 @@ Cần lưu giá trị trung gian của forward pass nên tốn bộ nhớ. Luôn
 
 ## Tóm tắt
 Forward lưu giá trị, backward nhân dần các đạo hàm cục bộ theo chain rule.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Backprop là reverse-mode differentiation của đồ thị tính toán, không phải phép lấy sai phân từng trọng số. Đạo hàm từ nhiều nhánh được cộng ở nút dùng chung; theo từng đường, Jacobian nhân với adjoint. Công thức được viết theo scalar để tránh nhầm transpose; khi vector hóa cần kiểm tra convention hàng/cột và broadcast bias. ReLU không khả vi tại 0, framework chọn một subgradient theo quy ước; finite-difference test nên tránh điểm gãy. Nhớ chia loss theo batch cùng convention trước khi so gradient tự cài với framework.
+
+## Đáp án và tiêu chí chấm
+1. Nếu t=6 thì yhat−t=0, loss=0 và cả hai gradient theo w1,w2 đều 0. (2 điểm).
+2. Đặt epsilon vừa phải, tính sai phân mỗi trọng số trên cùng input; so sai số tuyệt đối lẫn tương đối. Không yêu cầu bitwise bằng nhau và không kiểm tra đúng tại ReLU 0. (3 điểm).
+3. Tính delta lớp cuối, truyền ngược delta qua W và đạo hàm activation; dW là activation trước chuyển vị nhân delta theo convention batch hàng. Trình bày shapes và tổng gradient qua bias, không chỉ gọi backward rồi nhận là đã suy ra. (5 điểm).
+
+## Nguồn tham khảo
+- [Stanford CS231n: Backpropagation](https://cs231n.github.io/optimization-2/).

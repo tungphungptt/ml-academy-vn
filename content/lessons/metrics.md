@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** xác suất cơ bản.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Xác suất cơ bản.
 **Mục tiêu:** đọc confusion matrix và chọn metric phù hợp.
 
 ## Vấn đề thực tế
@@ -34,3 +34,14 @@ Chỉ dùng accuracy khi dữ liệu mất cân bằng; tính metric trên tập
 
 ## Tóm tắt
 Chọn metric theo chi phí của từng loại sai lầm, luôn đánh giá trên tập test.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Với hồi quy, MAE có cùng đơn vị target, MSE có đơn vị bình phương, RMSE lấy căn; R² so với baseline mean và có thể âm trên test. Với classification, ROC-AUC xếp hạng score, không đo trực tiếp calibration hay chất lượng tại một threshold; dùng score/probability chứ không chỉ nhãn cứng. PR-AUC thường hữu ích khi lớp dương hiếm nhưng vẫn phụ thuộc prevalence và convention nội suy. Macro F1 cân các lớp như nhau, weighted F1 cân theo support. Threshold, chi phí FP/FN và positive label phải được định nghĩa trước đánh giá. Trong dataset breast-cancer của sklearn, 0 là malignant và 1 là benign: recall lớp 1 không tự là độ nhạy phát hiện ung thư.
+
+## Đáp án và tiêu chí chấm
+1. Nếu giữ TP=40, FP=10, TN=30 và đổi FN=10 thì N=90: accuracy=70/90≈0.7778, precision=recall=F1=0.8. Không lén giữ N=100. Nếu giữ N bằng cách chuyển FN thành TP thì đó là một bảng nhầm lẫn khác. (2 điểm).
+2. Dùng confusion_matrix với thứ tự labels rõ ràng và split riêng; đối chiếu tổng support với số mẫu test. (3 điểm).
+3. Baseline toàn 0 trên 1% dương có accuracy=99%, recall dương=0. Một đánh giá đạt cần báo prevalence, confusion matrix và metric dương/threshold, không chỉ accuracy. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Model evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html).

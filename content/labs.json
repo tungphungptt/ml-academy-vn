@@ -15,6 +15,30 @@
   "notebooks": {
    "scratch": "/notebooks/linear_regression_scratch.ipynb",
    "library": "/notebooks/linear_regression_library.ipynb"
+  },
+  "verification": {
+   "scratch": {
+    "sha256": "136922455bb124db0d4ee4ce69319e0cadb8dc4b9ee872c7cbdc7c68599e004d",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   },
+   "library": {
+    "sha256": "91cee6bce8ccffd893e0ce1d16b6993eafcfc1209143edddab889f5e2c68b061",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
   }
  },
  {
@@ -33,6 +57,30 @@
   "notebooks": {
    "scratch": "/notebooks/knn_scratch.ipynb",
    "library": "/notebooks/knn_library.ipynb"
+  },
+  "verification": {
+   "scratch": {
+    "sha256": "3959c6b7d963bdaaeb21d440c531a5a844c34e97e3ae413017f00e0ab1d56c7e",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   },
+   "library": {
+    "sha256": "d9b7ed79680f6acd69a27ff39815884e9a76d0bf89c954053c79ccd01fdebaa9",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
   }
  },
  {
@@ -51,6 +99,30 @@
   "notebooks": {
    "scratch": "/notebooks/kmeans_scratch.ipynb",
    "library": "/notebooks/kmeans_library.ipynb"
+  },
+  "verification": {
+   "scratch": {
+    "sha256": "991b0fce7f16cf5f50840b93ab8c7192ce6544d7436a650566bcafdef9e39104",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   },
+   "library": {
+    "sha256": "22df9afea011d8326c1fa9428d98128259321b65f4361fa307379f992b456f04",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
   }
  },
  {
@@ -69,6 +141,30 @@
   "notebooks": {
    "scratch": "/notebooks/logistic_regression_scratch.ipynb",
    "library": "/notebooks/logistic_regression_library.ipynb"
+  },
+  "verification": {
+   "scratch": {
+    "sha256": "c223cca8ac7229f1acc462b684b304b71fed5421b7b1b368198eb8ee1fbc91ec",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   },
+   "library": {
+    "sha256": "ed8515d09084ffd6cff4930037598bee1df601b6575b3e59bd228ce4896e9356",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
   }
  },
  {
@@ -87,6 +183,30 @@
   "notebooks": {
    "scratch": "/notebooks/perceptron_scratch.ipynb",
    "library": "/notebooks/perceptron_library.ipynb"
+  },
+  "verification": {
+   "scratch": {
+    "sha256": "45cdca190a6497a8cd5c95a91157a411e9b4c3b8af656bcfc6a4bfb06e7b7d6d",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   },
+   "library": {
+    "sha256": "95640e8aace1db2a13587e10c1bbc744b49ad443b4993163d98921f8e9e0cc51",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
   }
  },
  {
@@ -98,10 +218,233 @@
    "library"
   ],
   "expected": {
-   "library": null
+   "library": "loss=0.0002 pred=[0, 1, 1, 0]"
   },
   "notebooks": {
    "library": "/notebooks/mlp_torch_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "b4468d3c3aa2127fcefe5b4d6b3e757c90cc50f7c1e1e95c8cebcdd57a8c970c",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "softmax_regression",
+  "title": "Softmax Regression: NumPy và scikit-learn",
+  "description": "Iris 3 lớp; scaling chỉ fit train; so sánh softmax tự viết với LogisticRegression.",
+  "runtime": "pyodide",
+  "variants": [
+   "scratch",
+   "library"
+  ],
+  "expected": {
+   "scratch": "test_accuracy=0.867",
+   "library": "test_accuracy=0.911"
+  },
+  "notebooks": {
+   "scratch": "/notebooks/softmax_regression_scratch.ipynb",
+   "library": "/notebooks/softmax_regression_library.ipynb"
+  },
+  "verification": {
+   "scratch": {
+    "sha256": "c1c33efb4a81a58fb67fa2b01c808e8f97ad71c7757446a2bbcf86c155154759",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   },
+   "library": {
+    "sha256": "9080aa2684166509f1a0369adaf48cad146edfff752ad24f2271d4ec60d39232",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "tabular_pipeline",
+  "title": "Pipeline dữ liệu bảng",
+  "description": "EDA trên train, missing/outlier, encoding và chọn đặc trưng nằm trong cross-validation.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}"
+  },
+  "notebooks": {
+   "library": "/notebooks/tabular_pipeline_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "d9c234dc3c6137b898c12f009891b2dabb3e0f99f9e1c7f1d6a6bf5256bf8c0a",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "cnn_cpu",
+  "title": "CNN ảnh nhỏ trên CPU",
+  "description": "Digits 8×8: baseline, train/validation/test, scheduler, clipping, checkpoint và reload.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}"
+  },
+  "notebooks": {
+   "library": "/notebooks/cnn_cpu_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "810e7844efad8ea354eb0d2fb108643a5108e7ff2f9e5cf4ea015e72abdd6a02",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "sequence_cpu",
+  "title": "Dự đoán chuỗi bằng GRU",
+  "description": "Chuỗi tổng hợp, chronological split, persistence baseline và scaling train-only.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}"
+  },
+  "notebooks": {
+   "library": "/notebooks/sequence_cpu_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "4cd1a1ddc5b09f3689b95aecc58d3634d91ae1088bf147e5a10f1324d05232f3",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "neural_recommendation",
+  "title": "Embedding recommendation",
+  "description": "Ratings tổng hợp, warm-start split, mean baseline và validation checkpoint.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}"
+  },
+  "notebooks": {
+   "library": "/notebooks/neural_recommendation_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "bae12206cd79f564e0c6a1710b8e5b91db7ccedb5b98e852990f364322954bd6",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "autoencoder_cpu",
+  "title": "Autoencoder với Iris",
+  "description": "Bottleneck 2 chiều, train-only scaling, validation và so sánh PCA trên test.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}"
+  },
+  "notebooks": {
+   "library": "/notebooks/autoencoder_cpu_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "1decfb86823a09afa487f25ba711d784301efca493e545071422478c16b6c4e8",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
+  }
+ },
+ {
+  "id": "transfer_cpu",
+  "title": "Feature extraction và fine-tuning CPU",
+  "description": "Pretrain Digits, chuyển sang parity cùng miền; xác nhận backbone đóng băng và fine-tune riêng.",
+  "runtime": "local",
+  "variants": [
+   "library"
+  ],
+  "expected": {
+   "library": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}"
+  },
+  "notebooks": {
+   "library": "/notebooks/transfer_cpu_library.ipynb"
+  },
+  "verification": {
+   "library": {
+    "sha256": "27f9b7547d1d660b992942f7a7224220c95afb07b4b93bf96b8faf235beee811",
+    "versions": {
+     "python": "3.12.14",
+     "numpy": "2.3.5",
+     "pandas": "2.2.3",
+     "matplotlib": "3.10.8",
+     "scikit-learn": "1.8.0",
+     "torch": "2.14.1+cpu"
+    }
+   }
   }
  }
 ]

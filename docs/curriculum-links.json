@@ -1,0 +1,397 @@
+{
+ "total": 78,
+ "passed": 71,
+ "failed": 7,
+ "results": [
+  {
+   "u": "https://arxiv.org/abs/1312.6114",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://arxiv.org/abs/1406.2661",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://arxiv.org/abs/1412.6980",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://arxiv.org/abs/1512.03385",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://arxiv.org/abs/1706.03762",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://arxiv.org/abs/2006.11239",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://cs231n.github.io/classification/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/convolutional-networks/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/linear-classify/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/neural-networks-1/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/neural-networks-3/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/optimization-1/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/optimization-2/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.github.io/transfer-learning/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://cs231n.stanford.edu/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/transformer.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_linear-classification/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_linear-regression/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_multilayer-perceptrons/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_optimization/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_preliminaries/linear-algebra.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_preliminaries/probability.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_recurrent-modern/gru.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_recurrent-modern/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://d2l.ai/chapter_recurrent-neural-networks/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://docs.python.org/3/tutorial/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://docs.pytorch.org/tutorials/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://fastapi.tiangolo.com/",
+   "ok": false,
+   "s": "Request was cancelled."
+  },
+  {
+   "u": "https://machinelearningcoban.com/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/03/12/convexity/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/03/19/convexopt/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/04/02/duality/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/05/31/matrixfactorization/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/06/07/svd/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/06/30/lda/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/07/09/prob/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2017/07/17/mlemap/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/2018/10/03/conv2d",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/general/2017/02/06/featureengineering/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/math/",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/tabml_book/ch_embedding/embedding.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://matplotlib.org/stable/users/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://pandas.pydata.org/docs/user_guide/index.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/common_pitfalls.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/datasets/toy_dataset.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/getting_started.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/model_persistence.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/compose.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/cross_validation.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/decomposition.html#pca",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/grid_search.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/impute.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/linear_model.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/linear_model.html#lasso",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/linear_model.html#perceptron",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/mixture.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/naive_bayes.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/neighbors.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/outlier_detection.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/preprocessing.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/sgd.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/svm.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/modules/tree.html",
+   "ok": true,
+   "status": 200
+  },
+  {
+   "u": "https://scikit-learn.org/stable/user_guide.html",
+   "ok": true,
+   "status": 200
+  }
+ ]
+}

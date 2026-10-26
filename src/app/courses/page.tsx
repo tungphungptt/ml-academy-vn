@@ -11,7 +11,7 @@ export default async function Courses({ searchParams: pendingSearchParams }: { s
     const ls = c.modules.flatMap(m => m.lessons); const p = courseProgress(ls.map(l => ({ id: l.id, slug: l.slug, title: l.title, hasContent: !!l.contentFile })), done);
     return { c, ls, p, full: ls.filter(l => l.contentFile).length };
   }).filter(({ c, ls, p }) =>
-    (!q || [c.title, c.description, ...ls.map(l => l.title)].some(t => t.toLowerCase().includes(q))) &&
+    (!q || [c.title, c.description, ...ls.flatMap(l => [l.title, l.slug])].some(t => t.toLowerCase().includes(q))) &&
     (!level || c.level === level) &&
     (!status || !u || (status === "done" ? p.completed === p.total && p.total > 0 : status === "doing" ? p.completed > 0 && p.completed < p.total : p.completed === 0)));
   return <><h1>Khóa học</h1>

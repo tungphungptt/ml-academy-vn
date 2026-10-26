@@ -1,0 +1,168 @@
+{
+ "transport": "Official CDN assets fetched with Python TLS and platform CA, unchanged bytes fulfilled to browser; not a direct Chromium CDN/TLS test",
+ "assets": [
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js",
+   "status": 200,
+   "type": "text/javascript; charset=utf-8",
+   "sha256": "037907919d58ac79dbee2eee57e96507b79fad58260ab847dc6200443915c20f",
+   "bytes": 14767
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/python_stdlib.zip",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "0dd443755a0244ae3052f2e0834413d68c43f362c651edd47b785ea9d26e4853",
+   "bytes": 2341761
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide-lock.json",
+   "status": 200,
+   "type": "application/json; charset=utf-8",
+   "sha256": "0cb7ca8faf9c35af92b4d261996ddd51dd9a6c1074ee59279f1570d67af29644",
+   "bytes": 105980
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.js",
+   "status": 200,
+   "type": "text/javascript; charset=utf-8",
+   "sha256": "704e56d209d8b867c8dd42e754a246db0175e448d59a46530803bdddfdfc78e0",
+   "bytes": 1229628
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.wasm",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "8f631d8453672664131b2d4c9c41f3adf5d32e9efda2cb421d3fdf38cab57a21",
+   "bytes": 10087885
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/numpy-1.26.4-cp312-cp312-pyodide_2024_0_wasm32.whl",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "c10c9f822e30a4d266da8af4538c528517886756ef4bda847777eda7a104142b",
+   "bytes": 11959233
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/joblib-1.4.0-py3-none-any.whl",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "e4b7a2419a8e607ec8953559c551fa24c0d83a18835816dce8bf7b897979b482",
+   "bytes": 580318
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/threadpoolctl-3.4.0-py3-none-any.whl",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "13d53a6213d7850ebdfeff0cf865d92fdcf8c5c60d8b6f77f7bf88d6f5240358",
+   "bytes": 65709
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/openblas-0.3.26.zip",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "84b0cfb85c82a12c3c613624d55a85af0fb70bf61db156900d44997e39cf861d",
+   "bytes": 6117592
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/scikit_learn-1.4.2-cp312-cp312-pyodide_2024_0_wasm32.whl",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "46556b2ec3661c6dcbaade40c55a2767d69e966253c7cebec8655af7b998b6e7",
+   "bytes": 22388338
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/scipy-1.12.0-cp312-cp312-pyodide_2024_0_wasm32.whl",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "fd43c9ebcb0001bde4c8c0a3a2b3bb1aa6ed40ba32a98cbbb07cecfaa7b0bab0",
+   "bytes": 47100332
+  }
+ ],
+ "results": [
+  {
+   "id": "linear_regression",
+   "variant": "scratch",
+   "stdout": "w=1.999 b=0.002 mse=0.000000",
+   "expected": "w=1.999 b=0.002 mse=0.000000",
+   "pass": true
+  },
+  {
+   "id": "linear_regression",
+   "variant": "library",
+   "stdout": "w=2.000 b=0.000",
+   "expected": "w=2.000 b=0.000",
+   "pass": true
+  },
+  {
+   "id": "knn",
+   "variant": "scratch",
+   "stdout": "Do chinh xac KNN (k=5): 1.000",
+   "expected": "Do chinh xac KNN (k=5): 1.000",
+   "pass": true
+  },
+  {
+   "id": "knn",
+   "variant": "library",
+   "stdout": "Do chinh xac KNN (k=5): 1.000",
+   "expected": "Do chinh xac KNN (k=5): 1.000",
+   "pass": true
+  },
+  {
+   "id": "kmeans",
+   "variant": "scratch",
+   "stdout": "Inertia: 69.24",
+   "expected": "Inertia: 69.24",
+   "pass": true
+  },
+  {
+   "id": "kmeans",
+   "variant": "library",
+   "stdout": "Inertia: 69.24",
+   "expected": "Inertia: 69.24",
+   "pass": true
+  },
+  {
+   "id": "logistic_regression",
+   "variant": "scratch",
+   "stdout": "loss=0.0575 accuracy=0.980",
+   "expected": "loss=0.0575 accuracy=0.980",
+   "pass": true
+  },
+  {
+   "id": "logistic_regression",
+   "variant": "library",
+   "stdout": "accuracy=0.980",
+   "expected": "accuracy=0.980",
+   "pass": true
+  },
+  {
+   "id": "perceptron",
+   "variant": "scratch",
+   "stdout": "epoch=2 loi_cuoi_epoch=0 accuracy=1.000",
+   "expected": "epoch=2 loi_cuoi_epoch=0 accuracy=1.000",
+   "pass": true
+  },
+  {
+   "id": "perceptron",
+   "variant": "library",
+   "stdout": "accuracy=1.000",
+   "expected": "accuracy=1.000",
+   "pass": true
+  },
+  {
+   "id": "softmax_regression",
+   "variant": "scratch",
+   "stdout": "test_accuracy=0.867",
+   "expected": "test_accuracy=0.867",
+   "pass": true
+  },
+  {
+   "id": "softmax_regression",
+   "variant": "library",
+   "stdout": "test_accuracy=0.911",
+   "expected": "test_accuracy=0.911",
+   "pass": true
+  }
+ ]
+}

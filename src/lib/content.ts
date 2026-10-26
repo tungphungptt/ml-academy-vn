@@ -1,7 +1,7 @@
 import fs from "fs"; import path from "path";
 import { readLesson } from "./lessonFiles";
-export type Lesson = { s: string; t: string; f: string };
-type Catalog = { courses: { slug: string; modules: { lessons: (string | Lesson)[] }[] }[] };
+export type Lesson = { s: string; t: string; f: string; src: { title: string; url: string }[]; level?: string; tier?: "Core" | "Intermediate" | "Advanced"; prerequisites?: string[]; minutes?: number; kind?: "lesson" | "practice" };
+export type Catalog = { courses: { slug: string; title: string; description: string; level: string; modules: { key?: string; title: string; lessons: (string | Lesson)[] }[] }[] };
 const ttl = () => (process.env.NODE_ENV === "production" ? Infinity : 5000); // production: đọc một lần; dev: làm mới sau 5 giây
 const resets: (() => void)[] = [];
 export const clearContentCache = () => resets.forEach(r => r());

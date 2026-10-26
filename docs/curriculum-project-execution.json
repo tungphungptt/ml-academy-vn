@@ -1,0 +1,42 @@
+[
+ {
+  "file": "public/notebooks/projects/du-doan-chi-so-tieu-duong.ipynb",
+  "sha256": "b20724a01346f25102dec3d81ab199162783db41c25df3ef08780bed354921db",
+  "code_cells": 2
+ },
+ {
+  "file": "public/notebooks/projects/nhan-dang-chu-so.ipynb",
+  "sha256": "944273f8636ca87586769d2a60121c7920aaff793954d77b189273a035e54e13",
+  "code_cells": 3
+ },
+ {
+  "file": "public/notebooks/projects/phan-cum-khach-hang.ipynb",
+  "sha256": "c144cc3f38472b05598851ad313bec06306368e6c8de495bed07ff4335a5bdc9",
+  "code_cells": 3
+ },
+ {
+  "file": "public/notebooks/projects/phan-loai-cam-xuc.ipynb",
+  "sha256": "9ef11b0400c1bf08a73a0251b4bd16afa4d53653fb223230a7dd0fefd152f793",
+  "code_cells": 3
+ },
+ {
+  "file": "public/notebooks/projects/phan-loai-ung-thu-vu.ipynb",
+  "sha256": "7af43e22e539789991adf30fe3af605675b4d82dde7f2220a7b1dd3d59d98ed4",
+  "code_cells": 3
+ },
+ {
+  "file": "public/notebooks/projects/phat-hien-bat-thuong-log.ipynb",
+  "sha256": "f983cb39aef36c33397d39e2e1ecc550faf384545f78c4203bc3de9a56e8dcaa",
+  "code_cells": 2
+ },
+ {
+  "file": "public/notebooks/projects/pipeline-hoan-chinh.ipynb",
+  "sha256": "26f930d50364f208b6d1df887eaa2660cf40ff7335020bb2fc3b8210003df55d",
+  "code_cells": 3
+ },
+ {
+  "file": "public/notebooks/projects/so-sanh-mo-hinh.ipynb",
+  "sha256": "274db756f724654120e02f08dddff4e4a1931a1188cfc98bfaec51ca25d7cec7",
+  "code_cells": 3
+ }
+]

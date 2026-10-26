@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Gradient Descent.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** Gradient Descent, Backpropagation.
 **Mục tiêu:** hiểu Momentum và Adam khác gì Gradient Descent thuần.
 
 ## Vấn đề thực tế
@@ -45,3 +45,15 @@ Momentum giảm dao động; Adam ít nhạy với thang đo gradient và cần 
 
 ## Tóm tắt
 Momentum nhớ hướng đi; Adam chuẩn hóa bước theo độ lớn gradient gần đây.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+RMSProp giữ trung bình mũ s_t=βs_{t−1}+(1−β)g_t² và cập nhật w←w−ηg/(sqrt(s)+epsilon); khác Momentum ở việc chuẩn hóa độ lớn thay vì tích lũy hướng. Adam kết hợp hai moment và bias correction như bài. Với SGD thuần, L2 penalty cho hạng λw trong gradient có thể tương ứng một cách viết weight decay; với adaptive optimizer thì AdamW decouple decay khỏi phép chia theo moment, không đồng nhất mặc định với L2. β convention của Momentum có/không hệ số 1−β cần nêu rõ trước so hai cài đặt. Không có optimizer tốt nhất cho mọi dữ liệu.
+
+## Đáp án và tiêu chí chấm
+1. Bước 3: g=3.68, v=0.9·13.6+3.68=15.92, θ=1.84−1.592=0.248. (2 điểm).
+2. Giữ LR và ghi chuỗi gradient/velocity cho beta=0.5,0.99. Momentum lớn có thể overshoot; không tự là tốt hơn. (3 điểm).
+3. Khởi tạo m,s=0, cập nhật cả hai, correction theo t bắt đầu từ 1, gradient tính tại tham số hiện tại. So loss và số step trên hàm cố định, không dùng cùng LR rồi kết luận optimizer nào luôn ưu việt. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Optimization Algorithms](https://d2l.ai/chapter_optimization/index.html).
+- [Adam: A Method for Stochastic Optimization (Kingma và Ba)](https://arxiv.org/abs/1412.6980).

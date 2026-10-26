@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "Ô rating chưa quan sát có nên tự gán 0 không?",
+  "options": [
+   "Có luôn",
+   "Không, thiếu quan sát không phải nhãn âm",
+   "Chỉ cần fillna"
+  ],
+  "correct": 1,
+  "explanation": "Loss chỉ trên tập rating quan sát hoặc protocol implicit đã định nghĩa."
+ },
+ {
+  "prompt": "RMSE thấp trong lab đánh giá gì?",
+  "options": [
+   "Warm-start rating completion trên dữ liệu low-rank tự sinh",
+   "Chất lượng top-k ở mọi user mới",
+   "Generalization trên MovieLens"
+  ],
+  "correct": 0,
+  "explanation": "Không có dữ liệu người dùng thật/cold start/ranking trong score này."
+ },
+ {
+  "prompt": "User ID mới chưa có embedding cần gì?",
+  "options": [
+   "Tra ID ngoài range",
+   "Dùng test rating để fit",
+   "Fallback hoặc đặc trưng nội dung được thiết kế"
+  ],
+  "correct": 2,
+  "explanation": "Embedding lookup không xử lý ID chưa học; cần policy cold start."
+ }
+]

@@ -1,1 +1,32 @@
-[{"prompt":"Giá trị lớn nhất của đạo hàm sigmoid là bao nhiêu?","options":["0.25","1","0.5"],"correct":0,"explanation":"σ'(0) = 0.5·0.5 = 0.25."},{"prompt":"Hàm kích hoạt mặc định hợp lý cho lớp ẩn là gì?","options":["ReLU","Sigmoid ở mọi lớp","Hàm hằng"],"correct":0,"explanation":"ReLU đơn giản và ít gây gradient biến mất hơn sigmoid."}]
+[
+ {
+  "prompt": "Giá trị lớn nhất của đạo hàm sigmoid là bao nhiêu?",
+  "options": [
+   "0.25",
+   "1",
+   "0.5"
+  ],
+  "correct": 0,
+  "explanation": "σ'(0) = 0.5·0.5 = 0.25."
+ },
+ {
+  "prompt": "Hàm kích hoạt mặc định hợp lý cho lớp ẩn là gì?",
+  "options": [
+   "ReLU",
+   "Sigmoid ở mọi lớp",
+   "Hàm hằng"
+  ],
+  "correct": 0,
+  "explanation": "ReLU đơn giản và ít gây gradient biến mất hơn sigmoid."
+ },
+ {
+  "prompt": "Từ sigmoid derivative ≤1/4 có thể kết luận gradient toàn mạng luôn ≤(1/4)^L không?",
+  "options": [
+   "Có, không cần xét weights",
+   "Cần chặn thêm norm weights/Jacobian; riêng activation chưa đủ",
+   "Chỉ cần tăng learning rate"
+  ],
+  "correct": 1,
+  "explanation": "Gradient qua lớp còn nhân ma trận weights; norm lớn có thể làm bùng nổ. Bound của activation không phải bound vô điều kiện của toàn mạng."
+ }
+]

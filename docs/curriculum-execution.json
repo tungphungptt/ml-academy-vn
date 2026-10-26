@@ -1,0 +1,581 @@
+{
+ "versions": {
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "matplotlib": "3.10.8",
+  "scikit-learn": "1.8.0",
+  "torch": "2.14.1+cpu"
+ },
+ "blocks": [
+  {
+   "file": "content/lessons/activations.md",
+   "block": 1,
+   "sha256": "f49f2e235220d3d0c2e38a2dae8922767982e2a274ea8747a54d4c35b6efed49",
+   "status": "pass",
+   "stdout": "[0.5, 0.7616, 0.0, -0.02, 0.8413]",
+   "stderr": "",
+   "expected": "[0.5, 0.7616, 0.0, -0.02, 0.8413]"
+  },
+  {
+   "file": "content/lessons/anomaly-detection.md",
+   "block": 1,
+   "sha256": "dc71f40e5470519229049fba78709157f40a6dcbea7f15ac8405247de9df0a69",
+   "status": "pass",
+   "stdout": "2.23 [50.0]",
+   "stderr": "",
+   "expected": "2.23 [50.0]"
+  },
+  {
+   "file": "content/lessons/attention-transformer.md",
+   "block": 1,
+   "sha256": "139d54735f86e217c82e85bbd6e941ae57b182d622f1ef14aa0adb0b61cb2691",
+   "status": "pass",
+   "stdout": "[0.6698, 0.3302] [1.6605, 2.6605]",
+   "stderr": "",
+   "expected": "[0.6698, 0.3302] [1.6605, 2.6605]"
+  },
+  {
+   "file": "content/lessons/autoencoder.md",
+   "block": 1,
+   "sha256": "2cc315f8c1814bc70d24f3db44cacb6b1b3e0a425f5b130a5f3332c3c430b084",
+   "status": "pass",
+   "stdout": "[0.0856, 0.0253, 0.0059]",
+   "stderr": "",
+   "expected": "[0.0856, 0.0253, 0.0059]"
+  },
+  {
+   "file": "content/lessons/autograd.md",
+   "block": 1,
+   "sha256": "e6e676de7fbd06f487ae34d55871d0e3be0f3539795f59e57b1c3db004cbf5d8",
+   "status": "pass",
+   "stdout": "4.0 [-3.0, 2.0, 1.0]",
+   "stderr": "",
+   "expected": "4.0 [-3.0, 2.0, 1.0]"
+  },
+  {
+   "file": "content/lessons/autograd.md",
+   "block": 2,
+   "sha256": "a51c704d281884dc4f8e0a472e5814f0fa48a6de35ec11bcd05e46624af8e36c",
+   "status": "pass",
+   "stdout": "4.0 -3.0 2.0 1.0",
+   "stderr": ""
+  },
+  {
+   "file": "content/lessons/bayesian-estimation.md",
+   "block": 1,
+   "sha256": "9f77ccc2714bd60dd2f15c3edd8657e47139528f25aed8e143dc7fef06790891",
+   "status": "pass",
+   "stdout": "[0.75, 0.6667, 0.625, 0.1538]",
+   "stderr": "",
+   "expected": "[0.75, 0.6667, 0.625, 0.1538]"
+  },
+  {
+   "file": "content/lessons/bias-variance.md",
+   "block": 1,
+   "sha256": "4744ef5aa9e027bcb11208b22aae5553fcdf598d8445722a9008a134b9e6e852",
+   "status": "pass",
+   "stdout": "[(1, 0.218, 0.253), (3, 0.029, 0.056), (9, 0.022, 0.049), (15, 0.018, 0.056)]",
+   "stderr": "",
+   "expected": "[(1, 0.218, 0.253), (3, 0.029, 0.056), (9, 0.022, 0.049), (15, 0.018, 0.056)]"
+  },
+  {
+   "file": "content/lessons/cnn-practice.md",
+   "block": 1,
+   "sha256": "1012ee1422eaa97bd363a8c3e9cd85a519ef438866e0e9b05dbb29139fbc10b5",
+   "status": "pass",
+   "stdout": "(1797, 18) 0.97 0.889 0.97",
+   "stderr": "",
+   "expected": "(1797, 18) 0.97 0.889 0.97"
+  },
+  {
+   "file": "content/lessons/cnn.md",
+   "block": 1,
+   "sha256": "727cbe9a76944a928370ee8547995df74a04e0e208816ec17a04fa48d1b9cf9b",
+   "status": "pass",
+   "stdout": "[[-4, -4], [-4, -4]]",
+   "stderr": "",
+   "expected": "[[-4, -4], [-4, -4]]"
+  },
+  {
+   "file": "content/lessons/convex-optimization.md",
+   "block": 1,
+   "sha256": "6af9a53fbbc568613fd10345174fe0ca2c3bb22aeed57a435588911fc03242db",
+   "status": "pass",
+   "stdout": "[0.0, 20.0]",
+   "stderr": "",
+   "expected": "[0.0, 20.0]"
+  },
+  {
+   "file": "content/lessons/cross-validation.md",
+   "block": 1,
+   "sha256": "ecae89ad5c95c2fd4699282d2b48b54f415a7d7d5a517da1c0fc920366aaa8b3",
+   "status": "pass",
+   "stdout": "[4, 3, 3]",
+   "stderr": "",
+   "expected": "[4, 3, 3]"
+  },
+  {
+   "file": "content/lessons/cross-validation.md",
+   "block": 2,
+   "sha256": "f048aec037e574f332dd0a732950455dd447fc26bc3feead2e34a85b25d7f604",
+   "status": "pass",
+   "stdout": "0.96",
+   "stderr": "",
+   "expected": "0.96"
+  },
+  {
+   "file": "content/lessons/data-preparation.md",
+   "block": 1,
+   "sha256": "240ffc4e6dfc8e98e052e41c74ea565a72e33e6c696418b2c502eb2ffe227357",
+   "status": "pass",
+   "stdout": "700 150 2.4495 [1.0, 3.0, 3.0, 3.0, 5.0]",
+   "stderr": "",
+   "expected": "700 150 2.4495 [1.0, 3.0, 3.0, 3.0, 5.0]"
+  },
+  {
+   "file": "content/lessons/decision-tree.md",
+   "block": 1,
+   "sha256": "735094dc19fc2a5da76510f9a07ffff9ba6b45f8c6831fd580a3c623023354be",
+   "status": "pass",
+   "stdout": "0.933",
+   "stderr": "",
+   "expected": "0.933"
+  },
+  {
+   "file": "content/lessons/derivatives.md",
+   "block": 1,
+   "sha256": "8a74c4d94c1f54cd27f733bc785b1d7296efd2c47c9ae8304ad9867033ff45c8",
+   "status": "pass",
+   "stdout": "24.0",
+   "stderr": "",
+   "expected": "24.0"
+  },
+  {
+   "file": "content/lessons/dl-regularization.md",
+   "block": 1,
+   "sha256": "aaaae7f91e6931ab4836c8f6cd66aa598ff9676d9ee0126e8706501c85b0ddef",
+   "status": "pass",
+   "stdout": "[1.25, 1.25, 0.0, 1.25, 1.25] [-1.3416, -0.4472, 0.4472, 1.3416]",
+   "stderr": "",
+   "expected": "[1.25, 1.25, 0.0, 1.25, 1.25] [-1.3416, -0.4472, 0.4472, 1.3416]"
+  },
+  {
+   "file": "content/lessons/dl-regularization.md",
+   "block": 2,
+   "sha256": "e1bb5341a799c7c92f72cd3dd34bc147ffcd99b37938b128853885dbd1c4d87a",
+   "status": "pass",
+   "stdout": "0.949 2 4 0.025 0.05",
+   "stderr": "",
+   "expected": "0.949 2 4 0.025 0.05"
+  },
+  {
+   "file": "content/lessons/embeddings.md",
+   "block": 1,
+   "sha256": "e83fcbc9b6398ed51488e9036110ba4508bec14720926833de46b25f43b60ce2",
+   "status": "pass",
+   "stdout": "(3, 9) 0.634 0.0",
+   "stderr": "",
+   "expected": "(3, 9) 0.634 0.0"
+  },
+  {
+   "file": "content/lessons/feature-leakage.md",
+   "block": 1,
+   "sha256": "d4f92205ac9c017e0031b2a5461360d7fcfe77b1e0b6d8513b7f701a512edc9e",
+   "status": "pass",
+   "stdout": "0.85 0.57",
+   "stderr": "",
+   "expected": "0.85 0.57"
+  },
+  {
+   "file": "content/lessons/gan-vae-diffusion.md",
+   "block": 1,
+   "sha256": "2d21615130437de6316c2e0cb1afb2ec8d0def09267d37c08c802cd9c78e55ee",
+   "status": "pass",
+   "stdout": "0.5 0.8069 1.1",
+   "stderr": "",
+   "expected": "0.5 0.8069 1.1"
+  },
+  {
+   "file": "content/lessons/gmm.md",
+   "block": 1,
+   "sha256": "653d5285a0693d165e3e44a1f3938bd05f59a1cef02f585f0d8099fdd64c6a01",
+   "status": "pass",
+   "stdout": "0.982",
+   "stderr": "",
+   "expected": "0.982"
+  },
+  {
+   "file": "content/lessons/gmm.md",
+   "block": 2,
+   "sha256": "062bf9e1cd164c54ba612fca9904d1c388ae09255371f959cf1abf32b9177186",
+   "status": "pass",
+   "stdout": "[0.04, 4.96] [0.49, 0.51]",
+   "stderr": "",
+   "expected": "[0.04, 4.96] [0.49, 0.51]"
+  },
+  {
+   "file": "content/lessons/gradient-descent.md",
+   "block": 1,
+   "sha256": "2c847502f61d21450678bf0396bc50ab7e4f240b1fbf2b8a5c8d36dbbd14da79",
+   "status": "pass",
+   "stdout": "[(1, 1600, 0.0071), (8, 200, 0.0071), (64, 25, 0.3715)]",
+   "stderr": "",
+   "expected": "[(1, 1600, 0.0071), (8, 200, 0.0071), (64, 25, 0.3715)]"
+  },
+  {
+   "file": "content/lessons/hyperparameter-tuning.md",
+   "block": 1,
+   "sha256": "8d921d1798fd69da4f45044a8315232bd46fb6fa6a5435be4be6ff7454678067",
+   "status": "pass",
+   "stdout": "{'C': 10, 'gamma': 'scale'} 0.967",
+   "stderr": "",
+   "expected": "{'C': 10, 'gamma': 'scale'} 0.967"
+  },
+  {
+   "file": "content/lessons/lda.md",
+   "block": 1,
+   "sha256": "d42327f0bdd6fdd6b6caa0abe1c59e0bd56b78facfad69bca33cb30e27cf750d",
+   "status": "pass",
+   "stdout": "(45, 2) 0.978",
+   "stderr": "",
+   "expected": "(45, 2) 0.978"
+  },
+  {
+   "file": "content/lessons/linear-algebra-decompositions.md",
+   "block": 1,
+   "sha256": "f0bcaaf6de6242828446cac2b069812b99b4b85e28612e0b63c13291569157cb",
+   "status": "pass",
+   "stdout": "1 [0.2, 0.4]",
+   "stderr": "",
+   "expected": "1 [0.2, 0.4]"
+  },
+  {
+   "file": "content/lessons/loss-functions.md",
+   "block": 1,
+   "sha256": "cdc0ee7c6a0293ceb8ab15ee0d9c1b949d1680336cb85a44a06b743f6b2010f7",
+   "status": "pass",
+   "stdout": "[4, 2, 1.5, 0.2231, 1.6094]",
+   "stderr": "",
+   "expected": "[4, 2, 1.5, 0.2231, 1.6094]"
+  },
+  {
+   "file": "content/lessons/loss-functions.md",
+   "block": 2,
+   "sha256": "af961263904d5592453bf9f1fc426a99c64ffbabeeebc78e1e8c8c2e4a212835",
+   "status": "pass",
+   "stdout": "25.75 3.25",
+   "stderr": "",
+   "expected": "25.75 3.25"
+  },
+  {
+   "file": "content/lessons/metrics.md",
+   "block": 1,
+   "sha256": "c7b229c507db7dcfd9c1ae3df8fad2222824887a6bbe72a95738eb714434ec11",
+   "status": "pass",
+   "stdout": "0.7 0.8 0.667 0.727",
+   "stderr": "",
+   "expected": "0.7 0.8 0.667 0.727"
+  },
+  {
+   "file": "content/lessons/ml-intro.md",
+   "block": 1,
+   "sha256": "8035e166d1c7ed368d0051f43634fe74f9c579aac4210420af46e6aae59ec39a",
+   "status": "pass",
+   "stdout": "0.333",
+   "stderr": "",
+   "expected": "0.333"
+  },
+  {
+   "file": "content/lessons/ml-project-workflow.md",
+   "block": 1,
+   "sha256": "9b2aebca7dafa7c8cabdd3f402e8b1aec33df877f4ea4f1fb3d7fb948819d797",
+   "status": "pass",
+   "stdout": "0.974 0.958",
+   "stderr": "",
+   "expected": "0.974 0.958"
+  },
+  {
+   "file": "content/lessons/model-deployment.md",
+   "block": 1,
+   "sha256": "f278a70cf95873fd4293f42943b0900c40a64f8417b1313a041aff73b1a99c8d",
+   "status": "pass",
+   "stdout": "0 True",
+   "stderr": "",
+   "expected": "0 True"
+  },
+  {
+   "file": "content/lessons/model-deployment.md",
+   "block": 2,
+   "sha256": "adba78afe42b473e0ad1494d2077373e07afb547906868a08436175c95a0222b",
+   "status": "context-only",
+   "reason": "Requires external model/weights; syntax compiled, not executed"
+  },
+  {
+   "file": "content/lessons/model-deployment.md",
+   "block": 3,
+   "sha256": "5b7fcab18540e938d44bf9c0db64eaddeba2e3195b56b8f7c2fe1501d8d45cb1",
+   "status": "pass",
+   "stdout": "reload=True valid=200 invalid_shape=400",
+   "stderr": "",
+   "expected": "reload=True valid=200 invalid_shape=400"
+  },
+  {
+   "file": "content/lessons/naive-bayes.md",
+   "block": 1,
+   "sha256": "297621a1542713a42fe3e421758a65377a5a8e323889083425536f4966cd5653",
+   "status": "pass",
+   "stdout": "0.911",
+   "stderr": "",
+   "expected": "0.911"
+  },
+  {
+   "file": "content/lessons/numpy-pandas.md",
+   "block": 1,
+   "sha256": "faefe3edbfdf4edce30e936996d5617ae8f8b6dc2d374d567059e67314949a80",
+   "status": "pass",
+   "stdout": "[-1.2247, 0.0, 1.2247] (3, 4)",
+   "stderr": "",
+   "expected": "[-1.2247, 0.0, 1.2247] (3, 4)"
+  },
+  {
+   "file": "content/lessons/numpy-pandas.md",
+   "block": 2,
+   "sha256": "b667b7bd337cd59fe0d1a79e3b856660895c3921db8a0cf64fc0c13affdf4210",
+   "status": "pass",
+   "stdout": "{'a': 2.0, 'b': 5.0}",
+   "stderr": "",
+   "expected": "{'a': 2.0, 'b': 5.0}"
+  },
+  {
+   "file": "content/lessons/numpy-pandas.md",
+   "block": 3,
+   "sha256": "7e9110e3e26dcb0adefd4ed0818ab869ed0d5c880b00f3c38c4be856957e3b09",
+   "status": "pass",
+   "stdout": "",
+   "stderr": ""
+  },
+  {
+   "file": "content/lessons/optimizers.md",
+   "block": 1,
+   "sha256": "f52fa4a284a8e02a4d73b6efb538d70542cacb6cf6960d1fb99394892bf57aa5",
+   "status": "pass",
+   "stdout": "1.84",
+   "stderr": "",
+   "expected": "1.84"
+  },
+  {
+   "file": "content/lessons/optimizers.md",
+   "block": 2,
+   "sha256": "230ce2d018c9aadfabe99171794a2de10ead268d818b9288ec39d13644bd63e7",
+   "status": "pass",
+   "stdout": "3.9",
+   "stderr": "",
+   "expected": "3.9"
+  },
+  {
+   "file": "content/lessons/pca.md",
+   "block": 1,
+   "sha256": "0d84bb9ffae37af3f925cd2679f778516cdcbbb040dc64544a6ec5e51b35368c",
+   "status": "pass",
+   "stdout": "[0.9246 0.0531]",
+   "stderr": "",
+   "expected": "[0.9246 0.0531]"
+  },
+  {
+   "file": "content/lessons/polynomial-regression.md",
+   "block": 1,
+   "sha256": "1f534ead947240df3c3b3eec7619755540dee1a698e5978bfe26586ce79ac7f8",
+   "status": "pass",
+   "stdout": "[1.0, 0.0, 1.0]",
+   "stderr": "",
+   "expected": "[1.0, 0.0, 1.0]"
+  },
+  {
+   "file": "content/lessons/probability.md",
+   "block": 1,
+   "sha256": "9c1abde101cb2a2c7f4509eaa6aa0d9649d3c3f7740da14b053750f4f9488127",
+   "status": "pass",
+   "stdout": "[3.5, 2.9167, 0.375, 0.6827]",
+   "stderr": "",
+   "expected": "[3.5, 2.9167, 0.375, 0.6827]"
+  },
+  {
+   "file": "content/lessons/python-ml.md",
+   "block": 1,
+   "sha256": "79f2d91d310dc8b9b8a72e627455e73079942e0a8c05bb24b721b425f0e286f1",
+   "status": "pass",
+   "stdout": "30 [0, 3, 6, 9]",
+   "stderr": "",
+   "expected": "30 [0, 3, 6, 9]"
+  },
+  {
+   "file": "content/lessons/pytorch-practice.md",
+   "block": 1,
+   "sha256": "57e921528c5f068749c4422df925ee47f25ab90a8b54b7165fd9fbe46929095c",
+   "status": "pass",
+   "stdout": "14 1568 15690",
+   "stderr": "",
+   "expected": "14 1568 15690"
+  },
+  {
+   "file": "content/lessons/pytorch-practice.md",
+   "block": 2,
+   "sha256": "6e88c685b2100fa6d139a7857c370708670a3d89a858cd8cbced0910ca36bfce",
+   "status": "pass",
+   "stdout": "torch.Size([64, 10])",
+   "stderr": ""
+  },
+  {
+   "file": "content/lessons/random-forest.md",
+   "block": 1,
+   "sha256": "069a9897eb8b6de2dda7b63c08cdff3e62fc3fb504e36ae4f5687830c11b9329",
+   "status": "pass",
+   "stdout": "0.889",
+   "stderr": "",
+   "expected": "0.889"
+  },
+  {
+   "file": "content/lessons/recommendation.md",
+   "block": 1,
+   "sha256": "e8dce2710c0e7e91d1cf50aea6d965d165b52f92c23887938fe38c82641e99ba",
+   "status": "pass",
+   "stdout": "[0.9756, 0.908] 3.446",
+   "stderr": "",
+   "expected": "[0.9756, 0.908] 3.446"
+  },
+  {
+   "file": "content/lessons/ridge-lasso.md",
+   "block": 1,
+   "sha256": "6320cd9d5487f66c57d45e8cbb311c59fe5ed62f982fc28edb41367045984c3b",
+   "status": "pass",
+   "stdout": "[2.0, 1.8667, 1.0]",
+   "stderr": "",
+   "expected": "[2.0, 1.8667, 1.0]"
+  },
+  {
+   "file": "content/lessons/rnn-lstm.md",
+   "block": 1,
+   "sha256": "a61a340bbadacbeca0207d50c232b36b35cab802f2f5870f1975993d00525918",
+   "status": "pass",
+   "stdout": "[0.7616, -0.5506]",
+   "stderr": "",
+   "expected": "[0.7616, -0.5506]"
+  },
+  {
+   "file": "content/lessons/softmax-regression.md",
+   "block": 1,
+   "sha256": "e12030ae4753457d709bcb38c59493e3e753a9ac184bf76af092b110a06f12ba",
+   "status": "pass",
+   "stdout": "[0.6652, 0.2447, 0.09]",
+   "stderr": "",
+   "expected": "[0.6652, 0.2447, 0.09]"
+  },
+  {
+   "file": "content/lessons/statistics.md",
+   "block": 1,
+   "sha256": "e6c8e80206e1eb9f92f6ad768a9ac9a6493ae764de53d711c098aac07223af5f",
+   "status": "pass",
+   "stdout": "5.0 4.5 4.0 2.0 4.5714 2.1381",
+   "stderr": "",
+   "expected": "5.0 4.5 4.0 2.0 4.5714 2.1381"
+  },
+  {
+   "file": "content/lessons/svm.md",
+   "block": 1,
+   "sha256": "4db011bb01b69692bb09f2906e3c3cf07665cb60c5a1a24c6251d2aa6ab3d639",
+   "status": "pass",
+   "stdout": "0.956",
+   "stderr": "",
+   "expected": "0.956"
+  },
+  {
+   "file": "content/lessons/text-classification.md",
+   "block": 1,
+   "sha256": "fdadab4a8a5e31c9ab1e7056f2894e4bd0f70e0a5c9258b45fd8aaffc89511a7",
+   "status": "pass",
+   "stdout": "[1, 0] [0.6, 0.42]",
+   "stderr": "",
+   "expected": "[1, 0] [0.6, 0.42]"
+  },
+  {
+   "file": "content/lessons/training-diagnostics.md",
+   "block": 1,
+   "sha256": "bc55ca10ff0924fa700f34e1981e6877d44c300fc3476d1a0548a5e41341d138",
+   "status": "pass",
+   "stdout": "(8, 4) (8, 4) True",
+   "stderr": "",
+   "expected": "(8, 4) (8, 4) True"
+  },
+  {
+   "file": "content/lessons/transfer-learning.md",
+   "block": 1,
+   "sha256": "48da65d96ef5afb06418dbaa5c9b04eed81fa429533ab7c15cb3a24270671396",
+   "status": "pass",
+   "stdout": "5130",
+   "stderr": "",
+   "expected": "5130"
+  },
+  {
+   "file": "content/lessons/transfer-learning.md",
+   "block": 2,
+   "sha256": "59a2e5e32fb14c6851b383612f11f529a4ca67288ee9792ff7ed355b324f1d95",
+   "status": "context-only",
+   "reason": "Requires external model/weights; syntax compiled, not executed"
+  },
+  {
+   "file": "content/lessons/transformer-architecture.md",
+   "block": 1,
+   "sha256": "5624bcaaeea9f3de88e7beba763fe136af04ab8d0e443cb013c4879d8e2a6384",
+   "status": "pass",
+   "stdout": "[0.8415, 0.5403, 0.01, 1.0]",
+   "stderr": "",
+   "expected": "[0.8415, 0.5403, 0.01, 1.0]"
+  },
+  {
+   "file": "content/lessons/transformer-architecture.md",
+   "block": 2,
+   "sha256": "452f59cbbd9f1246976240c49e19fe437829bd06ee8993b1dce5513d05a365ce",
+   "status": "pass",
+   "stdout": "1048576 64",
+   "stderr": "",
+   "expected": "1048576 64"
+  },
+  {
+   "file": "content/lessons/transformer-architecture.md",
+   "block": 3,
+   "sha256": "49839303dd3fc0773820ca69967a2f07c4db91241627de31917c35bb3514fa35",
+   "status": "pass",
+   "stdout": "(2, 4, 11) True",
+   "stderr": "",
+   "expected": "(2, 4, 11) True"
+  },
+  {
+   "file": "content/lessons/transformer-architecture.md",
+   "block": 4,
+   "sha256": "715693c635ef5f1a9eadf8da193c549a4e6862c3e63d93469aa6f645ee76d3e1",
+   "status": "pass",
+   "stdout": "(2, 3, 12) True",
+   "stderr": "/workspace/.venvs/ml-academy-curriculum/lib/python3.12/site-packages/torch/nn/modules/transformer.py:533: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/NestedTensorImpl.cpp:177.)\n  output = torch._nested_tensor_from_mask(",
+   "expected": "(2, 3, 12) True"
+  },
+  {
+   "file": "content/lessons/vectors-matrices.md",
+   "block": 1,
+   "sha256": "925605fb7ca5a5ca98c725524957f2f922bc90912806b1015b09b36e4c15ef34",
+   "status": "pass",
+   "stdout": "32 5.0",
+   "stderr": "",
+   "expected": "32 5.0"
+  },
+  {
+   "file": "content/lessons/vectors-matrices.md",
+   "block": 2,
+   "sha256": "77672973335607ab507f09498975df15a49e87d07f3ae1abeb41f529f1ba5f3d",
+   "status": "pass",
+   "stdout": "[[2, 1], [4, 3]] (2, 4)",
+   "stderr": "",
+   "expected": "[[2, 1], [4, 3]] (2, 4)"
+  }
+ ]
+}

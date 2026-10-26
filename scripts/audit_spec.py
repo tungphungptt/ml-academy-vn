@@ -1,4 +1,4 @@
-"""Đối chiếu các mục A1-C22 của đặc tả với catalog hiện có. full = có bài riêng; partial = được đề cập trong bài khác; missing = chưa có."""
+"""Đối chiếu các mục A1-C22 của đặc tả với catalog hiện có. mapped = slug được đăng ký; đây không phải đánh giá độ sâu học thuật. Xem docs/curriculum-coverage.json."""
 import json
 c = json.load(open("content/catalog.json")); have = {l["s"] for co in c["courses"] for m in co["modules"] for l in m["lessons"] if isinstance(l, dict)}
 S = {"A1": ("python-ml",), "A2": ("numpy-pandas",), "A3": ("vectors-matrices",), "A4": ("derivatives",), "A5": ("probability",), "A6": ("statistics",), "A7": ("data-preparation",), "A8": ("metrics",),
@@ -7,4 +7,5 @@ S = {"A1": ("python-ml",), "A2": ("numpy-pandas",), "A3": ("vectors-matrices",),
 full = [k for k, v in S.items() if v and all(not x.startswith("~") and x in have for x in v)]
 part = [k for k, v in S.items() if k not in full and any(x.lstrip("~") in have for x in v)]
 miss = [k for k in S if k not in full and k not in part]
-print(f"full {len(full)} | partial {len(part)}: {part} | missing {len(miss)}: {miss}")
+print(f"Registry mappings {len(full)}/52 | partial {len(part)}: {part} | missing {len(miss)}: {miss}")
+raise SystemExit(bool(miss or part))

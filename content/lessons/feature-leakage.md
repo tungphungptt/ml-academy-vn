@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Cross-validation, chuẩn hóa dữ liệu.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** Cross-validation.
 **Mục tiêu:** nhận ra và tránh rò rỉ dữ liệu (data leakage) khi tiền xử lý và chọn đặc trưng.
 
 ## Vấn đề thực tế
@@ -40,3 +40,14 @@ Biến đổi đặc trưng giúp mô hình học tốt hơn: mã hóa biến ph
 
 ## Tóm tắt
 Fit mọi bước học dữ liệu chỉ trên phần train; dùng Pipeline để đảm bảo điều đó.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Pipeline không tự chữa mọi leakage: một feature chứa kết quả tương lai hay ID trùng giữa folds vẫn sai dù đặt trong Pipeline. Phân biệt fit biến đổi (mean, selection, vocabulary) với phép biến đổi hằng không học dữ liệu; mọi bước phụ thuộc nhãn phải chỉ dùng nhãn train. Một score cao bất ngờ là tín hiệu điều tra, không phải chứng minh duy nhất rằng có leakage. Thí nghiệm trong bài biết rõ quy trình chọn trước CV, nên giải thích được nguồn rò rỉ; 0.57 trên nhãn ngẫu nhiên cũng không chứng minh có tín hiệu thật. EDA dẫn đến lựa chọn mô hình sau khi xem test cũng dùng thông tin test.
+
+## Đáp án và tiêu chí chấm
+1. Ví dụ scaler, imputer, SelectKBest/PCA/vocabulary đều có fit và có thể rò rỉ khi fit toàn bộ dữ liệu. (2 điểm).
+2. Lặp lại trên các seed cố định trước thí nghiệm, giữ protocol, báo phân bố scores chứ không chọn seed cao nhất. (3 điểm).
+3. Dự đoán bỏ học trước học kỳ nhưng dùng cột “đã nộp đơn thôi học cuối kỳ” là target leakage. Nêu thời điểm feature thật sự sẵn có và loại nó khỏi mô hình dự đoán sớm. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Common pitfalls (data leakage)](https://scikit-learn.org/stable/common_pitfalls.html).

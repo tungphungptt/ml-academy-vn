@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "Một hàm lồi có luôn đúng một nghiệm tối ưu không?",
+  "options": [
+   "Có",
+   "Không, hàm hằng có nhiều nghiệm",
+   "Chỉ khi vẽ được đồ thị"
+  ],
+  "correct": 1,
+  "explanation": "Strict convexity bảo đảm tối đa một nghiệm nếu tồn tại; convexity đơn thuần không đủ."
+ },
+ {
+  "prompt": "Min x² với x≥1 có nghiệm nào?",
+  "options": [
+   "x=1, gradient không bằng 0 tại biên",
+   "x=0 vì gradient bằng 0",
+   "Không có nghiệm"
+  ],
+  "correct": 0,
+  "explanation": "Gradient-zero không phải điều kiện cần ở biên ràng buộc; KKT dùng multiplier."
+ },
+ {
+  "prompt": "OLS Hessian tỷ lệ XᵀX có tính chất nào?",
+  "options": [
+   "Luôn âm xác định",
+   "Luôn khả nghịch",
+   "Nửa xác định dương"
+  ],
+  "correct": 2,
+  "explanation": "vᵀXᵀXv=||Xv||²≥0 nhưng có thể bằng 0 với v khác 0."
+ }
+]

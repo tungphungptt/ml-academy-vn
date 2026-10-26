@@ -1,0 +1,1996 @@
+{
+  "base_commit": "5b88b1889456fecfa06fa2c4921f5abe15a72a24",
+  "definition": "Stable lesson ID is catalog slug. fixture_db_id belongs only to the disposable before-audit database. Runtime visibility is fresh-seed evidence, not a production observation.",
+  "lessons": [
+    {
+      "t": "Python cho ML",
+      "f": "python-ml.md",
+      "s": "python-ml",
+      "src": [
+        {
+          "title": "Python Tutorial (docs.python.org)",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "course": "python-math",
+      "module": "Công cụ",
+      "level": "Beginner",
+      "words": 340,
+      "sha256": "e0ee7f9339c9614545038b50017000ee490de8baea95d170bc5041ef3f74f465",
+      "headings": [
+        "Vấn đề thực tế",
+        "Khái niệm chính",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ea0005u2ax9778sfvf",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Viết comprehension tạo bình phương các số chẵn từ 0 đến 10. 2. (Vừa) Viết hàm tính trung bình và độ lệch chuẩn không dùng NumPy. 3. (Khó) Tạo môi trường ảo mới và cài scikit-learn.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Khái niệm chính; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "NumPy, pandas và Matplotlib",
+      "f": "numpy-pandas.md",
+      "s": "numpy-pandas",
+      "src": [
+        {
+          "title": "NumPy: Absolute Beginners Guide",
+          "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+        },
+        {
+          "title": "pandas User Guide",
+          "url": "https://pandas.pydata.org/docs/user_guide/index.html"
+        },
+        {
+          "title": "Matplotlib User Guide",
+          "url": "https://matplotlib.org/stable/users/index.html"
+        }
+      ],
+      "course": "python-math",
+      "module": "Công cụ",
+      "level": "Beginner",
+      "words": 365,
+      "sha256": "84892f370f7f2712596644061a58d61ce7621bf3a266cbfbbe56c19251c8bf60",
+      "headings": [
+        "Vấn đề thực tế",
+        "Khái niệm chính",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 3,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ec000fu2axen8ubfj9",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Chuẩn hóa $(1,3,5)$. 2. (Vừa) Tính trung bình theo nhóm cho bảng 6 dòng tự tạo. 3. (Khó) Viết hàm chuẩn hóa fit trên train và áp dụng cho test.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Khái niệm chính; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Vector và ma trận",
+      "f": "vectors-matrices.md",
+      "s": "vectors-matrices",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Linear Algebra",
+          "url": "https://d2l.ai/chapter_preliminaries/linear-algebra.html"
+        }
+      ],
+      "course": "python-math",
+      "module": "Công cụ",
+      "level": "Beginner",
+      "words": 324,
+      "sha256": "596ea0d3b8c2dd8b951aac0c267e6556029841e6d287e72afa5f2b46e39bad41",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ef000tu2axu4r3m02q",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $(2,0,1)\\cdot(1,5,3)$. 2. (Vừa) Tính $BA$ và so với $AB$. 3. (Khó) Viết hàm cosine similarity có xử lý vector bằng 0.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Đạo hàm và gradient",
+      "f": "derivatives.md",
+      "s": "derivatives",
+      "src": [
+        {
+          "title": "Stanford CS231n: Optimization (gradient và chain rule)",
+          "url": "https://cs231n.github.io/optimization-1/"
+        }
+      ],
+      "course": "python-math",
+      "module": "Toán",
+      "level": "Beginner",
+      "words": 262,
+      "sha256": "5d04c81a814122fd2b744aa5da1cc4f2447f2d03dd28a114a0331a552ed6df1f",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế của kiểm tra số học",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37eh0015u2axf8q1hsyw",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Đạo hàm của $x^3$ tại $x=2$. 2. (Vừa) Tính $\\nabla f$ của $f=x^2y$ tại $(1,2)$. 3. (Khó) Dùng chain rule tính đạo hàm của $\\sigma(wx+b)$ theo $w$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế của kiểm tra số học",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Xác suất cơ bản",
+      "f": "probability.md",
+      "s": "probability",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Probability and Statistics",
+          "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+        }
+      ],
+      "course": "python-math",
+      "module": "Toán",
+      "level": "Beginner",
+      "words": 320,
+      "sha256": "588314a73bf4c0cf07c43428105c0a89719b960e9baa124eb2f7cc54325867fc",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ei001fu2axtywdmws2",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $\\mathbb E[X]$ của đồng xu gán 1 cho ngửa, 0 cho sấp. 2. (Vừa) Tìm $\\hat p$ cho 7 ngửa trong 10 lần. 3. (Khó) Suy ra MLE của trung bình phân phối chuẩn.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Metrics đánh giá mô hình",
+      "f": "metrics.md",
+      "s": "metrics",
+      "src": [
+        {
+          "title": "scikit-learn: Model evaluation",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        }
+      ],
+      "course": "python-math",
+      "module": "Toán",
+      "level": "Beginner",
+      "words": 257,
+      "sha256": "da869cd56b3237e2c16678c51ae59bc62c97c129ed2f0c585f8d5f245096d0ac",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Khi nào dùng",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ek001pu2ax5lk9319o",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính lại metric nếu $FN=10$. 2. (Vừa) Vẽ confusion matrix cho Iris bằng scikit-learn. 3. (Khó) Tạo dữ liệu 1% dương và chứng minh accuracy đánh lừa.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Khi nào dùng",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu",
+      "f": "data-preparation.md",
+      "s": "data-preparation",
+      "src": [
+        {
+          "title": "scikit-learn: Preprocessing data",
+          "url": "https://scikit-learn.org/stable/modules/preprocessing.html"
+        },
+        {
+          "title": "scikit-learn: Imputation of missing values",
+          "url": "https://scikit-learn.org/stable/modules/impute.html"
+        }
+      ],
+      "course": "python-math",
+      "module": "Toán",
+      "level": "Beginner",
+      "words": 319,
+      "sha256": "8a1ccd4efb0ba7a3a5cb873800f88adfcfec0746551a772453068be1f3700f0d",
+      "headings": [
+        "Vấn đề thực tế",
+        "Quy tắc",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37el001zu2axi617idtm",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Chia 2000 mẫu theo tỉ lệ 80/10/10. 2. (Vừa) Dùng `train_test_split` hai lần để tạo train/val/test. 3. (Khó) Dùng `SimpleImputer` và `StandardScaler` trong Pipeline.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Quy tắc; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Thống kê mô tả và ước lượng tham số",
+      "f": "statistics.md",
+      "s": "statistics",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Probability and Statistics",
+          "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+        }
+      ],
+      "course": "python-math",
+      "module": "Toán",
+      "level": "Beginner",
+      "words": 343,
+      "sha256": "dd4280cdc9478115f38a406560d801d40a96dec5a975ba23713a7ea42ee7659f",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37en002bu2axb5hkljib",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính trung vị của $(1,3,3,6,7,8,9)$. 2. (Vừa) Tính $\\sigma^2$ và $s^2$ cho $(1,2,3,4)$. 3. (Khó) Suy ra $\\hat\\mu$ MLE bằng cách đặt đạo hàm log-likelihood bằng 0.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "AI, Machine Learning và Deep Learning",
+      "f": "ml-intro.md",
+      "s": "ml-intro",
+      "src": [
+        {
+          "title": "scikit-learn: Machine learning tutorial (mô tả các dạng bài toán)",
+          "url": "https://scikit-learn.org/stable/tutorial/basic/tutorial.html"
+        },
+        {
+          "title": "Machine Learning cơ bản",
+          "url": "https://machinelearningcoban.com/"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Hồi quy",
+      "level": "Intermediate",
+      "words": 347,
+      "sha256": "79b7cdac246ef9f740f591bd0a927405cf9cdafe6e73e993a5d8d50bf58683c9",
+      "headings": [
+        "Vấn đề thực tế",
+        "Các dạng bài toán",
+        "Quy trình chung",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ep002ou2axxz1q9yr8",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Phân loại 5 bài toán thành phân loại, hồi quy, phân cụm. 2. (Vừa) Tính baseline cho dữ liệu có 90% lớp 0. 3. (Khó) Mô tả một bài toán thực tế và chọn dạng học phù hợp.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Các dạng bài toán; Quy trình chung; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Linear Regression",
+      "f": "linear-regression.md",
+      "s": "linear-regression",
+      "src": [
+        {
+          "title": "scikit-learn User Guide: Linear Models",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Hồi quy",
+      "level": "Intermediate",
+      "words": 183,
+      "sha256": "0f35f5cf15f2b087904a5571e7f43a494669baf44b61444d1c6f6340bf212cfe",
+      "headings": [
+        "Vấn đề thực tế",
+        "Mô hình và công thức",
+        "Ví dụ từng bước",
+        "Code from scratch",
+        "Lỗi thường gặp",
+        "Bài tập"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37er0030u2axm28ldbsx",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính tay $L$ với $w=1{,}5$. 2. (Vừa) Đổi learning rate và quan sát loss. 3. (Khó) Suy ra gradient của $L$ theo $w$ và $b$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Mô hình và công thức; Ví dụ từng bước; Code from scratch; Lỗi thường gặp; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Loss Functions: MSE, MAE, Huber, Cross-Entropy",
+      "f": "loss-functions.md",
+      "s": "loss-functions",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Linear Regression (loss)",
+          "url": "https://d2l.ai/chapter_linear-regression/index.html"
+        },
+        {
+          "title": "Stanford CS231n: Linear Classification",
+          "url": "https://cs231n.github.io/linear-classify/"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Hồi quy",
+      "level": "Intermediate",
+      "words": 345,
+      "sha256": "a9210511c2654b1046c9241dfcee5ae0ecf10ddef52b48063914c09b2f329966",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37es003au2ax9sc9tni9",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính MAE và MSE của $e=-3$. 2. (Vừa) Vẽ Huber với $\\delta=1$ và $\\delta=2$. 3. (Khó) Chứng minh gradient của BCE theo $z$ (logit) là $p-y$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Gradient Descent",
+      "f": "gradient-descent.md",
+      "s": "gradient-descent",
+      "src": [
+        {
+          "title": "Stanford CS231n: Optimization",
+          "url": "https://cs231n.github.io/optimization-1/"
+        },
+        {
+          "title": "scikit-learn User Guide: SGD",
+          "url": "https://scikit-learn.org/stable/modules/sgd.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Hồi quy",
+      "level": "Intermediate",
+      "words": 538,
+      "sha256": "4f09407991a9fffda418d49f0846621ddb051964afa1705eb6b46ef344e71817",
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Ba biến thể",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 3,
+      "fixture_db_id": "cmvos37eu003mu2axecskdhwl",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Với $L=\\theta^2$, $\\eta=0.25$, $\\theta_0=4$, tính $\\theta_1,\\theta_2$.\n2. (Vừa) Chạy lab với learning rate khác nhau và ghi lại số epoch để MSE < 0.01.\n3. (Khó) Tự cài mini-batch GD với batch size 8 và so sánh đường cong loss với Batch GD.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Trực giác; Công thức; Ví dụ từng bước; Ba biến thể; Code và cách chạy",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Polynomial Regression",
+      "f": "polynomial-regression.md",
+      "s": "polynomial-regression",
+      "src": [
+        {
+          "title": "scikit-learn: Polynomial regression",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Hồi quy",
+      "level": "Intermediate",
+      "words": 297,
+      "sha256": "70d923a613f7295e846cd0cb5a9a4bcfc5c86fdfc0adb4ef68957da88b99f2c1",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ew0040u2axapou3pl2",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Viết vector đặc trưng bậc 4 cho $x=3$. 2. (Vừa) Dùng `PolynomialFeatures` kết hợp `Ridge` trong Pipeline. 3. (Khó) Chọn bậc bằng cross-validation.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Ridge và Lasso",
+      "f": "ridge-lasso.md",
+      "s": "ridge-lasso",
+      "src": [
+        {
+          "title": "scikit-learn: Ridge regression and classification",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
+        },
+        {
+          "title": "scikit-learn: Lasso",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#lasso"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Hồi quy",
+      "level": "Intermediate",
+      "words": 286,
+      "sha256": "e6077305ec58bb0f191f23066977069c81d2797abbb44e8b170f668bbde8bc92",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ey004au2axuffx2zdo",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $w$ Ridge với $\\lambda=7$. 2. (Vừa) Chạy `Ridge` và `Lasso` của scikit-learn với nhiều $\\lambda$. 3. (Khó) Suy ra nghiệm Lasso 1 chiều.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Logistic Regression",
+      "f": "logistic-regression.md",
+      "s": "logistic-regression",
+      "src": [
+        {
+          "title": "scikit-learn: Logistic regression",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 268,
+      "sha256": "4cb1effe294d159d5ec3df55ee3f644e764d6e21a7d68fed4eee32b70e4da75e",
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác và công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37f0004ou2axf737v9r2",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $\\sigma(-2)$. 2. (Vừa) Chạy lab và đổi learning rate. 3. (Khó) Suy ra gradient $(p-y)x$ từ $L$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Trực giác và công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế, so sánh",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Softmax Regression",
+      "f": "softmax-regression.md",
+      "s": "softmax-regression",
+      "src": [
+        {
+          "title": "scikit-learn: Logistic regression (multinomial)",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        },
+        {
+          "title": "Dive into Deep Learning: Softmax Regression",
+          "url": "https://d2l.ai/chapter_linear-classification/index.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 259,
+      "sha256": "fe2a061a742cff8124caa97cfedbacb1c7f44d687499174108b91547ae44119b",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37f1004yu2axn0bno8c0",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính softmax của $(0,0,0)$. 2. (Vừa) Kiểm tra softmax không đổi khi cộng hằng số vào $z$. 3. (Khó) Cài huấn luyện softmax regression bằng gradient $p-y$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế, so sánh",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "KNN",
+      "f": "knn.md",
+      "s": "knn",
+      "src": [
+        {
+          "title": "scikit-learn User Guide: Nearest Neighbors",
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+        },
+        {
+          "title": "Stanford CS231n: Image Classification (kNN)",
+          "url": "https://cs231n.github.io/classification/"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 475,
+      "sha256": "f3598d619b853fe7a106563a38a45a0d4415a552aac2fff080162359bfa0f2e9",
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Ảnh hưởng của K, decision boundary và đánh giá",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "So sánh",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 3,
+      "fixture_db_id": "cmvos37f3005au2ax62qr9ol7",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Dự đoán lớp của $q=(2,2)$ với $K=1$ trên dữ liệu ví dụ.\n2. (Vừa) Chạy lab và đổi $K$ từ 1 đến 15, ghi lại accuracy.\n3. (Khó) Thêm một đặc trưng có thang đo lớn gấp 100 lần và quan sát kết quả trước/sau chuẩn hóa.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Trực giác; Công thức; Ví dụ từng bước; Ảnh hưởng của K, decision boundary và đánh giá; Code và cách chạy",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Decision Tree",
+      "f": "decision-tree.md",
+      "s": "decision-tree",
+      "src": [
+        {
+          "title": "scikit-learn: Decision Trees",
+          "url": "https://scikit-learn.org/stable/modules/tree.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 300,
+      "sha256": "b5667b960d61da476794788c9d52e942a7aca9bf01a90eb0522e00b8a01714c5",
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác và công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37f5005ou2ax4zthewwd",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính Gini của nút {2A,2B}. 2. (Vừa) Đổi `max_depth` từ 1 đến 6, ghi accuracy. 3. (Khó) Tự cài hàm tìm ngưỡng chia tốt nhất cho một đặc trưng.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Trực giác và công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế, so sánh",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Naive Bayes",
+      "f": "naive-bayes.md",
+      "s": "naive-bayes",
+      "src": [
+        {
+          "title": "scikit-learn: Naive Bayes",
+          "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 254,
+      "sha256": "a56450a9ccfc40a9a3e0dd6f2e2270cec46ef1f93575836bb9f9555d7e2dd941",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37f6005yu2ax5h5louzt",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính lại với $P(\\text{free}\\mid\\text{ham})=0.1$. 2. (Vừa) Thử `MultinomialNB` trên văn bản ngắn. 3. (Khó) Cài Naive Bayes từ đầu với làm trơn Laplace.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "SVM",
+      "f": "svm.md",
+      "s": "svm",
+      "src": [
+        {
+          "title": "scikit-learn: Support Vector Machines",
+          "url": "https://scikit-learn.org/stable/modules/svm.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 313,
+      "sha256": "d9e9a846c0c8b35573362fe4b21ae7fede492af4ed32d2c70444adbecfe6d5f2",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37f70068u2axeyq4uko9",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính lề với $\\mathbf w=(6,8)$. 2. (Vừa) So sánh kernel `linear` và `rbf` trên Iris. 3. (Khó) Dùng GridSearchCV chọn $C$ và `gamma`.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Random Forest",
+      "f": "random-forest.md",
+      "s": "random-forest",
+      "src": [
+        {
+          "title": "scikit-learn: Ensembles (Random Forests)",
+          "url": "https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Phân loại",
+      "level": "Intermediate",
+      "words": 382,
+      "sha256": "4db0fd95fdfa98eeb29621e191ea52b0e9f296936dc6a922b789a44ad04af568",
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác và công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37f9006iu2axcq6qbuz6",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $(1-1/50)^{50}$. 2. (Vừa) Chạy 5-fold cross-validation cho cây đơn và Random Forest. 3. (Khó) Tự cài bagging 10 cây bằng `DecisionTreeClassifier`.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Trực giác và công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "K-Means",
+      "f": "k-means.md",
+      "s": "k-means",
+      "src": [
+        {
+          "title": "scikit-learn User Guide: Clustering (K-Means)",
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Học không giám sát",
+      "level": "Intermediate",
+      "words": 392,
+      "sha256": "5409992cb2672334fcd0fa4edaffcd35f258e433ec989897616029d8b9d17b61",
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 3,
+      "fixture_db_id": "cmvos37fb006uu2axgkxmb384",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $J$ của ví dụ nếu cụm là $\\{1,2\\}$ và $\\{3,10,11,12\\}$ với tâm là trung bình của mỗi cụm.\n2. (Vừa) Chạy lab với $K=2,3,4,5$ (bản sklearn) và vẽ inertia theo $K$.\n3. (Khó) Cài đặt khởi tạo k-means++ và so sánh với khởi tạo ngẫu nhiên.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Trực giác; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "PCA",
+      "f": "pca.md",
+      "s": "pca",
+      "src": [
+        {
+          "title": "scikit-learn: PCA",
+          "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Học không giám sát",
+      "level": "Intermediate",
+      "words": 249,
+      "sha256": "0e9ff02cb30ff8c874597b6ae9c04fba65f8d061d0c79d720cf7016669ebb3c1",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fe0076u2axdi3wvxmp",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $C$ cho $(0,0),(1,0),(2,0)$. 2. (Vừa) Chọn số thành phần để giữ 95% phương sai trên Iris. 3. (Khó) Tự cài PCA bằng `np.linalg.eigh`.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Gaussian Mixture Models",
+      "f": "gmm.md",
+      "s": "gmm",
+      "src": [
+        {
+          "title": "scikit-learn: Gaussian mixture models",
+          "url": "https://scikit-learn.org/stable/modules/mixture.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Học không giám sát",
+      "level": "Intermediate",
+      "words": 344,
+      "sha256": "8e2d4d25bfc6338626eb57293afe57424d1f87f9982805f3b7d677de14d8080a",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ff007gu2axg0z8kxzt",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $r_1$ tại $x=2$ cho ví dụ trên. 2. (Vừa) Chọn $K$ bằng BIC (`g.bic(d)`). 3. (Khó) Tự cài EM cho GMM 1 chiều.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Anomaly Detection",
+      "f": "anomaly-detection.md",
+      "s": "anomaly-detection",
+      "src": [
+        {
+          "title": "scikit-learn: Novelty and Outlier Detection",
+          "url": "https://scikit-learn.org/stable/modules/outlier_detection.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Học không giám sát",
+      "level": "Intermediate",
+      "words": 336,
+      "sha256": "4f93f82a31faa59db948d3c8f1d31089112ba51a31294c25646eac18b7e383d5",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Các hướng khác",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fh007qu2ax644v1opp",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính IQR của $(1,2,3,4,100)$. 2. (Vừa) Thêm một ngoại lai thứ hai và xem z-score thay đổi thế nào. 3. (Khó) Dùng `IsolationForest` trên dữ liệu 2 chiều và vẽ vùng bất thường.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Các hướng khác",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Bias-Variance và Overfitting",
+      "f": "bias-variance.md",
+      "s": "bias-variance",
+      "src": [
+        {
+          "title": "scikit-learn: Underfitting vs. Overfitting",
+          "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 487,
+      "sha256": "fbcfa167275344c0c010d59c2d138854b7a966b670f16f765d114c13af3011fc",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Cách xử lý",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fi0082u2axp5tcd6p2",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính lỗi kỳ vọng với bias²=0.1, Var=0.05, σ²=0.04. 2. (Vừa) Chạy lại với 100 điểm train và so sánh khoảng cách train–test. 3. (Khó) Ước lượng bias và variance bằng cách huấn luyện lại trên nhiều tập bootstrap.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Cách xử lý",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Cross-validation",
+      "f": "cross-validation.md",
+      "s": "cross-validation",
+      "src": [
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 349,
+      "sha256": "254acf5cd6a8e1f2d201bf73907045e816fcd9db527aea20031eb1cbc4f8e758",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fk008cu2ax17yvpc6t",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Kích thước các fold khi 11 mẫu, $K=4$. 2. (Vừa) Dùng `GridSearchCV` chọn $C$ của SVM trên Iris. 3. (Khó) Tự cài K-fold bằng NumPy.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Feature Engineering và Data Leakage",
+      "f": "feature-leakage.md",
+      "s": "feature-leakage",
+      "src": [
+        {
+          "title": "scikit-learn: Common pitfalls (data leakage)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 493,
+      "sha256": "e3abce6baf5a22360971ab052a40ceba9ff63ebad7e3dfed8bab4f00823533fb",
+      "headings": [
+        "Vấn đề thực tế",
+        "Nguyên tắc",
+        "Ví dụ từng bước (thí nghiệm trên dữ liệu nhiễu thuần túy)",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Feature Engineering ngắn gọn",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fm008mu2axkh076214",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Liệt kê 3 bước tiền xử lý có thể gây rò rỉ. 2. (Vừa) Chạy lại thí nghiệm với seed khác. 3. (Khó) Tìm một ví dụ target leakage trong bài toán dự đoán bỏ học.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Nguyên tắc; Ví dụ từng bước (thí nghiệm trên dữ liệu nhiễu thuần túy); Code và cách chạy; Lỗi thường gặp; Feature Engineering ngắn gọn",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Recommendation Systems",
+      "f": "recommendation.md",
+      "s": "recommendation",
+      "src": [
+        {
+          "title": "Machine Learning cơ bản",
+          "url": "https://machinelearningcoban.com/"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 373,
+      "sha256": "2e31869953681dfbe88e412be9bc057984ddca0c1939c7b5b124c12c7c0d2d35",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fo008wu2ax93jeidbo",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $\\operatorname{sim}$ giữa $(1,0)$ và $(0,1)$. 2. (Vừa) Thêm người dùng thứ tư và dự đoán lại. 3. (Khó) Chuẩn hóa đánh giá bằng cách trừ trung bình người dùng trước khi tính similarity.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Hyperparameter Tuning",
+      "f": "hyperparameter-tuning.md",
+      "s": "hyperparameter-tuning",
+      "src": [
+        {
+          "title": "scikit-learn: Tuning hyper-parameters",
+          "url": "https://scikit-learn.org/stable/modules/grid_search.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 346,
+      "sha256": "353d6839046e7dcf5c1693a350d5a0c3c370043b87e0732ece16177a05f0bdf1",
+      "headings": [
+        "Vấn đề thực tế",
+        "Phương pháp",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fp0096u2axi5mp5msa",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Đếm số lần huấn luyện với lưới 4×3 và 10 fold. 2. (Vừa) Thêm `kernel` vào lưới. 3. (Khó) Thay bằng `RandomizedSearchCV` và so sánh thời gian.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Phương pháp; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Quy trình dự án Machine Learning",
+      "f": "ml-project-workflow.md",
+      "s": "ml-project-workflow",
+      "src": [
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        },
+        {
+          "title": "scikit-learn: Model persistence",
+          "url": "https://scikit-learn.org/stable/model_persistence.html"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 367,
+      "sha256": "7d67a9b15a61f0a827a03fd5e24ca1ad9fda3e07ad56c1545261b4e44b06c570",
+      "headings": [
+        "Các bước",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fr009gu2axieb8e2se",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Thêm baseline `DummyClassifier`. 2. (Vừa) Báo cáo Precision, Recall, F1 trên test. 3. (Khó) Thêm GridSearchCV vào pipeline và lưu mô hình.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Các bước; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Hạn chế; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Lưu mô hình và triển khai",
+      "f": "model-deployment.md",
+      "s": "model-deployment",
+      "src": [
+        {
+          "title": "scikit-learn: Model persistence",
+          "url": "https://scikit-learn.org/stable/model_persistence.html"
+        },
+        {
+          "title": "FastAPI documentation",
+          "url": "https://fastapi.tiangolo.com/"
+        }
+      ],
+      "course": "ml-fundamentals",
+      "module": "Đánh giá và ứng dụng",
+      "level": "Intermediate",
+      "words": 394,
+      "sha256": "bca245a7df60b26b4b4aac90909151a9be587472c86ab5d7ec9335e8cd676705",
+      "headings": [
+        "Vấn đề thực tế",
+        "Nguyên tắc",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ft009su2axv6cm01kb",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Lưu và nạp một mô hình KNN. 2. (Vừa) Thêm kiểm tra độ dài đặc trưng vào API. 3. (Khó) Lưu `state_dict` của một mạng PyTorch và nạp lại vào kiến trúc mới.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Nguyên tắc; Code và cách chạy; Lỗi thường gặp; Bài tập; Tóm tắt",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Perceptron",
+      "f": "perceptron.md",
+      "s": "perceptron",
+      "src": [
+        {
+          "title": "scikit-learn: Perceptron",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#perceptron"
+        },
+        {
+          "title": "Dive into Deep Learning: Multilayer Perceptrons",
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 256,
+      "sha256": "2f0dedea03f0e4de6e733d41231a39073deffb0b9bc23d206c5aae5c59642439",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fw00a7u2axpx36buym",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Làm tiếp một bước với $x=(2,1),y=-1$. 2. (Vừa) Đếm số epoch hội tụ khi đổi seed. 3. (Khó) Chứng minh Perceptron không biểu diễn được XOR.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế, so sánh",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "MLP",
+      "f": "mlp.md",
+      "s": "mlp",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Multilayer Perceptrons",
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 249,
+      "sha256": "67214dedca8536c01157574cbcc211c38a22c910c73961bee640364b48c80714",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fx00aju2axm2arg205",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $\\hat y$ với $x=(2,0)$. 2. (Vừa) Đổi số neuron ẩn và quan sát loss. 3. (Khó) Thêm một lớp ẩn và ghi lại shape từng tensor.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Backpropagation",
+      "f": "backpropagation.md",
+      "s": "backpropagation",
+      "src": [
+        {
+          "title": "Stanford CS231n: Backpropagation",
+          "url": "https://cs231n.github.io/optimization-2/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 250,
+      "sha256": "485f1b9d5f7a75e58364bba032cdc1b49709f01907a2de910f00a8a00ee26b4f",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 0,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37fz00atu2axo7go0pfy",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính lại với $t=6$. 2. (Vừa) Kiểm tra gradient bằng sai phân $\\frac{L(w+\\epsilon)-L(w-\\epsilon)}{2\\epsilon}$. 3. (Khó) Suy ra gradient cho mạng 2 lớp ẩn.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Optimizers",
+      "f": "optimizers.md",
+      "s": "optimizers",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Optimization Algorithms",
+          "url": "https://d2l.ai/chapter_optimization/index.html"
+        },
+        {
+          "title": "Adam: A Method for Stochastic Optimization (Kingma và Ba)",
+          "url": "https://arxiv.org/abs/1412.6980"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 378,
+      "sha256": "4496acbe8fb9173c6c266e92c3e21749424612f8d35b6f84374fb877ba41440b",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37g000b3u2axe2m381z0",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $\\theta_3$ của Momentum. 2. (Vừa) Thử $\\beta=0.5$ và $0.99$. 3. (Khó) Cài Adam đầy đủ nhiều bước và so với SGD trên $L=\\theta^2$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Automatic Differentiation (Autograd)",
+      "f": "autograd.md",
+      "s": "autograd",
+      "src": [
+        {
+          "title": "PyTorch Tutorials: Autograd",
+          "url": "https://docs.pytorch.org/tutorials/"
+        },
+        {
+          "title": "Stanford CS231n: Backpropagation",
+          "url": "https://cs231n.github.io/optimization-2/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 457,
+      "sha256": "7a854cc977dabab160040aab92a3a8443b42f98e185af4944761f88212fa4c71",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức và ý tưởng",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37g200bfu2axam6uem1m",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính tay gradient của $f=a\\cdot b$ tại $a=3,b=4$. 2. (Vừa) Thêm phép trừ cho lớp `V`. 3. (Khó) Thêm `tanh` và kiểm tra bằng sai phân số học.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức và ý tưởng; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Thực hành PyTorch: MLP và CNN",
+      "f": "pytorch-practice.md",
+      "s": "pytorch-practice",
+      "src": [
+        {
+          "title": "PyTorch Tutorials",
+          "url": "https://docs.pytorch.org/tutorials/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 386,
+      "sha256": "c294aad63571fdcb31b817513ec08f14ca3ce20714edca793295880365858d0d",
+      "headings": [
+        "Vòng lặp huấn luyện",
+        "Ví dụ tính shape cho CNN (ảnh xám 28×28)",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37g400bru2axtmyijfzs",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính số tham số của `Conv2d(1, 8, 3)` (có bias). 2. (Vừa) Thêm lớp conv thứ hai và tính lại shape. 3. (Khó) Huấn luyện trên MNIST và vẽ đường cong loss.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vòng lặp huấn luyện; Ví dụ tính shape cho CNN (ảnh xám 28×28); Code và cách chạy; Lỗi thường gặp; Hạn chế; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "practice"
+    },
+    {
+      "t": "Activation Functions",
+      "f": "activations.md",
+      "s": "activations",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Multilayer Perceptrons",
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        },
+        {
+          "title": "Stanford CS231n: Neural Networks",
+          "url": "https://cs231n.github.io/neural-networks-1/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 314,
+      "sha256": "8cac2836c592656aa0929ca1f3bd7cbc75d5a85476fff0ec3948567c42a99f6f",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Cách chọn",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37g500c1u2axqewayuz7",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $\\sigma'(0)$. 2. (Vừa) Vẽ 4 hàm kích hoạt bằng Matplotlib. 3. (Khó) Giải thích vì sao gradient qua 10 lớp sigmoid nhỏ hơn $0.25^{10}$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Cách chọn",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Regularization và Learning Rate Scheduling",
+      "f": "dl-regularization.md",
+      "s": "dl-regularization",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Multilayer Perceptrons (Dropout, weight decay)",
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        },
+        {
+          "title": "Stanford CS231n: Neural Networks Part 3",
+          "url": "https://cs231n.github.io/neural-networks-3/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Nền tảng",
+      "level": "Advanced",
+      "words": 515,
+      "sha256": "460c248f6b0ad88c6efd85a8687d8a850bd79910a99b52ccfe425602ea436eb8",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức và ý tưởng",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37g700cdu2ax4eqgb1pu",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính dropout với $p=0.5$ và mask $(1,0,1,0)$. 2. (Vừa) Tính step decay ở epoch 45. 3. (Khó) Thêm early stopping vào vòng lặp huấn luyện PyTorch.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức và ý tưởng; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "CNN",
+      "f": "cnn.md",
+      "s": "cnn",
+      "src": [
+        {
+          "title": "Stanford CS231n: Convolutional Networks",
+          "url": "https://cs231n.github.io/convolutional-networks/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 331,
+      "sha256": "bd0f158eec34a67f7307fb87ca60675118b894cd92849abdd67ee3375327a026",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ga00cru2axw72x35yg",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $n_{\\text{out}}$ với $n=7,k=3,p=1,s=2$. 2. (Vừa) Đếm tham số của conv $5\\times5$ từ 3 lên 16 kênh. 3. (Khó) Cài max pooling $2\\times2$ bằng NumPy.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Thực hành CNN: bộ lọc tích chập làm đặc trưng",
+      "f": "cnn-practice.md",
+      "s": "cnn-practice",
+      "src": [
+        {
+          "title": "Stanford CS231n: Convolutional Networks",
+          "url": "https://cs231n.github.io/convolutional-networks/"
+        },
+        {
+          "title": "scikit-learn: Digits dataset",
+          "url": "https://scikit-learn.org/stable/datasets/toy_dataset.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 514,
+      "sha256": "182f35761f7cc9c29c7524a4d4d68d68d59e2e13af0d7bb1192267eb4c13e6f9",
+      "headings": [
+        "Vấn đề thực tế",
+        "Quy trình",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gc00d1u2axfqx7ohtl",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính kích thước đầu ra nếu dùng kernel $3\\times3$ trên ảnh $8\\times8$. 2. (Vừa) Thêm hai kernel đường chéo và đo lại accuracy. 3. (Khó) Thay Logistic Regression bằng một CNN nhỏ trong PyTorch và so sánh.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Quy trình; Code và cách chạy; Lỗi thường gặp; Hạn chế; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "practice"
+    },
+    {
+      "t": "RNN và LSTM",
+      "f": "rnn-lstm.md",
+      "s": "rnn-lstm",
+      "src": [
+        {
+          "title": "Dive into Deep Learning: Recurrent Neural Networks",
+          "url": "https://d2l.ai/chapter_recurrent-neural-networks/index.html"
+        },
+        {
+          "title": "Dive into Deep Learning: Modern RNNs",
+          "url": "https://d2l.ai/chapter_recurrent-modern/index.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 302,
+      "sha256": "5e851bb969ad5b0a2385fd72793b38b94a444985a1e17b2b19ad9648bc8d8d43",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37ge00ddu2axk49yzxyo",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $h_3$ với $x_3=0.5$. 2. (Vừa) Tính $c_t$ khi $f=0.2$. 3. (Khó) Cài một bước LSTM bằng NumPy với shape rõ ràng.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Attention và Transformer",
+      "f": "attention-transformer.md",
+      "s": "attention-transformer",
+      "src": [
+        {
+          "title": "Attention Is All You Need (Vaswani và cộng sự)",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "Dive into Deep Learning: Attention and Transformers",
+          "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 331,
+      "sha256": "943495f6e4d6c502f40ca598536a0a30c2cd239aeaba312704d25eeabfcdfcdc",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gh00dpu2axkrccbmno",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính softmax của $(0,0)$. 2. (Vừa) Đổi $q=(0,1)$ và tính lại đầu ra. 3. (Khó) Cài self-attention cho chuỗi 4 phần tử với ma trận chiếu $W_Q,W_K,W_V$.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Kiến trúc Transformer",
+      "f": "transformer-architecture.md",
+      "s": "transformer-architecture",
+      "src": [
+        {
+          "title": "Attention Is All You Need (Vaswani và cộng sự)",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "title": "Dive into Deep Learning: Transformer",
+          "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 368,
+      "sha256": "83a361d832ce65cb6625730732fe1ef60cfd0a076f6b713207d7f66df12c6f23",
+      "headings": [
+        "Vấn đề thực tế",
+        "Các thành phần",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gj00e1u2axtyuuxacr",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính $d_k$ khi $d_{\\text{model}}=768,h=12$. 2. (Vừa) Tính $PE(2,0)$ với $d=4$. 3. (Khó) Cài multi-head attention bằng NumPy cho chuỗi 4 phần tử.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Các thành phần; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Autoencoder",
+      "f": "autoencoder.md",
+      "s": "autoencoder",
+      "src": [
+        {
+          "title": "Dive into Deep Learning",
+          "url": "https://d2l.ai/"
+        },
+        {
+          "title": "scikit-learn: PCA",
+          "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 436,
+      "sha256": "0d4b18fc927f91d14a75d593c6f7b5fa86cf77b5f7e6b612f9e16be1fd0d551a",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gm00edu2axkns5wrxa",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính lỗi tái tạo của PCA 4 chiều trên Iris (kỳ vọng 0). 2. (Vừa) Thêm nhiễu vào đầu vào (denoising autoencoder). 3. (Khó) Dùng lỗi tái tạo để phát hiện bất thường.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Transfer Learning",
+      "f": "transfer-learning.md",
+      "s": "transfer-learning",
+      "src": [
+        {
+          "title": "Stanford CS231n: Transfer Learning",
+          "url": "https://cs231n.github.io/transfer-learning/"
+        },
+        {
+          "title": "PyTorch Tutorials: Transfer Learning",
+          "url": "https://docs.pytorch.org/tutorials/"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 410,
+      "sha256": "f4c16ef60dc9e5e5eeb61c87648e7892f354755a1d07c22a5dff898272d74477",
+      "headings": [
+        "Vấn đề thực tế",
+        "Hai chiến lược",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 2,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gp00epu2ax2yg1y2j0",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Đếm tham số lớp đầu ra mới cho 5 lớp từ đặc trưng 2048 chiều. 2. (Vừa) So sánh đóng băng và fine-tune trên tập dữ liệu nhỏ. 3. (Khó) Dùng learning rate khác nhau cho thân và đầu ra bằng `param_groups`.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Hai chiến lược; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "GAN, VAE và Diffusion",
+      "f": "gan-vae-diffusion.md",
+      "s": "gan-vae-diffusion",
+      "src": [
+        {
+          "title": "Generative Adversarial Nets (Goodfellow và cộng sự)",
+          "url": "https://arxiv.org/abs/1406.2661"
+        },
+        {
+          "title": "Auto-Encoding Variational Bayes (Kingma và Welling)",
+          "url": "https://arxiv.org/abs/1312.6114"
+        },
+        {
+          "title": "Denoising Diffusion Probabilistic Models (Ho và cộng sự)",
+          "url": "https://arxiv.org/abs/2006.11239"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Kiến trúc",
+      "level": "Advanced",
+      "words": 360,
+      "sha256": "04e5e02a9d5fa48f555bad5f9e9419fc7fe9ad09901d7b0c20fb30eb0e172e5f",
+      "headings": [
+        "Vấn đề thực tế",
+        "Ba hướng tiếp cận",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gr00f1u2ax07nmnoca",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính KL với $\\mu=2,\\sigma^2=1$. 2. (Vừa) Tính $x_t$ với $\\bar\\alpha_t=0.25$. 3. (Khó) Cài một VAE nhỏ bằng PyTorch trên dữ liệu 2 chiều.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Ba hướng tiếp cận; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Embeddings và biểu diễn văn bản",
+      "f": "embeddings.md",
+      "s": "embeddings",
+      "src": [
+        {
+          "title": "scikit-learn: Text feature extraction",
+          "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Xử lý văn bản",
+      "level": "Advanced",
+      "words": 393,
+      "sha256": "ac4fad9682796025f9d0f01e0328d37a696afff323a9d42beebaff1b2481fd12",
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gt00fhu2ax5rcybmnp",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Tính cosine của $(1,0)$ và $(1,1)$. 2. (Vừa) Thêm một câu mới và xem ma trận tương đồng. 3. (Khó) Huấn luyện Logistic Regression phân loại cảm xúc trên TF-IDF.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Công thức; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Ưu điểm, hạn chế",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    },
+    {
+      "t": "Phân loại cảm xúc văn bản",
+      "f": "text-classification.md",
+      "s": "text-classification",
+      "src": [
+        {
+          "title": "scikit-learn: Working with text data",
+          "url": "https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html"
+        }
+      ],
+      "course": "deep-learning",
+      "module": "Xử lý văn bản",
+      "level": "Advanced",
+      "words": 461,
+      "sha256": "1cae36314de8a3068bc9801271351a48e8a7c3eb5c0ed7c1be00130c367af162",
+      "headings": [
+        "Vấn đề thực tế",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt"
+      ],
+      "python_blocks": 1,
+      "quiz_questions": 2,
+      "fixture_db_id": "cmvos37gu00fru2axftjbfloi",
+      "published_default": true,
+      "http_status_before": 200,
+      "title_in_html_before": true,
+      "exercise_section": "1. (Dễ) Thêm 2 câu huấn luyện mới và dự đoán lại. 2. (Vừa) Dùng `ngram_range=(1, 2)` và xem cách xử lý \"không thích\". 3. (Khó) Tìm một tập dữ liệu cảm xúc tiếng Việt công khai, chia train/test và báo cáo F1.",
+      "has_exercise_solutions": false,
+      "has_objectives": true,
+      "theory_summary": "Vấn đề thực tế; Ví dụ từng bước; Code và cách chạy; Lỗi thường gặp; Hạn chế; Bài tập",
+      "display_scope": "fresh isolated seed; not production",
+      "kind": "lesson"
+    }
+  ]
+}

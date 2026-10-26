@@ -1,0 +1,287 @@
+{
+ "access_attempts": [
+  {
+   "id": "mlcb-home",
+   "url": "https://machinelearningcoban.com/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "mlcb-categories",
+   "url": "https://machinelearningcoban.com/categories/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "mlcb-math",
+   "url": "https://machinelearningcoban.com/math/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "mlcb-index",
+   "url": "https://machinelearningcoban.com/index/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "mlcb-tabml",
+   "url": "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "d2l",
+   "url": "https://d2l.ai/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "pytorch-tutorials",
+   "url": "https://pytorch.org/tutorials/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "cs231n",
+   "url": "https://cs231n.stanford.edu/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+   "id": "d2l-init",
+   "url": "https://raw.githubusercontent.com/d2l-ai/d2l-en/master/chapter_multilayer-perceptrons/numerical-stability-and-init.md",
+   "resolved_url": "https://raw.githubusercontent.com/d2l-ai/d2l-en/master/chapter_multilayer-perceptrons/numerical-stability-and-init.md",
+   "status": 200,
+   "bytes": 15170
+  },
+  {
+   "id": "d2l-gru",
+   "url": "https://raw.githubusercontent.com/d2l-ai/d2l-en/master/chapter_recurrent-modern/gru.md",
+   "resolved_url": "https://raw.githubusercontent.com/d2l-ai/d2l-en/master/chapter_recurrent-modern/gru.md",
+   "status": 200,
+   "bytes": 15340
+  },
+  {
+   "id": "d2l-transformer",
+   "url": "https://raw.githubusercontent.com/d2l-ai/d2l-en/master/chapter_attention-mechanisms-and-transformers/transformer.md",
+   "resolved_url": "https://raw.githubusercontent.com/d2l-ai/d2l-en/master/chapter_attention-mechanisms-and-transformers/transformer.md",
+   "status": 200,
+   "bytes": 52625
+  },
+  {
+   "id": "pytorch-training",
+   "url": "https://raw.githubusercontent.com/pytorch/tutorials/main/beginner_source/basics/optimization_tutorial.py",
+   "resolved_url": "https://raw.githubusercontent.com/pytorch/tutorials/main/beginner_source/basics/optimization_tutorial.py",
+   "status": 200,
+   "bytes": 9182
+  },
+  {
+   "id": "pytorch-save",
+   "url": "https://raw.githubusercontent.com/pytorch/tutorials/main/beginner_source/basics/saveloadrun_tutorial.py",
+   "resolved_url": "https://raw.githubusercontent.com/pytorch/tutorials/main/beginner_source/basics/saveloadrun_tutorial.py",
+   "status": 200,
+   "bytes": 3424
+  },
+  {
+   "id": "live-mlcb",
+   "url": "https://machinelearningcoban.com/",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "live-d2l",
+   "url": "https://d2l.ai/",
+   "resolved_url": "https://d2l.ai/",
+   "status": 200,
+   "bytes": 188475
+  },
+  {
+   "id": "live-pytorch",
+   "url": "https://docs.pytorch.org/tutorials/",
+   "error": "HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "live-stanford",
+   "url": "https://cs231n.stanford.edu/",
+   "resolved_url": "https://cs231n.stanford.edu/",
+   "status": 200,
+   "bytes": 22611
+  },
+  {
+   "url": "https://cs231n.github.io/transfer-learning/",
+   "status": 200,
+   "bytes": 13182,
+   "sha256": "264bacd45e7c3faae3b1b4d417bc38544dba9f43b962933451d09b29185e9bf9"
+  },
+  {
+   "url": "https://cs231n.github.io/convolutional-networks/",
+   "status": 200,
+   "bytes": 70551,
+   "sha256": "9ac9f3009d5e62190727bd4d8f087fe5caa4d0cf4a3ccb00f6b98eba0fc953ff"
+  },
+  {
+   "url": "https://api.github.com/repos/cs231n/cs231n.github.io/contents/",
+   "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+ ],
+ "official_source_repositories": {
+  "mlcb": {
+   "url": "https://github.com/tiepvupsu/tiepvupsu.github.io",
+   "revision": "886e72d1118fe3c4e0f7964d4b46b6c63579e92e",
+   "read_scope": [
+    "CNAME",
+    "home",
+    "categories",
+    "math",
+    "index",
+    "ML posts including SVD/convexity/duality/MLE-MAP/LDA/SVM/recommendation"
+   ]
+  },
+  "tabml": {
+   "url": "https://github.com/tiepvupsu/tabml_book",
+   "revision": "7517baf05694abb14f09f2c17c896689e9a6ae6d",
+   "read_scope": [
+    "_toc.yml",
+    "ch_intro/main_contents",
+    "why_pipeline",
+    "process_missing",
+    "process_outliers",
+    "categorical_data",
+    "ch_embedding/embedding"
+   ]
+  }
+ },
+ "note": "Git source snapshots are not a verification of the currently deployed canonical pages. Prose/code/images from references are not redistributed here.",
+ "final_canonical_access": [
+  {
+   "url": "https://machinelearningcoban.com/",
+   "status": 200,
+   "bytes": 53999,
+   "sha256": "c352bdaadbb2d9e55072e41f2d1e673202f7d339b9c849736d0ae006b0e832ad",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://machinelearningcoban.com/categories/",
+   "status": 200,
+   "bytes": 50584,
+   "sha256": "b04f9576cbbcaaba6631c3a097b989a613b7b335d6717570ec423aef35fe8d11",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://machinelearningcoban.com/math/",
+   "status": 200,
+   "bytes": 65118,
+   "sha256": "845d187d6fec61aba830280083bb4377ded61d4c5ddbee3c8c13035d699a41fb",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://machinelearningcoban.com/index/",
+   "status": 200,
+   "bytes": 43389,
+   "sha256": "45779222b00d0966459e0ffb6f093b81150f16340e171f1c514820e8b3193018",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html",
+   "status": 200,
+   "bytes": 19728,
+   "sha256": "61da6e975e75921d2c2a1cec377b8a952a52a3575923311e11d95fb01d553049",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://scikit-learn.org/stable/getting_started.html",
+   "status": 200,
+   "bytes": 53031,
+   "sha256": "ed9415430a1238103a886d28c6c392721d46429e156ad90111c5f1294b26294e",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://scikit-learn.org/stable/modules/feature_extraction.html",
+   "status": 200,
+   "bytes": 152772,
+   "sha256": "74f0ece486042400e384225a8d3b4a2b32770995e6b313fa254a15a36d8fb364",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://arxiv.org/abs/1706.03762",
+   "error": "TypeError: fetch failed",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  },
+  {
+   "url": "https://fastapi.tiangolo.com/",
+   "error": "TypeError: fetch failed",
+   "transport": "Node 24 with NODE_USE_ENV_PROXY=1; TLS verification retained"
+  }
+ ],
+ "independent_review_access": [
+  {
+   "url": "https://machinelearningcoban.com/",
+   "status": 200,
+   "sha256": "4439de234a3b65870ffa989996b2b2c787f206b5a5e98b96f25768d9ef8cad11",
+   "bytes": 53999
+  },
+  {
+   "url": "https://machinelearningcoban.com/categories/",
+   "status": 200,
+   "sha256": "7dadd9c7e7f9ef6791f503d71179c198c9a66aee385846b29932722d746399d5",
+   "bytes": 50584
+  },
+  {
+   "url": "https://machinelearningcoban.com/math/",
+   "status": 200,
+   "sha256": "e07d6ecffb75c0f1c27d21fcb46edc366f10001c5e561927aa128b6a7cb7ea2e",
+   "bytes": 65118
+  },
+  {
+   "url": "https://machinelearningcoban.com/index/",
+   "status": 200,
+   "sha256": "957740618b51237af10950cc9e281752b21553b9e4c433ddf3d29fd98053bc47",
+   "bytes": 43389
+  },
+  {
+   "url": "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html",
+   "status": 200,
+   "sha256": "61da6e975e75921d2c2a1cec377b8a952a52a3575923311e11d95fb01d553049",
+   "bytes": 19728
+  },
+  {
+   "url": "https://machinelearningcoban.com/2017/06/07/svd/",
+   "status": 200,
+   "sha256": "79cb43a43dec56cb1f0235be64a2fad65840b3278435b5c2f1f19d1689edd7d4",
+   "bytes": 73106
+  },
+  {
+   "url": "https://machinelearningcoban.com/2017/04/09/smv/",
+   "status": 200,
+   "sha256": "eb46697902963263b0f1a5d30f6f8de8b47968bf868eefbfdb1eb7740adcea76",
+   "bytes": 87819
+  },
+  {
+   "url": "https://machinelearningcoban.com/2017/07/17/mlemap/",
+   "status": 200,
+   "sha256": "c4dc6c77d799173354b8bbd1aebaf8d2038d5d6f964382b3e1fe611af1935baf",
+   "bytes": 80604
+  },
+  {
+   "url": "https://machinelearningcoban.com/2017/06/30/lda/",
+   "status": 200,
+   "sha256": "216097bd29d789135632e10a61cc21e4768d17aef3c5c0c2fd1165d0eb48eff4",
+   "bytes": 88362
+  },
+  {
+   "url": "https://scikit-learn.org/stable/modules/linear_model.html",
+   "status": 200,
+   "sha256": "d2bae900261ac8f09f2f8f4ef7f785fbe20da6e1120fbbb20a316e59443ac318",
+   "bytes": 241009
+  },
+  {
+   "url": "https://docs.python.org/3/library/argparse.html",
+   "status": 200,
+   "sha256": "0e0112531fcdd7691e1f6dc5f3fcec3b8ca1fb588fc6e145878544f73b8d4687",
+   "bytes": 328434
+  },
+  {
+   "url": "https://docs.python.org/3/library/sys.html",
+   "status": 200,
+   "sha256": "d91b6d869ca3420752fe06a152ef479d884d35b935ac58eaa05a03cd13372aef",
+   "bytes": 280618
+  },
+  {
+   "url": "https://www.deeplearningbook.org/contents/autoencoders.html",
+   "error": "fetch failed; Request was cancelled.",
+   "used_as_verified_reference": false
+  }
+ ]
+}

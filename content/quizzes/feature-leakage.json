@@ -1,1 +1,22 @@
-[{"prompt":"Cách an toàn để chọn đặc trưng khi cross-validation là gì?","options":["Đặt bước chọn đặc trưng bên trong Pipeline","Chọn trên toàn bộ dữ liệu trước","Chọn dựa trên tập test"],"correct":0,"explanation":"Pipeline fit bước chọn đặc trưng chỉ trên phần train của mỗi fold."},{"prompt":"Accuracy 0.85 trên dữ liệu nhãn ngẫu nhiên cho thấy điều gì?","options":["Rò rỉ dữ liệu","Mô hình rất tốt","Cần thêm epoch"],"correct":0,"explanation":"Không có tín hiệu thật nên điểm cao chỉ do thông tin test lọt vào bước chọn đặc trưng."}]
+[
+ {
+  "prompt": "Cách an toàn để chọn đặc trưng khi cross-validation là gì?",
+  "options": [
+   "Đặt bước chọn đặc trưng bên trong Pipeline",
+   "Chọn trên toàn bộ dữ liệu trước",
+   "Chọn dựa trên tập test"
+  ],
+  "correct": 0,
+  "explanation": "Pipeline fit bước chọn đặc trưng chỉ trên phần train của mỗi fold."
+ },
+ {
+  "prompt": "Trong thí nghiệm của bài, SelectKBest được fit trên toàn bộ nhãn trước CV. Vì sao accuracy 0.85 bị lạc quan?",
+  "options": [
+   "Rò rỉ dữ liệu",
+   "Mô hình rất tốt",
+   "Cần thêm epoch"
+  ],
+  "correct": 0,
+  "explanation": "Nhìn cả nhãn fold validation khi chọn feature đã gây leakage trong quy trình này. Một score cao trên nhãn ngẫu nhiên, nếu không biết quy trình, tự nó chưa chứng minh chắc chắn có leakage."
+ }
+]

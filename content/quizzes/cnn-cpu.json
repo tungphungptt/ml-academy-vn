@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "CNN CPU trong bài khác bộ lọc tay ở đâu?",
+  "options": [
+   "Không có train",
+   "Conv weights được học bằng backward/optimizer",
+   "Chỉ đổi tên model"
+  ],
+  "correct": 1,
+  "explanation": "Conv tham gia graph và optimizer, không giữ fixed kernel."
+ },
+ {
+  "prompt": "Checkpoint được chọn bằng dữ liệu nào?",
+  "options": [
+   "Validation loss",
+   "Test accuracy mỗi epoch",
+   "Toàn bộ ảnh"
+  ],
+  "correct": 0,
+  "explanation": "Test không tham gia chọn epoch hoặc augmentation."
+ },
+ {
+  "prompt": "CNN 0.95 và logistic 0.9639 trên cùng test chứng minh điều gì?",
+  "options": [
+   "CNN luôn kém",
+   "Logistic luôn hơn ở mọi ảnh",
+   "CNN không thắng baseline trong thí nghiệm nhỏ này"
+  ],
+  "correct": 2,
+  "explanation": "Không suy rộng ngoài split/dataset/protocol này."
+ }
+]

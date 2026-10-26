@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Embeddings, Logistic Regression.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** Embeddings và biểu diễn văn bản, Logistic Regression.
 **Mục tiêu:** xây một bộ phân loại cảm xúc văn bản đơn giản bằng TF-IDF và Logistic Regression, và nhìn đúng giới hạn của nó.
 
 ## Vấn đề thực tế
@@ -36,3 +36,14 @@ TF-IDF không hiểu thứ tự và ngữ cảnh; mô hình ngôn ngữ tiền h
 
 ## Tóm tắt
 TF-IDF + Logistic Regression là baseline nhanh cho phân loại văn bản; hiểu giới hạn của nó trước khi dùng mô hình sâu.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Dataset 8 câu chỉ minh họa inference, không có ước lượng chất lượng đáng tin; notebook 40 câu tự biên soạn cũng không đại diện tiếng Việt ngoài miền. Tách train/test theo nguồn hoặc người viết khi có bản gần trùng; vocabulary và IDF phải fit trong fold. N-gram có thể học phủ định cục bộ nhưng không “hiểu” mọi mỉa mai hay phạm vi phủ định. Với DL, cần tokenization, padding/mask, embedding và protocol tương ứng; [lab GRU dự đoán chuỗi](/learn/sequence-models-cpu) cung cấp một bài sequence thực thi, không giả là sentiment benchmark. Kiểm tra confusion/error cases có nội dung đặc trưng thay vì chỉ tăng kích thước mô hình.
+
+## Đáp án và tiêu chí chấm
+1. Thêm hai câu phải nêu nhãn/nguồn và không sửa nhãn theo prediction. Thay corpus thì kết quả kỳ vọng cũ có thể đổi, không chấm theo xác suất cũ 0.60/0.42. (2 điểm).
+2. Thử (1,2) trong pipeline và chọn bằng validation. Bigram “không thích” có thể giúp khi đã gặp trong train, nhưng không bảo đảm cho cấu trúc phủ định dài/chưa thấy. (3 điểm).
+3. Ghi nguồn, giấy phép đã kiểm tra, kích thước tải, dedup/group split và label definition; báo macro F1, baseline và error analysis. Nếu chưa lấy được dữ liệu thì ghi chưa chạy, không bịa một score NLP thật. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Text feature extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction).

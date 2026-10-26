@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Bias-Variance.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu, Metrics đánh giá mô hình, Linear Regression.
 **Mục tiêu:** hiểu K-fold cross-validation và dùng nó để chọn mô hình, siêu tham số.
 
 ## Vấn đề thực tế
@@ -35,10 +35,21 @@ Kết quả kỳ vọng (đã chạy cục bộ): `0.96`.
 Dùng dữ liệu test để chọn tham số rồi báo cáo điểm đó; chuẩn hóa hoặc chọn đặc trưng trước khi chia fold (rò rỉ, xem bài Feature Engineering và Data Leakage); không xáo trộn dữ liệu có thứ tự (nhưng chuỗi thời gian cần `TimeSeriesSplit`, không xáo trộn).
 
 ## Ưu điểm, hạn chế
-Ước lượng ổn định hơn một lần chia. Tốn thời gian gấp $K$ lần; vẫn có độ lệch nhỏ vì các fold huấn luyện chồng lấn.
+Tận dụng nhiều lần chia để đánh giá, nhưng tốn khoảng $K$ lần fit. Các tập train chồng lấn làm score giữa các fold tương quan, nên không coi chúng là các quan sát độc lập để tính sai số chuẩn. Chất lượng ước lượng còn có thể khác mô hình fit toàn train vì mỗi fold chỉ dùng $(K-1)/K$ số mẫu để học; không quy độ lệch này cho riêng sự chồng lấn.
 
 ## Bài tập
 1. (Dễ) Kích thước các fold khi 11 mẫu, $K=4$. 2. (Vừa) Dùng `GridSearchCV` chọn $C$ của SVM trên Iris. 3. (Khó) Tự cài K-fold bằng NumPy.
 
 ## Tóm tắt
 Cross-validation trung bình điểm trên $K$ lần chia, giúp chọn mô hình mà không dùng tập test.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+CV chọn mô hình trên train, không phải cách hợp thức hóa mọi lần nhìn test. Trung bình score fold không luôn bằng score gộp predictions (đặc biệt F1/AUC); các fold huấn luyện chồng nhau nên std fold không phải sai số chuẩn độc lập để tạo CI tùy tiện. GroupKFold/StratifiedGroupKFold và TimeSeriesSplit cần được dùng khi cấu trúc dữ liệu yêu cầu. Khi vừa chọn hyperparameter vừa ước lượng performance mà thiếu test riêng, nested CV tách vòng ngoài đánh giá và vòng trong chọn tham số; mọi preprocessing/selection đi trong vòng trong.
+
+## Đáp án và tiêu chí chấm
+1. 11 mẫu chia 4 fold có kích thước 3,3,3,2. (2 điểm).
+2. GridSearchCV trên train với SVM+scaler trong Pipeline và splitter phù hợp; giữ test ngoài search. Nếu cần đánh giá search procedure, dùng outer CV. (3 điểm).
+3. Chia các index thành fold gần đều, kiểm tra mỗi mẫu xuất hiện ở test đúng một lần và train/test không giao. Clone estimator mỗi fold; không tái dùng model fit trước đó với trạng thái còn lưu. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html).

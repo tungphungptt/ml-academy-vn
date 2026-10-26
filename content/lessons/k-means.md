@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Kiến thức tiên quyết:** khoảng cách Euclid, trung bình.
+**Cấp độ:** Beginner · **Tầng:** Core · **Kiến thức tiên quyết:** khoảng cách Euclid, trung bình · **Tiên quyết:** Vector và ma trận.
 
 **Mục tiêu:** hiểu thuật toán K-Means, hàm mục tiêu inertia và các hạn chế của nó.
 
@@ -39,3 +39,14 @@ Nhanh và dễ cài đặt. Chỉ tìm được cụm dạng cầu, kích thư�
 
 ## Tóm tắt
 K-Means luân phiên gán điểm vào tâm gần nhất và cập nhật tâm bằng trung bình, giảm dần inertia.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+K-Means tối ưu tổng bình phương khoảng cách Euclid và cần K biết trước; nó không ước lượng probability của cluster hay phân loại có nhãn. Dữ liệu categorical thuần không phù hợp với mean số học của mã tùy ý. Cluster rỗng cần policy (giữ tâm/tái khởi tạo), còn nghiệm phụ thuộc initialization và có thể là điểm cố định/cực tiểu địa phương, không bảo đảm toàn cục. k-means++ chọn tâm theo bình phương khoảng cách đến tâm gần nhất; nhiều restart vẫn hữu ích. Inertia giảm khi tăng K nên không chọn K chỉ bằng cực tiểu inertia. Silhouette cũng phụ thuộc metric và không phải bằng chứng các nhóm là “thật”.
+
+## Đáp án và tiêu chí chấm
+1. Cụm {1,2} có SSE=0.5; cụm {3,10,11,12} có mean=9 và SSE=50; tổng J=50.5. (2 điểm).
+2. Giữ scale, seed và n_init, ghi inertia cùng silhouette; không đưa ground-truth label vào fit một thuật toán không giám sát. (3 điểm).
+3. Tâm đầu chọn ngẫu nhiên, các tâm sau lấy theo D²/sum(D²). Xử lý trường hợp tất cả khoảng cách 0, so nhiều seed và số iteration, không chỉ một hình cụm đẹp. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn User Guide: Clustering (K-Means)](https://scikit-learn.org/stable/modules/clustering.html#k-means).

@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Cross-validation, SVM.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** Cross-validation, SVM.
 **Mục tiêu:** chọn siêu tham số bằng Grid Search kết hợp cross-validation.
 
 ## Vấn đề thực tế
@@ -34,3 +34,14 @@ Chọn tham số bằng tập test; lưới quá rộng gây tốn thời gian; 
 
 ## Tóm tắt
 Grid Search + cross-validation chọn siêu tham số; giữ tập test cho đánh giá cuối.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Số fit CV là số tổ hợp nhân số fold; mặc định GridSearchCV còn refit cấu hình tốt nhất một lần trên toàn train. Random Search phân phối log-scale thích hợp cho C/LR hơn lấy uniform trên một khoảng rất rộng; ghi seed và budget để so sánh. Nested CV đánh giá cả quá trình chọn tham số, không chỉ estimator cuối. SVC trong snippet dùng Iris raw để minh họa API; khi thang đo không đồng nhất, đặt StandardScaler trong Pipeline và dùng tên tham số svc__C/svc__gamma. Không báo score CV tốt nhất như một ước lượng không chệch của chất lượng cuối.
+
+## Đáp án và tiêu chí chấm
+1. Lưới 4×3 và 10 fold cần 120 fit CV, cộng 1 refit nếu refit=True. (2 điểm).
+2. Kernel linear không dùng gamma; lưới dạng danh sách dict tránh thử các tổ hợp gamma vô nghĩa. Đếm budget theo từng dict và folds. (3 điểm).
+3. Giữ split, metric, budget fit và seed khi so RandomizedSearchCV. So thời gian lẫn validation score; test chỉ đánh giá sau khi đã chọn protocol. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Tuning hyper-parameters](https://scikit-learn.org/stable/modules/grid_search.html).

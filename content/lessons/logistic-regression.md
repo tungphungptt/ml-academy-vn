@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** Linear Regression, Gradient Descent.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Gradient Descent, Xác suất cơ bản, Loss Functions: MSE, MAE, Huber, Cross-Entropy.
 **Mục tiêu:** hiểu sigmoid, cross-entropy và cách huấn luyện phân loại nhị phân.
 
 ## Vấn đề thực tế
@@ -18,7 +18,7 @@ $z=0\Rightarrow p=0.5$; $z=2\Rightarrow p\approx0.8808$. Nếu $y=1$ thì loss $
 Bài **Logistic Regression** trong Code Lab (`labs/logistic_regression/`): bản NumPy cho `loss=0.0575 accuracy=0.980`, bản scikit-learn cho `accuracy=0.980`.
 
 ## Lỗi thường gặp
-Không chuẩn hóa đặc trưng; dùng MSE thay cho cross-entropy; dữ liệu mất cân bằng nên chỉ nhìn accuracy.
+Không chuẩn hóa đặc trưng; dùng MSE mà không hiểu objective/gradient khác cross-entropy; dữ liệu mất cân bằng nên chỉ nhìn accuracy.
 
 ## Ưu điểm, hạn chế, so sánh
 Đơn giản, cho xác suất, dễ diễn giải. Ranh giới chỉ tuyến tính (trừ khi thêm đặc trưng phi tuyến). Khác Perceptron ở chỗ cho xác suất và có loss khả vi.
@@ -28,3 +28,14 @@ Không chuẩn hóa đặc trưng; dùng MSE thay cho cross-entropy; dữ liệu
 
 ## Tóm tắt
 Sigmoid + cross-entropy + gradient descent cho phân loại nhị phân.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Logistic Regression mô hình hóa log-odds tuyến tính và thường tối ưu Bernoulli negative log-likelihood, không giả định các feature độc lập hay Gaussian. Nó cho một ước lượng probability, không tự bảo đảm calibration. Ngưỡng 0.5 là quy ước khi chi phí phù hợp, không định luật: chọn threshold bằng validation theo FP/FN. Với dữ liệu khả tách hoàn toàn, nghiệm MLE không regularization có thể tiến tới hệ số vô hạn; solver dừng không tự chứng minh nghiệm hữu hạn. Dùng MSE trên probability không bị toán học cấm, nhưng loss và gradient khác CE, có thể gây tối ưu khó hơn. Cần ổn định số bằng log-sum-exp/logits loss.
+
+## Đáp án và tiêu chí chấm
+1. σ(−2)=1/(1+e²)≈0.1192. (2 điểm).
+2. Thay LR và ghi train/validation loss, không chọn LR dựa vào test. Đối chiếu số update và regularization mặc định của sklearn với bản tự cài trước khi đòi hệ số bằng nhau. (3 điểm).
+3. dL/dp=(p−y)/(p(1−p)); dp/dz=p(1−p), nên dL/dz=p−y và dL/dw=(p−y)x. Với mean loss chia thêm N khi tổng nhiều mẫu. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Logistic regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression).

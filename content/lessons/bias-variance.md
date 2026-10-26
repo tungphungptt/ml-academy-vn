@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Linear Regression, Ridge và Lasso.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** Linear Regression, Thống kê mô tả và ước lượng tham số.
 **Mục tiêu:** phân biệt underfitting và overfitting qua bias và variance, và đọc được chênh lệch giữa lỗi train và test.
 
 ## Vấn đề thực tế
@@ -42,3 +42,14 @@ Overfit: thêm dữ liệu, regularization (Ridge/Lasso), giảm độ phức t�
 
 ## Tóm tắt
 Lỗi = bias² + variance + nhiễu; chọn độ phức tạp bằng lỗi trên dữ liệu chưa thấy.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Phân rã trong bài lấy kỳ vọng qua các tập train ngẫu nhiên và một quan sát target mới tại cùng x, với nhiễu trung bình 0 và variance hữu hạn. Một cặp train/test score không cho biết trực tiếp từng thành phần bias và variance. Tăng dữ liệu thường giảm variance nhưng không sửa đặc trưng thiếu tín hiệu hoặc mô hình quá hạn chế. Tăng độ phức tạp không luôn tăng test error trong mọi chế độ; quan hệ bias-variance cổ điển là công cụ chẩn đoán có giả định, không phải luật phổ quát cho mọi mạng quá tham số.
+
+## Đáp án và tiêu chí chấm
+1. Tổng bằng 0.1+0.05+0.04=0.19. (2 điểm).
+2. Giữ noise và miền x, chạy protocol cố định nhiều seed nếu muốn đánh giá độ dao động. Báo cả train/test MSE, không chọn riêng seed có câu chuyện đẹp. (3 điểm).
+3. Ở mô phỏng biết f(x), lấy trung bình prediction nhiều bộ train để ước lượng bias² và variance tại grid x cố định. Với dữ liệu thật không biết f, không tự gán các thành phần từ một loss duy nhất. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Underfitting vs. Overfitting](https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html).

@@ -1,1 +1,22 @@
-[{"prompt":"Autoencoder tuyến tính với loss bình phương liên quan tới thuật toán nào?","options":["PCA","KNN","Naive Bayes"],"correct":0,"explanation":"Chúng học cùng không gian con chính."},{"prompt":"Dấu hiệu bất thường trong phát hiện bất thường bằng autoencoder là gì?","options":["Lỗi tái tạo lớn","Lỗi tái tạo bằng 0","Số mẫu nhiều"],"correct":0,"explanation":"Mạng chỉ học tái tạo tốt dữ liệu bình thường."}]
+[
+ {
+  "prompt": "Linear autoencoder đạt tối ưu toàn cục, squared loss trên dữ liệu centered, có không gian con tái tạo liên quan đến gì?",
+  "options": [
+   "PCA",
+   "KNN",
+   "Naive Bayes"
+  ],
+  "correct": 0,
+  "explanation": "Trong các điều kiện này, không gian con tái tạo tối ưu tương ứng PCA; weights encoder không duy nhất và SGD bất kỳ không bảo đảm đã đạt nghiệm đó."
+ },
+ {
+  "prompt": "Dấu hiệu bất thường trong phát hiện bất thường bằng autoencoder là gì?",
+  "options": [
+   "Lỗi tái tạo lớn",
+   "Lỗi tái tạo bằng 0",
+   "Số mẫu nhiều"
+  ],
+  "correct": 0,
+  "explanation": "Lỗi tái tạo lớn là anomaly score cần threshold chọn bằng validation; AE vẫn có thể tái tạo tốt anomaly, nên không bảo đảm phát hiện đúng."
+ }
+]

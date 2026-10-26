@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** Linear Regression, Logistic Regression.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Linear Regression, Xác suất cơ bản.
 **Mục tiêu:** hiểu và chọn hàm mất mát: MSE, MAE, Huber, Binary Cross-Entropy, Cross-Entropy.
 
 ## Vấn đề thực tế
@@ -30,10 +30,22 @@ print(float(np.mean(e ** 2)), float(np.mean(np.abs(e))))
 Kết quả kỳ vọng (đã chạy cục bộ): `25.75 3.25`.
 
 ## Lỗi thường gặp
-Dùng MSE cho phân loại; đưa softmax rồi lại đưa vào loss đã gồm softmax; quên rằng loss tối ưu không nhất thiết là metric báo cáo (ví dụ tối ưu CE nhưng báo cáo F1).
+Dùng MSE cho phân loại mà mặc định nó có cùng likelihood/gradient như CE; đưa softmax rồi lại đưa vào loss đã gồm softmax; quên rằng loss tối ưu không nhất thiết là metric báo cáo (ví dụ tối ưu CE nhưng báo cáo F1).
 
 ## Bài tập
 1. (Dễ) Tính MAE và MSE của $e=-3$. 2. (Vừa) Vẽ Huber với $\delta=1$ và $\delta=2$. 3. (Khó) Chứng minh gradient của BCE theo $z$ (logit) là $p-y$.
 
 ## Tóm tắt
 MSE nhạy ngoại lai, MAE bền, Huber dung hòa; BCE/CE là loss chuẩn cho phân loại.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Loss là objective trong train; metric là tiêu chí báo cáo và có thể không khả vi. Mean và sum khác scale gradient, do đó ảnh hưởng LR/regularization. Với hồi quy, MSE phù hợp conditional mean, MAE phù hợp conditional median dưới cách diễn giải rủi ro tương ứng; Huber chuyển từ quadratic sang linear theo delta. MSE không bị cấm cho classification, nhưng BCE/CE gắn với likelihood Bernoulli/categorical và có đặc tính tối ưu thuận lợi cho logits tuyến tính. Khi dùng PyTorch, CE nhận logits và nhãn index long; BCEWithLogitsLoss nhận logits/target float cùng shape. Không log một probability đã bị underflow về 0 rồi sửa bằng cách bỏ những mẫu “xấu”.
+
+## Đáp án và tiêu chí chấm
+1. Với e=−3, MAE=3, MSE=9; Huber delta=1 là 2.5 nếu muốn so thêm. (2 điểm).
+2. Vẽ trên cùng miền e, ghi delta rõ; hai nhánh phải nối liên tục và có đạo hàm khớp tại |e|=delta. Đây là hình hàm loss, không phải đường cong huấn luyện. (3 điểm).
+3. Với p=sigmoid(z), dL/dp=(p−y)/(p(1−p)) và dp/dz=p(1−p), suy ra p−y. Mean qua batch thêm hệ số 1/N; kiểm tra với logits lớn bằng hàm loss ổn định số. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Linear Regression (loss)](https://d2l.ai/chapter_linear-regression/index.html).
+- [Stanford CS231n: Linear Classification](https://cs231n.github.io/linear-classify/).

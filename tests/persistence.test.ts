@@ -21,7 +21,7 @@ test("SQLite initialization, seed and restarts preserve edited content and user 
     prepareDatabase(url);
     assert.equal(inspectDatabase(url).state, "ready");
     assert.equal(await db.user.count(), 0, "bootstrap must not create a default admin");
-    assert.equal(await db.lesson.count(), 50);
+    assert.equal(await db.lesson.count(), 59);
     const dataset = await db.dataset.findFirstOrThrow();
     const resource = await db.resource.findFirstOrThrow();
     const project = await db.project.findFirstOrThrow();
@@ -46,7 +46,7 @@ test("SQLite initialization, seed and restarts preserve edited content and user 
     assert.equal((await db.project.findUniqueOrThrow({ where: { id: project.id } })).title, "Project edited by admin");
     assert.equal((await db.lesson.findUniqueOrThrow({ where: { id: lesson.id } })).title, "Lesson edited by admin");
     assert.equal((await db.course.findUniqueOrThrow({ where: { id: course.id } })).published, false);
-    assert.equal(await db.lesson.count(), 50);
+    assert.equal(await db.lesson.count(), 59);
     const before = fs.readFileSync(sqlitePath(url));
     prepareDatabase(url);
     prepareDatabase(url);
