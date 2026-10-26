@@ -7,7 +7,9 @@ Attention thuần không biết thứ tự từ, và một "đầu" attention ch
 ## Các thành phần
 - **Multi-head attention:** chia $d_{\text{model}}$ thành $h$ đầu, mỗi đầu có $d_k=d_{\text{model}}/h$ chiều, chạy attention song song rồi ghép lại và chiếu bằng $W_O$. Mỗi đầu có thể học một kiểu quan hệ khác nhau.
 - **Positional encoding:** cộng vào embedding một vector biểu diễn vị trí, ví dụ dạng sin/cos:
-$$PE(pos,2i)=\sin\!\Big(\frac{pos}{10000^{2i/d}}\Big),\qquad PE(pos,2i+1)=\cos\!\Big(\frac{pos}{10000^{2i/d}}\Big)$$
+$$
+PE(pos,2i)=\sin\!\Big(\frac{pos}{10000^{2i/d}}\Big),\qquad PE(pos,2i+1)=\cos\!\Big(\frac{pos}{10000^{2i/d}}\Big)
+$$
 - **Feed-forward** áp dụng riêng cho từng vị trí (hai lớp tuyến tính với kích hoạt ở giữa).
 - **Kết nối tắt (residual) và LayerNorm** quanh mỗi khối con giúp huấn luyện ổn định khi xếp nhiều lớp.
 - Bộ giải mã (decoder) dùng **mặt nạ nhân quả** để vị trí $t$ không nhìn thấy tương lai.
@@ -45,8 +47,8 @@ Transformer = multi-head attention + positional encoding + feed-forward, đượ
 Encoder self-attention hai chiều thích hợp biểu diễn input; decoder tự hồi quy dùng causal self-attention và thường cross-attention tới encoder. Decoder-only không có encoder riêng nhưng vẫn cần causal mask khi học next-token. LayerNorm hoạt động theo feature từng token, khác BatchNorm qua batch. Residual giữ đường truyền cộng, feed-forward dùng cùng phép biến đổi cho mỗi vị trí. Positional encoding phá đối xứng về vị trí; causal mask ngăn tương lai nhưng tự nó không tương đương cung cấp đầy đủ khoảng cách/vị trí. Mã bên dưới kiểm tra encoder, position, padding, causal mask và backward; nó không được trình bày như một Transformer đã huấn luyện hiểu ngôn ngữ.
 
 ## Đáp án và tiêu chí chấm
-1. 768/12=64 chiều mỗi head. (2 điểm).
-2. PE(2,0)=sin(2)≈0.9093 theo công thức đã nêu; tọa độ lẻ tương ứng cos. (3 điểm).
+1. $768/12=64$ chiều mỗi head. (2 điểm).
+2. $PE(2,0)=\sin(2)\approx0.9093$ theo công thức đã nêu; tọa độ lẻ tương ứng cos. (3 điểm).
 3. Tách từng head đúng shape, causal mask trước softmax, concat rồi chiếu WO. Kiểm tra equivariance khi bỏ position (nếu không mask làm thay đổi đối xứng) và invariant prefix khi thay future token trong cấu hình causal. (5 điểm).
 
 ## Nguồn tham khảo

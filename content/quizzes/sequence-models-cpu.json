@@ -17,7 +17,7 @@
    ".01"
   ],
   "correct": 0,
-  "explanation": "MSE đổi theo bình phương scale, .01*4=.04."
+  "explanation": "MSE đổi theo bình phương scale, $0.01\\cdot4=0.04$."
  },
  {
   "prompt": "One-step rolling có quan sát thật trước mỗi thời điểm có phải free-running 10 bước?",

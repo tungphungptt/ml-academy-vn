@@ -1,1 +1,22 @@
-[{"prompt":"Trong ví dụ spam, P(spam | free) xấp xỉ bao nhiêu?","options":["0.87","0.40","0.50"],"correct":0,"explanation":"0.2/0.23 ≈ 0.8696."},{"prompt":"Giả định 'naive' là gì?","options":["Đặc trưng độc lập có điều kiện khi biết lớp","Mọi lớp có cùng xác suất","Dữ liệu có phân phối đều"],"correct":0,"explanation":"Cho phép viết P(x|c) là tích các P(x_j|c)."}]
+[
+ {
+  "prompt": "Trong ví dụ spam, $P(\\text{spam}\\mid\\text{free})$ xấp xỉ bao nhiêu?",
+  "options": [
+   "0.87",
+   "0.40",
+   "0.50"
+  ],
+  "correct": 0,
+  "explanation": "$0.2/0.23\\approx0.8696$."
+ },
+ {
+  "prompt": "Giả định 'naive' là gì?",
+  "options": [
+   "Đặc trưng độc lập có điều kiện khi biết lớp",
+   "Mọi lớp có cùng xác suất",
+   "Dữ liệu có phân phối đều"
+  ],
+  "correct": 0,
+  "explanation": "Cho phép viết $P(x\\mid c)$ là tích các $P(x_j\\mid c)$."
+ }
+]

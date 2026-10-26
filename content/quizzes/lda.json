@@ -7,7 +7,7 @@
    "20"
   ],
   "correct": 1,
-  "explanation": "Rank between-class scatter không quá C−1 nên tối đa 3."
+  "explanation": "Rank between-class scatter không quá $C-1$ nên tối đa 3."
  },
  {
   "prompt": "LDA dùng nhãn khi nào?",

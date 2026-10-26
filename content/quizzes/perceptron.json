@@ -1,1 +1,22 @@
-[{"prompt":"Perceptron cập nhật trọng số khi nào?","options":["Mọi mẫu","Chỉ khi mẫu bị phân loại sai","Chỉ khi loss tăng"],"correct":1,"explanation":"Cập nhật khi y(w·x+b) ≤ 0."},{"prompt":"Perceptron có giải được XOR không?","options":["Có","Không, vì XOR không khả tách tuyến tính","Chỉ khi learning rate nhỏ"],"correct":1,"explanation":"Một siêu phẳng không tách được XOR."}]
+[
+ {
+  "prompt": "Perceptron cập nhật trọng số khi nào?",
+  "options": [
+   "Mọi mẫu",
+   "Chỉ khi mẫu bị phân loại sai",
+   "Chỉ khi loss tăng"
+  ],
+  "correct": 1,
+  "explanation": "Cập nhật khi $y(w^\\top x+b)\\le0$."
+ },
+ {
+  "prompt": "Perceptron có giải được XOR không?",
+  "options": [
+   "Có",
+   "Không, vì XOR không khả tách tuyến tính",
+   "Chỉ khi learning rate nhỏ"
+  ],
+  "correct": 1,
+  "explanation": "Một siêu phẳng không tách được XOR."
+ }
+]

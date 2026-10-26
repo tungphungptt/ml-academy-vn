@@ -7,7 +7,9 @@ Mô hình sinh (generative model) học phân phối của dữ liệu để t�
 ## Ba hướng tiếp cận
 **GAN:** bộ sinh $G$ tạo mẫu giả, bộ phân biệt $D$ phân biệt thật/giả; hai mạng huấn luyện đối kháng với hàm giá trị $\min_G\max_D\ \mathbb E[\ln D(x)]+\mathbb E[\ln(1-D(G(z)))]$. Với $G$ cố định, $D^*(x)=\frac{p_{\text{data}}}{p_{\text{data}}+p_g}$; khi $p_g=p_{\text{data}}$ thì $D^*=0.5$.
 **VAE:** autoencoder xác suất. Encoder cho $\mu,\sigma^2$; lấy mẫu $z=\mu+\sigma\varepsilon$ với $\varepsilon\sim\mathcal N(0,1)$ (mẹo reparameterization để vẫn lan truyền gradient được). Loss gồm lỗi tái tạo cộng KL kéo phân phối mã về $\mathcal N(0,1)$:
-$$\text{KL}=\tfrac12\big(\mu^2+\sigma^2-1-\ln\sigma^2\big)\quad\text{(một chiều)}$$
+$$
+\text{KL}=\tfrac12\big(\mu^2+\sigma^2-1-\ln\sigma^2\big)\quad\text{(một chiều)}
+$$
 **Diffusion:** quá trình tiến thêm nhiễu dần: $x_t=\sqrt{\bar\alpha_t}\,x_0+\sqrt{1-\bar\alpha_t}\,\varepsilon$; mạng được huấn luyện để dự đoán nhiễu rồi đảo ngược quá trình khử nhiễu.
 
 ![GAN, VAE và Diffusion](/img/gan-vae-diffusion.svg)
@@ -36,11 +38,11 @@ GAN cho ảnh sắc nét nhưng khó huấn luyện; VAE ổn định và có kh
 GAN: đối kháng; VAE: tái tạo cộng KL; Diffusion: thêm rồi khử nhiễu.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-AE thông thường không xác định prior trên latent để lấy mẫu bất kỳ. VAE tối ưu ELBO: kỳ vọng log-likelihood tái tạo trừ KL(q(z|x)||p(z)); “MSE+KL” chỉ là một dạng dưới lựa chọn likelihood/scale phù hợp, không phải định nghĩa duy nhất. Reparameterization tách noise độc lập để lấy gradient theo tham số phân phối. GAN cổ điển chơi minimax; loss non-saturating của generator thường dùng trong thực hành, không đồng nhất mọi code GAN với một objective. Diffusion minh họa forward marginal ở đây; lấy mẫu cần một reverse process/model và schedule, không chỉ đảo dấu noise một bước. Nhận xét sắc/mờ/tốc độ là xu hướng trong vài cấu hình, không phải định luật mọi kiến trúc.
+AE thông thường không xác định prior trên latent để lấy mẫu bất kỳ. VAE tối ưu ELBO: kỳ vọng log-likelihood tái tạo trừ $\operatorname{KL}(q(z\mid x)\,\Vert\,p(z))$; “MSE+KL” chỉ là một dạng dưới lựa chọn likelihood/scale phù hợp, không phải định nghĩa duy nhất. Reparameterization tách noise độc lập để lấy gradient theo tham số phân phối. GAN cổ điển chơi minimax; loss non-saturating của generator thường dùng trong thực hành, không đồng nhất mọi code GAN với một objective. Diffusion minh họa forward marginal ở đây; lấy mẫu cần một reverse process/model và schedule, không chỉ đảo dấu noise một bước. Nhận xét sắc/mờ/tốc độ là xu hướng trong vài cấu hình, không phải định luật mọi kiến trúc.
 
 ## Đáp án và tiêu chí chấm
-1. Với μ=2,σ²=1, KL=0.5·4=2. (2 điểm).
-2. Với alpha_bar=0.25 và giữ x0=1,epsilon=0.5: xt=0.5+sqrt(0.75)·0.5≈0.9330. (3 điểm).
+1. Với $\mu=2,\sigma^2=1$, $\operatorname{KL}=0.5\cdot4=2$. (2 điểm).
+2. Với $\bar\alpha_t=0.25$ và giữ $x_0=1,\varepsilon=0.5$: $x_t=0.5+\sqrt{0.75}\cdot0.5\approx0.9330$. (3 điểm).
 3. Một VAE toy hợp lệ cần encoder μ/logvar, reparameterized z, decoder likelihood, reconstruction/KL và split. Đây là bài mở rộng: chưa cung cấp một metric huấn luyện VAE/GAN/diffusion đã xác minh và không chấm bằng ảnh trông có vẻ đẹp. (5 điểm).
 
 ## Nguồn tham khảo

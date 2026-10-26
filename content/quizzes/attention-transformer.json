@@ -1,1 +1,22 @@
-[{"prompt":"Vì sao chia QK^T cho √d_k?","options":["Để tích vô hướng không quá lớn làm softmax bão hòa","Để làm V nhỏ hơn","Để bỏ qua mask"],"correct":0,"explanation":"Tích vô hướng tăng theo chiều d_k; chia lại giữ độ lớn ổn định."},{"prompt":"Đầu ra của attention là gì?","options":["Trung bình có trọng số của các value","Tổng các key","Giá trị lớn nhất của query"],"correct":0,"explanation":"Trọng số softmax nhân với V rồi cộng lại."}]
+[
+ {
+  "prompt": "Vì sao chia $QK^\\top$ cho $\\sqrt{d_k}$?",
+  "options": [
+   "Để tích vô hướng không quá lớn làm softmax bão hòa",
+   "Để làm V nhỏ hơn",
+   "Để bỏ qua mask"
+  ],
+  "correct": 0,
+  "explanation": "Với các thành phần query/key độc lập, mean 0, variance 1, variance của tích vô hướng là $d_k$. Chia cho $\\sqrt{d_k}$ giữ variance gần 1; đây là lập luận về scale, không phải bảo đảm mọi input."
+ },
+ {
+  "prompt": "Đầu ra của attention là gì?",
+  "options": [
+   "Trung bình có trọng số của các value",
+   "Tổng các key",
+   "Giá trị lớn nhất của query"
+  ],
+  "correct": 0,
+  "explanation": "Trọng số softmax nhân với V rồi cộng lại."
+ }
+]

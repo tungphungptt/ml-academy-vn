@@ -283,5 +283,228 @@
    "error": "fetch failed; Request was cancelled.",
    "used_as_verified_reference": false
   }
+ ],
+ "math_rendering_review_access": [
+  {
+   "id": "mlcb-home",
+   "url": "https://machinelearningcoban.com/",
+   "resolved_url": "https://machinelearningcoban.com/",
+   "status": 200,
+   "bytes": 53999,
+   "sha256": "ef264edc96fa7b0f861a6ba22df4c5c75903e5fc8035c54538ad99f2938be334",
+   "checked_at": "2026-10-26T08:11:31.899Z",
+   "title": "Machine Learning cơ bản",
+   "author_or_organization": "Vũ Hữu Tiệp",
+   "topic_supported": "Navigation/coverage only; not an algorithm proof.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "mlcb-categories",
+   "url": "https://machinelearningcoban.com/categories/",
+   "resolved_url": "https://machinelearningcoban.com/categories/",
+   "status": 200,
+   "bytes": 50584,
+   "sha256": "2b9306737896fd3d792800a94c074a7a0652b287d5f90db9fb15a8c81f916b9f",
+   "checked_at": "2026-10-26T08:11:31.898Z",
+   "title": "Machine Learning cơ bản — Categories",
+   "author_or_organization": "Vũ Hữu Tiệp",
+   "topic_supported": "Core ML taxonomy, PCA/SVD/LDA, optimization and recommendation navigation.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "mlcb-index",
+   "url": "https://machinelearningcoban.com/index/",
+   "resolved_url": "https://machinelearningcoban.com/index/",
+   "status": 200,
+   "bytes": 43389,
+   "sha256": "90b82d044b8e531661f4abbafe0114eacb454e55d39863c9fce3f55ea0d520c3",
+   "checked_at": "2026-10-26T08:11:31.948Z",
+   "title": "Machine Learning cơ bản — Index",
+   "author_or_organization": "Vũ Hữu Tiệp",
+   "topic_supported": "Terminology and article mapping; retain prior article-level review receipts.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "d2l-vi",
+   "url": "https://vi.d2l.ai/",
+   "error": "fetch failed",
+   "checked_at": "2026-10-26T08:11:31.503Z",
+   "used_as_verified_reference": false,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "d2l-en",
+   "url": "https://d2l.ai/",
+   "resolved_url": "https://d2l.ai/",
+   "status": 200,
+   "bytes": 188475,
+   "sha256": "418caf1a726b3fc0de37d5a5691668fdcbdb0fe5bcd268814b35b034a2768d88",
+   "checked_at": "2026-10-26T08:11:31.874Z",
+   "title": "Dive into Deep Learning",
+   "author_or_organization": "Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola",
+   "topic_supported": "Book organization/authorship, not proof of every chapter.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "pytorch-tutorials-current",
+   "url": "https://docs.pytorch.org/tutorials/",
+   "resolved_url": "https://docs.pytorch.org/tutorials/",
+   "status": 200,
+   "bytes": 221253,
+   "sha256": "e5b4053e3fea797c321a519652d733d249f55ef0f84dbdc5191c5f017b3b2f97",
+   "checked_at": "2026-10-26T08:11:32.112Z",
+   "title": "PyTorch Tutorials 2.14",
+   "author_or_organization": "PyTorch contributors",
+   "topic_supported": "Tutorial organization; math claim references use the detailed API/chapter below.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "sklearn-guide",
+   "url": "https://scikit-learn.org/stable/user_guide.html",
+   "resolved_url": "https://scikit-learn.org/stable/user_guide.html",
+   "status": 200,
+   "bytes": 89649,
+   "sha256": "6c6c264ef869e05cbd5a682bdcdbdfa7302478eb897be90112fa3d2655766875",
+   "checked_at": "2026-10-26T08:11:32.098Z",
+   "title": "scikit-learn User Guide",
+   "author_or_organization": "scikit-learn developers",
+   "topic_supported": "Coverage navigation for supervised models, decomposition, evaluation and pipelines.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "katex-syntax",
+   "url": "https://katex.org/docs/supported.html",
+   "error": "fetch failed",
+   "checked_at": "2026-10-26T08:11:31.502Z",
+   "used_as_verified_reference": false,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "d2l-linear",
+   "url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+   "resolved_url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+   "status": 200,
+   "bytes": 158367,
+   "sha256": "27d7a906ec35e2f07797a5f5abb97fac8d0d05d92f4459332ecf8b666bc33222",
+   "checked_at": "2026-10-26T08:11:31.900Z",
+   "title": "D2L 3.1 Linear Regression",
+   "author_or_organization": "D2L authors",
+   "topic_supported": "Squared loss with 1/2 convention, minibatch gradient and Gaussian likelihood. ML Academy keeps MSE without 1/2 and gradient 2/N.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "d2l-backprop",
+   "url": "https://d2l.ai/chapter_multilayer-perceptrons/backprop.html",
+   "resolved_url": "https://d2l.ai/chapter_multilayer-perceptrons/backprop.html",
+   "status": 200,
+   "bytes": 92182,
+   "sha256": "2204136328fd650af8a836dd3850a66985789fcc0440d40dfd23efc7a313cc55",
+   "checked_at": "2026-10-26T08:11:32.005Z",
+   "title": "D2L 5.3 Forward Propagation, Backward Propagation, and Computational Graphs",
+   "author_or_organization": "D2L authors",
+   "topic_supported": "Chain rule on tensors, reverse pass, reused intermediate values.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "sklearn-kmeans",
+   "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+   "resolved_url": "https://scikit-learn.org/stable/modules/clustering.html",
+   "status": 200,
+   "bytes": 245702,
+   "sha256": "3c8d5481d8092e86fe47ff269e134510dedd006360aeaf30b9b982c91a01de1c",
+   "checked_at": "2026-10-26T08:11:32.115Z",
+   "title": "scikit-learn 2.3 Clustering — K-means",
+   "author_or_organization": "scikit-learn developers",
+   "topic_supported": "Inertia assumes convex/isotropic clusters; failure on elongated clusters is not a mathematical impossibility of returning other partitions.",
+   "read": true,
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "pytorch-ce",
+   "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html",
+   "resolved_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html",
+   "status": 200,
+   "bytes": 507,
+   "sha256": "bdf724d9446fad0063fc9fc5167c24a6f008e9e3ea6e3b63617879fe4d901457",
+   "checked_at": "2026-10-26T08:11:31.926Z",
+   "used_as_verified_reference": false,
+   "note": "HTTP200 is a 507-byte HTML redirect, not the API documentation. Actual versioned page read below.",
+   "access_date": "2026-10-26"
+  },
+  {
+   "id": "d2l-vi-linear",
+   "url": "https://vi.d2l.ai/chapter_linear-networks/linear-regression.html",
+   "error": "fetch failed",
+   "checked_at": "2026-10-26T08:11:31.511Z",
+   "used_as_verified_reference": false,
+   "access_date": "2026-10-26"
+  },
+  {
+   "url": "https://vi.d2l.ai/",
+   "error": "fetch failed",
+   "cause": "Error: Request was cancelled.",
+   "access_date": "2026-10-26"
+  },
+  {
+   "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.CrossEntropyLoss.html",
+   "status": 200,
+   "bytes": 282189,
+   "title": "PyTorch 2.14 CrossEntropyLoss",
+   "author_or_organization": "PyTorch contributors",
+   "topic_supported": "Prediction input is unnormalized logits; target API supports class indices or class probabilities. Clarified quiz asks prediction input.",
+   "read": true,
+   "sha256": "2792cdb3db504af7956d3de3923b92fbdfe82e5e7e70327547877bc81b67cfc3",
+   "access_date": "2026-10-26"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/d2l-ai/d2l-vi/master/chapter_linear-networks/linear-regression_vn.md",
+   "status": 404,
+   "bytes": 14,
+   "used_as_verified_reference": false,
+   "note": "Attempted filename returned 404; not a verified source.",
+   "access_date": "2026-10-26"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/d2l-ai/d2l-vi/master/chapter_linear-networks/linear-regression.md",
+   "status": 200,
+   "bytes": 28680,
+   "title": "D2L Vietnamese source — Linear Regression",
+   "author_or_organization": "D2L Vietnamese translation contributors (d2l-ai/d2l-vi)",
+   "topic_supported": "Read full Markdown. Formula has 1/2 per-sample squared loss and matching minibatch gradient; not a verification of the inaccessible rendered vi.d2l.ai site.",
+   "read": true,
+   "sha256": "3d938e6a508b1724eb6327059a533b28ec26103e77eba442de91b988f206080b",
+   "access_date": "2026-10-26"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/d2l-ai/d2l-vi/master/README.md",
+   "status": 200,
+   "bytes": 1979,
+   "title": "D2L Vietnamese translation README",
+   "author_or_organization": "D2L Vietnamese translation contributors (d2l-ai/d2l-vi)",
+   "topic_supported": "Maintainers, translated-book organization and source lineage.",
+   "read": true,
+   "sha256": "77daa66696c3502b316c9ea4601c3a24f2323382aa497e3729c3223fec3277b5",
+   "access_date": "2026-10-26"
+  },
+  {
+   "url": "https://docs.pytorch.org/docs/2.14/generated/torch.optim.AdamW.html",
+   "status": 200,
+   "bytes": 277176,
+   "checked_at": "2026-10-26T08:26:49.485Z",
+   "title": "PyTorch 2.14 AdamW",
+   "author_or_organization": "PyTorch contributors",
+   "topic_supported": "Weight decay does not accumulate in momentum/variance; update separate from MSE gradient.",
+   "read": true,
+   "sha256": "7d809dbfaf5c165377ecd1e7befaf6429ce554d55ccb7aaf33d2c4105f1804d8",
+   "access_date": "2026-10-26"
+  }
  ]
 }

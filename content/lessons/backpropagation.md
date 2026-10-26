@@ -6,7 +6,9 @@ Mạng có hàng triệu tham số cần gradient của loss theo từng tham s�
 
 ## Công thức
 Với $L=\tfrac12(\hat y-t)^2$, $\hat y=w_2h$, $h=\operatorname{ReLU}(a)$, $a=w_1x$:
-$$\frac{\partial L}{\partial w_1}=\frac{\partial L}{\partial \hat y}\cdot\frac{\partial \hat y}{\partial h}\cdot\frac{\partial h}{\partial a}\cdot\frac{\partial a}{\partial w_1}=(\hat y-t)\cdot w_2\cdot\mathbb 1[a>0]\cdot x$$
+$$
+\frac{\partial L}{\partial w_1}=\frac{\partial L}{\partial \hat y}\cdot\frac{\partial \hat y}{\partial h}\cdot\frac{\partial h}{\partial a}\cdot\frac{\partial a}{\partial w_1}=(\hat y-t)\cdot w_2\cdot\mathbb 1[a>0]\cdot x
+$$
 
 ![Đồ thị tính toán forward và backward](/img/backpropagation.svg)
 
@@ -29,10 +31,12 @@ Cần lưu giá trị trung gian của forward pass nên tốn bộ nhớ. Luôn
 Forward lưu giá trị, backward nhân dần các đạo hàm cục bộ theo chain rule.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-Backprop là reverse-mode differentiation của đồ thị tính toán, không phải phép lấy sai phân từng trọng số. Đạo hàm từ nhiều nhánh được cộng ở nút dùng chung; theo từng đường, Jacobian nhân với adjoint. Công thức được viết theo scalar để tránh nhầm transpose; khi vector hóa cần kiểm tra convention hàng/cột và broadcast bias. ReLU không khả vi tại 0, framework chọn một subgradient theo quy ước; finite-difference test nên tránh điểm gãy. Nhớ chia loss theo batch cùng convention trước khi so gradient tự cài với framework.
+Backprop là reverse-mode differentiation của đồ thị tính toán, không phải phép lấy sai phân từng trọng số. Đạo hàm từ nhiều nhánh được cộng ở nút dùng chung; theo từng đường, Jacobian nhân với adjoint. Công thức được viết theo scalar để tránh nhầm transpose; khi vector hóa cần kiểm tra convention hàng/cột và broadcast bias.
+
+ReLU không khả vi tại 0, framework chọn một subgradient theo quy ước; finite-difference test nên tránh điểm gãy. Nhớ chia loss theo batch cùng convention trước khi so gradient tự cài với framework.
 
 ## Đáp án và tiêu chí chấm
-1. Nếu t=6 thì yhat−t=0, loss=0 và cả hai gradient theo w1,w2 đều 0. (2 điểm).
+1. Nếu $t=6$ thì $\hat y-t=0$, $L=0$ và cả hai gradient theo $w_1,w_2$ đều bằng 0. (2 điểm).
 2. Đặt epsilon vừa phải, tính sai phân mỗi trọng số trên cùng input; so sai số tuyệt đối lẫn tương đối. Không yêu cầu bitwise bằng nhau và không kiểm tra đúng tại ReLU 0. (3 điểm).
 3. Tính delta lớp cuối, truyền ngược delta qua W và đạo hàm activation; dW là activation trước chuyển vị nhân delta theo convention batch hàng. Trình bày shapes và tổng gradient qua bias, không chỉ gọi backward rồi nhận là đã suy ra. (5 điểm).
 

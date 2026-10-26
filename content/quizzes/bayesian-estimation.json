@@ -7,7 +7,7 @@
    "5/8"
   ],
   "correct": 1,
-  "explanation": "Posterior Beta(5,3), mode=(5−1)/(5+3−2)=2/3; mean=5/8."
+  "explanation": "Posterior $\\operatorname{Beta}(5,3)$, mode $=(5-1)/(5+3-2)=2/3$; mean $=5/8$."
  },
  {
   "prompt": "Likelihood là gì khi dữ liệu đã cố định?",
@@ -27,6 +27,6 @@
    "15.38%"
   ],
   "correct": 2,
-  "explanation": "Bayes cho .009/(.009+.0495)=.1538; phải xét base rate."
+  "explanation": "Bayes cho $0.009/(0.009+0.0495)\\approx0.1538$; phải xét tỷ lệ nền (base rate)."
  }
 ]

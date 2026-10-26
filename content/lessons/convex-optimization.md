@@ -5,7 +5,9 @@
 Một tập $C$ lồi khi với mọi $x,y\in C$, $tx+(1-t)y\in C$ cho mọi $t\in[0,1]$. Quả cầu norm, halfspace và giao các tập lồi là lồi. Một đường tròn chỉ gồm vành không lồi: đoạn nối hai điểm đối diện đi qua tâm không thuộc vành.
 
 Một hàm $f$ trên miền lồi là lồi khi
-$$f(tx+(1-t)y)\le tf(x)+(1-t)f(y).$$
+$$
+f(tx+(1-t)y)\le tf(x)+(1-t)f(y).
+$$
 Đồ thị nằm dưới dây cung; đây là phát biểu chính xác hơn ví von “hình cái bát”. Lồi không có nghĩa mọi mức hàm chỉ có một nghiệm: hàm hằng là phản ví dụ. Strict convexity bảo đảm tối đa một nghiệm tối ưu nếu nghiệm tồn tại.
 
 ## Gradient, Hessian và điều kiện áp dụng

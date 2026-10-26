@@ -1,13 +1,13 @@
 [
  {
-  "prompt": "Vì sao inverted dropout chia đầu ra train cho p_keep (xác suất giữ)?",
+  "prompt": "Vì sao inverted dropout chia đầu ra train cho $p_{\\mathrm{keep}}$ (xác suất giữ)?",
   "options": [
    "Giữ kỳ vọng của đầu ra không đổi",
    "Để tăng learning rate",
    "Để tắt thêm neuron"
   ],
   "correct": 0,
-  "explanation": "Giữ với xác suất p_keep rồi nhân 1/p_keep để bảo toàn kỳ vọng. PyTorch nn.Dropout(p) nhận xác suất bỏ, bằng 1−p_keep."
+  "explanation": "Giữ với xác suất $p_{\\mathrm{keep}}$ rồi nhân $1/p_{\\mathrm{keep}}$ để bảo toàn kỳ vọng. PyTorch `nn.Dropout(p)` nhận xác suất bỏ, bằng $1-p_{\\mathrm{keep}}$."
  },
  {
   "prompt": "Early stopping dựa trên loss của tập nào?",

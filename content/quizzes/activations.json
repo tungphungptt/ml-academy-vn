@@ -7,7 +7,7 @@
    "0.5"
   ],
   "correct": 0,
-  "explanation": "σ'(0) = 0.5·0.5 = 0.25."
+  "explanation": "$\\sigma'(0)=0.5\\cdot0.5=0.25$."
  },
  {
   "prompt": "Hàm kích hoạt mặc định hợp lý cho lớp ẩn là gì?",
@@ -20,7 +20,7 @@
   "explanation": "ReLU đơn giản và ít gây gradient biến mất hơn sigmoid."
  },
  {
-  "prompt": "Từ sigmoid derivative ≤1/4 có thể kết luận gradient toàn mạng luôn ≤(1/4)^L không?",
+  "prompt": "Từ $\\sigma'(z)\\le1/4$ có thể kết luận gradient toàn mạng luôn bị chặn bởi $(1/4)^L$ không?",
   "options": [
    "Có, không cần xét weights",
    "Cần chặn thêm norm weights/Jacobian; riêng activation chưa đủ",

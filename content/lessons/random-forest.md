@@ -36,10 +36,10 @@ Mạnh, ít cần tinh chỉnh, cho độ quan trọng đặc trưng. Khó diễ
 Random Forest gộp nhiều cây bootstrap với đặc trưng ngẫu nhiên để giảm phương sai.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-Bagging và random subset feature giảm tương quan giữa các cây. Với variance bằng σ² và tương quan cặp ρ, variance trung bình là ρσ²+(1−ρ)σ²/B, nên tăng cây không đưa variance về 0 khi ρ>0. Mô tả hard majority là trực giác ensemble; RandomForestClassifier của sklearn thực tế trung bình probability của từng cây rồi argmax, có thể khác bỏ phiếu nhãn cứng. OOB dùng các mẫu không vào bootstrap của từng cây; nếu chọn nhiều cấu hình theo OOB thì vẫn cần đánh giá cuối độc lập. Impurity importance thiên vị thuộc tính nhiều giá trị; permutation importance cũng phải xét feature tương quan.
+Bagging và random subset feature giảm tương quan giữa các cây. Với phương sai bằng $\sigma^2$ và tương quan cặp $\rho$, phương sai trung bình là $\rho\sigma^2+(1-\rho)\sigma^2/B$, nên tăng cây không đưa variance về 0 khi $\rho>0$. Mô tả hard majority là trực giác ensemble; RandomForestClassifier của sklearn thực tế trung bình probability của từng cây rồi argmax, có thể khác bỏ phiếu nhãn cứng. OOB dùng các mẫu không vào bootstrap của từng cây; nếu chọn nhiều cấu hình theo OOB thì vẫn cần đánh giá cuối độc lập. Impurity importance thiên vị thuộc tính nhiều giá trị; permutation importance cũng phải xét feature tương quan.
 
 ## Đáp án và tiêu chí chấm
-1. (1−1/50)^50≈0.3642, tiến dần về e⁻¹≈0.3679. (2 điểm).
+1. $(1-1/50)^{50}\approx0.3642$, tiến dần về $e^{-1}\approx0.3679$. (2 điểm).
 2. Dùng cùng folds và cùng metric cho cây/forest, báo mean/std và chi phí; không kết luận ensemble luôn thắng từ một split. (3 điểm).
 3. Mỗi cây lấy bootstrap train và một seed riêng; gom probability nhất quán thứ tự class. Giữ validation riêng và đối chiếu với cây đơn, không dùng test để điều chỉnh B. (5 điểm).
 

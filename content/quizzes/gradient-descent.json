@@ -1,3 +1,32 @@
-[{"prompt":"Với L(θ)=θ², θ0=4, η=0.1, giá trị θ1 là bao nhiêu?","options":["3.2","3.6","0.8"],"correct":0,"explanation":"θ1 = 4 - 0.1·(2·4) = 3.2."},
-{"prompt":"Vì sao có dấu trừ trong θ ← θ − η∇L?","options":["Để θ luôn dương","Gradient chỉ hướng L tăng nhanh nhất, ta đi ngược lại","Để tăng learning rate"],"correct":1,"explanation":"Ta muốn giảm L nên đi ngược hướng gradient."},
-{"prompt":"Dấu hiệu learning rate quá lớn là gì?","options":["Loss giảm rất chậm","Loss tăng hoặc dao động mạnh","Loss luôn bằng 0"],"correct":1,"explanation":"Bước quá dài khiến vượt qua cực tiểu, loss có thể tăng hoặc phân kỳ."}]
+[
+ {
+  "prompt": "Với $L(\\theta)=\\theta^2$, $\\theta_0=4$, $\\eta=0.1$, giá trị $\\theta_1$ là bao nhiêu?",
+  "options": [
+   "3.2",
+   "3.6",
+   "0.8"
+  ],
+  "correct": 0,
+  "explanation": "$\\theta_1=4-0.1\\cdot(2\\cdot4)=3.2$."
+ },
+ {
+  "prompt": "Vì sao có dấu trừ trong $\\theta\\leftarrow\\theta-\\eta\\nabla L$?",
+  "options": [
+   "Để θ luôn dương",
+   "Gradient chỉ hướng L tăng nhanh nhất, ta đi ngược lại",
+   "Để tăng learning rate"
+  ],
+  "correct": 1,
+  "explanation": "Ta muốn giảm L nên đi ngược hướng gradient."
+ },
+ {
+  "prompt": "Dấu hiệu learning rate quá lớn là gì?",
+  "options": [
+   "Loss giảm rất chậm",
+   "Loss tăng hoặc dao động mạnh",
+   "Loss luôn bằng 0"
+  ],
+  "correct": 1,
+  "explanation": "Bước quá dài khiến vượt qua cực tiểu, loss có thể tăng hoặc phân kỳ."
+ }
+]

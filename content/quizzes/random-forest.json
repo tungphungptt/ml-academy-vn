@@ -17,7 +17,7 @@
    "50%"
   ],
   "correct": 0,
-  "explanation": "(1−1/N)^N → e^{-1} ≈ 0.368."
+  "explanation": "$(1-1/N)^N\\to e^{-1}\\approx0.368$."
  },
  {
   "prompt": "RandomForestClassifier của scikit-learn tổng hợp dự đoán các cây thế nào?",

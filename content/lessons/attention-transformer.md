@@ -5,8 +5,16 @@
 RNN xử lý tuần tự và khó nhớ phụ thuộc xa. Attention cho mỗi phần tử "nhìn" trực tiếp vào mọi phần tử khác và quyết định cần chú ý bao nhiêu.
 
 ## Công thức
-$$\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$
-$Q$ (query) là thứ đang cần tìm, $K$ (key) là nhãn của từng phần tử, $V$ (value) là nội dung được lấy ra, $d_k$ là chiều của key; chia cho $\sqrt{d_k}$ để tích vô hướng không quá lớn làm softmax bão hòa. Trong self-attention, $Q,K,V$ cùng được tính từ đầu vào. Transformer xếp nhiều lớp gồm multi-head attention và mạng feed-forward, cùng kết nối tắt và chuẩn hóa (Vaswani và cộng sự, 2017).
+$$
+\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+$$
+$Q$ chứa các vector truy vấn (query), $K$ chứa các vector khóa (key) để so mức liên quan, $V$ chứa các vector giá trị (value) được trộn theo trọng số. Key không phải nhãn lớp trong bài toán có giám sát.
+
+Với $n_q$ truy vấn, $n_k$ khóa, $Q\in\mathbb R^{n_q\times d_k}$, $K\in\mathbb R^{n_k\times d_k}$ và $V\in\mathbb R^{n_k\times d_v}$. Ma trận điểm có shape $(n_q,n_k)$; softmax trên từng hàng tạo trọng số tổng bằng 1, rồi nhân $V$ cho đầu ra shape $(n_q,d_v)$.
+
+Với các thành phần query/key độc lập, trung bình 0 và phương sai 1, phương sai tích vô hướng là $d_k$. Chia cho $\sqrt{d_k}$ đưa phương sai về gần 1, giảm nguy cơ softmax bão hòa; đây là lập luận theo giả định về scale, không chặn mọi đầu vào.
+
+Trong self-attention, $Q,K,V$ cùng được tính từ đầu vào. Transformer xếp nhiều lớp gồm multi-head attention và mạng feed-forward, cùng kết nối tắt và chuẩn hóa (Vaswani và cộng sự, 2017).
 
 ![Trọng số attention](/img/attention.svg)
 
@@ -38,9 +46,9 @@ Attention là trung bình có trọng số của các value, trọng số lấy 
 Attention có query từ nơi cần truy vấn, key/value từ nguồn; self-attention lấy cùng sequence làm nguồn, cross-attention có thể dùng decoder query và encoder key/value. Softmax theo chiều key để mỗi query có một phân phối trọng số. Mask logit bằng −inf trước softmax, không xóa trọng số sau rồi quên chuẩn hóa. Một hàng bị mask hết có thể tạo NaN; cần token/context hợp lệ. Attention không có position là permutation-equivariant: đổi thứ tự input đổi thứ tự output tương ứng, không phải output y nguyên. Bài này giảng cơ chế weighted retrieval; [kiến trúc Transformer](/learn/transformer-architecture) giảng ghép thành mô hình, không lặp lại như một thuật toán khác.
 
 ## Đáp án và tiêu chí chấm
-1. Softmax (0,0)=(0.5,0.5). (2 điểm).
-2. q=(0,1) cho weights≈(0.3302,0.6698), output≈(2.3395,3.3395), tổng weights=1. (3 điểm).
-3. X có shape 4×d, WQ/WK/WV cho Q/K/V cùng số token; logits 4×4, softmax hàng, output 4×dv. Kiểm tra masked future weight 0 và không tạo hàng all-masked. (5 điểm).
+1. $\operatorname{softmax}(0,0)=(0.5,0.5)$. (2 điểm).
+2. $q=(0,1)$ cho trọng số $\approx(0.3302,0.6698)$, đầu ra $\approx(2.3395,3.3395)$, tổng trọng số $=1$. (3 điểm).
+3. $X$ có shape $(4,d)$, $W_Q,W_K,W_V$ cho $Q,K,V$ cùng số token; logits shape $(4,4)$, softmax theo hàng, đầu ra shape $(4,d_v)$. Kiểm tra masked future weight 0 và không tạo hàng all-masked. (5 điểm).
 
 ## Nguồn tham khảo
 - [Attention Is All You Need (Vaswani và cộng sự)](https://arxiv.org/abs/1706.03762).

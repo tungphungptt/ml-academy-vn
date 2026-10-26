@@ -1,1 +1,22 @@
-[{"prompt":"Khi p_g = p_data, bộ phân biệt tối ưu D* cho giá trị bao nhiêu?","options":["0.5","0","1"],"correct":0,"explanation":"D* = p_data/(p_data+p_g) = 1/2."},{"prompt":"Mẹo reparameterization trong VAE dùng để làm gì?","options":["Lan truyền gradient qua bước lấy mẫu","Tăng tốc lấy mẫu","Giảm số lớp"],"correct":0,"explanation":"z = μ + σε biến lấy mẫu thành hàm khả vi của μ, σ."}]
+[
+ {
+  "prompt": "Khi $p_g=p_{\\mathrm{data}}$, bộ phân biệt tối ưu $D^*$ cho giá trị bao nhiêu?",
+  "options": [
+   "0.5",
+   "0",
+   "1"
+  ],
+  "correct": 0,
+  "explanation": "$D^*=p_{\\mathrm{data}}/(p_{\\mathrm{data}}+p_g)=1/2$ trên miền có mật độ dương."
+ },
+ {
+  "prompt": "Mẹo reparameterization trong VAE dùng để làm gì?",
+  "options": [
+   "Lan truyền gradient qua bước lấy mẫu",
+   "Tăng tốc lấy mẫu",
+   "Giảm số lớp"
+  ],
+  "correct": 0,
+  "explanation": "$z=\\mu+\\sigma\\varepsilon$ biến phép lấy mẫu thành hàm khả vi theo $\\mu,\\sigma$ khi cố định nhiễu $\\varepsilon$."
+ }
+]

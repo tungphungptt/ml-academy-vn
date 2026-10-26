@@ -4,8 +4,12 @@
 ## Từ bảng thưa tới tham số học được
 Ma trận user×item thường thiếu nhiều ô. Một ô thiếu không có nghĩa người dùng ghét mục đó, và không được thay bằng rating 0 rồi huấn luyện như dữ liệu có nhãn. Matrix factorization biểu diễn mỗi user/item bằng vector ngắn; tích vô hướng mô tả tương tác. Đây là một mô hình embedding học bằng gradient, không phải mạng sâu nhiều tầng và không mặc định vượt mô hình đơn giản.
 
-$$\hat r_{ui}=\mu+b_u+c_i+p_u^\top q_i,\qquad L=\frac1{|\Omega|}\sum_{(u,i)\in\Omega}(r_{ui}-\hat r_{ui})^2+\lambda R(\theta).$$
+$$
+\hat r_{ui}=\mu+b_u+c_i+p_u^\top q_i,\qquad L_{\mathrm{data}}=\frac1{|\Omega|}\sum_{(u,i)\in\Omega}(r_{ui}-\hat r_{ui})^2.
+$$
 $\Omega$ chỉ chứa rating train quan sát, $\mu$ là trung bình train, bias user/item mô tả xu hướng chấm cao/thấp. $p_u,q_i$ là các hàng trong `nn.Embedding`. Với implicit feedback cần định nghĩa exposure, positive/negative sampling và ranking loss khác; không biến lab regression này thành bằng chứng ranking.
+
+Có thể định nghĩa objective có penalty $L_{\mathrm{data}}+\lambda R(\theta)$ trong một mô hình khác. **Lab bên dưới chỉ backpropagate $L_{\mathrm{data}}$ và dùng AdamW với decay tách riêng**; không có hạng $\lambda R$ được cộng vào `loss` trong code.
 
 ## Dữ liệu và split của lab
 Tự sinh 30 user, 24 item bằng latent rank 3 cộng nhiễu nhỏ. Toàn bộ 720 cặp được sinh để biết ground truth; chỉ 504 cặp đi vào fit, 108 validation và 108 test bị giữ lại. Assert mỗi user/item có mặt trong train: đây là **warm-start rating completion**, không đo khả năng dự đoán cho user mới. Không download dữ liệu, không dùng đánh giá của người thật, và không tự gán metric cho MovieLens.
@@ -44,3 +48,4 @@ Embedding làm gọn ma trận tương tác; objective, dữ liệu quan sát v�
 - [ML cơ bản: Matrix Factorization](https://machinelearningcoban.com/2017/05/31/matrixfactorization/), đọc snapshot nguồn.
 - [TabML: embedding](https://machinelearningcoban.com/tabml_book/ch_embedding/embedding.html); phạm vi nguồn Git được ghi trong audit.
 - [PyTorch: optimization tutorial](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html).
+- [PyTorch 2.14: AdamW và decoupled weight decay](https://docs.pytorch.org/docs/2.14/generated/torch.optim.AdamW.html).

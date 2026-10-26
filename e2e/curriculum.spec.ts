@@ -1,10 +1,20 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Locator } from "@playwright/test";
 import fs from "node:fs";
 import { PrismaClient } from "@prisma/client";
 import type { Catalog, Lesson } from "../src/lib/content";
 
 const catalog = JSON.parse(fs.readFileSync("content/catalog.json", "utf8")) as Catalog;
 const lessons = catalog.courses.flatMap(c => c.modules.flatMap(m => m.lessons as Lesson[]));
+
+async function expectMathText(target: Locator, source: string) {
+  // Validate prose and the semantic math source separately: visual KaTeX changes
+  // accessible names and contains both MathML and aria-hidden HTML glyphs.
+  for (const part of source.split(/(\$[^$\n]+\$)/g)) {
+    if (part.startsWith("$") && part.endsWith("$")) {
+      expect(await target.locator('annotation[encoding="application/x-tex"]').allTextContents()).toContain(part.slice(1, -1).trim());
+    } else if (part.trim()) await expect(target).toContainText(part.replace(/`([^`]+)`/g, "$1").trim());
+  }
+}
 
 test("all 59 lessons render content, math, quiz, prerequisites and adjacent navigation", async ({ page, request }) => {
   test.setTimeout(180_000);
@@ -30,13 +40,17 @@ test("all 59 lessons render content, math, quiz, prerequisites and adjacent navi
     const fields = page.locator("fieldset");
     await expect(fields).toHaveCount(questions.length);
     for (const [i, q] of questions.entries()) {
-      await expect(fields.nth(i).locator("legend")).toContainText(q.prompt);
-      for (const option of q.options) await expect(fields.nth(i).getByRole("radio", { name: option, exact: true })).toBeVisible();
-      await fields.nth(i).getByRole("radio", { name: q.options[q.correct], exact: true }).check();
+      await expectMathText(fields.nth(i).locator("legend"), q.prompt);
+      for (const [j, option] of q.options.entries()) {
+        const label = fields.nth(i).locator(`label[data-option-index="${j}"]`);
+        await expect(label.getByRole("radio")).toBeVisible();
+        await expectMathText(label, option);
+      }
+      await fields.nth(i).locator(`label[data-option-index="${q.correct}"]`).getByRole("radio").check();
     }
     await page.getByRole("button", { name: "Nộp bài", exact: true }).click();
     await expect(page.getByText(`Điểm: ${questions.length}/${questions.length}`, { exact: true })).toBeVisible();
-    for (const [i, q] of questions.entries()) await expect(fields.nth(i)).toContainText(q.explanation);
+    for (const [i, q] of questions.entries()) await expectMathText(fields.nth(i), q.explanation);
     if (l.s === "cnn-cpu") {
       await page.getByRole("button", { name: "Đánh dấu hoàn thành" }).click();
       await page.reload();

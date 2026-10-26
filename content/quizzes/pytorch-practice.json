@@ -1,1 +1,22 @@
-[{"prompt":"Conv 3x3 padding 1 trên ảnh 28x28 cho kích thước đầu ra là bao nhiêu?","options":["28x28","26x26","30x30"],"correct":0,"explanation":"(28+2−3)/1+1 = 28."},{"prompt":"CrossEntropyLoss của PyTorch nhận đầu vào nào?","options":["Logits (chưa qua softmax)","Xác suất sau softmax","Nhãn one-hot"],"correct":0,"explanation":"Nó đã gồm log-softmax bên trong."}]
+[
+ {
+  "prompt": "Conv 3x3 padding 1 trên ảnh 28x28 cho kích thước đầu ra là bao nhiêu?",
+  "options": [
+   "28x28",
+   "26x26",
+   "30x30"
+  ],
+  "correct": 0,
+  "explanation": "$(28+2-3)/1+1=28$."
+ },
+ {
+  "prompt": "Đầu vào dự đoán của CrossEntropyLoss trong ví dụ PyTorch là gì?",
+  "options": [
+   "Logits (chưa qua softmax)",
+   "Xác suất sau softmax",
+   "Nhãn one-hot"
+  ],
+  "correct": 0,
+  "explanation": "Nó đã gồm log-softmax bên trong."
+ }
+]

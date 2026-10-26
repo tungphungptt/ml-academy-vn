@@ -1,1 +1,22 @@
-[{"prompt":"Mô hình có lỗi train và lỗi test đều cao thường là dấu hiệu gì?","options":["Underfitting (bias cao)","Overfitting","Rò rỉ dữ liệu"],"correct":0,"explanation":"Mô hình quá đơn giản không khớp nổi cả dữ liệu train."},{"prompt":"Lỗi kỳ vọng với bias²=0.09, Var=0.04, σ²=0.04 là bao nhiêu?","options":["0.17","0.13","0.21"],"correct":0,"explanation":"0.09 + 0.04 + 0.04 = 0.17."}]
+[
+ {
+  "prompt": "Mô hình có lỗi train và lỗi test đều cao thường là dấu hiệu gì?",
+  "options": [
+   "Underfitting (bias cao)",
+   "Overfitting",
+   "Rò rỉ dữ liệu"
+  ],
+  "correct": 0,
+  "explanation": "Mô hình quá đơn giản không khớp nổi cả dữ liệu train."
+ },
+ {
+  "prompt": "Lỗi kỳ vọng với $\\operatorname{bias}^2=0.09$, $\\operatorname{Var}=0.04$, $\\sigma^2=0.04$ là bao nhiêu?",
+  "options": [
+   "0.17",
+   "0.13",
+   "0.21"
+  ],
+  "correct": 0,
+  "explanation": "$0.09+0.04+0.04=0.17$."
+ }
+]

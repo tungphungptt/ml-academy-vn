@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react"; import { shuffleIdx } from "@/lib/search";
+import MarkdownContent from "./MarkdownContent";
 type Q = { id: string; prompt: string; options: string[] };
 type Res = { id: string; correct: boolean; correctIndex: number; explanation: string };
 export default function QuizForm({ quizId, questions, loggedIn }: { quizId: string; questions: Q[]; loggedIn: boolean }) {
@@ -14,9 +15,9 @@ export default function QuizForm({ quizId, questions, loggedIn }: { quizId: stri
   }
   const res = (id: string) => out?.results.find(x => x.id === id);
   return <section><h2>Quiz</h2><p style={{ color: "var(--mut)" }}>Thứ tự các lựa chọn được xáo trộn mỗi lần làm. Đáp án chỉ hiện sau khi nộp.</p>
-    {questions.map((q, k) => { const r = res(q.id); return <fieldset key={q.id} disabled={!!out} className={r ? (r.correct ? "ok-pop" : "bad-shake") : ""}><legend>{k + 1}. {q.prompt}</legend>
-      {order(q, k).map(j => <label key={j} className={"opt" + (r && j === r.correctIndex ? " right" : "")}><input type="radio" name={q.id} checked={ans[q.id] === j} onChange={() => setAns({ ...ans, [q.id]: j })} /> {q.options[j]}{r && j === r.correctIndex ? " ✓" : ""}</label>)}
-      {r && <p>{r.correct ? "Đúng. " : "Chưa đúng. "}{r.explanation}</p>}</fieldset>; })}
+    {questions.map((q, k) => { const r = res(q.id); return <fieldset key={q.id} disabled={!!out} className={r ? (r.correct ? "ok-pop" : "bad-shake") : ""}><legend>{k + 1}. <MarkdownContent inline>{q.prompt}</MarkdownContent></legend>
+      {order(q, k).map(j => <label key={j} data-option-index={j} className={"opt" + (r && j === r.correctIndex ? " right" : "")}><input type="radio" name={q.id} checked={ans[q.id] === j} onChange={() => setAns({ ...ans, [q.id]: j })} /> <MarkdownContent inline>{q.options[j]}</MarkdownContent>{r && j === r.correctIndex ? " ✓" : ""}</label>)}
+      {r && <p>{r.correct ? "Đúng. " : "Chưa đúng. "}<MarkdownContent inline>{r.explanation}</MarkdownContent></p>}</fieldset>; })}
     {!out ? <button className="primary" onClick={submit} disabled={Object.keys(ans).length < questions.length}>Nộp bài</button>
       : <><p><b>Điểm: {out.score}/{out.total}</b></p><button onClick={() => { setOut(null); setAns({}); setSeed(Date.now() % 1e9); }}>Làm lại (xáo trộn lại)</button></>}
     {err && <p role="alert">{err}</p>}</section>;

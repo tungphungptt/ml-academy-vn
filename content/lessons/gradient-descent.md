@@ -9,12 +9,16 @@ Hầu hết mô hình học máy được huấn luyện bằng cách tìm tham 
 Hãy tưởng tượng bạn đứng trên sườn đồi trong sương mù và muốn xuống thung lũng. Bạn chỉ cảm nhận được độ dốc dưới chân, nên mỗi lần bước một đoạn ngắn theo hướng dốc xuống nhất. Gradient chính là "độ dốc" đó, learning rate là độ dài bước chân.
 
 ## Công thức
-$$\theta \leftarrow \theta - \eta \, \nabla_\theta L(\theta)$$
+$$
+\theta \leftarrow \theta - \eta \, \nabla_\theta L(\theta)
+$$
 
 Trong đó $\theta$ là vector tham số, $\eta>0$ là learning rate, $\nabla_\theta L$ là vector đạo hàm riêng của $L$ theo từng tham số. Gradient chỉ hướng làm $L$ tăng nhanh nhất, nên ta đi theo hướng ngược lại (dấu trừ).
 
 Với Linear Regression $\hat y = wx+b$ và $L=\frac1N\sum_i(wx_i+b-y_i)^2$:
-$$\frac{\partial L}{\partial w}=\frac{2}{N}\sum_i (wx_i+b-y_i)\,x_i,\qquad \frac{\partial L}{\partial b}=\frac{2}{N}\sum_i (wx_i+b-y_i)$$
+$$
+\frac{\partial L}{\partial w}=\frac{2}{N}\sum_i (wx_i+b-y_i)\,x_i,\qquad \frac{\partial L}{\partial b}=\frac{2}{N}\sum_i (wx_i+b-y_i)
+$$
 
 ![Hoạt ảnh Gradient Descent trên parabol](/img/gradient-descent.svg)
 
@@ -39,7 +43,7 @@ Bài thực hành `Linear Regression` ở trang **Code Lab** (`labs/linear_regre
 - Đặc trưng khác thang đo: nên chuẩn hóa để các tham số hội tụ cùng tốc độ.
 
 ## Ưu điểm, hạn chế
-Đơn giản, áp dụng được cho mọi hàm khả vi. Với hàm không lồi (mạng nơ-ron) nó có thể dừng ở cực tiểu địa phương hoặc điểm yên ngựa. Các bộ tối ưu như Momentum, RMSprop, Adam cải tiến cách cập nhật.
+Cập nhật dễ cài đặt khi tính được gradient. Khả vi chưa đủ để bảo đảm hội tụ: bước học và tính chất của hàm vẫn quyết định độ ổn định. Với hàm không lồi (mạng nơ-ron) nó có thể dừng ở cực tiểu địa phương hoặc điểm yên ngựa. Các bộ tối ưu như Momentum, RMSprop, Adam cải tiến cách cập nhật.
 
 ## Bài tập
 1. (Dễ) Với $L=\theta^2$, $\eta=0.25$, $\theta_0=4$, tính $\theta_1,\theta_2$.
@@ -50,10 +54,14 @@ Bài thực hành `Linear Regression` ở trang **Code Lab** (`labs/linear_regre
 Gradient Descent lặp lại $\theta \leftarrow \theta-\eta\nabla L$. Learning rate quyết định tốc độ và độ ổn định.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-Điều kiện khả vi không tự bảo đảm một learning rate bất kỳ làm loss giảm. Với gradient L-Lipschitz và giả định thích hợp, có các giới hạn bước ổn định; hàm không lồi không có bảo đảm cực tiểu toàn cục chung. SGD là gradient từ một mẫu; mini-batch lấy trung bình gradient trong batch và nên xáo trộn train theo epoch nếu giả định dữ liệu cho phép. Batch nhỏ không tự rẻ hơn cho cùng chất lượng, vì nhiều update/epoch hơn. Để so sánh, báo cả số update, số lượt duyệt dữ liệu, thời gian và loss; đừng chỉ so “epoch”. Lab hồi quy cũ có 3 điểm, nên batch size 8 trên chính dữ liệu đó chỉ là Batch GD, không minh họa mini-batch thật.
+Điều kiện khả vi không tự bảo đảm một learning rate bất kỳ làm loss giảm. Với gradient L-Lipschitz và giả định thích hợp, có các giới hạn bước ổn định; hàm không lồi không có bảo đảm cực tiểu toàn cục chung.
+
+SGD là gradient từ một mẫu; mini-batch lấy trung bình gradient trong batch và nên xáo trộn train theo epoch nếu giả định dữ liệu cho phép. Batch nhỏ không tự rẻ hơn cho cùng chất lượng, vì nhiều update/epoch hơn.
+
+Để so sánh, báo cả số update, số lượt duyệt dữ liệu, thời gian và loss; đừng chỉ so “epoch”. Lab hồi quy cũ có 3 điểm, nên batch size 8 trên chính dữ liệu đó chỉ là Batch GD, không minh họa mini-batch thật.
 
 ## Đáp án và tiêu chí chấm
-1. Với η=0.25, hệ số mỗi bước là 0.5, nên θ1=2 và θ2=1. (2 điểm).
+1. Với $\eta=0.25$, hệ số mỗi bước là 0.5, nên $\theta_1=2$ và $\theta_2=1$. (2 điểm).
 2. Giữ dữ liệu/seed và tiêu chí dừng MSE<0.01, ghi số update lẫn epoch, phát hiện phân kỳ thay vì ép score hợp lệ. (3 điểm).
 3. Tạo ít nhất 64 điểm train; batch size 8 cho 8 update/epoch. Gradient dùng mean của batch, không chia N toàn tập thêm một lần. Shuffle train và vẽ loss sau cùng số update hoặc báo rõ trục epoch khác số update. (5 điểm).
 

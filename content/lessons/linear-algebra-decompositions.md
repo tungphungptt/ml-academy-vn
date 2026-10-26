@@ -10,7 +10,9 @@ Với dữ liệu $X\in\mathbb R^{n\times d}$, kernel/null space gồm các $v$ 
 Với ma trận vuông, $Av=\lambda v$, $v\ne0$: hướng $v$ không đổi khi biến đổi, chỉ co/giãn bởi $\lambda$. Ma trận đối xứng thực có cơ sở trực chuẩn vector riêng; ma trận bất kỳ không nhất thiết có đủ vector riêng thực. Ma trận hiệp phương sai đối xứng nửa xác định dương nên có trị riêng không âm (trừ sai số làm tròn rất nhỏ).
 
 ## SVD áp dụng cả ma trận chữ nhật
-$$X=U\Sigma V^\top,\qquad X_k=\sum_{j=1}^k\sigma_j u_jv_j^\top.$$
+$$
+X=U\Sigma V^\top,\qquad X_k=\sum_{j=1}^k\sigma_j u_jv_j^\top.
+$$
 Singular value $\sigma_j\ge0$ xếp giảm dần; không phải trị riêng có dấu của $X$. Trong SVD rút gọn, nếu $r=\min(n,d)$ thì $U:(n,r)$, $\Sigma:(r,r)$, $V^\top:(r,d)$. Hạng số học đếm singular value lớn hơn tolerance phụ thuộc độ lớn ma trận và precision.
 
 Giữ $k$ thành phần đầu cho xấp xỉ hạng tối đa $k$ tốt nhất theo chuẩn Frobenius: sai số bình phương bằng $\sum_{j>k}\sigma_j^2$. Với dữ liệu đã căn giữa, các cột $V$ là hướng PCA và phương sai là $\sigma_j^2/(n-1)$. Đây là quan hệ SVD–PCA, không phải tuyên bố phương sai cao luôn hữu ích để phân loại.

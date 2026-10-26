@@ -5,7 +5,9 @@
 Huấn luyện mô hình cần biết thay đổi nhỏ của tham số làm hàm mất mát thay đổi bao nhiêu: đó là đạo hàm.
 
 ## Công thức
-$$f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h},\qquad \nabla f=\Big(\frac{\partial f}{\partial x_1},\dots,\frac{\partial f}{\partial x_n}\Big),\qquad \frac{d}{dx}f(g(x))=f'(g(x))\,g'(x)$$
+$$
+f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h},\qquad \nabla f=\Big(\frac{\partial f}{\partial x_1},\dots,\frac{\partial f}{\partial x_n}\Big),\qquad \frac{d}{dx}f(g(x))=f'(g(x))\,g'(x)
+$$
 Gradient chỉ hướng làm $f$ tăng nhanh nhất. Chain rule là nền tảng của backpropagation.
 
 ![Tiếp tuyến của parabol](/img/derivatives.svg)
@@ -37,9 +39,9 @@ Sai phân trung tâm có sai số $O(h^2)$, dùng để kiểm tra gradient tự
 Với hàm vector, đạo hàm là Jacobian; gradient thường dành cho hàm vô hướng theo nhiều đầu vào. Chain rule nhiều biến nhân các Jacobian theo thứ tự phù hợp với convention hàng/cột, không phải nhân mọi số không xét shape. Kiểm tra sai phân trung tâm từng tham số có chi phí tỷ lệ số chiều, nên chỉ dùng mạng nhỏ. Tránh điểm gãy như ReLU tại 0 khi so với đạo hàm cổ điển. Chọn epsilon phải cân bằng sai số cắt cụt và làm tròn; số nhỏ hơn không luôn chính xác hơn.
 
 ## Đáp án và tiêu chí chấm
-1. Đạo hàm x³ là 3x², tại 2 bằng 12. (2 điểm).
-2. Với f=x²y, gradient=(2xy,x²), tại (1,2) là (4,1), không phải (2,3). (3 điểm).
-3. Đặt z=wx+b, dσ/dw=σ(z)(1−σ(z))x. Nêu rõ giữ x,b cố định khi lấy đạo hàm theo w và kiểm tra một giá trị hữu hạn bằng sai phân. (5 điểm).
+1. Đạo hàm của $x^3$ là $3x^2$, tại $x=2$ bằng 12. (2 điểm).
+2. Với $f=x^2y$, $\nabla f=(2xy,x^2)$, tại $(1,2)$ là $(4,1)$. (3 điểm).
+3. Đặt $z=wx+b$: $\partial\sigma(z)/\partial w=\sigma(z)(1-\sigma(z))x$. Nêu rõ giữ x,b cố định khi lấy đạo hàm theo w và kiểm tra một giá trị hữu hạn bằng sai phân. (5 điểm).
 
 ## Nguồn tham khảo
 - [Stanford CS231n: Optimization (gradient và chain rule)](https://cs231n.github.io/optimization-1/).

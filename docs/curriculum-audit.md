@@ -405,3 +405,9 @@ Các nhóm chính: toàn bộ 50 Markdown cũ + 9 bài mới; 8 quiz cũ + 9 qui
 - `tests/persistence.test.ts` — modified
 
 </details>
+
+## Bổ sung: math rendering và trải nghiệm đọc (2026-10-26)
+
+Lượt mới bắt đầu từ commit `19596bc`, giữ 59 bài, 133 quiz, 13 lab và 27 notebook. Đã chuẩn hóa 49 Markdown và 42 file quiz; có 56 display equations thật thay cho cách viết delimiter cùng dòng trước đó. Renderer dùng chung cho bài học/quiz/lời giải/mô tả lab, có MathML và kiểm thử SSR/browser. Sửa/làm rõ convention MSE, AdamW/data loss, giả định scale attention, giới hạn PCA/K-means và ý nghĩa penalty SVM. Không thay schema/seed hoặc tự ghi đè dữ liệu admin.
+
+Kết quả và giới hạn của lượt này ở [math-rendering-audit.md](math-rendering-audit.md); [SSR inventory](math-rendering-content.json), [link receipts](math-rendering-links.json) và mục `math_rendering_review_access` trong [source registry](curriculum-sources.json). Các bảng kiểm thử và inventory trước đó ở tài liệu này là snapshot lịch sử, không tự trở thành bằng chứng của lượt mới. Lần hiện tại: 42 Node test, 6 numerical regression, 9 E2E, 63 standalone blocks (2 contextual compile-only), 27 kernel notebook; TypeScript/Prisma/build đạt. Link check còn 7/80 request bị môi trường hủy; không ghi nhận PASS cho URL chưa xác minh.

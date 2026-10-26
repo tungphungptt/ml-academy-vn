@@ -5,7 +5,9 @@
 Perceptron không giải được XOR. Xếp nhiều lớp có hàm kích hoạt phi tuyến cho phép học ranh giới phức tạp.
 
 ## Công thức
-$$\mathbf h=\phi(\mathbf x W_1+\mathbf b_1),\qquad \hat y=\mathbf h W_2+\mathbf b_2$$
+$$
+\mathbf h=\phi(\mathbf x W_1+\mathbf b_1),\qquad \hat y=\mathbf h W_2+\mathbf b_2
+$$
 $\mathbf x$ có shape $(N,D)$, $W_1$ có shape $(D,H)$, $\mathbf h$ có shape $(N,H)$, $W_2$ có shape $(H,K)$. $\phi$ là hàm kích hoạt (ReLU: $\max(0,z)$). Không có $\phi$ thì nhiều lớp tuyến tính chỉ tương đương một lớp.
 
 ![Sơ đồ mạng MLP 2-3-1](/img/mlp.svg)
@@ -32,9 +34,9 @@ MLP = các lớp tuyến tính xen kẽ hàm kích hoạt phi tuyến.
 Đầu vào mỗi hàng là mẫu; các lớp tuyến tính xen phi tuyến học các feature trung gian. Với multiclass, head xuất logits K chiều và loss CE; binary có thể dùng một logit+BCEWithLogitsLoss. Universal approximation là kết quả tồn tại trong các điều kiện thích hợp, không nói một mạng nhỏ/lần SGD sẽ tìm ra hàm tốt với ít dữ liệu. XOR trong lab là kiểm tra biểu diễn/huấn luyện trên bốn điểm, không phải một test generalization có ý nghĩa. Có thể tái lập loss/prediction của lab CPU, nhưng không xem train accuracy 1.0 là chứng minh mạng đã giải mọi bài toán phi tuyến.
 
 ## Đáp án và tiêu chí chấm
-1. x=(2,0) cho hidden trước activation (2,0,−2), ReLU thành (2,0,0), đầu ra yhat=2. (2 điểm).
+1. $x=(2,0)$ cho hidden trước activation $(2,0,-2)$, ReLU thành $(2,0,0)$, đầu ra $\hat y=2$. (2 điểm).
 2. Ghi seed, loss, hidden width và số update. Quan sát hội tụ trên XOR, không chọn hidden width dựa trên một tập test chưa được định nghĩa. (3 điểm).
-3. Ví dụ D→H1→H2→K cho batch N có shapes N×H1, N×H2, N×K; số tham số mỗi Linear là din·dout+dout. Cần activation giữa cả hai lớp ẩn. (5 điểm).
+3. Ví dụ $D\to H_1\to H_2\to K$ cho batch $N$ có shape $(N,H_1)$, $(N,H_2)$, $(N,K)$; số tham số mỗi Linear là $d_{\mathrm{in}}d_{\mathrm{out}}+d_{\mathrm{out}}$. Cần activation giữa cả hai lớp ẩn. (5 điểm).
 
 ## Nguồn tham khảo
 - [Dive into Deep Learning: Multilayer Perceptrons](https://d2l.ai/chapter_multilayer-perceptrons/index.html).

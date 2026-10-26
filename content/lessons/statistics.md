@@ -5,7 +5,9 @@
 Trước khi huấn luyện mô hình, ta cần hiểu dữ liệu: giá trị điển hình là bao nhiêu, dữ liệu phân tán ra sao, có lệch hay có ngoại lai không.
 
 ## Công thức
-$$\bar x=\frac1N\sum_i x_i,\qquad \sigma^2=\frac1N\sum_i(x_i-\bar x)^2,\qquad s^2=\frac1{N-1}\sum_i(x_i-\bar x)^2$$
+$$
+\bar x=\frac1N\sum_i x_i,\qquad \sigma^2=\frac1N\sum_i(x_i-\bar x)^2,\qquad s^2=\frac1{N-1}\sum_i(x_i-\bar x)^2
+$$
 Trung vị là giá trị ở giữa sau khi sắp xếp (ít nhạy với ngoại lai hơn trung bình). $\sigma^2$ là phương sai tổng thể, $s^2$ là phương sai mẫu (chia $N-1$ để ước lượng không chệch khi chỉ có một mẫu từ tổng thể lớn hơn). **MLE cho phân phối chuẩn:** cực đại hóa log-likelihood của $N$ quan sát cho $\hat\mu=\bar x$ và $\hat\sigma^2=\frac1N\sum(x_i-\bar x)^2$ (chia $N$, nên chệch nhẹ so với $s^2$).
 
 ![Biểu đồ chấm với trung bình và trung vị](/img/statistics.svg)
@@ -35,8 +37,8 @@ Thống kê mô tả phản ánh mẫu đang có; suy luận về quần thể c
 
 ## Đáp án và tiêu chí chấm
 1. Dãy đã sắp xếp có 7 phần tử, median là phần tử thứ 4: 6. (2 điểm).
-2. Mean=2.5, tổng bình phương lệch=5. Variance tổng thể=5/4=1.25; variance mẫu=5/3≈1.6667. (3 điểm).
-3. Viết log-likelihood Gaussian, lấy đạo hàm và cho Σ(x_i−μ)=0. Phân biệt điều kiện variance dương, MLE variance chia N và ước lượng không chệch chia N−1. (5 điểm).
+2. Trung bình $=2.5$, tổng bình phương lệch $=5$. Phương sai tổng thể $=5/4=1.25$; phương sai mẫu $=5/3\approx1.6667$. (3 điểm).
+3. Viết log-likelihood Gaussian, lấy đạo hàm và cho $\sum_i(x_i-\hat\mu)=0$. Phân biệt điều kiện variance dương, MLE variance chia $N$ và ước lượng không chệch chia $N-1$. (5 điểm).
 
 ## Nguồn tham khảo
 - [Dive into Deep Learning: Probability and Statistics](https://d2l.ai/chapter_preliminaries/probability.html).

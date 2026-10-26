@@ -9,18 +9,18 @@
    "bytes": 14767
   },
   {
-   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/python_stdlib.zip",
-   "status": 200,
-   "type": "application/wasm",
-   "sha256": "0dd443755a0244ae3052f2e0834413d68c43f362c651edd47b785ea9d26e4853",
-   "bytes": 2341761
-  },
-  {
    "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide-lock.json",
    "status": 200,
    "type": "application/json; charset=utf-8",
    "sha256": "0cb7ca8faf9c35af92b4d261996ddd51dd9a6c1074ee59279f1570d67af29644",
    "bytes": 105980
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/python_stdlib.zip",
+   "status": 200,
+   "type": "application/wasm",
+   "sha256": "0dd443755a0244ae3052f2e0834413d68c43f362c651edd47b785ea9d26e4853",
+   "bytes": 2341761
   },
   {
    "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.js",

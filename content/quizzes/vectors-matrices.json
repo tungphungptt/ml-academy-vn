@@ -1,1 +1,22 @@
-[{"prompt":"Nhân ma trận shape (2,3) với (3,4) cho shape nào?","options":["(2,4)","(3,3)","(2,3)"],"correct":0,"explanation":"Số cột của A phải bằng số hàng của B; kết quả có (m,p) = (2,4)."},{"prompt":"cos giữa (1,0) và (1,1) xấp xỉ bao nhiêu?","options":["0.7071","0.5","1"],"correct":0,"explanation":"(1·1+0·1)/(1·√2) = 1/√2."}]
+[
+ {
+  "prompt": "Nhân ma trận shape (2,3) với (3,4) cho shape nào?",
+  "options": [
+   "(2,4)",
+   "(3,3)",
+   "(2,3)"
+  ],
+  "correct": 0,
+  "explanation": "Số cột của $A$ phải bằng số hàng của $B$; kết quả có shape $(m,p)=(2,4)$."
+ },
+ {
+  "prompt": "cos giữa (1,0) và (1,1) xấp xỉ bao nhiêu?",
+  "options": [
+   "0.7071",
+   "0.5",
+   "1"
+  ],
+  "correct": 0,
+  "explanation": "$\\frac{1\\cdot1+0\\cdot1}{1\\cdot\\sqrt2}=\\frac1{\\sqrt2}$."
+ }
+]

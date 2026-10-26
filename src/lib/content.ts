@@ -9,5 +9,6 @@ function memo<T>(f: () => T): () => T { let c: { at: number; v: T } | null = nul
 const read = (...p: string[]) => fs.readFileSync(path.join(process.cwd(), ...p), "utf8");
 export const getCatalog = memo(() => JSON.parse(read("content/catalog.json")) as Catalog);
 export const getLessons = (): Lesson[] => getCatalog().courses.flatMap(c => c.modules.flatMap(m => m.lessons.filter((l): l is Lesson => typeof l !== "string")));
+export const getLabLinks = memo(() => (JSON.parse(read("content/labs.json")) as { id: string; title: string; lessonSlugs?: string[] }[]));
 export const getSearchDocs = memo(() => getLessons().map(l => ({ slug: l.s, title: l.t, text: readLesson(l.f).replace(/[#*`$\\]|!\[[^\]]*\]\([^)]*\)/g, " ") })));
 export const getStats = memo(() => ({ lessons: getLessons().length, images: fs.readdirSync(path.join(process.cwd(), "public/img")).filter(f => f.endsWith(".svg")).length, labs: (JSON.parse(read("content/labs.json")) as unknown[]).length }));

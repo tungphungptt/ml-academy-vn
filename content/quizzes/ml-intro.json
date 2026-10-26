@@ -1,1 +1,22 @@
-[{"prompt":"Dự đoán giá nhà là bài toán gì?","options":["Hồi quy (học có giám sát)","Phân cụm","Học tăng cường"],"correct":0,"explanation":"Nhãn là giá trị liên tục có sẵn trong dữ liệu."},{"prompt":"Baseline đoán lớp phổ biến nhất trên Iris đạt accuracy bao nhiêu?","options":["0.333","0.5","0.9"],"correct":0,"explanation":"Ba lớp cân bằng nên 50/150 ≈ 0.333."}]
+[
+ {
+  "prompt": "Dự đoán giá nhà là bài toán gì?",
+  "options": [
+   "Hồi quy (học có giám sát)",
+   "Phân cụm",
+   "Học tăng cường"
+  ],
+  "correct": 0,
+  "explanation": "Nhãn là giá trị liên tục có sẵn trong dữ liệu."
+ },
+ {
+  "prompt": "Baseline đoán lớp phổ biến nhất trên Iris đạt accuracy bao nhiêu?",
+  "options": [
+   "0.333",
+   "0.5",
+   "0.9"
+  ],
+  "correct": 0,
+  "explanation": "Ba lớp cân bằng nên $50/150\\approx0.333$."
+ }
+]

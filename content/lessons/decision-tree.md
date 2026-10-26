@@ -6,7 +6,9 @@ Cần một mô hình dễ giải thích bằng chuỗi câu hỏi "nếu... th�
 
 ## Trực giác và công thức
 Mỗi nút chọn một đặc trưng và ngưỡng để chia dữ liệu thành hai phần "thuần" hơn. Độ không thuần Gini:
-$$G=1-\sum_{c}p_c^2,\qquad G_{\text{split}}=\sum_{k}\frac{N_k}{N}G_k$$
+$$
+G=1-\sum_{c}p_c^2,\qquad G_{\text{split}}=\sum_{k}\frac{N_k}{N}G_k
+$$
 $p_c$ là tỉ lệ lớp $c$ trong nút, $N_k$ là số mẫu ở nhánh $k$. Chọn phép chia làm $G_{\text{split}}$ nhỏ nhất.
 
 ![Cây quyết định và độ giảm Gini](/img/decision-tree.svg)
@@ -38,10 +40,10 @@ Dễ giải thích, không cần chuẩn hóa. Không ổn định với thay đ
 Cây chia dữ liệu theo tiêu chí giảm độ không thuần; cần giới hạn độ sâu.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-CART của sklearn chia nhị phân; classification có thể dùng Gini hoặc entropy, regression thường giảm squared error. Entropy H=−Σp log₂p (quy ước 0 log 0=0); information gain là entropy cha trừ entropy con có trọng số. ID3 dùng information gain, C4.5 thêm gain ratio để giảm thiên vị thuộc tính nhiều giá trị; không đồng nhất ba tên thuật toán. Cây không cần scale đơn điệu như KNN nhưng dễ overfit và có thể ưu tiên feature nhiều ngưỡng. Cắt tỉa/cost-complexity và giới hạn leaf/depth phải chọn bằng validation.
+CART của sklearn chia nhị phân; classification có thể dùng Gini hoặc entropy, regression thường giảm squared error. Entropy $H=-\sum_c p_c\log_2p_c$ (quy ước $0\log 0=0$); information gain là entropy cha trừ entropy con có trọng số. ID3 dùng information gain, C4.5 thêm gain ratio để giảm thiên vị thuộc tính nhiều giá trị; không đồng nhất ba tên thuật toán. Cây không cần scale đơn điệu như KNN nhưng dễ overfit và có thể ưu tiên feature nhiều ngưỡng. Cắt tỉa/cost-complexity và giới hạn leaf/depth phải chọn bằng validation.
 
 ## Đáp án và tiêu chí chấm
-1. Với hai lớp cân bằng, Gini=0.5 và entropy=1 bit. (2 điểm).
+1. Với hai lớp cân bằng, Gini $=0.5$ và entropy $=1$ bit. (2 điểm).
 2. Đổi max_depth chỉ trên train/validation/CV, ghi train và validation score; không chọn depth theo test. (3 điểm).
 3. Sắp mẫu theo một cột, thử midpoint giữa giá trị khác nhau, giữ leaf không rỗng; tính impurity weighted bởi số mẫu. Kiểm tra feature hằng, nhãn thuần và tie-break. (5 điểm).
 

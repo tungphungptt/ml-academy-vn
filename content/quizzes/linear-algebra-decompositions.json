@@ -14,17 +14,17 @@
   "options": [
    "1",
    "5",
-   "sqrt(5)"
+   "$\\sqrt5$"
   ],
   "correct": 1,
-  "explanation": "Tổng bình phương singular values bị bỏ là 2²+1²=5; sqrt(5) là norm lỗi."
+  "explanation": "Tổng bình phương singular values bị bỏ là $2^2+1^2=5$; $\\sqrt5$ là norm lỗi."
  },
  {
   "prompt": "Vì sao nên dùng lstsq khi hai cột phụ thuộc?",
   "options": [
    "Nó tự làm dữ liệu có nhãn",
    "Nó dùng test để chọn nghiệm",
-   "XᵀX có thể không khả nghịch"
+   "$X^\\top X$ có thể không khả nghịch"
   ],
   "correct": 2,
   "explanation": "lstsq giải bài least squares mà không đòi nghịch đảo normal matrix."

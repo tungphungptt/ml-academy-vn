@@ -10,7 +10,7 @@
   "explanation": "Dạng nhãn index chuẩn là một class ID cho mỗi mẫu; logits (16,5)."
  },
  {
-  "prompt": "Vì sao σ′≤0.25 không chặn gradient mọi mạng bởi 0.25^L?",
+  "prompt": "Vì sao $\\sigma'\\le0.25$ không chặn gradient mọi mạng bởi $0.25^L$?",
   "options": [
    "Còn ma trận trọng số và đường graph trong Jacobian",
    "Vì sigmoid không có đạo hàm",

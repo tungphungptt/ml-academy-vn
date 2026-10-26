@@ -1,8 +1,9 @@
 "use client";
 import { useRef, useState } from "react"; import CodeEditor from "./CodeEditor";
-type Lab = { id: string; title: string; description: string; runtime: "pyodide" | "local"; variants: string[]; expected: Record<string, string | null>; notebooks?: Record<string, string>; code: Record<string, string> };
+import MarkdownContent from "../MarkdownContent";
+type Lab = { id: string; title: string; description: string; lessonSlugs?: string[]; runtime: "pyodide" | "local"; variants: string[]; expected: Record<string, string | null>; notebooks?: Record<string, string>; code: Record<string, string> };
 const TIMEOUT_MS = 90000;
-export default function CodeLab({ labs, initialLabId }: { labs: Lab[]; initialLabId?: string }) {
+export default function CodeLab({ labs, initialLabId, lessonTitles = {} }: { labs: Lab[]; initialLabId?: string; lessonTitles?: Record<string, string> }) {
   const [id, setId] = useState(labs.some(l => l.id === initialLabId) ? initialLabId! : labs[0].id); const [variant, setVariant] = useState("scratch");
   const lab = labs.find(l => l.id === id)!; const v = lab.variants.includes(variant) ? variant : lab.variants[0];
   const orig = lab.code[v]; const [edits, setEdits] = useState<Record<string, string>>({});
@@ -25,7 +26,8 @@ export default function CodeLab({ labs, initialLabId }: { labs: Lab[]; initialLa
   const exp = lab.expected[v];
   return <div>
     <label>Bài thực hành: <select value={id} onChange={e => pick(e.target.value)}>{labs.map(l => <option key={l.id} value={l.id}>{l.title}</option>)}</select></label>
-    <p>{lab.description}</p>
+    <div className="lab-description"><MarkdownContent>{lab.description}</MarkdownContent></div>
+    {!!lab.lessonSlugs?.length && <p>Bài học liên quan: {lab.lessonSlugs.map((slug, i) => <span key={slug}>{i > 0 && " · "}<a href={`/learn/${slug}`}>{lessonTitles[slug] ?? slug}</a></span>)}</p>}
     <div role="group" aria-label="Phiên bản">{lab.variants.map(x => <button key={x} aria-pressed={x === v} onClick={() => { kill(""); setVariant(x); setOut(""); setErr(""); }} style={{ fontWeight: x === v ? 700 : 400 }}>{x === "scratch" ? "From Scratch" : "Library-based"}</button>)}</div>
     <CodeEditor value={code} onChange={val => setEdits({ ...edits, [key]: val })} />
     <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}>

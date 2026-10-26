@@ -1,1 +1,22 @@
-[{"prompt":"Khác biệt chính giữa GMM và K-Means là gì?","options":["GMM cho xác suất thuộc từng cụm (phân cụm mềm)","GMM không cần số cụm","GMM chỉ chạy trên ảnh"],"correct":0,"explanation":"Trách nhiệm r_k(x) là xác suất điểm thuộc thành phần k."},{"prompt":"Bước E của thuật toán EM làm gì?","options":["Tính trách nhiệm của mỗi thành phần cho mỗi điểm","Cập nhật trung bình","Chọn số cụm"],"correct":0,"explanation":"Bước M mới cập nhật tham số dựa trên trách nhiệm đó."}]
+[
+ {
+  "prompt": "Khác biệt chính giữa GMM và K-Means là gì?",
+  "options": [
+   "GMM cho xác suất thuộc từng cụm (phân cụm mềm)",
+   "GMM không cần số cụm",
+   "GMM chỉ chạy trên ảnh"
+  ],
+  "correct": 0,
+  "explanation": "Trách nhiệm $r_k(x)$ là xác suất hậu nghiệm điểm thuộc thành phần $k$ dưới mô hình hiện tại."
+ },
+ {
+  "prompt": "Bước E của thuật toán EM làm gì?",
+  "options": [
+   "Tính trách nhiệm của mỗi thành phần cho mỗi điểm",
+   "Cập nhật trung bình",
+   "Chọn số cụm"
+  ],
+  "correct": 0,
+  "explanation": "Bước M mới cập nhật tham số dựa trên trách nhiệm đó."
+ }
+]

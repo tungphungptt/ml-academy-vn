@@ -1,1 +1,22 @@
-[{"prompt":"Với TP=40, FP=10, precision bằng bao nhiêu?","options":["0.8","0.4","0.5"],"correct":0,"explanation":"P = 40/(40+10) = 0.8."},{"prompt":"Khi bỏ sót ca bệnh rất nguy hiểm, nên ưu tiên metric nào?","options":["Precision","Recall","Accuracy"],"correct":1,"explanation":"Recall đo tỉ lệ ca dương thật được phát hiện."}]
+[
+ {
+  "prompt": "Với $TP=40,FP=10$, precision bằng bao nhiêu?",
+  "options": [
+   "0.8",
+   "0.4",
+   "0.5"
+  ],
+  "correct": 0,
+  "explanation": "$P=40/(40+10)=0.8$."
+ },
+ {
+  "prompt": "Khi bỏ sót ca bệnh rất nguy hiểm, nên ưu tiên metric nào?",
+  "options": [
+   "Precision",
+   "Recall",
+   "Accuracy"
+  ],
+  "correct": 1,
+  "explanation": "Recall đo tỉ lệ ca dương thật được phát hiện."
+ }
+]
