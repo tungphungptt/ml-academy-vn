@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** MLP, Backpropagation.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** MLP, Backpropagation.
 **Mục tiêu:** hiểu trạng thái ẩn của RNN và cổng của LSTM.
 
 ## Vấn đề thực tế
@@ -36,3 +36,15 @@ LSTM nhớ phụ thuộc xa tốt hơn RNN thuần. Xử lý tuần tự nên kh
 
 ## Tóm tắt
 RNN truyền trạng thái ẩn theo thời gian; LSTM dùng cổng để kiểm soát việc nhớ và quên.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+BPTT unroll graph theo thời gian với trọng số dùng chung; gradient là tổng đóng góp từ các bước. LSTM có đường cell giúp truyền thông tin, không bảo đảm nhớ vô hạn khi forget gate nhỏ. GRU dùng reset r và update z, ví dụ dạng kinh điển h̃=tanh(xWx+(r⊙hprev)Wh+b), h=z⊙hprev+(1−z)⊙h̃. Cần nêu convention: PyTorch đặt reset lên hạng tuyến tính hidden trong candidate theo cách có thể khác vị trí phép nhân ở công thức trên, nên không so trực tiếp từng weight khi tự cài. Padding phải được mask/packed hoặc dùng length hợp lệ. [Lab GRU CPU](/learn/sequence-models-cpu) cho dự báo một bước với split theo thời gian.
+
+## Đáp án và tiêu chí chấm
+1. Tính từ giá trị chưa làm tròn: h3=tanh(0.5h2+0.5)≈0.2210. (2 điểm).
+2. Khi f=0.2, cprev=2,i=0.5,g=0.4: ct=0.4+0.2=0.6. (3 điểm).
+3. Khai báo shape x,h,c và bốn cổng, sigmoid cho f/i/o, tanh cho candidate; kiểm tra từng phép nhân và output với batch nhỏ. Không quên state c khác state h. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Recurrent Neural Networks](https://d2l.ai/chapter_recurrent-neural-networks/index.html).
+- [Dive into Deep Learning: Modern RNNs](https://d2l.ai/chapter_recurrent-modern/index.html).

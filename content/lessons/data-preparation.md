@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** NumPy, pandas.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** NumPy, pandas và Matplotlib, Thống kê mô tả và ước lượng tham số.
 **Mục tiêu:** chia dữ liệu train/validation/test, chuẩn hóa đúng cách và xử lý dữ liệu thiếu.
 
 ## Vấn đề thực tế
@@ -30,3 +30,15 @@ Chuẩn hóa hoặc điền thiếu trên toàn bộ dữ liệu trước khi ch
 
 ## Tóm tắt
 Chia dữ liệu trước, rồi fit mọi bước tiền xử lý chỉ trên tập train.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Chia dữ liệu không phải nghi thức cố định 70/15/15: tỉ lệ phụ thuộc số mẫu, chi phí nhãn và cấu trúc phụ thuộc. Với nhiều dòng cùng đối tượng, giữ group không giao nhau; với dự báo tương lai, thời gian của target phải đi sau train. Missingness có thể mang tín hiệu hoặc là lỗi thu thập, không phải luôn xóa hàng là đúng. [Lab bảng hỗn hợp](/learn/tabular-pipeline) kết hợp EDA, imputation, encoding và lựa chọn đặc trưng trong fold. Chuẩn hóa từng đặc trưng khác normalization từng hàng về norm 1; chọn theo mô hình/khoảng cách, không coi là hai tên của một phép biến đổi.
+
+## Đáp án và tiêu chí chấm
+1. Chia 2000 theo 80/10/10 được 1600/200/200. (2 điểm).
+2. Tách 80% train và 20% còn lại, rồi chia phần còn lại đôi. Dùng stratify cho classification khi đủ mẫu mỗi lớp; với nhóm/thời gian thì đổi splitter phù hợp, không áp dụng stratify ngẫu nhiên máy móc. (3 điểm).
+3. Pipeline SimpleImputer rồi StandardScaler: fit trên train, transform validation/test. Kiểm tra số cột, category mới, nhóm không giao và không cho nhãn vào phép điền. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Preprocessing data](https://scikit-learn.org/stable/modules/preprocessing.html).
+- [scikit-learn: Imputation of missing values](https://scikit-learn.org/stable/modules/impute.html).

@@ -1,0 +1,267 @@
+{
+ "runtime": {
+  "nbformat": "5.10.4",
+  "nbclient": "0.10.2",
+  "ipykernel": "6.30.1"
+ },
+ "method": "Fresh real IPython kernel per notebook; schema, sequential cells and original recorded stdout checked without regeneration",
+ "notebooks": [
+  {
+   "file": "public/notebooks/autoencoder_cpu_library.ipynb",
+   "sha256": "487b32bea412b3373828f72a55261b7c169ce36f6734e9c3e5926542cab66788",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/cnn_cpu_library.ipynb",
+   "sha256": "c59d6751bb48d3a24688f3cdf9ab4c35cdde0239c51214f3ae993a37e36581ea",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/kmeans_library.ipynb",
+   "sha256": "53e7de980ef662e95015d46e13de0e7888d29cf236f997e8c41b36aa72f1cbb7",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "Inertia: 69.24\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/kmeans_scratch.ipynb",
+   "sha256": "93106044b1ec1a8b468353ca4311a3452a0b986717a98d51748caa4813abd50c",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "Inertia: 69.24\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/knn_library.ipynb",
+   "sha256": "8d3f3b9aaa33a3aba4f988fe8e3c2ddf35f0216c4b3c4f627332305bc626e287",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "Do chinh xac KNN (k=5): 1.000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/knn_scratch.ipynb",
+   "sha256": "eae3d590594f776bc8f8bd708879ab16b5a549abf3b070ad532857417e1435e5",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "Do chinh xac KNN (k=5): 1.000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/linear_regression_library.ipynb",
+   "sha256": "d4928deec5d76cd07037f9b785ca5ecbd83be3c0680a50f069575af28f4c94b1",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "w=2.000 b=0.000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/linear_regression_scratch.ipynb",
+   "sha256": "9294e5118f81b04245c71a622fb8529104427c0ce0580b45ff8330abb3ca52e7",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "w=1.999 b=0.002 mse=0.000000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/logistic_regression_library.ipynb",
+   "sha256": "5444ee8fb3ac8d0aa231e75fa6f76fc2d79c38685e7ff7f9aa327e9103141461",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "accuracy=0.980\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/logistic_regression_scratch.ipynb",
+   "sha256": "54bec2148c6a3839256a53595babaf06f7f730560af5ee255c84511fa5522dd5",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "loss=0.0575 accuracy=0.980\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/mlp_torch_library.ipynb",
+   "sha256": "f12af2de11ddce1600a7e98914ce415c0e9864a43ca8e10de262fe9eb5901999",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "loss=0.0002 pred=[0, 1, 1, 0]\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/neural_recommendation_library.ipynb",
+   "sha256": "0016fa06682ddb35bb923913de56ff57bd1b03b4cff60cdc8154a7b25fdac70f",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/perceptron_library.ipynb",
+   "sha256": "f0b702e9f5b4069acdafd83d6fb4dd6dd05a9485dff803cd1c41c899bce06e1e",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "accuracy=1.000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/perceptron_scratch.ipynb",
+   "sha256": "250dc19703d4618e956e0d7b9c50aea826980ba4550861a7c31e4e04476a9658",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "epoch=2 loi_cuoi_epoch=0 accuracy=1.000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/du-doan-chi-so-tieu-duong.ipynb",
+   "sha256": "b20724a01346f25102dec3d81ab199162783db41c25df3ef08780bed354921db",
+   "passed": true,
+   "cells": 2,
+   "stdout": [
+    "(442, 10) (442,)\n",
+    "baseline (trung bình)    MSE=  4965.1  R2=-0.000\nLinearRegression         MSE=  3180.2  R2=0.359\nRidge(alpha=1)           MSE=  3192.3  R2=0.357\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/nhan-dang-chu-so.ipynb",
+   "sha256": "944273f8636ca87586769d2a60121c7920aaff793954d77b189273a035e54e13",
+   "passed": true,
+   "cells": 3,
+   "stdout": [
+    "",
+    "KNN k=5    accuracy=0.980\nSVM-rbf    accuracy=0.987\nMLP        accuracy=0.973\n",
+    "Cặp bị nhầm nhiều nhất (thật -> đoán): 4 -> 8 số lần: 2\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/phan-cum-khach-hang.ipynb",
+   "sha256": "c144cc3f38472b05598851ad313bec06306368e6c8de495bed07ff4335a5bdc9",
+   "passed": true,
+   "cells": 3,
+   "stdout": [
+    "",
+    "K=2  inertia=  1429.3  silhouette=0.466\nK=3  inertia=   795.4  silhouette=0.484\nK=4  inertia=   454.4  silhouette=0.537\nK=5  inertia=   402.2  silhouette=0.467\nK=6  inertia=   356.4  silhouette=0.408\nK=7  inertia=   312.6  silhouette=0.396\nK=8  inertia=   271.4  silhouette=0.348\n",
+    "K tốt nhất theo silhouette: 4 (dữ liệu được sinh với 4 cụm thật)\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/phan-loai-cam-xuc.ipynb",
+   "sha256": "9ef11b0400c1bf08a73a0251b4bd16afa4d53653fb223230a7dd0fefd152f793",
+   "passed": true,
+   "cells": 3,
+   "stdout": [
+    "40 câu; 20 tích cực\n",
+    "baseline                 F1(CV)=0.000 ± 0.000\nTF-IDF 1-gram + LogReg   F1(CV)=0.268 ± 0.174\nTF-IDF 1-2gram + LogReg  F1(CV)=0.211 ± 0.203\n",
+    "phim này không hay       P(tích cực)=0.51\ndiễn xuất tuyệt vời      P(tích cực)=0.58\nnội dung nhảm nhí        P(tích cực)=0.45\ntôi rất thích            P(tích cực)=0.56\nNhận xét: với chỉ 40 câu, mỗi câu mang nhiều từ riêng nên mô hình thấy rất ít từ dùng chung giữa train và test; F1 thấp và xác suất gần 0.5 nghĩa là gần như đoán mò. Cần nhiều dữ liệu hơn nhiều.\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/phan-loai-ung-thu-vu.ipynb",
+   "sha256": "7af43e22e539789991adf30fe3af605675b4d82dde7f2220a7b1dd3d59d98ed4",
+   "passed": true,
+   "cells": 3,
+   "stdout": [
+    "",
+    "baseline       F1(CV)=0.000 ± 0.000\nLogReg         F1(CV)=0.974 ± 0.016\nSVM-rbf        F1(CV)=0.959 ± 0.022\nRandomForest   F1(CV)=0.943 ± 0.024\n",
+    "              precision    recall  f1-score   support\n\n           0      0.978     1.000     0.989        90\n           1      1.000     0.962     0.981        53\n\n    accuracy                          0.986       143\n   macro avg      0.989     0.981     0.985       143\nweighted avg      0.986     0.986     0.986       143\n\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/phat-hien-bat-thuong-log.ipynb",
+   "sha256": "f983cb39aef36c33397d39e2e1ecc550faf384545f78c4203bc3de9a56e8dcaa",
+   "passed": true,
+   "cells": 2,
+   "stdout": [
+    "",
+    "z-score>3        precision=0.909 recall=1.000 F1=0.952\nIQR              precision=0.714 recall=1.000 F1=0.833\nIsolationForest  precision=1.000 recall=1.000 F1=1.000\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/pipeline-hoan-chinh.ipynb",
+   "sha256": "26f930d50364f208b6d1df887eaa2660cf40ff7335020bb2fc3b8210003df55d",
+   "passed": true,
+   "cells": 3,
+   "stdout": [
+    "",
+    "Tham số tốt nhất: {'logisticregression__C': 1} | recall CV: 0.969\n",
+    "Test: recall = 0.962 | F1 = 0.981\nNạp lại cho cùng dự đoán: True\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/projects/so-sanh-mo-hinh.ipynb",
+   "sha256": "274db756f724654120e02f08dddff4e4a1931a1188cfc98bfaec51ca25d7cec7",
+   "passed": true,
+   "cells": 3,
+   "stdout": [
+    "",
+    "baseline     acc(CV)=0.100 ± 0.000\nKNN          acc(CV)=0.969 ± 0.004\nLogReg       acc(CV)=0.970 ± 0.005\nSVM-rbf      acc(CV)=0.978 ± 0.006\nRandomForest acc(CV)=0.973 ± 0.004\n",
+    "Mô hình tốt nhất theo CV: SVM-rbf | accuracy trên test (dùng 1 lần): 0.982\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/sequence_cpu_library.ipynb",
+   "sha256": "32202a14d6f7ee2f3396d77b4209e07dde7f448f47a46390277d1ad72dc7849c",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/softmax_regression_library.ipynb",
+   "sha256": "c4a0e87fe206a278a3540281c3aaea8bfa75e84a04138e1d60407519c0d950f7",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "test_accuracy=0.911\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/softmax_regression_scratch.ipynb",
+   "sha256": "ceedac29c0d219ddb36794fb5105769897d01d754602f4c956ef7049d5ef6a36",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "test_accuracy=0.867\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/tabular_pipeline_library.ipynb",
+   "sha256": "ab8630757944a89339c49cf9ffb389719397349995968782fc59ccaa7f0d9c9f",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}\n"
+   ]
+  },
+  {
+   "file": "public/notebooks/transfer_cpu_library.ipynb",
+   "sha256": "d48c81d4bee59b37d384a899d3ec86b6e95eb2d6b5aded36bf647ec68722aa0c",
+   "passed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "Với prior Beta(2,2) và 3 thành công/4 thử, MAP nội điểm bằng bao nhiêu?",
+  "options": [
+   "3/4",
+   "2/3",
+   "5/8"
+  ],
+  "correct": 1,
+  "explanation": "Posterior Beta(5,3), mode=(5−1)/(5+3−2)=2/3; mean=5/8."
+ },
+ {
+  "prompt": "Likelihood là gì khi dữ liệu đã cố định?",
+  "options": [
+   "Hàm của tham số đo mức phù hợp dữ liệu",
+   "Luôn là posterior của tham số",
+   "Luôn tổng bằng 1 trên tham số"
+  ],
+  "correct": 0,
+  "explanation": "Likelihood không phải phân phối trên tham số; Bayes còn cần prior và normalization."
+ },
+ {
+  "prompt": "Tỷ lệ bệnh 1%, sensitivity 90%, FPR 5%: P(bệnh|+) khoảng bao nhiêu?",
+  "options": [
+   "90%",
+   "50%",
+   "15.38%"
+  ],
+  "correct": 2,
+  "explanation": "Bayes cho .009/(.009+.0495)=.1538; phải xét base rate."
+ }
+]

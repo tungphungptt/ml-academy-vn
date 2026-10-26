@@ -1,50 +1,37 @@
-"""Sinh notebook khởi đầu cho các dự án Track D, CHẠY THẬT từng ô bằng Python cục bộ và lưu output thật vào notebook."""
-import io, json, contextlib, traceback, sys
-HEAD = "from sklearn.datasets import {loader}\nfrom sklearn.model_selection import train_test_split, cross_val_score\nfrom sklearn.pipeline import make_pipeline\nfrom sklearn.preprocessing import StandardScaler\n"
-NB = {
-"du-doan-chi-so-tieu-duong": ("Dự đoán tiến triển bệnh bằng Linear Regression", [
- "from sklearn.datasets import load_diabetes\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.dummy import DummyRegressor\nfrom sklearn.linear_model import LinearRegression, Ridge\nfrom sklearn.metrics import mean_squared_error, r2_score\nX, y = load_diabetes(return_X_y=True)\nXa, Xb, ya, yb = train_test_split(X, y, test_size=0.25, random_state=0)\nprint(X.shape, y.shape)",
- "models = {'baseline (trung bình)': DummyRegressor(), 'LinearRegression': LinearRegression(), 'Ridge(alpha=1)': Ridge(alpha=1.0)}\nfor name, m in models.items():\n    p = m.fit(Xa, ya).predict(Xb)\n    print(f'{name:24s} MSE={mean_squared_error(yb, p):8.1f}  R2={r2_score(yb, p):.3f}')"]),
-"phan-loai-ung-thu-vu": ("So sánh Logistic Regression, SVM và Random Forest", [
- HEAD.format(loader="load_breast_cancer") + "from sklearn.linear_model import LogisticRegression\nfrom sklearn.svm import SVC\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.dummy import DummyClassifier\nX, y = load_breast_cancer(return_X_y=True)\nXa, Xb, ya, yb = train_test_split(X, y, test_size=0.25, random_state=0, stratify=y)",
- "models = {'baseline': DummyClassifier(strategy='most_frequent'), 'LogReg': LogisticRegression(max_iter=1000), 'SVM-rbf': SVC(), 'RandomForest': RandomForestClassifier(n_estimators=200, random_state=0)}\nfor name, m in models.items():\n    s = cross_val_score(make_pipeline(StandardScaler(), m), Xa, ya, cv=5, scoring='f1')\n    print(f'{name:14s} F1(CV)={s.mean():.3f} ± {s.std():.3f}')",
- "from sklearn.metrics import classification_report\nbest = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000)).fit(Xa, ya)\nprint(classification_report(yb, best.predict(Xb), digits=3))"]),
-"nhan-dang-chu-so": ("Nhận dạng chữ số viết tay", [
- "from sklearn.datasets import load_digits\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.svm import SVC\nfrom sklearn.neural_network import MLPClassifier\nfrom sklearn.metrics import accuracy_score, confusion_matrix\nX, y = load_digits(return_X_y=True)\nXa, Xb, ya, yb = train_test_split(X / 16.0, y, test_size=0.25, random_state=0, stratify=y)",
- "models = {'KNN k=5': KNeighborsClassifier(5), 'SVM-rbf': SVC(), 'MLP': MLPClassifier(hidden_layer_sizes=(64,), max_iter=500, random_state=0)}\nfor name, m in models.items():\n    print(f'{name:10s} accuracy={accuracy_score(yb, m.fit(Xa, ya).predict(Xb)):.3f}')",
- "import numpy as np\ncm = confusion_matrix(yb, SVC().fit(Xa, ya).predict(Xb))\nnp.fill_diagonal(cm, 0)\ni, j = np.unravel_index(cm.argmax(), cm.shape)\nprint('Cặp bị nhầm nhiều nhất (thật -> đoán):', i, '->', j, 'số lần:', cm[i, j])"]),
-"so-sanh-mo-hinh": ("So sánh nhiều mô hình trên cùng một dataset", [
- HEAD.format(loader="load_digits") + "from sklearn.dummy import DummyClassifier\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.svm import SVC\nfrom sklearn.ensemble import RandomForestClassifier\nX, y = load_digits(return_X_y=True)\nXa, Xb, ya, yb = train_test_split(X, y, test_size=0.25, random_state=0, stratify=y)",
- "models = {'baseline': DummyClassifier(strategy='most_frequent'), 'KNN': KNeighborsClassifier(5), 'LogReg': LogisticRegression(max_iter=2000), 'SVM-rbf': SVC(), 'RandomForest': RandomForestClassifier(n_estimators=200, random_state=0)}\nres = {}\nfor name, m in models.items():\n    s = cross_val_score(make_pipeline(StandardScaler(), m), Xa, ya, cv=5, scoring='accuracy')\n    res[name] = s.mean(); print(f'{name:12s} acc(CV)={s.mean():.3f} ± {s.std():.3f}')",
- "best = max(res, key=res.get)\nm = make_pipeline(StandardScaler(), models[best]).fit(Xa, ya)\nprint('Mô hình tốt nhất theo CV:', best, '| accuracy trên test (dùng 1 lần):', round(m.score(Xb, yb), 3))"]),
-"pipeline-hoan-chinh": ("Pipeline huấn luyện, đánh giá và lưu mô hình", [
- HEAD.format(loader="load_breast_cancer") + "from sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import GridSearchCV\nimport joblib, os, tempfile\nX, y = load_breast_cancer(return_X_y=True)\nXa, Xb, ya, yb = train_test_split(X, y, test_size=0.25, random_state=0, stratify=y)",
- "pipe = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000))\ngs = GridSearchCV(pipe, {'logisticregression__C': [0.01, 0.1, 1, 10]}, cv=5, scoring='recall').fit(Xa, ya)\nprint('Tham số tốt nhất:', gs.best_params_, '| recall CV:', round(gs.best_score_, 3))",
- "from sklearn.metrics import recall_score, f1_score\np = gs.predict(Xb)\nprint('Test: recall =', round(recall_score(yb, p), 3), '| F1 =', round(f1_score(yb, p), 3))\nf = os.path.join(tempfile.mkdtemp(), 'model.joblib'); joblib.dump(gs.best_estimator_, f)\nprint('Nạp lại cho cùng dự đoán:', bool((joblib.load(f).predict(Xb) == p).all()))"]),
-"phan-cum-khach-hang": ("Phân cụm bằng K-Means và chọn số cụm", [
- "import numpy as np\nfrom sklearn.datasets import make_blobs\nfrom sklearn.cluster import KMeans\nfrom sklearn.metrics import silhouette_score\nX, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.9, random_state=0)",
- "for k in range(2, 9):\n    m = KMeans(n_clusters=k, n_init=10, random_state=0).fit(X)\n    print(f'K={k}  inertia={m.inertia_:8.1f}  silhouette={silhouette_score(X, m.labels_):.3f}')",
- "best = max(range(2, 9), key=lambda k: silhouette_score(X, KMeans(n_clusters=k, n_init=10, random_state=0).fit_predict(X)))\nprint('K tốt nhất theo silhouette:', best, '(dữ liệu được sinh với 4 cụm thật)')"]),
-"phat-hien-bat-thuong-log": ("Phát hiện bất thường trong dữ liệu số", [
- "import numpy as np\nfrom sklearn.ensemble import IsolationForest\nfrom sklearn.metrics import precision_score, recall_score, f1_score\nrng = np.random.default_rng(0)\nnormal = rng.normal(0, 1, 980); anom = rng.choice([-1, 1], 20) * rng.uniform(4, 6, 20)\nx = np.concatenate([normal, anom]); y = np.r_[np.zeros(980), np.ones(20)]",
- "z = np.abs((x - x.mean()) / x.std()) > 3\nq1, q3 = np.percentile(x, [25, 75]); iqr = q3 - q1\nii = (x < q1 - 1.5 * iqr) | (x > q3 + 1.5 * iqr)\nif_ = IsolationForest(contamination=0.02, random_state=0).fit_predict(x.reshape(-1, 1)) == -1\nfor name, p in {'z-score>3': z, 'IQR': ii, 'IsolationForest': if_}.items():\n    print(f'{name:16s} precision={precision_score(y, p):.3f} recall={recall_score(y, p):.3f} F1={f1_score(y, p):.3f}')"]),
- "phan-loai-cam-xuc": ("Phân loại cảm xúc văn bản", ["# Tập mẫu 40 câu do dự án tự biên soạn (không phải dữ liệu thật; chỉ để thực hành quy trình)\npos = [\"phim rất hay và cảm động\", \"diễn viên diễn xuất xuất sắc\", \"nội dung hấp dẫn từ đầu đến cuối\", \"tôi rất thích bộ phim này\", \"kịch bản chặt chẽ và bất ngờ\", \"hình ảnh đẹp âm nhạc tuyệt vời\", \"một trải nghiệm đáng xem\", \"cả nhà đều khen hay\", \"cái kết làm tôi xúc động\", \"đạo diễn làm rất tốt\", \"phim vui nhộn xem rất đã\", \"nhân vật được xây dựng sâu sắc\", \"âm thanh sống động hình ảnh đẹp\", \"đáng tiền vé tôi sẽ xem lại\", \"diễn biến cuốn hút khó rời mắt\", \"phim ý nghĩa và nhân văn\", \"dàn diễn viên ăn ý tự nhiên\", \"phần hai còn hay hơn phần một\", \"tôi rất hài lòng với bộ phim\", \"tuyệt vời không có gì để chê\"]\nneg = [\"phim rất dở và nhàm chán\", \"diễn viên diễn xuất tệ\", \"nội dung lê thê khó theo dõi\", \"tôi không thích bộ phim này\", \"kịch bản rời rạc vô lý\", \"hình ảnh xấu âm thanh rè\", \"một trải nghiệm đáng thất vọng\", \"cả nhà đều chê dở\", \"cái kết làm tôi tức giận\", \"đạo diễn làm quá tệ\", \"phim buồn ngủ xem rất chán\", \"nhân vật nhạt nhòa không cảm xúc\", \"âm thanh lỗi hình ảnh mờ\", \"phí tiền vé tôi sẽ không xem lại\", \"diễn biến chậm chạp dễ ngủ gật\", \"phim vô nghĩa và nhảm nhí\", \"dàn diễn viên gượng gạo thiếu tự nhiên\", \"phần hai tệ hơn phần một\", \"tôi rất thất vọng với bộ phim\", \"quá tệ không có gì để khen\"]\ntexts = pos + neg; y = [1] * len(pos) + [0] * len(neg)\nprint(len(texts), 'câu;', sum(y), 'tích cực')", "from sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.dummy import DummyClassifier\nfrom sklearn.pipeline import make_pipeline\nfrom sklearn.model_selection import StratifiedKFold, cross_val_score\ncv = StratifiedKFold(5, shuffle=True, random_state=0)\nfor name, clf in {'baseline': DummyClassifier(strategy='most_frequent'), 'TF-IDF 1-gram + LogReg': LogisticRegression(max_iter=1000)}.items():\n    s = cross_val_score(make_pipeline(TfidfVectorizer(), clf), texts, y, cv=cv, scoring='f1')\n    print(f'{name:24s} F1(CV)={s.mean():.3f} ± {s.std():.3f}')\ns = cross_val_score(make_pipeline(TfidfVectorizer(ngram_range=(1, 2)), LogisticRegression(max_iter=1000)), texts, y, cv=cv, scoring='f1')\nprint(f'{\"TF-IDF 1-2gram + LogReg\":24s} F1(CV)={s.mean():.3f} ± {s.std():.3f}')", "model = make_pipeline(TfidfVectorizer(ngram_range=(1, 2)), LogisticRegression(max_iter=1000)).fit(texts, y)\nnew = ['phim này không hay', 'diễn xuất tuyệt vời', 'nội dung nhảm nhí', 'tôi rất thích']\nfor t, p in zip(new, model.predict_proba(new)[:, 1]): print(f'{t:24s} P(tích cực)={p:.2f}')\nprint('Nhận xét: với chỉ 40 câu, mỗi câu mang nhiều từ riêng nên mô hình thấy rất ít từ dùng chung giữa train và test; F1 thấp và xác suất gần 0.5 nghĩa là gần như đoán mò. Cần nhiều dữ liệu hơn nhiều.')"]),
-}
-def md(t): return {"cell_type": "markdown", "metadata": {}, "source": t.splitlines(True)}
-projects = {p["slug"]: p for p in json.load(open("content/projects.json"))}; ok = 0
-for slug, (title, cells) in NB.items():
-    steps = "\n".join(f"{i+1}. {s}" for i, s in enumerate(projects[slug]["steps"]))
-    nb = [md(f"# {title}\n\nNotebook khởi đầu của ML Academy VN. **Các kết quả bên dưới là kết quả thật khi chạy bằng Python 3 + scikit-learn lúc phát triển** (số có thể lệch nhẹ giữa các phiên bản thư viện). Hãy chạy lại, chỉnh sửa và hoàn thành các bước:\n\n{steps}\n\nBaseline: {projects[slug]['baseline']} · Chỉ số: {projects[slug]['metric']}")]
-    ns = {}; n = 0
-    for code in cells:
-        buf = io.StringIO()
-        try:
-            with contextlib.redirect_stdout(buf): exec(code, ns)
-        except Exception: traceback.print_exc(); sys.exit(f"LỖI khi chạy {slug}")
-        n += 1; out = buf.getvalue()
-        nb.append({"cell_type": "code", "metadata": {}, "execution_count": n, "source": code.splitlines(True), "outputs": [{"output_type": "stream", "name": "stdout", "text": out.splitlines(True)}] if out else []})
-    nb.append(md("## Việc của bạn\n\n- Thử thêm một mô hình hoặc siêu tham số khác và so sánh công bằng bằng cross-validation.\n- Viết 3-5 câu nhận xét: chênh lệch nhỏ giữa các mô hình có đáng tin không?"))
-    json.dump({"cells": nb, "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}, "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 4}, open(f"public/notebooks/projects/{slug}.ipynb", "w"), ensure_ascii=False, indent=1)
-    projects[slug]["notebookUrl"] = f"/notebooks/projects/{slug}.ipynb"
-    projects[slug]["notebookStatus"] = "Có notebook khởi đầu (đã chạy thật, lưu kết quả). Tải về và chạy trên máy hoặc Google Colab."; ok += 1; print("✔", slug)
-json.dump(list(projects.values()), open("content/projects.json", "w"), ensure_ascii=False, indent=1); print(ok, "notebook dự án đã chạy thật")
+"""Execute existing project notebooks cell by cell and save only real outputs.
+Notebook source cells are authoritative; this runner never drops a project or cell.
+Run with the pinned curriculum Python environment at repository root.
+"""
+import hashlib
+import json
+import os
+import pathlib
+import subprocess
+import sys
+import tempfile
+
+root = pathlib.Path(__file__).resolve().parents[1]
+os.chdir(root)
+worker = '''import contextlib,io,json,sys
+nb=json.load(open(sys.argv[1])); ns={}; count=0
+for cell in nb['cells']:
+ if cell['cell_type']!='code': continue
+ count+=1; out=io.StringIO()
+ with contextlib.redirect_stdout(out): exec(compile(''.join(cell['source']),sys.argv[1],'exec'),ns)
+ cell['execution_count']=count
+ cell['outputs']=[{'output_type':'stream','name':'stdout','text':out.getvalue().splitlines(True)}] if out.getvalue() else []
+json.dump(nb,open(sys.argv[2],'w'),ensure_ascii=False,indent=1)
+'''
+pending=[]
+with tempfile.TemporaryDirectory(prefix='ml-projects-') as tmp:
+    env={**os.environ,'OMP_NUM_THREADS':'1','OPENBLAS_NUM_THREADS':'1','MPLBACKEND':'Agg','XDG_CACHE_HOME':tmp,'MPLCONFIGDIR':tmp+'/mpl','ML_ACADEMY_OUTPUT_DIR':tmp}
+    for file in sorted(pathlib.Path('public/notebooks/projects').glob('*.ipynb')):
+        output=pathlib.Path(tmp)/file.name
+        r=subprocess.run([sys.executable,'-c',worker,str(file.resolve()),str(output)],env=env,text=True,capture_output=True,timeout=180)
+        if r.returncode: raise RuntimeError(f'{file}: {r.stderr}')
+        pending.append((file,output.read_text()+'\n'))
+        print('OK',file,flush=True)
+    for file,data in pending: file.write_text(data)
+receipt=[{'file':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'code_cells':sum(c['cell_type']=='code' for c in json.loads(p.read_text())['cells'])} for p,_ in pending]
+pathlib.Path('docs/curriculum-project-execution.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=1)+'\n')
+print(f'{len(pending)} project notebooks executed')

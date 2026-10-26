@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "CE multiclass cho batch16,5 lớp cần target nào?",
+  "options": [
+   "Float (16,5) bắt buộc",
+   "Long (16,) với giá trị 0..4",
+   "Long (5,)"
+  ],
+  "correct": 1,
+  "explanation": "Dạng nhãn index chuẩn là một class ID cho mỗi mẫu; logits (16,5)."
+ },
+ {
+  "prompt": "Vì sao σ′≤0.25 không chặn gradient mọi mạng bởi 0.25^L?",
+  "options": [
+   "Còn ma trận trọng số và đường graph trong Jacobian",
+   "Vì sigmoid không có đạo hàm",
+   "Vì chain rule không áp dụng"
+  ],
+  "correct": 0,
+  "explanation": "Norm trọng số cũng nhân trong chain rule và có thể lớn."
+ },
+ {
+  "prompt": "Thứ tự clipping đúng là gì?",
+  "options": [
+   "Trước forward",
+   "Sau optimizer.step",
+   "Sau backward, trước optimizer.step"
+  ],
+  "correct": 2,
+  "explanation": "Clipping tác động gradient đã tính trước khi optimizer dùng nó."
+ }
+]

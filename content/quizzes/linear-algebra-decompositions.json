@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "SVD của ma trận chữ nhật khác eigen decomposition ở điểm nào?",
+  "options": [
+   "SVD áp dụng được cả ma trận chữ nhật",
+   "SVD chỉ dùng ma trận vuông",
+   "Singular values luôn âm"
+  ],
+  "correct": 0,
+  "explanation": "SVD dùng U, Sigma, Vt và singular values không âm cho mọi ma trận thực hữu hạn."
+ },
+ {
+  "prompt": "Singular values 5,2,1: lỗi Frobenius bình phương khi giữ hạng 1 là gì?",
+  "options": [
+   "1",
+   "5",
+   "sqrt(5)"
+  ],
+  "correct": 1,
+  "explanation": "Tổng bình phương singular values bị bỏ là 2²+1²=5; sqrt(5) là norm lỗi."
+ },
+ {
+  "prompt": "Vì sao nên dùng lstsq khi hai cột phụ thuộc?",
+  "options": [
+   "Nó tự làm dữ liệu có nhãn",
+   "Nó dùng test để chọn nghiệm",
+   "XᵀX có thể không khả nghịch"
+  ],
+  "correct": 2,
+  "explanation": "lstsq giải bài least squares mà không đòi nghịch đảo normal matrix."
+ }
+]

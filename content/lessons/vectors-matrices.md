@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** đại số THPT.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** NumPy, pandas và Matplotlib.
 **Mục tiêu:** hiểu tích vô hướng, chuẩn, độ tương đồng cosine, nhân ma trận và quy tắc về shape.
 
 ## Vấn đề thực tế
@@ -38,3 +38,14 @@ Biểu diễn vector hóa nhanh hơn vòng lặp Python nhiều lần. Cosine b�
 
 ## Tóm tắt
 Tích vô hướng đo sự thẳng hàng, nhân ma trận kết hợp các biến đổi tuyến tính; luôn kiểm tra shape.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Tích vô hướng/cosine cần hai vector cùng số chiều; cosine không xác định nếu một norm bằng 0. Với ma trận X gồm hàng là mẫu, `X @ w` cho một dự đoán mỗi hàng, còn `X.T @ X` ghép tương quan cột. Chuẩn Euclid không đo mọi kiểu giống nhau trong mọi miền. Không gian cột, rank, eigen và SVD được phát triển ở [bài phân rã đại số](/learn/linear-algebra-decompositions); bài này chỉ là nền shape và phép toán.
+
+## Đáp án và tiêu chí chấm
+1. Tích vô hướng bằng 2·1+0·5+1·3=5. (2 điểm).
+2. BA=[[3,4],[1,2]], là hoán đổi hàng của A; AB hoán đổi cột, nên hai kết quả khác nhau. (3 điểm).
+3. Kiểm tra norm trước khi chia. Có thể báo ValueError cho vector 0; nếu chọn trả 0 như convention ứng dụng thì phải ghi đó là quy ước, không phải định nghĩa toán học. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Linear Algebra](https://d2l.ai/chapter_preliminaries/linear-algebra.html).

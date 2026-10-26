@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** ma trận, phương sai, trị riêng.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** Không gian vector, trị riêng và SVD, Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu.
 **Mục tiêu:** hiểu PCA tìm hướng có phương sai lớn nhất.
 
 ## Vấn đề thực tế
@@ -32,3 +32,14 @@ Giảm chiều tuyến tính, nhanh. Chỉ bắt cấu trúc tuyến tính, thà
 
 ## Tóm tắt
 PCA chiếu dữ liệu lên các vector riêng của ma trận hiệp phương sai.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+PCA cần căn giữa; scale từng cột là quyết định theo đơn vị và mục tiêu, không luôn bắt buộc. Hướng có variance lớn có thể là nhiễu; nhãn không được dùng khi fit PCA. Một classifier có thể mất tín hiệu nếu giảm chiều chỉ dựa vào variance, xem [LDA](/learn/lda). SVD của dữ liệu centered cho cùng không gian chính, tránh tạo covariance lớn. TruncatedSVD thường dùng cho sparse text và không tự center giống PCA. Tính explained-variance ratio trên train; không dùng test để chọn k rồi gọi test là độc lập.
+
+## Đáp án và tiêu chí chấm
+1. Mean=(1,0); covariance mẫu=[[1,0],[0,0]] cho N=3. (2 điểm).
+2. Fit trên train, lấy k nhỏ nhất sao cho tổng explained variance ratio ít nhất 0.95; scaling thay đổi số k nên phải ghi pipeline. (3 điểm).
+3. Dùng eigh cho covariance đối xứng, sắp trị riêng giảm dần rồi chiếu dữ liệu đã trừ mean train. Kiểm tra reconstruction và không so dấu eigenvector một cách cứng nhắc. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: PCA](https://scikit-learn.org/stable/modules/decomposition.html#pca).

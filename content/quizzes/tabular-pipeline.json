@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "Feature selection có nhãn nên đặt ở đâu trong CV?",
+  "options": [
+   "Trước split",
+   "Trong pipeline của mỗi fold train",
+   "Sau khi nhìn test score"
+  ],
+  "correct": 1,
+  "explanation": "Chọn feature trên toàn dữ liệu sẽ tiết lộ nhãn fold validation."
+ },
+ {
+  "prompt": "handle_unknown=ignore bảo đảm điều gì?",
+  "options": [
+   "Không lỗi encode category mới, không bảo đảm dự đoán tốt",
+   "Hiểu nghĩa mọi category",
+   "Không cần theo dõi drift"
+  ],
+  "correct": 0,
+  "explanation": "Category mới thành vector 0 trong nhánh; cần giám sát và fallback phù hợp."
+ },
+ {
+  "prompt": "RobustScaler có tự xóa outlier không?",
+  "options": [
+   "Có",
+   "Chỉ khi y=1",
+   "Không"
+  ],
+  "correct": 2,
+  "explanation": "Nó scale bằng median/IQR; gắn cờ hay xóa là quyết định riêng."
+ }
+]

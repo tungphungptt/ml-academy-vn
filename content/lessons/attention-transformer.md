@@ -1,4 +1,4 @@
-**Cấp độ:** Advanced · **Tiên quyết:** MLP, softmax, nhân ma trận.
+**Cấp độ:** Advanced · **Tầng:** Intermediate · **Tiên quyết:** Softmax Regression, MLP.
 **Mục tiêu:** hiểu scaled dot-product attention. Bài này tập trung vào attention; multi-head và positional encoding chỉ được giới thiệu ngắn.
 
 ## Vấn đề thực tế
@@ -33,3 +33,15 @@ Song song hóa tốt, nắm phụ thuộc xa. Chi phí tính toán và bộ nh�
 
 ## Tóm tắt
 Attention là trung bình có trọng số của các value, trọng số lấy từ độ tương đồng giữa query và key.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Attention có query từ nơi cần truy vấn, key/value từ nguồn; self-attention lấy cùng sequence làm nguồn, cross-attention có thể dùng decoder query và encoder key/value. Softmax theo chiều key để mỗi query có một phân phối trọng số. Mask logit bằng −inf trước softmax, không xóa trọng số sau rồi quên chuẩn hóa. Một hàng bị mask hết có thể tạo NaN; cần token/context hợp lệ. Attention không có position là permutation-equivariant: đổi thứ tự input đổi thứ tự output tương ứng, không phải output y nguyên. Bài này giảng cơ chế weighted retrieval; [kiến trúc Transformer](/learn/transformer-architecture) giảng ghép thành mô hình, không lặp lại như một thuật toán khác.
+
+## Đáp án và tiêu chí chấm
+1. Softmax (0,0)=(0.5,0.5). (2 điểm).
+2. q=(0,1) cho weights≈(0.3302,0.6698), output≈(2.3395,3.3395), tổng weights=1. (3 điểm).
+3. X có shape 4×d, WQ/WK/WV cho Q/K/V cùng số token; logits 4×4, softmax hàng, output 4×dv. Kiểm tra masked future weight 0 và không tạo hàng all-masked. (5 điểm).
+
+## Nguồn tham khảo
+- [Attention Is All You Need (Vaswani và cộng sự)](https://arxiv.org/abs/1706.03762).
+- [Dive into Deep Learning: Attention and Transformers](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html).

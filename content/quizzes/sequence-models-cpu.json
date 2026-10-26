@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "Lookback12 cho target thời điểm12: input là gì?",
+  "options": [
+   "1..12",
+   "0..11",
+   "12..23"
+  ],
+  "correct": 1,
+  "explanation": "Không dùng target hoặc tương lai làm feature."
+ },
+ {
+  "prompt": "MSE chuẩn hóa .01, std train2: MSE gốc bao nhiêu?",
+  "options": [
+   ".04",
+   ".02",
+   ".01"
+  ],
+  "correct": 0,
+  "explanation": "MSE đổi theo bình phương scale, .01*4=.04."
+ },
+ {
+  "prompt": "One-step rolling có quan sát thật trước mỗi thời điểm có phải free-running 10 bước?",
+  "options": [
+   "Có",
+   "Chỉ nếu GRU",
+   "Không"
+  ],
+  "correct": 2,
+  "explanation": "Free-running không được feed ground truth chưa quan sát của horizon tương lai."
+ }
+]

@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** xác suất cơ bản, KNN.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Metrics đánh giá mô hình, Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu.
 **Mục tiêu:** hiểu cách cây chọn điểm chia bằng Gini và vì sao cây dễ overfit.
 
 ## Vấn đề thực tế
@@ -36,3 +36,14 @@ Dễ giải thích, không cần chuẩn hóa. Không ổn định với thay đ
 
 ## Tóm tắt
 Cây chia dữ liệu theo tiêu chí giảm độ không thuần; cần giới hạn độ sâu.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+CART của sklearn chia nhị phân; classification có thể dùng Gini hoặc entropy, regression thường giảm squared error. Entropy H=−Σp log₂p (quy ước 0 log 0=0); information gain là entropy cha trừ entropy con có trọng số. ID3 dùng information gain, C4.5 thêm gain ratio để giảm thiên vị thuộc tính nhiều giá trị; không đồng nhất ba tên thuật toán. Cây không cần scale đơn điệu như KNN nhưng dễ overfit và có thể ưu tiên feature nhiều ngưỡng. Cắt tỉa/cost-complexity và giới hạn leaf/depth phải chọn bằng validation.
+
+## Đáp án và tiêu chí chấm
+1. Với hai lớp cân bằng, Gini=0.5 và entropy=1 bit. (2 điểm).
+2. Đổi max_depth chỉ trên train/validation/CV, ghi train và validation score; không chọn depth theo test. (3 điểm).
+3. Sắp mẫu theo một cột, thử midpoint giữa giá trị khác nhau, giữ leaf không rỗng; tính impurity weighted bởi số mẫu. Kiểm tra feature hằng, nhãn thuần và tie-break. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Decision Trees](https://scikit-learn.org/stable/modules/tree.html).

@@ -1,28 +1,47 @@
-"""Chạy từng file lab bằng Python cục bộ và ghi stdout thật vào content/labs.json (expected = null nếu thiếu thư viện)."""
-import json, subprocess, sys, pathlib, os
-META = [
- ("linear_regression","Linear Regression","Hồi quy tuyến tính bằng Gradient Descent trên dữ liệu y = 2x.","pyodide"),
- ("knn","K-Nearest Neighbors","Phân loại 2 lớp bằng KNN, đánh giá trên tập test.","pyodide"),
- ("kmeans","K-Means","Phân cụm 3 nhóm, báo cáo inertia.","pyodide"),
- ("logistic_regression","Logistic Regression","Phân loại nhị phân: sigmoid, cross-entropy và gradient descent.","pyodide"),
- ("perceptron","Perceptron","Luật cập nhật Perceptron trên dữ liệu khả tách tuyến tính.","pyodide"),
- ("mlp_torch","MLP với PyTorch (XOR)","Forward, loss, backward, optimizer. Cần PyTorch nên chỉ chạy local/Colab.","local")]
-os.makedirs("public/notebooks", exist_ok=True)
-def notebook(id_, title, desc, v, code):
-    cells = [{"cell_type": "markdown", "metadata": {}, "source": [f"# {title} ({v})\n", desc + "\n", "\nNguồn: ML Academy VN. Chạy từng ô theo thứ tự."]}]
-    if id_ == "mlp_torch": cells.append({"cell_type": "code", "metadata": {}, "execution_count": None, "outputs": [], "source": ["# Chỉ cần nếu môi trường chưa có PyTorch (Colab đã có sẵn)\n", "# !pip install torch"]})
-    cells.append({"cell_type": "code", "metadata": {}, "execution_count": None, "outputs": [], "source": code.splitlines(True)})
-    nb = {"cells": cells, "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}, "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 4}
-    path = f"public/notebooks/{id_}_{v}.ipynb"; json.dump(nb, open(path, "w"), ensure_ascii=False, indent=1); return "/notebooks/" + os.path.basename(path)
-out = []
-for id_, title, desc, rt in META:
-    d = pathlib.Path("labs") / id_; variants = {}; expected = {}; nbs = {}
-    for v in ("scratch", "library"):
-        f = d / f"{v}.py"
-        if not f.exists(): continue
-        variants[v] = True; nbs[v] = notebook(id_, title, desc, v, f.read_text())
-        r = subprocess.run([sys.executable, str(f)], capture_output=True, text=True, timeout=120)
-        expected[v] = r.stdout.strip() if r.returncode == 0 else None
-    out.append(dict(id=id_, title=title, description=desc, runtime=rt, variants=list(variants), expected=expected, notebooks=nbs))
-json.dump(out, open("content/labs.json", "w"), ensure_ascii=False, indent=1)
-for o in out: print(o["id"], o["expected"])
+"""Execute registry variants on CPU before updating expected stdout and runnable notebooks.
+Run at repository root with the pinned environment in requirements-curriculum.txt.
+Any failed variant aborts generation; it is never recorded as a successful/null run.
+"""
+import hashlib
+import importlib.metadata
+import json
+import os
+import pathlib
+import platform
+import subprocess
+import sys
+import tempfile
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+os.chdir(ROOT)
+registry = ROOT / 'content/labs.json'
+labs = json.loads(registry.read_text())
+versions = {'python': platform.python_version(), **{name: importlib.metadata.version(name) for name in ['numpy', 'pandas', 'matplotlib', 'scikit-learn', 'torch']}}
+pending = []
+with tempfile.TemporaryDirectory(prefix='ml-labs-') as tmp:
+    env = {**os.environ, 'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MPLBACKEND': 'Agg',
+           'XDG_CACHE_HOME': tmp, 'MPLCONFIGDIR': str(pathlib.Path(tmp) / 'matplotlib'), 'ML_ACADEMY_OUTPUT_DIR': tmp}
+    for lab in labs:
+        for variant in lab['variants']:
+            source = ROOT / 'labs' / lab['id'] / f'{variant}.py'
+            code = source.read_text()
+            run = subprocess.run([sys.executable, str(source)], cwd=ROOT, env=env, text=True, capture_output=True, timeout=180)
+            if run.returncode:
+                raise RuntimeError(f"{source}: {run.stdout}\n{run.stderr}")
+            stdout = run.stdout
+            lab.setdefault('expected', {})[variant] = stdout.strip()
+            lab.setdefault('notebooks', {})[variant] = f"/notebooks/{lab['id']}_{variant}.ipynb"
+            lab.setdefault('verification', {})[variant] = {'sha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'versions': versions}
+            nb = {'nbformat': 4, 'nbformat_minor': 4,
+                  'metadata': {'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'}, 'language_info': {'name': 'python', 'version': platform.python_version()}},
+                  'cells': [{'cell_type': 'markdown', 'metadata': {}, 'source': [f"# {lab['title']} ({variant})\n", lab['description']+'\n', '\nChạy từ thư mục gốc repository với môi trường trong `requirements-curriculum.txt`. Với PyTorch, cài CPU wheel từ index chính thức như hướng dẫn trong docs/curriculum-practice.md. Output bên dưới được ghi từ lần chạy CPU thực tế; không phải benchmark phần cứng.\n']},
+                            {'cell_type': 'code', 'metadata': {}, 'source': code.splitlines(True), 'execution_count': 1,
+                             'outputs': [{'output_type': 'stream', 'name': 'stdout', 'text': stdout.splitlines(True)}]}]}
+            pending.append((ROOT / 'public' / lab['notebooks'][variant].lstrip('/'), nb))
+            print(f"OK {lab['id']}/{variant}: {stdout.strip()}", flush=True)
+# No output files change until every variant has executed successfully.
+for file, nb in pending:
+    file.parent.mkdir(parents=True, exist_ok=True)
+    file.write_text(json.dumps(nb, ensure_ascii=False, indent=1)+'\n')
+registry.write_text(json.dumps(labs, ensure_ascii=False, indent=1)+'\n')
+print(f'{len(labs)} labs / {len(pending)} executed variants')

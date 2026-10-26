@@ -20,13 +20,13 @@ Trang `/playground` với 3 demo tính thật trong trình duyệt: Linear Regre
 `/lab`: Code Lab với 6 bài (Linear Regression, KNN, K-Means, Logistic Regression, Perceptron, MLP PyTorch), mỗi bài có bản From Scratch/Library (code ở `labs/<id>/`). Nút Run chạy thật bằng Pyodide (cần Internet lần đầu); bài PyTorch chỉ chạy local. Có Reset/Copy/Download .py. Kết quả kỳ vọng sinh bằng `python scripts/gen_labs.py`. Chưa có: tô màu cú pháp (đang dùng textarea), notebook .ipynb, chạy trong Web Worker.
 
 ## Đã thêm ở đợt 5
-Dashboard tiến độ theo khóa học + quiz gần đây + gợi ý bài tiếp theo (trang chủ khi đăng nhập); bookmark và ghi chú (API kiểm tra quyền sở hữu); trang `/datasets` (4 dataset tích hợp scikit-learn), `/resources` (8 nguồn), `/projects` (3 dự án); `/admin` (chỉ ADMIN, bật/tắt xuất bản khóa học). Cần chạy lại `npx prisma db push` và `npm run db:seed`.
+Dashboard tiến độ theo khóa học + quiz gần đây + gợi ý bài tiếp theo (trang chủ khi đăng nhập); bookmark và ghi chú (API kiểm tra quyền sở hữu); trang `/datasets` (4 dataset tích hợp scikit-learn), `/resources` (8 nguồn), `/projects` (3 dự án); `/admin` (chỉ ADMIN, bật/tắt xuất bản khóa học). Ghi chú lịch sử; xem hướng dẫn an toàn hiện hành bên dưới, không dùng db push trên production.
 
 ## Đã thêm ở đợt 6
-3 bài mới đầy đủ (Gradient Descent, KNN, K-Means), tổng 4 bài đầy đủ. Quiz nay đọc từ `content/quizzes/<slug>.json`, nguồn tham khảo từ trường `src` trong `content/catalog.json`. Kiểm tra nội dung: `python scripts/check_content.py`. **DB cũ cần xóa và seed lại** (`rm prisma/dev.db && npm run setup`) vì seed bỏ qua khóa học đã có module. Các liên kết nguồn chưa được mở kiểm tra trực tiếp (không có mạng khi biên soạn).
+3 bài mới đầy đủ (Gradient Descent, KNN, K-Means), tổng 4 bài đầy đủ. Quiz nay đọc từ `content/quizzes/<slug>.json`, nguồn tham khảo từ trường `src` trong `content/catalog.json`. Kiểm tra nội dung: `python scripts/check_content.py`. Hướng dẫn xóa DB cũ đã được thay thế: backup, kiểm tra migration và seed chỉ thêm dữ liệu thiếu; không xóa dữ liệu học. Các liên kết nguồn chưa được mở kiểm tra trực tiếp (không có mạng khi biên soạn).
 
 ## Đã thêm ở đợt 7
-12 bài đầy đủ (thêm Logistic Regression, Decision Tree, Metrics, Perceptron, MLP, Backpropagation, PCA, Naive Bayes) cùng quiz và nguồn; `/courses/[slug]` (chi tiết khóa học, tiến độ), tìm kiếm + lọc trình độ/tình trạng ở `/courses`; nút đổi sáng/tối (nhớ lựa chọn, theo mặc định của hệ thống). Cần xóa DB cũ và seed lại.
+12 bài đầy đủ (thêm Logistic Regression, Decision Tree, Metrics, Perceptron, MLP, Backpropagation, PCA, Naive Bayes) cùng quiz và nguồn; `/courses/[slug]` (chi tiết khóa học, tiến độ), tìm kiếm + lọc trình độ/tình trạng ở `/courses`; nút đổi sáng/tối (nhớ lựa chọn, theo mặc định của hệ thống). Với DB cũ, dùng quy trình backup và kiểm tra bên dưới; không xóa DB.
 
 ## Đã thêm ở đợt 8
 Playground Decision Tree (độ sâu, cấu trúc cây, vùng quyết định), PCA (nhiễu, chiếu lên PC1, tỉ lệ phương sai), Neural Network (số neuron ẩn, learning rate, epoch; huấn luyện MLP thật bằng backprop trong trình duyệt trên XOR). Logic ở `src/lib/ml2.ts`, chấm quiz tách ra `src/lib/quiz.ts`. `npm test` chạy 12 test.
@@ -93,4 +93,10 @@ Tối ưu và triển khai: bộ nạp nội dung có cache (`src/lib/content.ts
 - Code PyTorch trong các bài (Autoencoder, Transfer Learning, Autograd, Thực hành PyTorch) và lab `mlp_torch` chưa được chạy; GAN/VAE/Diffusion mới ở mức giới thiệu (không có code huấn luyện); NLP bằng mô hình sâu chưa có bài thực hành. Dự án "Phân loại cảm xúc" chưa kèm dữ liệu (bạn tự chọn nguồn).
 - Các liên kết nguồn chưa được mở kiểm tra tự động.
 
-Thêm bài: thêm file `.md` vào `content/lessons` và catalog cho database mới. Với database đã có, dùng trang admin để thêm/liên kết bài; seed không đồng bộ đè lên cây module/bài học đã tồn tại.
+Thêm bài: thêm file `.md` vào `content/lessons` và catalog cho database mới. Với database đã có, manual seed chỉ thêm slug/module thiếu, giữ ID, chỉnh sửa, thứ tự, quiz và tiến độ cũ; cần backup và kiểm tra trên bản sao trước. Startup không tự seed DB đã tồn tại. Markdown override do admin chỉnh sửa được ưu tiên, nên cần review thủ công khi áp dụng nội dung bản phát hành.
+
+## Curriculum audit hiện hành
+
+59 bài (11 nền tảng/toán, 26 ML, 22 DL), 13 lab với 19 biến thể CPU và 27 notebook (19 lab + 8 dự án). Phân tầng Core/Intermediate/Advanced, tiên quyết và lời giải bài tập được đăng ký trong catalog. Đọc [báo cáo audit](docs/curriculum-audit.md) và [hướng dẫn thực hành CPU](docs/curriculum-practice.md) để xem kiểm thử thực tế và giới hạn nguồn/dataset. Các mục v0.x phía trên là lịch sử, không thay cho báo cáo hiện hành.
+
+Independent final review và kiểm thử kernel notebook thực tế: [docs/curriculum-final-review.md](docs/curriculum-final-review.md).

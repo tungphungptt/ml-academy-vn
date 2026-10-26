@@ -1,1 +1,22 @@
-[{"prompt":"Lưới 3 giá trị C × 2 giá trị gamma với 5 fold cần bao nhiêu lần huấn luyện?","options":["30","11","6"],"correct":0,"explanation":"6 tổ hợp × 5 fold = 30."},{"prompt":"Siêu tham số nên được chọn dựa trên gì?","options":["Điểm cross-validation trên tập train","Điểm trên tập test","Lỗi train thấp nhất"],"correct":0,"explanation":"Tập test chỉ dùng đánh giá cuối."}]
+[
+ {
+  "prompt": "Lưới 3 giá trị C × 2 giá trị gamma với 5 fold cần bao nhiêu lần fit trong CV (không tính refit)?",
+  "options": [
+   "30",
+   "11",
+   "6"
+  ],
+  "correct": 0,
+  "explanation": "6 tổ hợp × 5 fold = 30 fit CV. GridSearchCV với refit=True còn fit cấu hình tốt nhất một lần trên toàn train, tổng cộng 31."
+ },
+ {
+  "prompt": "Siêu tham số nên được chọn dựa trên gì?",
+  "options": [
+   "Điểm cross-validation trên tập train",
+   "Điểm trên tập test",
+   "Lỗi train thấp nhất"
+  ],
+  "correct": 0,
+  "explanation": "Tập test chỉ dùng đánh giá cuối."
+ }
+]

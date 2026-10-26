@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** hàm số, đại số cơ bản.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Vector và ma trận.
 **Mục tiêu:** hiểu đạo hàm, gradient, chain rule và kiểm tra bằng sai phân số học.
 
 ## Vấn đề thực tế
@@ -32,3 +32,14 @@ Sai phân trung tâm có sai số $O(h^2)$, dùng để kiểm tra gradient tự
 
 ## Tóm tắt
 Đạo hàm đo độ nhạy; gradient gom các đạo hàm riêng; chain rule nối các lớp tính toán.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Với hàm vector, đạo hàm là Jacobian; gradient thường dành cho hàm vô hướng theo nhiều đầu vào. Chain rule nhiều biến nhân các Jacobian theo thứ tự phù hợp với convention hàng/cột, không phải nhân mọi số không xét shape. Kiểm tra sai phân trung tâm từng tham số có chi phí tỷ lệ số chiều, nên chỉ dùng mạng nhỏ. Tránh điểm gãy như ReLU tại 0 khi so với đạo hàm cổ điển. Chọn epsilon phải cân bằng sai số cắt cụt và làm tròn; số nhỏ hơn không luôn chính xác hơn.
+
+## Đáp án và tiêu chí chấm
+1. Đạo hàm x³ là 3x², tại 2 bằng 12. (2 điểm).
+2. Với f=x²y, gradient=(2xy,x²), tại (1,2) là (4,1), không phải (2,3). (3 điểm).
+3. Đặt z=wx+b, dσ/dw=σ(z)(1−σ(z))x. Nêu rõ giữ x,b cố định khi lấy đạo hàm theo w và kiểm tra một giá trị hữu hạn bằng sai phân. (5 điểm).
+
+## Nguồn tham khảo
+- [Stanford CS231n: Optimization (gradient và chain rule)](https://cs231n.github.io/optimization-1/).

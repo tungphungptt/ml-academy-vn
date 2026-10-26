@@ -2,8 +2,8 @@
 import { useRef, useState } from "react"; import CodeEditor from "./CodeEditor";
 type Lab = { id: string; title: string; description: string; runtime: "pyodide" | "local"; variants: string[]; expected: Record<string, string | null>; notebooks?: Record<string, string>; code: Record<string, string> };
 const TIMEOUT_MS = 90000;
-export default function CodeLab({ labs }: { labs: Lab[] }) {
-  const [id, setId] = useState(labs[0].id); const [variant, setVariant] = useState("scratch");
+export default function CodeLab({ labs, initialLabId }: { labs: Lab[]; initialLabId?: string }) {
+  const [id, setId] = useState(labs.some(l => l.id === initialLabId) ? initialLabId! : labs[0].id); const [variant, setVariant] = useState("scratch");
   const lab = labs.find(l => l.id === id)!; const v = lab.variants.includes(variant) ? variant : lab.variants[0];
   const orig = lab.code[v]; const [edits, setEdits] = useState<Record<string, string>>({});
   const key = `${id}:${v}`; const code = edits[key] ?? orig;
@@ -32,9 +32,9 @@ export default function CodeLab({ labs }: { labs: Lab[] }) {
       {lab.runtime === "pyodide" && (busy ? <button onClick={() => kill("Đã dừng.")}>■ Stop</button> : <button onClick={run}>▶ Run</button>)}
       <button onClick={() => setEdits({ ...edits, [key]: orig })}>Reset Code</button><button onClick={copy}>Copy Code</button><button onClick={download}>Download .py</button>
       {lab.notebooks?.[v] && <a href={lab.notebooks[v]} download>Download Notebook (.ipynb)</a>}</div>
-    {lab.runtime === "local" && <p>Bài này cần PyTorch nên <b>không chạy được trong trình duyệt</b>. Chạy local: <code>pip install torch</code> rồi <code>python labs/{id}/{v}.py</code>, hoặc tải notebook lên Google Colab (chưa có liên kết mở trực tuyến).</p>}
+    {lab.runtime === "local" && <p>Bài này chạy bằng môi trường Python cục bộ; <b>không có nút Run trong trình duyệt</b>. Cài thư viện theo <a href="https://github.com/tungphungptt/ml-academy-vn/blob/main/docs/curriculum-practice.md">hướng dẫn CPU</a>, rồi chạy tại gốc repository: <code>python labs/{id}/{v}.py</code>. Notebook cũng cần repository nếu dùng file checkpoint hoặc script khác.</p>}
     {status && <p aria-live="polite">{status}</p>}
     {out && <><h3>Output</h3><pre>{out}</pre></>}{err && <><h3>Lỗi</h3><pre role="alert">{err}</pre></>}
-    <h3>Kết quả kỳ vọng</h3>{exp ? <><pre>{exp}</pre><p>Ghi nhận khi chạy bằng Python 3 + NumPy/scikit-learn cục bộ lúc phát triển (<code>scripts/gen_labs.py</code>). Số lẻ có thể chênh nhẹ giữa các phiên bản thư viện.</p></> : <p>Chưa xác minh: môi trường phát triển chưa có thư viện cần thiết để chạy thử file này.</p>}
+    <h3>Kết quả kỳ vọng</h3>{exp ? <><pre>{exp}</pre><p>Ghi nhận khi chạy bằng môi trường Python CPU được pin trong repository (<code>scripts/gen_labs.py</code>). Phiên bản và hash code được lưu trong registry; số lẻ có thể chênh nhẹ trên môi trường khác. Đây là output tham khảo, không phải bộ tự chấm.</p></> : <p>Chưa xác minh: môi trường phát triển chưa có thư viện cần thiết để chạy thử file này.</p>}
   </div>;
 }

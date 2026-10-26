@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Kiến thức tiên quyết:** vector, khoảng cách Euclid.
+**Cấp độ:** Beginner · **Tầng:** Core · **Kiến thức tiên quyết:** vector, khoảng cách Euclid · **Tiên quyết:** Vector và ma trận, Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu, Metrics đánh giá mô hình.
 
 **Mục tiêu:** hiểu KNN phân loại thế nào, tác động của $K$ lên ranh giới quyết định, và khi nào KNN gặp khó.
 
@@ -45,3 +45,15 @@ Khác Logistic Regression (học ranh giới tuyến tính với tham số), KNN
 
 ## Tóm tắt
 KNN dự đoán bằng bỏ phiếu của $K$ láng giềng gần nhất; cần chuẩn hóa dữ liệu và chọn $K$ cẩn thận.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+KNN giả định các mẫu gần nhau theo metric có ý nghĩa cho nhãn; không giả định ranh giới tuyến tính. Chọn K không quá số mẫu train; tie có thể xảy ra cả khi K lẻ với nhiều lớp, nên quy tắc tie-break phải rõ. KNN regression lấy trung bình thay vì bỏ phiếu. Với chuẩn Euclid, scale khác nhau làm metric đổi; fit scaler trong fold. Khoảng cách trong không gian quá nhiều chiều có thể kém phân biệt, nhưng giảm chiều cũng có thể bỏ tín hiệu. Dự đoán brute force tốn khoảng O(ND) cho một query, không phải “không học tham số” là không có chi phí.
+
+## Đáp án và tiêu chí chấm
+1. q=(2,2) gần B=(2,1) nhất (distance=1), dự đoán lớp 0. (2 điểm).
+2. Chọn K bằng train/validation hoặc CV. Nếu xem test cho 15 K để chọn K tốt nhất, test đã bị dùng như validation. (3 điểm).
+3. Thêm cột thang đo 100× có thể đảo láng giềng; so pipeline fit StandardScaler trên train với bản không scale bằng cùng split. Không chuẩn hóa trước toàn bộ CV. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn User Guide: Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html).
+- [Stanford CS231n: Image Classification (kNN)](https://cs231n.github.io/classification/).

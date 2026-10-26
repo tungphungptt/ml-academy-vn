@@ -1,4 +1,4 @@
-**Cấp độ:** Advanced · **Tiên quyết:** Autoencoder, Xác suất cơ bản.
+**Cấp độ:** Advanced · **Tầng:** Advanced · **Tiên quyết:** Autoencoder, Bayes, Maximum Likelihood và MAP.
 **Mục tiêu:** nắm ý tưởng chính của GAN, VAE và Diffusion ở mức nhập môn. Bài này không có bài thực hành huấn luyện.
 
 ## Vấn đề thực tế
@@ -34,3 +34,16 @@ GAN cho ảnh sắc nét nhưng khó huấn luyện; VAE ổn định và có kh
 
 ## Tóm tắt
 GAN: đối kháng; VAE: tái tạo cộng KL; Diffusion: thêm rồi khử nhiễu.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+AE thông thường không xác định prior trên latent để lấy mẫu bất kỳ. VAE tối ưu ELBO: kỳ vọng log-likelihood tái tạo trừ KL(q(z|x)||p(z)); “MSE+KL” chỉ là một dạng dưới lựa chọn likelihood/scale phù hợp, không phải định nghĩa duy nhất. Reparameterization tách noise độc lập để lấy gradient theo tham số phân phối. GAN cổ điển chơi minimax; loss non-saturating của generator thường dùng trong thực hành, không đồng nhất mọi code GAN với một objective. Diffusion minh họa forward marginal ở đây; lấy mẫu cần một reverse process/model và schedule, không chỉ đảo dấu noise một bước. Nhận xét sắc/mờ/tốc độ là xu hướng trong vài cấu hình, không phải định luật mọi kiến trúc.
+
+## Đáp án và tiêu chí chấm
+1. Với μ=2,σ²=1, KL=0.5·4=2. (2 điểm).
+2. Với alpha_bar=0.25 và giữ x0=1,epsilon=0.5: xt=0.5+sqrt(0.75)·0.5≈0.9330. (3 điểm).
+3. Một VAE toy hợp lệ cần encoder μ/logvar, reparameterized z, decoder likelihood, reconstruction/KL và split. Đây là bài mở rộng: chưa cung cấp một metric huấn luyện VAE/GAN/diffusion đã xác minh và không chấm bằng ảnh trông có vẻ đẹp. (5 điểm).
+
+## Nguồn tham khảo
+- [Generative Adversarial Nets (Goodfellow và cộng sự)](https://arxiv.org/abs/1406.2661).
+- [Auto-Encoding Variational Bayes (Kingma và Welling)](https://arxiv.org/abs/1312.6114).
+- [Denoising Diffusion Probabilistic Models (Ho và cộng sự)](https://arxiv.org/abs/2006.11239).

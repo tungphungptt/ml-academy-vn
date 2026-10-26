@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Optimizers, Bias-Variance.
+**Cấp độ:** Intermediate · **Tầng:** Core · **Tiên quyết:** Chẩn đoán huấn luyện: khởi tạo, gradient và normalization, Optimizers.
 **Mục tiêu:** hiểu Dropout, Batch Normalization, Weight Decay, Early Stopping và lập lịch learning rate.
 
 ## Vấn đề thực tế
@@ -50,3 +50,15 @@ Mỗi kỹ thuật thêm siêu tham số cần tinh chỉnh; hiệu quả phụ 
 
 ## Tóm tắt
 Dropout, BatchNorm, weight decay, early stopping và lịch learning rate giúp mạng sâu ổn định và tổng quát hóa tốt hơn.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Ký hiệu p trong công thức dropout của bài là xác suất giữ; PyTorch nn.Dropout(p) nhận xác suất bỏ. BatchNorm1d chuẩn hóa theo batch trên từng feature; LayerNorm chuẩn hóa các chiều cuối từng mẫu/token, không dùng running stats. Với batch nhỏ, BatchNorm có giới hạn và train/eval phải đúng. Công thức w←w−η(g+λw) là SGD kèm L2 theo convention tương ứng; AdamW có decay tách khỏi moment nên không gọi chung là cùng một L2 gradient cho mọi optimizer. Early stopping dùng validation; chọn patience hay scheduler qua test cũng là leakage. Best checkpoint phải được khôi phục trước inference, như [CNN CPU](/learn/cnn-cpu).
+
+## Đáp án và tiêu chí chấm
+1. Với input toàn 1, xác suất giữ 0.5 và mask (1,0,1,0), inverted dropout cho (2,0,2,0). Khi eval không nhân lại 0.5 nếu đã dùng convention inverted. (2 điểm).
+2. Với η0=0.1, gamma=0.5, step_size=10, epoch=45 theo công thức bài cho 0.1·0.5^4=0.00625. Framework có convention thời điểm scheduler.step; nêu rõ index. (3 điểm).
+3. Theo dõi val loss không gradient, cập nhật deepcopy(best_state) khi cải thiện, đếm patience, restore trước test. Không chỉ break rồi dùng trọng số epoch cuối kém hơn. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Multilayer Perceptrons (Dropout, weight decay)](https://d2l.ai/chapter_multilayer-perceptrons/index.html).
+- [Stanford CS231n: Neural Networks Part 3](https://cs231n.github.io/neural-networks-3/).

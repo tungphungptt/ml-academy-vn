@@ -7,6 +7,7 @@
    "level": "Beginner",
    "modules": [
     {
+     "key": "tools",
      "title": "Công cụ",
      "lessons": [
       {
@@ -18,7 +19,12 @@
          "title": "Python Tutorial (docs.python.org)",
          "url": "https://docs.python.org/3/tutorial/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "NumPy, pandas và Matplotlib",
@@ -37,8 +43,21 @@
          "title": "Matplotlib User Guide",
          "url": "https://matplotlib.org/stable/users/index.html"
         }
-       ]
-      },
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "python-ml"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
+      }
+     ]
+    },
+    {
+     "key": "math",
+     "title": "Toán và tối ưu",
+     "lessons": [
       {
        "t": "Vector và ma trận",
        "f": "vectors-matrices.md",
@@ -48,13 +67,33 @@
          "title": "Dive into Deep Learning: Linear Algebra",
          "url": "https://d2l.ai/chapter_preliminaries/linear-algebra.html"
         }
-       ]
-      }
-     ]
-    },
-    {
-     "title": "Toán",
-     "lessons": [
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "numpy-pandas"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
+      },
+      {
+       "s": "linear-algebra-decompositions",
+       "t": "Không gian vector, trị riêng và SVD",
+       "f": "linear-algebra-decompositions.md",
+       "src": [
+        {
+         "title": "Không gian vector, trị riêng và SVD — tài liệu đối chiếu",
+         "url": "https://machinelearningcoban.com/2017/06/07/svd/"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "vectors-matrices"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
       {
        "t": "Đạo hàm và gradient",
        "f": "derivatives.md",
@@ -64,7 +103,14 @@
          "title": "Stanford CS231n: Optimization (gradient và chain rule)",
          "url": "https://cs231n.github.io/optimization-1/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "vectors-matrices"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Xác suất cơ bản",
@@ -75,19 +121,77 @@
          "title": "Dive into Deep Learning: Probability and Statistics",
          "url": "https://d2l.ai/chapter_preliminaries/probability.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "python-ml"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
-       "t": "Metrics đánh giá mô hình",
-       "f": "metrics.md",
-       "s": "metrics",
+       "t": "Thống kê mô tả và ước lượng tham số",
+       "f": "statistics.md",
+       "s": "statistics",
        "src": [
         {
-         "title": "scikit-learn: Model evaluation",
-         "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+         "title": "Dive into Deep Learning: Probability and Statistics",
+         "url": "https://d2l.ai/chapter_preliminaries/probability.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "probability"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
+      {
+       "s": "bayesian-estimation",
+       "t": "Bayes, Maximum Likelihood và MAP",
+       "f": "bayesian-estimation.md",
+       "src": [
+        {
+         "title": "Bayes, Maximum Likelihood và MAP — tài liệu đối chiếu",
+         "url": "https://machinelearningcoban.com/2017/07/17/mlemap/"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "probability",
+        "statistics"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "convex-optimization",
+       "t": "Tập lồi, hàm lồi và điều kiện tối ưu",
+       "f": "convex-optimization.md",
+       "src": [
+        {
+         "title": "Tập lồi, hàm lồi và điều kiện tối ưu — tài liệu đối chiếu",
+         "url": "https://machinelearningcoban.com/2017/03/12/convexity/"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "derivatives",
+        "linear-algebra-decompositions"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      }
+     ]
+    },
+    {
+     "key": "data",
+     "title": "Dữ liệu và đánh giá",
+     "lessons": [
       {
        "t": "Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu",
        "f": "data-preparation.md",
@@ -101,18 +205,33 @@
          "title": "scikit-learn: Imputation of missing values",
          "url": "https://scikit-learn.org/stable/modules/impute.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "numpy-pandas",
+        "statistics"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
-       "t": "Thống kê mô tả và ước lượng tham số",
-       "f": "statistics.md",
-       "s": "statistics",
+       "t": "Metrics đánh giá mô hình",
+       "f": "metrics.md",
+       "s": "metrics",
        "src": [
         {
-         "title": "Dive into Deep Learning: Probability and Statistics",
-         "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+         "title": "scikit-learn: Model evaluation",
+         "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "probability"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       }
      ]
     }
@@ -125,7 +244,8 @@
    "level": "Intermediate",
    "modules": [
     {
-     "title": "Hồi quy",
+     "key": "regression",
+     "title": "Nhập môn và hồi quy",
      "lessons": [
       {
        "t": "AI, Machine Learning và Deep Learning",
@@ -134,13 +254,20 @@
        "src": [
         {
          "title": "scikit-learn: Machine learning tutorial (mô tả các dạng bài toán)",
-         "url": "https://scikit-learn.org/stable/tutorial/basic/tutorial.html"
+         "url": "https://scikit-learn.org/stable/getting_started.html"
         },
         {
          "title": "Machine Learning cơ bản",
          "url": "https://machinelearningcoban.com/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "python-ml"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Linear Regression",
@@ -151,7 +278,16 @@
          "title": "scikit-learn User Guide: Linear Models",
          "url": "https://scikit-learn.org/stable/modules/linear_model.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "vectors-matrices",
+        "derivatives",
+        "ml-intro"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Loss Functions: MSE, MAE, Huber, Cross-Entropy",
@@ -166,7 +302,15 @@
          "title": "Stanford CS231n: Linear Classification",
          "url": "https://cs231n.github.io/linear-classify/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "linear-regression",
+        "probability"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Gradient Descent",
@@ -181,18 +325,16 @@
          "title": "scikit-learn User Guide: SGD",
          "url": "https://scikit-learn.org/stable/modules/sgd.html"
         }
-       ]
-      },
-      {
-       "t": "Polynomial Regression",
-       "f": "polynomial-regression.md",
-       "s": "polynomial-regression",
-       "src": [
-        {
-         "title": "scikit-learn: Polynomial regression",
-         "url": "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions"
-        }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "linear-regression",
+        "loss-functions",
+        "derivatives"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Ridge và Lasso",
@@ -207,11 +349,57 @@
          "title": "scikit-learn: Lasso",
          "url": "https://scikit-learn.org/stable/modules/linear_model.html#lasso"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "linear-regression",
+        "gradient-descent"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "t": "Polynomial Regression",
+       "f": "polynomial-regression.md",
+       "s": "polynomial-regression",
+       "src": [
+        {
+         "title": "scikit-learn: Polynomial regression",
+         "url": "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "ridge-lasso"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
+      },
+      {
+       "t": "Bias-Variance và Overfitting",
+       "f": "bias-variance.md",
+       "s": "bias-variance",
+       "src": [
+        {
+         "title": "scikit-learn: Underfitting vs. Overfitting",
+         "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "linear-regression",
+        "statistics"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       }
      ]
     },
     {
+     "key": "classification",
      "title": "Phân loại",
      "lessons": [
       {
@@ -223,7 +411,16 @@
          "title": "scikit-learn: Logistic regression",
          "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "gradient-descent",
+        "probability",
+        "loss-functions"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Softmax Regression",
@@ -238,7 +435,14 @@
          "title": "Dive into Deep Learning: Softmax Regression",
          "url": "https://d2l.ai/chapter_linear-classification/index.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "logistic-regression"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "KNN",
@@ -253,7 +457,16 @@
          "title": "Stanford CS231n: Image Classification (kNN)",
          "url": "https://cs231n.github.io/classification/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "vectors-matrices",
+        "data-preparation",
+        "metrics"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Decision Tree",
@@ -264,7 +477,15 @@
          "title": "scikit-learn: Decision Trees",
          "url": "https://scikit-learn.org/stable/modules/tree.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "metrics",
+        "data-preparation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Naive Bayes",
@@ -275,7 +496,14 @@
          "title": "scikit-learn: Naive Bayes",
          "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "bayesian-estimation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "SVM",
@@ -286,7 +514,15 @@
          "title": "scikit-learn: Support Vector Machines",
          "url": "https://scikit-learn.org/stable/modules/svm.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "logistic-regression",
+        "convex-optimization"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Random Forest",
@@ -297,12 +533,20 @@
          "title": "scikit-learn: Ensembles (Random Forests)",
          "url": "https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "decision-tree"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       }
      ]
     },
     {
-     "title": "Học không giám sát",
+     "key": "unsupervised",
+     "title": "Học không giám sát và giảm chiều",
      "lessons": [
       {
        "t": "K-Means",
@@ -313,7 +557,14 @@
          "title": "scikit-learn User Guide: Clustering (K-Means)",
          "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "vectors-matrices"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "PCA",
@@ -324,7 +575,34 @@
          "title": "scikit-learn: PCA",
          "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "linear-algebra-decompositions",
+        "data-preparation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "lda",
+       "t": "Linear Discriminant Analysis: giảm chiều có giám sát",
+       "f": "lda.md",
+       "src": [
+        {
+         "title": "Linear Discriminant Analysis: giảm chiều có giám sát — tài liệu đối chiếu",
+         "url": "https://machinelearningcoban.com/2017/06/30/lda/"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "pca",
+        "bayesian-estimation"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Gaussian Mixture Models",
@@ -335,7 +613,15 @@
          "title": "scikit-learn: Gaussian mixture models",
          "url": "https://scikit-learn.org/stable/modules/mixture.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "k-means",
+        "bayesian-estimation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Anomaly Detection",
@@ -346,24 +632,22 @@
          "title": "scikit-learn: Novelty and Outlier Detection",
          "url": "https://scikit-learn.org/stable/modules/outlier_detection.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "pca",
+        "statistics"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       }
      ]
     },
     {
+     "key": "application",
      "title": "Đánh giá và ứng dụng",
      "lessons": [
-      {
-       "t": "Bias-Variance và Overfitting",
-       "f": "bias-variance.md",
-       "s": "bias-variance",
-       "src": [
-        {
-         "title": "scikit-learn: Underfitting vs. Overfitting",
-         "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html"
-        }
-       ]
-      },
       {
        "t": "Cross-validation",
        "f": "cross-validation.md",
@@ -373,7 +657,16 @@
          "title": "scikit-learn: Cross-validation",
          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "data-preparation",
+        "metrics",
+        "linear-regression"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Feature Engineering và Data Leakage",
@@ -384,7 +677,33 @@
          "title": "scikit-learn: Common pitfalls (data leakage)",
          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "cross-validation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "tabular-pipeline",
+       "t": "Thực hành dữ liệu bảng: EDA, encoding và pipeline",
+       "f": "tabular-pipeline.md",
+       "src": [
+        {
+         "title": "Thực hành dữ liệu bảng: EDA, encoding và pipeline — tài liệu đối chiếu",
+         "url": "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "feature-leakage",
+        "logistic-regression"
+       ],
+       "minutes": 50,
+       "kind": "practice",
+       "level": "Intermediate"
       },
       {
        "t": "Recommendation Systems",
@@ -395,7 +714,15 @@
          "title": "Machine Learning cơ bản",
          "url": "https://machinelearningcoban.com/"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "knn",
+        "linear-algebra-decompositions"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Hyperparameter Tuning",
@@ -406,7 +733,15 @@
          "title": "scikit-learn: Tuning hyper-parameters",
          "url": "https://scikit-learn.org/stable/modules/grid_search.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "cross-validation",
+        "svm"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Quy trình dự án Machine Learning",
@@ -421,7 +756,15 @@
          "title": "scikit-learn: Model persistence",
          "url": "https://scikit-learn.org/stable/model_persistence.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "tabular-pipeline",
+        "hyperparameter-tuning"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Lưu mô hình và triển khai",
@@ -436,7 +779,14 @@
          "title": "FastAPI documentation",
          "url": "https://fastapi.tiangolo.com/"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "ml-project-workflow"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       }
      ]
     }
@@ -449,6 +799,7 @@
    "level": "Advanced",
    "modules": [
     {
+     "key": "foundations",
      "title": "Nền tảng",
      "lessons": [
       {
@@ -464,70 +815,14 @@
          "title": "Dive into Deep Learning: Multilayer Perceptrons",
          "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
         }
-       ]
-      },
-      {
-       "t": "MLP",
-       "f": "mlp.md",
-       "s": "mlp",
-       "src": [
-        {
-         "title": "Dive into Deep Learning: Multilayer Perceptrons",
-         "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
-        }
-       ]
-      },
-      {
-       "t": "Backpropagation",
-       "f": "backpropagation.md",
-       "s": "backpropagation",
-       "src": [
-        {
-         "title": "Stanford CS231n: Backpropagation",
-         "url": "https://cs231n.github.io/optimization-2/"
-        }
-       ]
-      },
-      {
-       "t": "Optimizers",
-       "f": "optimizers.md",
-       "s": "optimizers",
-       "src": [
-        {
-         "title": "Dive into Deep Learning: Optimization Algorithms",
-         "url": "https://d2l.ai/chapter_optimization/index.html"
-        },
-        {
-         "title": "Adam: A Method for Stochastic Optimization (Kingma và Ba)",
-         "url": "https://arxiv.org/abs/1412.6980"
-        }
-       ]
-      },
-      {
-       "t": "Automatic Differentiation (Autograd)",
-       "f": "autograd.md",
-       "s": "autograd",
-       "src": [
-        {
-         "title": "PyTorch Tutorials: Autograd",
-         "url": "https://docs.pytorch.org/tutorials/"
-        },
-        {
-         "title": "Stanford CS231n: Backpropagation",
-         "url": "https://cs231n.github.io/optimization-2/"
-        }
-       ]
-      },
-      {
-       "t": "Thực hành PyTorch: MLP và CNN",
-       "f": "pytorch-practice.md",
-       "s": "pytorch-practice",
-       "src": [
-        {
-         "title": "PyTorch Tutorials",
-         "url": "https://docs.pytorch.org/tutorials/"
-        }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "logistic-regression"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Beginner"
       },
       {
        "t": "Activation Functions",
@@ -542,7 +837,117 @@
          "title": "Stanford CS231n: Neural Networks",
          "url": "https://cs231n.github.io/neural-networks-1/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "perceptron",
+        "derivatives"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "t": "MLP",
+       "f": "mlp.md",
+       "s": "mlp",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Multilayer Perceptrons",
+         "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "perceptron",
+        "activations"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "t": "Backpropagation",
+       "f": "backpropagation.md",
+       "s": "backpropagation",
+       "src": [
+        {
+         "title": "Stanford CS231n: Backpropagation",
+         "url": "https://cs231n.github.io/optimization-2/"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "mlp",
+        "derivatives"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "t": "Automatic Differentiation (Autograd)",
+       "f": "autograd.md",
+       "s": "autograd",
+       "src": [
+        {
+         "title": "PyTorch Tutorials: Autograd",
+         "url": "https://docs.pytorch.org/tutorials/"
+        },
+        {
+         "title": "Stanford CS231n: Backpropagation",
+         "url": "https://cs231n.github.io/optimization-2/"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "backpropagation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "t": "Optimizers",
+       "f": "optimizers.md",
+       "s": "optimizers",
+       "src": [
+        {
+         "title": "Dive into Deep Learning: Optimization Algorithms",
+         "url": "https://d2l.ai/chapter_optimization/index.html"
+        },
+        {
+         "title": "Adam: A Method for Stochastic Optimization (Kingma và Ba)",
+         "url": "https://arxiv.org/abs/1412.6980"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "gradient-descent",
+        "backpropagation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "training-diagnostics",
+       "t": "Chẩn đoán huấn luyện: khởi tạo, gradient và normalization",
+       "f": "training-diagnostics.md",
+       "src": [
+        {
+         "title": "Chẩn đoán huấn luyện: khởi tạo, gradient và normalization — tài liệu đối chiếu",
+         "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "autograd",
+        "optimizers"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Regularization và Learning Rate Scheduling",
@@ -557,12 +962,59 @@
          "title": "Stanford CS231n: Neural Networks Part 3",
          "url": "https://cs231n.github.io/neural-networks-3/"
         }
-       ]
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "training-diagnostics",
+        "optimizers"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "t": "Thực hành PyTorch: MLP và CNN",
+       "f": "pytorch-practice.md",
+       "s": "pytorch-practice",
+       "src": [
+        {
+         "title": "PyTorch Tutorials",
+         "url": "https://docs.pytorch.org/tutorials/"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "dl-regularization",
+        "autograd"
+       ],
+       "minutes": 35,
+       "kind": "practice",
+       "level": "Intermediate"
+      },
+      {
+       "t": "Embeddings và biểu diễn văn bản",
+       "f": "embeddings.md",
+       "s": "embeddings",
+       "src": [
+        {
+         "title": "scikit-learn: Text feature extraction",
+         "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "vectors-matrices",
+        "knn"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       }
      ]
     },
     {
-     "title": "Kiến trúc",
+     "key": "architectures",
+     "title": "Kiến trúc và thực nghiệm",
      "lessons": [
       {
        "t": "CNN",
@@ -573,7 +1025,15 @@
          "title": "Stanford CS231n: Convolutional Networks",
          "url": "https://cs231n.github.io/convolutional-networks/"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "mlp",
+        "training-diagnostics"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
       },
       {
        "t": "Thực hành CNN: bộ lọc tích chập làm đặc trưng",
@@ -588,7 +1048,34 @@
          "title": "scikit-learn: Digits dataset",
          "url": "https://scikit-learn.org/stable/datasets/toy_dataset.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "cnn",
+        "logistic-regression"
+       ],
+       "minutes": 35,
+       "kind": "practice",
+       "level": "Intermediate"
+      },
+      {
+       "s": "cnn-cpu",
+       "t": "Thực hành CNN thật trên CPU với Digits",
+       "f": "cnn-cpu.md",
+       "src": [
+        {
+         "title": "Thực hành CNN thật trên CPU với Digits — tài liệu đối chiếu",
+         "url": "https://cs231n.stanford.edu/"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "cnn",
+        "pytorch-practice"
+       ],
+       "minutes": 50,
+       "kind": "practice",
+       "level": "Intermediate"
       },
       {
        "t": "RNN và LSTM",
@@ -603,7 +1090,34 @@
          "title": "Dive into Deep Learning: Modern RNNs",
          "url": "https://d2l.ai/chapter_recurrent-modern/index.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "mlp",
+        "backpropagation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "sequence-models-cpu",
+       "t": "Thực hành GRU: dự báo chuỗi trên CPU",
+       "f": "sequence-models-cpu.md",
+       "src": [
+        {
+         "title": "Thực hành GRU: dự báo chuỗi trên CPU — tài liệu đối chiếu",
+         "url": "https://d2l.ai/chapter_recurrent-modern/gru.html"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "rnn-lstm",
+        "pytorch-practice"
+       ],
+       "minutes": 50,
+       "kind": "practice",
+       "level": "Intermediate"
       },
       {
        "t": "Attention và Transformer",
@@ -618,7 +1132,15 @@
          "title": "Dive into Deep Learning: Attention and Transformers",
          "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "softmax-regression",
+        "mlp"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Advanced"
       },
       {
        "t": "Kiến trúc Transformer",
@@ -633,7 +1155,16 @@
          "title": "Dive into Deep Learning: Transformer",
          "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
         }
-       ]
+       ],
+       "tier": "Advanced",
+       "prerequisites": [
+        "attention-transformer",
+        "embeddings",
+        "training-diagnostics"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Advanced"
       },
       {
        "t": "Autoencoder",
@@ -648,7 +1179,16 @@
          "title": "scikit-learn: PCA",
          "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "pca",
+        "mlp",
+        "backpropagation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Advanced"
       },
       {
        "t": "Transfer Learning",
@@ -663,7 +1203,15 @@
          "title": "PyTorch Tutorials: Transfer Learning",
          "url": "https://docs.pytorch.org/tutorials/"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "cnn-cpu",
+        "optimizers"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Advanced"
       },
       {
        "t": "GAN, VAE và Diffusion",
@@ -682,24 +1230,22 @@
          "title": "Denoising Diffusion Probabilistic Models (Ho và cộng sự)",
          "url": "https://arxiv.org/abs/2006.11239"
         }
-       ]
+       ],
+       "tier": "Advanced",
+       "prerequisites": [
+        "autoencoder",
+        "bayesian-estimation"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Advanced"
       }
      ]
     },
     {
-     "title": "Xử lý văn bản",
+     "key": "nlp",
+     "title": "Văn bản và biểu diễn ứng dụng",
      "lessons": [
-      {
-       "t": "Embeddings và biểu diễn văn bản",
-       "f": "embeddings.md",
-       "s": "embeddings",
-       "src": [
-        {
-         "title": "scikit-learn: Text feature extraction",
-         "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
-        }
-       ]
-      },
       {
        "t": "Phân loại cảm xúc văn bản",
        "f": "text-classification.md",
@@ -707,9 +1253,37 @@
        "src": [
         {
          "title": "scikit-learn: Working with text data",
-         "url": "https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html"
+         "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
         }
-       ]
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "embeddings",
+        "logistic-regression"
+       ],
+       "minutes": 35,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "neural-recommendation",
+       "t": "Thực hành recommender với embedding học được",
+       "f": "neural-recommendation.md",
+       "src": [
+        {
+         "title": "Thực hành recommender với embedding học được — tài liệu đối chiếu",
+         "url": "https://machinelearningcoban.com/2017/05/31/matrixfactorization/"
+        }
+       ],
+       "tier": "Advanced",
+       "prerequisites": [
+        "embeddings",
+        "recommendation",
+        "optimizers"
+       ],
+       "minutes": 50,
+       "kind": "practice",
+       "level": "Advanced"
       }
      ]
     }

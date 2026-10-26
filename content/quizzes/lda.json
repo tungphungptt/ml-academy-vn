@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "LDA với 4 lớp, 20 feature giảm tối đa bao nhiêu chiều?",
+  "options": [
+   "4",
+   "3",
+   "20"
+  ],
+  "correct": 1,
+  "explanation": "Rank between-class scatter không quá C−1 nên tối đa 3."
+ },
+ {
+  "prompt": "LDA dùng nhãn khi nào?",
+  "options": [
+   "Trong fit, nên phải nằm trong fold train",
+   "Không bao giờ",
+   "Chỉ trên test"
+  ],
+  "correct": 0,
+  "explanation": "LDA có giám sát; fit toàn bộ trước CV gây leakage."
+ },
+ {
+  "prompt": "LDA classifier Gaussian giả định gì?",
+  "options": [
+   "Các lớp luôn cân bằng",
+   "Mỗi lớp có covariance tùy ý",
+   "Gaussian có covariance chung giữa các lớp"
+  ],
+  "correct": 2,
+  "explanation": "LDA dùng covariance chung; cho covariance theo lớp dẫn tới QDA."
+ }
+]

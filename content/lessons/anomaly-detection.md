@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** Xác suất cơ bản, PCA.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** PCA, Thống kê mô tả và ước lượng tham số.
 **Mục tiêu:** phát hiện giá trị bất thường bằng z-score, IQR và z-score bền vững (median/MAD), và hiểu vì sao ngoại lai có thể "che giấu" chính nó.
 
 ## Vấn đề thực tế
@@ -34,3 +34,14 @@ Isolation Forest, One-Class SVM, Autoencoder (lỗi tái tạo lớn nghĩa là 
 
 ## Tóm tắt
 z-score nhạy với chính ngoại lai; IQR và median/MAD bền vững hơn.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Một outlier thống kê có thể là lỗi đo hoặc sự kiện quan trọng; gắn cờ trước khi xóa. Fit các ngưỡng/IQR/scale từ train hoặc dữ liệu tham chiếu phù hợp, không dùng toàn bộ test. Với MAD=0 phải dùng fallback/flag hoặc báo không áp dụng công thức, không chia cho 0. IsolationForest cho decision score không phải probability đã hiệu chỉnh; predict trả −1 cho bất thường. Chọn threshold cần validation có ý nghĩa nghiệp vụ; trong lớp hiếm báo precision/recall/PR thay vì chỉ accuracy.
+
+## Đáp án và tiêu chí chấm
+1. Percentile tuyến tính mặc định cho (1,2,3,4,100): Q1=2, Q3=4, IQR=2, ngưỡng trên=7, nên 100 bị gắn cờ. (2 điểm).
+2. Hai ngoại lai có thể cùng làm mean/std tăng và che nhau. Báo cả z-score thường và median/MAD, ghi convention percentile. (3 điểm).
+3. Sinh dữ liệu 2D có nhãn chỉ để đánh giá, fit detector trên train đã định nghĩa (normal-only hoặc contaminated phải nói rõ), chọn threshold trên validation và vẽ score/prediction đúng quy ước −1. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Novelty and Outlier Detection](https://scikit-learn.org/stable/modules/outlier_detection.html).

@@ -1,0 +1,2610 @@
+{
+ "base_commit": "5b88b1889456fecfa06fa2c4921f5abe15a72a24",
+ "lessons": [
+  {
+   "t": "Python cho ML",
+   "f": "python-ml.md",
+   "s": "python-ml",
+   "src": [
+    {
+     "title": "Python Tutorial (docs.python.org)",
+     "url": "https://docs.python.org/3/tutorial/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "python-ml",
+   "course": "python-math",
+   "module": "Công cụ",
+   "words": 561,
+   "sha256": "43db924e039609d4e73c8a68a44aaedb5c2ad1c6ddc3100556d02d59e7146e86",
+   "headings": [
+    "Vấn đề thực tế",
+    "Khái niệm chính",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "NumPy, pandas và Matplotlib",
+   "f": "numpy-pandas.md",
+   "s": "numpy-pandas",
+   "src": [
+    {
+     "title": "NumPy: Absolute Beginners Guide",
+     "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+    },
+    {
+     "title": "pandas User Guide",
+     "url": "https://pandas.pydata.org/docs/user_guide/index.html"
+    },
+    {
+     "title": "Matplotlib User Guide",
+     "url": "https://matplotlib.org/stable/users/index.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "python-ml"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "numpy-pandas",
+   "course": "python-math",
+   "module": "Công cụ",
+   "words": 565,
+   "sha256": "c72cbfd98409ef361171e029b6534fdd7201694f39ea1c678feb22ec5d57c770",
+   "headings": [
+    "Vấn đề thực tế",
+    "Khái niệm chính",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Vector và ma trận",
+   "f": "vectors-matrices.md",
+   "s": "vectors-matrices",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Linear Algebra",
+     "url": "https://d2l.ai/chapter_preliminaries/linear-algebra.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "numpy-pandas"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "vectors-matrices",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 500,
+   "sha256": "b02cead567756874e7b462e2247664b95a2851da0c9f01e0deec28280d21af76",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "linear-algebra-decompositions",
+   "t": "Không gian vector, trị riêng và SVD",
+   "f": "linear-algebra-decompositions.md",
+   "src": [
+    {
+     "title": "Không gian vector, trị riêng và SVD — tài liệu đối chiếu",
+     "url": "https://machinelearningcoban.com/2017/06/07/svd/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "vectors-matrices"
+   ],
+   "minutes": 50,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "linear-algebra-decompositions",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 706,
+   "sha256": "4317bc08448663cc31b37cf0fc0902e859bdcc37855e196c8329b109d55d7a60",
+   "headings": [
+    "Từ tọa độ đến không gian con",
+    "Trị riêng và hình học",
+    "SVD áp dụng cả ma trận chữ nhật",
+    "Ví dụ có thể chạy",
+    "Khi nào dùng và lỗi thường gặp",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Đạo hàm và gradient",
+   "f": "derivatives.md",
+   "s": "derivatives",
+   "src": [
+    {
+     "title": "Stanford CS231n: Optimization (gradient và chain rule)",
+     "url": "https://cs231n.github.io/optimization-1/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "vectors-matrices"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "derivatives",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 442,
+   "sha256": "ba9a1e6799dcb199e0a6ff0017a2996f451498d4cdf8fb6b1f1e3a73deb4fec7",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế của kiểm tra số học",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Xác suất cơ bản",
+   "f": "probability.md",
+   "s": "probability",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Probability and Statistics",
+     "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "python-ml"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "probability",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 541,
+   "sha256": "188a2aa888c5e1b90b23e165b0d3d245d0385ef1341a0c7580e7b5a294728bf1",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Thống kê mô tả và ước lượng tham số",
+   "f": "statistics.md",
+   "s": "statistics",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Probability and Statistics",
+     "url": "https://d2l.ai/chapter_preliminaries/probability.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "probability"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "statistics",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 533,
+   "sha256": "a0e7e928526e11f64e84a14005e346dcbffaaf9a5dfd814c2ab88221776655f3",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "bayesian-estimation",
+   "t": "Bayes, Maximum Likelihood và MAP",
+   "f": "bayesian-estimation.md",
+   "src": [
+    {
+     "title": "Bayes, Maximum Likelihood và MAP — tài liệu đối chiếu",
+     "url": "https://machinelearningcoban.com/2017/07/17/mlemap/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "probability",
+    "statistics"
+   ],
+   "minutes": 50,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "bayesian-estimation",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 701,
+   "sha256": "72298657702baa7eb512ca4a221e1fbcdcde4424d57d8a20d7027f96b161c6b9",
+   "headings": [
+    "Một phép kiểm tra dương chưa phải xác suất mắc bệnh",
+    "MLE và MAP tối ưu những đại lượng khác nhau",
+    "Ví dụ và code CPU",
+    "Từ prior đến regularization",
+    "Điều kiện và lỗi thường gặp",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "convex-optimization",
+   "t": "Tập lồi, hàm lồi và điều kiện tối ưu",
+   "f": "convex-optimization.md",
+   "src": [
+    {
+     "title": "Tập lồi, hàm lồi và điều kiện tối ưu — tài liệu đối chiếu",
+     "url": "https://machinelearningcoban.com/2017/03/12/convexity/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "derivatives",
+    "linear-algebra-decompositions"
+   ],
+   "minutes": 50,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "convex-optimization",
+   "course": "python-math",
+   "module": "Toán và tối ưu",
+   "words": 665,
+   "sha256": "600bc5f85f9cbabaa872a9d6a24fb622d8a551c597aac064e2fda5c52fc517a4",
+   "headings": [
+    "Tập lồi và đoạn thẳng",
+    "Gradient, Hessian và điều kiện áp dụng",
+    "Ràng buộc và duality ở mức nhập môn",
+    "Ví dụ có thể kiểm tra",
+    "Cơ chế tối ưu và giới hạn",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu",
+   "f": "data-preparation.md",
+   "s": "data-preparation",
+   "src": [
+    {
+     "title": "scikit-learn: Preprocessing data",
+     "url": "https://scikit-learn.org/stable/modules/preprocessing.html"
+    },
+    {
+     "title": "scikit-learn: Imputation of missing values",
+     "url": "https://scikit-learn.org/stable/modules/impute.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "numpy-pandas",
+    "statistics"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "data-preparation",
+   "course": "python-math",
+   "module": "Dữ liệu và đánh giá",
+   "words": 551,
+   "sha256": "3f3445861fa52bbef8daffdf8d3fe0e9f31af036062a71be94a63f5fbc3465e1",
+   "headings": [
+    "Vấn đề thực tế",
+    "Quy tắc",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Metrics đánh giá mô hình",
+   "f": "metrics.md",
+   "s": "metrics",
+   "src": [
+    {
+     "title": "scikit-learn: Model evaluation",
+     "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "probability"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "metrics",
+   "course": "python-math",
+   "module": "Dữ liệu và đánh giá",
+   "words": 491,
+   "sha256": "8fb8de3b977ca887234dc7c47ad6d9825bd3aab38cd24bb7436b1697f2405f26",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Khi nào dùng",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "AI, Machine Learning và Deep Learning",
+   "f": "ml-intro.md",
+   "s": "ml-intro",
+   "src": [
+    {
+     "title": "scikit-learn: Machine learning tutorial (mô tả các dạng bài toán)",
+     "url": "https://scikit-learn.org/stable/getting_started.html"
+    },
+    {
+     "title": "Machine Learning cơ bản",
+     "url": "https://machinelearningcoban.com/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "python-ml"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "ml-intro",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 605,
+   "sha256": "1fa93f290cc015ebd4b2938d3409a86efe1378d3ea878a68e7fa5a2cf49402f6",
+   "headings": [
+    "Vấn đề thực tế",
+    "Các dạng bài toán",
+    "Quy trình chung",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Linear Regression",
+   "f": "linear-regression.md",
+   "s": "linear-regression",
+   "src": [
+    {
+     "title": "scikit-learn User Guide: Linear Models",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "vectors-matrices",
+    "derivatives",
+    "ml-intro"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "linear-regression",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 453,
+   "sha256": "ce21b5dadddda717f89cc63a79cb3e2743df34599bacbc3a83207baae76dceb3",
+   "headings": [
+    "Vấn đề thực tế",
+    "Mô hình và công thức",
+    "Ví dụ từng bước",
+    "Code from scratch",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Tóm tắt",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Loss Functions: MSE, MAE, Huber, Cross-Entropy",
+   "f": "loss-functions.md",
+   "s": "loss-functions",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Linear Regression (loss)",
+     "url": "https://d2l.ai/chapter_linear-regression/index.html"
+    },
+    {
+     "title": "Stanford CS231n: Linear Classification",
+     "url": "https://cs231n.github.io/linear-classify/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "linear-regression",
+    "probability"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "loss-functions",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 586,
+   "sha256": "6272cdf74edffd3de711cbb2554ae49a452cdabecb003029003343354d94b2f7",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Gradient Descent",
+   "f": "gradient-descent.md",
+   "s": "gradient-descent",
+   "src": [
+    {
+     "title": "Stanford CS231n: Optimization",
+     "url": "https://cs231n.github.io/optimization-1/"
+    },
+    {
+     "title": "scikit-learn User Guide: SGD",
+     "url": "https://scikit-learn.org/stable/modules/sgd.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "linear-regression",
+    "loss-functions",
+    "derivatives"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "gradient-descent",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 980,
+   "sha256": "4b619cc5f3365a75137fa6afd50ddd9f0540f5204d5f47427924ea1afd3bd3df",
+   "headings": [
+    "Vấn đề thực tế",
+    "Trực giác",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Ba biến thể",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo",
+    "Thực nghiệm Batch, SGD và mini-batch từ đầu"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Ridge và Lasso",
+   "f": "ridge-lasso.md",
+   "s": "ridge-lasso",
+   "src": [
+    {
+     "title": "scikit-learn: Ridge regression and classification",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
+    },
+    {
+     "title": "scikit-learn: Lasso",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html#lasso"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "linear-regression",
+    "gradient-descent"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "ridge-lasso",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 583,
+   "sha256": "bb14ffeb5eb56e845bcbe155ca315bb88a79443c31ba97c7df3718639ccb3243",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Polynomial Regression",
+   "f": "polynomial-regression.md",
+   "s": "polynomial-regression",
+   "src": [
+    {
+     "title": "scikit-learn: Polynomial regression",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "ridge-lasso"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "polynomial-regression",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 472,
+   "sha256": "cbaa952142e92f395c5d4928c440ea084b1e811dc115c43d5e98a060f2a2f8f4",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Bias-Variance và Overfitting",
+   "f": "bias-variance.md",
+   "s": "bias-variance",
+   "src": [
+    {
+     "title": "scikit-learn: Underfitting vs. Overfitting",
+     "url": "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "linear-regression",
+    "statistics"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "bias-variance",
+   "course": "ml-fundamentals",
+   "module": "Nhập môn và hồi quy",
+   "words": 708,
+   "sha256": "d0a2074e9f3d2d2e7a804741e05499dc8ce5340a1a43eb095efaf41a0a1e0708",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Cách xử lý",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Logistic Regression",
+   "f": "logistic-regression.md",
+   "s": "logistic-regression",
+   "src": [
+    {
+     "title": "scikit-learn: Logistic regression",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "gradient-descent",
+    "probability",
+    "loss-functions"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "logistic-regression",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 477,
+   "sha256": "6e246b0fe3681aad12ba0a4ce5e4232c4a207cd5e0f8ff97a363a690f954a47c",
+   "headings": [
+    "Vấn đề thực tế",
+    "Trực giác và công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế, so sánh",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Softmax Regression",
+   "f": "softmax-regression.md",
+   "s": "softmax-regression",
+   "src": [
+    {
+     "title": "scikit-learn: Logistic regression (multinomial)",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+    },
+    {
+     "title": "Dive into Deep Learning: Softmax Regression",
+     "url": "https://d2l.ai/chapter_linear-classification/index.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "logistic-regression"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "softmax-regression",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 582,
+   "sha256": "85cd0b0e166b12ca2ae789b082b2c8ce5c6f71cc6f9bf9ed4421f5841cdeea6f",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế, so sánh",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo",
+    "Thực hành hai cách triển khai"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "KNN",
+   "f": "knn.md",
+   "s": "knn",
+   "src": [
+    {
+     "title": "scikit-learn User Guide: Nearest Neighbors",
+     "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+    },
+    {
+     "title": "Stanford CS231n: Image Classification (kNN)",
+     "url": "https://cs231n.github.io/classification/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "vectors-matrices",
+    "data-preparation",
+    "metrics"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "knn",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 714,
+   "sha256": "4aeb2d0b75ab6ab61b5da1e35e0d3693a9f52d0c8143b06a527bba87da73c24f",
+   "headings": [
+    "Vấn đề thực tế",
+    "Trực giác",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Ảnh hưởng của K, decision boundary và đánh giá",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "So sánh",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Decision Tree",
+   "f": "decision-tree.md",
+   "s": "decision-tree",
+   "src": [
+    {
+     "title": "scikit-learn: Decision Trees",
+     "url": "https://scikit-learn.org/stable/modules/tree.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "metrics",
+    "data-preparation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "decision-tree",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 490,
+   "sha256": "4cc83af931adbf8821a166b2285c5dcb0f786740f5869e2923d02ede4905f1d8",
+   "headings": [
+    "Vấn đề thực tế",
+    "Trực giác và công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế, so sánh",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Naive Bayes",
+   "f": "naive-bayes.md",
+   "s": "naive-bayes",
+   "src": [
+    {
+     "title": "scikit-learn: Naive Bayes",
+     "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "bayesian-estimation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "naive-bayes",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 467,
+   "sha256": "636b103204b8f27862e97211c5e05d7754e16490c978fadef858442d545005b6",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "SVM",
+   "f": "svm.md",
+   "s": "svm",
+   "src": [
+    {
+     "title": "scikit-learn: Support Vector Machines",
+     "url": "https://scikit-learn.org/stable/modules/svm.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "logistic-regression",
+    "convex-optimization"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "svm",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 723,
+   "sha256": "34e89f7bb110e2d044ed1d40b73cffc43b5c4ceb73aff08bbee1e69d957c30a8",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Objective và dự đoán đa lớp",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Random Forest",
+   "f": "random-forest.md",
+   "s": "random-forest",
+   "src": [
+    {
+     "title": "scikit-learn: Ensembles (Random Forests)",
+     "url": "https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "decision-tree"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "random-forest",
+   "course": "ml-fundamentals",
+   "module": "Phân loại",
+   "words": 584,
+   "sha256": "379c20ab18a428a8f44a032c2424993039a249e9646bf939ab5fa122b71567d6",
+   "headings": [
+    "Vấn đề thực tế",
+    "Trực giác và công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "K-Means",
+   "f": "k-means.md",
+   "s": "k-means",
+   "src": [
+    {
+     "title": "scikit-learn User Guide: Clustering (K-Means)",
+     "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "vectors-matrices"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "k-means",
+   "course": "ml-fundamentals",
+   "module": "Học không giám sát và giảm chiều",
+   "words": 617,
+   "sha256": "6028ce859b076a97946203435c0b79bfefab0d95daa0aec277efc846fd85ce80",
+   "headings": [
+    "Vấn đề thực tế",
+    "Trực giác",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "PCA",
+   "f": "pca.md",
+   "s": "pca",
+   "src": [
+    {
+     "title": "scikit-learn: PCA",
+     "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "linear-algebra-decompositions",
+    "data-preparation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "pca",
+   "course": "ml-fundamentals",
+   "module": "Học không giám sát và giảm chiều",
+   "words": 450,
+   "sha256": "afa769e57415daf1548adce72d1c058842171ea1b0e6fcf4fcfc0d1d5d181ded",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "lda",
+   "t": "Linear Discriminant Analysis: giảm chiều có giám sát",
+   "f": "lda.md",
+   "src": [
+    {
+     "title": "Linear Discriminant Analysis: giảm chiều có giám sát — tài liệu đối chiếu",
+     "url": "https://machinelearningcoban.com/2017/06/30/lda/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "pca",
+    "bayesian-estimation"
+   ],
+   "minutes": 50,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "lda",
+   "course": "ml-fundamentals",
+   "module": "Học không giám sát và giảm chiều",
+   "words": 643,
+   "sha256": "9ec536911de63752481de4111262617a8fcc0884196c3d85a45cfd08648ce98f",
+   "headings": [
+    "Phương sai lớn không nhất thiết giúp phân lớp",
+    "Fisher criterion và giới hạn số chiều",
+    "LDA như classifier xác suất",
+    "Thực hành CPU trên Iris",
+    "Lỗi thường gặp và trường hợp sử dụng",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Gaussian Mixture Models",
+   "f": "gmm.md",
+   "s": "gmm",
+   "src": [
+    {
+     "title": "scikit-learn: Gaussian mixture models",
+     "url": "https://scikit-learn.org/stable/modules/mixture.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "k-means",
+    "bayesian-estimation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "gmm",
+   "course": "ml-fundamentals",
+   "module": "Học không giám sát và giảm chiều",
+   "words": 553,
+   "sha256": "1e8308a6f793e345421ad6bccc95c8ca41347b4c0f6b536e918ca33da348c493",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Anomaly Detection",
+   "f": "anomaly-detection.md",
+   "s": "anomaly-detection",
+   "src": [
+    {
+     "title": "scikit-learn: Novelty and Outlier Detection",
+     "url": "https://scikit-learn.org/stable/modules/outlier_detection.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "pca",
+    "statistics"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "anomaly-detection",
+   "course": "ml-fundamentals",
+   "module": "Học không giám sát và giảm chiều",
+   "words": 538,
+   "sha256": "f5aac151850eaabdbf60c252c0659ec07d1e0e074f2b922aba2e402085670fda",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Các hướng khác",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Cross-validation",
+   "f": "cross-validation.md",
+   "s": "cross-validation",
+   "src": [
+    {
+     "title": "scikit-learn: Cross-validation",
+     "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "data-preparation",
+    "metrics",
+    "linear-regression"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "cross-validation",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 613,
+   "sha256": "b82fec07f23d19b7a7f8b85928edc229fed65b752e9986522b6a67dc8ee7d002",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Feature Engineering và Data Leakage",
+   "f": "feature-leakage.md",
+   "s": "feature-leakage",
+   "src": [
+    {
+     "title": "scikit-learn: Common pitfalls (data leakage)",
+     "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "cross-validation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "feature-leakage",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 723,
+   "sha256": "23cfc7e360f491b507cc30a4b0e48482d4972e0fea51189d42a5e1ec816b762a",
+   "headings": [
+    "Vấn đề thực tế",
+    "Nguyên tắc",
+    "Ví dụ từng bước (thí nghiệm trên dữ liệu nhiễu thuần túy)",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Feature Engineering ngắn gọn",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "tabular-pipeline",
+   "t": "Thực hành dữ liệu bảng: EDA, encoding và pipeline",
+   "f": "tabular-pipeline.md",
+   "src": [
+    {
+     "title": "Thực hành dữ liệu bảng: EDA, encoding và pipeline — tài liệu đối chiếu",
+     "url": "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "feature-leakage",
+    "logistic-regression"
+   ],
+   "minutes": 50,
+   "kind": "practice",
+   "level": "Intermediate",
+   "id": "tabular-pipeline",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 798,
+   "sha256": "14d295896eb6412e61b93e0a7c71f9b36711c7f6de08eae979a38e8748a4f726",
+   "headings": [
+    "Bài toán và hợp đồng dữ liệu",
+    "Quy trình có thể tái lập",
+    "Thực hành và kết quả quan sát",
+    "Giả định, ưu nhược điểm và lỗi thường gặp",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Recommendation Systems",
+   "f": "recommendation.md",
+   "s": "recommendation",
+   "src": [
+    {
+     "title": "Machine Learning cơ bản",
+     "url": "https://machinelearningcoban.com/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "knn",
+    "linear-algebra-decompositions"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "recommendation",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 774,
+   "sha256": "c71e8a0dfe88d97b885d8ff2fde0213a43f6be9c9427422878d839ddc3df5a2e",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Content-based: từ đặc trưng tới điểm gợi ý",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Hyperparameter Tuning",
+   "f": "hyperparameter-tuning.md",
+   "s": "hyperparameter-tuning",
+   "src": [
+    {
+     "title": "scikit-learn: Tuning hyper-parameters",
+     "url": "https://scikit-learn.org/stable/modules/grid_search.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "cross-validation",
+    "svm"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "hyperparameter-tuning",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 551,
+   "sha256": "05cb58664c9965ba1ceeda1642ba9cb82a15eef174d8f18108f76951261f7a7e",
+   "headings": [
+    "Vấn đề thực tế",
+    "Phương pháp",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Quy trình dự án Machine Learning",
+   "f": "ml-project-workflow.md",
+   "s": "ml-project-workflow",
+   "src": [
+    {
+     "title": "scikit-learn: Pipelines and composite estimators",
+     "url": "https://scikit-learn.org/stable/modules/compose.html"
+    },
+    {
+     "title": "scikit-learn: Model persistence",
+     "url": "https://scikit-learn.org/stable/model_persistence.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "tabular-pipeline",
+    "hyperparameter-tuning"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "ml-project-workflow",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 574,
+   "sha256": "63f12e4d683986844056feaeb9b040a9962b125cfe8867a37604d423578a9a9b",
+   "headings": [
+    "Các bước",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Lưu mô hình và triển khai",
+   "f": "model-deployment.md",
+   "s": "model-deployment",
+   "src": [
+    {
+     "title": "scikit-learn: Model persistence",
+     "url": "https://scikit-learn.org/stable/model_persistence.html"
+    },
+    {
+     "title": "FastAPI documentation",
+     "url": "https://fastapi.tiangolo.com/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "ml-project-workflow"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "model-deployment",
+   "course": "ml-fundamentals",
+   "module": "Đánh giá và ứng dụng",
+   "words": 1004,
+   "sha256": "50ce20ff4e6fcb7e694e752892d819826fc846e13b525e1bff33e294d105f338",
+   "headings": [
+    "Vấn đề thực tế",
+    "Nguyên tắc",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo",
+    "Serving CPU hoàn chỉnh để kiểm tra hợp đồng"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Perceptron",
+   "f": "perceptron.md",
+   "s": "perceptron",
+   "src": [
+    {
+     "title": "scikit-learn: Perceptron",
+     "url": "https://scikit-learn.org/stable/modules/linear_model.html#perceptron"
+    },
+    {
+     "title": "Dive into Deep Learning: Multilayer Perceptrons",
+     "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "logistic-regression"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Beginner",
+   "id": "perceptron",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 475,
+   "sha256": "64d62c65f770551d9d5170d9c118256c5ec936f99f892373fdad9d49b8c6bcea",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế, so sánh",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Activation Functions",
+   "f": "activations.md",
+   "s": "activations",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Multilayer Perceptrons",
+     "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+    },
+    {
+     "title": "Stanford CS231n: Neural Networks",
+     "url": "https://cs231n.github.io/neural-networks-1/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "perceptron",
+    "derivatives"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "activations",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 550,
+   "sha256": "4606578aaec7aad519086c715119c1c14133cb2bf4e33dd1b2b8fa5d662265f4",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Cách chọn",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "MLP",
+   "f": "mlp.md",
+   "s": "mlp",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Multilayer Perceptrons",
+     "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "perceptron",
+    "activations"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "mlp",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 465,
+   "sha256": "86b31fc537be98dee99a8ffa652314fef9550f0f0d129c059e01fa07ed7f29f5",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Backpropagation",
+   "f": "backpropagation.md",
+   "s": "backpropagation",
+   "src": [
+    {
+     "title": "Stanford CS231n: Backpropagation",
+     "url": "https://cs231n.github.io/optimization-2/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "mlp",
+    "derivatives"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "backpropagation",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 469,
+   "sha256": "27f4ee978cafa3fa057967d939cb21263d5e8a9b02a1e455cba41f7a8fe4d772",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Automatic Differentiation (Autograd)",
+   "f": "autograd.md",
+   "s": "autograd",
+   "src": [
+    {
+     "title": "PyTorch Tutorials: Autograd",
+     "url": "https://docs.pytorch.org/tutorials/"
+    },
+    {
+     "title": "Stanford CS231n: Backpropagation",
+     "url": "https://cs231n.github.io/optimization-2/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "backpropagation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "autograd",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 686,
+   "sha256": "2828c0394d912529adc9636c34cacdbb83ea208b462d613b0d49888f8b35b64b",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức và ý tưởng",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Optimizers",
+   "f": "optimizers.md",
+   "s": "optimizers",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Optimization Algorithms",
+     "url": "https://d2l.ai/chapter_optimization/index.html"
+    },
+    {
+     "title": "Adam: A Method for Stochastic Optimization (Kingma và Ba)",
+     "url": "https://arxiv.org/abs/1412.6980"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "gradient-descent",
+    "backpropagation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "optimizers",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 590,
+   "sha256": "3e31d20f483b3e7e3fbc5efeb8c86c18651ae6feaf0f6fdd4d354110f4a3ad98",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "training-diagnostics",
+   "t": "Chẩn đoán huấn luyện: khởi tạo, gradient và normalization",
+   "f": "training-diagnostics.md",
+   "src": [
+    {
+     "title": "Chẩn đoán huấn luyện: khởi tạo, gradient và normalization — tài liệu đối chiếu",
+     "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "autograd",
+    "optimizers"
+   ],
+   "minutes": 50,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "training-diagnostics",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 798,
+   "sha256": "abfc43aa063a5a1b989f4b8817a9a90979d95b0f11fa34b556842e4e4d15e014",
+   "headings": [
+    "Bắt đầu từ hợp đồng, không bắt đầu từ mạng lớn",
+    "Khởi tạo và gradient",
+    "BatchNorm và LayerNorm",
+    "Kiểm tra interface chạy được, không phải benchmark",
+    "Checklist thí nghiệm",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Regularization và Learning Rate Scheduling",
+   "f": "dl-regularization.md",
+   "s": "dl-regularization",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Multilayer Perceptrons (Dropout, weight decay)",
+     "url": "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+    },
+    {
+     "title": "Stanford CS231n: Neural Networks Part 3",
+     "url": "https://cs231n.github.io/neural-networks-3/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "training-diagnostics",
+    "optimizers"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "dl-regularization",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 750,
+   "sha256": "15e14f53c3f9ede54a1afae5b9694c129c988d05dc0789708c42d0301c59484d",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức và ý tưởng",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Thực hành PyTorch: MLP và CNN",
+   "f": "pytorch-practice.md",
+   "s": "pytorch-practice",
+   "src": [
+    {
+     "title": "PyTorch Tutorials",
+     "url": "https://docs.pytorch.org/tutorials/"
+    }
+   ],
+   "tier": "Core",
+   "prerequisites": [
+    "dl-regularization",
+    "autograd"
+   ],
+   "minutes": 35,
+   "kind": "practice",
+   "level": "Intermediate",
+   "id": "pytorch-practice",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 554,
+   "sha256": "19f233b3cf89095bc07cf26a2f44e9dcc5a1e5c2923bc6c2dbcf2f3ccb3d49dd",
+   "headings": [
+    "Vòng lặp huấn luyện",
+    "Ví dụ tính shape cho CNN (ảnh xám 28×28)",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Embeddings và biểu diễn văn bản",
+   "f": "embeddings.md",
+   "s": "embeddings",
+   "src": [
+    {
+     "title": "scikit-learn: Text feature extraction",
+     "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "vectors-matrices",
+    "knn"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "embeddings",
+   "course": "deep-learning",
+   "module": "Nền tảng",
+   "words": 599,
+   "sha256": "45f148a4b0dabd361721811e52ee44fb05a67d82931e2cb0eb44143f43c02dbc",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "CNN",
+   "f": "cnn.md",
+   "s": "cnn",
+   "src": [
+    {
+     "title": "Stanford CS231n: Convolutional Networks",
+     "url": "https://cs231n.github.io/convolutional-networks/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "mlp",
+    "training-diagnostics"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "cnn",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 512,
+   "sha256": "57d5514dde730ab52a31b2a06d4f4d9d1e51553ec32c06efcd12e615016ef333",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Thực hành CNN: bộ lọc tích chập làm đặc trưng",
+   "f": "cnn-practice.md",
+   "s": "cnn-practice",
+   "src": [
+    {
+     "title": "Stanford CS231n: Convolutional Networks",
+     "url": "https://cs231n.github.io/convolutional-networks/"
+    },
+    {
+     "title": "scikit-learn: Digits dataset",
+     "url": "https://scikit-learn.org/stable/datasets/toy_dataset.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "cnn",
+    "logistic-regression"
+   ],
+   "minutes": 35,
+   "kind": "practice",
+   "level": "Intermediate",
+   "id": "cnn-practice",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 732,
+   "sha256": "cb3bb835f54b0a7484303c40cb792d35f215e56fa7a40c62f20acae2b08d474b",
+   "headings": [
+    "Vấn đề thực tế",
+    "Quy trình",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "cnn-cpu",
+   "t": "Thực hành CNN thật trên CPU với Digits",
+   "f": "cnn-cpu.md",
+   "src": [
+    {
+     "title": "Thực hành CNN thật trên CPU với Digits — tài liệu đối chiếu",
+     "url": "https://cs231n.stanford.edu/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "cnn",
+    "pytorch-practice"
+   ],
+   "minutes": 50,
+   "kind": "practice",
+   "level": "Intermediate",
+   "id": "cnn-cpu",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 757,
+   "sha256": "d32a19826683fd8cac891a2f58a4093949b707ce9429f4cd4481a8e6b67f8e44",
+   "headings": [
+    "Bài này khác bộ lọc chọn tay thế nào?",
+    "Dữ liệu, kiến trúc và phép đếm",
+    "Quy trình thực nghiệm CPU",
+    "Kết quả thực đo và cách diễn giải",
+    "Lỗi thường gặp và giới hạn",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "RNN và LSTM",
+   "f": "rnn-lstm.md",
+   "s": "rnn-lstm",
+   "src": [
+    {
+     "title": "Dive into Deep Learning: Recurrent Neural Networks",
+     "url": "https://d2l.ai/chapter_recurrent-neural-networks/index.html"
+    },
+    {
+     "title": "Dive into Deep Learning: Modern RNNs",
+     "url": "https://d2l.ai/chapter_recurrent-modern/index.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "mlp",
+    "backpropagation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "rnn-lstm",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 501,
+   "sha256": "fa690502991beb8d8c3599c74aa25cb609e5ec7f16fc89fef135669f8131f2f9",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "sequence-models-cpu",
+   "t": "Thực hành GRU: dự báo chuỗi trên CPU",
+   "f": "sequence-models-cpu.md",
+   "src": [
+    {
+     "title": "Thực hành GRU: dự báo chuỗi trên CPU — tài liệu đối chiếu",
+     "url": "https://d2l.ai/chapter_recurrent-modern/gru.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "rnn-lstm",
+    "pytorch-practice"
+   ],
+   "minutes": 50,
+   "kind": "practice",
+   "level": "Intermediate",
+   "id": "sequence-models-cpu",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 722,
+   "sha256": "9a8a72906f61a9f87a8e3a44f04c4313da0774e5d210b28d0ea9960d86db50d0",
+   "headings": [
+    "Bài toán và dữ liệu tự sinh",
+    "GRU và BPTT trong code",
+    "Chạy thí nghiệm hoàn chỉnh",
+    "Kết quả và giới hạn",
+    "Lỗi thường gặp",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Attention và Transformer",
+   "f": "attention-transformer.md",
+   "s": "attention-transformer",
+   "src": [
+    {
+     "title": "Attention Is All You Need (Vaswani và cộng sự)",
+     "url": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+     "title": "Dive into Deep Learning: Attention and Transformers",
+     "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "softmax-regression",
+    "mlp"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Advanced",
+   "id": "attention-transformer",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 526,
+   "sha256": "763ac4568c50a3c0db942317969f4046d178b91126cca1e7eed5b43a1e160948",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Kiến trúc Transformer",
+   "f": "transformer-architecture.md",
+   "s": "transformer-architecture",
+   "src": [
+    {
+     "title": "Attention Is All You Need (Vaswani và cộng sự)",
+     "url": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+     "title": "Dive into Deep Learning: Transformer",
+     "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+    }
+   ],
+   "tier": "Advanced",
+   "prerequisites": [
+    "attention-transformer",
+    "embeddings",
+    "training-diagnostics"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Advanced",
+   "id": "transformer-architecture",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 1040,
+   "sha256": "5e564ea8c3f1045d51ae16e1a95c6ee7a665decbd28d0cd136d01647ea32a941",
+   "headings": [
+    "Vấn đề thực tế",
+    "Các thành phần",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo",
+    "Kiểm tra encoder, position, padding và causal mask bằng PyTorch",
+    "Kiểm tra decoder và cross-attention trên CPU"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Autoencoder",
+   "f": "autoencoder.md",
+   "s": "autoencoder",
+   "src": [
+    {
+     "title": "Dive into Deep Learning",
+     "url": "https://d2l.ai/"
+    },
+    {
+     "title": "scikit-learn: PCA",
+     "url": "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "pca",
+    "mlp",
+    "backpropagation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Advanced",
+   "id": "autoencoder",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 793,
+   "sha256": "5da8c5671d766f497da55117a03568143cefd9b7deb69c32b68dd716d295bd9b",
+   "headings": [
+    "Vấn đề thực tế",
+    "Công thức",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Transfer Learning",
+   "f": "transfer-learning.md",
+   "s": "transfer-learning",
+   "src": [
+    {
+     "title": "Stanford CS231n: Transfer Learning",
+     "url": "https://cs231n.github.io/transfer-learning/"
+    },
+    {
+     "title": "PyTorch Tutorials: Transfer Learning",
+     "url": "https://docs.pytorch.org/tutorials/"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "cnn-cpu",
+    "optimizers"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Advanced",
+   "id": "transfer-learning",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 842,
+   "sha256": "3a4b1ce7e78e487cd02f41c630abec5ec755eb2dc2a3678cf499688fbe6f60f7",
+   "headings": [
+    "Vấn đề thực tế",
+    "Hai chiến lược",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo",
+    "Thực nghiệm feature extraction và fine-tuning trên CPU"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "GAN, VAE và Diffusion",
+   "f": "gan-vae-diffusion.md",
+   "s": "gan-vae-diffusion",
+   "src": [
+    {
+     "title": "Generative Adversarial Nets (Goodfellow và cộng sự)",
+     "url": "https://arxiv.org/abs/1406.2661"
+    },
+    {
+     "title": "Auto-Encoding Variational Bayes (Kingma và Welling)",
+     "url": "https://arxiv.org/abs/1312.6114"
+    },
+    {
+     "title": "Denoising Diffusion Probabilistic Models (Ho và cộng sự)",
+     "url": "https://arxiv.org/abs/2006.11239"
+    }
+   ],
+   "tier": "Advanced",
+   "prerequisites": [
+    "autoencoder",
+    "bayesian-estimation"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Advanced",
+   "id": "gan-vae-diffusion",
+   "course": "deep-learning",
+   "module": "Kiến trúc và thực nghiệm",
+   "words": 585,
+   "sha256": "2c30aad3da524d66f06b36fca943b544712da2744ce2b7479ef5296ff4cf2640",
+   "headings": [
+    "Vấn đề thực tế",
+    "Ba hướng tiếp cận",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Ưu điểm, hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "t": "Phân loại cảm xúc văn bản",
+   "f": "text-classification.md",
+   "s": "text-classification",
+   "src": [
+    {
+     "title": "scikit-learn: Working with text data",
+     "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+    }
+   ],
+   "tier": "Intermediate",
+   "prerequisites": [
+    "embeddings",
+    "logistic-regression"
+   ],
+   "minutes": 35,
+   "kind": "lesson",
+   "level": "Intermediate",
+   "id": "text-classification",
+   "course": "deep-learning",
+   "module": "Văn bản và biểu diễn ứng dụng",
+   "words": 713,
+   "sha256": "68c90cc070ac2d0b82a81590392cf84dee2522a9889ea17be799f84eb462fa95",
+   "headings": [
+    "Vấn đề thực tế",
+    "Ví dụ từng bước",
+    "Code và cách chạy",
+    "Lỗi thường gặp",
+    "Hạn chế",
+    "Bài tập",
+    "Tóm tắt",
+    "Điều kiện áp dụng và kiểm tra kết luận",
+    "Đáp án và tiêu chí chấm",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 2,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  },
+  {
+   "s": "neural-recommendation",
+   "t": "Thực hành recommender với embedding học được",
+   "f": "neural-recommendation.md",
+   "src": [
+    {
+     "title": "Thực hành recommender với embedding học được — tài liệu đối chiếu",
+     "url": "https://machinelearningcoban.com/2017/05/31/matrixfactorization/"
+    }
+   ],
+   "tier": "Advanced",
+   "prerequisites": [
+    "embeddings",
+    "recommendation",
+    "optimizers"
+   ],
+   "minutes": 50,
+   "kind": "practice",
+   "level": "Advanced",
+   "id": "neural-recommendation",
+   "course": "deep-learning",
+   "module": "Văn bản và biểu diễn ứng dụng",
+   "words": 758,
+   "sha256": "43a215649ae151a41f582c6a74ea90f8b12337aee5eebbc2be8785f4de718bed",
+   "headings": [
+    "Từ bảng thưa tới tham số học được",
+    "Dữ liệu và split của lab",
+    "Chạy thực nghiệm",
+    "Kết quả thực đo",
+    "Cold start, ranking và representation",
+    "Bài tập tự đánh giá",
+    "Đáp án và tiêu chí chấm",
+    "Tổng kết",
+    "Nguồn tham khảo"
+   ],
+   "quiz_questions": 3,
+   "has_objectives": true,
+   "has_exercise_solutions": true,
+   "http_status_after": 200,
+   "title_in_html_after": true,
+   "visibility_scope": "fresh isolated E2E database; all routes asserted in e2e/curriculum.spec.ts, not production"
+  }
+ ]
+}

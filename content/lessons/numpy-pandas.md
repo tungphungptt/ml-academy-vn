@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** Python cơ bản.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Python cho ML.
 **Mục tiêu:** dùng NumPy (broadcasting, chuẩn hóa), pandas (groupby) và Matplotlib để làm việc với dữ liệu.
 
 ## Vấn đề thực tế
@@ -43,3 +43,16 @@ Vector hóa nhanh và ngắn gọn. Dữ liệu lớn hơn RAM cần công cụ 
 
 ## Tóm tắt
 Broadcasting, chuẩn hóa và groupby là ba công cụ cơ bản nhất khi chuẩn bị dữ liệu.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Broadcasting căn shape từ bên phải: mỗi cặp chiều phải bằng nhau hoặc một chiều bằng 1. `(3,)` không tự là vector cột `(3,1)`. Trong dữ liệu bảng, index và thứ tự cột phải nhất quán giữa fit và predict. Khi chuẩn hóa, cột hằng có std=0 cần được xử lý; không chia mù quáng. Với Matplotlib trong server/CI, dùng backend không GUI, lưu figure rồi đóng để không giữ bộ nhớ; biểu đồ EDA dùng train và không thay thế metric đánh giá.
+
+## Đáp án và tiêu chí chấm
+1. Với (1,3,5), mean=3, std tổng thể=sqrt(8/3), nên z≈(-1.2247,0,1.2247). Nếu dùng std mẫu thì kết quả khác: phải ghi ddof. (2 điểm).
+2. Một ví dụ hợp lệ: nhóm a có 1,3,5 cho mean=3; nhóm b có 2,4,6 cho mean=4. Kiểm tra cả index nhóm và giá trị. (3 điểm).
+3. Viết fit trả mean/std train, transform dùng lại chúng cho test. Kiểm tra std=0, số cột và giá trị thiếu; không fit lại khi transform test. (5 điểm).
+
+## Nguồn tham khảo
+- [NumPy: Absolute Beginners Guide](https://numpy.org/doc/stable/user/absolute_beginners.html).
+- [pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html).
+- [Matplotlib User Guide](https://matplotlib.org/stable/users/index.html).

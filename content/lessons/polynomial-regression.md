@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** Linear Regression, Bias-Variance.
+**Cấp độ:** Beginner · **Tầng:** Intermediate · **Tiên quyết:** Ridge và Lasso.
 **Mục tiêu:** hiểu cách mô hình tuyến tính khớp được đường cong bằng đặc trưng đa thức.
 
 ## Vấn đề thực tế
@@ -29,3 +29,14 @@ Chọn bậc quá cao với ít dữ liệu; quên chuẩn hóa $x$ (lũy thừa
 
 ## Tóm tắt
 Hồi quy đa thức là hồi quy tuyến tính trên đặc trưng lũy thừa; bậc là siêu tham số cần chọn bằng validation.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Tăng bậc làm không gian đặc trưng rộng hơn và có thể tạo cột gần phụ thuộc; thuật toán vẫn tuyến tính theo hệ số. Dùng PolynomialFeatures(include_bias=False) khi estimator đã fit intercept để tránh hai cột hằng. Pipeline scaler/expansion/regularization phải nằm trong CV. Không extrapolate đa thức bậc cao xa miền fit rồi xem đồ thị mượt là bằng chứng vật lý. Bậc, alpha và cách scale là siêu tham số; nếu chọn cùng lúc thì cùng được chọn trên train/validation, không dùng test.
+
+## Đáp án và tiêu chí chấm
+1. Với x=3, vector bậc 4 theo thứ tự tăng là (1,3,9,27,81). (2 điểm).
+2. Một pipeline hợp lệ có expansion và scaler được fit trong fold rồi Ridge; báo rõ intercept/include_bias để tránh trùng cột 1. (3 điểm).
+3. Dùng GridSearchCV trên train cho bậc/alpha, cùng splitter. Test dùng cuối; khi dữ liệu có nhóm/thời gian cần splitter thích hợp. (5 điểm).
+
+## Nguồn tham khảo
+- [scikit-learn: Polynomial regression](https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions).

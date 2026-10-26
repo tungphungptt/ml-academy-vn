@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Kiến thức tiên quyết:** đạo hàm, Linear Regression.
+**Cấp độ:** Beginner · **Tầng:** Core · **Kiến thức tiên quyết:** đạo hàm, Linear Regression · **Tiên quyết:** Linear Regression, Loss Functions: MSE, MAE, Huber, Cross-Entropy, Đạo hàm và gradient.
 
 **Mục tiêu:** hiểu quy tắc cập nhật của Gradient Descent, vai trò của learning rate và khác biệt giữa Batch, SGD, Mini-batch.
 
@@ -48,3 +48,40 @@ Bài thực hành `Linear Regression` ở trang **Code Lab** (`labs/linear_regre
 
 ## Tóm tắt
 Gradient Descent lặp lại $\theta \leftarrow \theta-\eta\nabla L$. Learning rate quyết định tốc độ và độ ổn định.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Điều kiện khả vi không tự bảo đảm một learning rate bất kỳ làm loss giảm. Với gradient L-Lipschitz và giả định thích hợp, có các giới hạn bước ổn định; hàm không lồi không có bảo đảm cực tiểu toàn cục chung. SGD là gradient từ một mẫu; mini-batch lấy trung bình gradient trong batch và nên xáo trộn train theo epoch nếu giả định dữ liệu cho phép. Batch nhỏ không tự rẻ hơn cho cùng chất lượng, vì nhiều update/epoch hơn. Để so sánh, báo cả số update, số lượt duyệt dữ liệu, thời gian và loss; đừng chỉ so “epoch”. Lab hồi quy cũ có 3 điểm, nên batch size 8 trên chính dữ liệu đó chỉ là Batch GD, không minh họa mini-batch thật.
+
+## Đáp án và tiêu chí chấm
+1. Với η=0.25, hệ số mỗi bước là 0.5, nên θ1=2 và θ2=1. (2 điểm).
+2. Giữ dữ liệu/seed và tiêu chí dừng MSE<0.01, ghi số update lẫn epoch, phát hiện phân kỳ thay vì ép score hợp lệ. (3 điểm).
+3. Tạo ít nhất 64 điểm train; batch size 8 cho 8 update/epoch. Gradient dùng mean của batch, không chia N toàn tập thêm một lần. Shuffle train và vẽ loss sau cùng số update hoặc báo rõ trục epoch khác số update. (5 điểm).
+
+## Nguồn tham khảo
+- [Stanford CS231n: Optimization](https://cs231n.github.io/optimization-1/).
+- [scikit-learn User Guide: SGD](https://scikit-learn.org/stable/modules/sgd.html).
+
+## Thực nghiệm Batch, SGD và mini-batch từ đầu
+Đoạn NumPy này dùng 64 mẫu tự sinh, cập nhật mean gradient trong từng batch. Mỗi cấu hình chạy 25 epoch nhưng **không có cùng số update**, nên đây là minh họa cơ chế, không phải benchmark tốc độ công bằng:
+```python
+import numpy as np
+rng = np.random.default_rng(71)
+x = rng.normal(size=64); y = 2*x + .1*rng.normal(size=64)
+result = []
+for batch_size in (1, 8, 64):
+    shuffle = np.random.default_rng(72)
+    w, b, steps = 0., 0., 0
+    for epoch in range(25):
+        ids = shuffle.permutation(len(x))
+        for start in range(0,len(x),batch_size):
+            pick = ids[start:start+batch_size]
+            error = w*x[pick]+b-y[pick]
+            w -= .03 * 2*np.mean(error*x[pick])
+            b -= .03 * 2*np.mean(error)
+            steps += 1
+    mse = float(np.mean((w*x+b-y)**2))
+    assert np.isfinite(mse) and mse < np.mean(y**2)
+    result.append((batch_size, steps, round(mse,4)))
+print(result)
+```
+Kết quả kỳ vọng (đã chạy CPU): `[(1, 1600, 0.0071), (8, 200, 0.0071), (64, 25, 0.3715)]`. Bộ ba là batch size, số update và MSE train. Cùng 25 epoch nhưng số update khác nhau; khi so sánh convergence cần thêm budget update/time và validation, không chọn batch size bằng test.

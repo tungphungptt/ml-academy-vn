@@ -1,1 +1,32 @@
-[{"prompt":"Với bốn sai số (1,1,1,10), loss nào bị ngoại lai chi phối mạnh hơn?","options":["MSE","MAE","Cả hai như nhau"],"correct":0,"explanation":"MSE bình phương nên 10² = 100 áp đảo; MAE chỉ cộng 10."},{"prompt":"BCE khi y=0 và p=0.8 xấp xỉ bao nhiêu?","options":["1.6094","0.2231","0"],"correct":0,"explanation":"−ln(1−0.8) = −ln 0.2 ≈ 1.6094."}]
+[
+ {
+  "prompt": "Với bốn sai số (1,1,1,10), loss nào bị ngoại lai chi phối mạnh hơn?",
+  "options": [
+   "MSE",
+   "MAE",
+   "Cả hai như nhau"
+  ],
+  "correct": 0,
+  "explanation": "MSE bình phương nên 10² = 100 áp đảo; MAE chỉ cộng 10."
+ },
+ {
+  "prompt": "BCE khi y=0 và p=0.8 xấp xỉ bao nhiêu?",
+  "options": [
+   "1.6094",
+   "0.2231",
+   "0"
+  ],
+  "correct": 0,
+  "explanation": "−ln(1−0.8) = −ln 0.2 ≈ 1.6094."
+ },
+ {
+  "prompt": "Dùng MSE trên probability cho classification có bị toán học cấm không?",
+  "options": [
+   "Có, MSE không định nghĩa được với nhãn 0/1",
+   "Không; BCE/CE thường có likelihood và đặc tính tối ưu phù hợp hơn",
+   "MSE luôn tối ưu tốt hơn BCE"
+  ],
+  "correct": 1,
+  "explanation": "Squared probability error được định nghĩa; so với Bernoulli CE, gradient và tính lồi theo logits/weights khác nhau. Không được biến khuyến nghị loss thành lệnh cấm toán học."
+ }
+]

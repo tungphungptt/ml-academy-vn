@@ -1,1 +1,22 @@
-[{"prompt":"Vì sao Dropout 'inverted' chia đầu ra cho p?","options":["Giữ kỳ vọng của đầu ra không đổi","Để tăng learning rate","Để tắt thêm neuron"],"correct":0,"explanation":"Neuron được giữ với xác suất p nên cần nhân 1/p."},{"prompt":"Early stopping dựa trên loss của tập nào?","options":["Validation","Test","Train"],"correct":0,"explanation":"Dùng test để dừng sẽ làm điểm cuối bị lạc quan."}]
+[
+ {
+  "prompt": "Vì sao inverted dropout chia đầu ra train cho p_keep (xác suất giữ)?",
+  "options": [
+   "Giữ kỳ vọng của đầu ra không đổi",
+   "Để tăng learning rate",
+   "Để tắt thêm neuron"
+  ],
+  "correct": 0,
+  "explanation": "Giữ với xác suất p_keep rồi nhân 1/p_keep để bảo toàn kỳ vọng. PyTorch nn.Dropout(p) nhận xác suất bỏ, bằng 1−p_keep."
+ },
+ {
+  "prompt": "Early stopping dựa trên loss của tập nào?",
+  "options": [
+   "Validation",
+   "Test",
+   "Train"
+  ],
+  "correct": 0,
+  "explanation": "Dùng test để dừng sẽ làm điểm cuối bị lạc quan."
+ }
+]

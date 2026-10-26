@@ -1,4 +1,4 @@
-**Cấp độ:** Intermediate · **Tiên quyết:** CNN, Logistic Regression.
+**Cấp độ:** Intermediate · **Tầng:** Intermediate · **Tiên quyết:** CNN, Logistic Regression.
 **Mục tiêu:** dùng bộ lọc tích chập, ReLU và max pooling như một bước trích xuất đặc trưng trên ảnh chữ số thật, rồi so sánh với việc dùng thẳng điểm ảnh.
 
 ## Vấn đề thực tế
@@ -36,10 +36,22 @@ Cách đọc: 18 đặc trưng tích chập + pooling giữ được độ chín
 Kết luận "tích chập không có ích" từ một thí nghiệm nhỏ; quên chia ảnh cho 16 (thang đo 0-16 của Digits); nhầm cross-correlation (không lật kernel) với tích chập toán học; rò rỉ dữ liệu khi chuẩn hóa trước khi chia.
 
 ## Hạn chế
-Đây không phải mạng CNN được huấn luyện: không có lớp học được, không có huấn luyện nhiều lớp. Kết quả chỉ trên một lần chia train/test cố định.
+Đây không phải mạng CNN được huấn luyện: bộ lọc tích chập không học được và không có backpropagation qua nhiều lớp. Bộ phân loại Logistic Regression phía sau vẫn học các hệ số từ train. Kết quả chỉ trên một lần chia train/test cố định.
 
 ## Bài tập
 1. (Dễ) Tính kích thước đầu ra nếu dùng kernel $3\times3$ trên ảnh $8\times8$. 2. (Vừa) Thêm hai kernel đường chéo và đo lại accuracy. 3. (Khó) Thay Logistic Regression bằng một CNN nhỏ trong PyTorch và so sánh.
 
 ## Tóm tắt
 Tích chập, ReLU và pooling biến ảnh thành vector đặc trưng gọn; bộ lọc học được mới là sức mạnh của CNN.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Bộ lọc cố định không được update nên “CNN feature extractor” này chỉ là một phép biến đổi xác định cộng Logistic Regression. Phép nhân/stride/pooling cần kiểm tra shape, không suy loss theo filter vì filter không nằm trong optimizer. Accuracy .889/.97 của bài dùng split 70/30 seed 0, còn CNN CPU dùng split khác: không so trực tiếp .889 với .95 để tuyên bố CNN thắng. Muốn so ba cách, giữ cùng tập train/validation/test và cùng quy trình chọn cấu hình. Loss thấp hay nén nhiều không tự đồng nghĩa feature tốt cho mọi nhãn.
+
+## Đáp án và tiêu chí chấm
+1. Kernel 3×3, không padding/stride1 trên 8×8 cho 6×6. (2 điểm).
+2. Thêm kernel đường chéo làm số feature tăng; báo dimension, metric validation và cost trên cùng split, không chọn kernel dựa vào test. (3 điểm).
+3. Dùng lab CNN CPU làm xuất phát, giữ protocol của thí nghiệm so sánh, huấn luyện filter và restore checkpoint theo validation. Không chỉ thay classifier rồi gọi filter đã được học. (5 điểm).
+
+## Nguồn tham khảo
+- [Stanford CS231n: Convolutional Networks](https://cs231n.github.io/convolutional-networks/).
+- [scikit-learn: Digits dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html).

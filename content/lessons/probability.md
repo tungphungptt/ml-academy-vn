@@ -1,4 +1,4 @@
-**Cấp độ:** Beginner · **Tiên quyết:** đại số THPT.
+**Cấp độ:** Beginner · **Tầng:** Core · **Tiên quyết:** Python cho ML.
 **Mục tiêu:** hiểu kỳ vọng, phương sai, phân phối nhị thức và chuẩn, và trực giác Maximum Likelihood.
 
 ## Vấn đề thực tế
@@ -26,10 +26,21 @@ Kết quả kỳ vọng (đã chạy cục bộ): `[3.5, 2.9167, 0.375, 0.6827]`
 Nhầm xác suất $P(\text{dữ liệu}\mid\theta)$ với $P(\theta\mid\text{dữ liệu})$; nhầm phương sai mẫu ($N-1$) với phương sai tổng thể ($N$); tính tích nhiều xác suất nhỏ mà không dùng log.
 
 ## Ưu điểm, hạn chế
-MLE đơn giản, nhất quán khi dữ liệu nhiều; với dữ liệu ít có thể overfit (MAP thêm tiên nghiệm để khắc phục).
+MLE đơn giản và có thể nhất quán dưới các giả định nhận dạng, mô hình và lấy mẫu thích hợp; nhiều dữ liệu tự nó không đủ. Với mẫu nhỏ, MAP bổ sung prior để regularize nhưng prior không phù hợp có thể làm ước lượng kém hơn MLE.
 
 ## Bài tập
 1. (Dễ) Tính $\mathbb E[X]$ của đồng xu gán 1 cho ngửa, 0 cho sấp. 2. (Vừa) Tìm $\hat p$ cho 7 ngửa trong 10 lần. 3. (Khó) Suy ra MLE của trung bình phân phối chuẩn.
 
 ## Tóm tắt
 Kỳ vọng và phương sai tóm tắt phân phối; MLE chọn tham số làm dữ liệu "dễ xảy ra" nhất.
+
+## Điều kiện áp dụng và kiểm tra kết luận
+Một mô hình xác suất cần chỉ rõ biến ngẫu nhiên, miền giá trị và giả định lấy mẫu. Xác suất có điều kiện và độc lập khác nhau: X,Y độc lập không đồng nghĩa độc lập khi điều kiện thêm Z. Bayes kết hợp likelihood với prior; không đảo P(A|B) thành P(B|A). MLE có các bảo đảm tiệm cận dưới giả định nhận dạng/mô hình/lấy mẫu phù hợp, không tự nhất quán chỉ vì nhiều dữ liệu. [Bayes, MLE và MAP](/learn/bayesian-estimation) suy ra công thức và cho ví dụ base-rate.
+
+## Đáp án và tiêu chí chấm
+1. Với X∈{0,1} và P(X=1)=p, E[X]=0·(1−p)+1·p=p. (2 điểm).
+2. MLE bằng 7/10=0.7. Đây là ước lượng từ dữ liệu, không phải chứng minh xác suất thật đúng bằng 0.7. (3 điểm).
+3. Với Gaussian variance cố định dương, đạo hàm log-likelihood theo μ là Σ(x_i−μ)/σ². Cho bằng 0 suy ra μ bằng trung bình; cần nêu độc lập cùng phân phối và phân biệt μ thật với ước lượng. (5 điểm).
+
+## Nguồn tham khảo
+- [Dive into Deep Learning: Probability and Statistics](https://d2l.ai/chapter_preliminaries/probability.html).
