@@ -18,7 +18,8 @@
   "db:migrate": "prisma migrate deploy",
   "db:status": "prisma migrate status",
   "content:import": "tsx scripts/import-lessons.ts",
-  "db:dev": "prisma migrate dev"
+  "db:dev": "prisma migrate dev",
+  "deploy:local": "node scripts/deploy-local.mjs"
  },
  "dependencies": {
   "@prisma/client": "5.20.0",

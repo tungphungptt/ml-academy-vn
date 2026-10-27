@@ -1,3 +1,4 @@
+import Icon from "@/components/Icon";
 import { notFound } from "next/navigation"; import { readLesson } from "@/lib/lessonFiles";
 import { getLessons, getLabLinks } from "@/lib/content";
 import MarkdownContent from "@/components/MarkdownContent";
@@ -21,16 +22,18 @@ export default async function Lesson({ params: pendingParams }: { params: Promis
   const heads = md.split("\n").filter(x => x.startsWith("## ")).map(x => x.slice(3).trim()).map(t => ({ id: slugifyHeading(t), text: t }));
   const siblings = (await db.module.findMany({ where: { courseId: l.module.courseId }, orderBy: { order: "asc" }, include: { lessons: { orderBy: { order: "asc" } } } })).flatMap(m => m.lessons).filter(x => x.contentFile);
   const i = siblings.findIndex(x => x.id === l.id), prev = siblings[i - 1], next = siblings[i + 1];
-  return <><p className="breadcrumb"><a href="/courses">Khóa học</a><span aria-hidden="true"> / </span><a href={`/courses/${l.module.course.slug}`}>{l.module.course.title}</a><span aria-hidden="true"> / </span><span>{l.module.title}</span></p>
-    <ReadingProgress />{u && <StudyTimer lessonId={l.id} />}<div className="row2"><h1>{l.title}</h1><FocusToggle /></div><p><span className="badge">{l.level}</span><span className="badge">{l.minutes} phút</span><span className="badge">{l.module.title}</span></p>
-    <p className="mut reading-estimate">Khoảng {readingMinutes(md)} phút đọc ở 180 từ/phút, chưa gồm suy luận và thực hành. Thời lượng lộ trình ở trên dành cho cả buổi học.</p>
-    {meta?.tier && <p><span className="badge">{meta.tier}</span></p>}
-    {prerequisites.length > 0 && <nav aria-label="Kiến thức tiên quyết"><p>Nên học trước: {prerequisites.map((item, index) => <span key={item.id}>{index > 0 && " · "}<a href={`/learn/${item.slug}`}>{item.title}</a></span>)}</p></nav>}
-    <Toc items={heads} /><article className="lesson"><MarkdownContent>{md}</MarkdownContent></article>
-    {labs.length > 0 && <aside className="card" aria-label="Thực hành liên quan"><h2>Thử bằng code</h2><p>Đối chiếu công thức với một lần chạy thực tế. Mỗi lab có code, kết quả tham khảo và notebook tải về.</p>{labs.map(lab => <a key={lab.id} className="btn" href={`/lab?lab=${lab.id}`}>{lab.title} →</a>)}</aside>}
-    {l.quiz && qs.length > 0 && <QuizForm quizId={l.quiz.id} questions={qs} loggedIn={!!u} />}
-    <LessonActions lessonId={l.id} initialDone={done} loggedIn={!!u} />
-    <BookmarkNotes lessonId={l.id} loggedIn={!!u} bookmarked={bookmarked} notes={notes} />
-    <h2>Nguồn tham khảo</h2><ul>{l.sources.map(s => <li key={s.id}><a href={s.url}>{s.title}</a></li>)}</ul>
-    <div className="pager">{prev ? <a className="btn" href={`/learn/${prev.slug}`}>← {prev.title}</a> : <span />}{next ? <a className="btn primary" href={`/learn/${next.slug}`}>{next.title} →</a> : <span />}</div></>;
+  return <div className="reading-page"><ReadingProgress />{u && <StudyTimer lessonId={l.id} />}
+    <nav className="breadcrumb" aria-label="Đường dẫn bài học"><a href="/courses">Lộ trình</a><Icon name="chevron" /><a href={`/courses/${l.module.course.slug}`}>{l.module.course.title}</a><Icon name="chevron" /><span>{l.module.title}</span></nav>
+    <header className="reading-header"><div className="row2"><h1>{l.title}</h1><FocusToggle /></div><div className="reading-meta"><span className="badge">{l.level}</span>{meta?.tier && <span className="badge neutral">{meta.tier}</span>}<span><Icon name="clock" />{l.minutes} phút theo lộ trình</span><span>{l.module.title}</span><span>{i + 1}/{siblings.length} bài trong khóa học</span></div><p className="reading-estimate">Khoảng {readingMinutes(md)} phút đọc ở 180 từ/phút, chưa gồm suy luận và thực hành.</p></header>
+    <div className={`reading-layout${heads.length < 3 ? " without-toc" : ""}`}><Toc items={heads} /><div className="reading-body">
+      <article className="lesson"><MarkdownContent>{md}</MarkdownContent></article>
+      {prerequisites.length > 0 && <nav className="prerequisites" aria-label="Kiến thức tiên quyết"><p className="eyebrow">KẾT NỐI KIẾN THỨC</p><p>Nên học trước</p>{prerequisites.map(item => <a key={item.id} href={`/learn/${item.slug}`}>{item.title} <span aria-hidden="true">↗</span></a>)}</nav>}
+      {labs.length > 0 && <aside className="related-practice" aria-label="Thực hành liên quan"><h2>Đến lượt bạn kiểm chứng</h2><p>Đối chiếu công thức với code, kết quả tham khảo và notebook có thể tải về.</p><div className="actions">{labs.map(lab => <a key={lab.id} className="btn" href={`/lab?lab=${lab.id}`}><Icon name="code" />{lab.title}<Icon name="arrow" /></a>)}</div></aside>}
+      {l.quiz && qs.length > 0 && <QuizForm quizId={l.quiz.id} questions={qs} loggedIn={!!u} />}
+      <LessonActions lessonId={l.id} initialDone={done} loggedIn={!!u} />
+      <BookmarkNotes lessonId={l.id} loggedIn={!!u} bookmarked={bookmarked} notes={notes} />
+      <section className="lesson-sources"><h2>Nguồn tham khảo của bài</h2><ul>{l.sources.map(source => <li key={source.id}><a href={source.url}>{source.title}</a></li>)}</ul></section>
+      <nav className="pager" aria-label="Bài trước và bài tiếp theo">{prev ? <a href={`/learn/${prev.slug}`}><small>← Bài trước</small>{prev.title}</a> : <span />}{next ? <a href={`/learn/${next.slug}`}><small>Bài tiếp theo →</small>{next.title}</a> : <span />}</nav>
+    </div></div>
+  </div>;
 }

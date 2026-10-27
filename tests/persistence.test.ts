@@ -7,6 +7,7 @@ import { DatabaseSync } from "node:sqlite";
 import { spawnSync } from "node:child_process";
 import { PrismaClient } from "@prisma/client";
 import { inspectDatabase, prepareDatabase, sqlitePath } from "../scripts/prepare-db.mjs";
+import { checkLocalDatabase } from "../scripts/deploy-local.mjs";
 import { seedDatabase } from "../prisma/seed-data";
 import { importLegacyLessons, listLessonFiles, readLesson, writeLesson } from "../src/lib/lessonFiles";
 import { clearContentCache, getSearchDocs } from "../src/lib/content";
@@ -48,6 +49,7 @@ test("SQLite initialization, seed and restarts preserve edited content and user 
     assert.equal((await db.course.findUniqueOrThrow({ where: { id: course.id } })).published, false);
     assert.equal(await db.lesson.count(), 59);
     const before = fs.readFileSync(sqlitePath(url));
+    checkLocalDatabase(url);
     prepareDatabase(url);
     prepareDatabase(url);
     assert.deepEqual(fs.readFileSync(sqlitePath(url)), before, "restart must not write the database");
@@ -55,6 +57,7 @@ test("SQLite initialization, seed and restarts preserve edited content and user 
     assert.equal(await db.lessonProgress.count(), 1);
     assert.equal((await db.note.findFirstOrThrow()).body, "My note");
     fs.writeFileSync(`${sqlitePath(url)}.bootstrap-pending`, "simulated interruption after seed");
+    assert.throws(() => checkLocalDatabase(url), /bootstrap is incomplete/);
     assert.throws(() => prepareDatabase(url), /Incomplete initial setup/);
     prepareDatabase(url, true);
     assert.equal(fs.existsSync(`${sqlitePath(url)}.bootstrap-pending`), false);

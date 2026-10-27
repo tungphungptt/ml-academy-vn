@@ -2,7 +2,7 @@
 
 **PASS trong phạm vi nội dung và kiểm thử đã xác minh — 2026-10-26.** Chương trình được bổ sung thực chất, không chỉ thêm tiêu đề. Kiểm tra liên kết còn **BLOCKED 7/78** request bị hủy bởi môi trường; không tuyên bố tất cả nguồn/trọng số/dataset đã được xác minh. Các giới hạn học thuật và vận hành nằm cuối báo cáo.
 
-Baseline `5b88b1889456fecfa06fa2c4921f5abe15a72a24`, branch `main`. Tất cả thay đổi ở working tree; không commit/push/merge, không Render, không dịch vụ trả phí, không migration production. Database production không được truy cập.
+Baseline `5b88b1889456fecfa06fa2c4921f5abe15a72a24`, branch `main`. Tất cả thay đổi ở working tree; không commit/push/merge, không triển khai cloud, không dịch vụ trả phí, không migration production. Database production không được truy cập.
 
 ## Phương pháp và nguồn dữ liệu thực tế
 
@@ -167,7 +167,7 @@ Tầng học: **32 Core, 24 Intermediate, 3 Advanced**. `tier` là vai trò ưu 
 
 ## Tích hợp và bảo toàn dữ liệu
 
-Không thay Prisma schema, migration, authentication/session, dependency JavaScript, Dockerfile hoặc `render.yaml`. Final review thêm publication guard ở API quiz: hidden/missing quiz trả404; cấu trúc request/response cho quiz public giữ nguyên. Fresh bootstrap tạo đủ 59 bài/133 câu hỏi. Manual seed bây giờ reconcile thiếu theo slug, module stable key/lesson anchors/title; chỉ append mới, không sửa title/order/quiz/module membership/role/password của record cũ. Module admin đổi tên vẫn tìm qua anchors. Startup của database đã tồn tại **không tự seed/migrate**.
+Không thay Prisma schema, migration, authentication/session, dependency JavaScript, Dockerfile hoặc cấu hình triển khai nền tảng cũ. Final review thêm publication guard ở API quiz: hidden/missing quiz trả404; cấu trúc request/response cho quiz public giữ nguyên. Fresh bootstrap tạo đủ 59 bài/133 câu hỏi. Manual seed bây giờ reconcile thiếu theo slug, module stable key/lesson anchors/title; chỉ append mới, không sửa title/order/quiz/module membership/role/password của record cũ. Module admin đổi tên vẫn tìm qua anchors. Startup của database đã tồn tại **không tự seed/migrate**.
 
 Regression 50→59 dùng DB tạm và cây module cũ dựng từ inventory ban đầu: sửa module/lesson, thêm admin/progress/note/bookmark/attempt/override, seed mới hai lần; so toàn bộ 50 lesson records, module records, questions/IDs, users và quan hệ. Không bị nhân bản bài mới hoặc mất chỉnh sửa. Test persistence hiện có tiếp tục kiểm tra startup/restart và database bytes không đổi.
 
@@ -344,7 +344,7 @@ Các nhóm chính: toàn bộ 50 Markdown cũ + 9 bài mới; 8 quiz cũ + 9 qui
 - `docs/curriculum-project-execution.json` — new
 - `docs/curriculum-pyodide-execution.json` — new
 - `docs/curriculum-sources.json` — new
-- `docs/render-deployment.md` — modified
+- Runbook triển khai nền tảng cũ — modified (đã thay bằng self-hosted runbook trong đợt tiếp theo).
 - `e2e/curriculum.spec.ts` — new
 - `labs/autoencoder_cpu/library.py` — new
 - `labs/cnn_cpu/library.py` — new

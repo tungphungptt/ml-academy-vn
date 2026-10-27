@@ -1,7 +1,10 @@
-import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth"; import ProgressRing from "@/components/ProgressRing"; import { courseProgress } from "@/lib/progress";
+import PageHeading from "@/components/PageHeading";
+import CourseCard from "@/components/CourseCard";
+import EmptyState from "@/components/EmptyState";
+import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth"; import { courseProgress } from "@/lib/progress";
 import { normalizeSearch } from "@/lib/search";
 export const dynamic = "force-dynamic";
-type SP = { q?: string; level?: string; status?: string };
+type SP = { q?: string; level?: string; status?: string; sort?: string };
 export default async function Courses({ searchParams: pendingSearchParams }: { searchParams: Promise<SP> }) {
   const searchParams = await pendingSearchParams;
   const q = normalizeSearch((searchParams.q ?? "").trim()), level = searchParams.level ?? "", status = searchParams.status ?? "";
@@ -15,13 +18,17 @@ export default async function Courses({ searchParams: pendingSearchParams }: { s
     (!q || [c.title, c.description, ...ls.flatMap(l => [l.title, l.slug])].some(t => normalizeSearch(t).includes(q))) &&
     (!level || c.level === level) &&
     (!status || !u || (status === "done" ? p.completed === p.total && p.total > 0 : status === "doing" ? p.completed > 0 && p.completed < p.total : p.completed === 0)));
-  return <><h1>Khóa học</h1>
-    <form method="get" style={{ display: "flex", gap: ".5rem", flexWrap: "wrap" }} role="search">
-      <input name="q" defaultValue={searchParams.q ?? ""} placeholder="Tìm theo tên hoặc chủ đề" aria-label="Tìm kiếm" />
-      <select name="level" defaultValue={level} aria-label="Trình độ"><option value="">Mọi trình độ</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
-      {u && <select name="status" defaultValue={status} aria-label="Tình trạng"><option value="">Mọi tình trạng</option><option value="todo">Chưa học</option><option value="doing">Đang học</option><option value="done">Hoàn thành</option></select>}
-      <button>Lọc</button></form>
-    {rows.length === 0 && <p>Không có khóa học phù hợp. Hãy thử bỏ bớt bộ lọc.</p>}
-    <div className="grid">{rows.map(({ c, ls, p, full }) => <div className="card" key={c.id}><h2><a href={`/courses/${c.slug}`}>{c.title}</a></h2><p>{c.description}</p>
-      <p><span className="badge">{c.level}</span> {c.modules.length} module · {ls.length} bài ({full} bài đã có nội dung){u ? ` · hoàn thành ${p.completed}/${p.total}` : ""}</p>{u && <ProgressRing percent={p.percent} size={44} />}</div>)}</div></>;
+  const sort = searchParams.sort ?? "curriculum";
+  if (sort === "title") rows.sort((a, b) => a.c.title.localeCompare(b.c.title, "vi"));
+  else if (sort === "progress" && u) rows.sort((a, b) => b.p.percent - a.p.percent);
+  return <><PageHeading eyebrow="LỘ TRÌNH HỌC" title="Khóa học" description="Đi từ nền tảng toán và Python đến những mô hình bạn có thể tự giải thích, xây dựng và đánh giá." />
+    <form method="get" className="filters" role="search">
+      <label className="filter-field query">Chủ đề<input name="q" defaultValue={searchParams.q ?? ""} placeholder="Tên khóa học hoặc chủ đề bạn muốn học" aria-label="Tìm kiếm" /></label>
+      <label className="filter-field">Trình độ<select name="level" defaultValue={level} aria-label="Trình độ"><option value="">Mọi trình độ</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label>
+      {u && <label className="filter-field">Tiến độ<select name="status" defaultValue={status} aria-label="Tình trạng"><option value="">Mọi tình trạng</option><option value="todo">Chưa học</option><option value="doing">Đang học</option><option value="done">Hoàn thành</option></select></label>}
+      <label className="filter-field">Sắp xếp<select name="sort" defaultValue={sort} aria-label="Sắp xếp"><option value="curriculum">Thứ tự lộ trình</option><option value="title">Tên A–Z</option>{u && <option value="progress">Tiến độ cao nhất</option>}</select></label>
+      <button className="primary">Lọc</button><a className="filter-reset" href="/courses">Xóa bộ lọc</a>
+    </form>
+    {rows.length === 0 ? <EmptyState title="Chưa tìm thấy lộ trình phù hợp" description="Thử một từ khóa khác hoặc bỏ bớt bộ lọc. Bạn có thể bắt đầu từ bất kỳ lộ trình đang xuất bản nào." href="/courses" action="Xem tất cả lộ trình" /> : <div className="course-grid">{rows.map(({ c, p, full }) => <CourseCard key={c.id} slug={c.slug} title={c.title} description={c.description} level={c.level} index={cs.findIndex(item => item.id === c.id)} lessons={full} modules={c.modules.length} progress={u ? p : undefined} />)}</div>}
+  </>;
 }

@@ -14,6 +14,6 @@ export default function Nn() {
     <p>Loss cuối: {L[L.length - 1].toFixed(4)} · Accuracy: {(net.accuracy * 100).toFixed(1)}%. Với 1 neuron ẩn, mạng chỉ tạo được ranh giới tuyến tính nên không giải được XOR.</p>
     <Plot d={{ xmin: 0, xmax: 10, ymin: 0, ymax: 10 }} label="Ranh giới quyết định của mạng">{(sx, sy) => <>
       {grid.map((c, i) => <rect key={i} x={sx(c.x)} y={sy(c.y + 1 / 3)} width={sx(1 / 3) - sx(0)} height={sy(0) - sy(1 / 3)} fill={COLORS[c.p > 0.5 ? 1 : 0]} opacity={0.2} />)}
-      {data.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3.5} fill={COLORS[p.label]} stroke="#fff" strokeWidth={0.5} />)}</>}</Plot>
-    <Plot d={{ xmin: 0, xmax: L.length - 1, ymin: 0, ymax: mx }} label="Loss theo epoch">{(sx, sy) => <polyline fill="none" stroke="#2b8a3e" strokeWidth={2} points={L.map((v, i) => `${sx(i)},${sy(v)}`).join(" ")} />}</Plot></section>;
+      {data.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3.5} fill={COLORS[p.label]} stroke="var(--bg2)" strokeWidth={0.5} />)}</>}</Plot>
+    <Plot d={{ xmin: 0, xmax: L.length - 1, ymin: 0, ymax: mx }} label="Loss theo epoch">{(sx, sy) => <polyline fill="none" stroke="var(--plot-3)" strokeWidth={2} points={L.map((v, i) => `${sx(i)},${sy(v)}`).join(" ")} />}</Plot></section>;
 }

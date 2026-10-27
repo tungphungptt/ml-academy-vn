@@ -13,6 +13,6 @@ export default function Tree() {
     <p>Accuracy trên tập huấn luyện: {(acc * 100).toFixed(1)}%. Cây càng sâu càng khớp dữ liệu train (nguy cơ overfit).</p>
     <Plot d={{ xmin: 0, xmax: 10, ymin: 0, ymax: 10 }} label="Vùng quyết định của cây">{(sx, sy) => <>
       {grid.map((c, i) => <rect key={i} x={sx(c.x)} y={sy(c.y + 0.25)} width={sx(0.25) - sx(0)} height={sy(0) - sy(0.25)} fill={COLORS[c.l]} opacity={0.18} />)}
-      {data.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3.5} fill={COLORS[p.label]} stroke="#fff" strokeWidth={0.5} />)}</>}</Plot>
+      {data.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3.5} fill={COLORS[p.label]} stroke="var(--bg2)" strokeWidth={0.5} />)}</>}</Plot>
     <h3>Cấu trúc cây</h3><Outline n={tree} /></section>;
 }
