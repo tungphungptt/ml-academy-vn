@@ -1,0 +1,267 @@
+{
+  "baseline": "c2a08ce965e62b4e9b5259d80add19d6fbedc83c",
+  "date": "2026-10-27",
+  "environment": {
+    "os": "Linux",
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "browser": "system Chromium"
+  },
+  "command": "npm run e2e -- --reporter=list,json",
+  "database": "disposable SQLite fixture; no production data",
+  "stats": {
+    "startTime": "2026-10-27T06:59:11.981Z",
+    "duration": 98456.6,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "curriculum.spec.ts",
+      "title": "all 59 lessons render content, math, quiz, prerequisites and adjacent navigation",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 36562
+        }
+      ]
+    },
+    {
+      "file": "curriculum.spec.ts",
+      "title": "new chapters are searchable and course filters retain them",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 518
+        }
+      ]
+    },
+    {
+      "file": "curriculum.spec.ts",
+      "title": "lab deep links select a real CPU lab without a simulated Run button",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 559
+        }
+      ]
+    },
+    {
+      "file": "curriculum.spec.ts",
+      "title": "hiding a course removes it from search and blocks direct lesson routes",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 401
+        }
+      ]
+    },
+    {
+      "file": "math-rendering.spec.ts",
+      "title": "real lesson equations render visually and semantically in light/dark on desktop/mobile",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 13754
+        }
+      ]
+    },
+    {
+      "file": "math-rendering.spec.ts",
+      "title": "math reaches quiz answers and lab descriptions without breaking code or navigation",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 2369
+        }
+      ]
+    },
+    {
+      "file": "smoke.spec.ts",
+      "title": "luồng học chính: đăng ký, mở bài, hoàn thành, làm quiz, tải lại vẫn còn",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 2450
+        }
+      ]
+    },
+    {
+      "file": "smoke.spec.ts",
+      "title": "người dùng chưa đăng nhập không vào được /admin",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 347
+        }
+      ]
+    },
+    {
+      "file": "smoke.spec.ts",
+      "title": "tìm kiếm không phân biệt dấu",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 579
+        }
+      ]
+    },
+    {
+      "file": "ui.spec.ts",
+      "title": "PCA projection connectors stay visible and axis labels match actual theme colors",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1072
+        }
+      ]
+    },
+    {
+      "file": "ui.spec.ts",
+      "title": "all main screens have usable geometry, headings, and contrast across both themes and four widths",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 31927
+        }
+      ]
+    },
+    {
+      "file": "ui.spec.ts",
+      "title": "keyboard navigation, mobile menu, TOC and reading focus remain usable",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 2037
+        }
+      ]
+    },
+    {
+      "file": "ui.spec.ts",
+      "title": "quiz pending/error/retry, notes, progress and dashboard use persisted user data",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 3614
+        }
+      ]
+    },
+    {
+      "file": "ui.spec.ts",
+      "title": "lab editing/focus/reset, CPU instructions and search resource links stay honest",
+      "outcome": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "durationMs": 1252
+        }
+      ]
+    }
+  ],
+  "matrix": {
+    "screens": 17,
+    "widths": [
+      375,
+      390,
+      768,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "anonymousCombinations": 136,
+    "persistedDashboardCombinations": 8,
+    "checks": [
+      "main heading",
+      "no document overflow",
+      "controls within viewport",
+      "image alt attributes",
+      "no KaTeX errors",
+      "no page/hydration errors",
+      "representative color contrast"
+    ]
+  },
+  "pyodide": {
+    "variants": 12,
+    "passed": 12,
+    "transport": "Official CDN assets fetched with Python TLS and platform CA, unchanged bytes fulfilled to browser; not a direct Chromium CDN/TLS test"
+  },
+  "screenshots": [
+    {
+      "path": "docs/screenshots/ui-before-home-1440.png",
+      "sha256": "5b1524ff73fcb37cbb2540fe29b0640dc9bbf763d2121e61c9a695332ffa1346"
+    },
+    {
+      "path": "docs/screenshots/ui-home-light-1440.png",
+      "sha256": "5ce9fed52fe86c5d28e45aa79e896f02b03900e2d950b0939e9f6fb7a7e8f1ee"
+    },
+    {
+      "path": "docs/screenshots/ui-lesson-dark-390.png",
+      "sha256": "e93dc25727a4e0fa165d62ddf37448b6bbb75671021dc7f57b126be1ddcc2a16"
+    },
+    {
+      "path": "docs/screenshots/ui-dashboard-light-375.png",
+      "sha256": "5dd483c11fe7f6a7c2146f494fc52580d7aa1afee8b4cf5ebe1560049234b07c"
+    },
+    {
+      "path": "docs/screenshots/ui-lab-dark-1440.png",
+      "sha256": "1487405f124a02f1ce82b59671a577e0c665de90207bea8f5ef4177177d5968c"
+    },
+    {
+      "path": "docs/screenshots/ui-pca-dark-390.png",
+      "sha256": "a9dc00d740e062c8896d8f97f8b2cfe01cea52deefcb14a68db17dce4426cc64"
+    },
+    {
+      "path": "docs/screenshots/ui-quiz-light-390.png",
+      "sha256": "6dea1d2c05f76c6875c5796b0a082679007a1273a2f3e48cf0505179863be605"
+    }
+  ],
+  "preservation": {
+    "unchangedProtectedFiles": 200,
+    "lessons": 59,
+    "quizQuestions": 133,
+    "labs": 13,
+    "notebooks": 27,
+    "schemaSeedAuthApiMathParser": "unchanged"
+  },
+  "prepublicationReview": {
+    "baseHead": "ddd08252a08f431c86cd27d4efda249a5912bab3",
+    "verify": {
+      "passed": 48,
+      "failed": 0
+    },
+    "e2e": {
+      "startTime": "2026-10-27T07:19:39.327Z",
+      "duration": 99030.508,
+      "expected": 14,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "build": "npm run build via npm run deploy:local succeeded",
+    "health": "200; 127.0.0.1:3000 only",
+    "startupPersistence": "database SHA256 unchanged",
+    "prismaValidate": "PASS, pinned 5.20.0",
+    "auditVulnerabilities": 0,
+    "contentLessons": 59,
+    "specificationMappings": 52,
+    "gitDiffCheck": "PASS",
+    "githubChecks": "Not verified by this local receipt"
+  }
+}

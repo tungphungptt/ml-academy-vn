@@ -3,11 +3,12 @@
 services:
   web:
     build: .
-    ports: ["3000:3000"]
+    ports: ["127.0.0.1:${PORT:-3000}:3000"]
     env_file: .env
     environment:
-      DATABASE_URL: "file:/data/app.db"
-      LESSON_CONTENT_DIR: "/data/lesson-overrides"
+      DATABASE_URL: "${DOCKER_DATABASE_URL:-file:/data/app.db}"
+      LESSON_CONTENT_DIR: "${DOCKER_LESSON_CONTENT_DIR:-/data/lesson-overrides}"
+      PORT: "3000"
       COOKIE_SECURE: "${COOKIE_SECURE:-false}"
     volumes:
       - mldata:/data

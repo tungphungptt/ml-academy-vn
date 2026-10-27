@@ -4,7 +4,7 @@
 
 ## Baseline và phạm vi
 
-Bắt đầu trên `codex/expand-verify-ml-dl-curriculum`, HEAD `19596bcb59afdb752d71e9b44de9231f630d08bb`, working tree sạch. Không reset/stash, commit, push, merge, deploy hoặc thao tác database production. Các thay đổi curriculum đã commit trước đó vẫn nguyên trong lịch sử. Bộ này sửa nội dung/render/khám phá kiến thức, không đổi dependency, Prisma schema/migration, seed, auth/API contract, Dockerfile hoặc `render.yaml`.
+Bắt đầu trên `codex/expand-verify-ml-dl-curriculum`, HEAD `19596bcb59afdb752d71e9b44de9231f630d08bb`, working tree sạch. Không reset/stash, commit, push, merge, deploy hoặc thao tác database production. Các thay đổi curriculum đã commit trước đó vẫn nguyên trong lịch sử. Bộ này sửa nội dung/render/khám phá kiến thức, không đổi dependency, Prisma schema/migration, seed, auth/API contract, Dockerfile hoặc cấu hình triển khai nền tảng cũ.
 
 | Phạm vi | Trước | Sau |
 |---|---:|---:|

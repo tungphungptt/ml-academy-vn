@@ -1,16 +1,33 @@
-import HeroArt from "./HeroArt"; import { getStats } from "@/lib/content";
-const FEATURED: [string, string, string][] = [["gradient-descent", "Gradient Descent", "Hoạt ảnh điểm lăn xuống cực tiểu"], ["knn", "KNN", "Láng giềng gần nhất bỏ phiếu"], ["k-means", "K-Means", "Phân cụm và inertia"], ["backpropagation", "Backpropagation", "Gradient chảy ngược qua đồ thị"], ["attention-transformer", "Attention", "Trọng số softmax(q·k)"], ["pca", "PCA", "Hướng có phương sai lớn nhất"]];
-export default function Landing() {
-  const { lessons, images: imgs, labs } = getStats();
+import HeroArt from "./HeroArt";
+import Icon from "./Icon";
+import CourseCard from "./CourseCard";
+import { SectionHeading } from "./PageHeading";
+import { getStats } from "@/lib/content";
+import { db } from "@/lib/db";
+const FEATURED = [
+  ["gradient-descent", "Đi từng bước theo hướng giảm loss", "gradient-descent"],
+  ["knn", "Bắt đầu từ những láng giềng gần nhất", "knn"],
+  ["k-means", "Tìm cấu trúc trong dữ liệu chưa có nhãn", "kmeans"],
+  ["backpropagation", "Theo dấu gradient qua đồ thị tính toán", "backpropagation"],
+  ["attention-transformer", "Hiểu cách mô hình chọn điều cần chú ý", "attention"],
+  ["pca", "Nhìn dữ liệu từ một góc độ mới", "pca"],
+];
+export default async function Landing() {
+  const courses = await db.course.findMany({ where: { published: true }, orderBy: { order: "asc" }, include: { modules: { include: { lessons: true } } } });
+  const lessons = courses.flatMap(c => c.modules.flatMap(m => m.lessons)).filter(l => l.contentFile);
+  const bySlug = new Map(lessons.map(l => [l.slug, l]));
+  const projects = await db.project.count();
   return <>
-    <section className="hero hero2"><div><span className="badge">Miễn phí · Tiếng Việt · Chạy offline sau khi cài</span><h1>Học Machine Learning và Deep Learning từ nền tảng đến Transformer</h1>
-      <p>Mỗi bài có công thức rõ ràng, ví dụ tính tay, code Python chạy được và hình minh họa. Thử ngay các thuật toán trong trình duyệt, không cần cài gì thêm.</p>
-      <div className="row"><a className="btn primary" href="/courses">Bắt đầu học</a><a className="btn" href="/playground">Thử Playground</a><a className="btn" href="/register">Lưu tiến độ học</a></div></div><HeroArt /></section>
-    <div className="stat"><div><b>{lessons}</b>bài học đầy đủ</div><div><b>{imgs}</b>hình minh họa</div><div><b>6</b>demo tương tác</div><div><b>{labs}</b>bài thực hành code</div></div>
-    <h2>Lộ trình gợi ý</h2>
-    <div className="grid">{[["1", "Nền tảng", "Python, vector, đạo hàm, xác suất, chuẩn bị dữ liệu.", "/courses/python-math"], ["2", "Machine Learning", "Từ hồi quy tuyến tính đến SVM, cây, ensemble, đánh giá mô hình.", "/courses/ml-fundamentals"], ["3", "Deep Learning", "Backpropagation, CNN, RNN, Attention, Transformer, mô hình sinh.", "/courses/deep-learning"]].map(([n, t, d, h]) => <a key={n} href={h} className="card step"><span className="num">{n}</span><b>{t}</b><br /><span className="mut">{d}</span></a>)}</div>
-    <h2>Xem thử vài bài</h2>
-    <div className="grid">{FEATURED.map(([s, t, d]) => <a key={s} href={`/learn/${s}`} className="card thumb"><img src={`/img/${s === "k-means" ? "kmeans" : s === "attention-transformer" ? "attention" : s}.svg`} alt="" loading="lazy" /><b>{t}</b><br /><span className="mut">{d}</span></a>)}</div>
-    <h2>Học bằng cách làm</h2>
-    <div className="grid">{[["/playground", "Playground", "6 demo: Linear Regression, KNN, K-Means, Decision Tree, PCA, Neural Network."], ["/lab", "Code Lab", "Chạy Python ngay trên trình duyệt, tải .py và notebook."], ["/projects", "Dự án", "8 dự án có baseline và chỉ số đánh giá."]].map(([h, t, d]) => <a key={h} href={h} className="card"><b>{t}</b><br /><span className="mut">{d}</span></a>)}</div></>;
+    <section className="hero"><div className="hero-copy"><p className="eyebrow"><span className="signal-dot" />KHÔNG GIAN HỌC MÁY BẰNG TIẾNG VIỆT</p>
+      <h1>Học máy.<br /><em>Hiểu từ gốc.</em></h1><p>Đi từ một ý tưởng đến công thức, rồi tự tay kiểm chứng bằng code. Khám phá Machine Learning và Deep Learning, từng bước có căn cứ.</p>
+      <div className="actions"><a className="btn primary" href="/courses">Khám phá lộ trình<Icon name="arrow" /></a><a className="btn quiet" href="/lab">Thử Code Lab<Icon name="external" /></a></div>
+    </div><div className="hero-visual"><p className="eyebrow">MỘT Ý TƯỞNG. NHIỀU KẾT NỐI.</p><HeroArt /><div className="visual-caption"><span><b>01</b> Đặc trưng</span><span>→</span><span><b>02</b> Biểu diễn</span><span>→</span><span><b>03</b> Dự đoán</span></div></div></section>
+    <div className="metric-strip" aria-label="Nội dung hiện có"><div><b>{lessons.length}</b><span>bài đã xuất bản</span></div><div><b>{getStats().labs}</b><span>lab thực hành</span></div><div><b>{projects}</b><span>dự án để khám phá</span></div></div>
+    <SectionHeading eyebrow="01 / LỘ TRÌNH" title="Vững nền tảng, mở rộng từng bước."><a className="text-link" href="/courses">Tất cả lộ trình<Icon name="arrow" /></a></SectionHeading>
+    <div className="course-grid">{courses.map((c, i) => <CourseCard key={c.id} slug={c.slug} title={c.title} description={c.description} level={c.level} index={i} lessons={c.modules.flatMap(m => m.lessons).filter(l => l.contentFile).length} modules={c.modules.length} headingLevel={3} />)}</div>
+    <SectionHeading eyebrow="02 / MỞ MỘT TRANG MỚI" title="Bắt đầu từ điều bạn tò mò."><a className="text-link" href="/search">Tìm một chủ đề<Icon name="search" /></a></SectionHeading>
+    <div className="preview-grid">{FEATURED.filter(([slug]) => bySlug.has(slug)).map(([slug, description, image]) => <article className="lesson-preview" key={slug}><div className="preview-image"><img src={`/img/${image}.svg`} alt="" loading="lazy" /></div><div><h3><a href={`/learn/${slug}`}>{bySlug.get(slug)!.title}</a></h3><p>{description}</p></div></article>)}</div>
+    <SectionHeading eyebrow="03 / TỪ HIỂU ĐẾN LÀM" title="Kiến thức có thể tự kiểm chứng." />
+    <div className="learning-method"><div><Icon name="book" /><h3>Đọc để hiểu</h3><p>Trực giác, công thức và ví dụ số đi cùng nhau. Có nguồn tham khảo và kiến thức tiên quyết để bạn học tiếp.</p></div><div><Icon name="layers" /><h3>Thử để thấy</h3><p>Thay một tham số trong <a href="/playground">Playground</a>, quan sát ranh giới dự đoán và đường cong loss thay đổi.</p></div><div><Icon name="code" /><h3>Làm để nhớ</h3><p>Mở <a href="/lab">Code Lab</a> hoặc tải notebook. Các lab Pyodide chạy trong trình duyệt; lab CPU có hướng dẫn chạy cục bộ.</p></div></div>
+  </>;
 }

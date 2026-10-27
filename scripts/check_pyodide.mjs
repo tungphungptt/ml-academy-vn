@@ -8,6 +8,9 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 const run = promisify(execFile);
 const proxyMode = process.argv.includes('--trusted-proxy-download');
+const reportIndex = process.argv.indexOf('--report');
+if (reportIndex >= 0 && !process.argv[reportIndex + 1]) throw new Error('--report requires a path');
+const reportPath = reportIndex >= 0 ? process.argv[reportIndex + 1] : 'docs/curriculum-pyodide-execution.json';
 const baseURL = process.env.E2E_BASE_URL || 'http://localhost:3000';
 const labs = JSON.parse(fs.readFileSync('content/labs.json', 'utf8'));
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ml-pyodide-'));
@@ -44,7 +47,7 @@ print(json.dumps({'url':u,'status':s,'type':t,'file':str(f),'sha256':hashlib.sha
     }
   }
   const report = { transport: proxyMode ? 'Official CDN assets fetched with Python TLS and platform CA, unchanged bytes fulfilled to browser; not a direct Chromium CDN/TLS test' : 'Direct Chromium CDN', assets: [...assets.values()].map(({ file, ...a }) => a), results };
-  fs.writeFileSync('docs/curriculum-pyodide-execution.json', JSON.stringify(report, null, 1) + '\n');
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 1) + '\n');
   if (results.some(r => !r.pass)) process.exitCode = 1;
 } finally {
   await browser.close(); fs.rmSync(dir, { recursive: true, force: true });

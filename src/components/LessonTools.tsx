@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Icon from "./Icon";
 export function ReadingProgress() {
   const bar = useRef<HTMLDivElement>(null); const [show, setShow] = useState(false);
   useEffect(() => {
     const f = () => { const h = document.documentElement, max = h.scrollHeight - h.clientHeight; if (bar.current) bar.current.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%"; setShow(h.scrollTop > 600); };
     f(); addEventListener("scroll", f, { passive: true }); return () => removeEventListener("scroll", f);
   }, []);
-  return <><div className="topbar" ref={bar} aria-hidden /><button className={"totop" + (show ? " show" : "")} onClick={() => scrollTo({ top: 0, behavior: "smooth" })} aria-label="Lên đầu trang">↑</button></>;
+  return <><div className="topbar" ref={bar} aria-hidden /><button className={"totop" + (show ? " show" : "")} onClick={() => scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" })} aria-label="Lên đầu trang"><Icon name="up" /></button></>;
 }
 export function Toc({ items }: { items: { id: string; text: string }[] }) {
   const [active, setActive] = useState("");
@@ -16,13 +17,13 @@ export function Toc({ items }: { items: { id: string; text: string }[] }) {
     els.forEach(e => io.observe(e)); return () => io.disconnect();
   }, [items]);
   if (items.length < 3) return null;
-  const links = items.map(i => <a key={i.id} href={`#${i.id}`} className={active === i.id ? "active" : ""}>{i.text}</a>);
-  return <><details className="toc-inline toc"><summary>Mục lục bài học</summary>{links}</details><nav className="toc toc-fixed" aria-label="Mục lục">{links}</nav></>;
+  const links = items.map(i => <a key={i.id} href={`#${i.id}`} className={active === i.id ? "active" : ""} aria-current={active === i.id ? "location" : undefined}>{i.text}</a>);
+  return <aside className="lesson-toc" aria-label="Mục lục bài học"><p className="toc-label">TRONG BÀI NÀY</p><details className="toc-inline toc"><summary>Mục lục bài học</summary>{links}</details><nav className="toc toc-fixed" aria-label="Mục lục">{links}</nav></aside>;
 }
 export function FocusToggle() {
   const [on, setOn] = useState(false);
   useEffect(() => { document.body.classList.toggle("focus", on); return () => document.body.classList.remove("focus"); }, [on]);
-  return <button onClick={() => setOn(!on)} aria-pressed={on}>{on ? "Thoát chế độ đọc tập trung" : "Chế độ đọc tập trung"}</button>;
+  return <button className="focus-toggle" onClick={() => setOn(!on)} aria-pressed={on}><Icon name="focus" />{on ? "Thoát chế độ đọc tập trung" : "Chế độ đọc tập trung"}</button>;
 }
 export function StudyTimer({ lessonId }: { lessonId: string }) {
   useEffect(() => {

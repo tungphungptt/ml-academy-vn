@@ -10,5 +10,5 @@ export default function Knn() {
     <p>K nhỏ cho ranh giới lởm chởm (dễ overfit); K lớn cho ranh giới mượt hơn (có thể underfit).</p>
     <Plot d={{ xmin: 0, xmax: 10, ymin: 0, ymax: 10 }} label="Ranh giới quyết định KNN">{(sx, sy) => <>
       {grid.map((c, i) => <rect key={i} x={sx(c.x)} y={sy(c.y + 0.25)} width={sx(0.25) - sx(0)} height={sy(0) - sy(0.25)} fill={COLORS[c.l]} opacity={0.18} />)}
-      {train.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3.5} fill={COLORS[p.label]} stroke="#fff" strokeWidth={0.5} />)}</>}</Plot></section>;
+      {train.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3.5} fill={COLORS[p.label]} stroke="var(--bg2)" strokeWidth={0.5} />)}</>}</Plot></section>;
 }

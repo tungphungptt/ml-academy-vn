@@ -1,11 +1,11 @@
-"""Test only a disposable local Docker volume; never connects to Render."""
+"""Test only a disposable local Docker volume; never connects to production."""
 import os
 import secrets
 import subprocess
 import sys
 import time
 
-image = sys.argv[1] if len(sys.argv) > 1 else "ml-academy-vn-render-check"
+image = sys.argv[1] if len(sys.argv) > 1 else "ml-academy-vn-local-check"
 name = "ml-academy-smoke-" + secrets.token_hex(6)
 volume = name + "-data"
 env = {**os.environ, "SESSION_SECRET": secrets.token_hex(32)}

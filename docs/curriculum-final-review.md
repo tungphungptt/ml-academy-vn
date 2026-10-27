@@ -44,7 +44,7 @@ Tất cả 78 URL trong registry/Markdown/resources/datasets được retry vớ
 | `npx prisma validate`, `npx prisma generate` | PASS, Prisma/client5.20.0, schema/migrations không đổi. |
 | `npm run build` | PASS: production compilation, TypeScript và27 route page generation; có warning tracing filesystem động, không phải lỗi build. |
 | Content/specification | PASS:59 lesson records; 52/52 mapping specification. Mapping và regex cấu trúc không tự chứng minh đúng học thuật; kết luận nội dung dựa vào phần đọc/đối chiếu ở trên. |
-| Docker build và container smoke | PASS: image `ml-academy-vn-independent-review`, SHA `fe194e44c928030bb31113dbdd0909d74d2b79976b677861dcfee75a647c10a4`; build với proxy/CA chuẩn, smoke health/auth/quiz/progress/admin edit/search/recreate giữ SQLite/overrides/users. Không tạo dịch vụ Render. |
+| Docker build và container smoke | PASS: image `ml-academy-vn-independent-review`, SHA `fe194e44c928030bb31113dbdd0909d74d2b79976b677861dcfee75a647c10a4`; build với proxy/CA chuẩn, smoke health/auth/quiz/progress/admin edit/search/recreate giữ SQLite/overrides/users. Không tạo dịch vụ cloud. |
 | Artifact/secret/diff | Quét lại toàn bộ file mới/sửa, kiểm tra manifests/hash, không có database/checkpoint/log/private key/token thật; `git diff --check` sạch. |
 
 Trong review này đã cài nbformat5.10.4, nbclient0.10.2, ipykernel6.30.1 vào môi trường Python thử nghiệm, không vào Node/Docker web app. Không đổi package.json/lockfile, không tắt strict mode, không reset DB và không truy cập production. Generator chỉ chứng minh CLI/output; test kernel thật là bổ sung bắt buộc để tránh lặp lại lỗi notebook vừa tìm thấy.
@@ -55,4 +55,4 @@ Trong review này đã cài nbformat5.10.4, nbclient0.10.2, ipykernel6.30.1 vào
 - Bảy URL chưa xác minh toàn văn; license upstream của dataset/trọng số ngoài chưa kiểm chứng đầy đủ. Không phát lại dataset/weights hoặc gán license phần mềm cho dataset.
 - Hai contextual snippet FastAPI/torchvision chưa chạy; serving loopback và transfer tự pretrain đã chạy. Notebook transfer cần checkout repository, không phải một file portable độc lập.
 - GAN/VAE/diffusion là giới thiệu Advanced; Transformer kiểm tra encoder–decoder/position/masks/gradient, chưa benchmark huấn luyện ngôn ngữ. Chỉ một split/seed nhỏ cho các thí nghiệm; không báo CI/generalization production. Metrics không bị sửa để tạo kết quả tốt hơn.
-- Không commit, push, merge, Render/deploy, tạo dịch vụ trả phí hoặc migration production. Không có CI GitHub mới vì chưa push. Các server/kernel/container kiểm thử là tài nguyên local tạm.
+- Không commit, push, merge, cloud/deploy, tạo dịch vụ trả phí hoặc migration production. Không có CI GitHub mới vì chưa push. Các server/kernel/container kiểm thử là tài nguyên local tạm.
