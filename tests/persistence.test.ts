@@ -9,7 +9,8 @@ import { PrismaClient } from "@prisma/client";
 import { inspectDatabase, prepareDatabase, sqlitePath } from "../scripts/prepare-db.mjs";
 import { checkLocalDatabase } from "../scripts/deploy-local.mjs";
 import { seedDatabase } from "../prisma/seed-data";
-import { importLegacyLessons, listLessonFiles, readLesson, writeLesson } from "../src/lib/lessonFiles";
+import { listLessonFiles, readLesson, writeLesson } from "../src/lib/lessonFiles";
+import { importLegacyLessons } from "../scripts/legacy-lessons";
 import { clearContentCache, getSearchDocs } from "../src/lib/content";
 
 test("SQLite initialization, seed and restarts preserve edited content and user data", async () => {
@@ -22,7 +23,7 @@ test("SQLite initialization, seed and restarts preserve edited content and user 
     prepareDatabase(url);
     assert.equal(inspectDatabase(url).state, "ready");
     assert.equal(await db.user.count(), 0, "bootstrap must not create a default admin");
-    assert.equal(await db.lesson.count(), 59);
+    assert.equal(await db.lesson.count(), 67);
     const dataset = await db.dataset.findFirstOrThrow();
     const resource = await db.resource.findFirstOrThrow();
     const project = await db.project.findFirstOrThrow();
@@ -47,7 +48,7 @@ test("SQLite initialization, seed and restarts preserve edited content and user 
     assert.equal((await db.project.findUniqueOrThrow({ where: { id: project.id } })).title, "Project edited by admin");
     assert.equal((await db.lesson.findUniqueOrThrow({ where: { id: lesson.id } })).title, "Lesson edited by admin");
     assert.equal((await db.course.findUniqueOrThrow({ where: { id: course.id } })).published, false);
-    assert.equal(await db.lesson.count(), 59);
+    assert.equal(await db.lesson.count(), 67);
     const before = fs.readFileSync(sqlitePath(url));
     checkLocalDatabase(url);
     prepareDatabase(url);
@@ -104,8 +105,10 @@ test("a reviewed legacy database copy can be baselined without resetting or seed
       const result = spawnSync(process.execPath, ["node_modules/prisma/build/index.js", ...args], { env: { ...process.env, DATABASE_URL: url }, encoding: "utf8" });
       assert.equal(result.status, 0, result.stdout + result.stderr);
     };
-    run(["migrate", "diff", "--from-url", url, "--to-schema-datamodel", "prisma/schema.prisma", "--exit-code"]);
     run(["migrate", "resolve", "--applied", "20261026000000_initial"]);
+    assert.throws(() => prepareDatabase(url), /migrations differ/);
+    run(["migrate", "deploy"]);
+    run(["migrate", "diff", "--from-url", url, "--to-schema-datamodel", "prisma/schema.prisma", "--exit-code"]);
     prepareDatabase(url);
     assert.equal(db.prepare("SELECT passwordHash FROM User WHERE id='legacy'").get()!.passwordHash, "keep-this-hash");
     assert.equal(db.prepare("SELECT COUNT(*) AS n FROM Course").get()!.n, 0, "startup must not seed an existing baseline");
@@ -125,6 +128,11 @@ test("lesson overrides survive reloads; bundled content remains visible and impo
     assert.equal(readLesson(file), "# Edited\nPersistentRegressionKeyword");
     assert.ok(getSearchDocs().find(d => d.slug === "gradient-descent")!.text.includes("PersistentRegressionKeyword"));
     assert.equal(fs.readFileSync(`content/lessons/${file}`, "utf8"), original);
+    const override = path.join(process.env.LESSON_CONTENT_DIR!, file);
+    fs.writeFileSync(override, "# External edit");
+    assert.equal(readLesson(file), "# External edit");
+    fs.unlinkSync(override);
+    assert.equal(readLesson(file), original, "removing an override restores bundled content immediately");
     assert.ok(listLessonFiles().includes("linear-regression.md"));
     assert.throws(() => writeLesson("../outside.md", "escape"), /Invalid/);
     const backup = path.join(dir, "backup"); fs.mkdirSync(backup);

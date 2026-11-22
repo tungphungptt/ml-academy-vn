@@ -1,0 +1,4740 @@
+{
+  "checkedAt": "2026-10-28T12:26:00.003Z",
+  "baselineCheckedAt": "2026-10-28T09:59:45.124Z",
+  "baselineFiles": 2452,
+  "scope": "Diff from starting working tree, preserving all earlier uncommitted work; not a Git HEAD diff",
+  "deleted": [],
+  "moved": [],
+  "dependenciesAdded": [],
+  "files": [
+    {
+      "file": "docs/neuralclone-design-refinement.md",
+      "action": "created",
+      "sha256": "2a3c5f23f0b8dd01e204ad82f95d1cea3a9ff0b8344ec1be35f774f00d6047d9",
+      "bytes": 26965
+    },
+    {
+      "file": "docs/neuralclone-refinement-after-chrome-visual.json",
+      "action": "created",
+      "sha256": "c3321df22d17117e9f4829af7b95e06dbcac0945e5917bcc6401d869650b45d2",
+      "bytes": 10383
+    },
+    {
+      "file": "docs/neuralclone-refinement-after-firefox-visual.json",
+      "action": "created",
+      "sha256": "644a6017fd14f4ddc1004b2dba6de2097806e7187a3be0ac2caabeb870a1dd24",
+      "bytes": 10376
+    },
+    {
+      "file": "docs/neuralclone-refinement-after-results.json",
+      "action": "created",
+      "sha256": "c1f27f8a32ee47b2edac48f24b7b069b8054d06a9cf6dc0951f2cfbcb23db86b",
+      "bytes": 11668
+    },
+    {
+      "file": "docs/neuralclone-refinement-after-webkit-visual.json",
+      "action": "created",
+      "sha256": "18bb618df5b216b7f94b1f86dd97e14e425dd74d78b31d2b07bc4b004f001d93",
+      "bytes": 10373
+    },
+    {
+      "file": "docs/neuralclone-refinement-before-chrome-visual.json",
+      "action": "created",
+      "sha256": "550dd73f1f80cbb8e16613253c477fe2282db35e174c4a86dc9a668b72fe9999",
+      "bytes": 10224
+    },
+    {
+      "file": "docs/neuralclone-refinement-before-results.json",
+      "action": "created",
+      "sha256": "d2f79698cc0e1793053a3ecae5eb4914aa81f038db5d99de6712a7a4beecef55",
+      "bytes": 5788
+    },
+    {
+      "file": "docs/neuralclone-refinement-chrome-interactions.json",
+      "action": "created",
+      "sha256": "cfff770864fb45d979e51768b824bde59dc1330e4fb3cfcfe2744fc81d255fd3",
+      "bytes": 866
+    },
+    {
+      "file": "docs/neuralclone-refinement-chrome-motion.json",
+      "action": "created",
+      "sha256": "20693b9712567cef6c4db4ffa64710b98caab902de562fc65dc77c89f3be5f1f",
+      "bytes": 622
+    },
+    {
+      "file": "docs/neuralclone-refinement-contrast-after.json",
+      "action": "created",
+      "sha256": "4c625a922f6159a722fd929775fa2f93516c338dc67387a090405c452e885290",
+      "bytes": 4547
+    },
+    {
+      "file": "docs/neuralclone-refinement-contrast-before.json",
+      "action": "created",
+      "sha256": "eecd6cb9785ca7125cd029dc86b32600ffeec1760f9a9aca6f4e50ace974a8b5",
+      "bytes": 4551
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-chrome-control-compute.json",
+      "action": "created",
+      "sha256": "6ac7d76c6b2894a24252190a601ce67c0f223d7444a62e44afb87b68984489d8",
+      "bytes": 210
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-chrome-control-hydration.json",
+      "action": "created",
+      "sha256": "1d8125578e7662a18aa199c2acef18ae3d2707cf7c2bd416ca77d719ad00c2a6",
+      "bytes": 212
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-chrome-control-learning.json",
+      "action": "created",
+      "sha256": "fce0f775c016d71876fac9f874876c16266e17e2fd0decdd021c4a3a4aeeccee",
+      "bytes": 211
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-chrome-control-visual.json",
+      "action": "created",
+      "sha256": "9e6c17de17b192357e23e8f92f0d93ca7c93254f2435d8e21041ea26e0c0c80c",
+      "bytes": 69241
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-firefox-compute.json",
+      "action": "created",
+      "sha256": "b1930cab103ea8292fa3eaa131eeb476c65645d6525aedcef01e4ede12aad2e3",
+      "bytes": 195
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-firefox-hydration.json",
+      "action": "created",
+      "sha256": "976982c280dab24427542d66c3df13edd3c5e0f811e1c19ee2f0b3d5558cdfd5",
+      "bytes": 197
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-firefox-learning.json",
+      "action": "created",
+      "sha256": "e7692ebe70f4f7e7cbe1660146eccbfe6321776cb49da74f35840bf0f3dd2b38",
+      "bytes": 196
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-firefox-visual.json",
+      "action": "created",
+      "sha256": "7c4e50e484783a85f52fed55e6c5d402f0db0979e2b3786d695de6f3fb65c938",
+      "bytes": 71646
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-results.json",
+      "action": "created",
+      "sha256": "ae61db2e890a8aa302835b899866d8b228a822ecae58ac437af1da5db426e21b",
+      "bytes": 18460
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-webkit-compute.json",
+      "action": "created",
+      "sha256": "39bf27e151899f57013a24e621f1ec72d767484b8117c3fc7c1e6263f28cb0b3",
+      "bytes": 288
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-webkit-hydration.json",
+      "action": "created",
+      "sha256": "77552b42a31b70990fc91acaa5ad23570d51ee8704c553afaa283afcea6bcc0b",
+      "bytes": 195
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-webkit-learning.json",
+      "action": "created",
+      "sha256": "1ead2ad02af08d4d8f80e65a7f6e0331007eb67a8620f0010b46de0625e57adc",
+      "bytes": 310
+    },
+    {
+      "file": "docs/neuralclone-refinement-cross-webkit-visual.json",
+      "action": "created",
+      "sha256": "b15d181de8f54429c64b8493092ca58cefecc58aa554fb140dd09e5ee0aa08e4",
+      "bytes": 69096
+    },
+    {
+      "file": "docs/neuralclone-refinement-discovery-chrome-control-learning.json",
+      "action": "created",
+      "sha256": "6b333d41076c3251c4c5b959fa1a4af9365b416263236ceb3039fe77f9c0155f",
+      "bytes": 211
+    },
+    {
+      "file": "docs/neuralclone-refinement-discovery.json",
+      "action": "created",
+      "sha256": "7f1be755eb172e865f5741c82f11333dad2de3d66c96653fc222febaf78fa22a",
+      "bytes": 4952
+    },
+    {
+      "file": "docs/neuralclone-refinement-firefox-interactions.json",
+      "action": "created",
+      "sha256": "fcf95b70df2a5e37325b2f9ab2588fe82cf2fcb562aac5fd87c2c18690135c69",
+      "bytes": 739
+    },
+    {
+      "file": "docs/neuralclone-refinement-firefox-motion.json",
+      "action": "created",
+      "sha256": "118945ee8f34df5290c9d353857fa186b9caec6c919e91ab49e614bf3c1d0d7e",
+      "bytes": 455
+    },
+    {
+      "file": "docs/neuralclone-refinement-font-build.json",
+      "action": "created",
+      "sha256": "f0ee36e99a9dcc11169093d10300431d6d93ccbc40225602aaab28dd227b4e61",
+      "bytes": 3816
+    },
+    {
+      "file": "docs/neuralclone-refinement-hmr.json",
+      "action": "created",
+      "sha256": "cb4c9896af2ed984707baef1861e09b5f15f2dfe8c1bf74a5e6d8813422affdf",
+      "bytes": 12837
+    },
+    {
+      "file": "docs/neuralclone-refinement-initial-results.json",
+      "action": "created",
+      "sha256": "fca707e73c1ec99ac4676286dab5daf9b3dbe2b8f12063faccdcd85558b4c03e",
+      "bytes": 22287
+    },
+    {
+      "file": "docs/neuralclone-refinement-layout-observation.json",
+      "action": "created",
+      "sha256": "b67947d585179936b5b6e8c02d7af10a9eee4e591f24d7b486b713ee32e43a6c",
+      "bytes": 13563
+    },
+    {
+      "file": "docs/neuralclone-refinement-log-availability.json",
+      "action": "created",
+      "sha256": "0d9469145dd5dec90a2808db16c70bbad5fc009d9d31685e8396fdbb8ec9096a",
+      "bytes": 745
+    },
+    {
+      "file": "docs/neuralclone-refinement-motion-results.json",
+      "action": "created",
+      "sha256": "598be51f761f10fae63cdddf47c9e4e67046e437ccd9d711945be82bab964a91",
+      "bytes": 8531
+    },
+    {
+      "file": "docs/neuralclone-refinement-pre-retry-results.json",
+      "action": "created",
+      "sha256": "cb729860053a74eea3efec55fcac83eb5e4157c42abdca58ea88f593555ce90c",
+      "bytes": 13537
+    },
+    {
+      "file": "docs/neuralclone-refinement-public-rendered-fonts.json",
+      "action": "created",
+      "sha256": "94bec8130fc2865b71845227e62d5f7f7171451e5e3577187865d7308a9b2ffc",
+      "bytes": 11948
+    },
+    {
+      "file": "docs/neuralclone-refinement-public-ui-first-attempt.json",
+      "action": "created",
+      "sha256": "91e96f0a3fcfb535b60589337281d985296e2ba21dbe05c3ac0ea5554b7037ff",
+      "bytes": 4416
+    },
+    {
+      "file": "docs/neuralclone-refinement-public-ui.json",
+      "action": "created",
+      "sha256": "5a466b899aa87fe2ab041b3378ecfe5365fcddea611e439436fb1ce6e98fd746",
+      "bytes": 2026
+    },
+    {
+      "file": "docs/neuralclone-refinement-pyodide.json",
+      "action": "created",
+      "sha256": "f466b397a853bdf134794d12123aa3fa488777f8265d1ce7838363215f9b0364",
+      "bytes": 2479
+    },
+    {
+      "file": "docs/neuralclone-refinement-qa.json",
+      "action": "created",
+      "sha256": "b1c99d1315fdfd84e8dd7b8db5f45d5f39e818cf72c391d8df066413be887fdf",
+      "bytes": 10590
+    },
+    {
+      "file": "docs/neuralclone-refinement-regression-results.json",
+      "action": "created",
+      "sha256": "9a5b0d68302a19cb4311685803b8cb454cbdaaa5e6d0f7e59d0ed101bafc14e9",
+      "bytes": 34895
+    },
+    {
+      "file": "docs/neuralclone-refinement-runtime-trace.json",
+      "action": "created",
+      "sha256": "fc631609070a86ecaa841aab842d96ce3f865586eeb7d80d3154c6adb925baf9",
+      "bytes": 21557
+    },
+    {
+      "file": "docs/neuralclone-refinement-touch.json",
+      "action": "created",
+      "sha256": "6c8ccd58fb645f7773994239d9d612d911c8fdaedb0cae45962611509b2e51f2",
+      "bytes": 482
+    },
+    {
+      "file": "docs/neuralclone-refinement-type-trials.json",
+      "action": "created",
+      "sha256": "f53b4403170ada998bd11180a3f975a082745459d4e0087abf38377f1d1e22a3",
+      "bytes": 874
+    },
+    {
+      "file": "docs/neuralclone-refinement-ui-second-attempt.json",
+      "action": "created",
+      "sha256": "cb729860053a74eea3efec55fcac83eb5e4157c42abdca58ea88f593555ce90c",
+      "bytes": 13537
+    },
+    {
+      "file": "docs/neuralclone-refinement-webkit-diagnosis.json",
+      "action": "created",
+      "sha256": "2465b78a608414b01ac1066ec540bcb88599f12bef888310eed0e0bfa28d30cc",
+      "bytes": 7781
+    },
+    {
+      "file": "docs/neuralclone-refinement-webkit-font-diagnosis.json",
+      "action": "created",
+      "sha256": "0edf7c70e88a863f439c20106cc2cdfbf0f2157d89e3db263f2fdd3d1fce800c",
+      "bytes": 7956
+    },
+    {
+      "file": "docs/neuralclone-refinement-webkit-interactions.json",
+      "action": "created",
+      "sha256": "a42b66aec49742732b582fa03e289eb269a498d074f77f6f852e6f3ca9710c6e",
+      "bytes": 737
+    },
+    {
+      "file": "docs/neuralclone-refinement-webkit-motion.json",
+      "action": "created",
+      "sha256": "7c5d41b8135acc46539ea3d96a665a8398163d11c83c2dd352b3fae8ce6559f5",
+      "bytes": 441
+    },
+    {
+      "file": "docs/neuralclone-refinement-webkit-reused-page-failure.json",
+      "action": "created",
+      "sha256": "4b110c28cca5a609fcf11f39d03916c81cc84f2836d6835c59327463cb91d8ef",
+      "bytes": 1350
+    },
+    {
+      "file": "docs/neuralclone-refinement-zoom-after.json",
+      "action": "created",
+      "sha256": "e9c6640a78faaa6a3f112f1c89c76ccfbf1569d1e8ae8c5ec54a93cca595d81b",
+      "bytes": 416
+    },
+    {
+      "file": "docs/neuralclone-refinement-zoom-before.json",
+      "action": "created",
+      "sha256": "079d375689a7065d4578e583c72b605d42a9b845206c270862d63b2a52680097",
+      "bytes": 1461
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-dark-1440.png",
+      "action": "created",
+      "sha256": "641386314da99f8138447211d9b3156dc4c0713324ee787f23b02c8b22c18092",
+      "bytes": 98164
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-dark-1920.png",
+      "action": "created",
+      "sha256": "a9a88599eb808aa7b1ff04d0ac065370b6b8dc8052c94eea4616d1503d4c8f9a",
+      "bytes": 100836
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-dark-375.png",
+      "action": "created",
+      "sha256": "c07939cd21a75bd41bc7c6799192a7dbf24b9fc6fcfdf01ffd1e7b48c085bd73",
+      "bytes": 53036
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-dark-768.png",
+      "action": "created",
+      "sha256": "0232e2174e6f2bc7f4748464cab32df8231d868b0963f38075430fec159be1d7",
+      "bytes": 58623
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-light-1440.png",
+      "action": "created",
+      "sha256": "de4ab4169fb9fbc314d6467b27bcbd099efbd6fd003b7b1ddd7798e90cfbd2c2",
+      "bytes": 98029
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-light-1920.png",
+      "action": "created",
+      "sha256": "e0f6c5751235499677b0471c85dfa77a6af9141cf085d94d53be90985ec860fb",
+      "bytes": 100622
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-light-375.png",
+      "action": "created",
+      "sha256": "256544f21f4586ac007771189c858954667e00306232caf39b0bc9608cc2e46b",
+      "bytes": 52856
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/account-light-768.png",
+      "action": "created",
+      "sha256": "339f236fc87a0b4e39763e3b0e6fc344b17ed232433a123174d8227431b59c0e",
+      "bytes": 58237
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "38338a36a431e542bbdad031ebd7b40715fc6de0ba18f020da4f4f6886b46075",
+      "bytes": 107133
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "df112650309322d6cc6ec5f531578030c50d43cb8e32cee19c7071274adfee09",
+      "bytes": 110552
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-dark-375.png",
+      "action": "created",
+      "sha256": "4eda1995d8f3978c8fd672e45db200bbf3ee6b5c295f1bc63292107f9086609b",
+      "bytes": 50509
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-dark-768.png",
+      "action": "created",
+      "sha256": "67dc2a6ee6d834d877cca89b20c22d75c5ea2c403dfcddf6b24dcc2d2396cf5b",
+      "bytes": 76006
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-light-1440.png",
+      "action": "created",
+      "sha256": "8e951f2851378a50a3538592fb9f1d1b4aa04b8633508c22a2aaeb20a2be9b12",
+      "bytes": 108089
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-light-1920.png",
+      "action": "created",
+      "sha256": "ea52a5434df53cdbab457b949fb7735d0de29a8f8cbd1668a6e0487f08885309",
+      "bytes": 111770
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-light-375.png",
+      "action": "created",
+      "sha256": "cb86817266045b4b485a31922a36ef1dea9742788ca17d8950e3fd35dc0cfcc1",
+      "bytes": 50605
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/courses-light-768.png",
+      "action": "created",
+      "sha256": "b97543008c0f0af9a004dcc2a1194bee6544700cd4a475f32001f413eb22b57e",
+      "bytes": 76367
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "10bf4895214e1b5a0fc79d2a99800c10cc43e03e5fa62863a81bdb23fd9f2ad1",
+      "bytes": 111964
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "ee7c6a8b7cec6ea66d940cc975ea5ad9f9730918ed3bc8c7d31c5cc4f3386060",
+      "bytes": 115012
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "0211a1a0839134c8ab3d0008ffb54d4f8de2e1b2f3a3df4a3107442290b75c8b",
+      "bytes": 61617
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "fa85eb8e33b188b3d5a69174d221b6cd333f4f1635e2d0437658c747f7778619",
+      "bytes": 74380
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "8f59d5cd436a46b2be10c60e9d3edd0cbda67784eadfc7755ce77efb63120985",
+      "bytes": 111659
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "3a10ca4e72719cada641b1b3af0dd31c2fab3db46979e0c4f60e33bc7843693e",
+      "bytes": 114943
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-light-375.png",
+      "action": "created",
+      "sha256": "09e5013252287d840ef57cf7ebbcc35b6de8e6d1d51e8881677f470ed90b8a32",
+      "bytes": 61260
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/cpu-light-768.png",
+      "action": "created",
+      "sha256": "3131593d2269670fc222ebdc2277963da3445013deb86eb6b6358e04906bac3d",
+      "bytes": 73979
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-dark-1440.png",
+      "action": "created",
+      "sha256": "601a7ccace5434709ffbbbe7bf0f3d60050a7d6e7a1f9222ac7152cdf577ece5",
+      "bytes": 94653
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-dark-1920.png",
+      "action": "created",
+      "sha256": "b0da3454bd78e5173a08c6115ed2b1214ae1a84cd085c80b3c87404728f8f067",
+      "bytes": 98172
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-dark-375.png",
+      "action": "created",
+      "sha256": "9f4f2533a1ff23a6872d24f21239f79622439e75ae752f7d1326cafe6ee1761e",
+      "bytes": 55281
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-dark-768.png",
+      "action": "created",
+      "sha256": "df2b3a8f2c213f0e3aa81cd221efc8099e4d128f773f03f48572f84a0c60941e",
+      "bytes": 60635
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-light-1440.png",
+      "action": "created",
+      "sha256": "48b483a21158cec7085aea0d29786e89cf011ba55738a8fd61722b399108b2ec",
+      "bytes": 94140
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-light-1920.png",
+      "action": "created",
+      "sha256": "e3537e6a6c46888508f83149b0006e6b1e57b9d02804e8d75e62dd9e32e92594",
+      "bytes": 97789
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-light-375.png",
+      "action": "created",
+      "sha256": "bf1b1a25b116a1c6ee2a4c2fbcdfccd94ec79cd8bbc4cf9689a641237025fff1",
+      "bytes": 54068
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/dashboard-light-768.png",
+      "action": "created",
+      "sha256": "d83de40edec4dce8a2c4bb0d873af3ab30d4f46475f10e2a03ecab6d2603693f",
+      "bytes": 59922
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-dark-1440.png",
+      "action": "created",
+      "sha256": "c9baa32de13ef579e6751e6cbd21fb40629ae4f423251e0e24d8ddbd892dfb02",
+      "bytes": 130465
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-dark-1920.png",
+      "action": "created",
+      "sha256": "03fa8b1b8f18730b3d34887486000798fd9eeb06669d0e9def8b3780ba1ea61f",
+      "bytes": 133884
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-dark-375.png",
+      "action": "created",
+      "sha256": "2a40f6de16ff6dd69ccd723722dff6235cd0b24b254aa8cd007a6e8fff2bb7a7",
+      "bytes": 68967
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-dark-768.png",
+      "action": "created",
+      "sha256": "38784055b18e5af31fbecc4ac921aadb61ab0277bb89b6f645645e7bc54e7421",
+      "bytes": 90109
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-light-1440.png",
+      "action": "created",
+      "sha256": "d4c95f562f27f5c369132328c4b9fb021106203724d8b4f5e02bfc37a91a2ae5",
+      "bytes": 134233
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-light-1920.png",
+      "action": "created",
+      "sha256": "137fe6ee09f7e4fa578c9ccede5462b33b4d12970ca7dc0ccd853beebf4e6612",
+      "bytes": 137729
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-light-375.png",
+      "action": "created",
+      "sha256": "f9a7aeacc90011418071a061dcb1519f287f892bf0bb5116f867df6e3302137e",
+      "bytes": 69388
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/home-light-768.png",
+      "action": "created",
+      "sha256": "b7cad93ac17f8d58f15bc95c1738198106b633d5dd2be0ffaa2ed5bc907d83b2",
+      "bytes": 91954
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "d6e2dad8fa2a6e0f4f4429a03fcd8b4ba1df97f6dc0f9e1034cb852d4300758a",
+      "bytes": 113227
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "597ea6a987c2168537ec19ae6734ae7e7d1801377e50902ca1608dbe8c000c90",
+      "bytes": 116310
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-dark-375.png",
+      "action": "created",
+      "sha256": "ed3b467856374cb2ccf88886d2ea22d307f0defa4228668352ff40e6cc98a281",
+      "bytes": 66399
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-dark-768.png",
+      "action": "created",
+      "sha256": "32a25d4a027846044f5e72e4a4b212fb15aa18bfe2e8e93de303350c24fea709",
+      "bytes": 83817
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-light-1440.png",
+      "action": "created",
+      "sha256": "e544630806a87cbcb4ab23e56ddd13af306102cacd07f1b71de734b3795d3796",
+      "bytes": 112841
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-light-1920.png",
+      "action": "created",
+      "sha256": "ca94418ca9e7ab7cbed1fce7e8a60b0349b5a816fd3da126694f80ab74f6eada",
+      "bytes": 116112
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-light-375.png",
+      "action": "created",
+      "sha256": "5a807f0921442a4d49a83a5a61013bd945cfb250599236527ad3710f03b0d4a4",
+      "bytes": 65540
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lab-light-768.png",
+      "action": "created",
+      "sha256": "1852e9bf2d308612cd63a6238a40487a65b6a5ea5ce140945aad3357fdbe0203",
+      "bytes": 83204
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "57a3d3e2e616ae1cea3e2339518cf5ee01847441c73fbc83ba1836129d81872c",
+      "bytes": 187496
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "fed70151525169ffb68acbfff29dad916d8d1a1d03103aa837105a4271ba6c3a",
+      "bytes": 190620
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "3ca752bbb5eeb67fc585c30db80e5569f22a6a1549b3b0053982345b7d8ff508",
+      "bytes": 75506
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "2f49e5d4b7c10aaddf63d02c360b1543f74429db8af0a0a49e4546bb295d78d2",
+      "bytes": 122073
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "06baf1deab84d6cd68b9ea2b4f02189c2749e54ba4feed7085949fccad3a7270",
+      "bytes": 187977
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "cd03b04a38d4e3cfcbeee32d62e6fe0926354d53622d146be0c64c2bfb141808",
+      "bytes": 191418
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-light-375.png",
+      "action": "created",
+      "sha256": "418cbb6564330aa6fbeb261c030aadebb940e6b8fef08fd590f2f8c5bf062067",
+      "bytes": 76338
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/lesson-light-768.png",
+      "action": "created",
+      "sha256": "849bcafa917228f08c65be378cd17e81f2c874692fc34afa05cf0281476c8146",
+      "bytes": 122810
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-dark-1440.png",
+      "action": "created",
+      "sha256": "f15e1dcb9af24c26a93c7af378eadc45d522f7c611e4ed66c10228778e087a64",
+      "bytes": 107009
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-dark-1920.png",
+      "action": "created",
+      "sha256": "0fa7a77c560efb2f2897b075ef7b5ec8eb44a5c458ded47d38d53aac3ac2d8ec",
+      "bytes": 108989
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-dark-375.png",
+      "action": "created",
+      "sha256": "3963f7622619003beabb3956335071820603b2b19ce7c286b86b5a385f47019d",
+      "bytes": 47594
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-dark-768.png",
+      "action": "created",
+      "sha256": "ac9771bad76b9c09daf5cfcd323fa87de4209397efcf0f4443aad90d8c72f33c",
+      "bytes": 58309
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-light-1440.png",
+      "action": "created",
+      "sha256": "bd320fba67a7f6b1a79bbb4df830065f0f340f7a2443dc797095e4f8e9aa9029",
+      "bytes": 108624
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-light-1920.png",
+      "action": "created",
+      "sha256": "2e2da79615ea868f6c08ee1dd9d8d385982d9bd81b19a92762b6184ee67a7fda",
+      "bytes": 110378
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-light-375.png",
+      "action": "created",
+      "sha256": "5b832bb3f0e8b691d80f878f3e135f4d8dcbec86acf5d550973eec9e68a7b9f5",
+      "bytes": 48902
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/login-light-768.png",
+      "action": "created",
+      "sha256": "8b4a2cffc23183c2e629b91c4635de29a693e89b86237ea239ba9a6223d55519",
+      "bytes": 59974
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-dark-1440.png",
+      "action": "created",
+      "sha256": "d553d08ead78dc2f76ee656f5d552ed4f7ef19dee003367612a2800b9123163f",
+      "bytes": 97351
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-dark-1920.png",
+      "action": "created",
+      "sha256": "e3171f4e145c15b6ef59cb32d75483c6408be7b55ee173f114c4d90b26b6ff4c",
+      "bytes": 106078
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-dark-375.png",
+      "action": "created",
+      "sha256": "375e8497ee627e3341020727871719f9c1991d9e15377ef7f191a937db578806",
+      "bytes": 60821
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-dark-768.png",
+      "action": "created",
+      "sha256": "ba0c7b3cee8bd0ca694afd0f02dc0ee22148478736ab05172105a1d5648fc9fe",
+      "bytes": 63312
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-light-1440.png",
+      "action": "created",
+      "sha256": "7365f2836a98797d8758f1eb66e7e87467896fa3782eedcbdc8104a2eaa20a83",
+      "bytes": 105397
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-light-1920.png",
+      "action": "created",
+      "sha256": "5b5bae6a682a8032f47f6b90260972ebb2d4182c587d6fd1f498b003ed8cb93a",
+      "bytes": 101029
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-light-375.png",
+      "action": "created",
+      "sha256": "36e3643cecba36be8a1d482753a24f0ad78ad0bc58eda263430c57165057ae38",
+      "bytes": 59534
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/quiz-light-768.png",
+      "action": "created",
+      "sha256": "2fa15f566e1aa378cf01af93d8cd03a92c4013c3d4ac353fd22f65c1bb796dbf",
+      "bytes": 63321
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-dark-1440.png",
+      "action": "created",
+      "sha256": "07c8b4aaed5db73dd2dc992602bfed82b4cf5a1079cc91374f10510bb5f5d733",
+      "bytes": 102629
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-dark-1920.png",
+      "action": "created",
+      "sha256": "94dc187bc45cb4b4a6d01de88f4761036f7f998ad5a3f1cfd701aae82926ac82",
+      "bytes": 104590
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-dark-375.png",
+      "action": "created",
+      "sha256": "b9319285c0572c9d0db177eac070f2967a76240bdaa72cf7c1b6342c9ee39f31",
+      "bytes": 45275
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-dark-768.png",
+      "action": "created",
+      "sha256": "e8f29e0c13658033112f483f8c1cf285ce244b90fa2a84085726edfd0da87105",
+      "bytes": 55190
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-light-1440.png",
+      "action": "created",
+      "sha256": "d745eb7643f45c3b67a9f8e700d864f02f60382abf3a9c548ea93d6ce43bbdae",
+      "bytes": 104629
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-light-1920.png",
+      "action": "created",
+      "sha256": "efb2347e2c24ba6153bbbde9701cda518c0524d687ccb32d29548810bbd8dcd7",
+      "bytes": 105826
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-light-375.png",
+      "action": "created",
+      "sha256": "6308534d40e457089f7fa94801d81e9fe2b74b867ed7d02709e17d30798b98d4",
+      "bytes": 46334
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/register-light-768.png",
+      "action": "created",
+      "sha256": "f0ee197668cb4cb12a18d6ac40e1eaa8894c76262189b1a5f0a51998b3a3df08",
+      "bytes": 56902
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "528a69158fc83ac6e81a2df2341a09819a023cad92ee0b65ba630b1f0e2feabb",
+      "bytes": 121054
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "3fda31aae686e2adbaca737ed431362f8437d8c135b3fadb1bf832772ec85bec",
+      "bytes": 124528
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "5fb14985bff9b62a4513034e83198c16413e8f2e61c563f61635cba04b4e48d1",
+      "bytes": 55601
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "4655ba6547706d4d10f06c9a188606422f6fc317865d09d1fbaa08d6192aceb5",
+      "bytes": 69138
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-dark-1440.png",
+      "action": "created",
+      "sha256": "2e4328eec792246b95b6d32b5d674efd6706485e675fc4d84403f889031df887",
+      "bytes": 133864
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-dark-1920.png",
+      "action": "created",
+      "sha256": "d9dad9be6df0b3cf01deee134f8f3b10b51d80e7f26da277bb5c17a7d3612383",
+      "bytes": 133865
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-dark-375.png",
+      "action": "created",
+      "sha256": "e87ff1eeba68737fcfbef2b31777656f8e26d87b2aa4e1663e28ae6fd4c26180",
+      "bytes": 94986
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-dark-768.png",
+      "action": "created",
+      "sha256": "4288979e2534c58f25e22d66a1208e45cfd32f8f1c7d6eb85d8da834a3c466c1",
+      "bytes": 123812
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-light-1440.png",
+      "action": "created",
+      "sha256": "a15f8464030063050f5289dc218bdb93a4291ba13e1e4994a5ddc1ed246662ab",
+      "bytes": 134039
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-light-1920.png",
+      "action": "created",
+      "sha256": "90c7b0eb0b4caed51c76751184457d32629c58444b3a62b55068d48f2a675c5f",
+      "bytes": 134085
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-light-375.png",
+      "action": "created",
+      "sha256": "bb8b607ff6005c2e5c455b84eab4e0271d68274936068524cc2f3a5c9a247315",
+      "bytes": 94851
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-detail-light-768.png",
+      "action": "created",
+      "sha256": "b10af5031807dc4a8fc9ec7912063ff65543577b2693f47fbc6aa7645e63a56f",
+      "bytes": 123793
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "a52786d9432fd966cfc625444ca28b110079f6064c6bf7d85f92343a81d7875a",
+      "bytes": 121242
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "11546d0bd552c4cff265a563d1d9ebc169942d2d7f6e5ec1a13d4dd505a3a52e",
+      "bytes": 124812
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-light-375.png",
+      "action": "created",
+      "sha256": "644c5083bcbf5c6bccfe0137a0211cb4606a472b702916b1270569a2d90e3892",
+      "bytes": 55492
+    },
+    {
+      "file": "docs/screenshots/refinement-after/chrome/threshold-light-768.png",
+      "action": "created",
+      "sha256": "f14f80adbabaaba49d90c4976d4cc32a6366997a26d74745d2d7e84a909a49cc",
+      "bytes": 69110
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-dark-1440.png",
+      "action": "created",
+      "sha256": "e78cf33823c8d23419f0a4c9aad8aee1af32ca8ffb060b54e29ccb3330d077ea",
+      "bytes": 78226
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-dark-1920.png",
+      "action": "created",
+      "sha256": "2adffdab5ec44f5bb1ac8fac26e855491a562dea45babf46769362292e9c410e",
+      "bytes": 83039
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-dark-375.png",
+      "action": "created",
+      "sha256": "c8a1829576e56c0702196a9cb63b10edf2c9f267e2665fb3f85d98fb9a7413fc",
+      "bytes": 37886
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-dark-768.png",
+      "action": "created",
+      "sha256": "92bbdb128c069e7605fff1e123cb38594d07027145d278b3eacde37b0ed79ee7",
+      "bytes": 43745
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-light-1440.png",
+      "action": "created",
+      "sha256": "856b580d458db66b4e8250719f986b6837e6a63fd0024593424e0ae17618fc7a",
+      "bytes": 78181
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-light-1920.png",
+      "action": "created",
+      "sha256": "3f934cd0d042ccf4564f36b4dac4558723a922a33273fb92278821b05ccd7aa9",
+      "bytes": 83024
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-light-375.png",
+      "action": "created",
+      "sha256": "61087661675a3fe28a3a9ffd43c04f16d0eab9d1e581fc560d6ec75e91ecfadc",
+      "bytes": 37815
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/account-light-768.png",
+      "action": "created",
+      "sha256": "eacac216dd84486fca9ed466e9f47024c1d55c1c006eca7059d0bcc2cdc276c4",
+      "bytes": 43659
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "ace927b7a0aa782cdee61bda8350d33351d3b751f02a9bf5989540a676ae4b5b",
+      "bytes": 92011
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "306ab8a25765a28de7baadf3f45bf0cde36539c03a4ca783557db84e8b1f7f40",
+      "bytes": 96713
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-dark-375.png",
+      "action": "created",
+      "sha256": "66b53d90c9097e58e517fc6c8b816cb73a807b1a205795c077f9996e4a9fb3fd",
+      "bytes": 39550
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-dark-768.png",
+      "action": "created",
+      "sha256": "69d8df8437ebde26dd86e7796f67a0249633ed7a91e5439ddc9632444433de02",
+      "bytes": 61889
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-light-1440.png",
+      "action": "created",
+      "sha256": "1544cc7ca84a26e7773ec468dbd882da4f9bfd072e9745da39789f1bc4c66bc0",
+      "bytes": 91846
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-light-1920.png",
+      "action": "created",
+      "sha256": "8d7f4b15c379c678b907857bd6e3bc276812febe02077785eaa24d8a4b14d593",
+      "bytes": 96527
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-light-375.png",
+      "action": "created",
+      "sha256": "f59bfae8db5dcb5d3719d2279506e0fd22f0a5817362d7692870da0009ec841f",
+      "bytes": 39880
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/courses-light-768.png",
+      "action": "created",
+      "sha256": "8e5728e1797bddc72cd13c2c86e46c1335a338966b169adfa48ce3be5bf62bb4",
+      "bytes": 62292
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "22ada57c80abcc070117e9d612641f78aceb356a401846824bbcd8ccb5f3c3e0",
+      "bytes": 89858
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "34dcb56b54a12859a83fb21acde0a2ac11c7af598c6d659a1381e70b1a4aa75c",
+      "bytes": 94976
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "ac1df4b123067b8add1dcb4a0aa78c9657e2fee1a3512d4ee98d160fc140a044",
+      "bytes": 45714
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "72849d113319455f6d47aa1599fba9ca0289f43ecacb0e5c8cb966f3896ce508",
+      "bytes": 57233
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "0dba65ce5187f66fb103199c7eea4c660c13ac24653b3f9235bf5a6c2e5192ee",
+      "bytes": 90077
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "ff2d946c01c0919b3702d7f8bbb9ae925c691c7115a979d5f1d288bccf480432",
+      "bytes": 95253
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-light-375.png",
+      "action": "created",
+      "sha256": "56cd1a682f3304c437f835013ef8f4a7adf0775d368041c9fc5f2d3c416ad715",
+      "bytes": 45890
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/cpu-light-768.png",
+      "action": "created",
+      "sha256": "a205c818dedd82aa28c457a7ac6cf467bf4af5a902faa15f532640f071eb461b",
+      "bytes": 57434
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-dark-1440.png",
+      "action": "created",
+      "sha256": "e3c95861909636ab1866e830720622a3539b88167e09facbccb9ac5f0bf27c10",
+      "bytes": 76819
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-dark-1920.png",
+      "action": "created",
+      "sha256": "5d74ae4a22d707e36c0fa862fed4f231bb63ed2b2a96869c3accda065062f2a2",
+      "bytes": 80509
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-dark-375.png",
+      "action": "created",
+      "sha256": "865e999f917b04f2553e21d7d1e26df1992b4cc3b170ec05215eb3548d00662f",
+      "bytes": 39464
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-dark-768.png",
+      "action": "created",
+      "sha256": "8641f9273df90f2d3ea1d6f5720ed3d22fba27a4aa1d15b5fdbb9497775d0e1e",
+      "bytes": 47434
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-light-1440.png",
+      "action": "created",
+      "sha256": "4188b6ba4ee4360d207bb5ea12d3d1df48ac9f6a8cea5aca9ef5a6e3cf8f3bd7",
+      "bytes": 76462
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-light-1920.png",
+      "action": "created",
+      "sha256": "69e54f72ac00b9257845ef3056adbdd6835624c669ad92f3a6c5e467b3435991",
+      "bytes": 80173
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-light-375.png",
+      "action": "created",
+      "sha256": "f6e43dfea3e1cd71f9bd50145df524acb62190d0ab87ef7cac0a55398a724591",
+      "bytes": 39406
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/dashboard-light-768.png",
+      "action": "created",
+      "sha256": "cc531d318d26b34a55ff85a618e2070479a400b35d8d6ce0d20425b0e8dcffdf",
+      "bytes": 47241
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-dark-1440.png",
+      "action": "created",
+      "sha256": "353e6d07f5e3fdd74677149ed3296efbd413ab1c014c714a0a862383b3fc4008",
+      "bytes": 112478
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-dark-1920.png",
+      "action": "created",
+      "sha256": "39aac2e636d0a6fd05fc9515fb67d066e51222cac2cee12f744bcda26b0d0bc8",
+      "bytes": 118589
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-dark-375.png",
+      "action": "created",
+      "sha256": "262bcb249a333f087d47d060a42be84b5442bb7474e292c8bad2a47c6ec839b8",
+      "bytes": 53934
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-dark-768.png",
+      "action": "created",
+      "sha256": "f3e869af539b8a6e4b31a02834f1d0982ec67905f8084eb5020b3fcb9a7d3d21",
+      "bytes": 77417
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-light-1440.png",
+      "action": "created",
+      "sha256": "7d21b1f7d3312fe9307c7c2d34d3a517ebc7dc03a5ee7c7e5799348eee3a1faa",
+      "bytes": 118015
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-light-1920.png",
+      "action": "created",
+      "sha256": "8fd71de055dff06aa17137313a7c68ad49d42536b0395b23618ef977096f6d10",
+      "bytes": 124279
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-light-375.png",
+      "action": "created",
+      "sha256": "ccc58778d15142ffca6a8fce88a50c5ae9c86dd5f728f75d55eaaad8db182174",
+      "bytes": 54730
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/home-light-768.png",
+      "action": "created",
+      "sha256": "4fd3a56e259e6151f2399db9536c41a1b12887e6278590f5123c1aa14cdda15c",
+      "bytes": 78087
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "a82b3cccac398cd0c3003774b36bc01f3ceabb0f20d9b53b9a685a2b12acedfd",
+      "bytes": 90395
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "878d3c2f4667045d37be9e349708d0763b6f18acbd18bc20193cd6b4933b6130",
+      "bytes": 95436
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-dark-375.png",
+      "action": "created",
+      "sha256": "27eb80fb381e3d8822e4813e3a9694eef3200ff84c24e6d875c61aa58a26d209",
+      "bytes": 48892
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-dark-768.png",
+      "action": "created",
+      "sha256": "d32433de53b7cbeff0d0190fb2a464bcf781bfe1b926070423170f56850fd9d4",
+      "bytes": 63228
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-light-1440.png",
+      "action": "created",
+      "sha256": "4db65aaff64284e3ee24b3ba1f8f1dbbe3947b20e3e4cc4bc85cc1a6f139cf92",
+      "bytes": 90716
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-light-1920.png",
+      "action": "created",
+      "sha256": "0deb3b9c548878b533cd93520164acda687a1e69da75f7de02a7d21c9829d29e",
+      "bytes": 95735
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-light-375.png",
+      "action": "created",
+      "sha256": "086504a0fa8ffe6e8d5e94674950330e032e920661e5869cc15d6f73b6290df9",
+      "bytes": 49140
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lab-light-768.png",
+      "action": "created",
+      "sha256": "7a3122de0490ef428dc1c68b3a9dd2943394f47fed0be3e1b892020c05757b17",
+      "bytes": 63483
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "ad51a3dfcd3d39f08dc0ddd013af284cc05dcb4879423b02745ca45fd8792528",
+      "bytes": 137811
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "7a64c0a72bf5ee461a26250524ab7be814a3a82d4b23e94aa5b9faabc44eef58",
+      "bytes": 141958
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "b963b49a46bbee43317ec730e9ffd8be760381de4d0b3cb969006afe1487e2aa",
+      "bytes": 54414
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "d84f7ec483c4d843e0c25a10702823a98590457ae083ddf489bc11c94387fc88",
+      "bytes": 88088
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "61dd14d67ba6466bd121253977d5b054444bfdd732728db03fd7b8bc9c8d1103",
+      "bytes": 137923
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "0c1b8f1e866b26313f5a8b5a66dcf8ee4962a02551b892d06be84f352112cb7f",
+      "bytes": 142063
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-light-375.png",
+      "action": "created",
+      "sha256": "10e87c4dc5bdd0aa7aab9e354264247bd4862acc9ea19c216d475cf482d2208f",
+      "bytes": 54193
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/lesson-light-768.png",
+      "action": "created",
+      "sha256": "74af00750820103e2a202dd04eccd1323df63ccb761b3af7b1c87999eec58e52",
+      "bytes": 88166
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-dark-1440.png",
+      "action": "created",
+      "sha256": "20b8937c6ebac47628d817710a2805b64c2c636e24cbbc3890bbb3830c5e9e6e",
+      "bytes": 97474
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-dark-1920.png",
+      "action": "created",
+      "sha256": "7f1733e048e8b7a19fd76bd90084ca4035d82c7740839fbf6cf69c7fbd3c0cd9",
+      "bytes": 101629
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-dark-375.png",
+      "action": "created",
+      "sha256": "8c373db861ed7483c90bcca32a1124f0ecaff3dbec750d98a3f5e7748fa454f5",
+      "bytes": 38114
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-dark-768.png",
+      "action": "created",
+      "sha256": "ebf3085220d6cd37640dc5dac83105e59c977922d9128eb6a21b4d0c62e6a17c",
+      "bytes": 50504
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-light-1440.png",
+      "action": "created",
+      "sha256": "30f42804170fa556ef86e39de51eb75163b5bd7d567fe06a892cba2d3800715f",
+      "bytes": 103956
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-light-1920.png",
+      "action": "created",
+      "sha256": "b15bc17da5d4a65b9b8647180fbe57aea1efbdd0402dc24e0b72d2f7556a3411",
+      "bytes": 108699
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-light-375.png",
+      "action": "created",
+      "sha256": "6671ee6ef2ecead1c48b2e3dad19871405acf0c34af27583ce2f4bf19e0436f2",
+      "bytes": 38522
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/login-light-768.png",
+      "action": "created",
+      "sha256": "5268ce19b067455b5d993a339957bdee2bd44e6a831a0dbc026dd2d44a6da968",
+      "bytes": 53784
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-dark-1440.png",
+      "action": "created",
+      "sha256": "dc6087a3fe0fcf38e294501c5e9b5da31e5a76be90eae10d99e7e6ea15e26961",
+      "bytes": 92735
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-dark-1920.png",
+      "action": "created",
+      "sha256": "b27fa8d2b0d47c0300470573cd9992abb0d1c929685b265073846c723f517bd6",
+      "bytes": 97784
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-dark-375.png",
+      "action": "created",
+      "sha256": "5d12126320dd786a6e1bb7e6733a90344380b174aee586dd10f642d2bb10f8fd",
+      "bytes": 52933
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-dark-768.png",
+      "action": "created",
+      "sha256": "2a34dbc39de6a69b67d84a653e5e9f66be966e79da6e12200a83745b77f8d81b",
+      "bytes": 60524
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-light-1440.png",
+      "action": "created",
+      "sha256": "019ec06ef690c79cd77e50da76d23e99fb755a745af0c990b7564f3a53e88e27",
+      "bytes": 93640
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-light-1920.png",
+      "action": "created",
+      "sha256": "bd8c0aeddd680443b3d56093316ec2bd6e833c6ecf7f8fc7d99c82f8c454f414",
+      "bytes": 97784
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-light-375.png",
+      "action": "created",
+      "sha256": "c97fb9bdb426db9dfeba0596ee498af0788502414ec8c4a530ff0641ead3009c",
+      "bytes": 52332
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/quiz-light-768.png",
+      "action": "created",
+      "sha256": "b65d22f2d9ad526c641ee76ecf2ae70b1738095b6a25fcf2c9843b4e2923c5a8",
+      "bytes": 61561
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-dark-1440.png",
+      "action": "created",
+      "sha256": "2232b92b9fd745b0da091527339c251b483bbf809fe6f28e741f315766f323e4",
+      "bytes": 94320
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-dark-1920.png",
+      "action": "created",
+      "sha256": "a42b2d66bbccff52b240ff7dedbffbbc52da252fc27ff5244e6be375c6743e20",
+      "bytes": 98296
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-dark-375.png",
+      "action": "created",
+      "sha256": "95432b4dacd3b1582704dd4e7c19f470c28dd782c8794d9383936162457ed8cb",
+      "bytes": 36673
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-dark-768.png",
+      "action": "created",
+      "sha256": "7ce50941fe8edd0e00a835b673a2b626674156cc2488a2842aa96a4666bcb3cb",
+      "bytes": 47840
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-light-1440.png",
+      "action": "created",
+      "sha256": "4d624887de8eec5fe38ff5b91ea341335826351930c2d20ef7d444b7d7b00db9",
+      "bytes": 100713
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-light-1920.png",
+      "action": "created",
+      "sha256": "666f53fbb9bc483d186c9273b21660f5ccc10932ded7099297c8276acb710d83",
+      "bytes": 105364
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-light-375.png",
+      "action": "created",
+      "sha256": "ecdbdb909962a972f18ecfc88aab37918ed1317eebef07ad0707a41d26de19f9",
+      "bytes": 37074
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/register-light-768.png",
+      "action": "created",
+      "sha256": "dc7ec4eae1bfdf21d8f5005bb6016f266420589a426cfdcd1ed84436c5f21840",
+      "bytes": 50462
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "822eb640ead9232d62930ebf9f03d1e2a8f45f71f61a75684b5c57812e96cd78",
+      "bytes": 97079
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "5d288c46d9e46a222c02efc6860727a0f84b5d8a4b3975bcf3fbbcb21eefc4b0",
+      "bytes": 102703
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "ad87a9d2e2a20f923b08204c000ef0ca597310f3847613dcde500ec8dcf10346",
+      "bytes": 45493
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "fc55d87b7380bd1affea8a0eacfab05fd7ac5ea6f331537863340b40a5e9a17f",
+      "bytes": 60986
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-dark-1440.png",
+      "action": "created",
+      "sha256": "a08896346c9cb4e4a0dbf4703857ce86ed508f4e33ee9383c004bf2f0ecde282",
+      "bytes": 115699
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-dark-1920.png",
+      "action": "created",
+      "sha256": "a08896346c9cb4e4a0dbf4703857ce86ed508f4e33ee9383c004bf2f0ecde282",
+      "bytes": 115699
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-dark-375.png",
+      "action": "created",
+      "sha256": "64cedaab84a02da576192170e7fdaba12a493a58ccfa0b1fee65a0fd4c39c67c",
+      "bytes": 78705
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-dark-768.png",
+      "action": "created",
+      "sha256": "17726638324deff25bf953c5d53296debf2cff6dae91880287c2ebafdada8012",
+      "bytes": 100150
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-light-1440.png",
+      "action": "created",
+      "sha256": "7849dcee544fc04181f259fcdf948b322d2b38e1fc1d0aac725ff7635edcd06f",
+      "bytes": 116876
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-light-1920.png",
+      "action": "created",
+      "sha256": "7849dcee544fc04181f259fcdf948b322d2b38e1fc1d0aac725ff7635edcd06f",
+      "bytes": 116876
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-light-375.png",
+      "action": "created",
+      "sha256": "7d89f4bf408b5c334c0c7cf339bf3cb9f5e68f9d805446c7b498ee9994a2f654",
+      "bytes": 79371
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-detail-light-768.png",
+      "action": "created",
+      "sha256": "5eec709687a6698c10f9257dfb549c10df49797823587f404ceb8d6662668c1e",
+      "bytes": 101019
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "89639b04201ac0106f970cac57647e0905055ae2d331527b9c4e1f1b157e33ba",
+      "bytes": 98272
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "2adaecad0e8874b4c8026b959103237ba6238b442d5d50b9a9abc4154276f075",
+      "bytes": 103935
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-light-375.png",
+      "action": "created",
+      "sha256": "36cc8f11852c3578107028493891e80d9c79348d73fd14735256f0c5b6316e02",
+      "bytes": 46159
+    },
+    {
+      "file": "docs/screenshots/refinement-after/firefox/threshold-light-768.png",
+      "action": "created",
+      "sha256": "5061d3509a89a69e96164036580fb4bbcd6d4200371ea42126eeedf207cc29c1",
+      "bytes": 61799
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-dark-1440.png",
+      "action": "created",
+      "sha256": "8b6293a915087e1eb311373472eddf81468834f1118a65052b66ccf0edea26dd",
+      "bytes": 71504
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-dark-1920.png",
+      "action": "created",
+      "sha256": "028b02f63fea22464b14725371169a0f5832b1c710bfa9e499d3b3984cada983",
+      "bytes": 74495
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-dark-375.png",
+      "action": "created",
+      "sha256": "e45b2c8754e875b1affacc1725c157da380dc3c7b643063ddec5f6cd704e41fe",
+      "bytes": 38085
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-dark-768.png",
+      "action": "created",
+      "sha256": "bf7e127919e72f2dd8713906185154d28a9f5b4f9198cd50d374a6bb1b863b26",
+      "bytes": 42289
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-light-1440.png",
+      "action": "created",
+      "sha256": "dbc69c9291152ad7ff58b9c3e7de73536438e23daae4a48fb35707540a8163e5",
+      "bytes": 70391
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-light-1920.png",
+      "action": "created",
+      "sha256": "edd676320e47b8efe35905b34b16d572aff01f46632412c0376a69a5bf096f70",
+      "bytes": 73210
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-light-375.png",
+      "action": "created",
+      "sha256": "f4614512d0bcf21fd3b06f216b92ef3fe18003f72fe519be7843696bdd666a8a",
+      "bytes": 37830
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/account-light-768.png",
+      "action": "created",
+      "sha256": "941521d3a34ae79c140c76524bc6b83d6a53489f03810cbec0186a447dde2dc4",
+      "bytes": 42016
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "841daa90f600336df4ef5c8a39680b4206e4d5a8b4665d7a02725ed07decb190",
+      "bytes": 80204
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "1c5f67446c7270db0dfd4de999d6ddb61ed42f4035bea63e947a4e99b10d1d0e",
+      "bytes": 84034
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-dark-375.png",
+      "action": "created",
+      "sha256": "4f88cef0292d54bb8d82eac6993ac486e9c65a9a7a6b4f38bb740db5ef415cd8",
+      "bytes": 37959
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-dark-768.png",
+      "action": "created",
+      "sha256": "a98c1b7194079d7d8f236eec56b8398efbc05fc07f6d5d8206ab65ce0ea6bf73",
+      "bytes": 57614
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-light-1440.png",
+      "action": "created",
+      "sha256": "1404e9ff32a13b59bef09b8a3de68b585e5f996aec3f4fdec40b6cfc7f9d321c",
+      "bytes": 81272
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-light-1920.png",
+      "action": "created",
+      "sha256": "67f0fd18193345769155955b366838577671c4f4cbb279adf8d2f1550abe1498",
+      "bytes": 85177
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-light-375.png",
+      "action": "created",
+      "sha256": "0856e595f74e4521b92c76d71d41e67896d75888d431d1cd83117ae64214839c",
+      "bytes": 38380
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/courses-light-768.png",
+      "action": "created",
+      "sha256": "981ca8341498957022e590adffbda5f03b1a5a415476514b08726845904bfb1b",
+      "bytes": 58543
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "edf1fd5c62da72fbb7b3d06e1603de2302efd98e00ef238b51364e5b4b0c9afc",
+      "bytes": 83682
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "e1b8dc0b85a937a1d54eab6f24f690f433bb8966d3526f4b0f4d4fd34e8d3c4c",
+      "bytes": 86969
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "414f1e210736b7ce3df648e632650aae3ec752ac67299b731b9f98338eca67e8",
+      "bytes": 46575
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "494d366370a9e090a1914395531c2fbf77a4bddfa25abfe734d66b20933459c6",
+      "bytes": 55436
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "0fd5e120bb2c9875511fcdf238e932096d2230b54ec9733d2f2d6623103fff9a",
+      "bytes": 83284
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "dfb7e59ec6cf26ade0904823d106d1703f304adcee5f2bf029a0e497ea542e4b",
+      "bytes": 86695
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-light-375.png",
+      "action": "created",
+      "sha256": "f2190373dab3f2d29983c22caae34d269ed0c2831dd5cd00ef4373354ccb64f5",
+      "bytes": 45697
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/cpu-light-768.png",
+      "action": "created",
+      "sha256": "dc689c67cf7d8085ffd0295e5ba8a00565fc15ff22df24c8da91297c06848d54",
+      "bytes": 54959
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-dark-1440.png",
+      "action": "created",
+      "sha256": "70865505a73e74dcba885bf116ad2a8f5e240f653ebbc9ff0f234f7bc8e18510",
+      "bytes": 69035
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-dark-1920.png",
+      "action": "created",
+      "sha256": "50525e8b074fb53ea83d08f87b680644aaae918b7b0cc80b9ec8f91f1316374b",
+      "bytes": 72477
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-dark-375.png",
+      "action": "created",
+      "sha256": "11ae207cbd1a5bf328b5500bdc66726f60fd0ca35adc21a0f6204d12354e5a49",
+      "bytes": 38961
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-dark-768.png",
+      "action": "created",
+      "sha256": "1ebe6e1aa793a816692ce9906ffd3b753fb51a5d81b26619802ce27c7c25d81d",
+      "bytes": 45027
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-light-1440.png",
+      "action": "created",
+      "sha256": "9c3965371f22e9742b2ec82e509106dc9dd65e82675075ff1ee4480c4f9d3eac",
+      "bytes": 67619
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-light-1920.png",
+      "action": "created",
+      "sha256": "c24a12d84899e84587900a644ee095e7b54dea45ee5962605f1c34846d130595",
+      "bytes": 71346
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-light-375.png",
+      "action": "created",
+      "sha256": "44805ff9ea17aca6a456aa0802e0471d1b5b3fc63f1b7154716f21f2c431bb8c",
+      "bytes": 37975
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/dashboard-light-768.png",
+      "action": "created",
+      "sha256": "d2f3efae266fdbe67894c4572b5ae5c61b1e7a2428e58f8d1edea0151f3f3192",
+      "bytes": 44268
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-dark-1440.png",
+      "action": "created",
+      "sha256": "6878145f2bf2959484bb094798028141ae92a86931474bb9de3e78e7fcc7ef47",
+      "bytes": 102657
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-dark-1920.png",
+      "action": "created",
+      "sha256": "f0b48e4a303ccea2629519d3eb2fcf06e0cce4889d91d166184b39252c1f3546",
+      "bytes": 106695
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-dark-375.png",
+      "action": "created",
+      "sha256": "f11d0c126a72b39040d50c590be509d04b346c6a4789cecb4865c0c1cf79d87d",
+      "bytes": 54348
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-dark-768.png",
+      "action": "created",
+      "sha256": "26914ea23e130e4db3897439530755eb5a7b5c9655b2390bc180826988cc839e",
+      "bytes": 74749
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-light-1440.png",
+      "action": "created",
+      "sha256": "e39e429c1f283311c89247ef8d63a5b06ffb870aca5fca481d28ead217dddc8f",
+      "bytes": 104408
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-light-1920.png",
+      "action": "created",
+      "sha256": "7389d46dfd46c90accc750d5f12c78859e7fb48d251661f5c7934de223ba7d0c",
+      "bytes": 108569
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-light-375.png",
+      "action": "created",
+      "sha256": "8f1d259f2a6243666a8847383174cf0c8c28343500d4b53f5662067173bef548",
+      "bytes": 53784
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/home-light-768.png",
+      "action": "created",
+      "sha256": "f3c6ccb94de294b67ba981c019a424413664e685308156a64f6b6c4530256f3b",
+      "bytes": 75331
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "f238ac74d97b78aa6e8f1bad8804c6d945fc58c5e009e06d88ae8f38b9af0e92",
+      "bytes": 83125
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "9dcf30143d65364b8022b4db7a46b928d3cd6ea090eca17cac9e29e8b3c54410",
+      "bytes": 86579
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-dark-375.png",
+      "action": "created",
+      "sha256": "a72c64f4a9c1181e69c6d1aa2f0beb422ed6cd31bdf90a9424cd6b7074990b5e",
+      "bytes": 49706
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-dark-768.png",
+      "action": "created",
+      "sha256": "2d3153774acd85cc0245047866ada59322b52ded8504625668c0dcdcc696b0ee",
+      "bytes": 62126
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-light-1440.png",
+      "action": "created",
+      "sha256": "27bb3ff0854f8718911dab6eebb0f49218848994a9976c49721a989b80594b9c",
+      "bytes": 82642
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-light-1920.png",
+      "action": "created",
+      "sha256": "dc8e74eee5c737355bfb38a979c14b1b501571ac286771c61330ba69f805a308",
+      "bytes": 86226
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-light-375.png",
+      "action": "created",
+      "sha256": "ab23199e9b0d88341d6cb78f21e8fb492e51e62bd71a5f29d684621d58970b7d",
+      "bytes": 48965
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lab-light-768.png",
+      "action": "created",
+      "sha256": "e01b7e47ae1c9e81916c85e50be9df311f0e61f92958fcf9d4b8f26d4a7c542f",
+      "bytes": 61568
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "79a617f2d4d2854c89300c22c45987016f6571377a540d2e5ac2dbf653986f32",
+      "bytes": 127591
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "afd78ea26ad8436d4e3562c47a27dd6e535b2ae00364e8685de55820c2501ca9",
+      "bytes": 130633
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "5cb618cc12ee5b98240c645b730c326acc0a30ff4db27473c37feda24c8bd569",
+      "bytes": 53419
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "5bb851c4c4ddfff30b0520797f43a2da9b4e7e1f3ae2a3b41e9ed26f3583c759",
+      "bytes": 82043
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "ee54d8391db06656839022ef6febaf1478786858a2a0fe816b39ac1eb136dda8",
+      "bytes": 126923
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "6f86357ce1cad76fd045b6be8878b4f6c20866354c40edbe574338153daea0c0",
+      "bytes": 129941
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-light-375.png",
+      "action": "created",
+      "sha256": "11431b0ea5d36f305e0ceb1988bfc2259bbbd2f8f490d7e5843d6174ffcb5c48",
+      "bytes": 51692
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/lesson-light-768.png",
+      "action": "created",
+      "sha256": "1d4434f1d3a68e94f931558447d777736556e51b70c3d33b510991bd427fe8ac",
+      "bytes": 82201
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-dark-1440.png",
+      "action": "created",
+      "sha256": "87f5abbea0bacd9e747a29e695d9bff24226a0ed811220ba783a81cfb6726b6b",
+      "bytes": 89762
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-dark-1920.png",
+      "action": "created",
+      "sha256": "24c7a6167bead78c098517e38c0e55a129e7de0b94dc20dcca9eeb6e73016269",
+      "bytes": 92317
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-dark-375.png",
+      "action": "created",
+      "sha256": "245833dc7187d00d428a9c39374e33195b1e64a3d720b6586b427a300a66d4d5",
+      "bytes": 37345
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-dark-768.png",
+      "action": "created",
+      "sha256": "b1fa3918a0d4827f6b0fd7c6cb758e0eb2a5b8142a1f2f54b60c3a66516615fa",
+      "bytes": 46096
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-light-1440.png",
+      "action": "created",
+      "sha256": "318dc19430ec0757809d0438e1dc6061b45c34d4f96c860415632c1a6305cc46",
+      "bytes": 90402
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-light-1920.png",
+      "action": "created",
+      "sha256": "2d833f5633cac351263e4a5eb399a7489cc681b9f31c5b390b3994297a33f307",
+      "bytes": 93084
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-light-375.png",
+      "action": "created",
+      "sha256": "046a7940aad83b264f80043a1ba540e28359381cf1783610254c8e8649efcf01",
+      "bytes": 38001
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/login-light-768.png",
+      "action": "created",
+      "sha256": "28c94e925085cc208b602ecc0cc26c189608380abe4de92589dad093cf3da71b",
+      "bytes": 46471
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-dark-1440.png",
+      "action": "created",
+      "sha256": "25f4152725721f7f9018a44c3132e55ae61a26b5985edc6497fab3b5a276eb01",
+      "bytes": 79912
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-dark-1920.png",
+      "action": "created",
+      "sha256": "31ffd305a28737e2f9fbf8877d0f3c49923130350d57e05f8065df60357f864c",
+      "bytes": 83306
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-dark-375.png",
+      "action": "created",
+      "sha256": "34a03106c4dc4378b7cea256ca056a04200d0f445c6d2abbedb663b4b8d1cb1e",
+      "bytes": 47083
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-dark-768.png",
+      "action": "created",
+      "sha256": "e45faadba0160b9039d127e92bc36e247ea81194894a9237d49bf92fbb6e73dc",
+      "bytes": 55334
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-light-1440.png",
+      "action": "created",
+      "sha256": "aa6253325252895c586ba6da0c0e13bb2a8502b662da465aa403b70b9ed269ca",
+      "bytes": 79344
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-light-1920.png",
+      "action": "created",
+      "sha256": "dd987a251194837d5262c8f2bdb226a8b83a445c34e157a29222727db2f91114",
+      "bytes": 83496
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-light-375.png",
+      "action": "created",
+      "sha256": "cb74a29b2e3a41d8d3b8bf4f7191a6a447f7dcde06c7603944e64e2b154902e6",
+      "bytes": 46492
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/quiz-light-768.png",
+      "action": "created",
+      "sha256": "8ccbef327b813c259816a8d8dc4599704b7737d8c7fa43756b0b8b8603f889c9",
+      "bytes": 55703
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-dark-1440.png",
+      "action": "created",
+      "sha256": "d9d41508ea9cda90574ed3164f3b06827661010c7da5ff6ef92a93bcf9d9da81",
+      "bytes": 86124
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-dark-1920.png",
+      "action": "created",
+      "sha256": "09f5dfe22561e73dad42d2e5bd95ef4651550eab9e02ba4d1c5b0721e510b9e6",
+      "bytes": 88275
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-dark-375.png",
+      "action": "created",
+      "sha256": "4cdceec712033378552e71b7b27f8f1c01ad3c9c5b4e55d1d79081af8f234de4",
+      "bytes": 35526
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-dark-768.png",
+      "action": "created",
+      "sha256": "cd728b0d6baf31e073dbcf109e19856f2cf80800d1f950f4c671589a1d01973e",
+      "bytes": 43072
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-light-1440.png",
+      "action": "created",
+      "sha256": "3d8fb81c433d4fb844680babd19bd4566cc691ca235340b0521108a77375fef3",
+      "bytes": 87655
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-light-1920.png",
+      "action": "created",
+      "sha256": "79e7f45f840996544d0c282463de0c155ce8ba8f61e6953c00c63dd00aac0afa",
+      "bytes": 89003
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-light-375.png",
+      "action": "created",
+      "sha256": "27b8e1749012f3b4b3d8ff5f91d3d1532ee9d945a41dc82639f54398143dd2c3",
+      "bytes": 36190
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/register-light-768.png",
+      "action": "created",
+      "sha256": "c3c3a9cb90faa620651010e96cb8831f222bd9c3cfce24729893f27965e7ab74",
+      "bytes": 43846
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "f4c1645959c0923df133cb9bdcb21c8209ac33fa15799777a748d38cd5f018d9",
+      "bytes": 93584
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "203979eec8fe647b0daa58ac625e978f5df544d7c9a426a7a9c440b62ad39b6f",
+      "bytes": 97364
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "2c727b621b1fbf666f380f3e53fd06d64a382bd9aa8b6723bfead488ea39599f",
+      "bytes": 48930
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "7963f832e7a407edcc3e951b4bf2b886e46a2c59d49bbbaff3f5e3d354a48754",
+      "bytes": 58330
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-dark-1440.png",
+      "action": "created",
+      "sha256": "639bfec27d3853fe2796545ead6dfd4a304625d464d294b533bf54d1ce47332c",
+      "bytes": 100649
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-dark-1920.png",
+      "action": "created",
+      "sha256": "49f4342c3a81e58994f02ca104c4f35dc2e359e99368bacecbb485b893172fa5",
+      "bytes": 100649
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-dark-375.png",
+      "action": "created",
+      "sha256": "e47a6ece2c027059c6ae1a58d6a4b1467d0143b0b486c817cf3a2536f273f6c3",
+      "bytes": 72856
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-dark-768.png",
+      "action": "created",
+      "sha256": "c29e52da83a1974755081e3c409008f43523204c4db0274ed3f399aacf44e501",
+      "bytes": 92151
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-light-1440.png",
+      "action": "created",
+      "sha256": "2055f66b488cbe3fab4500598a7241c61cad0a14e8d3c69b9d2db3090e2d360d",
+      "bytes": 101107
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-light-1920.png",
+      "action": "created",
+      "sha256": "2055f66b488cbe3fab4500598a7241c61cad0a14e8d3c69b9d2db3090e2d360d",
+      "bytes": 101107
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-light-375.png",
+      "action": "created",
+      "sha256": "81fd803200f0c8b8c720a257c1fc4aa997aff82c50da1022822ab7b31cb041a1",
+      "bytes": 72801
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-detail-light-768.png",
+      "action": "created",
+      "sha256": "190db2e03bfc34219ceb4189dde4ca860cf1cbf7d387cd07a5ace3a0c2bfee0e",
+      "bytes": 92659
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "2c1096c86e33e290b11c32004a51e005b27bf8f60fc01b746d35831040973af8",
+      "bytes": 94022
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "870bcc589acd82e22f6e3d8803d03ab0406ebeb2c8d078bfc8ee81a0df3a3828",
+      "bytes": 97765
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-light-375.png",
+      "action": "created",
+      "sha256": "624af276ed9846e00007780684ae6628d129413155177706142ee7d0e861c3d4",
+      "bytes": 48534
+    },
+    {
+      "file": "docs/screenshots/refinement-after/webkit/threshold-light-768.png",
+      "action": "created",
+      "sha256": "b1a32a1104036077d90d2cb2089aa9f4a91a1eddacdcf072207a0739b5be7105",
+      "bytes": 58582
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-dark-1440.png",
+      "action": "created",
+      "sha256": "d920b2008d3012ca01fd931491f0c1404c56d3eb0d13e678770ed1cb3c57f91e",
+      "bytes": 69997
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-dark-1920.png",
+      "action": "created",
+      "sha256": "278d6245b78c058d3f43532b9924937981dab56d6c159f81f62959f3e974696e",
+      "bytes": 72704
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-dark-375.png",
+      "action": "created",
+      "sha256": "ad4e86502391a5c8ec87dfded38919990d31e5a42ed96b72210d134af58521b7",
+      "bytes": 35235
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-dark-768.png",
+      "action": "created",
+      "sha256": "5d9f9447d5fcaec8e693ac7ed2f5259dc701e508c624cc190ea31f1ee3841ed7",
+      "bytes": 38595
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-light-1440.png",
+      "action": "created",
+      "sha256": "9078b2c6c587894f960b58f015bb2db1df2e97051146b175e9ee56448c0159a0",
+      "bytes": 69041
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-light-1920.png",
+      "action": "created",
+      "sha256": "d0d6149c0ee7d9fe9ef5ab8cfb292051fc4c75be2013c8f015df3842e3e19d95",
+      "bytes": 71824
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-light-375.png",
+      "action": "created",
+      "sha256": "6c3dcb805b6b0dfd0ebcf70141346681e7ebd228e47b12e5d86153d487786e57",
+      "bytes": 34728
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/account-light-768.png",
+      "action": "created",
+      "sha256": "a6a7ffbb61ea904a0a9e36313edaed7793aedbfbb36cf9e53d482ce70db17073",
+      "bytes": 37989
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "eafff15d3b58c835270b47cfb77fca90e67640908be75488ed35258459d0c98d",
+      "bytes": 80815
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "aa5337e391bea391fde2d60de98fb363bf019ead9608777c01ef7c0d8d9ac22f",
+      "bytes": 83901
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-dark-375.png",
+      "action": "created",
+      "sha256": "ddaed921ca68fd8c5b8351c5633e41eed678e4396799511a86a855709719dd7f",
+      "bytes": 35355
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-dark-768.png",
+      "action": "created",
+      "sha256": "713ed369008df6367f8b3841c116bd9702715cb30459ae93d3835f90ec9b4c09",
+      "bytes": 54390
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-light-1440.png",
+      "action": "created",
+      "sha256": "fcc6966f4b543a824c4bd8afb5ab6b0a4a6b2859a54fb962d608c7b1ef07fb1f",
+      "bytes": 80861
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-light-1920.png",
+      "action": "created",
+      "sha256": "dd6a55717537f277991c46f6f575eac5705a36e23ebe568e17ee4b67476226c6",
+      "bytes": 83918
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-light-375.png",
+      "action": "created",
+      "sha256": "64bde7bf96c43528a85fd6bf05886bc4d330354efc59dfdb9ffb354200e35538",
+      "bytes": 34787
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/courses-light-768.png",
+      "action": "created",
+      "sha256": "e36752fb8cf80078a1b493e7d310430ee1df80b6de42f202285f41d07d54faf5",
+      "bytes": 54508
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "e65e2fdf95dabc6004e517bb4e783fb6b20170c47b9a5ae462a648f0d0d08c3a",
+      "bytes": 89301
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "2cd53f39d45426b076f4b492547ae22a6f04314c1fffdb8d536bbea4df101164",
+      "bytes": 92229
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "0fb8626a85e74056a8c29c22e7fa3a308503a9cacf21cc652ae43d08d7d28046",
+      "bytes": 43184
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "f1621712f12b47c2f78358b451fda71f37647130f6536068790afe8eaa26471d",
+      "bytes": 58530
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "228700199562c88fc5f7ea11eeb24f59e25f5e93acbc57e77b3c835bda889a44",
+      "bytes": 89794
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "184c8d0b7b8ca042e4a8cedd8764681fb01bc5a00ad0e305ada125846af44df9",
+      "bytes": 92839
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-light-375.png",
+      "action": "created",
+      "sha256": "805e13d60412dc3335816a4df4f630ce8ee2a2e32f98ac91aea56dad3721f057",
+      "bytes": 42626
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/cpu-light-768.png",
+      "action": "created",
+      "sha256": "be1ebaa33248cd76c03b450cf44f7da48ce147e03ec2abcdb772a98591b2751c",
+      "bytes": 57912
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-dark-1440.png",
+      "action": "created",
+      "sha256": "a037705acff10da1b78a8732fd5a56db7cfc23e09371609aec6806ba46caee63",
+      "bytes": 79355
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-dark-1920.png",
+      "action": "created",
+      "sha256": "1d735c0846425c021e3820d906aa43c8dc887d429494779fd9fdf3c2c17a323e",
+      "bytes": 82022
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-dark-375.png",
+      "action": "created",
+      "sha256": "bc221f516ae5de4f80ce9cd65eb7d9b34ae7b7ec9fe28067d213eedf7e3ae6d5",
+      "bytes": 41664
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-dark-768.png",
+      "action": "created",
+      "sha256": "2098d30393a306421c527761fb2b02e5b730297611b53c34f151a69210e7caf2",
+      "bytes": 48781
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-light-1440.png",
+      "action": "created",
+      "sha256": "329189f634b6a6b9bf462963e50ced66e22e45289f66a61a85808552df0e86dc",
+      "bytes": 78600
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-light-1920.png",
+      "action": "created",
+      "sha256": "e094b5dfaf275aa2dc7508892f02dcb4474ff841476fb5eb2f44a074d5f8289b",
+      "bytes": 81300
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-light-375.png",
+      "action": "created",
+      "sha256": "b140a45f623619c486a5c9673009ad24807fc4bf2b172e003cbb5a0ff83ddb1a",
+      "bytes": 40771
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/dashboard-light-768.png",
+      "action": "created",
+      "sha256": "3153629c9a1b69ad634265f2d4ea06e91d68110439c777198a72126d88185098",
+      "bytes": 48119
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-dark-1440.png",
+      "action": "created",
+      "sha256": "13f2fc21a3c79aad0715123156c6fc130e2a5d32ba5ad1581bd21864b38f068e",
+      "bytes": 91265
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-dark-1920.png",
+      "action": "created",
+      "sha256": "6616dff0ed756d647de76c080b297d9ef98ebcb6e47c7996e2c0e808d0ff7c7b",
+      "bytes": 93675
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-dark-375.png",
+      "action": "created",
+      "sha256": "894eb3cc0864e6375d82c0e64dacf8c7b948b3bdf34641f3827118bdc9dbe7d5",
+      "bytes": 50707
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-dark-768.png",
+      "action": "created",
+      "sha256": "8f900bbd323d30bf6f21e53c98edced7e5f9c7ac2ade0cf1ee96fe2bcedd8c08",
+      "bytes": 61565
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-light-1440.png",
+      "action": "created",
+      "sha256": "44c8ed7de423db53752efc1a015fd743d8e087cc871d981ec2afa5fd6125eaee",
+      "bytes": 91677
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-light-1920.png",
+      "action": "created",
+      "sha256": "fcb379c738603abc60c47eb6e62952917621ff80b2f7f66fd1e953f2cf4ec299",
+      "bytes": 94460
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-light-375.png",
+      "action": "created",
+      "sha256": "370ee46eac83ec94574dcab57f0fb266cf67b0b3439826950459c0aad47e5314",
+      "bytes": 50245
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/home-light-768.png",
+      "action": "created",
+      "sha256": "b370bdd5d425a1280d5657da12dff906f0a69f358d4cd131e15708f12b3cebb3",
+      "bytes": 61335
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "0517a7a3f9d0f2404481470c7415175252c31e7b9382127c780416808eba4e39",
+      "bytes": 93901
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "fd6c7c58f5cd9c1995db00206d0e5446fd7c7db8b7d1d189e35311a0c4bcd28c",
+      "bytes": 96729
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-dark-375.png",
+      "action": "created",
+      "sha256": "7d116910ed345246202a57c58540247fad3465ae2cc0d94f2047321ffd00f50c",
+      "bytes": 53685
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-dark-768.png",
+      "action": "created",
+      "sha256": "9fae1f407bc6414f4995eebb0e765f05c43f71fd18dd56e494bde277be540958",
+      "bytes": 66954
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-light-1440.png",
+      "action": "created",
+      "sha256": "091d46faa840c8321306c9717dd04f8974b4eb7346ce7808e666b5c7dabde01d",
+      "bytes": 94379
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-light-1920.png",
+      "action": "created",
+      "sha256": "475605ffac18c14309b455ab4c62a9382bb6c544a7f093d9437f7f073a6b73e0",
+      "bytes": 97190
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-light-375.png",
+      "action": "created",
+      "sha256": "62f9389ee73a1fcb81f3130def4c2de0bf163cb2a313446a0873236393a48bd4",
+      "bytes": 52711
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lab-light-768.png",
+      "action": "created",
+      "sha256": "5965a25014aa5a3ec4da81a0af3926ea8c1715aa974bc851d49d6c7eae6884cf",
+      "bytes": 66024
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "c7f6f607147e095f703ac076f1f85f4d8df60f6d5ff5e806df12b82e668be1ea",
+      "bytes": 121711
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "a47a91731fec40e3c5a96fcd146b3ac42dc9be0a1d3ff96ca384198786f89440",
+      "bytes": 125940
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "caa33ffe61119dfd6cd16d1299f9f8b0ed0d9721bb25442739099083f580fc38",
+      "bytes": 46619
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "7b9647ac01931697967119707c3eb1e3a2aa5fd57249c9b1e1d9694553b25265",
+      "bytes": 84306
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "df3b99c013ffc34ece4e9281bcb2571039251807d5ca62c308790e2e073ca37e",
+      "bytes": 121172
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "b72730febea6b2fee986fb0e2c4a20c27e7ae67afc03d421718997d34dcc2582",
+      "bytes": 125362
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-light-375.png",
+      "action": "created",
+      "sha256": "5d23c0018daea5ec7173d78cb927f08c0478570c999883dcec17cd980cc5a959",
+      "bytes": 46198
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/lesson-light-768.png",
+      "action": "created",
+      "sha256": "d61c139a4e0ac6890a5257cffd15a169a8862d436cfccdf957ea334b5d428114",
+      "bytes": 84950
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-dark-1440.png",
+      "action": "created",
+      "sha256": "6d8e8d400f98e71803fcc7def9c581e5e0e40b1f150995d5ddfb3702d7faa126",
+      "bytes": 89343
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-dark-1920.png",
+      "action": "created",
+      "sha256": "74274eaa61535c28af93a93050cc4ce60cb9e3fafe247604ffbd3953187e1afd",
+      "bytes": 92636
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-dark-375.png",
+      "action": "created",
+      "sha256": "fae88eaf56a4fa7275bd1efc7a73ef881a8275a6a63b231ff3cf1a68d7da6991",
+      "bytes": 37190
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-dark-768.png",
+      "action": "created",
+      "sha256": "428dcf3e21a89a796921b187f5a4a9919482f19898716c9c81bf9b1b250238b8",
+      "bytes": 45189
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-light-1440.png",
+      "action": "created",
+      "sha256": "ab45fb5654927b9deb3265da246abf14fa698477397dea8c7b442dae9bbbd26a",
+      "bytes": 88114
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-light-1920.png",
+      "action": "created",
+      "sha256": "31d8adf3bda6e925adb1830448270a0587337f4b0405f5ba8523d46bfc82e965",
+      "bytes": 91845
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-light-375.png",
+      "action": "created",
+      "sha256": "004196e28642b4ee8e72a09031226b96a479c4c0e00aeca2ee8bbb0868b55b70",
+      "bytes": 37720
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/login-light-768.png",
+      "action": "created",
+      "sha256": "fdd93f8f7a8053a84ced2e4935cb88e44df86d84fa194768cbab764955e2a5d8",
+      "bytes": 45863
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-dark-1440.png",
+      "action": "created",
+      "sha256": "ebe37d52175459cf1f4051cee8d741d8fac3a1e56a5d1f01f7af355d6072adcb",
+      "bytes": 84402
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-dark-1920.png",
+      "action": "created",
+      "sha256": "2eedfe81b1fda2bff7e915bfac85c3bfd52ae445c6ecba014c8cefc1073d7179",
+      "bytes": 86268
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-dark-375.png",
+      "action": "created",
+      "sha256": "905969d5062365b769b5c5a903f936c16c68785d2a9c7c736e4c0b92840210a3",
+      "bytes": 50727
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-dark-768.png",
+      "action": "created",
+      "sha256": "7a27561781bbad0904709ccee271239d8e111292a7625aedbcfe14f054719c37",
+      "bytes": 54795
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-light-1440.png",
+      "action": "created",
+      "sha256": "6818ca9c4dd2cb40071a732b02d65919af1587cea6c1beb1932a1440e7f841ea",
+      "bytes": 78622
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-light-1920.png",
+      "action": "created",
+      "sha256": "dbaa0187667f1c3b830033601812f5a3197186eb7555986effb6ba487fea1115",
+      "bytes": 86301
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-light-375.png",
+      "action": "created",
+      "sha256": "6cb9465d25428b417f7d1635517f6f266a63053d50424cb50cc974754f2854bc",
+      "bytes": 49547
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/quiz-light-768.png",
+      "action": "created",
+      "sha256": "658bc72312c912a9409dd8dffdc80902fadbd435fa2e4aea95d2fca0086cd8b2",
+      "bytes": 55201
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-dark-1440.png",
+      "action": "created",
+      "sha256": "e514d2cc4a3a27a84c15b827edd5f300ff182ab07d3b5af35648a96a6d350575",
+      "bytes": 85767
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-dark-1920.png",
+      "action": "created",
+      "sha256": "b7931402cde44947dc13c609c32538e3ccf1674dc2fa360fa1ab1024e4050c76",
+      "bytes": 89588
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-dark-375.png",
+      "action": "created",
+      "sha256": "15f697e5f296b3760473f406e9428b753e795b5fd436651d3023d6fce39b9990",
+      "bytes": 35664
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-dark-768.png",
+      "action": "created",
+      "sha256": "87c72e26c78d870a5467c62563c1a4d65a0fe121feb0663076b7b6967628068a",
+      "bytes": 45123
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-light-1440.png",
+      "action": "created",
+      "sha256": "93bab4c1a82a2580ef2f7d308c3d01310eeb68a74e891df9af3d5666f5b7c5e8",
+      "bytes": 85036
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-light-1920.png",
+      "action": "created",
+      "sha256": "e496a2a67fd42b22e9441540fcbee58dfd1e1a7440587f57522572f8aba1bda4",
+      "bytes": 88597
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-light-375.png",
+      "action": "created",
+      "sha256": "f7477fc1008af4cbaf4da1f2b1ad832415d86c02b2b53c034e0c802762ff7285",
+      "bytes": 36279
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/register-light-768.png",
+      "action": "created",
+      "sha256": "75a57edafe4ef2efc910e1e96b4efa51ff8e6ca01e1aedb52cf40516871f7e49",
+      "bytes": 46045
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "656efc15f09294670c23a7fb5a12fd4b81183d033ba0ae4f5ca44f960b4a9b03",
+      "bytes": 100744
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "479625152b38652a33706abd31d096a08ff54b221723a43b4ff2b24e1a6b3e22",
+      "bytes": 103878
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "68e3fb9bd0c04bd5338d4e2b1c6d49273844df87e5091f7e3a136d0a744976fc",
+      "bytes": 40256
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "339a8cfc603e312ea16c8896bf57a60d67f4c6afb1ba4070842b744bf7d2c3c0",
+      "bytes": 57475
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-dark-1440.png",
+      "action": "created",
+      "sha256": "63342b969e3bc7bd76c753efd3845d1866de39a1c5a611d904c03285095f6cc4",
+      "bytes": 105819
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-dark-1920.png",
+      "action": "created",
+      "sha256": "63342b969e3bc7bd76c753efd3845d1866de39a1c5a611d904c03285095f6cc4",
+      "bytes": 105819
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-dark-375.png",
+      "action": "created",
+      "sha256": "c65517492f4ee4778717e0f2f558b266d9f8fcc4de893a188ba95fd66d9300ea",
+      "bytes": 64421
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-dark-768.png",
+      "action": "created",
+      "sha256": "f0f1ec09f6178be1eff3b3b181cf94b32ddf848aa9cf018e042a074a0442ad1a",
+      "bytes": 94841
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-light-1440.png",
+      "action": "created",
+      "sha256": "8ea17aed398468e7c45325f163fc4d8a837718712ef4a9a0c2847c6e10acdda9",
+      "bytes": 104772
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-light-1920.png",
+      "action": "created",
+      "sha256": "cdbba82bd0e0f72473541486a9b603bfbebbe93dea893feaa5dc1582464d341f",
+      "bytes": 104777
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-light-375.png",
+      "action": "created",
+      "sha256": "d86c71728623c7dd616264edaf25011365607a8a49e3bb0f144007035ec4fbde",
+      "bytes": 62769
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-detail-light-768.png",
+      "action": "created",
+      "sha256": "ff7c7c4dc2ba3b3093b5c4d36f74cfff3aea90195d996a8a917bc513106633b7",
+      "bytes": 93984
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "556354e6189260b2b95004a7e04a784cedb201f4746b681df8bdc0eab44d06a0",
+      "bytes": 100052
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "a353f7ea19ac91e66799e344634579086ea600fb67f5e8e783dfbde816a08093",
+      "bytes": 103192
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-light-375.png",
+      "action": "created",
+      "sha256": "87b3bbcace20674ada520abb2a475a85c0bcc13efecf5545ad8bc22c513c066e",
+      "bytes": 38909
+    },
+    {
+      "file": "docs/screenshots/refinement-before/chrome/threshold-light-768.png",
+      "action": "created",
+      "sha256": "cb268567a09f95447d304687b359ec6575198e801b8331315f1f92fd3db53013",
+      "bytes": 56763
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "43f0e7ed8e3de066ca11996cfee15f11065fa81c5952323f0d9df967e867c83c",
+      "bytes": 116409
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "001b35a1cd2cd2e14b31dcaa47ee74b30f1920cc54107dbf7e4dccfe4f5f8e76",
+      "bytes": 120566
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-dark-375.png",
+      "action": "created",
+      "sha256": "8991fa96d61758902f7c050cbbb156688bd1a0ca6a22493214f63fc0a2dd4426",
+      "bytes": 51603
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-dark-768.png",
+      "action": "created",
+      "sha256": "a7cbde8f84f5596daafc671987772fcf81c928fe12b3ac8b8c907cd5c8f71c9e",
+      "bytes": 81649
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-light-1440.png",
+      "action": "created",
+      "sha256": "8a1c67a20c093c745bbec74a7edcfd95d782ee66a68624745ea32b268514b07e",
+      "bytes": 116735
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-light-1920.png",
+      "action": "created",
+      "sha256": "22b55c65cbdfa147accdab4083675d3df38d3b03b6ebe88b6cb8ad4d066c8b1f",
+      "bytes": 121923
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-light-375.png",
+      "action": "created",
+      "sha256": "cc5efb6cf22e1f9a991661f5b5c16bb73d1618b55fed72f7e278d0d2d17feeab",
+      "bytes": 51665
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/courses-light-768.png",
+      "action": "created",
+      "sha256": "a5180b71dcfb263cc8a613d8061ea26ed9a5d11ef27098e4912d5571f825a7c4",
+      "bytes": 82489
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "de01989ce802f57c6f11d6e1c6bc1b55a1884de5ef09e29c4e281c6219263188",
+      "bytes": 118041
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "ce098be5b03e740e7f8b1ad61332cc8cb1d5c3960c7f50ba7440bec2e09d50d8",
+      "bytes": 121084
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "0211a1a0839134c8ab3d0008ffb54d4f8de2e1b2f3a3df4a3107442290b75c8b",
+      "bytes": 61617
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "fa85eb8e33b188b3d5a69174d221b6cd333f4f1635e2d0437658c747f7778619",
+      "bytes": 74380
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "73392a1ee27186c44a1a7644eae86ef9d009bfcca6ea3aa43b1c2743ecf4d153",
+      "bytes": 118129
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "3bf39893e2ab405aa4894166bc733e0b52c3f896b8e4dbde7dbce7168c6fa070",
+      "bytes": 121248
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-light-375.png",
+      "action": "created",
+      "sha256": "09e5013252287d840ef57cf7ebbcc35b6de8e6d1d51e8881677f470ed90b8a32",
+      "bytes": 61260
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/cpu-light-768.png",
+      "action": "created",
+      "sha256": "3131593d2269670fc222ebdc2277963da3445013deb86eb6b6358e04906bac3d",
+      "bytes": 73979
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-dark-1440.png",
+      "action": "created",
+      "sha256": "9b0004878e2829c04f1cbb0b8638ffb9817a4e794a25359204296c37828b1cdf",
+      "bytes": 14199
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-dark-1920.png",
+      "action": "created",
+      "sha256": "8ac489dfef597e2c6cea3a6b6cd8059f5ae6c3f11bdabd5ea8844c5c907140ce",
+      "bytes": 14642
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-dark-375.png",
+      "action": "created",
+      "sha256": "e21e4ffeaddb9f7572e22d3b25953bb9a5b24f22946bbfdc55e7bc312aa69f64",
+      "bytes": 16753
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-dark-768.png",
+      "action": "created",
+      "sha256": "f2796a5d1334490ff5c7065bdfedce302c8f375c3aac4e8d96edd6d567e09a19",
+      "bytes": 15377
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-light-1440.png",
+      "action": "created",
+      "sha256": "4c860cc9c957e84b2c464d6e574b70b62eac1e555d3e56e94e257e70188cf846",
+      "bytes": 13844
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-light-1920.png",
+      "action": "created",
+      "sha256": "04afa96203dd441275d8b71af1970c3bf26897baabf54bb1959f5d83ac52295f",
+      "bytes": 14350
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-light-375.png",
+      "action": "created",
+      "sha256": "eda9a53fcb19128ebeed1f19e777e01402cae9d47883aa107eaa2dcb6f6282be",
+      "bytes": 16180
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFC-light-768.png",
+      "action": "created",
+      "sha256": "3909f478ed23bd0fa66891e6df09c24f006fce78f833f2be711291219ce4c872",
+      "bytes": 14847
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-dark-1440.png",
+      "action": "created",
+      "sha256": "9b0004878e2829c04f1cbb0b8638ffb9817a4e794a25359204296c37828b1cdf",
+      "bytes": 14199
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-dark-1920.png",
+      "action": "created",
+      "sha256": "8ac489dfef597e2c6cea3a6b6cd8059f5ae6c3f11bdabd5ea8844c5c907140ce",
+      "bytes": 14642
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-dark-375.png",
+      "action": "created",
+      "sha256": "e21e4ffeaddb9f7572e22d3b25953bb9a5b24f22946bbfdc55e7bc312aa69f64",
+      "bytes": 16753
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-dark-768.png",
+      "action": "created",
+      "sha256": "f2796a5d1334490ff5c7065bdfedce302c8f375c3aac4e8d96edd6d567e09a19",
+      "bytes": 15377
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-light-1440.png",
+      "action": "created",
+      "sha256": "4c860cc9c957e84b2c464d6e574b70b62eac1e555d3e56e94e257e70188cf846",
+      "bytes": 13844
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-light-1920.png",
+      "action": "created",
+      "sha256": "04afa96203dd441275d8b71af1970c3bf26897baabf54bb1959f5d83ac52295f",
+      "bytes": 14350
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-light-375.png",
+      "action": "created",
+      "sha256": "eda9a53fcb19128ebeed1f19e777e01402cae9d47883aa107eaa2dcb6f6282be",
+      "bytes": 16180
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-detail-NFD-light-768.png",
+      "action": "created",
+      "sha256": "3909f478ed23bd0fa66891e6df09c24f006fce78f833f2be711291219ce4c872",
+      "bytes": 14847
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-dark-1440.png",
+      "action": "created",
+      "sha256": "45e782b5e11bed9668dc3ead6222b74db20f90304e99e5694a5055c1bae6a230",
+      "bytes": 420438
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-dark-1920.png",
+      "action": "created",
+      "sha256": "ef21266556dc948ba8be3f91363f5fc10176ba8284c9b3817fc7fa83aa618c74",
+      "bytes": 433212
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-dark-375.png",
+      "action": "created",
+      "sha256": "63d3c9b52b2b0e616e2064544b574bd1d046f38bbd5e507929b4e5f99ec2c960",
+      "bytes": 454787
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-dark-768.png",
+      "action": "created",
+      "sha256": "465acf026051da7c65f7732846dabcaaf21868ff13e02f425ded73a8a31bdad3",
+      "bytes": 422390
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-light-1440.png",
+      "action": "created",
+      "sha256": "8a8fc2f85e74b39cf628506ed6851b119aa70a4003917310fcec43b219fc0ab6",
+      "bytes": 421263
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-light-1920.png",
+      "action": "created",
+      "sha256": "9f23eb0c863396bce566985377deb7357d8d9cb7d31db23f17766fc947107080",
+      "bytes": 435131
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-light-375.png",
+      "action": "created",
+      "sha256": "1f7ec9410e19f7d1ff4e0d8014b644fde4a4a2b6276afce4240f0bed49208c69",
+      "bytes": 452253
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/font-specimens-light-768.png",
+      "action": "created",
+      "sha256": "aade94f651de9c9c70139f67a783c19fe9847c693a75b522ab79a3cfe8f437db",
+      "bytes": 422165
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-dark-1440.png",
+      "action": "created",
+      "sha256": "cdbae207ed420ea4c0aaef5e8a49985e45d5f27fec546adabb68a2a69378f57d",
+      "bytes": 8174
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-dark-1920.png",
+      "action": "created",
+      "sha256": "cd3658a59f4c121c1732a462b11509ef9f9e5e9c4f274ff9f2ae0cb350a4ce27",
+      "bytes": 8235
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-dark-375.png",
+      "action": "created",
+      "sha256": "bca5c2f614ac8d0f2150da2b2cc57c7e0e0810dd3d4a7a852e481dff53048c38",
+      "bytes": 6431
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-dark-768.png",
+      "action": "created",
+      "sha256": "e4d8860ec61f993879bb52664ecda6e01a8973b63eb2760949171897359cf15d",
+      "bytes": 7991
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-light-1440.png",
+      "action": "created",
+      "sha256": "624559442c4064d3f00ac1b39a13eaee414d4cc01bbc051f46d8f4bf4cdb59df",
+      "bytes": 8104
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-light-1920.png",
+      "action": "created",
+      "sha256": "3017a7ebd1594b48d285cffc56ab1bb1982e69600dc58ad86ff5ce1267beab63",
+      "bytes": 8175
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-light-375.png",
+      "action": "created",
+      "sha256": "70bf3373811e163f2d3218d5734949066d31e483e5c81fa853ac84a62eb652df",
+      "bytes": 6418
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-light-768.png",
+      "action": "created",
+      "sha256": "88e4f0fc955707b9cd83a9cec876e01df49e27dcca8df3c43d33f210666f66b0",
+      "bytes": 7879
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-scroll-end-dark-375.png",
+      "action": "created",
+      "sha256": "5bd46550ae84012ab101027c0c8772b2d466f7283b8e84313414c0f0ea4db6a9",
+      "bytes": 6409
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/formula-scroll-end-light-375.png",
+      "action": "created",
+      "sha256": "db0c1e450f283b2071bb60af475b65cb35d53e9ced631aeb4aeda7af56a22a76",
+      "bytes": 6368
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-dark-1440.png",
+      "action": "created",
+      "sha256": "ecd143114bd7941136da44885ab5c315ccaf63a08f623446231739dad53e9c5b",
+      "bytes": 94026
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-dark-1920.png",
+      "action": "created",
+      "sha256": "fc4c7fd2f58ad580cd9c0ff731320579678e7c572ec834d35a6133a26c512b35",
+      "bytes": 96779
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-dark-375.png",
+      "action": "created",
+      "sha256": "72667d6f1aa986c4aa18c5988406a19fe74d960ac316e9545b3bf8722ab68a6b",
+      "bytes": 67655
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-dark-768.png",
+      "action": "created",
+      "sha256": "217246a3f79c6aa053e52ec62fa86030fbb4c938252258f2fab6057934a3593e",
+      "bytes": 63226
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-light-1440.png",
+      "action": "created",
+      "sha256": "3a4894e556f7feb6ba0fac8de9dd01318a57293ff804c59d547f3e73d688947d",
+      "bytes": 96241
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-light-1920.png",
+      "action": "created",
+      "sha256": "bcd174d8d43b0a76750de69580df971676f9794eaac4477c27c5dd5f3c600f6f",
+      "bytes": 98265
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-light-375.png",
+      "action": "created",
+      "sha256": "af8383985ee579d557069d9d23d21a2a73b3b6eb7c8e0af710a28f6a4f36fc84",
+      "bytes": 66339
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/home-light-768.png",
+      "action": "created",
+      "sha256": "fa112b1f2ad6414625166f012e65145fb36541b3a8404acbdd326fb287a7f599",
+      "bytes": 62468
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "e87bb3e6c3c5ccbeb675d07ed5cc205a40cfe00aec1744ba503dc0dfa16c0095",
+      "bytes": 118116
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "1aedda83b00b6622bfc27fd29ec14b8c44fc1c29bd61d6efb5b1f48a7d8121cc",
+      "bytes": 121335
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-dark-375.png",
+      "action": "created",
+      "sha256": "454e71328367229ff2e247394d04fa11cb382e7bc245472c09b796ccb083eb07",
+      "bytes": 69934
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-dark-768.png",
+      "action": "created",
+      "sha256": "333500b20c45728c8e9f89a4b87f2f39413ebd5b8e58af970bec618cba7216c5",
+      "bytes": 84419
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-light-1440.png",
+      "action": "created",
+      "sha256": "ddc3db9f953aaac3980461c696c72be6a2c621d5307c5362959c094d75c23f90",
+      "bytes": 117778
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-light-1920.png",
+      "action": "created",
+      "sha256": "f0eab910979d24036ea403aed848b8b994c4c70c6072d7120c0903cb83abaaf5",
+      "bytes": 121203
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-light-375.png",
+      "action": "created",
+      "sha256": "afb3b0ff5110f9cbf89a321a20056625d16932479acb0d6ba0968052c64ec22c",
+      "bytes": 69391
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lab-light-768.png",
+      "action": "created",
+      "sha256": "cacadf8bd0be606b8f6324d69b5f4d372005a5318ab389b285c567f6aebcabcd",
+      "bytes": 84409
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "fd76eea5ab3d914f6a329b88b0099d6ee9b0f2f9540cfea9b8b1513cb48633b0",
+      "bytes": 143643
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "f5e185447a83b17390272764141f1010fff8f032dd68a86550fc2e2cb0c91fb4",
+      "bytes": 147009
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "6d74667419f8781f4ef0f50ce00766178092062b09d223f5da58ee53c4b5e56f",
+      "bytes": 83023
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "9463d7c272e9de009f55e87a0fef365b25a89fd746ddd963a39dc67661781f4c",
+      "bytes": 99733
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "95b1f52bcc784d6bd395476c29f8aaf04464e27d2883fa8dc2107432106e3e1e",
+      "bytes": 145225
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "63d7d48c94da6abd4e65abbaffb48c0c3e8c5c6467713bd8c240acbcdb2b1690",
+      "bytes": 148808
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-light-375.png",
+      "action": "created",
+      "sha256": "14e06c7d8198f8ffb66ab1808d2bfd4e38f964c27c7ca693100a9532703b9619",
+      "bytes": 83132
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/lesson-light-768.png",
+      "action": "created",
+      "sha256": "82be430b833325a693651f62a60e8b02b444d848f1e268f8570487282732ebe5",
+      "bytes": 101019
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/python-error-vietnamese.png",
+      "action": "created",
+      "sha256": "0215cd80fd905def2bba4d8a7e34ec09b2ab268a89ecf226fb9b526d94282dfa",
+      "bytes": 11615
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-delayed-hydration.png",
+      "action": "created",
+      "sha256": "098105aa75bea9398d2ebe5febdc6661b038f1bd148cccba2f41e06b5fa38d6b",
+      "bytes": 93462
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-mobile.png",
+      "action": "created",
+      "sha256": "e68bc2a5eeef0b1de8a3fd3e756fdaf6c475504c449d19e04a4646ae1866c273",
+      "bytes": 126429
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-dark-1440.png",
+      "action": "created",
+      "sha256": "9a99faa5b18b63476f5f629ccfa81bb546db8207b833d0a953a57ef84b6960c1",
+      "bytes": 3013
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-dark-1920.png",
+      "action": "created",
+      "sha256": "e94f114f8771a91742e9e35277840c1f07b92a0fbd6a36f090cf48a860fe65aa",
+      "bytes": 4076
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-dark-375.png",
+      "action": "created",
+      "sha256": "85bd26573ca99d1b490214557c411d6be0cb7810a545c1dfc4dd54f35dbebb41",
+      "bytes": 2390
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-dark-768.png",
+      "action": "created",
+      "sha256": "eae25ab1b5c297e3bab50c1f410115862561230aee4413772c8258e97bd43ede",
+      "bytes": 2513
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-light-1440.png",
+      "action": "created",
+      "sha256": "4ab57cd8c61465abea76c271e7fc2cebf918348897201af223ef8503c852db78",
+      "bytes": 752
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-light-1920.png",
+      "action": "created",
+      "sha256": "688db21957cc5fe4edffc4c0fd779eb5d4c25ef7914f9da989968b429c3e8d49",
+      "bytes": 3823
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-light-375.png",
+      "action": "created",
+      "sha256": "057a25d8bbbd0e6a56c46e858fbf0fc193e263c61e4d9afcfea94702eca30ded",
+      "bytes": 705
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/quiz-option-nfd-light-768.png",
+      "action": "created",
+      "sha256": "ce7314371e71a1c07c360509d92d13f8bd438e3d54d2e613c3c659326b146f2d",
+      "bytes": 3809
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "528a69158fc83ac6e81a2df2341a09819a023cad92ee0b65ba630b1f0e2feabb",
+      "bytes": 121054
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "3fda31aae686e2adbaca737ed431362f8437d8c135b3fadb1bf832772ec85bec",
+      "bytes": 124528
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "5fb14985bff9b62a4513034e83198c16413e8f2e61c563f61635cba04b4e48d1",
+      "bytes": 55601
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "4655ba6547706d4d10f06c9a188606422f6fc317865d09d1fbaa08d6192aceb5",
+      "bytes": 69138
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-dark-1440.png",
+      "action": "created",
+      "sha256": "2e4328eec792246b95b6d32b5d674efd6706485e675fc4d84403f889031df887",
+      "bytes": 133864
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-dark-1920.png",
+      "action": "created",
+      "sha256": "d9dad9be6df0b3cf01deee134f8f3b10b51d80e7f26da277bb5c17a7d3612383",
+      "bytes": 133865
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-dark-375.png",
+      "action": "created",
+      "sha256": "e87ff1eeba68737fcfbef2b31777656f8e26d87b2aa4e1663e28ae6fd4c26180",
+      "bytes": 94986
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-dark-768.png",
+      "action": "created",
+      "sha256": "4288979e2534c58f25e22d66a1208e45cfd32f8f1c7d6eb85d8da834a3c466c1",
+      "bytes": 123812
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-light-1440.png",
+      "action": "created",
+      "sha256": "a15f8464030063050f5289dc218bdb93a4291ba13e1e4994a5ddc1ed246662ab",
+      "bytes": 134039
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-light-1920.png",
+      "action": "created",
+      "sha256": "90c7b0eb0b4caed51c76751184457d32629c58444b3a62b55068d48f2a675c5f",
+      "bytes": 134085
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-light-375.png",
+      "action": "created",
+      "sha256": "bb8b607ff6005c2e5c455b84eab4e0271d68274936068524cc2f3a5c9a247315",
+      "bytes": 94851
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-demo-light-768.png",
+      "action": "created",
+      "sha256": "b10af5031807dc4a8fc9ec7912063ff65543577b2693f47fbc6aa7645e63a56f",
+      "bytes": 123793
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "a52786d9432fd966cfc625444ca28b110079f6064c6bf7d85f92343a81d7875a",
+      "bytes": 121242
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "11546d0bd552c4cff265a563d1d9ebc169942d2d7f6e5ec1a13d4dd505a3a52e",
+      "bytes": 124812
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-light-375.png",
+      "action": "created",
+      "sha256": "644c5083bcbf5c6bccfe0137a0211cb4606a472b702916b1270569a2d90e3892",
+      "bytes": 55492
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/chrome-control/threshold-light-768.png",
+      "action": "created",
+      "sha256": "f14f80adbabaaba49d90c4976d4cc32a6366997a26d74745d2d7e84a909a49cc",
+      "bytes": 69110
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "c81ec91e8cc2ff92867d6aa274601b28c12df5a19ea6ebf45615f8af1666ec5d",
+      "bytes": 88081
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "f86412e025981ce8c0e36615c0f7182b842142a728cdb1bb1c7f6426c36bfd5f",
+      "bytes": 92164
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-dark-375.png",
+      "action": "created",
+      "sha256": "d6850e10ab8e9a91db2f06f6fae93428ff7a81bb808d647b216d47e0e99edcde",
+      "bytes": 40472
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-dark-768.png",
+      "action": "created",
+      "sha256": "75cda625dae0d1b2625fd62126487b5268733e98aa1fe9aa7d5922ab29b5f37f",
+      "bytes": 61172
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-light-1440.png",
+      "action": "created",
+      "sha256": "f834f31625dfc956bfb609607e59309d48fa6269bc084e43b8ee9dd0d97f3a94",
+      "bytes": 88119
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-light-1920.png",
+      "action": "created",
+      "sha256": "4cf7e0e0a3358b7ce891c44ab5c073ac1438c948729cf862fffe0e09125e4460",
+      "bytes": 92385
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-light-375.png",
+      "action": "created",
+      "sha256": "ff6d311a66848d4da0bb9b4c3764a4df77ebc219fdbbedc53bb7c77537fdf2e8",
+      "bytes": 40871
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/courses-light-768.png",
+      "action": "created",
+      "sha256": "c589e1155a8d7588019215024d5f55170c8c83799cbacc06ee3ed48740cd668f",
+      "bytes": 61914
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "b343102378ed5edc8ca1bfe3964692e4d51636214aaf7714f42bcc8b84a1ed4a",
+      "bytes": 88835
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "fa378296d633f7e2a29e7dacf0fbbcafa79725695f2b2343f297fcc248e65575",
+      "bytes": 94190
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "ac1df4b123067b8add1dcb4a0aa78c9657e2fee1a3512d4ee98d160fc140a044",
+      "bytes": 45714
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "72849d113319455f6d47aa1599fba9ca0289f43ecacb0e5c8cb966f3896ce508",
+      "bytes": 57233
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "83d7b1c9d79d4065cd257d1cb627bf9e31a265947c236baf01dfa51bb1b908d7",
+      "bytes": 89276
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "634c38609f57a3f10d6c3b46b3487e6a4c9cb692c0269e64f81c726ae7e738b9",
+      "bytes": 94490
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-light-375.png",
+      "action": "created",
+      "sha256": "56cd1a682f3304c437f835013ef8f4a7adf0775d368041c9fc5f2d3c416ad715",
+      "bytes": 45890
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/cpu-light-768.png",
+      "action": "created",
+      "sha256": "a205c818dedd82aa28c457a7ac6cf467bf4af5a902faa15f532640f071eb461b",
+      "bytes": 57434
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-dark-1440.png",
+      "action": "created",
+      "sha256": "86460f0762d9fc84d5edd79d59d334a2e3053766b2cb65e9079102adb2a8a70a",
+      "bytes": 10830
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-dark-1920.png",
+      "action": "created",
+      "sha256": "d07f49aa65866a062c161b50864d557308d7a05edb5a366487f74cd2cbd80ba9",
+      "bytes": 11371
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-dark-375.png",
+      "action": "created",
+      "sha256": "4372d3e9e1fa0c921bf62fd6f5748b892284b2563b6ba6bedb586e08993b6248",
+      "bytes": 10616
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-dark-768.png",
+      "action": "created",
+      "sha256": "a9f9d79dc3ea72c6330ddd03c9ec1e9c69a5b4ca06382aca89a06005434aca09",
+      "bytes": 10674
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-light-1440.png",
+      "action": "created",
+      "sha256": "2512be9f4873ff0a5996b87146be8fee6aaf201da8b68853c5bee3dad2506597",
+      "bytes": 10805
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-light-1920.png",
+      "action": "created",
+      "sha256": "d663ed28f09d792604d3e5d34cb681815769f64055c87cf900ee5574b5c9c9fd",
+      "bytes": 11343
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-light-375.png",
+      "action": "created",
+      "sha256": "f2c4dc413313757496411cc96f93ac4bb3f15448732e039a9e8b1165c0968190",
+      "bytes": 10562
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFC-light-768.png",
+      "action": "created",
+      "sha256": "ccdeb649155710e2977f0e68ac891a2f87810af261d34d8ff466635be3bbf4f1",
+      "bytes": 10661
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-dark-1440.png",
+      "action": "created",
+      "sha256": "86460f0762d9fc84d5edd79d59d334a2e3053766b2cb65e9079102adb2a8a70a",
+      "bytes": 10830
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-dark-1920.png",
+      "action": "created",
+      "sha256": "d07f49aa65866a062c161b50864d557308d7a05edb5a366487f74cd2cbd80ba9",
+      "bytes": 11371
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-dark-375.png",
+      "action": "created",
+      "sha256": "4372d3e9e1fa0c921bf62fd6f5748b892284b2563b6ba6bedb586e08993b6248",
+      "bytes": 10616
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-dark-768.png",
+      "action": "created",
+      "sha256": "a9f9d79dc3ea72c6330ddd03c9ec1e9c69a5b4ca06382aca89a06005434aca09",
+      "bytes": 10674
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-light-1440.png",
+      "action": "created",
+      "sha256": "2512be9f4873ff0a5996b87146be8fee6aaf201da8b68853c5bee3dad2506597",
+      "bytes": 10805
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-light-1920.png",
+      "action": "created",
+      "sha256": "d663ed28f09d792604d3e5d34cb681815769f64055c87cf900ee5574b5c9c9fd",
+      "bytes": 11343
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-light-375.png",
+      "action": "created",
+      "sha256": "f2c4dc413313757496411cc96f93ac4bb3f15448732e039a9e8b1165c0968190",
+      "bytes": 10562
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-detail-NFD-light-768.png",
+      "action": "created",
+      "sha256": "ccdeb649155710e2977f0e68ac891a2f87810af261d34d8ff466635be3bbf4f1",
+      "bytes": 10661
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-dark-1440.png",
+      "action": "created",
+      "sha256": "21a1202a2fa70b7c676810ae976010d2a34044c5b01444961e999b91e86dbf21",
+      "bytes": 321412
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-dark-1920.png",
+      "action": "created",
+      "sha256": "623b4c98eccb774e963fb5f90ddef675966fdba0dce83c50eabeac3e2df36749",
+      "bytes": 339107
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-dark-375.png",
+      "action": "created",
+      "sha256": "6e3ff477b35d4b5d33ef97c6cc0b09dd3d5f42bfe744e4590e871f3c3a8caa2f",
+      "bytes": 305617
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-dark-768.png",
+      "action": "created",
+      "sha256": "e9a24caae3f5e3dcb175735e2c1f6427c4459b9939a5db7b2484834f3b182f58",
+      "bytes": 302013
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-light-1440.png",
+      "action": "created",
+      "sha256": "f7523511ec4d897823134700d9a36e095febbe786e606fe7d586036444aa4fbe",
+      "bytes": 320588
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-light-1920.png",
+      "action": "created",
+      "sha256": "9466a3f4fc70ca6b7879e52b6866082c0fee9941a96e9c084b04dc92cf607ec9",
+      "bytes": 338206
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-light-375.png",
+      "action": "created",
+      "sha256": "4e32aeccc6500888e907f4d3d5ccb6f6f3c146363563d45c5ee07028775d848e",
+      "bytes": 304465
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/font-specimens-light-768.png",
+      "action": "created",
+      "sha256": "0f882bfc6cee95e39c0496b11d9a82265e838f1926098b385a8570dd47459ba8",
+      "bytes": 301366
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-dark-1440.png",
+      "action": "created",
+      "sha256": "d1d6c479f47090eb210eac1c32a00e0f41eb5dcfc852dc4c299f1564ae74e7ac",
+      "bytes": 6098
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-dark-1920.png",
+      "action": "created",
+      "sha256": "04dbc6572add58c5de7ab644a3ae862737275fce6e22ef7c0b4c1b68546f00ce",
+      "bytes": 6101
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-dark-375.png",
+      "action": "created",
+      "sha256": "c5668dcbf35cd3ac55b62af30a6d80242a27024866b65869498354fef15eb04b",
+      "bytes": 4516
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-dark-768.png",
+      "action": "created",
+      "sha256": "dbc9673113dde76c4768f3199cee3c539fcd705c496d9d89b05a260a8963046f",
+      "bytes": 6067
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-light-1440.png",
+      "action": "created",
+      "sha256": "a2f69167097ffcf90b2fe294cd5b8716d25c804889002b89258ab3cdda739a9b",
+      "bytes": 6115
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-light-1920.png",
+      "action": "created",
+      "sha256": "210627c9d81ee908609d78ef5a79ca8484a6665dfc92bf9f23efe2b8950babfd",
+      "bytes": 6119
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-light-375.png",
+      "action": "created",
+      "sha256": "e61341aa8cdc92780bc3bca2d57359779578d6a70999773b14c2983fb436cbe0",
+      "bytes": 4512
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-light-768.png",
+      "action": "created",
+      "sha256": "b0c60dcea5e2698ae905f4e5c47afe7232582337da4fc4ae0203c3bda8dd7ef4",
+      "bytes": 6079
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-scroll-end-dark-375.png",
+      "action": "created",
+      "sha256": "dcdd91ba8b208fb171f02e1ee94cfaf19a7282b897f6af4f6d6a934248e8311d",
+      "bytes": 4620
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/formula-scroll-end-light-375.png",
+      "action": "created",
+      "sha256": "afe106942d4155302737524b8f657ad77f42ff65a4b6f07a44b8fab2d273d901",
+      "bytes": 4624
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-dark-1440.png",
+      "action": "created",
+      "sha256": "5ae8113a18793052c4ac0eeaab51537939864a2a24389af0a0844768a0e4f3c9",
+      "bytes": 45651
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-dark-1920.png",
+      "action": "created",
+      "sha256": "168e510449b00b0cee0581673035305ebfa769de99a32b3bdd523bf834c6b8b1",
+      "bytes": 76124
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-dark-375.png",
+      "action": "created",
+      "sha256": "3e41aa0e7ca58c095aa253f19ec827e52b29f62c85fdfb3f3e6eed022b6711f0",
+      "bytes": 49964
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-dark-768.png",
+      "action": "created",
+      "sha256": "31afc5d21f567f22d0b7e5205ded3fd9cd0d4af7c2a81b001b5bb2d190c9b092",
+      "bytes": 46872
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-light-1440.png",
+      "action": "created",
+      "sha256": "3d0afe023093c104ff1a991ba3bd3225ba4f8712a5f527e286956faa62bf27bc",
+      "bytes": 71438
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-light-1920.png",
+      "action": "created",
+      "sha256": "837516961d70abd288d18cdd31d0ad16700aec94ecaab69af88e251309e7fe68",
+      "bytes": 75973
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-light-375.png",
+      "action": "created",
+      "sha256": "9d432578adec159bee2e3e12a537abb4ec550739e085ef8e1e1dcb7392a66b28",
+      "bytes": 48784
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/home-light-768.png",
+      "action": "created",
+      "sha256": "97ffca11149704e416e099e71af73fb0bfc86044c0912241cbd3383a92cb37bc",
+      "bytes": 46518
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "d23849458a48d16be78bd82c4e56ee560c1401e4b21a4a8053f3ee477fc0712d",
+      "bytes": 91524
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "065e20a8c0eed50c653fb3ae53e5b2cefaaa615c6e6e095f46a3a40788046d54",
+      "bytes": 96270
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-dark-375.png",
+      "action": "created",
+      "sha256": "81d48935be12f0aae41fcbdb2910cc0e813c6437be0bbd74a8c466dc0267500e",
+      "bytes": 50941
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-dark-768.png",
+      "action": "created",
+      "sha256": "2ed986433fa2738ffc0aa30cd099b9c72924dfaec99bc51b9fbe54cfb92244f9",
+      "bytes": 64462
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-light-1440.png",
+      "action": "created",
+      "sha256": "d2d2c9bc30b27a60d6b3efcfe60631b49219dee3a138650816263a067b39e0cc",
+      "bytes": 91955
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-light-1920.png",
+      "action": "created",
+      "sha256": "f6a567699fbfa6a2056b2a3f7cddd041ff89ab3ffc9a9dceaf6f87918657c444",
+      "bytes": 96729
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-light-375.png",
+      "action": "created",
+      "sha256": "947e23447d3d4434cf0fc05938130f47735bc625fd1f6c7dd5e46148e0f6e4e8",
+      "bytes": 51208
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lab-light-768.png",
+      "action": "created",
+      "sha256": "04390056afb05ae94961230f36a9d977e96ae6a4a5284560fc8b7ab706564024",
+      "bytes": 64720
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "afadb09e86df34add6c25e9b09b26dac4c24ec40f4a6f9e7d317c0d954aef84d",
+      "bytes": 114443
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "fc5ca6be04eba7a0518d8bfd20c6599e5fbb28e9e7e79fe14a99e8bce1c86ff6",
+      "bytes": 118879
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "95645d4458192ed6a9b91b7c10e4ad452f80789f73f00bff35ac178c3f1c0f24",
+      "bytes": 58730
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "2ed1a1b0fe10525ef8ff7a853bd01959d0e06e68a39cba558bd18ff9279172cc",
+      "bytes": 78234
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "b54f3c91dda64af0c751a5b2070e65e61961f0399332489e1f975428a7d3e0c3",
+      "bytes": 115134
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "9e93e8214aec25bf0289aea3a60a2e31d0ff847aea7e79042199047e9938f2ec",
+      "bytes": 119270
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-light-375.png",
+      "action": "created",
+      "sha256": "f75f8972c2761bcbbf872ce5a712f9ccd6d10d8c005137a37aa45b12cb19d904",
+      "bytes": 58131
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/lesson-light-768.png",
+      "action": "created",
+      "sha256": "9aadc5213fdcbee3ab9e3ead822ae0c11204ebd2bcee4e1e88a15d90ee4ee322",
+      "bytes": 77950
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/python-error-vietnamese.png",
+      "action": "created",
+      "sha256": "db743ae29414f74f14a058dc111689c0a81ed46f2ab090171484fde2c22455ec",
+      "bytes": 9919
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-delayed-hydration.png",
+      "action": "created",
+      "sha256": "55728fd468bc70d05731cc8697d62afc94e34e80b680b6367da7556f088d01f9",
+      "bytes": 74791
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-mobile.png",
+      "action": "created",
+      "sha256": "9ee8d60c8e64d00656c91976098ee423cf4ce8bf0695d680c887d8afa46680b2",
+      "bytes": 96911
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-dark-1440.png",
+      "action": "created",
+      "sha256": "16151dcb096f95e8b9afd9832f1dbf488f4e64778d27754b1066581f5bda80ac",
+      "bytes": 1733
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-dark-1920.png",
+      "action": "created",
+      "sha256": "98d9719961230ffe805574e3517f487c9f36917e95f38e48f58cc02941393484",
+      "bytes": 547
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-dark-375.png",
+      "action": "created",
+      "sha256": "34b41c75f969f23ede3e0d8c28ae9892e4ec3d49d3665e83bc96c3bb1972068a",
+      "bytes": 1890
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-dark-768.png",
+      "action": "created",
+      "sha256": "040eae37cd7a45fc88cea874a7ecbdee513d1c697774910275ba7729a014e800",
+      "bytes": 1737
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-light-1440.png",
+      "action": "created",
+      "sha256": "73f6a04ed6bb848b3988fecc05bb5a43f5567a5cf2f9a898f24f92aa159730f9",
+      "bytes": 2745
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-light-1920.png",
+      "action": "created",
+      "sha256": "a7be12332e965c99514436dc5bb1618b1ea5f86c46503d22a3f21960084902b7",
+      "bytes": 1728
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-light-375.png",
+      "action": "created",
+      "sha256": "58df570a4350376822e09eb2e9582a26b31ee1b43d053352a54d90fdab8a110d",
+      "bytes": 1631
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/quiz-option-nfd-light-768.png",
+      "action": "created",
+      "sha256": "f846c8ceb1ef9dd8398297e355229726e2ff771e4e110fe0f345aab21ca6e4ee",
+      "bytes": 1733
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "822eb640ead9232d62930ebf9f03d1e2a8f45f71f61a75684b5c57812e96cd78",
+      "bytes": 97079
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "5d288c46d9e46a222c02efc6860727a0f84b5d8a4b3975bcf3fbbcb21eefc4b0",
+      "bytes": 102703
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "ad87a9d2e2a20f923b08204c000ef0ca597310f3847613dcde500ec8dcf10346",
+      "bytes": 45493
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "fc55d87b7380bd1affea8a0eacfab05fd7ac5ea6f331537863340b40a5e9a17f",
+      "bytes": 60986
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-dark-1440.png",
+      "action": "created",
+      "sha256": "a08896346c9cb4e4a0dbf4703857ce86ed508f4e33ee9383c004bf2f0ecde282",
+      "bytes": 115699
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-dark-1920.png",
+      "action": "created",
+      "sha256": "a08896346c9cb4e4a0dbf4703857ce86ed508f4e33ee9383c004bf2f0ecde282",
+      "bytes": 115699
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-dark-375.png",
+      "action": "created",
+      "sha256": "64cedaab84a02da576192170e7fdaba12a493a58ccfa0b1fee65a0fd4c39c67c",
+      "bytes": 78705
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-dark-768.png",
+      "action": "created",
+      "sha256": "17726638324deff25bf953c5d53296debf2cff6dae91880287c2ebafdada8012",
+      "bytes": 100150
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-light-1440.png",
+      "action": "created",
+      "sha256": "7849dcee544fc04181f259fcdf948b322d2b38e1fc1d0aac725ff7635edcd06f",
+      "bytes": 116876
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-light-1920.png",
+      "action": "created",
+      "sha256": "7849dcee544fc04181f259fcdf948b322d2b38e1fc1d0aac725ff7635edcd06f",
+      "bytes": 116876
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-light-375.png",
+      "action": "created",
+      "sha256": "7d89f4bf408b5c334c0c7cf339bf3cb9f5e68f9d805446c7b498ee9994a2f654",
+      "bytes": 79371
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-demo-light-768.png",
+      "action": "created",
+      "sha256": "5eec709687a6698c10f9257dfb549c10df49797823587f404ceb8d6662668c1e",
+      "bytes": 101019
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "89639b04201ac0106f970cac57647e0905055ae2d331527b9c4e1f1b157e33ba",
+      "bytes": 98272
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "2adaecad0e8874b4c8026b959103237ba6238b442d5d50b9a9abc4154276f075",
+      "bytes": 103935
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-light-375.png",
+      "action": "created",
+      "sha256": "36cc8f11852c3578107028493891e80d9c79348d73fd14735256f0c5b6316e02",
+      "bytes": 46159
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/firefox/threshold-light-768.png",
+      "action": "created",
+      "sha256": "5061d3509a89a69e96164036580fb4bbcd6d4200371ea42126eeedf207cc29c1",
+      "bytes": 61799
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-dark-1440.png",
+      "action": "created",
+      "sha256": "c86df589ee8dce09d51938da7f01fef847071eac3d6feb1d176cb8271594f736",
+      "bytes": 80293
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-dark-1920.png",
+      "action": "created",
+      "sha256": "eead709e100545e7fd798e856bd2f5d14cb6100acf2d0fb1823edbb0ad2a0fef",
+      "bytes": 84069
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-dark-375.png",
+      "action": "created",
+      "sha256": "6f0568c529571e87a713d65aa920977e2e02e6b6677ff170b06f725f8541f2df",
+      "bytes": 37463
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-dark-768.png",
+      "action": "created",
+      "sha256": "a98c1b7194079d7d8f236eec56b8398efbc05fc07f6d5d8206ab65ce0ea6bf73",
+      "bytes": 57614
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-light-1440.png",
+      "action": "created",
+      "sha256": "008066c3000d57a8d34da90f2854d3f5653b6f6b9e5aceec61e3f6ebaf4d28ab",
+      "bytes": 81915
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-light-1920.png",
+      "action": "created",
+      "sha256": "4ce9370561b882a8fe77ab7bbb7a9eddfb284713f336030eb0e2b5799fdd5783",
+      "bytes": 85596
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-light-375.png",
+      "action": "created",
+      "sha256": "0856e595f74e4521b92c76d71d41e67896d75888d431d1cd83117ae64214839c",
+      "bytes": 38380
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/courses-light-768.png",
+      "action": "created",
+      "sha256": "981ca8341498957022e590adffbda5f03b1a5a415476514b08726845904bfb1b",
+      "bytes": 58543
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-dark-1440.png",
+      "action": "created",
+      "sha256": "edf1fd5c62da72fbb7b3d06e1603de2302efd98e00ef238b51364e5b4b0c9afc",
+      "bytes": 83682
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-dark-1920.png",
+      "action": "created",
+      "sha256": "e1b8dc0b85a937a1d54eab6f24f690f433bb8966d3526f4b0f4d4fd34e8d3c4c",
+      "bytes": 86969
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-dark-375.png",
+      "action": "created",
+      "sha256": "414f1e210736b7ce3df648e632650aae3ec752ac67299b731b9f98338eca67e8",
+      "bytes": 46575
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-dark-768.png",
+      "action": "created",
+      "sha256": "494d366370a9e090a1914395531c2fbf77a4bddfa25abfe734d66b20933459c6",
+      "bytes": 55436
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-light-1440.png",
+      "action": "created",
+      "sha256": "41ffabade585104c6ad8510e9c8e1d515181027d7ef72092cb0b3080516bccf6",
+      "bytes": 80811
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-light-1920.png",
+      "action": "created",
+      "sha256": "7fdd4a5486bd6e8196f853bc00269b1c648189e50d04457d93cc1cfdb0e9b615",
+      "bytes": 85877
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-light-375.png",
+      "action": "created",
+      "sha256": "f2190373dab3f2d29983c22caae34d269ed0c2831dd5cd00ef4373354ccb64f5",
+      "bytes": 45697
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/cpu-light-768.png",
+      "action": "created",
+      "sha256": "dc689c67cf7d8085ffd0295e5ba8a00565fc15ff22df24c8da91297c06848d54",
+      "bytes": 54959
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-dark-1440.png",
+      "action": "created",
+      "sha256": "8ed82025bf7ff980b9dc690e8ef916fdfe9c4c2e8003f696695400b35280dce1",
+      "bytes": 8581
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-dark-1920.png",
+      "action": "created",
+      "sha256": "2452d35689f39b01815874a9fd09ad9b3893b1b79a238df72b083869a19f676f",
+      "bytes": 9052
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-dark-375.png",
+      "action": "created",
+      "sha256": "4bfd702e663fa36aa5859ab8d1d5fc979176342496303ce3f43b8a70c5193f01",
+      "bytes": 10400
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-dark-768.png",
+      "action": "created",
+      "sha256": "ab0e76d09aaffe119b3b28b558ef5a34492590de1fff2ac408e79ff417824fca",
+      "bytes": 9291
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-light-1440.png",
+      "action": "created",
+      "sha256": "72aef2a4f65b1f93afb0ee42bfe98691278aa8dab6620b82b2a9fb936c46d735",
+      "bytes": 8229
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-light-1920.png",
+      "action": "created",
+      "sha256": "3019be81dddb84e652fd0b9a94f22ee0275d4c89aa3924bc2c1d0250f1ddae65",
+      "bytes": 8703
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-light-375.png",
+      "action": "created",
+      "sha256": "c4f1d6080ae6a3256939ecc68483e52f23e85c8a11453c3cb146abab5e208fd9",
+      "bytes": 9951
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFC-light-768.png",
+      "action": "created",
+      "sha256": "5f9279b131cd3abdadc25bc62853cf8c92064502f1c8872aa3cdc45e46ebea39",
+      "bytes": 8853
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-dark-1440.png",
+      "action": "created",
+      "sha256": "8ed82025bf7ff980b9dc690e8ef916fdfe9c4c2e8003f696695400b35280dce1",
+      "bytes": 8581
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-dark-1920.png",
+      "action": "created",
+      "sha256": "2452d35689f39b01815874a9fd09ad9b3893b1b79a238df72b083869a19f676f",
+      "bytes": 9052
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-dark-375.png",
+      "action": "created",
+      "sha256": "4bfd702e663fa36aa5859ab8d1d5fc979176342496303ce3f43b8a70c5193f01",
+      "bytes": 10400
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-dark-768.png",
+      "action": "created",
+      "sha256": "ab0e76d09aaffe119b3b28b558ef5a34492590de1fff2ac408e79ff417824fca",
+      "bytes": 9291
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-light-1440.png",
+      "action": "created",
+      "sha256": "72aef2a4f65b1f93afb0ee42bfe98691278aa8dab6620b82b2a9fb936c46d735",
+      "bytes": 8229
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-light-1920.png",
+      "action": "created",
+      "sha256": "3019be81dddb84e652fd0b9a94f22ee0275d4c89aa3924bc2c1d0250f1ddae65",
+      "bytes": 8703
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-light-375.png",
+      "action": "created",
+      "sha256": "c4f1d6080ae6a3256939ecc68483e52f23e85c8a11453c3cb146abab5e208fd9",
+      "bytes": 9951
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-detail-NFD-light-768.png",
+      "action": "created",
+      "sha256": "5f9279b131cd3abdadc25bc62853cf8c92064502f1c8872aa3cdc45e46ebea39",
+      "bytes": 8853
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-dark-1440.png",
+      "action": "created",
+      "sha256": "54dc105ac0ad2851fb5c3eaaa8319ec561d044d82266f96506e74689fb83b0f7",
+      "bytes": 274607
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-dark-1920.png",
+      "action": "created",
+      "sha256": "d3f69838bcb1dd683f411628933036653d552173a6cc5509d444c85f2ec4e6e9",
+      "bytes": 288015
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-dark-375.png",
+      "action": "created",
+      "sha256": "073cef9aaa53244dbd8cd499be5ddc66819bcaf4aab029700e33eed2cd12938a",
+      "bytes": 293012
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-dark-768.png",
+      "action": "created",
+      "sha256": "31028fc8521c20beef94f1c4230c7e163eb562c3b44b37a739ff7dca2ad07d74",
+      "bytes": 268112
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-light-1440.png",
+      "action": "created",
+      "sha256": "0d44658cccd4985514a5a9a33d8c589e4503fc0bf0654f89d742068b4e29c342",
+      "bytes": 265269
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-light-1920.png",
+      "action": "created",
+      "sha256": "ae505b57ce4fe57907a8b725b9e467e66365d2c61d4b6b2197b1a6818896ef1d",
+      "bytes": 277750
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-light-375.png",
+      "action": "created",
+      "sha256": "ec181a7390a227b5a1c99e4e056e93a092cf3b152652be45dc93f00d78fd8b8a",
+      "bytes": 280285
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/font-specimens-light-768.png",
+      "action": "created",
+      "sha256": "1626466a48944adc1efaa75b6c51ed08b1bfa3a1c883a1166d65ff6267f1eb2c",
+      "bytes": 258062
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-dark-1440.png",
+      "action": "created",
+      "sha256": "4282b60427a040ac8e9993a86fdcdd10b063e529128cc31560c101018bba8228",
+      "bytes": 6014
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-dark-1920.png",
+      "action": "created",
+      "sha256": "438d3f9ad396b8f85b8882ccf56a1bdf307e878906e200c3fa8aea0beab4af07",
+      "bytes": 5933
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-dark-375.png",
+      "action": "created",
+      "sha256": "3822559300fac9ed94fcac7404f18f383dbc6a1e4970abac7853f836bef7497d",
+      "bytes": 4429
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-dark-768.png",
+      "action": "created",
+      "sha256": "160241c5664eba4c215fe919743f7cd5e65898797be80ee55af8cc1a0b1df144",
+      "bytes": 5921
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-light-1440.png",
+      "action": "created",
+      "sha256": "c4331bed55de92b4f485efba001551fde56cc34e3df4d75c7c0ba9178d3468ea",
+      "bytes": 5905
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-light-1920.png",
+      "action": "created",
+      "sha256": "2d3e468c68e08d05042d2fc356f0b2345863ffaa4ea2459324a1adfab9967077",
+      "bytes": 5837
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-light-375.png",
+      "action": "created",
+      "sha256": "1fb1a8a1fdf109433143b65f69f272e7a2a05a9a5c21419f68e88a6999715cc2",
+      "bytes": 4387
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-light-768.png",
+      "action": "created",
+      "sha256": "9261552ca8c0a99701c4d2cb67eea12c38d92d36ceff433280c76b31dc4889cf",
+      "bytes": 5814
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-scroll-end-dark-375.png",
+      "action": "created",
+      "sha256": "45f7c91b00dcad5e4e2a08c41710be5f6dc5d888e8aad9be653bb6e0e22eb273",
+      "bytes": 4561
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/formula-scroll-end-light-375.png",
+      "action": "created",
+      "sha256": "e7976dda5b234c6420e036fa582a3aa3b15549113a6e51ee73df7d80fabd8046",
+      "bytes": 4523
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-dark-1440.png",
+      "action": "created",
+      "sha256": "0138f95218a89acc5c1a368db888a71ce160e848f986e6c27b1a42a1c33d40d2",
+      "bytes": 64183
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-dark-1920.png",
+      "action": "created",
+      "sha256": "436c7aa61cc84dcf131b275f4924614a57cdd55444fb5212d167a1ec898b92a1",
+      "bytes": 67214
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-dark-375.png",
+      "action": "created",
+      "sha256": "a7e9d323a42d8c138c749598dd0fc93e6cb3e1e721ad82518b6977cceb437e86",
+      "bytes": 51071
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-dark-768.png",
+      "action": "created",
+      "sha256": "1ebe6e1aa793a816692ce9906ffd3b753fb51a5d81b26619802ce27c7c25d81d",
+      "bytes": 45027
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-light-1440.png",
+      "action": "created",
+      "sha256": "9c3965371f22e9742b2ec82e509106dc9dd65e82675075ff1ee4480c4f9d3eac",
+      "bytes": 67619
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-light-1920.png",
+      "action": "created",
+      "sha256": "487d646b66b553e4efac00c1b92d8e93f8dc5b1072945c8b1f4288e1a50c6234",
+      "bytes": 70233
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-light-375.png",
+      "action": "created",
+      "sha256": "42f3488cb7f887e0601595cb6912f013f82b88640679111308f3bbd192e69913",
+      "bytes": 48718
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/home-light-768.png",
+      "action": "created",
+      "sha256": "d2f3efae266fdbe67894c4572b5ae5c61b1e7a2428e58f8d1edea0151f3f3192",
+      "bytes": 44268
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-dark-1440.png",
+      "action": "created",
+      "sha256": "29f7924ba45a9bbb642f1338541ff0956190297aa85c10e24254457fb00dc3b3",
+      "bytes": 85378
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-dark-1920.png",
+      "action": "created",
+      "sha256": "14be919c4d698b9d1a31b28b0899b30779d519e10cae5c94297b00d3ab3778f5",
+      "bytes": 88620
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-dark-375.png",
+      "action": "created",
+      "sha256": "da63e5fdaf9e9ee77c4dcf89477434c417b8501220fcbb033a2908175941effc",
+      "bytes": 52087
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-dark-768.png",
+      "action": "created",
+      "sha256": "756a12a146d021ac0a3a957f97c3d21692bca2831eae54ba728ce586613e5d8e",
+      "bytes": 62026
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-light-1440.png",
+      "action": "created",
+      "sha256": "dc7fd9c13a43174bba0af7b618de97e3158ada56eee18d72c6cfa8b41bc74a15",
+      "bytes": 85059
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-light-1920.png",
+      "action": "created",
+      "sha256": "68a2c5d32f55a5a995f96b687ef2c27fed3741aa67c4d902f8bdf9301b975c5c",
+      "bytes": 88434
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-light-375.png",
+      "action": "created",
+      "sha256": "6a167066eabbe7a21d17b6d5f0c455bfd81dc077b7a9c4540f049568fdde36c1",
+      "bytes": 51297
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lab-light-768.png",
+      "action": "created",
+      "sha256": "0a2b65e2cfe8fef85cb87fcbab03c5d417ad76125475fd64265c196d21317b9a",
+      "bytes": 61334
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-dark-1440.png",
+      "action": "created",
+      "sha256": "20970a88347b7c4a096e2cf2bdb1fa5575940dc64797e039a935f1a4c4313271",
+      "bytes": 104845
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-dark-1920.png",
+      "action": "created",
+      "sha256": "fcd52a68652e36100773f2628769750650f324ae85ac77d792b62ef95c439407",
+      "bytes": 109060
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-dark-375.png",
+      "action": "created",
+      "sha256": "2799d1c5182ca9251a3fba8a6368bc87596281a98b216f06bd40dc4d1b9c6804",
+      "bytes": 55736
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-dark-768.png",
+      "action": "created",
+      "sha256": "ffccbd9f22407ac53bb0f585cf177a854c19d77b42b2ac6ac28c31b35a22db86",
+      "bytes": 71807
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-light-1440.png",
+      "action": "created",
+      "sha256": "d4faae6a0a689d60ba0f200542d927d69da98cc1006d1dc3493b3a365d5d07a5",
+      "bytes": 104582
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-light-1920.png",
+      "action": "created",
+      "sha256": "7fccc40e73043f03032d35501c0c5ff0b26c3695869a7f151e66f9a0bb6d4429",
+      "bytes": 108633
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-light-375.png",
+      "action": "created",
+      "sha256": "c2574e80f6d7a8bc3af94854a4bc9428706834f7a1138328b123e1f28d632196",
+      "bytes": 54756
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/lesson-light-768.png",
+      "action": "created",
+      "sha256": "72ee069d5b4f5e5f3a232febbe396e26335675546ce735a5db8841977d8b9d4c",
+      "bytes": 73626
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/python-error-vietnamese.png",
+      "action": "created",
+      "sha256": "54799a294f71c48e53e6934af12aa64ddab34e2358fa6eb048d4f9ee679d4e1d",
+      "bytes": 9884
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-delayed-hydration.png",
+      "action": "created",
+      "sha256": "a22b09084979c86cf94ae8859497e2010533eb7562d60abe785a0e41ed42c0fd",
+      "bytes": 71711
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-mobile.png",
+      "action": "created",
+      "sha256": "a9b2cd2333acc6748c3212fe6ba550eb4af3ec613531038a80b2f2c3bca6a0a1",
+      "bytes": 95823
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-dark-1440.png",
+      "action": "created",
+      "sha256": "cb723275ce1353f311aaccda82f21b7ac106abeffbfa1fb667bc719cb5d93bc6",
+      "bytes": 1710
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-dark-1920.png",
+      "action": "created",
+      "sha256": "f748d5db46634b209f94889c2549c67355e33718d0aaab2fb4a7f3de7e4d0d9c",
+      "bytes": 2008
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-dark-375.png",
+      "action": "created",
+      "sha256": "1b80f2effda0a3a19896592da312e7cbdd4d3c1afb75ec9245e0d9fef409da5c",
+      "bytes": 1600
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-dark-768.png",
+      "action": "created",
+      "sha256": "234b125fea0debda4abe1a943f3ef8ae04aa2a285c03de25548448466e33d112",
+      "bytes": 1712
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-light-1440.png",
+      "action": "created",
+      "sha256": "84120857fcaf5a12f04fbd9e191bae6a7c65e5184d2f6b8aa293b248d1b9da34",
+      "bytes": 1908
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-light-1920.png",
+      "action": "created",
+      "sha256": "83dfd8ecdde22d8b198657868c5b160e14583b9aaaace76dc5f96be6d4339d30",
+      "bytes": 1606
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-light-375.png",
+      "action": "created",
+      "sha256": "4500c6355a6178b186fa10bcbabf00f5ea81726f0b53495770243426c435497e",
+      "bytes": 2533
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/quiz-option-nfd-light-768.png",
+      "action": "created",
+      "sha256": "962a8340156436fc04b14e86804a415ff5030aaad595d5338b2c47c2730de1d0",
+      "bytes": 2404
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-dark-1440.png",
+      "action": "created",
+      "sha256": "f4c1645959c0923df133cb9bdcb21c8209ac33fa15799777a748d38cd5f018d9",
+      "bytes": 93584
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-dark-1920.png",
+      "action": "created",
+      "sha256": "203979eec8fe647b0daa58ac625e978f5df544d7c9a426a7a9c440b62ad39b6f",
+      "bytes": 97364
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-dark-375.png",
+      "action": "created",
+      "sha256": "2c727b621b1fbf666f380f3e53fd06d64a382bd9aa8b6723bfead488ea39599f",
+      "bytes": 48930
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-dark-768.png",
+      "action": "created",
+      "sha256": "7963f832e7a407edcc3e951b4bf2b886e46a2c59d49bbbaff3f5e3d354a48754",
+      "bytes": 58330
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-dark-1440.png",
+      "action": "created",
+      "sha256": "639bfec27d3853fe2796545ead6dfd4a304625d464d294b533bf54d1ce47332c",
+      "bytes": 100649
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-dark-1920.png",
+      "action": "created",
+      "sha256": "49f4342c3a81e58994f02ca104c4f35dc2e359e99368bacecbb485b893172fa5",
+      "bytes": 100649
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-dark-375.png",
+      "action": "created",
+      "sha256": "e47a6ece2c027059c6ae1a58d6a4b1467d0143b0b486c817cf3a2536f273f6c3",
+      "bytes": 72856
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-dark-768.png",
+      "action": "created",
+      "sha256": "c29e52da83a1974755081e3c409008f43523204c4db0274ed3f399aacf44e501",
+      "bytes": 92151
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-light-1440.png",
+      "action": "created",
+      "sha256": "2055f66b488cbe3fab4500598a7241c61cad0a14e8d3c69b9d2db3090e2d360d",
+      "bytes": 101107
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-light-1920.png",
+      "action": "created",
+      "sha256": "2055f66b488cbe3fab4500598a7241c61cad0a14e8d3c69b9d2db3090e2d360d",
+      "bytes": 101107
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-light-375.png",
+      "action": "created",
+      "sha256": "81fd803200f0c8b8c720a257c1fc4aa997aff82c50da1022822ab7b31cb041a1",
+      "bytes": 72801
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-demo-light-768.png",
+      "action": "created",
+      "sha256": "190db2e03bfc34219ceb4189dde4ca860cf1cbf7d387cd07a5ace3a0c2bfee0e",
+      "bytes": 92659
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-light-1440.png",
+      "action": "created",
+      "sha256": "2c1096c86e33e290b11c32004a51e005b27bf8f60fc01b746d35831040973af8",
+      "bytes": 94022
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-light-1920.png",
+      "action": "created",
+      "sha256": "870bcc589acd82e22f6e3d8803d03ab0406ebeb2c8d078bfc8ee81a0df3a3828",
+      "bytes": 97765
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-light-375.png",
+      "action": "created",
+      "sha256": "624af276ed9846e00007780684ae6628d129413155177706142ee7d0e861c3d4",
+      "bytes": 48534
+    },
+    {
+      "file": "docs/screenshots/refinement-cross/webkit/threshold-light-768.png",
+      "action": "created",
+      "sha256": "b1a32a1104036077d90d2cb2089aa9f4a91a1eddacdcf072207a0739b5be7105",
+      "bytes": 58582
+    },
+    {
+      "file": "docs/screenshots/refinement-discovery/chrome-control/quiz-mobile.png",
+      "action": "created",
+      "sha256": "e3628c420fb1b06e0d056ca5480cd3db76a32eb00374cb452fc6b12c1ff4b262",
+      "bytes": 91499
+    },
+    {
+      "file": "docs/screenshots/refinement-hmr/hmr-live-restored.png",
+      "action": "created",
+      "sha256": "bc5548804aaa18fd3ec31bbba891a5e3346abee7018db55a4f480f7c4296e0fc",
+      "bytes": 8381
+    },
+    {
+      "file": "docs/screenshots/refinement-hmr/hmr-live-temporary.png",
+      "action": "created",
+      "sha256": "f7e8d8c024c9c7a58715245c29a7c41cb06185e03e775815de93f1cf701248cd",
+      "bytes": 8544
+    },
+    {
+      "file": "docs/screenshots/refinement-hmr/hmr-local-restored.png",
+      "action": "created",
+      "sha256": "bc5548804aaa18fd3ec31bbba891a5e3346abee7018db55a4f480f7c4296e0fc",
+      "bytes": 8381
+    },
+    {
+      "file": "docs/screenshots/refinement-hmr/hmr-local-temporary.png",
+      "action": "created",
+      "sha256": "2136bc2a26be7e6a64d4ec49efd73b69bef46f66e639d0beecfd840d80558f73",
+      "bytes": 14313
+    },
+    {
+      "file": "docs/screenshots/refinement-issues/narrow-title-before.png",
+      "action": "created",
+      "sha256": "2defd6af84f292f3f7b69863072f8ea9576083ee804df7e1331678ac08f87c98",
+      "bytes": 49453
+    },
+    {
+      "file": "docs/screenshots/refinement-issues/text-200-after.png",
+      "action": "created",
+      "sha256": "e35455f1ef29e984766ebdb784ef59dc1b4f2a0e3c696d0531ed73903fe554fa",
+      "bytes": 52915
+    },
+    {
+      "file": "docs/screenshots/refinement-issues/text-200-before.png",
+      "action": "created",
+      "sha256": "e35455f1ef29e984766ebdb784ef59dc1b4f2a0e3c696d0531ed73903fe554fa",
+      "bytes": 52915
+    },
+    {
+      "file": "docs/screenshots/refinement-issues/webkit-login.png",
+      "action": "created",
+      "sha256": "245833dc7187d00d428a9c39374e33195b1e64a3d720b6586b427a300a66d4d5",
+      "bytes": 37345
+    },
+    {
+      "file": "docs/screenshots/refinement-issues/webkit-register.png",
+      "action": "created",
+      "sha256": "4cdceec712033378552e71b7b27f8f1c01ad3c9c5b4e55d1d79081af8f234de4",
+      "bytes": 35526
+    },
+    {
+      "file": "docs/screenshots/refinement-public/local-dark-375.png",
+      "action": "created",
+      "sha256": "d9ff014c777ae17d29fcc7db6a9c3f65d4b6ffb97a90b5280ec36cd9a8e18d3d",
+      "bytes": 70358
+    },
+    {
+      "file": "docs/screenshots/refinement-public/local-light-1440.png",
+      "action": "created",
+      "sha256": "aa866a6274e1cdfb152ca789ef4d287d5d964215a52a324250c81298bdea912c",
+      "bytes": 136489
+    },
+    {
+      "file": "docs/screenshots/refinement-public/public-dark-375.png",
+      "action": "created",
+      "sha256": "d9ff014c777ae17d29fcc7db6a9c3f65d4b6ffb97a90b5280ec36cd9a8e18d3d",
+      "bytes": 70358
+    },
+    {
+      "file": "docs/screenshots/refinement-public/public-light-1440.png",
+      "action": "created",
+      "sha256": "aa866a6274e1cdfb152ca789ef4d287d5d964215a52a324250c81298bdea912c",
+      "bytes": 136489
+    },
+    {
+      "file": "docs/screenshots/refinement-touch/chromium-375.png",
+      "action": "created",
+      "sha256": "e1166d6952b5aabd0abf4c4eff2c89158eff4c7b9dbdd1057570518fc3abff46",
+      "bytes": 60237
+    },
+    {
+      "file": "docs/screenshots/refinement-touch/webkit-375.png",
+      "action": "created",
+      "sha256": "04392a84d923535d1fb521322d26c184379d7d41da976fa92154144501de72e2",
+      "bytes": 50822
+    },
+    {
+      "file": "docs/screenshots/refinement-type-trials/Lora-dark-375.png",
+      "action": "created",
+      "sha256": "c08923cc80e3fbf2013c834e593c7ba0eb8158326af1e572506f30f12e7d6a55",
+      "bytes": 55878
+    },
+    {
+      "file": "docs/screenshots/refinement-type-trials/Lora-light-1440.png",
+      "action": "created",
+      "sha256": "3819967ed3f876ec99b1fb6bbf756577d49f32116abfdce6f1810170a7d5eb5d",
+      "bytes": 70880
+    },
+    {
+      "file": "docs/screenshots/refinement-type-trials/Newsreader-dark-375.png",
+      "action": "created",
+      "sha256": "4ad7b7d701a9a5c3f3e7624ed0ff02912890c688c9addf7e5db4f95d32b602ed",
+      "bytes": 55742
+    },
+    {
+      "file": "docs/screenshots/refinement-type-trials/Newsreader-light-1440.png",
+      "action": "created",
+      "sha256": "1d5b707d3e2f6b287f461ab8eab49195ba8123c2e0e7760ddba4a5da9b7f83f4",
+      "bytes": 71393
+    },
+    {
+      "file": "docs/traces/neuralclone-refinement-chrome.zip",
+      "action": "created",
+      "sha256": "dd4330e1db9bd70b16cf7108bce72efe3b3837aad0e7c746ac1885a008ee6d13",
+      "bytes": 4384078
+    },
+    {
+      "file": "docs/videos/refinement/page@e85232d6e1d6b3ec0b5e63552092c603.webm",
+      "action": "created",
+      "sha256": "aef1d2adc82ae4de5307daa8fe70409a99e7094bf2a9688c53744e0708982d14",
+      "bytes": 543019
+    },
+    {
+      "file": "docs/videos/refinement/page@f8578d50a526439acd047dad8bb21d4c.webm",
+      "action": "created",
+      "sha256": "3ba6d6e7e909c8a6a369b72e43e2bcfec8006f927806e647e5ca43ae9c8088be",
+      "bytes": 569383
+    },
+    {
+      "file": "e2e/apple-design.spec.ts",
+      "action": "modified",
+      "sha256": "df3e2b0eac6333205be7473f756faafad5f566d20967b20fe79673f236a114bc",
+      "bytes": 8747
+    },
+    {
+      "file": "e2e/cross-browser.spec.ts",
+      "action": "modified",
+      "sha256": "1e2062bd3d668e457b580c0cb585d3b0e17e339a2d126bd77d9fb15717f0957c",
+      "bytes": 16116
+    },
+    {
+      "file": "e2e/final-polish.spec.ts",
+      "action": "modified",
+      "sha256": "f9a0ddf6566822c52fb8b5c1ae6dcfcb99f50be375878a9d0772d80b8bba3ec4",
+      "bytes": 7732
+    },
+    {
+      "file": "e2e/studio-motion.spec.ts",
+      "action": "created",
+      "sha256": "877330c4c6cc6b820adf04b8a81637f6217a36b5e21c25eb1d1295ce061931ae",
+      "bytes": 3677
+    },
+    {
+      "file": "e2e/typography.spec.ts",
+      "action": "modified",
+      "sha256": "f9e00b49b769deb81e060027b43b7bcc35f380dce37d6ae0b5396a46f3094ee6",
+      "bytes": 3196
+    },
+    {
+      "file": "playwright.apple.config.ts",
+      "action": "modified",
+      "sha256": "dd44da0dae74567dde1c35e12e21ada95efd30b6b76574aa6773dbfe3dd24404",
+      "bytes": 787
+    },
+    {
+      "file": "playwright.config.ts",
+      "action": "modified",
+      "sha256": "3879f5f8b890f1b3478b258b4a4107933fafa780add62c5e478f9a1f1149211c",
+      "bytes": 1968
+    },
+    {
+      "file": "playwright.motion.config.ts",
+      "action": "created",
+      "sha256": "b21fa1f92eaf93ac9cae11a12de183e4d26d5e5968cc77881030bf36752545ad",
+      "bytes": 258
+    },
+    {
+      "file": "public/fonts/Lora-OFL.txt",
+      "action": "created",
+      "sha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716",
+      "bytes": 4423
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-italic-400-v3.woff2",
+      "action": "created",
+      "sha256": "0de216bd5d641d53abcb9bd7532d49ccf3cfc4a37dafdfb1bffde00354d86543",
+      "bytes": 38700
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-italic-600-v3.woff2",
+      "action": "created",
+      "sha256": "c1605d9d969a4234c6130e481332a9bb9a3666efa033d4f51b642758632b2f75",
+      "bytes": 40224
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-italic-700-v3.woff2",
+      "action": "created",
+      "sha256": "1ca5aec284f5948c7f7ecceb27c8e29f5db31b279db090e8da60434852cca050",
+      "bytes": 40768
+    },
+    {
+      "file": "public/fonts/neural-lora-italic-v1.woff2",
+      "action": "created",
+      "sha256": "db3d290368c368014e57e064fd201dad722e813f56b29e11d0e98cf294d7ac73",
+      "bytes": 91328
+    },
+    {
+      "file": "public/fonts/neural-lora-normal-v1.woff2",
+      "action": "created",
+      "sha256": "fb9b5b5a68ddfb20e6895da1e6a5cff572e3b5f8e33781a0beb5bc724110392d",
+      "bytes": 84844
+    },
+    {
+      "file": "scripts/build-refinement-fonts.py",
+      "action": "created",
+      "sha256": "d085bc17c5836b2a47b639bfbb6890739ad0a949213177ee9d008a826e097ff3",
+      "bytes": 2350
+    },
+    {
+      "file": "scripts/measure-study-layout.mjs",
+      "action": "created",
+      "sha256": "aa5f6b7207a3d5bc113d80cf6ff77f0115ee8a30caf374b39b6eb853a0d0cafe",
+      "bytes": 2372
+    },
+    {
+      "file": "scripts/trace-public-runtime.mjs",
+      "action": "created",
+      "sha256": "a812ef5f7b9add427969ed9309f8d8a16d63ded2643de560f4a9e156ee1c79b2",
+      "bytes": 4389
+    },
+    {
+      "file": "src/app/design-tokens.css",
+      "action": "modified",
+      "sha256": "4b351355f05316e9efc961e34d8c9100a1601317669261ab4a155803058c2b45",
+      "bytes": 2160
+    },
+    {
+      "file": "src/app/fonts.css",
+      "action": "modified",
+      "sha256": "56d62f22fed1c9f7fc4c9315adaafb9048fde5aa3b949b5af3443e1bc9bc4ef1",
+      "bytes": 1691
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "action": "modified",
+      "sha256": "c34ef8b2201d2ff0eba4638788fccb8ac38879a2c26052450d51228a7ab5d0be",
+      "bytes": 3103
+    },
+    {
+      "file": "src/app/studio.css",
+      "action": "created",
+      "sha256": "d47c1ae54331a7e0b0f3b8c89f8d6eead1311ae5cf93bd44e5aeb8be494abb08",
+      "bytes": 11636
+    },
+    {
+      "file": "src/components/KnowledgeFlow.tsx",
+      "action": "created",
+      "sha256": "3feba9f00b6dbdddad825fbfa5dc3fb506d5a7e37f87fc817ed4e80f613d8257",
+      "bytes": 5739
+    },
+    {
+      "file": "src/components/Landing.tsx",
+      "action": "modified",
+      "sha256": "56f4762d41df6b5274678741f1806e9ca108088170b8f66c3cdae0953e4a33be",
+      "bytes": 5334
+    },
+    {
+      "file": "src/components/StudioMotion.tsx",
+      "action": "created",
+      "sha256": "75f0b4f5420c68c0a1a20ad1435585d75cbb4d9b2d340c2e9c4120d0a695414b",
+      "bytes": 2239
+    },
+    {
+      "file": "src/lib/flowModel.ts",
+      "action": "created",
+      "sha256": "cf01bd88d001e3051a128c576843db3f736f0101b20274e983a41aa361686e2a",
+      "bytes": 427
+    },
+    {
+      "file": "tests/flow-model.test.ts",
+      "action": "created",
+      "sha256": "e0bccb2b23168b97608d802e68b3a4f538959766d8c5031c098ea4fcb357dcc4",
+      "bytes": 684
+    }
+  ],
+  "note": "Private .local logs/cache/backup and own digest excluded; physical devices and Transfer remain unverified/unresolved as documented"
+}

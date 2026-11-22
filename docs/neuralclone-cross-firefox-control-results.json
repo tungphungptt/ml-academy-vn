@@ -1,0 +1,457 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.cross-browser.config.ts",
+      "--project",
+      "firefox",
+      "--project",
+      "chrome-control"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.cross-browser.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-control",
+        "name": "chrome-control",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome-control",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {
+            "channel": "chrome"
+          },
+          "browserName": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome-control"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/neuralclone-cross-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "cross-browser.spec.ts",
+      "file": "cross-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:04:12.322Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-registration-11dd7--preserve-the-learning-path-firefox\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-ae2bc304b0110290e828",
+          "file": "cross-browser.spec.ts",
+          "line": 25,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:04:12.815Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-both-themes--29382-focus-and-mobile-navigation-firefox\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-56870aaba40ee81d81d4",
+          "file": "cross-browser.spec.ts",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at D:\\Projects\\ml-academy-vn\\.local\\ms-playwright\\winldd-1007\\PrintDeps.exe\n╔═══════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.      ║\n║ Please run the following command to download new browser: ║\n║                                                           ║\n║     npx playwright install winldd                         ║\n║                                                           ║\n║ <3 Playwright Team                                        ║\n╚═══════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:04:13.310Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-Pyodide-NumP-5485a-oundaries-execute-correctly-firefox\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-4bc4564b9212bcf27bf4",
+          "file": "cross-browser.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:04:13.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-de14bc1f83281074a47d",
+          "file": "cross-browser.spec.ts",
+          "line": 25,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1860,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at Object.finish (D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:18:20)\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:105:21",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                      "column": 20,
+                      "line": 18
+                    },
+                    "snippet": "  16 |   return {dir,finish(extra:Record<string,unknown>={}){\n  17 |     fs.writeFileSync(`docs/neuralclone-cross-${info.project.name}-${kind}.json`,JSON.stringify({checkedAt:new Date().toISOString(),browser:info.project.name,version:browser.version(),platform:process.platform,kind,errors,failedRequests,cancelled,...extra},null,2)+'\\n');\n> 18 |     expect(errors).toEqual([]);expect(failedRequests).toEqual([]);\n     |                    ^\n  19 |   }};\n  20 | }\n  21 | async function noOverflow(page:Page,label:string){"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                        "column": 20,
+                        "line": 18
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Cannot read properties of null (reading 'dataset')\",\u001b[39m\n\u001b[31m+   \"page: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  16 |   return {dir,finish(extra:Record<string,unknown>={}){\n  17 |     fs.writeFileSync(`docs/neuralclone-cross-${info.project.name}-${kind}.json`,JSON.stringify({checkedAt:new Date().toISOString(),browser:info.project.name,version:browser.version(),platform:process.platform,kind,errors,failedRequests,cancelled,...extra},null,2)+'\\n');\n> 18 |     expect(errors).toEqual([]);expect(failedRequests).toEqual([]);\n     |                    ^\n  19 |   }};\n  20 | }\n  21 | async function noOverflow(page:Page,label:string){\n    at Object.finish (D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:18:20)\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:105:21"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:04:40.841Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-both-themes--29382-focus-and-mobile-navigation-chrome-control\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                    "column": 20,
+                    "line": 18
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-6cde4883ae3262a95c1d",
+          "file": "cross-browser.spec.ts",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 115336,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:04:43.384Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-4e9cbca2c78d2b37d17e",
+          "file": "cross-browser.spec.ts",
+          "line": 108,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T07:03:59.610Z",
+    "duration": 159925.38799999998,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

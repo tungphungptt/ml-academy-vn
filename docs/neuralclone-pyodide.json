@@ -1,0 +1,90 @@
+{
+ "transport": "Direct Chromium CDN",
+ "assets": [],
+ "results": [
+  {
+   "id": "linear_regression",
+   "variant": "scratch",
+   "stdout": "w=1.999 b=0.002 mse=0.000000",
+   "expected": "w=1.999 b=0.002 mse=0.000000",
+   "pass": true
+  },
+  {
+   "id": "linear_regression",
+   "variant": "library",
+   "stdout": "w=2.000 b=0.000",
+   "expected": "w=2.000 b=0.000",
+   "pass": true
+  },
+  {
+   "id": "knn",
+   "variant": "scratch",
+   "stdout": "Do chinh xac KNN (k=5): 1.000",
+   "expected": "Do chinh xac KNN (k=5): 1.000",
+   "pass": true
+  },
+  {
+   "id": "knn",
+   "variant": "library",
+   "stdout": "Do chinh xac KNN (k=5): 1.000",
+   "expected": "Do chinh xac KNN (k=5): 1.000",
+   "pass": true
+  },
+  {
+   "id": "kmeans",
+   "variant": "scratch",
+   "stdout": "Inertia: 69.24",
+   "expected": "Inertia: 69.24",
+   "pass": true
+  },
+  {
+   "id": "kmeans",
+   "variant": "library",
+   "stdout": "Inertia: 69.24",
+   "expected": "Inertia: 69.24",
+   "pass": true
+  },
+  {
+   "id": "logistic_regression",
+   "variant": "scratch",
+   "stdout": "loss=0.0575 accuracy=0.980",
+   "expected": "loss=0.0575 accuracy=0.980",
+   "pass": true
+  },
+  {
+   "id": "logistic_regression",
+   "variant": "library",
+   "stdout": "accuracy=0.980",
+   "expected": "accuracy=0.980",
+   "pass": true
+  },
+  {
+   "id": "perceptron",
+   "variant": "scratch",
+   "stdout": "epoch=2 loi_cuoi_epoch=0 accuracy=1.000",
+   "expected": "epoch=2 loi_cuoi_epoch=0 accuracy=1.000",
+   "pass": true
+  },
+  {
+   "id": "perceptron",
+   "variant": "library",
+   "stdout": "accuracy=1.000",
+   "expected": "accuracy=1.000",
+   "pass": true
+  },
+  {
+   "id": "softmax_regression",
+   "variant": "scratch",
+   "stdout": "test_accuracy=0.867",
+   "expected": "test_accuracy=0.867",
+   "pass": true
+  },
+  {
+   "id": "softmax_regression",
+   "variant": "library",
+   "stdout": "test_accuracy=0.911",
+   "expected": "test_accuracy=0.911",
+   "pass": true
+  }
+ ]
+}

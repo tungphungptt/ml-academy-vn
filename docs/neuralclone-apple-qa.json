@@ -1,0 +1,1491 @@
+{
+  "checkedAt": "2026-10-28T09:41:25.559Z",
+  "scope": "Only executions from this Apple Design continuation. Historical pass counts are not reused.",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "version": "Windows 11 Home",
+    "node": "v24.19.0",
+    "playwright": "1.64.1"
+  },
+  "staticReview": {
+    "typescriptUnusedCheck": {
+      "command": "tsc --noEmit --noUnusedLocals --noUnusedParameters",
+      "passed": true
+    },
+    "generatedNextEnvRestored": true,
+    "eslint": "Not configured; not claimed as run"
+  },
+  "skill": {
+    "source": "https://github.com/emilkowalski/skills/blob/main/skills/apple-design/SKILL.md",
+    "sha256": "406aea9e67f0700a6b281a27e3c596ca187626591355ad49348fd865c43f819f"
+  },
+  "unit": {
+    "command": "npm run verify",
+    "passed": 66,
+    "failed": 0,
+    "typescript": true
+  },
+  "suites": {
+    "apple": {
+      "artifact": "docs/neuralclone-apple-after-results.json",
+      "stats": {
+        "startTime": "2026-10-28T09:26:26.772Z",
+        "duration": 151298.916,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "cross": {
+      "artifact": "docs/neuralclone-apple-cross-results.json",
+      "stats": {
+        "startTime": "2026-10-28T09:08:19.055Z",
+        "duration": 390732.551,
+        "expected": 12,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "regression": {
+      "artifact": "docs/neuralclone-apple-regression-results.json",
+      "stats": {
+        "startTime": "2026-10-28T09:15:02.873Z",
+        "duration": 185735.093,
+        "expected": 29,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "build": {
+    "passed": true,
+    "command": "node node_modules/next/dist/bin/next build",
+    "via": "scripts/e2e-server.mjs",
+    "directory": ".next-e2e",
+    "port": 3100,
+    "realServer3000NotStopped": true
+  },
+  "visual": {
+    "beforePages": 88,
+    "after": [
+      {
+        "engine": "chrome",
+        "version": "156.0.8078.49",
+        "pages": 88,
+        "errors": [],
+        "failedRequests": []
+      },
+      {
+        "engine": "firefox",
+        "version": "157.0",
+        "pages": 88,
+        "errors": [],
+        "failedRequests": []
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "pages": 88,
+        "errors": [],
+        "failedRequests": []
+      }
+    ],
+    "widths": [
+      375,
+      768,
+      1440,
+      1920
+    ],
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "fontCandidate": {
+      "checkedAt": "2026-10-28T08:27:11.468Z",
+      "family": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Be Vietnam Pro\", sans-serif",
+      "engines": [
+        {
+          "engine": "chromium",
+          "version": "156.0.8078.49",
+          "specimens": 48,
+          "maxNormalizationWidthDelta": 0,
+          "platformFonts": [
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold",
+            "SegoeUI-Semibold"
+          ]
+        },
+        {
+          "engine": "firefox",
+          "version": "157.0",
+          "specimens": 48,
+          "maxNormalizationWidthDelta": 0,
+          "platformFonts": []
+        },
+        {
+          "engine": "webkit",
+          "version": "27.2",
+          "specimens": 48,
+          "maxNormalizationWidthDelta": 0,
+          "platformFonts": []
+        }
+      ]
+    },
+    "eightLessons": {
+      "screens": 64,
+      "overflow": 0,
+      "mathErrors": 0,
+      "mixedHeadingFonts": 0
+    }
+  },
+  "pyodide": {
+    "total": 14,
+    "passed": 14,
+    "transport": "Direct Chromium CDN"
+  },
+  "touch": {
+    "checkedAt": "2026-10-28T09:35:26.355Z",
+    "scope": "Windows headless touchscreen/viewport emulation, not physical iOS/Android",
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "156.0.8078.49",
+        "errors": [],
+        "menuTap": true,
+        "navigationTap": true,
+        "themeTap": true
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "errors": [],
+        "menuTap": true,
+        "navigationTap": true,
+        "themeTap": true
+      }
+    ]
+  },
+  "fontResourceObservation": {
+    "checkedAt": "2026-10-28T09:33:42.772Z",
+    "version": "156.0.8078.49",
+    "home": {
+      "family": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Be Vietnam Pro\", sans-serif",
+      "customTextFontRequests": [],
+      "headerBlur": "blur(18px) saturate(1.4)"
+    },
+    "svg": {
+      "family": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Be Vietnam Pro\", sans-serif",
+      "style": "normal",
+      "size": "16px"
+    },
+    "fonts": {
+      "fonts": [
+        {
+          "familyName": "Segoe UI",
+          "postScriptName": "SegoeUI",
+          "isCustomFont": false,
+          "glyphCount": 9
+        }
+      ]
+    }
+  },
+  "public": {
+    "passed": true,
+    "engines": [
+      {
+        "engine": "firefox",
+        "version": "157.0",
+        "pages": 16,
+        "consoleErrors": [],
+        "failedRequests": [],
+        "hmrFrames": 108,
+        "websocketErrors": [],
+        "pyodideRuns": 2
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "pages": 16,
+        "consoleErrors": [],
+        "failedRequests": [],
+        "hmrFrames": 140,
+        "websocketErrors": [],
+        "pyodideRuns": 2
+      }
+    ],
+    "precedingAttempts": [
+      "docs/neuralclone-apple-public.json (WebKit partial timeout; Firefox 16 pages passed)",
+      "docs/neuralclone-apple-public-webkit.json (WebKit timeout)",
+      "docs/neuralclone-apple-public-webkit-active.json (active Node-polled attempt; one document 502, 14 pages complete)"
+    ],
+    "limitation": "Initial WebKit background probes timed out; active replay computed correct output, one later document request returned 502. Do not claim an identified infrastructure root cause or physical-device validation."
+  },
+  "hmr": {
+    "restored": true,
+    "cases": [
+      {
+        "origin": "http://localhost:3000",
+        "handshake101": true,
+        "frames": 52,
+        "changedWithoutReload": true,
+        "restoredWithoutReload": true,
+        "errors": []
+      },
+      {
+        "origin": "https://neuralclone.site",
+        "handshake101": true,
+        "frames": 48,
+        "changedWithoutReload": true,
+        "restoredWithoutReload": true,
+        "errors": []
+      }
+    ]
+  },
+  "data": {
+    "backup": ".local/apple-redesign-start/before.db",
+    "unchanged": true,
+    "quickCheck": {
+      "quick_check": "ok"
+    },
+    "tables": [
+      {
+        "table": "Bookmark",
+        "unchanged": true,
+        "rows": 0
+      },
+      {
+        "table": "Course",
+        "unchanged": true,
+        "rows": 3
+      },
+      {
+        "table": "Dataset",
+        "unchanged": true,
+        "rows": 4
+      },
+      {
+        "table": "Lesson",
+        "unchanged": true,
+        "rows": 67
+      },
+      {
+        "table": "LessonProgress",
+        "unchanged": true,
+        "rows": 0
+      },
+      {
+        "table": "Module",
+        "unchanged": true,
+        "rows": 12
+      },
+      {
+        "table": "Note",
+        "unchanged": true,
+        "rows": 0
+      },
+      {
+        "table": "PasswordReset",
+        "unchanged": true,
+        "rows": 0
+      },
+      {
+        "table": "Project",
+        "unchanged": true,
+        "rows": 8
+      },
+      {
+        "table": "Quiz",
+        "unchanged": true,
+        "rows": 67
+      },
+      {
+        "table": "QuizAttempt",
+        "unchanged": true,
+        "rows": 0
+      },
+      {
+        "table": "QuizQuestion",
+        "unchanged": true,
+        "rows": 157
+      },
+      {
+        "table": "Resource",
+        "unchanged": true,
+        "rows": 8
+      },
+      {
+        "table": "SourceReference",
+        "unchanged": true,
+        "rows": 99
+      },
+      {
+        "table": "StudyTime",
+        "unchanged": true,
+        "rows": 0
+      },
+      {
+        "table": "User",
+        "unchanged": true,
+        "rows": 0
+      }
+    ]
+  },
+  "preserved": [
+    {
+      "file": "content/catalog.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/datasets.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/labs.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/activations.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/anomaly-detection.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/attention-transformer.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/autoencoder.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/autograd.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/backpropagation.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/bayesian-estimation.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/bias-variance.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/cnn-cpu.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/cnn-practice.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/cnn.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/convex-optimization.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/cross-validation.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/data-preparation.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/decision-tree.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/derivatives.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/dl-regularization.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/efficient-finetuning.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/embeddings.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/feature-leakage.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/gan-vae-diffusion.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/gmm.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/gradient-boosting.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/gradient-descent.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/hyperparameter-tuning.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/imbalanced-learning.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/k-means.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/knn.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/lda.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/linear-algebra-decompositions.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/linear-regression.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/llm-evaluation-security.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/llm-foundations.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/logistic-regression.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/loss-functions.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/metrics.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/ml-intro.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/ml-project-workflow.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/mlops-reproducibility.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/mlp.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/model-deployment.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/naive-bayes.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/neural-recommendation.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/numpy-pandas.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/optimizers.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/pca.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/perceptron.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/polynomial-regression.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/probability.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/python-ml.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/pytorch-practice.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/rag-vector-search.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/random-forest.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/recommendation.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/responsible-ai.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/ridge-lasso.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/rnn-lstm.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/sequence-models-cpu.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/softmax-regression.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/statistics.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/svm.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/tabular-pipeline.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/text-classification.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/training-diagnostics.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/transfer-learning.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/transformer-architecture.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/lessons/vectors-matrices.md",
+      "unchanged": true
+    },
+    {
+      "file": "content/projects.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/activations.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/anomaly-detection.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/attention-transformer.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/autoencoder.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/autograd.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/backpropagation.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/bayesian-estimation.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/bias-variance.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/cnn-cpu.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/cnn-practice.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/cnn.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/convex-optimization.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/cross-validation.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/data-preparation.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/decision-tree.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/derivatives.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/dl-regularization.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/efficient-finetuning.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/embeddings.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/feature-leakage.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/gan-vae-diffusion.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/gmm.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/gradient-boosting.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/gradient-descent.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/hyperparameter-tuning.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/imbalanced-learning.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/k-means.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/knn.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/lda.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/linear-algebra-decompositions.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/linear-regression.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/llm-evaluation-security.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/llm-foundations.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/logistic-regression.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/loss-functions.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/metrics.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/ml-intro.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/ml-project-workflow.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/mlops-reproducibility.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/mlp.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/model-deployment.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/naive-bayes.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/neural-recommendation.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/numpy-pandas.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/optimizers.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/pca.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/perceptron.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/polynomial-regression.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/probability.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/python-ml.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/pytorch-practice.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/rag-vector-search.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/random-forest.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/recommendation.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/responsible-ai.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/ridge-lasso.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/rnn-lstm.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/sequence-models-cpu.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/softmax-regression.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/statistics.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/svm.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/tabular-pipeline.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/text-classification.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/training-diagnostics.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/transfer-learning.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/transformer-architecture.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/quizzes/vectors-matrices.json",
+      "unchanged": true
+    },
+    {
+      "file": "content/resources.json",
+      "unchanged": true
+    },
+    {
+      "file": "labs/autoencoder_cpu/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/cnn_cpu/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/kmeans/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/kmeans/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/knn/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/knn/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/linear_regression/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/linear_regression/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/logistic_regression/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/logistic_regression/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/mlp_torch/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/neural_recommendation/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/perceptron/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/perceptron/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/rag_retrieval/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/sequence_cpu/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/softmax_regression/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/softmax_regression/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/tabular_pipeline/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/threshold_cost/scratch.py",
+      "unchanged": true
+    },
+    {
+      "file": "labs/transfer_cpu/library.py",
+      "unchanged": true
+    },
+    {
+      "file": "next.config.js",
+      "unchanged": true
+    },
+    {
+      "file": "package-lock.json",
+      "unchanged": true
+    },
+    {
+      "file": "package.json",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/OFL-BeVietnamPro.txt",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-0.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-1.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-10.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-11.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-2.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-3.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-4.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-5.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-6.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-7.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-8.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-9.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-full-400-v2.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-full-500-v2.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-full-600-v2.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/fonts/be-vietnam-pro-full-700-v2.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/activations.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/anomaly-detection.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/attention.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/autoencoder.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/autograd.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/backpropagation.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/bias-variance.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/confusion-matrix.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/conv.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/data-preparation.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/decision-tree.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/derivatives.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/dl-regularization.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/efficient-finetuning.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/embeddings.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/feature-leakage.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/gan-vae-diffusion.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/gmm.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/gradient-boosting.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/gradient-descent.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/hyperparameter-tuning.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/imbalanced-learning.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/kfold.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/kmeans.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/knn.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/linear-regression.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/llm-evaluation-security.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/llm-foundations.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/logistic-regression.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/loss-functions.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/ml-intro.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/ml-project-workflow.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/mlops-reproducibility.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/mlp.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/model-deployment.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/naive-bayes.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/numpy-pandas.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/optimizers.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/pca.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/perceptron.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/polynomial-regression.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/probability.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/pytorch-practice.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/rag-vector-search.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/random-forest.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/recommendation.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/responsible-ai.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/ridge-lasso.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/rnn-lstm.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/softmax-regression.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/statistics.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/svm.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/text-classification.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/transfer-learning.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/transformer-architecture.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/img/vectors-matrices.svg",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/autoencoder_cpu_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/cnn_cpu_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/kmeans_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/kmeans_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/knn_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/knn_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/linear_regression_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/linear_regression_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/logistic_regression_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/logistic_regression_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/mlp_torch_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/neural_recommendation_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/perceptron_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/perceptron_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/du-doan-chi-so-tieu-duong.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/nhan-dang-chu-so.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/phan-cum-khach-hang.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/phan-loai-cam-xuc.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/phan-loai-ung-thu-vu.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/phat-hien-bat-thuong-log.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/pipeline-hoan-chinh.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/projects/so-sanh-mo-hinh.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/rag_retrieval_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/sequence_cpu_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/softmax_regression_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/softmax_regression_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/tabular_pipeline_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/threshold_cost_scratch.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/notebooks/transfer_cpu_library.ipynb",
+      "unchanged": true
+    },
+    {
+      "file": "public/pyodide-worker.js",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/auth.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/ml.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/ml2.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/returnPath.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/threshold.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/validation.ts",
+      "unchanged": true
+    }
+  ],
+  "dependencies": {
+    "applicationAdded": [],
+    "packageAndLockUnchanged": true
+  },
+  "transfer": {
+    "trainingRerun": false,
+    "status": "Historical strict FAIL preserved",
+    "handoffCorrect": 334,
+    "handoffTotal": 360,
+    "historicalInferredCorrect": 335,
+    "expectedChanged": false,
+    "limitation": "Original predictions/checkpoint/build metadata unavailable; not resolved by UI redesign"
+  },
+  "limitations": [
+    "Windows desktop engines and viewport/touch emulation; no physical Safari/macOS/iOS/Android",
+    "200% root text-size reflow, not a claim of actual hardware Dynamic Type",
+    "Reduced transparency/contrast checked through Chromium CDP; not all OS preference combinations",
+    "No full screen-reader audit or real-learner usability study"
+  ]
+}

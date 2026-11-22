@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Trả lời 40/100 câu, đúng 36 câu đã trả lời: nên báo?",
+  "options": [
+   "Chỉ 90% accuracy",
+   "Coverage 40% và accuracy có điều kiện 90%, cùng chất lượng refusal",
+   "100% vì có từ chối",
+   "36% là mọi thông tin cần có"
+  ],
+  "correct": 1,
+  "explanation": "Coverage và conditional accuracy thể hiện hai khía cạnh; cần rubric cho refusal."
+ },
+ {
+  "prompt": "Citation ID hợp lệ trong context có chứng minh claim được hỗ trợ không?",
+  "options": [
+   "Có",
+   "Không; vẫn cần kiểm tra đoạn, version và nội dung claim",
+   "Có nếu LLM tự tin",
+   "Có nếu nhiều citation"
+  ],
+  "correct": 1,
+  "explanation": "Citation validity không đồng nhất groundedness hay truth."
+ },
+ {
+  "prompt": "Ai quyết định quyền thực thi một tool do model đề xuất?",
+  "options": [
+   "Trường role trong output model",
+   "Policy/authorization của server theo user đã xác thực",
+   "Tài liệu truy xuất",
+   "Một regex duy nhất"
+  ],
+  "correct": 1,
+  "explanation": "Model chỉ đề xuất; quyền thực thi phải được kiểm tra độc lập và tối thiểu."
+ }
+]

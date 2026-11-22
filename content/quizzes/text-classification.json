@@ -1,1 +1,22 @@
-[{"prompt":"Vì sao kết quả trên tập đồ chơi 8 câu không chứng minh chất lượng mô hình?","options":["Tập quá nhỏ, xác suất dự đoán gần 0.5","Vì dùng Logistic Regression","Vì dùng tiếng Việt"],"correct":0,"explanation":"Cần dữ liệu lớn, chia train/test và cross-validation."},{"prompt":"Điểm yếu của TF-IDF từ đơn với câu 'tôi không thích phim này' là gì?","options":["Không nắm được phủ định","Cần GPU","Không xử lý được số"],"correct":0,"explanation":"Nó chỉ thấy từ 'thích' mà không hiểu 'không' đảo nghĩa."}]
+[
+  {
+    "prompt": "Vì sao kết quả trên tập đồ chơi 8 câu không chứng minh chất lượng mô hình?",
+    "options": [
+      "Tập minh họa quá nhỏ và chưa có đánh giá độc lập đại diện.",
+      "Vì dùng Logistic Regression",
+      "Vì dùng tiếng Việt"
+    ],
+    "correct": 0,
+    "explanation": "Probability gần 0.5 không tự chứng minh đoán ngẫu nhiên. Cần dữ liệu đánh giá độc lập và metric đã định nghĩa."
+  },
+  {
+    "prompt": "Điểm yếu của TF-IDF từ đơn với câu 'tôi không thích phim này' là gì?",
+    "options": [
+      "Không biểu diễn trực tiếp cụm hoặc phạm vi phủ định.",
+      "Cần GPU",
+      "Không xử lý được số"
+    ],
+    "correct": 0,
+    "explanation": "TF-IDF unigram có thể có cả feature không và thích; nó không biểu diễn trực tiếp quan hệ giữa chúng như một cụm. N-gram chỉ hỗ trợ một phần phủ định cục bộ."
+  }
+]

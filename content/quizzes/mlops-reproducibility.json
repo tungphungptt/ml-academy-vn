@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Seed giống nhau có bảo đảm bitwise giống nhau trên mọi GPU/phiên bản không?",
+  "options": [
+   "Có",
+   "Không; còn kernel, thiết bị và phiên bản",
+   "Chỉ cần lưu một file model",
+   "Không cần ghi môi trường"
+  ],
+  "correct": 1,
+  "explanation": "Seed kiểm soát nguồn ngẫu nhiên cụ thể, không đóng băng mọi phép tính và runtime."
+ },
+ {
+  "prompt": "Data drift đầu vào có chứng minh chất lượng mô hình đã giảm không?",
+  "options": [
+   "Luôn có",
+   "Không; cần kiểm tra metric có nhãn và bối cảnh",
+   "Có nếu TV lớn hơn 0",
+   "Không cần monitoring"
+  ],
+  "correct": 1,
+  "explanation": "P(x) đổi không tự chứng minh metric giảm; P(y|x) cũng có thể đổi mà P(x) không đổi."
+ },
+ {
+  "prompt": "Artifact nào đầy đủ hơn cho tái lập?",
+  "options": [
+   "best.pkl và accuracy",
+   "Chỉ seed",
+   "Source/data/split/config/software versions, metrics và hash artifact",
+   "Chỉ ảnh loss đẹp"
+  ],
+  "correct": 2,
+  "explanation": "Provenance và protocol là điều kiện để truy vết; một checkpoint đơn lẻ không đủ."
+ }
+]

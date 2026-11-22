@@ -55,3 +55,7 @@ CV chọn mô hình trên train, không phải cách hợp thức hóa mọi l�
 
 ## Nguồn tham khảo
 - [scikit-learn: Cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+CV tận dụng các phần của train qua nhiều lượt; test cuối vẫn giữ ngoài. [Cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html).

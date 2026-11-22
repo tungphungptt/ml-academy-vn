@@ -2,7 +2,7 @@
 **Mục tiêu:** nắm quy trình một dự án ML từ đầu đến cuối.
 
 ## Các bước
-1. **Xác định bài toán và metric** (ví dụ ưu tiên Recall khi bỏ sót nguy hiểm). 2. **Thu thập và khám phá dữ liệu** (phân phối, giá trị thiếu, mất cân bằng). 3. **Chia dữ liệu** train/test ngay từ đầu và không chạm vào test. 4. **Xây baseline đơn giản** để có mốc so sánh. 5. **Pipeline tiền xử lý + mô hình**, đánh giá bằng cross-validation trên train. 6. **Tinh chỉnh siêu tham số** và so sánh mô hình. 7. **Đánh giá cuối trên tập test một lần.** 8. **Lưu mô hình, triển khai, theo dõi** hiệu năng theo thời gian (dữ liệu có thể trôi dạt).
+1. **Xác định bài toán và metric** (ví dụ ưu tiên Recall khi bỏ sót nguy hiểm). 2. **Thu thập và xác định đơn vị lấy mẫu**. 3. **Chia dữ liệu** train/test trước EDA phục vụ lựa chọn mô hình; khám phá phân phối, giá trị thiếu và mất cân bằng trên train, giữ test cho đánh giá cuối. 4. **Xây baseline đơn giản** để có mốc so sánh. 5. **Pipeline tiền xử lý + mô hình**, đánh giá bằng cross-validation trên train. 6. **Tinh chỉnh siêu tham số** và so sánh mô hình. 7. **Đánh giá cuối trên tập test một lần.** 8. **Lưu mô hình, triển khai, theo dõi** hiệu năng theo thời gian (dữ liệu có thể trôi dạt).
 
 ![Các bước của dự án ML](/img/ml-project-workflow.svg)
 
@@ -21,7 +21,7 @@ Xa, Xb, ya, yb = train_test_split(X, y, test_size=0.25, random_state=0, stratify
 p = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000))
 print(round(float(cross_val_score(p, Xa, ya, cv=5).mean()), 3), round(float(p.fit(Xa, ya).score(Xb, yb)), 3))
 ```
-Kết quả kỳ vọng (đã chạy cục bộ): `0.974 0.958`. Số đầu là điểm CV trên train, số sau là accuracy trên test; hai số gần nhau là dấu hiệu tốt. Lưu mô hình bằng `joblib.dump(p, "model.joblib")`.
+Kết quả kỳ vọng (đã chạy cục bộ): `0.974 0.958`. Số đầu là điểm CV trên train, số sau là accuracy trên test; hai số này mô tả một protocol cụ thể; sự gần nhau không chứng minh không leakage hay bảo đảm tổng quát hóa. Lưu mô hình bằng `joblib.dump(p, "model.joblib")`.
 
 ## Lỗi thường gặp
 Rò rỉ dữ liệu, không có baseline, tối ưu metric không liên quan tới mục tiêu thật, quên theo dõi sau triển khai.

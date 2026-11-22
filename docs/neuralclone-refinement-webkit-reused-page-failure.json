@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-28T11:43:48.993Z",
+  "phase": "after",
+  "browser": "webkit",
+  "version": "27.2",
+  "platform": "win32",
+  "cases": [
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 375,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 375,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 375,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 375,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "dark",
+      "width": 375,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 375,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 375,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 375,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 375,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    }
+  ],
+  "currentCase": {
+    "name": "register",
+    "url": "/register",
+    "theme": "dark",
+    "width": 375,
+    "phase": "screenshot"
+  },
+  "errors": [],
+  "failed": []
+}

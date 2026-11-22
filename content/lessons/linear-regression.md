@@ -34,6 +34,35 @@ Với $x_i>0$, dự đoán quá cao làm $e_i>0$: bước đi **ngược** gradi
 ## Ví dụ từng bước
 Dữ liệu $(x,y)$: $(1,2),(2,4),(3,6)$. Với $w=1,b=0$: residual $\hat y-y$ là $-1,-2,-3$ nên $L=(1+4+9)/3\approx 4{,}67$. Với $w=2,b=0$ thì $L=0$: đây là nghiệm tối ưu.
 
+
+## Đọc từng đóng góp vào loss và gradient
+
+Mục tiêu phần thực hành là nhìn thấy **cùng một residual** xuất hiện trong ba nơi: đoạn nối trên hình, bình phương sai số trong loss, và đóng góp vào gradient. Giữ đúng quy ước $e_i=\hat y_i-y_i$. Đổi quy ước dấu của e thì công thức gradient phải đổi theo, trong khi e bình phương không đổi.
+
+Với ba mẫu đã cho và $w=1,b=0$, dự đoán là 1, 2, 3. Residual lần lượt −1, −2, −3; bình phương là 1, 4, 9. Vì $N=3$, MSE bằng $14/3$, không phải 14. Đóng góp của từng mẫu vào $\partial L/\partial w$ là $2e_ix_i/3$: −2/3, −8/3, −6; cộng lại −28/3. Đóng góp vào $\partial L/\partial b$ là $2e_i/3$: −2/3, −4/3, −2; tổng −4. Dấu âm nói rằng tăng w hoặc b **một lượng đủ nhỏ**, giữ tham số kia cố định, sẽ giảm loss tại vị trí này.
+
+Ở đây x và y là số không có đơn vị vật lý, phục vụ minh họa. Nếu y là triệu đồng thì residual có đơn vị triệu đồng, MSE có đơn vị triệu đồng bình phương, còn RMSE trở lại triệu đồng. Không đọc MSE như một tỷ lệ dự đoán đúng. [Google MLCC: Loss](https://developers.google.com/machine-learning/crash-course/linear-regression/loss) phân biệt MSE, MAE và RMSE.
+
+## Thí nghiệm residual, nhãn và hệ số
+
+```neuralclone
+linear
+```
+
+Đặt w=2, b=0: các residual đều 0. Sau đó chỉ đổi y₃ từ 6 lên 9: hai mẫu đầu vẫn khớp, mẫu cuối có e=−3, nên MSE=3, dw=−6 và db=−2. Đây là cách kiểm tra rằng phép lấy trung bình vẫn chia cho ba mẫu, dù chỉ một mẫu có sai số. Hãy đoán các giá trị trước khi kéo slider.
+
+Hàm `linear(w,b,lastY)` nhận cùng ba tham số mà điều khiển đang hiển thị. Nó trả `rows`, `loss`, `dw`, `db`; hình lấy prediction và y từ rows, bảng lấy từng đóng góp, output lấy tổng. Trục y tự đổi để không giấu dự đoán ngoài khung; so độ lớn loss bằng số thay vì chiều dài pixel giữa hai lần thay scale.
+
+Python chạy độc lập: `linear(2,0,9)` trả `loss=3`, `dw=-6`, `db=-2`. Xem phần Python để đọc cả vòng lặp; không cần NumPy cho ba điểm này. Lab NumPy hiện có vẫn giữ quy ước MSE, nên ở cùng w,b và cùng dữ liệu phải cho gradient tương ứng.
+
+## Vì sao bài này và tài liệu khác có thể lệch hệ số hai
+
+[D2L, mục 3.1.1.2](https://d2l.ai/chapter_linear-regression/linear-regression.html#loss-function) dùng nửa bình phương sai số. Nếu đặt $J=L/2$ thì $\nabla J=\nabla L/2$. Hai hàm có cùng nghiệm cực tiểu, nhưng dùng cùng learning rate sẽ cho hai bước cập nhật khác nhau. Muốn bước giống nhau, learning rate của J phải gấp đôi learning rate của L. Không “sửa” gradient chỉ để một output giống ví dụ dùng quy ước khác.
+
+Đào sâu: đối với MSE này, $L$ là hàm bậc hai lồi theo (w,b), nhưng tính lồi không có nghĩa mọi bước gradient descent đều làm loss giảm. Chọn bước học là nhiệm vụ của [bài tối ưu kế tiếp](/learn/gradient-descent). Khớp ba điểm huấn luyện với loss 0 cũng chưa chứng minh dự đoán tốt ở ngoài khoảng x đã quan sát.
+
+Tự kiểm tra: nếu e=0 nhưng x khác 0 thì đóng góp gradient có bằng 0 không? Có, vì cả $2ex/N$ và $2e/N$ bằng 0. Nếu chỉ đổi dấu e mà giữ nguyên công thức gradient, kết quả tối ưu có còn đúng không? Không: hướng sửa bị đảo, dù cột e² vẫn trông hợp lý. Đây là lý do cần kiểm tra cả bảng residual và gradient, không chỉ loss.
+
 ## Code from scratch
 Xem `labs/linear_regression/scratch.py` (chạy: `python labs/linear_regression/scratch.py`, cần NumPy). Kết quả kỳ vọng: $w\approx2$, $b\approx0$.
 
@@ -91,3 +120,8 @@ Học mô hình tuyến tính cùng điều kiện nghiệm, loss và giao thứ
 ## Nguồn tham khảo
 - [scikit-learn User Guide: Linear Models](https://scikit-learn.org/stable/modules/linear_model.html).
 - [D2L: Linear Regression — squared loss và gradient](https://d2l.ai/chapter_linear-regression/linear-regression.html).
+
+## Nguồn cho phần thí nghiệm và đào sâu
+
+- [Linear regression: Loss](https://developers.google.com/machine-learning/crash-course/linear-regression/loss) — Google for Developers, Machine Learning Crash Course. Phần đã đọc: Types of loss, Calculating loss example, Choosing a loss. Truy cập 28/10/2026.
+- [Dive into Deep Learning 1.0.3: 3.1 Linear Regression](https://d2l.ai/chapter_linear-regression/linear-regression.html) — Dive into Deep Learning project. Phần đã đọc: 3.1.1.2 Loss Function, equations 3.1.5 and 3.1.6, 3.1.1.4 Minibatch Stochastic Gradient Descent. Truy cập 28/10/2026.

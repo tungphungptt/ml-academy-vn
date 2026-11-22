@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/metadata";
 import PageHeading from "@/components/PageHeading";
 import EmptyState from "@/components/EmptyState";
 import HighlightedText from "@/components/HighlightedText";
@@ -6,11 +7,10 @@ import { getLabLinks } from "@/lib/content";
 import { db } from "@/lib/db";
 import { searchDocs } from "@/lib/search";
 import { getPublishedSearchDocs } from "@/lib/publishedContent";
+import { singleQueryValues, type QueryParams } from "@/lib/queryParams";
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Tìm bài học | ML Academy VN" };
-type Filters = { q?: string; level?: string; tier?: string; kind?: string; course?: string };
-export default async function Search({ searchParams }: { searchParams: Promise<Filters> }) {
-  const filters = await searchParams, q = (filters.q ?? "").trim();
+export default async function Search({ searchParams }: { searchParams: Promise<QueryParams> }) {
+  const filters = singleQueryValues(await searchParams), q = (filters.q ?? "").trim();
   const docs = await getPublishedSearchDocs();
   const selected = docs.filter(d => (!filters.level || d.level === filters.level) &&
     (!filters.tier || d.tier === filters.tier) && (!filters.kind || d.kind === filters.kind) &&
@@ -36,3 +36,5 @@ export default async function Search({ searchParams }: { searchParams: Promise<F
     </article>; })}
   </>;
 }
+
+export const metadata = pageMetadata("Tìm bài học", "Tìm kiếm kiến thức AI bằng tiếng Việt có dấu hoặc không dấu. Lọc theo lộ trình, trình độ và loại bài.", "/search", true);

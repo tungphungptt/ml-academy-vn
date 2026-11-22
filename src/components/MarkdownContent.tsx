@@ -4,10 +4,11 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import CodeBlock from "./CodeBlock";
 import { slugifyHeading } from "../lib/search";
+import normalizeProse from "../lib/normalizeProse";
 
 // One SSR-compatible pipeline for release Markdown and admin-authored content.
 // Raw HTML stays disabled. KaTeX emits both visual HTML and accessible MathML.
-const remarkPlugins = [remarkMath];
+const remarkPlugins = [remarkMath, normalizeProse];
 const mathOptions = { output: "htmlAndMathml", trust: false, strict: "error" } as const;
 // Quiz fields can contain admin-authored multiline Markdown. Keep their output
 // valid inside legend/label/p, while retaining KaTeX's span and MathML elements.
@@ -25,11 +26,23 @@ export default function MarkdownContent({ children, inline = false }: { children
       if (inline) return <span>{children}</span>;
       const child = node?.children.length === 1 ? node.children[0] : null;
       if (child?.type === "element" && child.tagName === "img") {
-        return <figure>{children}<figcaption>{String(child.properties.alt ?? "")}</figcaption></figure>;
+        const alt = String(child.properties.alt ?? ""), src = String(child.properties.src ?? "");
+        return <figure>{children}<figcaption>{alt}</figcaption>
+          {src.startsWith("/img/") && <a className="figure-zoom" href={src} target="_blank" rel="noreferrer" aria-label={`Xem hình đầy đủ: ${alt}`}>Xem hình đầy đủ ↗</a>}
+        </figure>;
       }
       return <p className={textOf(children).startsWith("Kết quả kỳ vọng") ? "expected" : undefined}>{children}</p>;
     },
     h2: ({ children }) => <h2 id={slugifyHeading(textOf(children))}>{children}</h2>,
+    table: ({children}) => <div className="markdown-table-scroll" tabIndex={0} role="region" aria-label="Bảng dữ liệu; cuộn ngang để xem đầy đủ"><table>{children}</table></div>,
+    span: ({ node, ...props }) => {
+      const classes = node?.properties.className;
+      // WebKit does not automatically tab-focus overflowing containers.
+      // Preserve every KaTeX style/attribute while making long math scrollable
+      // with the keyboard as well as touch; MathML remains available inside.
+      const display = Array.isArray(classes) && classes.includes("katex-display");
+      return <span {...props} {...(display ? { tabIndex: 0, role: "region", "aria-label": "Công thức toán học; cuộn ngang để xem đầy đủ" } : {})} />;
+    },
     pre: ({ children }) => {
       const lang = isValidElement<{ className?: string }>(children) ? children.props.className?.match(/language-(\w+)/)?.[1] ?? "" : "";
       return <CodeBlock text={textOf(children).replace(/\n$/, "")} lang={lang} />;

@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-10-28T06:11:56.900881+00:00",
+  "versions": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cpu"
+  },
+  "threads": 1,
+  "registryUnchanged": true,
+  "results": [
+    {
+      "lab": "mlp_torch",
+      "variant": "library",
+      "sha256": "4d77ecfed2ba465523e3f43bff3a7ab6388b33b3cc368daf4c0344122d0c2f8f",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": true,
+      "stdout": "loss=0.0002 pred=[0, 1, 1, 0]",
+      "expected": "loss=0.0002 pred=[0, 1, 1, 0]",
+      "stderr": ""
+    },
+    {
+      "lab": "tabular_pipeline",
+      "variant": "library",
+      "sha256": "333d5f55e08d0608a6440d3401bb883aa99b65b8b02342949555dca91bd84b1e",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": true,
+      "stdout": "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}",
+      "expected": "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}",
+      "stderr": ""
+    },
+    {
+      "lab": "cnn_cpu",
+      "variant": "library",
+      "sha256": "10e45bee754a9b59addca0fa6ab7cb8aae301275bda1c247675e4ebc9e4ea057",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": true,
+      "stdout": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}",
+      "expected": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}",
+      "stderr": ""
+    },
+    {
+      "lab": "sequence_cpu",
+      "variant": "library",
+      "sha256": "5fa649f39e8577e636c646602f346b1e4ccf2180ed871429ba3d50d502758523",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": true,
+      "stdout": "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}",
+      "expected": "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}",
+      "stderr": ""
+    },
+    {
+      "lab": "neural_recommendation",
+      "variant": "library",
+      "sha256": "bf0f349e897adeefac54b63e50730fd868f235155bbf22b392d4e3e8f5ac9ffa",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": true,
+      "stdout": "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}",
+      "expected": "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}",
+      "stderr": ""
+    },
+    {
+      "lab": "autoencoder_cpu",
+      "variant": "library",
+      "sha256": "96b2c3784c23c63ed810ab4cea2d7d786a068296ce93c67194612983ca5c1bcc",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": true,
+      "stdout": "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}",
+      "expected": "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}",
+      "stderr": ""
+    },
+    {
+      "lab": "transfer_cpu",
+      "variant": "library",
+      "sha256": "7a884f321443402ae78cdb7eee6e21e67b4b33e2600ca4e98e63d878b81c16ad",
+      "returncode": 0,
+      "executed": true,
+      "matchesRecorded": false,
+      "stdout": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}",
+      "expected": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}",
+      "stderr": ""
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "executed": 7,
+    "matchesRecorded": 6
+  }
+}

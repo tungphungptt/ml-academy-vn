@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-28T12:08:38.028Z",
+  "browser": "firefox",
+  "version": "157.0",
+  "pausedSamples": [
+    {
+      "time": 133.52,
+      "state": "paused"
+    },
+    {
+      "time": 133.52,
+      "state": "paused"
+    },
+    {
+      "time": 133.52,
+      "state": "paused"
+    },
+    {
+      "time": 133.52,
+      "state": "paused"
+    }
+  ],
+  "offscreenStep": "0",
+  "errors": [],
+  "scope": "Windows desktop engine, no physical device test"
+}

@@ -1,0 +1,2231 @@
+{
+  "checkedAt": "2026-10-28T09:11:55.911Z",
+  "browser": "webkit",
+  "version": "27.2",
+  "platform": "win32",
+  "kind": "visual",
+  "errors": [],
+  "failedRequests": [],
+  "cancelled": [],
+  "cases": [
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 1920
+    }
+  ],
+  "specimens": [
+    {
+      "theme": "dark",
+      "width": 375,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 291.9023742675781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 291.9023742675781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 286.3509521484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 286.3509521484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 279.3046875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 279.3046875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 243.74179077148438,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 243.74179077148438,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 272.9615478515625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 272.9615478515625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 286.8932800292969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 286.8932800292969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 300.6822509765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 300.6822509765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295.15496826171875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295.15496826171875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 264.9811096191406,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 264.9811096191406,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 273.6921081542969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 273.6921081542969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 293.5250244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 293.5250244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 259.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 259.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 281.6812438964844,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 281.6812438964844,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 270.2125244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 270.2125244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 280.60125732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 280.60125732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 286.7750244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 286.7750244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 285.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 285.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 276.4000244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 276.4000244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 632.0675659179688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 632.0675659179688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 686.5900268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 686.5900268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 604.2462768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 604.2462768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 629.2150268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 629.2150268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 576.978759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 576.978759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 291.9023742675781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 291.9023742675781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 286.3509521484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 286.3509521484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 279.3046875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 279.3046875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 243.74179077148438,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 243.74179077148438,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 272.9615478515625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 272.9615478515625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 286.8932800292969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 286.8932800292969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 300.6822509765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 300.6822509765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295.15496826171875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295.15496826171875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 264.9811096191406,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 264.9811096191406,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 273.6921081542969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 273.6921081542969,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 293.5250244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 293.5250244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 259.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 259.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 281.6812438964844,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 281.6812438964844,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 270.2125244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 270.2125244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 280.60125732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 280.60125732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 286.7750244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 286.7750244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 285.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 285.57000732421875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 276.4000244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 276.4000244140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 632.0675659179688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 632.0675659179688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 686.5900268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 686.5900268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 604.2462768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 604.2462768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 629.2150268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 629.2150268554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 576.978759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 576.978759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 283.5618896484375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 232.63922119140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 377.53411865234375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 185.80453491210938,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 246.57281494140625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 335.97613525390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 282.0736083984375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 409.835693359375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 425.3428039550781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 348.95880126953125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 566.301025390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 278.706787109375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 369.85919189453125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 503.964111328125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 423.1103820800781,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 614.75341796875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 756.1650390625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 620.3712768554688,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1006.7574462890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 495.478759765625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 657.5274658203125,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 895.936279296875,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 752.1962890625,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1092.8948974609375,
+          "font": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Be Vietnam Pro, sans-serif"
+        }
+      ]
+    }
+  ],
+  "fontVerification": "FontFaceSet, computed CSS, NFC/NFD geometry and screenshots; no claim of Chromium CDP actual-font APIs in other engines."
+}

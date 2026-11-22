@@ -26,10 +26,10 @@ print(round(float(kl(1, 1)), 4), round(float(kl(0, 4)), 4), round(0.8 * 1 + (1 -
 Kết quả kỳ vọng (đã chạy cục bộ): `0.5 0.8069 1.1`.
 
 ## Lỗi thường gặp
-GAN: mất cân bằng giữa $G$ và $D$, mode collapse (chỉ sinh vài kiểu mẫu). VAE: ảnh sinh thường mờ. Diffusion: lấy mẫu chậm vì cần nhiều bước.
+GAN có thể mất cân bằng giữa $G$ và $D$ hoặc mode collapse. Với VAE, likelihood/loss tái tạo và kiến trúc decoder ảnh hưởng chất lượng; không coi “ảnh mờ” là tính chất bắt buộc. Diffusion cần một quy trình reverse và sampler cụ thể; chi phí lấy mẫu phụ thuộc số bước, kiến trúc và phương pháp lấy mẫu.
 
 ## Ưu điểm, hạn chế
-GAN cho ảnh sắc nét nhưng khó huấn luyện; VAE ổn định và có không gian mã liên tục nhưng ảnh mờ hơn; Diffusion chất lượng cao nhưng tốn tính toán. Mình chưa cung cấp code huấn luyện cho ba mô hình này.
+GAN, VAE và diffusion khác nhau ở objective, latent variables và cách lấy mẫu; không có thứ hạng chất lượng/tốc độ bất biến cho mọi cấu hình. Ví dụ trong bài chỉ kiểm tra KL và forward noising, chưa cung cấp một thí nghiệm huấn luyện hay so sánh ảnh của ba họ mô hình. Muốn so sánh cần cùng dữ liệu, protocol, metric và ngân sách tài nguyên.
 
 ## Bài tập
 1. (Dễ) Tính KL với $\mu=2,\sigma^2=1$. 2. (Vừa) Tính $x_t$ với $\bar\alpha_t=0.25$. 3. (Khó) Cài một VAE nhỏ bằng PyTorch trên dữ liệu 2 chiều.

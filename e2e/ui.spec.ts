@@ -1,8 +1,9 @@
 import { test, expect, type Page } from "@playwright/test";
 import fs from "node:fs";
+import { createUserFixture } from "./fixtures";
 
 const screens = [
-  ["home", "/", "Học máy."], ["courses", "/courses", "Khóa học"],
+  ["home", "/", "Hiểu AI."], ["courses", "/courses", "Chọn điều bạn muốn hiểu."],
   ["course", "/courses/ml-fundamentals", "Track B: Machine Learning căn bản"],
   ["lesson", "/learn/linear-regression", "Linear Regression"],
   ["lab", "/lab?lab=linear_regression", "Code Lab"], ["lab-cpu", "/lab?lab=cnn_cpu", "Code Lab"],
@@ -13,7 +14,7 @@ const screens = [
   ["reset", "/reset", "Đặt lại mật khẩu"], ["admin-blocked", "/admin", "Không tìm thấy trang"], ["not-found", "/missing-ui-fixture", "Không tìm thấy trang"],
 ] as const;
 const output = process.env.UI_SCREENSHOT_DIR;
-const baseURL = process.env.E2E_BASE_URL || "http://localhost:3000";
+const baseURL = process.env.E2E_BASE_URL || "http://127.0.0.1:3100";
 async function noOverflow(page: Page, name: string) {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), name).toBe(true);
 }
@@ -25,11 +26,11 @@ test("PCA projection connectors stay visible and axis labels match actual theme 
   await demo.getByRole("checkbox").check();
   for (const theme of ["light", "dark"]) {
     await page.evaluate(t => { document.documentElement.dataset.theme = t; }, theme);
-    const connectors = demo.locator('svg g line');
+    const connectors = demo.locator('.plot-data > g > line');
     await expect(connectors).toHaveCount(60);
     const strokes = await connectors.evaluateAll(lines => lines.map(line => ({ color: getComputedStyle(line).stroke, opacity: getComputedStyle(line).strokeOpacity })));
     expect(strokes.every(s => s.color !== "none" && s.opacity === "0.4")).toBe(true);
-    const axes = await demo.locator('svg > line').evaluateAll(lines => lines.slice(-2).map(line => getComputedStyle(line).stroke));
+    const axes = await demo.locator('.plot-data > line').evaluateAll(lines => lines.map(line => getComputedStyle(line).stroke));
     const labels = await demo.locator('.plot-legend span').evaluateAll(spans => spans.map(span => getComputedStyle(span).color));
     expect(axes).toEqual(labels);
     await noOverflow(page, `PCA projections/${theme}`);
@@ -40,7 +41,7 @@ test("PCA projection connectors stay visible and axis labels match actual theme 
 test("all main screens have usable geometry, headings, and contrast across both themes and four widths", async ({ browser }) => {
   test.setTimeout(240_000);
   const errors: string[] = [];
-  for (const theme of ["light", "dark"] as const) for (const width of [375, 390, 768, 1440]) {
+  for (const theme of ["light", "dark"] as const) for (const width of [375, 768, 1440, 1920]) {
     const context = await browser.newContext({ baseURL, viewport: { width, height: 1000 }, colorScheme: theme, reducedMotion: "reduce" });
     await context.addInitScript(t => localStorage.setItem("theme", t), theme);
     const page = await context.newPage();
@@ -92,7 +93,7 @@ test("keyboard navigation, mobile menu, TOC and reading focus remain usable", as
   await menu.focus(); await page.keyboard.press("Enter"); await expect(menu).toHaveAttribute("aria-expanded", "true");
   await page.keyboard.press("Escape"); await expect(menu).toHaveAttribute("aria-expanded", "false"); await expect(menu).toBeFocused();
   await menu.click(); await page.getByRole("navigation", { name: "Điều hướng chính" }).getByRole("link", { name: "Lộ trình", exact: true }).click();
-  await expect(page.locator("main h1")).toHaveText("Khóa học");
+  await expect(page.locator("main h1")).toHaveText("Chọn điều bạn muốn hiểu.");
   await expect(page.getByRole("button", { name: "Mở hoặc đóng menu" })).toHaveAttribute("aria-expanded", "false");
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/learn/linear-regression");
@@ -108,9 +109,10 @@ test("keyboard navigation, mobile menu, TOC and reading focus remain usable", as
 });
 
 test("quiz pending/error/retry, notes, progress and dashboard use persisted user data", async ({ page, context }) => {
-  expect(process.env.DATABASE_URL).toMatch(/^file:\/tmp\/ml-curriculum-e2e-/);
-  const registration = await page.request.post("/api/register", { data: { email: `ui-${Date.now()}@example.invalid`, password: "ui-browser-fixture-password-42" } });
-  expect(registration.ok()).toBe(true);
+  expect(process.env.DATABASE_URL).toMatch(/^file:.*[/\\]ml-curriculum-e2e-[^/\\]+[/\\][^/\\]+\.db$/);
+  const fixture = await createUserFixture("ui", "ui-browser-fixture-password-42");
+  const session = await page.request.post("/api/login", { data: fixture });
+  expect(session.ok()).toBe(true);
   await page.setViewportSize({ width: 390, height: 1000 });
   await page.goto("/"); await expect(page.locator("main h1")).toHaveText("Tiến độ của bạn");
   await expect(page.locator(".metric-strip b").first()).toHaveText("0");
@@ -165,7 +167,7 @@ test("quiz pending/error/retry, notes, progress and dashboard use persisted user
   await expect(page.locator(".recent-list")).toContainText("1/2");
   for (const theme of ["light", "dark"]) {
     await page.evaluate(t => { localStorage.setItem("theme", t); document.documentElement.dataset.theme = t; }, theme);
-    for (const width of [375, 390, 768, 1440]) {
+    for (const width of [375, 768, 1440, 1920]) {
       await page.setViewportSize({ width, height: 1000 });
       await noOverflow(page, `persisted dashboard/${theme}/${width}`);
       await expect(page.locator(".metric-strip b").first()).toHaveText("1");
@@ -178,7 +180,9 @@ test("lab editing/focus/reset, CPU instructions and search resource links stay h
   await page.setViewportSize({ width: 375, height: 1000 });
   await page.goto("/lab?lab=linear_regression");
   const editor = page.getByLabel("Code Python"), original = await editor.inputValue();
+  await expect(editor).toBeEditable();
   await editor.focus();
+  await expect(editor).toBeFocused();
   expect(await page.locator(".code-editor").evaluate(el => getComputedStyle(el).outlineStyle)).not.toBe("none");
   await editor.fill('print("local edit $x_i$ {value}")');
   await page.getByRole("button", { name: "Reset Code", exact: true }).click();

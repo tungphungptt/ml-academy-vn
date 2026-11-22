@@ -11,8 +11,8 @@ export default function PasswordForm() {
     finally { setBusy(false); }
   }
   return <form onSubmit={submit} className="account-form">
-    <label>Mật khẩu hiện tại<input name="current" type="password" required autoComplete="current-password" /></label>
-    <label>Mật khẩu mới (8 ký tự trở lên)<input name="next" type="password" minLength={8} required autoComplete="new-password" /></label>
+    <label>Mật khẩu hiện tại<input name="current" type="password" required maxLength={100} autoComplete="current-password" /></label>
+    <label>Mật khẩu mới (8 ký tự trở lên)<input name="next" type="password" minLength={8} maxLength={100} required autoComplete="new-password" /></label>
     <button className="primary" disabled={busy}>{busy ? "Đang lưu..." : "Đổi mật khẩu"}</button>
     {msg && <p role={msg.ok ? "status" : "alert"} className={`notice ${msg.ok ? "success" : "error"}`}>{msg.t}</p>}</form>;
 }

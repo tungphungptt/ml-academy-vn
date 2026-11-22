@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+import base from './playwright.workspace.config';
+export default defineConfig({...base,testMatch:['exhibition.spec.ts','workspace.spec.ts','learning-refinement.spec.ts','ui.spec.ts','curriculum.spec.ts','neuralclone.spec.ts'],projects:base.projects?.map(project=>({...project,testMatch:project.name==='chrome'?['exhibition.spec.ts','workspace.spec.ts','learning-refinement.spec.ts','ui.spec.ts','curriculum.spec.ts','neuralclone.spec.ts']:['exhibition.spec.ts','workspace.spec.ts','learning-refinement.spec.ts']})),outputDir:'.local/exhibition-e2e',reporter:'list'});

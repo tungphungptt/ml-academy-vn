@@ -15,7 +15,7 @@ const before = JSON.parse(fs.readFileSync("docs/curriculum-inventory-before.json
 
 test("curriculum keeps original slugs and orders every prerequisite before its dependent", () => {
   const lessons = getLessons(), index = new Map(lessons.map((l, i) => [l.s, i]));
-  assert.equal(lessons.length, 59); assert.equal(index.size, 59);
+  assert.equal(lessons.length, 67); assert.equal(index.size, 67);
   for (const old of before) assert.ok(index.has(old.s), `lost ${old.s}`);
   for (const l of lessons) {
     assert.ok(fs.existsSync(`content/lessons/${l.f}`));
@@ -30,7 +30,7 @@ test("curriculum keeps original slugs and orders every prerequisite before its d
   }
 });
 
-test("50-to-59 add-only reconciliation preserves admin edits, IDs, quizzes, attempts and progress", async () => {
+test("50-to-67 add-only reconciliation preserves admin edits, IDs, quizzes, attempts and progress", async () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "ml-curriculum-regression-"));
   const file = path.join(dir, "fixture.db"), db = new PrismaClient({ datasources: { db: { url: `file:${file}` } } });
   const sql = new DatabaseSync(file);
@@ -58,8 +58,8 @@ test("50-to-59 add-only reconciliation preserves admin edits, IDs, quizzes, atte
     const users = await db.user.findMany(), questions = await db.quizQuestion.findMany({ orderBy: { id: "asc" } });
     await seedDatabase(db, { email: user.email, password: "a-different-test-password" });
     await seedDatabase(db);
-    assert.equal(await db.lesson.count(), 59);
-    assert.equal(await db.quizQuestion.count(), 133);
+    assert.equal(await db.lesson.count(), 67);
+    assert.equal(await db.quizQuestion.count(), 157);
     assert.deepEqual(await db.lesson.findMany({ where: { slug: { in: before.map(l => l.s) } }, orderBy: { slug: "asc" } }), saved);
     for (const m of modules) assert.deepEqual(await db.module.findUniqueOrThrow({ where: { id: m.id } }), m);
     assert.deepEqual(await db.user.findMany(), users);
@@ -85,7 +85,9 @@ test("50-to-59 add-only reconciliation preserves admin edits, IDs, quizzes, atte
 test("downloadable lab notebooks contain current source, verified hashes and recorded stdout", () => {
   const labs = JSON.parse(fs.readFileSync("content/labs.json", "utf8"));
   for (const lab of labs) for (const variant of lab.variants) {
-    const code = fs.readFileSync(`labs/${lab.id}/${variant}.py`, "utf8");
+    // Git checks LF files out as CRLF on Windows. Hash canonical source,
+    // matching Python universal-newline reads and the published notebooks.
+    const code = fs.readFileSync(`labs/${lab.id}/${variant}.py`, "utf8").replace(/\r\n/g, "\n");
     const hash = createHash("sha256").update(code).digest("hex");
     assert.equal(lab.verification[variant].sha256, hash, `${lab.id}/${variant} has stale verification`);
     const notebook = JSON.parse(fs.readFileSync(`public${lab.notebooks[variant]}`, "utf8"));
@@ -106,8 +108,8 @@ test("fresh seed publishes every lesson in catalog order with all quiz prompts, 
   try {
     await seedDatabase(db);
     assert.equal(await db.user.count(), 0);
-    assert.equal(await db.lesson.count(), 59);
-    assert.equal(await db.quizQuestion.count(), 133);
+    assert.equal(await db.lesson.count(), 67);
+    assert.equal(await db.quizQuestion.count(), 157);
     for (const c of getCatalog().courses) {
       const course = await db.course.findUniqueOrThrow({ where: { slug: c.slug }, include: { modules: { orderBy: { order: "asc" }, include: { lessons: { orderBy: { order: "asc" }, include: { quiz: { include: { questions: { orderBy: { order: "asc" } } } } } } } } } });
       assert.equal(course.published, true);

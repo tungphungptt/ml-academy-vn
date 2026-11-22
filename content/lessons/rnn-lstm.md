@@ -28,7 +28,7 @@ print(hs)
 Kết quả kỳ vọng (đã chạy cục bộ): `[0.7616, -0.5506]`.
 
 ## Lỗi thường gặp
-Quên cắt gradient (gradient clipping) khi huấn luyện chuỗi dài; không xử lý padding trong batch có độ dài khác nhau.
+Không theo dõi exploding gradient và clipping khi cần; clipping không chữa vanishing gradient. Cần kiểm tra (gradient clipping) khi huấn luyện chuỗi dài; không xử lý padding trong batch có độ dài khác nhau.
 
 ## Ưu điểm, hạn chế
 LSTM nhớ phụ thuộc xa tốt hơn RNN thuần. Xử lý tuần tự nên khó song song hóa; Transformer thay thế phần lớn ứng dụng NLP hiện nay.

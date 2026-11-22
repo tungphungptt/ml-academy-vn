@@ -1,0 +1,22 @@
+﻿{
+    "At":  "2026-10-28T10:23:46.9009000Z",
+    "Processes":  [
+                      {
+                          "Id":  19800,
+                          "ProcessName":  "cloudflared",
+                          "CPU":  null,
+                          "WorkingSet64":  51871744
+                      },
+                      {
+                          "Id":  26740,
+                          "ProcessName":  "node",
+                          "CPU":  296.921875,
+                          "WorkingSet64":  603926528
+                      }
+                  ],
+    "PersistentProjectServerLogs":  [
+
+                                    ],
+    "TunnelLogfileConfigured":  false,
+    "HistoricalStdoutAvailable":  false
+}

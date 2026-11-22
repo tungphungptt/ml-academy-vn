@@ -1,15 +1,25 @@
 """Sinh các hình minh họa SVG (tự vẽ từ số liệu thật, không dùng ảnh bên ngoài) vào public/img/."""
-import math, os, numpy as np
+import math, os, re, numpy as np
 os.makedirs("public/img", exist_ok=True)
 CL = ["#2f5bea", "#e8590c", "#2b8a3e", "#ae3ec9"]
+PALETTE = {"#f5f7fb": "#101923", "#1a1a1a": "#e2ebf4", "#2f5bea": "#83e8cb", "#e8590c": "#edb886", "#2b8a3e": "#92baff", "#ae3ec9": "#c6acf2", "#8a93a6": "#8fa4b9", "#aab2c5": "#52657a", "#fff2e6": "#382d25", "#eef2ff": "#202c44", "#e9ecef": "#253240", "#d3f9d8": "#1b4237", "#ffe3e3": "#4b2831"}
+def brand_svg(svg):
+    svg = re.sub(r"#[0-9a-fA-F]{6}\b", lambda m: PALETTE.get(m[0], m[0]), svg)
+    svg = svg.replace('fill="#fff"', 'fill="#192838"').replace('stroke="#000"', 'stroke="#e2ebf4"')
+    return re.sub(r"<animate(?:Motion)?\b[^>]*/>", "", svg)
 def save(name, w, h, body, title):
-    open(f"public/img/{name}.svg", "w", encoding="utf-8").write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{title}"><title>{title}</title><rect width="{w}" height="{h}" rx="12" fill="#f5f7fb"/><g style="font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:13px;fill:#1a1a1a">{body}</g></svg>')
+    open(f"public/img/{name}.svg", "w", encoding="utf-8").write(brand_svg(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{title}"><title>{title}</title><rect width="{w}" height="{h}" rx="12" fill="#f5f7fb"/><g style="font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:13px;fill:#1a1a1a">{body}</g></svg>'))
 def T(x, y, s, a="middle", sz=13, f="#1a1a1a", w="normal"): return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{a}" font-size="{sz}" fill="{f}" font-weight="{w}">{s}</text>'
 def C(x, y, r, f, e=""): return f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="{f}" {e}/>'
 def L(a, b, c, d, s="#8a93a6", w=1.2, e=""): return f'<line x1="{a:.1f}" y1="{b:.1f}" x2="{c:.1f}" y2="{d:.1f}" stroke="{s}" stroke-width="{w}" {e}/>'
 def R(x, y, w, h, f, s="none", e=""): return f'<rect x="{x:.1f}" y="{y:.1f}" width="{w}" height="{h}" rx="4" fill="{f}" stroke="{s}" {e}/>'
 def P(pts, s, w=2.2, e=""): return f'<polyline fill="none" stroke="{s}" stroke-width="{w}" points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" {e}/>'
 def mp(x0, x1, y0, y1, W=440, H=290, l=44, r=20, t=34, b=34):
+    if math.isclose(x1 - x0, y1 - y0):
+        scale = min((W-l-r)/(x1-x0), (H-t-b)/(y1-y0))
+        ox = l + ((W-l-r) - scale*(x1-x0))/2
+        oy = t + ((H-t-b) - scale*(y1-y0))/2
+        return (lambda x: ox + (x-x0)*scale), (lambda y: H-oy-(y-y0)*scale)
     return (lambda x: l + (x - x0) / (x1 - x0) * (W - l - r)), (lambda y: H - b - (y - y0) / (y1 - y0) * (H - t - b))
 # 1. activations
 fx, fy = mp(-4, 4, -1.2, 2.2); xs = np.linspace(-4, 4, 80)
@@ -21,9 +31,9 @@ save("activations", 440, 290, b, "Đồ thị sigmoid, tanh và ReLU")
 fx, fy = mp(-4.5, 4.5, 0, 20.5); th = [4 * 0.8 ** t for t in range(14)]
 b = L(fx(-4.5), fy(0), fx(4.5), fy(0)) + P([(fx(x), fy(x * x)) for x in np.linspace(-4.5, 4.5, 60)], "#8a93a6") + P([(fx(t), fy(t * t)) for t in th], CL[1], 1.5, 'stroke-dasharray="4 3"')
 path = "M" + " L".join(f"{fx(t):.1f},{fy(t*t):.1f}" for t in th)
-b += C(0, 0, 7, CL[1], f'><animateMotion dur="5s" repeatCount="indefinite" path="{path}"/></circle') .replace("/>><", "><") if False else f'<circle r="7" fill="{CL[1]}"><animateMotion dur="5s" repeatCount="indefinite" path="{path}"/></circle>'
+b += "".join(C(fx(theta), fy(theta*theta), 3.5, CL[1]) for theta in th) + C(fx(th[0]), fy(th[0]*th[0]), 6, CL[1])
 b += T(220, 22, "Gradient Descent trên L(θ)=θ² (θ₀=4, η=0.1)", sz=14, w="600") + T(220, 282, "mỗi bước nhân θ với 0,8 nên tiến dần về cực tiểu θ=0", sz=12)
-save("gradient-descent", 440, 290, b, "Hoạt ảnh Gradient Descent trên parabol")
+save("gradient-descent", 440, 290, b, "Các bước Gradient Descent trên parabol")
 # 3. knn
 fx, fy = mp(0, 6, 0, 6); pts = [(1, 1, 0), (2, 1, 0), (4, 4, 1), (5, 4, 1)]
 b = L(fx(0), fy(0), fx(6), fy(0)) + L(fx(0), fy(0), fx(0), fy(6)) + C(fx(3), fy(3), (fx(3 + 2.24) - fx(3)), "none", 'stroke="#8a93a6" stroke-dasharray="5 4"')
@@ -55,12 +65,12 @@ save("mlp", 440, 290, b, "Sơ đồ mạng MLP 2-3-1")
 b = T(220, 24, "Tích chập: kernel 2×2 trượt trên ảnh 3×3", sz=14, w="600")
 for i in range(3):
     for j in range(3): b += R(40 + j * 44, 60 + i * 44, 42, 42, "#fff", "#8a93a6") + T(61 + j * 44, 87 + i * 44, i * 3 + j + 1)
-b += f'<rect width="86" height="86" rx="4" fill="none" stroke="{CL[1]}" stroke-width="3"><animate attributeName="x" values="40;84;40;84" dur="4s" repeatCount="indefinite" calcMode="discrete"/><animate attributeName="y" values="60;60;104;104" dur="4s" repeatCount="indefinite" calcMode="discrete"/></rect>'
+b += f'<rect x="40" y="60" width="86" height="86" rx="4" fill="none" stroke="{CL[1]}" stroke-width="3"/>'
 b += T(200, 120, "∗", sz=28) + R(230, 80, 46, 46, "#fff", "#8a93a6") + R(276, 80, 46, 46, "#fff", "#8a93a6") + R(230, 126, 46, 46, "#fff", "#8a93a6") + R(276, 126, 46, 46, "#fff", "#8a93a6") + T(253, 108, "1") + T(299, 108, "0") + T(253, 154, "0") + T(299, 154, "−1") + T(276, 70, "kernel") + T(340, 120, "=", sz=28)
 for i in range(2):
     for j in range(2): b += R(360 + j * 36, 92 + i * 36, 34, 34, "#fff2e6", CL[1]) + T(377 + j * 36, 115 + i * 36, "−4")
 b += T(220, 240, "mỗi ô ra = x[i,j] − x[i+1,j+1] = −4", sz=12)
-save("conv", 440, 290, b, "Hoạt ảnh phép tích chập")
+save("conv", 440, 290, b, "Kernel 2×2 tại vị trí đầu và kết quả tích chập")
 # 8. attention
 fx, fy = mp(0, 2, 0, 1); b = T(220, 24, "Attention: trọng số softmax(q·k/√d)", sz=14, w="600")
 for i, (w, nm) in enumerate(((0.6698, "k₁=(1,0)"), (0.3302, "k₂=(0,1)"))): b += R(110, 70 + i * 70, 280 * w / 0.6698 * 0.7, 40, CL[i]) + T(100, 96 + i * 70, nm, "end") + T(120 + 280 * w / 0.6698 * 0.7, 96 + i * 70, f"{w:.4f}", "start")
@@ -93,7 +103,7 @@ save("pca", 440, 290, b, "Các thành phần chính của một đám mây đi�
 
 # ---- Đợt 2: hình cho các bài còn lại ----
 def save(name, w, h, body, title):
-    open(f"public/img/{name}.svg", "w", encoding="utf-8").write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{title}"><title>{title}</title><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#8a93a6"/></marker></defs><rect width="{w}" height="{h}" rx="12" fill="#f5f7fb"/><g style="font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:13px;fill:#1a1a1a">{body}</g></svg>')
+    open(f"public/img/{name}.svg", "w", encoding="utf-8").write(brand_svg(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{title}"><title>{title}</title><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#8a93a6"/></marker></defs><rect width="{w}" height="{h}" rx="12" fill="#f5f7fb"/><g style="font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:13px;fill:#1a1a1a">{body}</g></svg>'))
 def BX(x, y, w, h, s, f="#fff", st="#8a93a6", sz=12):
     ls = s.split("|"); o = R(x, y, w, h, f, st)
     for i, l in enumerate(ls): o += T(x + w / 2, y + h / 2 + (i - (len(ls) - 1) / 2) * 15 + 4, l, sz=sz)

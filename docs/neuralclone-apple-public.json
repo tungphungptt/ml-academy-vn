@@ -1,0 +1,314 @@
+{
+  "checkedAt": "2026-10-28T08:52:31.684Z",
+  "engines": [
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "cases": [
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0,
+          "pyodideOutput": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9"
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/playground#threshold",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0,
+          "pyodideOutput": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9"
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/playground#threshold",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "websocketFrames": 108,
+      "websocketErrors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "cases": [
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "websocketFrames": 200,
+      "websocketErrors": [],
+      "failure": "TimeoutError: page.waitForFunction: Timeout 390000ms exceeded."
+    }
+  ]
+}

@@ -6,9 +6,9 @@ const ttl = () => (process.env.NODE_ENV === "production" ? Infinity : 5000); // 
 const resets: (() => void)[] = [];
 export const clearContentCache = () => resets.forEach(r => r());
 function memo<T>(f: () => T): () => T { let c: { at: number; v: T } | null = null; resets.push(() => { c = null; }); return () => { if (!c || Date.now() - c.at > ttl()) c = { at: Date.now(), v: f() }; return c.v; }; }
-const read = (...p: string[]) => fs.readFileSync(path.join(process.cwd(), ...p), "utf8");
-export const getCatalog = memo(() => JSON.parse(read("content/catalog.json")) as Catalog);
+const read = (file: string) => fs.readFileSync(path.join(process.cwd(), "content", file), "utf8");
+export const getCatalog = memo(() => JSON.parse(read("catalog.json")) as Catalog);
 export const getLessons = (): Lesson[] => getCatalog().courses.flatMap(c => c.modules.flatMap(m => m.lessons.filter((l): l is Lesson => typeof l !== "string")));
-export const getLabLinks = memo(() => (JSON.parse(read("content/labs.json")) as { id: string; title: string; lessonSlugs?: string[]; notebooks?: Record<string, string> }[]));
+export const getLabLinks = memo(() => (JSON.parse(read("labs.json")) as { id: string; title: string; lessonSlugs?: string[]; notebooks?: Record<string, string> }[]));
 export const getSearchDocs = memo(() => getLessons().map(l => ({ slug: l.s, title: l.t, text: readLesson(l.f).replace(/[#*`$\\]|!\[[^\]]*\]\([^)]*\)/g, " ") })));
-export const getStats = memo(() => ({ lessons: getLessons().length, images: fs.readdirSync(path.join(process.cwd(), "public/img")).filter(f => f.endsWith(".svg")).length, labs: (JSON.parse(read("content/labs.json")) as unknown[]).length }));
+export const getStats = memo(() => ({ lessons: getLessons().length, images: fs.readdirSync(path.join(process.cwd(), "public/img")).filter(f => f.endsWith(".svg")).length, labs: (JSON.parse(read("labs.json")) as unknown[]).length }));

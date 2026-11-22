@@ -47,3 +47,7 @@ Với hồi quy, MAE có cùng đơn vị target, MSE có đơn vị bình phư�
 
 ## Nguồn tham khảo
 - [scikit-learn: Model evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+F1 nên tính trực tiếp bằng 2TP/(2TP+FP+FN) khi mẫu số dương: TP=0,FP=1,FN=1 cho F1=0 dù biểu thức 2PR/(P+R) có dạng 0/0. Nếu cả TP,FP,FN bằng 0 thì F1 không xác định theo tỷ số này; thư viện dùng quy ước zero_division đã chọn. Dùng validation để chọn mô hình/ngưỡng, test để đánh giá cuối. [scikit-learn model evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html). [Thử ngưỡng và ma trận nhầm lẫn](/playground#threshold).

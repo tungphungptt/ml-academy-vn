@@ -1,0 +1,60 @@
+{
+  "method": "Headless local Chrome, production server on loopback, unthrottled, 1 second after networkidle; lab observation only, no field CWV/INP claim.",
+  "performanceResults": [
+    {
+      "width": 375,
+      "route": "/",
+      "lcp": 540,
+      "cls": 0,
+      "transferBytes": 337061,
+      "scriptBytes": 140755
+    },
+    {
+      "width": 375,
+      "route": "/playground",
+      "lcp": 348,
+      "cls": 0,
+      "transferBytes": 23573,
+      "scriptBytes": 2847
+    },
+    {
+      "width": 375,
+      "route": "/lab",
+      "lcp": 440,
+      "cls": 0.0011631208333333335,
+      "transferBytes": 174787,
+      "scriptBytes": 121676
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "lcp": 424,
+      "cls": 0.00010629430700231481,
+      "transferBytes": 358130,
+      "scriptBytes": 140755
+    },
+    {
+      "width": 1440,
+      "route": "/playground",
+      "lcp": 100,
+      "cls": 0,
+      "transferBytes": 10025,
+      "scriptBytes": 2847
+    },
+    {
+      "width": 1440,
+      "route": "/lab",
+      "lcp": 192,
+      "cls": 0.0004137518988715278,
+      "transferBytes": 175087,
+      "scriptBytes": 121676
+    }
+  ],
+  "live": {
+    "status": 200,
+    "title": "Học AI từ gốc | NeuralClone",
+    "h1": "Học máy.\nHiểu từ gốc.",
+    "canonical": "https://neuralclone.site"
+  },
+  "consoleErrors": []
+}

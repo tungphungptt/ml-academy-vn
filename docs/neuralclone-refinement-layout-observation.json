@@ -1,0 +1,481 @@
+{
+  "checkedAt": "2026-10-28T11:58:14.027Z",
+  "browser": "156.0.8078.49",
+  "scope": "Chromium desktop cold contexts, 250ms artificial font delay; lab observation, not field Core Web Vitals or a device test",
+  "cases": [
+    {
+      "theme": "light",
+      "width": 375,
+      "route": "/",
+      "fontDelayMs": 250,
+      "cls": 0.00161309,
+      "shifts": [
+        {
+          "value": 0.0003435225,
+          "at": 730.8000000007451
+        },
+        {
+          "value": 0.0011099755,
+          "at": 905.9000000022352
+        },
+        {
+          "value": 0.000159592,
+          "at": 1297.5
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 275.30000000074506
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 276.30000000074506
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 260.5999999977648
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 261.3999999985099
+        },
+        {
+          "file": "/fonts/neural-lora-italic-v1.woff2",
+          "transferBytes": 91628,
+          "durationMs": 397.30000000074506
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 396
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "route": "/learn/llm-foundations",
+      "fontDelayMs": 250,
+      "cls": 0.005400833083333334,
+      "shifts": [
+        {
+          "value": 0.003130786166666667,
+          "at": 1697.800000000745
+        },
+        {
+          "value": 0.0012876091666666665,
+          "at": 1825.5
+        },
+        {
+          "value": 0.00098243775,
+          "at": 1941.6000000014901
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 275.69999999925494
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 277
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 284.80000000074506
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 286.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 427.6000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 275.3999999985099
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 276.3999999985099
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "route": "/",
+      "fontDelayMs": 250,
+      "cls": 0.002953856216242284,
+      "shifts": [
+        {
+          "value": 0.0005426329812885802,
+          "at": 706.8000000007451
+        },
+        {
+          "value": 0.0024112232349537037,
+          "at": 754.4000000022352
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 272
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 273.20000000298023
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 276.1000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 274.30000000074506
+        },
+        {
+          "file": "/fonts/neural-lora-italic-v1.woff2",
+          "transferBytes": 91628,
+          "durationMs": 275.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 397.6000000014901
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "route": "/learn/llm-foundations",
+      "fontDelayMs": 250,
+      "cls": 0.006643728600019289,
+      "shifts": [
+        {
+          "value": 0.004126686740451389,
+          "at": 1687.9000000022352
+        },
+        {
+          "value": 0.0021879505449459873,
+          "at": 1843.199999999255
+        },
+        {
+          "value": 0.0003290913146219136,
+          "at": 1947.300000000745
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 274.6000000014901
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 275.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 262.6000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 263.8999999985099
+        },
+        {
+          "file": "/fonts/neural-lora-italic-v1.woff2",
+          "transferBytes": 91628,
+          "durationMs": 264.1000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 409.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 269.19999999925494
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 270.19999999925494
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "route": "/",
+      "fontDelayMs": 250,
+      "cls": 0.00161309,
+      "shifts": [
+        {
+          "value": 0.0003435225,
+          "at": 627.7999999970198
+        },
+        {
+          "value": 0.0011099755,
+          "at": 675.2999999970198
+        },
+        {
+          "value": 0.000159592,
+          "at": 885.8999999985099
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 260.30000000074506
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 261.70000000298023
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 273
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 274.19999999925494
+        },
+        {
+          "file": "/fonts/neural-lora-italic-v1.woff2",
+          "transferBytes": 91628,
+          "durationMs": 389.5
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 387.8999999985099
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "route": "/learn/llm-foundations",
+      "fontDelayMs": 250,
+      "cls": 0.005400833083333334,
+      "shifts": [
+        {
+          "value": 0.003130786166666667,
+          "at": 1686.8999999985099
+        },
+        {
+          "value": 0.0012876091666666665,
+          "at": 1800.199999999255
+        },
+        {
+          "value": 0.00098243775,
+          "at": 1954.6000000014901
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 286.3999999985099
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 287.6000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 274.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 272.80000000074506
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 404
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "route": "/",
+      "fontDelayMs": 250,
+      "cls": 0.0018952110761477623,
+      "shifts": [
+        {
+          "value": 0.0002539749710648148,
+          "at": 3537.199999999255
+        },
+        {
+          "value": 0.0016412361050829475,
+          "at": 3950.199999999255
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 1762.7999999970198
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 1766.0999999977648
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 534.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 533.3999999985099
+        },
+        {
+          "file": "/fonts/neural-lora-italic-v1.woff2",
+          "transferBytes": 91628,
+          "durationMs": 538.3000000007451
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 534.5
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 291.70000000298023
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 300.80000000074506
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "route": "/learn/llm-foundations",
+      "fontDelayMs": 250,
+      "cls": 0.005146155757197627,
+      "shifts": [
+        {
+          "value": 0.004126686740451389,
+          "at": 2482.5
+        },
+        {
+          "value": 0.00014631076388888888,
+          "at": 2675
+        },
+        {
+          "value": 0.0007311936065297068,
+          "at": 2731.7000000029802
+        },
+        {
+          "value": 0.00014196464632764276,
+          "at": 2754.900000002235
+        }
+      ],
+      "overflow": false,
+      "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "headingFont": "Lora, Georgia, serif",
+      "fonts": [
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 285.80000000074506
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 287.6000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-600-v2.woff2",
+          "transferBytes": 38068,
+          "durationMs": 522.6000000014901
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-500-v2.woff2",
+          "transferBytes": 37948,
+          "durationMs": 522.6999999992549
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-700-v2.woff2",
+          "transferBytes": 38884,
+          "durationMs": 520.3000000007451
+        },
+        {
+          "file": "/fonts/neural-lora-italic-v1.woff2",
+          "transferBytes": 91628,
+          "durationMs": 522.8999999985099
+        },
+        {
+          "file": "/fonts/be-vietnam-pro-full-400-v2.woff2",
+          "transferBytes": 36012,
+          "durationMs": 267.5
+        },
+        {
+          "file": "/fonts/neural-lora-normal-v1.woff2",
+          "transferBytes": 85144,
+          "durationMs": 268.3999999985099
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "route": "/learn/llm-foundations",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/lab?lab=cnn_cpu",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/playground#threshold",
+    "width": 375,
+    "scrollWidth": 393,
+    "elements": [
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "NHÌN THẤY CÁCH MÔ HÌNH HỌCPlayground thuật toánKéo thanh trượt, đổi một tham số ",
+        "width": 360.578125,
+        "right": 392.578125,
+        "shrink": "1",
+        "minWidth": "auto"
+      },
+      {
+        "tag": "P",
+        "classes": "eyebrow",
+        "text": "NHÌN THẤY CÁCH MÔ HÌNH HỌC",
+        "width": 360.578125,
+        "right": 392.578125,
+        "shrink": "1",
+        "minWidth": "0px"
+      },
+      {
+        "tag": "H1",
+        "classes": "",
+        "text": "Playground thuật toán",
+        "width": 360.578125,
+        "right": 392.578125,
+        "shrink": "1",
+        "minWidth": "0px"
+      },
+      {
+        "tag": "P",
+        "classes": "page-description",
+        "text": "Kéo thanh trượt, đổi một tham số và quan sát dự đoán thay đổi. Bảy thí nghiệm tí",
+        "width": 360.578125,
+        "right": 392.578125,
+        "shrink": "1",
+        "minWidth": "0px"
+      }
+    ]
+  },
+  {
+    "route": "/login",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  }
+]

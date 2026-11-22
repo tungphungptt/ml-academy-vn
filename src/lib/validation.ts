@@ -1,3 +1,4 @@
+import { newPasswordError } from "./password";
 export const RESOURCE_KINDS = ["book", "course", "docs", "paper", "repo"] as const;
 export type ResourceInput = { title: string; description: string; topic: string; kind: (typeof RESOURCE_KINDS)[number]; url: string };
 export function validateResource(x: unknown): { ok: true; data: ResourceInput } | { ok: false; errors: string[] } {
@@ -56,7 +57,7 @@ export function validateStudyPing(x: unknown): R<{ lessonId: string; seconds: nu
 export function validatePasswordChange(x: unknown): R<{ current: string; next: string }> {
   const o = obj(x), e: string[] = []; const current = typeof o.current === "string" ? o.current : "", next = typeof o.next === "string" ? o.next : "";
   if (!current || current.length > 100) e.push("cần nhập mật khẩu hiện tại");
-  if (next.length < 8 || next.length > 100) e.push("mật khẩu mới phải có 8-100 ký tự");
+  const passwordError = newPasswordError(next); if (passwordError) e.push(passwordError);
   if (next && next === current) e.push("mật khẩu mới phải khác mật khẩu hiện tại");
   return e.length ? { ok: false, errors: e } : { ok: true, data: { current, next } };
 }
@@ -74,7 +75,7 @@ export function validateEmailOnly(x: unknown): R<{ email: string }> {
 export function validateReset(x: unknown): R<{ token: string; next: string }> {
   const o = obj(x), e: string[] = []; const token = typeof o.token === "string" ? o.token : "", next = typeof o.next === "string" ? o.next : "";
   if (!/^[a-f0-9]{64}$/.test(token)) e.push("liên kết không hợp lệ");
-  if (next.length < 8 || next.length > 100) e.push("mật khẩu mới phải có 8-100 ký tự");
+  const passwordError = newPasswordError(next); if (passwordError) e.push(passwordError);
   return e.length ? { ok: false, errors: e } : { ok: true, data: { token, next } };
 }
 export function validateContentFile(x: unknown): R<{ file: string }> {

@@ -36,6 +36,7 @@ model Module {
   order Int
   course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
   lessons Lesson[]
+  @@index([courseId, order])
 }
 model Lesson {
   id String @id @default(cuid())
@@ -53,6 +54,7 @@ model Lesson {
   notes Note[]
   study StudyTime[]
   sources SourceReference[]
+  @@index([moduleId, order])
 }
 model LessonProgress {
   userId String
@@ -61,6 +63,7 @@ model LessonProgress {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   @@id([userId, lessonId])
+  @@index([lessonId])
 }
 model Quiz {
   id String @id @default(cuid())
@@ -78,6 +81,7 @@ model QuizQuestion {
   explanation String
   order Int
   quiz Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  @@index([quizId, order])
 }
 model QuizAttempt {
   id String @id @default(cuid())
@@ -88,6 +92,8 @@ model QuizAttempt {
   createdAt DateTime @default(now())
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   quiz Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  @@index([userId, createdAt])
+  @@index([quizId])
 }
 model Bookmark {
   userId String
@@ -95,6 +101,7 @@ model Bookmark {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   @@id([userId, lessonId])
+  @@index([lessonId])
 }
 model Note {
   id String @id @default(cuid())
@@ -103,6 +110,8 @@ model Note {
   body String
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@index([userId, lessonId, id])
+  @@index([lessonId])
 }
 model SourceReference {
   id String @id @default(cuid())
@@ -110,6 +119,7 @@ model SourceReference {
   title String
   url String
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@index([lessonId])
 }
 model Dataset {
   id String @id @default(cuid())
@@ -152,6 +162,7 @@ model StudyTime {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   @@id([userId, lessonId])
+  @@index([lessonId])
 }
 model PasswordReset {
   id String @id @default(cuid())
@@ -161,4 +172,5 @@ model PasswordReset {
   usedAt DateTime?
   createdAt DateTime @default(now())
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId, usedAt])
 }

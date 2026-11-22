@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-27T15:04:00.957Z",
+  "added": [
+    "gradient-boosting",
+    "imbalanced-learning",
+    "mlops-reproducibility",
+    "responsible-ai",
+    "llm-foundations",
+    "efficient-finetuning",
+    "rag-vector-search",
+    "llm-evaluation-security"
+  ],
+  "previousLessons": 59,
+  "lessons": 67,
+  "questions": 157,
+  "originalRowsPreserved": true,
+  "userDataCountsPreserved": true,
+  "userDataCounts": {
+    "users": 0,
+    "progress": 0,
+    "notes": 0,
+    "attempts": 0,
+    "bookmarks": 0
+  },
+  "backup": ".local\\backups\\neuralclone-content-1793113440819.db"
+}

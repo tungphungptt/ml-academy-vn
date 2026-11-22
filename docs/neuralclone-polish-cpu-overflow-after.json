@@ -1,0 +1,33 @@
+{
+  "width": 375,
+  "scrollWidth": 375,
+  "overflow": [
+    {
+      "tag": "DETAILS",
+      "class": "lab-guide",
+      "width": 339,
+      "scroll": 339,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<details class=\"lab-guide\" open=\"\"><summary>Hướng dẫn chạy &amp; notebook</summary><p>Dùng Python 3."
+    },
+    {
+      "tag": "DIV",
+      "class": "codeblock",
+      "width": 339,
+      "scroll": 337,
+      "overflow": "hidden",
+      "minWidth": "0px",
+      "html": "<div class=\"codeblock\"><div class=\"cb-bar\"><span>powershell</span><button type=\"button\" aria-label=\""
+    },
+    {
+      "tag": "CODE",
+      "class": "",
+      "width": 708.6875,
+      "scroll": 0,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<code>py -3.12 -m venv .venv\n.venv\\Scripts\\python.exe -m pip install -r requirements-curriculum.txt\n"
+    }
+  ]
+}

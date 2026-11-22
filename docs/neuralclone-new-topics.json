@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "gradient-boosting",
+    "title": "Gradient Boosting: học từ phần dư",
+    "course": "ml-fundamentals",
+    "module": "modern-practice",
+    "prerequisites": [
+      "decision-tree",
+      "gradient-descent",
+      "cross-validation"
+    ],
+    "level": "Intermediate",
+    "tier": "Core",
+    "minutes": 45
+  },
+  {
+    "slug": "imbalanced-learning",
+    "title": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+    "course": "ml-fundamentals",
+    "module": "modern-practice",
+    "prerequisites": [
+      "logistic-regression",
+      "metrics",
+      "cross-validation",
+      "feature-leakage"
+    ],
+    "level": "Intermediate",
+    "tier": "Core",
+    "minutes": 50
+  },
+  {
+    "slug": "mlops-reproducibility",
+    "title": "MLOps: tái lập thí nghiệm, versioning và drift",
+    "course": "ml-fundamentals",
+    "module": "modern-practice",
+    "prerequisites": [
+      "ml-project-workflow",
+      "model-deployment",
+      "feature-leakage"
+    ],
+    "level": "Intermediate",
+    "tier": "Core",
+    "minutes": 50
+  },
+  {
+    "slug": "responsible-ai",
+    "title": "Responsible AI: fairness, privacy và model cards",
+    "course": "ml-fundamentals",
+    "module": "modern-practice",
+    "prerequisites": [
+      "metrics",
+      "imbalanced-learning",
+      "mlops-reproducibility"
+    ],
+    "level": "Intermediate",
+    "tier": "Core",
+    "minutes": 45
+  },
+  {
+    "slug": "llm-foundations",
+    "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+    "course": "deep-learning",
+    "module": "modern-ai",
+    "prerequisites": [
+      "transformer-architecture",
+      "embeddings",
+      "text-classification"
+    ],
+    "level": "Intermediate",
+    "tier": "Core",
+    "minutes": 50
+  },
+  {
+    "slug": "efficient-finetuning",
+    "title": "PEFT, LoRA và lượng tử hóa mô hình",
+    "course": "deep-learning",
+    "module": "modern-ai",
+    "prerequisites": [
+      "llm-foundations",
+      "transfer-learning",
+      "linear-algebra-decompositions"
+    ],
+    "level": "Advanced",
+    "tier": "Intermediate",
+    "minutes": 55
+  },
+  {
+    "slug": "rag-vector-search",
+    "title": "RAG và vector search: truy xuất có bằng chứng",
+    "course": "deep-learning",
+    "module": "modern-ai",
+    "prerequisites": [
+      "llm-foundations",
+      "text-classification",
+      "vectors-matrices"
+    ],
+    "level": "Intermediate",
+    "tier": "Core",
+    "minutes": 50
+  },
+  {
+    "slug": "llm-evaluation-security",
+    "title": "Đánh giá LLM, hallucination và prompt injection",
+    "course": "deep-learning",
+    "module": "modern-ai",
+    "prerequisites": [
+      "rag-vector-search",
+      "metrics",
+      "feature-leakage"
+    ],
+    "level": "Advanced",
+    "tier": "Core",
+    "minutes": 45
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "family": "lora",
+    "file": "lora-Lora[wght].woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/lora/Lora%5Bwght%5D.ttf",
+    "sourceSHA256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7",
+    "woffSHA256": "fb9b5b5a68ddfb20e6895da1e6a5cff572e3b5f8e33781a0beb5bc724110392d",
+    "bytes": 84844,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0
+      }
+    ]
+  },
+  {
+    "family": "lora",
+    "file": "lora-Lora-Italic[wght].woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf",
+    "sourceSHA256": "22d8d8854b53807aa664ca34f2031a9ed57a1d0dea296b8b96cdd3aad937a2b3",
+    "woffSHA256": "db3d290368c368014e57e064fd201dad722e813f56b29e11d0e98cf294d7ac73",
+    "bytes": 91328,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400.0,
+        "max": 700.0
+      }
+    ]
+  },
+  {
+    "family": "newsreader",
+    "file": "newsreader-Newsreader[opsz,wght].woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf",
+    "sourceSHA256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1",
+    "woffSHA256": "792f7413bd3c0bde2850614c4a6d231ba9c68c2bd0f7852c6d1c209a45f600f8",
+    "bytes": 214984,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 800.0
+      },
+      {
+        "tag": "opsz",
+        "min": 6.0,
+        "max": 72.0
+      }
+    ]
+  },
+  {
+    "family": "newsreader",
+    "file": "newsreader-Newsreader-Italic[opsz,wght].woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.ttf",
+    "sourceSHA256": "796668611f80b64d5adf182fde3b6f29ed83b4e7cbec7b96937e84ac01364792",
+    "woffSHA256": "67de8676df386aff20259e4c1e96c48526e27d4b7eafdf6d92c7614faccb6c35",
+    "bytes": 239300,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 200.0,
+        "max": 800.0
+      },
+      {
+        "tag": "opsz",
+        "min": 6.0,
+        "max": 72.0
+      }
+    ]
+  },
+  {
+    "family": "bevietnampro",
+    "file": "bevietnampro-BeVietnamPro-Italic.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/bevietnampro/BeVietnamPro-Italic.ttf",
+    "sourceSHA256": "a33ebb3f68e0e260a7d3874d64259ad309971a2daf969e7ce5f444d70bce535f",
+    "woffSHA256": "0de216bd5d641d53abcb9bd7532d49ccf3cfc4a37dafdfb1bffde00354d86543",
+    "bytes": 38700,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": []
+  },
+  {
+    "family": "bevietnampro",
+    "file": "bevietnampro-BeVietnamPro-SemiBoldItalic.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/bevietnampro/BeVietnamPro-SemiBoldItalic.ttf",
+    "sourceSHA256": "f7dbf8a63f4b4a6f7d7f1f4f27443495d01475663bb8fe5cb1a6fc6740e82a27",
+    "woffSHA256": "c1605d9d969a4234c6130e481332a9bb9a3666efa033d4f51b642758632b2f75",
+    "bytes": 40224,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": []
+  },
+  {
+    "family": "bevietnampro",
+    "file": "bevietnampro-BeVietnamPro-BoldItalic.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/bevietnampro/BeVietnamPro-BoldItalic.ttf",
+    "sourceSHA256": "a2a65bdf9b251beb3d658ae691889d71ce63c0290940c87ca60b449ceb0bdaee",
+    "woffSHA256": "1ca5aec284f5948c7f7ecceb27c8e29f5db31b279db090e8da60434852cca050",
+    "bytes": 40768,
+    "requiredGlyphs": 195,
+    "missing": [],
+    "axes": []
+  }
+]

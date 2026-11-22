@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-28T06:16:52.711698+00:00",
+  "results": [
+    {
+      "block": 1,
+      "sha256": "49839303dd3fc0773820ca69967a2f07c4db91241627de31917c35bb3514fa35",
+      "returncode": 0,
+      "stdout": "(2, 4, 11) True\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "block": 2,
+      "sha256": "715693c635ef5f1a9eadf8da193c549a4e6862c3e63d93469aa6f645ee76d3e1",
+      "returncode": 0,
+      "stdout": "(2, 3, 12) True\n",
+      "stderr": "D:\\Projects\\ml-academy-vn\\.local\\polish-cpu\\Lib\\site-packages\\torch\\nn\\modules\\transformer.py:533: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\NestedTensorImpl.cpp:181.)\n  output = torch._nested_tensor_from_mask(\n",
+      "passed": true
+    }
+  ]
+}

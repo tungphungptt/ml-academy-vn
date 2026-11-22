@@ -42,3 +42,7 @@ Chia dữ liệu không phải nghi thức cố định 70/15/15: tỉ lệ ph�
 ## Nguồn tham khảo
 - [scikit-learn: Preprocessing data](https://scikit-learn.org/stable/modules/preprocessing.html).
 - [scikit-learn: Imputation of missing values](https://scikit-learn.org/stable/modules/impute.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Điền trung bình không bảo toàn phương sai hay cấu trúc tương quan. Fit imputer trong train/fold và đánh giá chiến lược bằng validation. [Missing values](https://scikit-learn.org/stable/modules/impute.html).

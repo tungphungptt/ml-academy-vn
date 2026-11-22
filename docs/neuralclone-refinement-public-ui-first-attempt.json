@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-28T12:10:51.707Z",
+  "scope": "Four planned anonymous read-only pages; no retries or auth writes on live data",
+  "cases": [
+    {
+      "origin": "http://localhost:3000",
+      "theme": "light",
+      "width": 1440,
+      "console": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <Suspense name=\"/\" fallback={<Fragment>}>\n      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>\n        <HTTPAccessFallbackErrorBoundary pathname=\"/\" notFound={<SegmentViewNode>} forbidden={undefined} ...>\n          <RedirectBoundary>\n            <RedirectErrorBoundary router={{...}}>\n              <InnerLayoutRouter url=\"/\" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>\n                <SegmentViewNode type=\"page\" pagePath=\"page.tsx\">\n                  <SegmentTrieNode>\n                  <Home>\n                    <Landing>\n                      <section>\n                      <div>\n                      <section className=\"studio-inv...\">\n                        <div>\n                        <HeroExperiment>\n                          <div className=\"experiment\">\n                            <div>\n                            <div>\n                            <svg>\n                            <div className=\"experiment...\">\n                              <label>\n                              <input\n                                id=\"hero-epochs\"\n                                type=\"range\"\n                                min=\"0\"\n                                max=\"240\"\n                                step=\"10\"\n                                value={40}\n                                onChange={function onChange}\n-                               style={{caret-color:\"transparent\"}}\n                              >\n                            ...\n                      ...\n                ...\n              ...\n"
+      ],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(244, 241, 234)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/local-light-1440.png"
+    },
+    {
+      "origin": "http://localhost:3000",
+      "theme": "dark",
+      "width": 375,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(23, 31, 28)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/local-dark-375.png"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "theme": "light",
+      "width": 1440,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(244, 241, 234)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/public-light-1440.png"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "theme": "dark",
+      "width": 375,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(23, 31, 28)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/public-dark-375.png"
+    }
+  ]
+}

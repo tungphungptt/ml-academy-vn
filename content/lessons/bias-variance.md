@@ -55,3 +55,7 @@ Phân rã trong bài lấy kỳ vọng qua các tập train ngẫu nhiên và m�
 
 ## Nguồn tham khảo
 - [scikit-learn: Underfitting vs. Overfitting](https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Đoạn mô phỏng cho xem test để minh họa cơ chế, không phải protocol chọn bậc tốt nhất. Khi chọn mô hình thực tế, cần validation/CV trên train và giữ test cuối riêng.

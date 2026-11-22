@@ -50,3 +50,7 @@ Hạng đếm hướng độc lập; SVD phân rã ma trận chữ nhật thành
 ## Nguồn tham khảo
 - [ML cơ bản: SVD](https://machinelearningcoban.com/2017/06/07/svd/) — đối chiếu qua snapshot repository nguồn; xem audit về giới hạn live.
 - [ML cơ bản: kiến thức toán](https://machinelearningcoban.com/math/).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Công thức phương sai PCA chia n−1 cần n>1 và X đã căn giữa. lstsq chọn nghiệm chuẩn Euclid nhỏ nhất khi có nhiều nghiệm. [NumPy lstsq](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html).

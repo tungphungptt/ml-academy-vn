@@ -45,3 +45,7 @@ Bagging và random subset feature giảm tương quan giữa các cây. Với ph
 
 ## Nguồn tham khảo
 - [scikit-learn: Ensembles (Random Forests)](https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Ví dụ bỏ phiếu A,A,B minh họa hard vote. RandomForestClassifier của sklearn trung bình các phân phối lớp do từng cây dự đoán rồi argmax, nên không luôn trùng đa số nhãn cứng của cây. [Random Forests](https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles).

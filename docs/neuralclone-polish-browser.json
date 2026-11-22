@@ -1,0 +1,386 @@
+{
+  "checkedAt": "2026-10-28T06:23:45.136Z",
+  "pages": [
+    {
+      "origin": "http://localhost:3000",
+      "route": "/",
+      "status": 200,
+      "title": "Học máy.Hiểu từ gốc.",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/courses",
+      "status": 200,
+      "title": "Khóa học",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/imbalanced-learning",
+      "status": 200,
+      "title": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/llm-foundations",
+      "status": 200,
+      "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/responsible-ai",
+      "status": 200,
+      "title": "Responsible AI: fairness, privacy và model cards",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/rag-vector-search",
+      "status": 200,
+      "title": "RAG và vector search: truy xuất có bằng chứng",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/transfer-learning",
+      "status": 200,
+      "title": "Transfer Learning",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/transformer-architecture",
+      "status": 200,
+      "title": "Kiến trúc Transformer",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/playground#threshold",
+      "status": 200,
+      "title": "Playground thuật toán",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/lab?lab=threshold_cost",
+      "status": 200,
+      "title": "Code Lab",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/lab?lab=cnn_cpu",
+      "status": 200,
+      "title": "Code Lab",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/lab?lab=rag_retrieval",
+      "status": 200,
+      "title": "Code Lab",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/search?q=calibration",
+      "status": 200,
+      "title": "Tìm bài học",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/login?next=%2Flearn%2Fimbalanced-learning%23quiz",
+      "status": 200,
+      "title": "Đăng nhập",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/",
+      "status": 200,
+      "title": "Học máy.Hiểu từ gốc.",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/courses",
+      "status": 200,
+      "title": "Khóa học",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/imbalanced-learning",
+      "status": 200,
+      "title": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/llm-foundations",
+      "status": 200,
+      "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/responsible-ai",
+      "status": 200,
+      "title": "Responsible AI: fairness, privacy và model cards",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/rag-vector-search",
+      "status": 200,
+      "title": "RAG và vector search: truy xuất có bằng chứng",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/transfer-learning",
+      "status": 200,
+      "title": "Transfer Learning",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/transformer-architecture",
+      "status": 200,
+      "title": "Kiến trúc Transformer",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/playground#threshold",
+      "status": 200,
+      "title": "Playground thuật toán",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/lab?lab=threshold_cost",
+      "status": 200,
+      "title": "Code Lab",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/lab?lab=cnn_cpu",
+      "status": 200,
+      "title": "Code Lab",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/lab?lab=rag_retrieval",
+      "status": 200,
+      "title": "Code Lab",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/search?q=calibration",
+      "status": 200,
+      "title": "Tìm bài học",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/login?next=%2Flearn%2Fimbalanced-learning%23quiz",
+      "status": 200,
+      "title": "Đăng nhập",
+      "overflow": false,
+      "mathErrors": 0
+    },
+    {
+      "url": "https://pytorch.org/get-started/locally/",
+      "status": 200,
+      "purpose": "new official installation reference"
+    },
+    {
+      "url": "https://github.com/tungphungptt/ml-academy-vn/blob/main/docs/curriculum-practice.md",
+      "status": 200,
+      "purpose": "old external CPU guide"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "websockets": [
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "http://localhost:3000",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "status": 101
+    }
+  ],
+  "touch": [
+    {
+      "origin": "http://localhost:3000",
+      "engine": "Chromium; touch/viewport emulation, no physical device",
+      "menuNavigation": "Khóa học",
+      "menuTarget": {
+        "x": 317,
+        "y": 14,
+        "width": 40,
+        "height": 40
+      },
+      "overflow": false
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "engine": "Chromium; touch/viewport emulation, no physical device",
+      "menuNavigation": "Khóa học",
+      "menuTarget": {
+        "x": 317,
+        "y": 14,
+        "width": 40,
+        "height": 40
+      },
+      "overflow": false
+    }
+  ],
+  "available": {
+    "chrome": true,
+    "webkit": false,
+    "firefox": false
+  }
+}

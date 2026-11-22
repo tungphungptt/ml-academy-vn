@@ -4,7 +4,14 @@ export async function POST(r: Request) {
   const rl = loginLimiter.check("pw:" + u.id); if (!rl.ok) return Response.json({ error: `Thử quá nhiều lần. Hãy đợi ${rl.retryAfter} giây.` }, { status: 429 });
   const v = validatePasswordChange(await r.json().catch(() => null)); if (!v.ok) return Response.json({ error: v.errors.join("; ") }, { status: 400 });
   if (!(await bcrypt.compare(v.data.current, u.passwordHash))) return Response.json({ error: "Mật khẩu hiện tại không đúng" }, { status: 400 });
-  const nu = await db.user.update({ where: { id: u.id }, data: { passwordHash: await bcrypt.hash(v.data.next, 12), tokenVersion: { increment: 1 } } });
-  await createSession(nu.id, nu.tokenVersion); // thiết bị hiện tại giữ đăng nhập, các thiết bị khác bị đăng xuất
+  const passwordHash = await bcrypt.hash(v.data.next, 12);
+  const changed = await db.$transaction(async tx => {
+    const result = await tx.user.updateMany({ where: { id: u.id, tokenVersion: u.tokenVersion, passwordHash: u.passwordHash }, data: { passwordHash, tokenVersion: { increment: 1 } } });
+    if (result.count !== 1) return false;
+    await tx.passwordReset.updateMany({ where: { userId: u.id, usedAt: null }, data: { usedAt: new Date() } });
+    return true;
+  });
+  if (!changed) return Response.json({ error: "Thông tin đăng nhập đã thay đổi. Hãy đăng nhập lại." }, { status: 409 });
+  await createSession(u.id, u.tokenVersion + 1); // thiết bị hiện tại giữ đăng nhập, các thiết bị khác bị đăng xuất
   return Response.json({ ok: true });
 }

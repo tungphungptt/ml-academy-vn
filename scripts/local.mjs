@@ -14,12 +14,18 @@ const env = { ...process.env, COOKIE_SECURE: process.env.COOKIE_SECURE ?? "false
 const run = (cmd, args) => {
   console.log(`▶ ${cmd} ${args.join(" ")}`);
   if (dry) return;
+  if (cmd === "npm") {
+    const cli = process.env.npm_execpath;
+    if (!cli || !existsSync(cli)) throw new Error("Run with npm run local or npm run prod so npm_execpath is available.");
+    cmd = process.execPath;
+    args = [cli, ...args];
+  }
   const r = spawnSync(cmd, args, { stdio: "inherit", env });
   if (r.error) throw r.error;
   if (r.status !== 0) process.exit(r.status ?? 1);
 };
 if (!existsSync("node_modules/next")) run("npm", ["ci"]);
-run(process.execPath, ["node_modules/prisma/build/index.js", "generate"]);
+run(process.execPath, ["scripts/ensure-prisma-client.mjs"]);
 run(process.execPath, ["scripts/prepare-db.mjs"]);
 if (prod) run("npm", ["run", "build"]);
 run(process.execPath, ["node_modules/next/dist/bin/next", prod ? "start" : "dev", "-p", env.PORT || "3000"]);

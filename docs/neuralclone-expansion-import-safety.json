@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-28T13:13:28.173Z",
+  "fixture": ".local\\expansion-import-test-1793193207277\\app.db",
+  "runs": [
+    {
+      "checkedAt": "2026-10-28T13:13:27.788Z",
+      "backup": ".local\\backups\\expansion-1793193207733.db",
+      "changes": [
+        "cmvqqvazb001lv5rycvmbiv28",
+        "cmvqqvb0a0040v5ry5c8kk0hz",
+        "cmvqqvb0b0042v5rypnqksfqv",
+        "cmvqqvb0g004qv5rypvyqh0ha",
+        "cmvqqvb0h004sv5ryjhcnjwd4",
+        "cmvqqvb0h004uv5ryxmxxi1zr",
+        "cmvqqvb3x00crv5ry4f8d0c8f",
+        "cmvqqvb3y00ctv5ryvy0yc7x8"
+      ],
+      "already": [],
+      "conflicts": [
+        "derivatives/0: edited independently, preserved"
+      ]
+    },
+    {
+      "checkedAt": "2026-10-28T13:13:28.140Z",
+      "backup": ".local\\backups\\expansion-1793193208113.db",
+      "changes": [],
+      "already": [
+        "cmvqqvazb001lv5rycvmbiv28",
+        "cmvqqvb0a0040v5ry5c8kk0hz",
+        "cmvqqvb0b0042v5rypnqksfqv",
+        "cmvqqvb0g004qv5rypvyqh0ha",
+        "cmvqqvb0h004sv5ryjhcnjwd4",
+        "cmvqqvb0h004uv5ryxmxxi1zr",
+        "cmvqqvb3x00crv5ry4f8d0c8f",
+        "cmvqqvb3y00ctv5ryvy0yc7x8"
+      ],
+      "conflicts": [
+        "derivatives/0: edited independently, preserved"
+      ]
+    }
+  ],
+  "preserved": [
+    "all non-question tables including test learner/progress/attempt/note/bookmark/study time",
+    "all question IDs, options, answer keys and order",
+    "independently edited explanation"
+  ],
+  "passed": true
+}

@@ -58,3 +58,11 @@ Chạy `python labs/transfer_cpu/library.py` tại gốc repository, hoặc mở
 Giữ split 1.149 train / 288 validation / 360 test của CNN. Head mới có $128\cdot2+2=258$ tham số; backbone có 80 tham số. Huấn luyện head đóng băng 12 epoch rồi fine-tune 12 epoch với backbone LR=0,001, head LR=0,005. Validation chọn checkpoint mỗi giai đoạn; script assert toàn bộ weights backbone không đổi ở giai đoạn frozen. Chỉ sau khi chọn checkpoint mới đo test của hai giao thức đã định trước.
 
 Kết quả CPU thực đo: frozen accuracy **0,9167**, fine-tune **0,9306**; assertion backbone không đổi đạt. Các số này ở một seed/split, không chứng minh cải thiện có ý nghĩa thống kê. Nếu lựa chọn giữa hai giao thức dựa trên test rồi lặp lại thí nghiệm, cần test mới. Với CNN có BatchNorm/Dropout, frozen weights vẫn chưa đủ: cần quản lý mode của backbone như phần trên.
+
+### Đối chiếu khả năng tái lập trên Windows
+
+Lượt kiểm tra ngày 28/10/2026 dùng Python 3.12.10, Windows 11, PyTorch 2.14.1+cpu, một CPU thread. Cả CLI và kernel notebook đều cho frozen accuracy **0,9167**, fine-tune **0,9278**, với assertion backbone đóng băng đạt. Lần ghi baseline dùng Python 3.12.14 trên Linux cho **0,9306** sau fine-tune. Trên 360 mẫu test, đây là 334 và 335 dự đoán đúng, không phải cùng một kết quả chỉ khác cách in số.
+
+Sự trùng nhau của CLI và notebook trong môi trường mới giúp phân biệt lỗi thực thi notebook với khác biệt kết quả giữa môi trường. Chưa định vị một kernel số học cụ thể gây khác biệt; không khẳng định đổi riêng phiên bản Python là nguyên nhân. Giữ nguyên output baseline và ghi cả kết quả mới, thay vì sửa đáp án để phép so sánh chuỗi vượt qua. Seed và tên phiên bản PyTorch không bảo đảm mọi backend/OS cho cùng quyết định; vẫn cần so protocol, dữ liệu, checkpoint và các invariant như split/freeze/reload.
+
+Lượt điều tra tiếp đã lưu từng prediction/logit: ba lần chạy mặc định đều có **334/360 mẫu đúng**, cùng hash checkpoint và logits; hai lần tắt oneDNN vẫn 334/360 với cùng các nhãn dự đoán, dù trọng số/logits thay đổi. Source Transfer và CNN sau chuẩn hóa LF khớp hash lịch sử và code notebook. Vì baseline chỉ giữ accuracy tổng hợp, chưa có prediction/logit/checkpoint cũ để đối chiếu theo mẫu: **chênh một mẫu đúng không chứng minh chỉ một prediction thay đổi**. Không đổi expected hoặc coi kết quả 335/360 lịch sử là đã tái hiện được.

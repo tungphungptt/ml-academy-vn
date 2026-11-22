@@ -1,5 +1,23 @@
 # Thực hành curriculum trên CPU
 
+## Kiểm chứng tiếp trên Windows — 28/10/2026
+
+Đã tạo virtualenv riêng trong `.local/polish-cpu` bằng Python **3.12.10** có sẵn trên máy Windows 11, cài NumPy 2.3.5, pandas 2.2.3, Matplotlib 3.10.8, scikit-learn 1.8.0 và PyTorch **2.14.1+cpu** từ index chính thức. Không cài thư viện vào Python hệ thống hoặc web service. Lượt cài đầu thiếu candidate `tzdata` và lượt sau timeout; chỉ định PyPI chính thức và tăng timeout tải đã giải quyết, không tắt TLS.
+
+```powershell
+py -3.12 -m venv .local/polish-cpu
+.local/polish-cpu/Scripts/python.exe -m pip install --index-url https://pypi.org/simple --timeout 120 -r requirements-curriculum-test.txt
+.local/polish-cpu/Scripts/python.exe -m pip install --timeout 120 torch==2.14.1+cpu --index-url https://download.pytorch.org/whl/cpu
+$env:PYTHONUTF8='1'
+.local/polish-cpu/Scripts/python.exe -X utf8 scripts/check_cpu_labs.py --report docs/neuralclone-polish-cpu.json
+```
+
+Đã thực thi đủ **7 lab local** với một CPU thread. **6/7** khớp stdout baseline tuyệt đối; transfer fine-tune cho 0,9278 thay vì 0,9306, frozen vẫn 0,9167. CLI và kernel notebook đều cho cùng kết quả Windows; checkpoint/freeze assertions đạt. Số mẫu đúng chênh một trên tổng 360; thiếu prediction lịch sử nên chưa biết có bao nhiêu prediction thay đổi hoặc vị trí nào. Chưa định vị một kernel số học cụ thể. Giữ nguyên notebook/registry baseline, không sửa output hoặc nới tiêu chí so chuỗi để báo pass. Runner trả mã 1 khi khác bản ghi, dù Python thực thi thành công. Xem [báo cáo CPU](neuralclone-polish-cpu.json), [kernel notebook](neuralclone-polish-notebooks.json) và [final polish](neuralclone-final-polish.md). Các số liệu môi trường Linux phía dưới là lịch sử, không phải kết quả vừa chạy trên Windows.
+
+`check_notebooks.py` hiện ghi riêng `executed`, `matchesRecorded`, stdout thật và stdout baseline, để không nhầm lỗi so sánh số liệu với lỗi kernel/Python. Tiêu chí strict không đổi.
+
+## Hướng dẫn và kết quả môi trường Linux trước đây
+
 Chạy tại gốc repository. Phần Python phục vụ học tập, không được cài vào Docker web service và không cần GPU hoặc dịch vụ tính phí.
 
 ```bash

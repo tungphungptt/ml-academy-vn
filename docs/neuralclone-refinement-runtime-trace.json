@@ -1,0 +1,717 @@
+{
+  "startedAt": "2026-10-28T10:16:10.997Z",
+  "browser": "WebKit",
+  "version": "27.2",
+  "observationLimitMs": 120000,
+  "applicationLoadingLimitMs": 300000,
+  "applicationExecutionLimitMs": 90000,
+  "cases": [
+    {
+      "origin": "http://localhost:3000",
+      "mode": "cold",
+      "startedAt": "2026-10-28T10:16:11.319Z",
+      "freeMemoryAtStart": 256593920,
+      "totalMemory": 14702026752,
+      "console": [],
+      "responses": [
+        {
+          "at": "2026-10-28T10:16:13.795Z",
+          "path": "/pyodide-worker.js",
+          "status": 200
+        },
+        {
+          "at": "2026-10-28T10:16:14.890Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:14.973Z",
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:15.110Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:15.360Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:15.598Z",
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "status": 200,
+          "server": "cloudflare"
+        }
+      ],
+      "failedRequests": [],
+      "downloads": [
+        {
+          "path": "/pyodide-worker.js",
+          "timing": {
+            "startTime": 1793182573714.1875,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 4.064,
+            "responseEnd": 6.835
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "timing": {
+            "startTime": 1793182573845.9214,
+            "domainLookupStart": -1,
+            "domainLookupEnd": 71.851,
+            "connectStart": 71.851,
+            "secureConnectionStart": 101.351,
+            "connectEnd": 992.701,
+            "requestStart": 992.701,
+            "responseStart": 1027.254,
+            "responseEnd": 1031.749
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "timing": {
+            "startTime": 1793182574900.294,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 60.872,
+            "responseEnd": 148.863
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "timing": {
+            "startTime": 1793182574900.413,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 286.053,
+            "responseEnd": 14450.055
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "timing": {
+            "startTime": 1793182574899.7537,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 287.342,
+            "responseEnd": 28540.488
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "timing": {
+            "startTime": 1793182574900.1677,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 143.511,
+            "responseEnd": 29196.56
+          }
+        }
+      ],
+      "states": [
+        {
+          "status": " Đang chuẩn bị Python; lần đầu cần tải môi trường và thư viện...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:13.867Z"
+        },
+        {
+          "status": " Đang tải Python; lần đầu có thể mất vài phút...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:14.898Z"
+        },
+        {
+          "status": " Hoàn tất.",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:46.724Z"
+        }
+      ],
+      "hmrFrames": 6,
+      "socketErrors": [],
+      "http": {
+        "status": 200
+      },
+      "health": [
+        {
+          "origin": "http://localhost:3000",
+          "status": 200,
+          "elapsedMs": 619,
+          "server": null,
+          "ray": null
+        },
+        {
+          "origin": "http://localhost:3000",
+          "status": 200,
+          "elapsedMs": 606,
+          "server": null,
+          "ray": null
+        }
+      ],
+      "stdout": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9",
+      "matchesExpected": true,
+      "classification": "Completed with exact output",
+      "endedAt": "2026-10-28T10:16:46.736Z",
+      "elapsedMs": 35416,
+      "freeMemoryAtEnd": 1612980224
+    },
+    {
+      "origin": "http://localhost:3000",
+      "mode": "reload",
+      "startedAt": "2026-10-28T10:16:46.737Z",
+      "freeMemoryAtStart": 1613373440,
+      "totalMemory": 14702026752,
+      "console": [],
+      "responses": [
+        {
+          "at": "2026-10-28T10:16:48.190Z",
+          "path": "/pyodide-worker.js",
+          "status": 200
+        },
+        {
+          "at": "2026-10-28T10:16:48.328Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:48.334Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "status": 200
+        },
+        {
+          "at": "2026-10-28T10:16:48.371Z",
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:48.379Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:48.404Z",
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "status": 200,
+          "server": "cloudflare"
+        }
+      ],
+      "failedRequests": [],
+      "downloads": [
+        {
+          "path": "/pyodide-worker.js",
+          "timing": {
+            "startTime": 1793182608161.5217,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 3.977,
+            "responseEnd": 6.068
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "timing": {
+            "startTime": 1793182608206.4749,
+            "domainLookupStart": -1,
+            "domainLookupEnd": 0.047,
+            "connectStart": 0.047,
+            "secureConnectionStart": 28.753,
+            "connectEnd": 80.437,
+            "requestStart": 80.437,
+            "responseStart": 117.345,
+            "responseEnd": 119.935
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "timing": {
+            "startTime": 1793182608333.503,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 0.286,
+            "responseEnd": 0.286
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "timing": {
+            "startTime": 1793182608333.0845,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 34.733,
+            "responseEnd": 42.033
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "timing": {
+            "startTime": 1793182608332.3926,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 66.21,
+            "responseEnd": 1508.527
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "timing": {
+            "startTime": 1793182608332.7625,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 38.486,
+            "responseEnd": 1616.222
+          }
+        }
+      ],
+      "states": [
+        {
+          "status": " Đang chuẩn bị Python; lần đầu cần tải môi trường và thư viện...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:48.202Z"
+        },
+        {
+          "status": " Đang tải Python; lần đầu có thể mất vài phút...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:48.710Z"
+        },
+        {
+          "status": " Hoàn tất.",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:52.798Z"
+        }
+      ],
+      "hmrFrames": 9,
+      "socketErrors": [],
+      "http": {
+        "status": 200
+      },
+      "health": [
+        {
+          "origin": "http://localhost:3000",
+          "status": 200,
+          "elapsedMs": 184,
+          "server": null,
+          "ray": null
+        },
+        {
+          "origin": "http://localhost:3000",
+          "status": 200,
+          "elapsedMs": 224,
+          "server": null,
+          "ray": null
+        }
+      ],
+      "stdout": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9",
+      "matchesExpected": true,
+      "classification": "Completed with exact output",
+      "endedAt": "2026-10-28T10:16:52.804Z",
+      "elapsedMs": 6067,
+      "freeMemoryAtEnd": 1529786368
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "mode": "cold",
+      "startedAt": "2026-10-28T10:16:52.975Z",
+      "freeMemoryAtStart": 1848045568,
+      "totalMemory": 14702026752,
+      "console": [],
+      "responses": [
+        {
+          "at": "2026-10-28T10:16:57.422Z",
+          "path": "/pyodide-worker.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:57.483Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:57.562Z",
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:57.715Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:57.717Z",
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:16:57.720Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "status": 200,
+          "server": "cloudflare"
+        }
+      ],
+      "failedRequests": [],
+      "downloads": [
+        {
+          "path": "/pyodide-worker.js",
+          "timing": {
+            "startTime": 1793182617335.8142,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 80.302,
+            "responseEnd": 84.694
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "timing": {
+            "startTime": 1793182617434.1167,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 41.723,
+            "responseEnd": 46.762
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "timing": {
+            "startTime": 1793182617485.701,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 224.219,
+            "responseEnd": 296.412
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "timing": {
+            "startTime": 1793182617486.0854,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 223.035,
+            "responseEnd": 755.573
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "timing": {
+            "startTime": 1793182617484.977,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 39.896,
+            "responseEnd": 3905.489
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "timing": {
+            "startTime": 1793182617485.3708,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 224.638,
+            "responseEnd": 5558.698
+          }
+        }
+      ],
+      "states": [
+        {
+          "status": " Đang chuẩn bị Python; lần đầu cần tải môi trường và thư viện...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:57.360Z"
+        },
+        {
+          "status": " Đang tải Python; lần đầu có thể mất vài phút...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:16:57.877Z"
+        },
+        {
+          "status": " Hoàn tất.",
+          "visibility": "visible",
+          "at": "2026-10-28T10:17:05.524Z"
+        }
+      ],
+      "hmrFrames": 6,
+      "socketErrors": [],
+      "http": {
+        "status": 200,
+        "server": "cloudflare",
+        "ray": "a5193007487574bd-HKG"
+      },
+      "health": [
+        {
+          "origin": "https://neuralclone.site",
+          "status": 200,
+          "elapsedMs": 212,
+          "server": "cloudflare",
+          "ray": "a51930070b79f4f8-HKG"
+        },
+        {
+          "origin": "http://localhost:3000",
+          "status": 200,
+          "elapsedMs": 39,
+          "server": null,
+          "ray": null
+        }
+      ],
+      "stdout": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9",
+      "matchesExpected": true,
+      "classification": "Completed with exact output",
+      "endedAt": "2026-10-28T10:17:05.531Z",
+      "elapsedMs": 12556,
+      "freeMemoryAtEnd": 1516343296
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "mode": "reload",
+      "startedAt": "2026-10-28T10:17:05.531Z",
+      "freeMemoryAtStart": 1516249088,
+      "totalMemory": 14702026752,
+      "console": [],
+      "responses": [
+        {
+          "at": "2026-10-28T10:17:06.744Z",
+          "path": "/pyodide-worker.js",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:17:06.775Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "status": 200
+        },
+        {
+          "at": "2026-10-28T10:17:06.781Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "status": 200
+        },
+        {
+          "at": "2026-10-28T10:17:06.916Z",
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:17:06.978Z",
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "status": 200,
+          "server": "cloudflare"
+        },
+        {
+          "at": "2026-10-28T10:17:07.168Z",
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "status": 200,
+          "server": "cloudflare"
+        }
+      ],
+      "failedRequests": [],
+      "downloads": [
+        {
+          "path": "/pyodide-worker.js",
+          "timing": {
+            "startTime": 1793182626742.6223,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 0.611,
+            "responseEnd": 0.611
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.js",
+          "timing": {
+            "startTime": 1793182626773.2888,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 0.373,
+            "responseEnd": 0.373
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.js",
+          "timing": {
+            "startTime": 1793182626779.8328,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 0.28,
+            "responseEnd": 0.28
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide-lock.json",
+          "timing": {
+            "startTime": 1793182626779.5764,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 34.878,
+            "responseEnd": 134.649
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/python_stdlib.zip",
+          "timing": {
+            "startTime": 1793182626779.095,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 383.615,
+            "responseEnd": 19202.228
+          }
+        },
+        {
+          "path": "/pyodide/v0.26.2/full/pyodide.asm.wasm",
+          "timing": {
+            "startTime": 1793182626779.364,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 144.532,
+            "responseEnd": 20640.284
+          }
+        }
+      ],
+      "states": [
+        {
+          "status": " Đang chuẩn bị Python; lần đầu cần tải môi trường và thư viện...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:17:06.766Z"
+        },
+        {
+          "status": " Đang tải Python; lần đầu có thể mất vài phút...",
+          "visibility": "visible",
+          "at": "2026-10-28T10:17:07.274Z"
+        },
+        {
+          "status": " Hoàn tất.",
+          "visibility": "visible",
+          "at": "2026-10-28T10:17:29.795Z"
+        }
+      ],
+      "hmrFrames": 9,
+      "socketErrors": [],
+      "http": {
+        "status": 200,
+        "server": "cloudflare",
+        "ray": "a51930551f6b74bd-HKG"
+      },
+      "health": [
+        {
+          "origin": "https://neuralclone.site",
+          "status": 200,
+          "elapsedMs": 296,
+          "server": "cloudflare",
+          "ray": "a519305599149a34-HKG"
+        },
+        {
+          "origin": "http://localhost:3000",
+          "status": 200,
+          "elapsedMs": 28,
+          "server": null,
+          "ray": null
+        }
+      ],
+      "stdout": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9",
+      "matchesExpected": true,
+      "classification": "Completed with exact output",
+      "endedAt": "2026-10-28T10:17:29.801Z",
+      "elapsedMs": 24270,
+      "freeMemoryAtEnd": 1622183936
+    }
+  ]
+}

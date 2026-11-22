@@ -34,3 +34,9 @@ test("anonymous quiz deep links have a destination without exposing answer field
   assert.ok(!html.includes("fixture option"));
   assert.ok(!html.includes('type="radio"'));
 });
+
+test("server-rendered quiz cannot accept an answer before hydration and initial shuffle", () => {
+  const html = renderToStaticMarkup(<QuizForm quizId="fixture" loggedIn questions={[{ id: "q", prompt: "Chọn đáp án", options: ["Một", "Hai"] }]} />);
+  assert.match(html, /<fieldset disabled="">/);
+  assert.equal((html.match(/type="radio"/g) ?? []).length, 2);
+});

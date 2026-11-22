@@ -5,7 +5,8 @@ import re
 import sys
 
 bad=[]
-cat=json.load(open('content/catalog.json'))
+cat=json.loads(pathlib.Path('content/catalog.json').read_text(encoding='utf-8'))
+lab_ids={x['id'] for x in json.loads(pathlib.Path('content/labs.json').read_text(encoding='utf-8'))}
 lessons=[l for c in cat['courses'] for m in c['modules'] for l in m['lessons']]
 slugs=[l['s'] for l in lessons]
 if len(set(slugs))!=len(slugs): bad.append('duplicate lesson slug')
@@ -19,7 +20,7 @@ for l in lessons:
  slug=l['s'];f=pathlib.Path('content/lessons')/l['f']
  if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',slug): bad.append('invalid slug '+slug)
  if l['f']!=slug+'.md' or not f.is_file(): bad.append('invalid/missing file '+slug);continue
- txt=f.read_text()
+ txt=f.read_text(encoding='utf-8')
  if txt.count('$$')%2: bad.append('unbalanced math '+slug)
  if re.search(r'lorem ipsum|\bTODO\b',txt,re.I): bad.append('placeholder '+slug)
  for pattern in [r'\*\*Mục tiêu',r'## Bài tập',r'## Đáp án',r'## (Tóm tắt|Tổng kết)',r'## [^\n]*([Ll]ỗi|[Đđ]iều kiện|[Gg]iới hạn|Cold start|Checklist)',r'## Nguồn tham khảo']:
@@ -32,23 +33,24 @@ for l in lessons:
  for url in re.findall(r'\]\(([^)]+)\)',txt):
   if url.startswith('/learn/') and url.removeprefix('/learn/') not in position:bad.append('broken lesson link '+url)
   if url.startswith('/img/') and not pathlib.Path('public'+url).is_file():bad.append('missing image '+url)
-  if url.startswith('/lab?lab=') and url.split('=',1)[1] not in {x['id'] for x in json.load(open('content/labs.json'))}:bad.append('missing lab '+url)
+  if url.startswith('/lab?lab=') and url.split('=',1)[1] not in lab_ids:bad.append('missing lab '+url)
   if url.startswith(('labs/','content/','public/')) and not pathlib.Path(url).is_file():bad.append('missing local file '+url)
  q=pathlib.Path('content/quizzes')/(slug+'.json')
  if not q.exists():bad.append('missing quiz '+slug);continue
- questions=json.loads(q.read_text())
+ questions=json.loads(q.read_text(encoding='utf-8'))
  if len(questions)<2:bad.append('too few quiz questions '+slug)
  for i,x in enumerate(questions):
   if len(x['options'])!=len(set(x['options'])) or len(x['options'])<2 or not 0<=x['correct']<len(x['options']) or not x['prompt'].strip() or not x['explanation'].strip():bad.append(f'invalid quiz {slug}#{i}')
-before=json.load(open('docs/curriculum-inventory-before.json'))['lessons']
+before=json.loads(pathlib.Path('docs/curriculum-inventory-before.json').read_text(encoding='utf-8'))['lessons']
 for l in before:
  if l['s'] not in position:bad.append('lost original slug '+l['s'])
 files={p.name for p in pathlib.Path('content/lessons').glob('*.md')}
 if files!={l['f'] for l in lessons}:bad.append('orphan/unregistered Markdown')
-coverage=json.load(open('docs/curriculum-coverage.json'))
+coverage=json.loads(pathlib.Path('docs/curriculum-coverage.json').read_text(encoding='utf-8'))
 if len(coverage)!=46 or len({r['id'] for r in coverage})!=46:bad.append('coverage topic IDs/count')
 for row in coverage:
  if not row.get('after_evidence') or not row.get('after_lessons') or any(s not in position for s in row['after_lessons']):bad.append('invalid coverage evidence '+row['id'])
 print(f'{len(lessons)} lesson records structurally checked; {len(bad)} errors')
+sys.stdout.reconfigure(encoding='utf-8')
 for error in bad:print(error)
 sys.exit(bool(bad))

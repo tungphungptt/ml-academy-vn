@@ -1,0 +1,994 @@
+{
+  "checkedAt": "2026-10-29T06:16:07.180Z",
+  "baselineCheckedAt": "2026-10-28T12:43:37.956Z",
+  "scope": "Changes relative to initial working tree; preserves previous uncommitted work. Private backup/cache/logs excluded.",
+  "dependenciesAdded": [],
+  "deleted": [],
+  "moved": [],
+  "files": [
+    {
+      "file": "content/expansion-quiz-patch.json",
+      "action": "created",
+      "sha256": "0338f4feb4102c264b8346a0954cb5cae08ae4171c48cc89a245f3fbdaaaf9af",
+      "bytes": 7906
+    },
+    {
+      "file": "content/lessons/backpropagation.md",
+      "action": "modified",
+      "sha256": "011e5a04cf8c90b149a9c8d006eba1635ed321dc84b3b8599b77c439aed26098",
+      "bytes": 8352
+    },
+    {
+      "file": "content/lessons/derivatives.md",
+      "action": "modified",
+      "sha256": "785aceb68417d34b0e582f435fe00a655bacb8a0bf1c09c80327282790806552",
+      "bytes": 7607
+    },
+    {
+      "file": "content/lessons/gradient-descent.md",
+      "action": "modified",
+      "sha256": "66c216df2a5216660a77534ace8cf5f2676cfd1165653f501867151463ecc105",
+      "bytes": 11445
+    },
+    {
+      "file": "content/lessons/linear-regression.md",
+      "action": "modified",
+      "sha256": "8d912b6b84c0464bd47063806892334486d2db63f82c55efb6148e21ada0e4bf",
+      "bytes": 10229
+    },
+    {
+      "file": "content/quizzes/backpropagation.json",
+      "action": "modified",
+      "sha256": "2aa0343a85b931c08b75c57be854280220706d72e3e76d9f0d2ccd75563fc676",
+      "bytes": 901
+    },
+    {
+      "file": "content/quizzes/derivatives.json",
+      "action": "modified",
+      "sha256": "1d09d30e546e618e05987bcca3431658b826a5d93080a680de532de4496266dd",
+      "bytes": 933
+    },
+    {
+      "file": "content/quizzes/gradient-descent.json",
+      "action": "modified",
+      "sha256": "54aef619e275f92d4888fdb9b7b61536abf2e434825d854846d73ec7a648850c",
+      "bytes": 1442
+    },
+    {
+      "file": "content/quizzes/linear-regression.json",
+      "action": "modified",
+      "sha256": "7c2faffbd9fcf05efbf58e2b2ac90dfc9d480efe194269eef3c012b2a6ae48c8",
+      "bytes": 875
+    },
+    {
+      "file": "docs/neuralclone-content-expansion-matrix.md",
+      "action": "created",
+      "sha256": "6f4579ef223f0bfa2ccc262579ab93e87779c1ea0e7053ffaad5ca31f1051443",
+      "bytes": 29244
+    },
+    {
+      "file": "docs/neuralclone-content-expansion.md",
+      "action": "created",
+      "sha256": "d05ada52963f088a2977381320ae524b41bc801b41b321ae095f967066dd5864",
+      "bytes": 13326
+    },
+    {
+      "file": "docs/neuralclone-content-inventory.json",
+      "action": "created",
+      "sha256": "f816d0ade68503454ed4d64dbc66cff9b90dcdbba8850948694f0f1363995f2e",
+      "bytes": 117869
+    },
+    {
+      "file": "docs/neuralclone-content-source-map.json",
+      "action": "created",
+      "sha256": "31b1a924caf64758abd723aedb72bee82a8f2f5f1530b49e19c76e1bb7afc199",
+      "bytes": 4641
+    },
+    {
+      "file": "docs/neuralclone-expansion-browser-fifth-results.json",
+      "action": "created",
+      "sha256": "033ebf09d806d134f301fb9c4f185a2e1417b3656d53be303d41d380eda63bd0",
+      "bytes": 17909
+    },
+    {
+      "file": "docs/neuralclone-expansion-browser-first-results.json",
+      "action": "created",
+      "sha256": "9c2878dddec6a12ab6e3f99f847d773b6cd9d65bb70deb0f73c4c127f7441773",
+      "bytes": 39947
+    },
+    {
+      "file": "docs/neuralclone-expansion-browser-fourth-results.json",
+      "action": "created",
+      "sha256": "de1b89693b8ba702bfde6bcb5ba2e305987465d1a813ace9a7f445d906d51989",
+      "bytes": 27343
+    },
+    {
+      "file": "docs/neuralclone-expansion-browser-results.json",
+      "action": "created",
+      "sha256": "4d19d361022c236406921e99e0f1de97976ad31a362a6b157de78c2568e19d90",
+      "bytes": 11932
+    },
+    {
+      "file": "docs/neuralclone-expansion-browser-second-results.json",
+      "action": "created",
+      "sha256": "1e9dedb0edf7cb4b088bf0c8534eead6be35fd8c1a20c0ee7205893464efbded",
+      "bytes": 11227
+    },
+    {
+      "file": "docs/neuralclone-expansion-browser-third-results.json",
+      "action": "created",
+      "sha256": "aadf6fb8b120a763f3ea72de1a37df7fef6f61307e7ccdf5629c3c4c05fbce41",
+      "bytes": 27371
+    },
+    {
+      "file": "docs/neuralclone-expansion-chrome-interaction.json",
+      "action": "created",
+      "sha256": "a21c9821396a9254d7683a8a427996f84d46c6d5167a20b3879e6155462b13e5",
+      "bytes": 110
+    },
+    {
+      "file": "docs/neuralclone-expansion-chrome-visual.json",
+      "action": "created",
+      "sha256": "84d0b246b1340e8da3b030c14ddfaadc98d74c96fdb58237f7d3052efc74d3ac",
+      "bytes": 3733
+    },
+    {
+      "file": "docs/neuralclone-expansion-data-preservation.json",
+      "action": "created",
+      "sha256": "5dde2a8272c8fc7ea3a55ac3d6628219e74e675ccbd9ad2df43d4ec2d5a083e8",
+      "bytes": 2544
+    },
+    {
+      "file": "docs/neuralclone-expansion-firefox-interaction.json",
+      "action": "created",
+      "sha256": "6dac47ece6374a3dee898f5d21d58f5ae9dbc5fb16d998ca8884b1f750adadcb",
+      "bytes": 102
+    },
+    {
+      "file": "docs/neuralclone-expansion-firefox-visual.json",
+      "action": "created",
+      "sha256": "19669d89b8015dfc49babec902865606898b72a1ccdc48b5707e179f1080d751",
+      "bytes": 3725
+    },
+    {
+      "file": "docs/neuralclone-expansion-idempotency.json",
+      "action": "created",
+      "sha256": "46e1671278e9bf3ac5b443f48321c8df41320994ec6e0c00a83ffd8620c5adc9",
+      "bytes": 457
+    },
+    {
+      "file": "docs/neuralclone-expansion-import-safety.json",
+      "action": "created",
+      "sha256": "3e63f9791303002df4d688b68ee885b200d5734ce4803a335e5f450e2fde5dd1",
+      "bytes": 1467
+    },
+    {
+      "file": "docs/neuralclone-expansion-import.json",
+      "action": "created",
+      "sha256": "ff8bd91ef281be1ebe845b1246827f52a55ef49411083f8def4f4b0effaf342b",
+      "bytes": 457
+    },
+    {
+      "file": "docs/neuralclone-expansion-live-first.json",
+      "action": "created",
+      "sha256": "8dada70a217c275e5c7babe28bb9a61a4420e5d48d157b03f1cc608d503ff1d8",
+      "bytes": 12428
+    },
+    {
+      "file": "docs/neuralclone-expansion-live.json",
+      "action": "created",
+      "sha256": "dfb85a8b4591a554b2bd2aa5934fe0b036de4239a22e335421c1dea26ba99fe8",
+      "bytes": 8765
+    },
+    {
+      "file": "docs/neuralclone-expansion-numerical.json",
+      "action": "created",
+      "sha256": "c488b5eb95b859186e2d872b7c9f656e8b6d17e95e4c0d2f6013ba023889a9bc",
+      "bytes": 8651
+    },
+    {
+      "file": "docs/neuralclone-expansion-pyodide-first.json",
+      "action": "created",
+      "sha256": "78da7d80df4bed8e03dd6844498116b19bcd0c692a986db15cc35cbea20f2466",
+      "bytes": 2256
+    },
+    {
+      "file": "docs/neuralclone-expansion-pyodide.json",
+      "action": "created",
+      "sha256": "079a7319e61295df70babb7b400d4de5eba9e9838a83577276d938d784681bb2",
+      "bytes": 1278
+    },
+    {
+      "file": "docs/neuralclone-expansion-python-examples.json",
+      "action": "created",
+      "sha256": "2497676b572199305e2574f1da740f4a9d7b61d4df71456feb9fa3b7c18f95b5",
+      "bytes": 2640
+    },
+    {
+      "file": "docs/neuralclone-expansion-qa.json",
+      "action": "created",
+      "sha256": "afceb3c12907cd679989128576d51534ef05d23a333b2c86b4a7053ff6754620",
+      "bytes": 11570
+    },
+    {
+      "file": "docs/neuralclone-expansion-regression.json",
+      "action": "created",
+      "sha256": "924f76a2c5645463a470d899e12bbccfb78eac67c2e20f52f59abe0a89246242",
+      "bytes": 13050
+    },
+    {
+      "file": "docs/neuralclone-expansion-webkit-interaction.json",
+      "action": "created",
+      "sha256": "8ea5853d61cfc0022ca4472d49b50aa41998f1e82c99a97f8bdb105a02864eb6",
+      "bytes": 101
+    },
+    {
+      "file": "docs/neuralclone-expansion-webkit-visual.json",
+      "action": "created",
+      "sha256": "ce19414ec3ab686210e5c9719b3770b28462e439836195252cbecfb39789a96d",
+      "bytes": 3724
+    },
+    {
+      "file": "docs/screenshots/expansion-live/local-backpropagation.png",
+      "action": "created",
+      "sha256": "79795440acd1d14ee653bcea44a9cb73bbb38d640e48b40cdffe9fd7ff722928",
+      "bytes": 121491
+    },
+    {
+      "file": "docs/screenshots/expansion-live/local-derivatives.png",
+      "action": "created",
+      "sha256": "a98e3e26f1da793d7bb2e70e3a50c4c9389175684300dac2fb7d062cb5a7d1b9",
+      "bytes": 128426
+    },
+    {
+      "file": "docs/screenshots/expansion-live/local-gradient-descent.png",
+      "action": "created",
+      "sha256": "e58d1625ce8e8e77405c10b46e2d3304e300ca8161a2b46d15eb166443fd8dac",
+      "bytes": 121338
+    },
+    {
+      "file": "docs/screenshots/expansion-live/local-linear-regression.png",
+      "action": "created",
+      "sha256": "827610962b78fb69ceb4bd5fb1b24512ec6423be723641cce3329d70836e4dc3",
+      "bytes": 105654
+    },
+    {
+      "file": "docs/screenshots/expansion-live/public-backpropagation.png",
+      "action": "created",
+      "sha256": "b01a7fa5165ba2fc180ca9a4f804167da0019f421df6368443661a3b1dd31ae8",
+      "bytes": 117267
+    },
+    {
+      "file": "docs/screenshots/expansion-live/public-derivatives.png",
+      "action": "created",
+      "sha256": "ba6fb2245842af0708eb02238aa0d5d2381a6148f568b4c59f687414f2118274",
+      "bytes": 123809
+    },
+    {
+      "file": "docs/screenshots/expansion-live/public-gradient-descent.png",
+      "action": "created",
+      "sha256": "63d21503e008743d2ebaf7b6461047a6abc418b8d6feedc2ec0206a39aefaa4b",
+      "bytes": 128000
+    },
+    {
+      "file": "docs/screenshots/expansion-live/public-linear-regression.png",
+      "action": "created",
+      "sha256": "4fa6123b4f4cea8944b55428d54aa54bcd713514355d796f8919491c5a43a095",
+      "bytes": 111454
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-dark-1440.png",
+      "action": "created",
+      "sha256": "7fb265052d65f93c5484093147f9939abc14202fc9a6dc897cf8fd6404185a9b",
+      "bytes": 116256
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-dark-1920.png",
+      "action": "created",
+      "sha256": "9ee69f25d0384d579e2454d722e8315aad72600885e2f9e697f5ff3ade52c002",
+      "bytes": 116281
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-dark-375.png",
+      "action": "created",
+      "sha256": "f2bb3775d2bd1e2c7b1c860f44c7fd0fdd1c5e625b257a13c1f05bf4bcaf8571",
+      "bytes": 104030
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-dark-768.png",
+      "action": "created",
+      "sha256": "86256384e5085251d1322c4e8c8df69b61a8caa45f1b31fc709e0701d3ddcd17",
+      "bytes": 115623
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-light-1440.png",
+      "action": "created",
+      "sha256": "70fc6d27a854de0fbf379eff769540d5d24fe9af68f275b01381fba678f6f7dd",
+      "bytes": 118273
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-light-1920.png",
+      "action": "created",
+      "sha256": "cf58469f237af7038fe4065d2a21d55cad12e66565942946c0036f768134f772",
+      "bytes": 118260
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-light-375.png",
+      "action": "created",
+      "sha256": "d8195f64a7fe475475a555c448938691760f4fe7c53a4a13704a0614128036f7",
+      "bytes": 104237
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/backpropagation-light-768.png",
+      "action": "created",
+      "sha256": "0d3ef13f82343a99b13ca5d45663f70af813d089196e4dac6773f707f15ac1d3",
+      "bytes": 117752
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-dark-1440.png",
+      "action": "created",
+      "sha256": "1428ca271d4914ea4f5d5b654229c0d1448fdf5162d93b13bad16f6b12b04649",
+      "bytes": 111956
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-dark-1920.png",
+      "action": "created",
+      "sha256": "dd4ec61815cfcbf274d326c52b1a314902532a59543218a12a81478b9bdd13c3",
+      "bytes": 111955
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-dark-375.png",
+      "action": "created",
+      "sha256": "8ab9e033f67ff430c4d3f3c8a6b709087be9f7070e026b5b99671701e909b3d8",
+      "bytes": 89078
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-dark-768.png",
+      "action": "created",
+      "sha256": "8a3814a661c87b9f2456937dd8c12abcae94cefd7daccdf17cf5936089a0a39d",
+      "bytes": 111390
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-light-1440.png",
+      "action": "created",
+      "sha256": "3c0e4a53a3f24fa61bce084b0ca34b68e10793fde90d9fb2b0504ad066cc933c",
+      "bytes": 112198
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-light-1920.png",
+      "action": "created",
+      "sha256": "f4e08858b56b173fbb43f28bcf2ab65401664eddd9e8613e0c5ebbdd1043e230",
+      "bytes": 112201
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-light-375.png",
+      "action": "created",
+      "sha256": "20fce8589445a1c1d1455b8fb21f88da5609c97cdd8f517316e3e3752d5573b7",
+      "bytes": 87651
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/derivatives-light-768.png",
+      "action": "created",
+      "sha256": "22922302e1f47b1e92ecbbab263b8459d61485f3590945fba937dd681223df61",
+      "bytes": 111722
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-dark-1440.png",
+      "action": "created",
+      "sha256": "87bc3e37ae58ad9c639f6bc647ca570914660a0e18a0059d9c1933e3002c68ca",
+      "bytes": 128698
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-dark-1920.png",
+      "action": "created",
+      "sha256": "08c67ef345a21d76a93635f8d5342c42962090150b2980c1909a9957155219a8",
+      "bytes": 128708
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-dark-375.png",
+      "action": "created",
+      "sha256": "bc027fc7ccdde3912b1ca243b61a313d1d9c97a9f97daa069aa17e9a91780eba",
+      "bytes": 111446
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-dark-768.png",
+      "action": "created",
+      "sha256": "dc98a0d6606f5ac9f10854ed0655bee2ceb6418008df9da284e0cbb855e55740",
+      "bytes": 129410
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-light-1440.png",
+      "action": "created",
+      "sha256": "04cd8ec56a432775745135f55f7fb39de33a6a8b545e60fa4bd97f3bc6381c2c",
+      "bytes": 130247
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-light-1920.png",
+      "action": "created",
+      "sha256": "d9b22e5a428088f0c647c1c5e7d9638f5d5647bc464e7598eb219a8db02d201e",
+      "bytes": 130243
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-light-375.png",
+      "action": "created",
+      "sha256": "17216d7b73fcf9e8db5cf885d5c56e1a74bc93e7b96eefe18d246ef9a85413b7",
+      "bytes": 111057
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/gradient-descent-light-768.png",
+      "action": "created",
+      "sha256": "8b72c888330d71fb819b47238e812414e787b4cd3638693f1e7780e1e4953257",
+      "bytes": 131033
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-dark-1440.png",
+      "action": "created",
+      "sha256": "b41382938e59dc704b3430fd3fec6b25241c6c28ba25adc728a1e15b699af0db",
+      "bytes": 110214
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-dark-1920.png",
+      "action": "created",
+      "sha256": "8cb57116adfa5cb41304e36b110cdaab1957c7e5ef6bfff9af82b4e66fb9ef51",
+      "bytes": 110227
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-dark-375.png",
+      "action": "created",
+      "sha256": "6f31dc84102329278b682c99f5714bd48a52f0dda30eb1cc2c2d3a9b90736639",
+      "bytes": 96557
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-dark-768.png",
+      "action": "created",
+      "sha256": "bb46495f5aecb54c7a5c3f1ae0d77a59aed7b984ad2628abe359eb6a72541a9d",
+      "bytes": 109340
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-light-1440.png",
+      "action": "created",
+      "sha256": "fc37d20353a50d0eab7c40fe8d139d29893acb4e1081923b1f5ea25166f8b5e5",
+      "bytes": 110964
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-light-1920.png",
+      "action": "created",
+      "sha256": "cd6914bcc7ec729e86bdca05eaf853f20c0f7367c6059d339fd4b25cbf062213",
+      "bytes": 110951
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-light-375.png",
+      "action": "created",
+      "sha256": "f46d39c7652bbaf68e486b2890430368b3b766fc4656a980f7d81f61ea5e6a93",
+      "bytes": 94024
+    },
+    {
+      "file": "docs/screenshots/expansion/chrome/linear-regression-light-768.png",
+      "action": "created",
+      "sha256": "e39ea9b75ba3596da72e09d06982e80365cb62b8b642ae27ab2e90f7b091a329",
+      "bytes": 110186
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-dark-1440.png",
+      "action": "created",
+      "sha256": "97451d9c9673487ba8bccc95bcfe1c9278975beca9d65aff9b40f71527ede4aa",
+      "bytes": 91521
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-dark-1920.png",
+      "action": "created",
+      "sha256": "7ed724f9ffa6b7750bf86c20ccfac200f1d3e745b8d2eb062ef8d241e3f61758",
+      "bytes": 91592
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-dark-375.png",
+      "action": "created",
+      "sha256": "6e0d12991e17357583e110630fca9fd6b5fc9c73a3db3cf775617f8d4f62a847",
+      "bytes": 84166
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-dark-768.png",
+      "action": "created",
+      "sha256": "0801b40d5628b252a464603ffec0e563d247577017eb7bc627b6cd6331f4e8de",
+      "bytes": 92186
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-light-1440.png",
+      "action": "created",
+      "sha256": "7122b2753b2e8fa4b9a79205a2af8bf6926b05fc9b488ed762ec75c99efbafcc",
+      "bytes": 92231
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-light-1920.png",
+      "action": "created",
+      "sha256": "ccc6e86c743124fc3abfc53381a3f53155a219baf40b7addc25d6a53ac6d5755",
+      "bytes": 92232
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-light-375.png",
+      "action": "created",
+      "sha256": "fd3d7eaeba2ea7caa394b5b70d0ced64d048d0eb44f3a431799a211c0798139b",
+      "bytes": 84579
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/backpropagation-light-768.png",
+      "action": "created",
+      "sha256": "6733cda38689b7799514907efa73d141464a41afd90410a58b409e3ef7a98ac7",
+      "bytes": 92152
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-dark-1440.png",
+      "action": "created",
+      "sha256": "2aa96c72e9d016fe3d4379394ee5606a3be90519afc43fb263d25940dcfdfc66",
+      "bytes": 87162
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-dark-1920.png",
+      "action": "created",
+      "sha256": "c70e402ee6ea46610e57655122046a1f4532c0991cd6f9c1ec041aa2976ba236",
+      "bytes": 87356
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-dark-375.png",
+      "action": "created",
+      "sha256": "765375c35fe0cb48c3eeaeb51f0491fbf86c84aea5dea61ace394079fc7d393a",
+      "bytes": 74061
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-dark-768.png",
+      "action": "created",
+      "sha256": "891e3f977c48b674984f830b22fb17eefaa132cdae51810aef965c0be6bb9601",
+      "bytes": 86322
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-light-1440.png",
+      "action": "created",
+      "sha256": "ec8c5762ece1e314bbd355ee9d4172e99ade2b8a4c1e68a2f57755f52e6f4dc6",
+      "bytes": 87542
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-light-1920.png",
+      "action": "created",
+      "sha256": "c66a9376602d3abe734b5fb7a48346481df21d850df9b0cecec9f4fd6112afb0",
+      "bytes": 87768
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-light-375.png",
+      "action": "created",
+      "sha256": "d06f07ca26b4ac0fc22a7ed0ce9928a1b9e68f84c3c1b8eeb456f36fc6801e83",
+      "bytes": 73708
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/derivatives-light-768.png",
+      "action": "created",
+      "sha256": "d3f55619b7ca90025eb5dfe4f95eb1ac981a6c7975a60e93dfe4d5425577002f",
+      "bytes": 85908
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-dark-1440.png",
+      "action": "created",
+      "sha256": "0224efae048d0e3a4d8a3ee7681a332b41f498fa2669a0c3597b3897a421eb73",
+      "bytes": 102813
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-dark-1920.png",
+      "action": "created",
+      "sha256": "922bf05d50b1569ebbf570780094fa1c44f2b268284ebaf72b7d59da0b1cfd4d",
+      "bytes": 102648
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-dark-375.png",
+      "action": "created",
+      "sha256": "4f657655e4c62456849d2cfcf258157a5877a3a2a64b2d8367f8701e12923e67",
+      "bytes": 91231
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-dark-768.png",
+      "action": "created",
+      "sha256": "cb748062e4eacb5b6f38fb57370a98dd7ca1a2f6cc4c56e623aca86264f4e996",
+      "bytes": 98700
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-light-1440.png",
+      "action": "created",
+      "sha256": "2426d3d539ab73fafc238330c955f06a4c382dad2f78fbc8dd4d129e3bbbdde8",
+      "bytes": 103231
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-light-1920.png",
+      "action": "created",
+      "sha256": "b493c80450f27e1f0694e0c2c08c0b23207d4f265cc83b610d5d41a0e4caf3c6",
+      "bytes": 103155
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-light-375.png",
+      "action": "created",
+      "sha256": "a406b704ab674688a6cbab9223fde73b5afb4d584780f00e76451b2165bd361c",
+      "bytes": 91487
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/gradient-descent-light-768.png",
+      "action": "created",
+      "sha256": "0d17e022bf19a7da55472c33229af6314e91715d4285747f0ab6a0a3b0705ad0",
+      "bytes": 98555
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-dark-1440.png",
+      "action": "created",
+      "sha256": "d8c039c0539946eefc6d832df54c3dc781d6420518b2a512f204545a203a6bc8",
+      "bytes": 89565
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-dark-1920.png",
+      "action": "created",
+      "sha256": "e79cc2a6fd53877b8a56ada0d0884dcd40a6f074f29fcf0b5570cc7db9f6f1cb",
+      "bytes": 89401
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-dark-375.png",
+      "action": "created",
+      "sha256": "bb34c726c526a93fed280190607c4499e254cb333cbbe07745d1ceb233bcd123",
+      "bytes": 78507
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-dark-768.png",
+      "action": "created",
+      "sha256": "ac828fc074adfff46d2d6d0be41781639d3bdb523c658af9cb24e68b5cd883e7",
+      "bytes": 85557
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-light-1440.png",
+      "action": "created",
+      "sha256": "ad89bd5a05e688ffeea9a5cbe28053c8d87dd49b94cca4101deebea77175d923",
+      "bytes": 89882
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-light-1920.png",
+      "action": "created",
+      "sha256": "1d26ee707b2b6396445b598cea36a83e8ba98fab82e0110291213aac3b17bff9",
+      "bytes": 89718
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-light-375.png",
+      "action": "created",
+      "sha256": "c74f7506bd0e4415cc0a4cc0148364e715b611dbf51e001c9208ec4f98f646ce",
+      "bytes": 78729
+    },
+    {
+      "file": "docs/screenshots/expansion/firefox/linear-regression-light-768.png",
+      "action": "created",
+      "sha256": "0131c0bf4e343bda5d0baeccb7227f80d9fb14e557f9b0e856c3a501f2884d83",
+      "bytes": 86133
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-dark-1440.png",
+      "action": "created",
+      "sha256": "f1e523e61dbfc4786adbaa838d75de92a8e3206d615bc23cfa175bfb736fb262",
+      "bytes": 86772
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-dark-1920.png",
+      "action": "created",
+      "sha256": "223682f4ce54cc3a91c0c6483e4de36fb7b5aeebba53ef517de93f559a91479b",
+      "bytes": 86655
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-dark-375.png",
+      "action": "created",
+      "sha256": "3d669eba119c4956450f81b450cb5af8cb6432d2362783af679b5d5dfb419f18",
+      "bytes": 80032
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-dark-768.png",
+      "action": "created",
+      "sha256": "41c8bac6f40785632eac6e16a260636c24f80ad73b1e8ce5642609e5ca7b5035",
+      "bytes": 84803
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-light-1440.png",
+      "action": "created",
+      "sha256": "057fb66ff48466da3ea12b76f5900a498e1055cdfaab5e5e6659292c8b3eaba4",
+      "bytes": 87347
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-light-1920.png",
+      "action": "created",
+      "sha256": "8d4a4bd5f71414f4540ce8f45a5ca8c0b5b1b79889cf12460b5632b21f5ecb7b",
+      "bytes": 87279
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-light-375.png",
+      "action": "created",
+      "sha256": "c6a77dd0714aa8fc6a719ec8b040bbb2e4ca356a791a29c5689a69aa2bc331a8",
+      "bytes": 81187
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/backpropagation-light-768.png",
+      "action": "created",
+      "sha256": "56926fd6f8c3edd3e98e9f36e04051157453a360211b4df04ded9e28d9d09901",
+      "bytes": 85458
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-dark-1440.png",
+      "action": "created",
+      "sha256": "b0606d4ecb6bbb31028ca4ac3871b195c51a476f16cd1ea7adee35a72bc5e5cb",
+      "bytes": 82826
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-dark-1920.png",
+      "action": "created",
+      "sha256": "2572f29a0e5d52a923955de68fea0e0448f2a67e6bb68125203bc1c9b2c6604b",
+      "bytes": 82655
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-dark-375.png",
+      "action": "created",
+      "sha256": "d58cc3085f53657c0b662511fec4c206816141128b2551c9cdead5a85171bcfa",
+      "bytes": 71798
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-dark-768.png",
+      "action": "created",
+      "sha256": "494b325b10beac2d90921c8d2005424a1a36d591f1a457a27f3ad9e570879e1e",
+      "bytes": 81299
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-light-1440.png",
+      "action": "created",
+      "sha256": "05706020c49d982a12add4a7ee6795a8d6433a31e80cd19a4f0eb0702ef8a4cd",
+      "bytes": 83671
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-light-1920.png",
+      "action": "created",
+      "sha256": "8b6af49d752ae2330967484dbf6ce4494c383c6ec12a232e6b436fab5dfa8816",
+      "bytes": 83538
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-light-375.png",
+      "action": "created",
+      "sha256": "3f4afb90436bdf122fc6b89475261cc7a258aa99cf52979f8b3dce68709bd777",
+      "bytes": 72570
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/derivatives-light-768.png",
+      "action": "created",
+      "sha256": "18693d812f25e17fe70076396a2b050f4e0d40ecd52fee470585c1d2b7e26eaf",
+      "bytes": 81630
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-dark-1440.png",
+      "action": "created",
+      "sha256": "d3ffcfb78902ec06890bcb651600e917edd7fc921b5ba3c54e596f1aa150ad55",
+      "bytes": 95684
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-dark-1920.png",
+      "action": "created",
+      "sha256": "3fd388130a0c7f2a764b61b05a4e606f54a6ef8ca0188c2fea95e266b6e3109f",
+      "bytes": 95676
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-dark-375.png",
+      "action": "created",
+      "sha256": "254ea15d8db589a54b64518992d780f58437d7e0ba1366ddcca6cd733eff322f",
+      "bytes": 86275
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-dark-768.png",
+      "action": "created",
+      "sha256": "8dee2cdae1016872b4a9500563aef7ef72015d79c09f6e666fc48ba30742dd46",
+      "bytes": 94113
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-light-1440.png",
+      "action": "created",
+      "sha256": "208861fad5a50628cea67bdf407b958f6464d2426d61cb3e1e7827e07f545195",
+      "bytes": 96346
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-light-1920.png",
+      "action": "created",
+      "sha256": "314ac34a6584b09645d8059068eed277c4141a841443a1d3de00fddb47e927ed",
+      "bytes": 96369
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-light-375.png",
+      "action": "created",
+      "sha256": "266952dada8598d07fd1395fbabe0a180f61fa4822868476693d197e3986bb1e",
+      "bytes": 86526
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/gradient-descent-light-768.png",
+      "action": "created",
+      "sha256": "fcff3a1177231e671d5d8a8ad41b02edc72c06d9c3e4a0442be11fd36f06fc1d",
+      "bytes": 94752
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-dark-1440.png",
+      "action": "created",
+      "sha256": "a0626ca79dd30db4fc904afaef3247de6a79ef4bdcd53482c5a7f9bbea21eecb",
+      "bytes": 82486
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-dark-1920.png",
+      "action": "created",
+      "sha256": "536fb5c4d85f046507ae9173e6b2335c31dac6848f7256c77c2678b566028aba",
+      "bytes": 82541
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-dark-375.png",
+      "action": "created",
+      "sha256": "a9f2ff122fcdfc9859da12ba5d242cac24a194448c40cf3fe766efe5d967edfe",
+      "bytes": 74879
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-dark-768.png",
+      "action": "created",
+      "sha256": "510c05b8fb3309af185ea6f9a21f0e817376424776e6cea519367ec252bf1df0",
+      "bytes": 80965
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-light-1440.png",
+      "action": "created",
+      "sha256": "8eed7a07166da8efa1cf19b7be60cdcdf3fe765838937f739eb5e71e2989e8cd",
+      "bytes": 82934
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-light-1920.png",
+      "action": "created",
+      "sha256": "4111c56d0f080af4efc4dd55f3ae7db64a0a0e2c4a4cd9cf066b991431fe2902",
+      "bytes": 82965
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-light-375.png",
+      "action": "created",
+      "sha256": "e873a5a9399000bc7b88801a68a8b21a29c30c69c9099b7d7bfb3bfd45bdf82f",
+      "bytes": 75452
+    },
+    {
+      "file": "docs/screenshots/expansion/webkit/linear-regression-light-768.png",
+      "action": "created",
+      "sha256": "d4b0bea6198085c623e93e359a294f5bd0427d91ac4e8e27773121223dd9ba77",
+      "bytes": 81520
+    },
+    {
+      "file": "docs/traces/neuralclone-expansion-local.zip",
+      "action": "created",
+      "sha256": "261b6e37d708803799311dea2b33485f14c5febd3efed61c59e5381927698c25",
+      "bytes": 8757691
+    },
+    {
+      "file": "docs/traces/neuralclone-expansion-public.zip",
+      "action": "created",
+      "sha256": "6c1ab89834d6c90f76e79ebe6243a1f46061417b5509232ae12947d86d1d2530",
+      "bytes": 11685379
+    },
+    {
+      "file": "e2e/learning-experiments.spec.ts",
+      "action": "created",
+      "sha256": "16f6f3019050c59d025485fe7fffbaac29a3b7063f9016e0256e493f1fcaaefb",
+      "bytes": 6346
+    },
+    {
+      "file": "playwright.config.ts",
+      "action": "modified",
+      "sha256": "acfb7471e1f6df35feae83e32e8adeaf73322da44f87832ffa1d930d350e8155",
+      "bytes": 2003
+    },
+    {
+      "file": "playwright.learning.config.ts",
+      "action": "created",
+      "sha256": "bd2a3d96ef68a91b392b3c9fe6749a49308e243ee1e3843439528bf34a6f466b",
+      "bytes": 323
+    },
+    {
+      "file": "public/examples/__pycache__/learning_math.cpython-314.pyc",
+      "action": "created",
+      "sha256": "79261e1417debc468dec46543a2f3cbaa37ed38b28ef4a298d0a70715e64e71d",
+      "bytes": 4489
+    },
+    {
+      "file": "public/examples/learning_math.py",
+      "action": "created",
+      "sha256": "9f99e68d74b2f156f2a21a1e41f5fad3cb66ced398e30d9438bfb5ee9259daed",
+      "bytes": 2111
+    },
+    {
+      "file": "public/notebooks/learning_math.ipynb",
+      "action": "created",
+      "sha256": "383bf71ee5fd9ac9a402d074651015156d7c51aa0ffd8d25750e1895ed2fe280",
+      "bytes": 3684
+    },
+    {
+      "file": "scripts/check-expansion-live.mjs",
+      "action": "created",
+      "sha256": "1953bbff975092c8c77fee7ddb7eb3c2411f4ba0cc0ac20256b7314117377c88",
+      "bytes": 4535
+    },
+    {
+      "file": "scripts/check-expansion-pyodide.mjs",
+      "action": "created",
+      "sha256": "794bca7fa207a597d89b88a998a0eec76589f728b2aed90a12cc7a92c8f3bbad",
+      "bytes": 2852
+    },
+    {
+      "file": "scripts/check-learning-parity.ts",
+      "action": "created",
+      "sha256": "06dec42d6f4fcf4d489f94dde883f749219a318fc09fe71a2a333659aa4ac0b7",
+      "bytes": 2044
+    },
+    {
+      "file": "scripts/import-content-expansion.ts",
+      "action": "created",
+      "sha256": "7b41ec7c381c5cc817e0fa6c3cc1f11d6d335015127fed44fef3f129e776d59c",
+      "bytes": 2711
+    },
+    {
+      "file": "scripts/report-content-expansion.mjs",
+      "action": "created",
+      "sha256": "c3caa16a72b8e31b6a6f5b789b69d44d424076fa7341272b79b577a3fd1c541d",
+      "bytes": 4188
+    },
+    {
+      "file": "scripts/verify-expansion-import.mjs",
+      "action": "created",
+      "sha256": "8841bd7f4e50f7e7e68d65153b57f7f6ce08a29d9b656d7e1b7f57b7e22447fe",
+      "bytes": 3439
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "action": "modified",
+      "sha256": "c38a9d1b645371bcc38340268eed1279c4766287a059ea6634879d8de4e821c1",
+      "bytes": 3141
+    },
+    {
+      "file": "src/app/learn/[slug]/page.tsx",
+      "action": "modified",
+      "sha256": "6e1b436dc57074e75fd079c1cf49283ffa7489d901fc0944964a93cdf0a29583",
+      "bytes": 5948
+    },
+    {
+      "file": "src/app/learning-experiments.css",
+      "action": "created",
+      "sha256": "fc1ce8ac36fd1b4efba33a8784df734ff0f2fee55be2afb91c87b783732cf11c",
+      "bytes": 2305
+    },
+    {
+      "file": "src/components/ExperimentLoader.tsx",
+      "action": "created",
+      "sha256": "f4cf89bd97c16630a155dc8a6e7d96634212cb3827ac7726cc2834a93838ac5e",
+      "bytes": 1837
+    },
+    {
+      "file": "src/components/LearningExperiment.tsx",
+      "action": "created",
+      "sha256": "bcfd0994e47495c99d3636aec8d621328b28b4c117bcf509726f0e2a5caf8b79",
+      "bytes": 11133
+    },
+    {
+      "file": "src/components/LessonBody.tsx",
+      "action": "created",
+      "sha256": "d0e18c59447ed048a99878b449181165cd8b1b2f7524b39ffab113d5ad5be2c1",
+      "bytes": 751
+    },
+    {
+      "file": "src/lib/learningMath.ts",
+      "action": "created",
+      "sha256": "1971d23ed34fdbd03d9c91b737eb5bcc248465074cfdecc7fc89dc33db578460",
+      "bytes": 2051
+    },
+    {
+      "file": "tests/learning-math.test.ts",
+      "action": "created",
+      "sha256": "f40adb8097f1fdd9402225b15dbabc8b30eaec23997db8ecbd5e873f642ac89f",
+      "bytes": 1647
+    }
+  ],
+  "dataReport": "docs/neuralclone-expansion-data-preservation.json",
+  "openIssues": [
+    "Transfer strict FAIL 334/360 vs historical 335/360, unchanged",
+    "Historical 502 cause unknown",
+    "No physical Safari/iOS/Android verification"
+  ]
+}

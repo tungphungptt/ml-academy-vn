@@ -1,0 +1,193 @@
+{
+  "checkedAt": "2026-10-28T09:13:46.073Z",
+  "engines": [
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "cases": [
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0,
+          "pyodideStates": [
+            {
+              "status": " Đang chuẩn bị Python; lần đầu cần tải môi trường và thư viện...",
+              "visibility": "visible",
+              "at": "2026-10-28T09:14:12.481Z"
+            },
+            {
+              "status": " Đang tải Python; lần đầu có thể mất vài phút...",
+              "visibility": "visible",
+              "at": "2026-10-28T09:14:12.999Z"
+            },
+            {
+              "status": " Hoàn tất.",
+              "visibility": "visible",
+              "at": "2026-10-28T09:14:28.309Z"
+            }
+          ],
+          "pyodideOutput": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9"
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/playground#threshold",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        }
+      ],
+      "errors": [
+        {
+          "origin": "https://neuralclone.site",
+          "message": "Failed to load resource: the server responded with a status of 502 ()"
+        }
+      ],
+      "requests": [],
+      "websocketFrames": 110,
+      "websocketErrors": [],
+      "failure": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '▶ Run', exact: true })\u001b[22m\n"
+    }
+  ]
+}

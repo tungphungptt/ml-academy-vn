@@ -1,0 +1,567 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.cross-browser.config.ts"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.cross-browser.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-control",
+        "name": "chrome-control",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome-control",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {
+            "channel": "chrome"
+          },
+          "browserName": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome-control"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/neuralclone-cross-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "cross-browser.spec.ts",
+      "file": "cross-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5276,
+                  "error": {
+                    "message": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for locator('fieldset').first().locator('label[data-option-index=\"2\"] input')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" name=\"cmvrsr6n400c4k3jfvnpefflx\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n",
+                    "stack": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for locator('fieldset').first().locator('label[data-option-index=\"2\"] input')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" name=\"cmvrsr6n400c4k3jfvnpefflx\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:41:139",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                      "column": 139,
+                      "line": 41
+                    },
+                    "snippet": "  39 |     await expect(page).toHaveURL(/\\/learn\\/imbalanced-learning#quiz$/);\n  40 |     const questions=JSON.parse(fs.readFileSync('content/quizzes/imbalanced-learning.json','utf8')) as {correct:number}[];\n> 41 |     for(const [i,q] of questions.entries())await page.locator('fieldset').nth(i).locator(`label[data-option-index=\"${q.correct}\"] input`).check();\n     |                                                                                                                                           ^\n  42 |     await page.getByRole('button',{name:'Nộp bài',exact:true}).click();await expect(page.getByText('Điểm: 3/3',{exact:true})).toBeVisible();\n  43 |     await page.locator('#quiz').screenshot({path:`${evidence.dir}/quiz-mobile.png`});\n  44 |     await page.getByRole('button',{name:'Đánh dấu hoàn thành',exact:true}).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                        "column": 139,
+                        "line": 41
+                      },
+                      "message": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for locator('fieldset').first().locator('label[data-option-index=\"2\"] input')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" name=\"cmvrsr6n400c4k3jfvnpefflx\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n\n  39 |     await expect(page).toHaveURL(/\\/learn\\/imbalanced-learning#quiz$/);\n  40 |     const questions=JSON.parse(fs.readFileSync('content/quizzes/imbalanced-learning.json','utf8')) as {correct:number}[];\n> 41 |     for(const [i,q] of questions.entries())await page.locator('fieldset').nth(i).locator(`label[data-option-index=\"${q.correct}\"] input`).check();\n     |                                                                                                                                           ^\n  42 |     await page.getByRole('button',{name:'Nộp bài',exact:true}).click();await expect(page.getByText('Điểm: 3/3',{exact:true})).toBeVisible();\n  43 |     await page.locator('#quiz').screenshot({path:`${evidence.dir}/quiz-mobile.png`});\n  44 |     await page.getByRole('button',{name:'Đánh dấu hoàn thành',exact:true}).click();\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:41:139"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:32:36.679Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-registration-11dd7--preserve-the-learning-path-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                    "column": 139,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-ae2bc304b0110290e828",
+          "file": "cross-browser.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22670,
+                  "error": {
+                    "message": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for locator('#quiz input[type=radio]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" name=\"cmvrsr6p000kfk3jft62hjlsv\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n",
+                    "stack": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for locator('#quiz input[type=radio]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" name=\"cmvrsr6p000kfk3jft62hjlsv\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:88:65",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                      "column": 65,
+                      "line": 88
+                    },
+                    "snippet": "  86 |         if(name==='lesson'){\n  87 |           await expect(page.locator('.katex')).not.toHaveCount(0);await expect(page.locator('#quiz fieldset')).toHaveCount(3);\n> 88 |           await page.locator('#quiz input[type=radio]').first().check();\n     |                                                                 ^\n  89 |           await expect(page.locator('#quiz .opt.selected')).toHaveCount(1);\n  90 |           const label=page.locator('#quiz .option-copy').first();\n  91 |           await label.evaluate(el=>{const walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n;while((n=walk.nextNode()))n.nodeValue=n.nodeValue!.normalize('NFD');});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                        "column": 65,
+                        "line": 88
+                      },
+                      "message": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for locator('#quiz input[type=radio]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" name=\"cmvrsr6p000kfk3jft62hjlsv\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n\n  86 |         if(name==='lesson'){\n  87 |           await expect(page.locator('.katex')).not.toHaveCount(0);await expect(page.locator('#quiz fieldset')).toHaveCount(3);\n> 88 |           await page.locator('#quiz input[type=radio]').first().check();\n     |                                                                 ^\n  89 |           await expect(page.locator('#quiz .opt.selected')).toHaveCount(1);\n  90 |           const label=page.locator('#quiz .option-copy').first();\n  91 |           await label.evaluate(el=>{const walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n;while((n=walk.nextNode()))n.nodeValue=n.nodeValue!.normalize('NFD');});\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:88:65"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:32:43.821Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-both-themes--29382-focus-and-mobile-navigation-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                    "column": 65,
+                    "line": 88
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-56870aaba40ee81d81d4",
+          "file": "cross-browser.spec.ts",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27642,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:33:08.318Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-4bc4564b9212bcf27bf4",
+          "file": "cross-browser.spec.ts",
+          "line": 127,
+          "column": 5
+        },
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:33:37.751Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-78634a8db556821ccadc",
+          "file": "cross-browser.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31114,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:34:04.142Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-b785c7d6cab0d0cfaeb2",
+          "file": "cross-browser.spec.ts",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36511,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:34:35.283Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-c24655ae04a16a2854bc",
+          "file": "cross-browser.spec.ts",
+          "line": 127,
+          "column": 5
+        },
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14158,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:35:12.381Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-de14bc1f83281074a47d",
+          "file": "cross-browser.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22572,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:35:26.899Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-6cde4883ae3262a95c1d",
+          "file": "cross-browser.spec.ts",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26193,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:35:49.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-4e9cbca2c78d2b37d17e",
+          "file": "cross-browser.spec.ts",
+          "line": 127,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T07:32:25.511Z",
+    "duration": 230915.209,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

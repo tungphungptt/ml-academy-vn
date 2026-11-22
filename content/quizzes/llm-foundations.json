@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Token count có luôn bằng số từ hay ký tự không?",
+  "options": [
+   "Có",
+   "Không; phụ thuộc tokenizer và normalization",
+   "Luôn bằng byte UTF-8",
+   "Luôn bằng số khoảng trắng"
+  ],
+  "correct": 1,
+  "explanation": "Tokenizer có vocabulary/thuật toán riêng; một từ có thể thành nhiều token."
+ },
+ {
+  "prompt": "Next-token teacher forcing cho [BOS,A,B,EOS] dùng cặp nào?",
+  "options": [
+   "Input [A,B,EOS], target [BOS,A,B]",
+   "Input [BOS,A,B], target [A,B,EOS]",
+   "Input bằng target không shift ở mọi API",
+   "Chỉ học EOS"
+  ],
+  "correct": 1,
+  "explanation": "Target dịch một vị trí, causal mask; kiểm tra API để không shift hai lần."
+ },
+ {
+  "prompt": "Nhiệt độ thấp khi sinh có bảo đảm mệnh đề đúng không?",
+  "options": [
+   "Có",
+   "Không; độ tập trung phân phối token không phải độ đúng của claim",
+   "Chỉ với greedy",
+   "Có nếu perplexity thấp"
+  ],
+  "correct": 1,
+  "explanation": "Decoding chọn token theo phân phối; cần eval/nguồn để đánh giá tính đúng đắn."
+ }
+]

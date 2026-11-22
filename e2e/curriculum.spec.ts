@@ -16,14 +16,14 @@ async function expectMathText(target: Locator, source: string) {
   }
 }
 
-test("all 59 lessons render content, math, quiz, prerequisites and adjacent navigation", async ({ page, request }) => {
+test("all 67 lessons render content, math, quiz, prerequisites and adjacent navigation", async ({ page, request }) => {
   test.setTimeout(180_000);
   for (const c of catalog.courses) {
     const route = await request.get(`/courses/${c.slug}`); expect(route.status()).toBe(200);
     const html = await route.text();
     for (const m of c.modules) for (const l of m.lessons as Lesson[]) expect(html).toContain(`/learn/${l.s}`);
   }
-  expect(process.env.DATABASE_URL).toMatch(/^file:\/tmp\/ml-curriculum-e2e-/);
+  expect(process.env.DATABASE_URL).toMatch(/^file:.*[/\\]ml-curriculum-e2e-[^/\\]+[/\\][^/\\]+\.db$/);
   await page.goto("/register");
   await page.getByLabel("Email").fill(`curriculum-${Date.now()}@example.invalid`);
   await page.getByLabel(/Mật khẩu/).fill("curriculum-browser-fixture-42");
@@ -53,6 +53,7 @@ test("all 59 lessons render content, math, quiz, prerequisites and adjacent navi
     for (const [i, q] of questions.entries()) await expectMathText(fields.nth(i), q.explanation);
     if (l.s === "cnn-cpu") {
       await page.getByRole("button", { name: "Đánh dấu hoàn thành" }).click();
+      await expect(page.getByRole("button", { name: /Đã hoàn thành/ })).toBeVisible();
       await page.reload();
       await expect(page.getByRole("button", { name: /Đã hoàn thành/ })).toBeVisible();
     }
@@ -90,7 +91,7 @@ test("lab deep links select a real CPU lab without a simulated Run button", asyn
 
 test("hiding a course removes it from search and blocks direct lesson routes", async ({ request }) => {
   // Only run this fixture mutation against the explicitly isolated E2E database.
-  expect(process.env.DATABASE_URL).toMatch(/\/tmp\/ml-curriculum-e2e-/);
+  expect(process.env.DATABASE_URL).toMatch(/^file:.*[/\\]ml-curriculum-e2e-[^/\\]+[/\\][^/\\]+\.db$/);
   const db = new PrismaClient();
   const course = await db.course.findUniqueOrThrow({ where: { slug: "deep-learning" } });
   try {

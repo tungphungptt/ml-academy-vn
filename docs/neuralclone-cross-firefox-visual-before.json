@@ -1,0 +1,1964 @@
+{
+  "checkedAt": "2026-10-28T07:33:06.814Z",
+  "browser": "firefox",
+  "version": "157.0",
+  "platform": "win32",
+  "kind": "visual",
+  "errors": [],
+  "failedRequests": [],
+  "cancelled": [],
+  "cases": [
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 1920
+    }
+  ],
+  "specimens": [
+    {
+      "theme": "dark",
+      "width": 375,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 277.566650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 277.566650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 304.1333312988281,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 304.1333312988281,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 301.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 301.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.5333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.5333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 292.91668701171875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 292.91668701171875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 288.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 288.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 227.5833282470703,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 227.5833282470703,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 310.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 310.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 288.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 288.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 300.73333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 300.73333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 245.64999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 245.64999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 291.45001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 291.45001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 293.75,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 293.75,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 289.70001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 289.70001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 303.1499938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 303.1499938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 305.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 305.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 267.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 267.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 687.4000244140625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 687.4000244140625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 650.2000122070312,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 650.2000122070312,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 570.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 570.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 641.0833129882812,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 641.0833129882812,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 678.5,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 678.5,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 619.5166625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 619.5166625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 817.6666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 817.6666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1079.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1079.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 711.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 711.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 960.1666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 960.1666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 820.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 820.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1184.63330078125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1184.63330078125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 817.6666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 817.6666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1079.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1079.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 711.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 711.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 960.1666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 960.1666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 820.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 820.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1184.63330078125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1184.63330078125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 277.566650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 277.566650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 304.1333312988281,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 304.1333312988281,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 301.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 301.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.5333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.5333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 292.91668701171875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 292.91668701171875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 288.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 288.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 227.5833282470703,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 227.5833282470703,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 310.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 310.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 288.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 288.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 300.73333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 300.73333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 245.64999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 245.64999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 291.45001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 291.45001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 293.75,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 293.75,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 289.70001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 289.70001220703125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 303.1499938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 303.1499938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 305.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 305.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 267.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 267.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 687.4000244140625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 687.4000244140625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 650.2000122070312,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 650.2000122070312,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 570.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 570.25,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 641.0833129882812,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 641.0833129882812,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 678.5,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 678.5,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 619.5166625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 619.5166625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "count": 48,
+      "metrics": [
+        {
+          "form": "NFC",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 306.51666259765625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 252.39999389648438,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 404.79998779296875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 196.4166717529297,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 266.83331298828125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 359.8999938964844,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 307.3666687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 444.066650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 460.23333740234375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 379.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 607.816650390625,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 295,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 400.6166687011719,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 540.433349609375,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 461.4666748046875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 666.7666625976562,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 817.6666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 817.6666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 673.36669921875,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1079.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1079.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 524,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 711.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 711.7833251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 960.1666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 960.1666870117188,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 820.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 820.0333251953125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFC",
+          "width": 1184.63330078125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        },
+        {
+          "form": "NFD",
+          "width": 1184.63330078125,
+          "font": "\"Be Vietnam Pro\", sans-serif"
+        }
+      ]
+    }
+  ],
+  "fontVerification": "FontFaceSet, computed CSS, NFC/NFD geometry and screenshots; no claim of Chromium CDP actual-font APIs in other engines."
+}

@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-28T09:28:08.194Z",
+  "engine": "webkit",
+  "version": "27.2",
+  "platform": "win32",
+  "checks": [
+    {
+      "springInterrupted": true,
+      "observedIntermediatePosition": 0.3567961557525823
+    },
+    {
+      "route": "/courses",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/learn/llm-foundations",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/lab?lab=cnn_cpu",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/playground#threshold",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/login",
+      "textScale": "200%",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

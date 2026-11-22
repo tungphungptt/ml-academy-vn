@@ -55,3 +55,7 @@ LDA tối ưu khả năng tách lớp thay vì phương sai chung. Điều kiệ
 
 ## Nguồn tham khảo
 - [ML cơ bản: Linear Discriminant Analysis](https://machinelearningcoban.com/2017/06/30/lda/) — đọc snapshot nguồn được ghi trong audit.
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Các solver và shrinkage có điều kiện khác nhau: đối chiếu [LDA/QDA User Guide](https://scikit-learn.org/stable/modules/lda_qda.html). Không dùng nhãn test để fit hướng chiếu LDA.

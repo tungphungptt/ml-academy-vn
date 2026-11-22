@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "LoRA cho ma trận d_out × d_in dùng rank r có bao nhiêu tham số A/B?",
+  "options": [
+   "d_out*d_in",
+   "r*(d_in+d_out)",
+   "r*r",
+   "d_in+d_out+r*r"
+  ],
+  "correct": 1,
+  "explanation": "A có `r*d_in`, B có `d_out*r`; chưa tính bias/module khác."
+ },
+ {
+  "prompt": "Ví dụ uniform quantization trong bài có phải NF4 không?",
+  "options": [
+   "Có vì đều ít bit",
+   "Không; NF4 có codebook/recipe riêng",
+   "Có nếu dùng NumPy",
+   "Chỉ cần round là QLoRA"
+  ],
+  "correct": 1,
+  "explanation": "Không đồng nhất toy uniform với NF4 hoặc toàn bộ QLoRA."
+ },
+ {
+  "prompt": "Giảm số bit weights có luôn giảm mọi bộ nhớ/tăng tốc cùng tỷ lệ không?",
+  "options": [
+   "Có",
+   "Không; còn activations, KV cache, optimizer và backend",
+   "Chỉ phụ thuộc tên model",
+   "Có nếu rank nhỏ"
+  ],
+  "correct": 1,
+  "explanation": "Cần đo end-to-end trên backend/cấu hình thực, không suy từ số weights."
+ }
+]

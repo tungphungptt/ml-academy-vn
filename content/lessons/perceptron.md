@@ -23,7 +23,7 @@ Bài **Perceptron** trong Code Lab (`labs/perceptron/`): bản NumPy cho `epoch=
 Dùng dữ liệu không khả tách: thuật toán không bao giờ hội tụ (mình đã gặp khi viết lab); quên đổi nhãn về $\{-1,+1\}$.
 
 ## Ưu điểm, hạn chế, so sánh
-Rất đơn giản và nhanh. Không giải được XOR; không cho xác suất. Logistic Regression khắc phục bằng loss khả vi.
+Rất đơn giản và nhanh. Không tách được XOR trong không gian đầu vào gốc và không cho xác suất. Logistic Regression cung cấp probability và loss khả vi nhưng ranh giới vẫn tuyến tính; XOR cần đặc trưng phi tuyến hoặc MLP.
 
 ## Bài tập
 1. (Dễ) Làm tiếp một bước với $x=(2,1),y=-1$. 2. (Vừa) Đếm số epoch hội tụ khi đổi seed. 3. (Khó) Chứng minh Perceptron không biểu diễn được XOR.

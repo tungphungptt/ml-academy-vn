@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-10-29T06:10:11.201Z",
+  "version": "27.2",
+  "cases": [
+    {
+      "slug": "derivatives",
+      "theme": "light",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "light",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "light",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "light",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "light",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "light",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "light",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "light",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "light",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "light",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "light",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "light",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "light",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "light",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "light",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "light",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "dark",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "dark",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "dark",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "dark",
+      "width": 375,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "dark",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "dark",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "dark",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "dark",
+      "width": 768,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "dark",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "dark",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "dark",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "dark",
+      "width": 1440,
+      "scale200": true
+    },
+    {
+      "slug": "derivatives",
+      "theme": "dark",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "linear-regression",
+      "theme": "dark",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "gradient-descent",
+      "theme": "dark",
+      "width": 1920,
+      "scale200": true
+    },
+    {
+      "slug": "backpropagation",
+      "theme": "dark",
+      "width": 1920,
+      "scale200": true
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

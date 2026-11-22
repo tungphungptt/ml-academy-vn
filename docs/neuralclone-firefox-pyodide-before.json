@@ -1,0 +1,795 @@
+{
+  "console": [
+    {
+      "type": "info",
+      "text": "Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Server Requests Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Server Components Track"
+    },
+    {
+      "type": "log",
+      "text": "[HMR] connected"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​cookies"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocked"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocked"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Hydrated"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Commit"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Waiting for Paint"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Root"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ServerRoot"
+    },
+    {
+      "type": "timeStamp",
+      "text": "AppRouter"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RootErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ErrorBoundaryHandler"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Router"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HistoryUpdater"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HotReload"
+    },
+    {
+      "type": "timeStamp",
+      "text": "AppDevOverlayErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ReplaySsrOnlyErrors"
+    },
+    {
+      "type": "timeStamp",
+      "text": "DevRootHTTPAccessFallbackBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HTTPAccessFallbackBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HTTPAccessFallbackErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RedirectBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RedirectErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Head"
+    },
+    {
+      "type": "timeStamp",
+      "text": "__next_viewport_boundary__"
+    },
+    {
+      "type": "timeStamp",
+      "text": "__next_metadata_boundary__"
+    },
+    {
+      "type": "timeStamp",
+      "text": "__next_root_layout_boundary__"
+    },
+    {
+      "type": "timeStamp",
+      "text": "LoadingBoundaryProvider"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentViewNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentTrieNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Nav"
+    },
+    {
+      "type": "timeStamp",
+      "text": "BrandMark"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Icon"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Icon"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ThemeToggle"
+    },
+    {
+      "type": "timeStamp",
+      "text": "OuterLayoutRouter"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentStateProvider"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentViewNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentTrieNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RenderFromTemplateContext"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ScrollHandler"
+    },
+    {
+      "type": "timeStamp",
+      "text": "InnerScrollHandler"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ErrorBoundaryHandler"
+    },
+    {
+      "type": "timeStamp",
+      "text": "LoadingBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentViewStateNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "AppRouterAnnouncer"
+    },
+    {
+      "type": "timeStamp",
+      "text": "AppRouterAnnouncer"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentTrieNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "AppRouterAnnouncer"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Remaining Effects"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Render"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Commit"
+    },
+    {
+      "type": "timeStamp",
+      "text": "AppRouterAnnouncer"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocked"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Server Requests Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Server Components Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Preloads"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Loading"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Template"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Icon"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​NotFound"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​BrandMark"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Icon"
+    },
+    {
+      "type": "timeStamp",
+      "text": "await cookies"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​RootLayout"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​PageHeading"
+    },
+    {
+      "type": "timeStamp",
+      "text": "await "
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Lab"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Next.MetadataOutlet"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​NonIndex"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Next.Viewport"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​ViewportWrapper"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​Next.Metadata"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​MetadataBlocker"
+    },
+    {
+      "type": "timeStamp",
+      "text": "​MetadataWrapper"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocked"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Prepared"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Commit"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Waiting for Paint"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HTTPAccessFallbackBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HTTPAccessFallbackErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RedirectBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RedirectErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "InnerLayoutRouter"
+    },
+    {
+      "type": "timeStamp",
+      "text": "OuterLayoutRouter"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentStateProvider"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RenderFromTemplateContext"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ScrollHandler"
+    },
+    {
+      "type": "timeStamp",
+      "text": "InnerScrollHandler"
+    },
+    {
+      "type": "timeStamp",
+      "text": "ErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "LoadingBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "HTTPAccessFallbackBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RedirectBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "RedirectErrorBoundary"
+    },
+    {
+      "type": "timeStamp",
+      "text": "InnerLayoutRouter"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentViewNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentTrieNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "CodeLab"
+    },
+    {
+      "type": "timeStamp",
+      "text": "MarkdownContent"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Markdown"
+    },
+    {
+      "type": "timeStamp",
+      "text": "p"
+    },
+    {
+      "type": "timeStamp",
+      "text": "CodeEditor"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Icon"
+    },
+    {
+      "type": "timeStamp",
+      "text": "__next_outlet_boundary__"
+    },
+    {
+      "type": "timeStamp",
+      "text": "SegmentViewStateNode"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Remaining Effects"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Render"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Event: click"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Render"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Commit"
+    },
+    {
+      "type": "timeStamp",
+      "text": "CodeLab"
+    },
+    {
+      "type": "timeStamp",
+      "text": "MarkdownContent"
+    },
+    {
+      "type": "timeStamp",
+      "text": "p"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Remaining Effects"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Event: click"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Render"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Commit"
+    },
+    {
+      "type": "timeStamp",
+      "text": "CodeLab"
+    },
+    {
+      "type": "timeStamp",
+      "text": "MarkdownContent"
+    },
+    {
+      "type": "timeStamp",
+      "text": "p"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Remaining Effects"
+    },
+    {
+      "type": "warning",
+      "text": "[JavaScript Warning: \"The resource at “http://localhost:3000/fonts/be-vietnam-pro-full-400-v2.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly.\" {file: \"http://localhost:3000/lab?lab=linear_regression\" line: 0}]"
+    },
+    {
+      "type": "warning",
+      "text": "[JavaScript Warning: \"The resource at “http://localhost:3000/fonts/be-vietnam-pro-full-600-v2.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly.\" {file: \"http://localhost:3000/lab?lab=linear_regression\" line: 0}]"
+    },
+    {
+      "type": "log",
+      "text": "Loading joblib, numpy, openblas, scikit-learn, scipy, threadpoolctl"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Blocking Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Transition Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Suspense Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Idle Track"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Render"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Commit"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Waiting for Paint"
+    },
+    {
+      "type": "timeStamp",
+      "text": "CodeLab"
+    },
+    {
+      "type": "timeStamp",
+      "text": "MarkdownContent"
+    },
+    {
+      "type": "timeStamp",
+      "text": "p"
+    },
+    {
+      "type": "timeStamp",
+      "text": "Remaining Effects"
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js",
+      "status": 200,
+      "cors": "*",
+      "contentType": "text/javascript; charset=utf-8",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.js",
+      "status": 200,
+      "cors": "*",
+      "contentType": "text/javascript; charset=utf-8",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/python_stdlib.zip",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide-lock.json",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/json; charset=utf-8",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.wasm",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/numpy-1.26.4-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/scikit_learn-1.4.2-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/scipy-1.12.0-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/openblas-0.3.26.zip",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/joblib-1.4.0-py3-none-any.whl",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/threadpoolctl-3.4.0-py3-none-any.whl",
+      "status": 200,
+      "cors": "*",
+      "contentType": "application/wasm",
+      "encoding": "br"
+    }
+  ],
+  "failed": [
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/numpy-1.26.4-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/scikit_learn-1.4.2-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/scipy-1.12.0-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/openblas-0.3.26.zip",
+      "error": "NS_BINDING_ABORTED"
+    }
+  ],
+  "status": "Đã dừng.",
+  "output": "Nhấn Run để thực thi code. Kết quả thật sẽ xuất hiện tại đây.",
+  "alert": [
+    "Quá thời gian 90 giây nên chương trình bị dừng.",
+    ""
+  ]
+}

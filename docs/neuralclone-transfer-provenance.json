@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-28T07:40:11.202Z",
+  "method": "Supplemental source/aggregate audit; no additional training executions.",
+  "sourceDependencies": [
+    {
+      "id": "cnn_cpu",
+      "rawWindowsHash": "10e45bee754a9b59addca0fa6ab7cb8aae301275bda1c247675e4ebc9e4ea057",
+      "normalizedLFHash": "810e7844efad8ea354eb0d2fb108643a5108e7ff2f9e5cf4ea015e72abdd6a02",
+      "recordedSourceHash": "810e7844efad8ea354eb0d2fb108643a5108e7ff2f9e5cf4ea015e72abdd6a02",
+      "notebookCodeHash": "810e7844efad8ea354eb0d2fb108643a5108e7ff2f9e5cf4ea015e72abdd6a02",
+      "matches": true
+    },
+    {
+      "id": "transfer_cpu",
+      "rawWindowsHash": "7a884f321443402ae78cdb7eee6e21e67b4b33e2600ca4e98e63d878b81c16ad",
+      "normalizedLFHash": "27f9b7547d1d660b992942f7a7224220c95afb07b4b93bf96b8faf235beee811",
+      "recordedSourceHash": "27f9b7547d1d660b992942f7a7224220c95afb07b4b93bf96b8faf235beee811",
+      "notebookCodeHash": "27f9b7547d1d660b992942f7a7224220c95afb07b4b93bf96b8faf235beee811",
+      "matches": true
+    }
+  ],
+  "historicalNotebookEvidence": [
+    {
+      "file": "public/notebooks/transfer_cpu_library.ipynb",
+      "sha256": "d48c81d4bee59b37d384a899d3ec86b6e95eb2d6b5aded36bf647ec68722aa0c",
+      "passed": true,
+      "cells": 1,
+      "stdout": [
+        "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+      ]
+    }
+  ],
+  "historicalRuntime": {
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.30.1"
+  },
+  "freshNotebookEvidence": [
+    {
+      "file": "public\\notebooks\\transfer_cpu_library.ipynb",
+      "sha256": "3f1db0ba79362c99185150e2e9dc4515cc7729eb30afda1dd51c2e25d924ff53",
+      "executed": true,
+      "cells": 1,
+      "stdout": [
+        "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+      ],
+      "recordedStdout": [
+        "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+      ],
+      "matchesRecorded": false,
+      "passed": false,
+      "error": "AssertionError: Output mismatch: actual=['{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\\n'], recorded=['{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\\n']"
+    }
+  ],
+  "freshNotebookRuntime": {
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.30.1"
+  },
+  "currentRuns": [
+    {
+      "run": "default-1",
+      "correct": 334,
+      "total": 360,
+      "frozenCorrect": 330,
+      "predictionHash": "6d94b40db97d3540253b29dad8d7c4c97bd1086788198f0ecbd864e76a922cdb"
+    },
+    {
+      "run": "default-2",
+      "correct": 334,
+      "total": 360,
+      "frozenCorrect": 330,
+      "predictionHash": "6d94b40db97d3540253b29dad8d7c4c97bd1086788198f0ecbd864e76a922cdb"
+    },
+    {
+      "run": "default-3",
+      "correct": 334,
+      "total": 360,
+      "frozenCorrect": 330,
+      "predictionHash": "6d94b40db97d3540253b29dad8d7c4c97bd1086788198f0ecbd864e76a922cdb"
+    },
+    {
+      "run": "mkldnn-off-1",
+      "correct": 334,
+      "total": 360,
+      "frozenCorrect": 330,
+      "predictionHash": "6d94b40db97d3540253b29dad8d7c4c97bd1086788198f0ecbd864e76a922cdb"
+    },
+    {
+      "run": "mkldnn-off-2",
+      "correct": 334,
+      "total": 360,
+      "frozenCorrect": 330,
+      "predictionHash": "6d94b40db97d3540253b29dad8d7c4c97bd1086788198f0ecbd864e76a922cdb"
+    }
+  ],
+  "baselineCount": {
+    "correct": 335,
+    "total": 360,
+    "kind": "Inferred uniquely from rounded historical 0.9306 and the unchanged 360-sample split; raw historical count unavailable"
+  },
+  "currentCount": {
+    "correct": 334,
+    "total": 360,
+    "kind": "Counted from all test predictions"
+  },
+  "maximumAbsoluteLogitDelta": [
+    {
+      "run": "default-1",
+      "delta": 0
+    },
+    {
+      "run": "default-2",
+      "delta": 0
+    },
+    {
+      "run": "default-3",
+      "delta": 0
+    },
+    {
+      "run": "mkldnn-off-1",
+      "delta": 0.0000020265579223632812
+    },
+    {
+      "run": "mkldnn-off-2",
+      "delta": 0.0000020265579223632812
+    }
+  ],
+  "conclusion": "Current Windows predictions stable. Historical sample-level difference and platform/build cause unresolved; expected stdout and strict comparison remain unchanged."
+}

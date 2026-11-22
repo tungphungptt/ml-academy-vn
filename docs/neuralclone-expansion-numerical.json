@@ -1,0 +1,723 @@
+{
+  "checkedAt": "2026-10-28T13:13:30.408Z",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "node": "v24.19.0",
+  "cases": 88,
+  "comparisons": 1531,
+  "maxAbsoluteError": 4.263256414560601e-14,
+  "tolerance": "abs <= 1e-10 + 1e-10*abs(reference)",
+  "fixtures": [
+    {
+      "fn": "quadratic",
+      "args": [
+        -2,
+        0.0001
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -2,
+        0.01
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -2,
+        0.5
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -2,
+        1
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -1,
+        0.0001
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -1,
+        0.01
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -1,
+        0.5
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        -1,
+        1
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        0,
+        0.0001
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        0,
+        0.01
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        0,
+        0.5
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        0,
+        1
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        1,
+        0.0001
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        1,
+        0.01
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        1,
+        0.5
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        1,
+        1
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        2,
+        0.0001
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        2,
+        0.01
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        2,
+        0.5
+      ]
+    },
+    {
+      "fn": "quadratic",
+      "args": [
+        2,
+        1
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        -1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        -1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        -1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        0,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        0,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        0,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        -2,
+        1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        -1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        -1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        0,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        0,
+        1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        -1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        -1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        0,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        0,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        1,
+        1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        -1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        -1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        -1,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        0,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        0,
+        9
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "fn": "linear",
+      "args": [
+        2,
+        1,
+        9
+      ]
+    },
+    {
+      "fn": "descent",
+      "args": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "fn": "descent",
+      "args": [
+        1,
+        0,
+        0.01
+      ]
+    },
+    {
+      "fn": "descent",
+      "args": [
+        1,
+        0,
+        0.05
+      ]
+    },
+    {
+      "fn": "descent",
+      "args": [
+        1,
+        0,
+        0.18
+      ]
+    },
+    {
+      "fn": "descent",
+      "args": [
+        1,
+        0,
+        0.5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        -2,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        -2,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        -2,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        -1,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        -2,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        -2,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        -2,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        0,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        -2,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        -2,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        -2,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "fn": "backprop",
+      "args": [
+        1,
+        2,
+        3,
+        6
+      ]
+    }
+  ],
+  "passed": true
+}

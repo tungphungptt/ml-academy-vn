@@ -1,0 +1,45 @@
+[
+  {
+    "route": "/learn/llm-foundations",
+    "width": 375,
+    "scrollWidth": 389,
+    "elements": [
+      {
+        "tag": "H1",
+        "classes": "",
+        "text": "Nền tảng LLM: tokenization, pretraining và suy luận",
+        "width": 354.671875,
+        "right": 386.671875,
+        "shrink": "1",
+        "minWidth": "auto"
+      },
+      {
+        "tag": "BUTTON",
+        "classes": "focus-toggle",
+        "text": "Chế độ đọc tập trung",
+        "width": 356.859375,
+        "right": 388.859375,
+        "shrink": "0",
+        "minWidth": "auto"
+      }
+    ]
+  },
+  {
+    "route": "/lab?lab=cnn_cpu",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/playground#threshold",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/login",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  }
+]

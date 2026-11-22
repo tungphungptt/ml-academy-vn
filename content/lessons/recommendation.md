@@ -7,7 +7,7 @@ Gợi ý phim, sản phẩm: ta có ma trận đánh giá người dùng × mụ
 ## Công thức
 Collaborative filtering theo người dùng: tính độ tương đồng giữa hai người dùng trên các mục họ cùng đánh giá (ví dụ cosine), rồi dự đoán đánh giá của người dùng $u$ cho mục $i$ bằng trung bình có trọng số từ những người tương tự đã đánh giá $i$:
 $$
-\hat r_{ui}=\frac{\sum_{v}\operatorname{sim}(u,v)\,r_{vi}}{\sum_{v}\operatorname{sim}(u,v)}
+\hat r_{ui}=\frac{\sum_{v\in N_i(u)}\operatorname{sim}(u,v)\,r_{vi}}{\sum_{v\in N_i(u)}\operatorname{sim}(u,v)}
 $$
 Content-based filtering thì dùng đặc trưng của mục thay vì hành vi của người dùng khác.
 
@@ -53,3 +53,5 @@ Content-based dùng thuộc tính item để tạo profile/tính similarity; ite
 
 ## Nguồn tham khảo
 - [Machine Learning cơ bản](https://machinelearningcoban.com/).
+
+N_i(u) gồm các láng giềng đã đánh giá mục i; công thức trung bình raw ở trên yêu cầu mẫu số dương. Với similarity âm, dùng biến thể mean-centered, chuẩn hóa tổng trị tuyệt đối và fallback đã giải thích ở phần bài tập, không dùng công thức raw một cách máy móc. [Google collaborative filtering](https://developers.google.com/machine-learning/recommendation/collaborative/basics).

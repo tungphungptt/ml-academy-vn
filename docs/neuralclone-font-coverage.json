@@ -1,0 +1,42 @@
+[
+  {
+    "weight": 400,
+    "source": "https://fonts.gstatic.com/s/bevietnampro/v12/QdVPSTAyLFyeg_IDWvOJmVES_Eww.ttf",
+    "file": "be-vietnam-pro-full-400-v2.woff2",
+    "bytes": 35712,
+    "glyphs": 459,
+    "missingNfcNfdSampleGlyphs": [],
+    "gpos": true,
+    "gsub": true
+  },
+  {
+    "weight": 500,
+    "source": "https://fonts.gstatic.com/s/bevietnampro/v12/QdVMSTAyLFyeg_IDWvOJmVES_HTEJl8y.ttf",
+    "file": "be-vietnam-pro-full-500-v2.woff2",
+    "bytes": 37648,
+    "glyphs": 459,
+    "missingNfcNfdSampleGlyphs": [],
+    "gpos": true,
+    "gsub": true
+  },
+  {
+    "weight": 600,
+    "source": "https://fonts.gstatic.com/s/bevietnampro/v12/QdVMSTAyLFyeg_IDWvOJmVES_HToIV8y.ttf",
+    "file": "be-vietnam-pro-full-600-v2.woff2",
+    "bytes": 37768,
+    "glyphs": 459,
+    "missingNfcNfdSampleGlyphs": [],
+    "gpos": true,
+    "gsub": true
+  },
+  {
+    "weight": 700,
+    "source": "https://fonts.gstatic.com/s/bevietnampro/v12/QdVMSTAyLFyeg_IDWvOJmVES_HSMIF8y.ttf",
+    "file": "be-vietnam-pro-full-700-v2.woff2",
+    "bytes": 38584,
+    "glyphs": 459,
+    "missingNfcNfdSampleGlyphs": [],
+    "gpos": true,
+    "gsub": true
+  }
+]

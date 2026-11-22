@@ -1,0 +1,105 @@
+{
+  "width": 375,
+  "scrollWidth": 761,
+  "overflow": [
+    {
+      "tag": "SECTION",
+      "class": "lab-panel",
+      "width": 742.6875,
+      "scroll": 741,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<section class=\"lab-panel\" aria-label=\"Kết quả chạy\"><h2>Output</h2><p class=\"lab-output\">Lab này ch"
+    },
+    {
+      "tag": "SECTION",
+      "class": "lab-panel",
+      "width": 742.6875,
+      "scroll": 741,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<section class=\"lab-panel\"><h2>Kết quả kỳ vọng</h2><pre>{\"augmentation\": false, \"baseline_accuracy\":"
+    },
+    {
+      "tag": "PRE",
+      "class": "",
+      "width": 704.6875,
+      "scroll": 1244,
+      "overflow": "auto",
+      "minWidth": "0px",
+      "html": "<pre>{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"t"
+    },
+    {
+      "tag": "DETAILS",
+      "class": "lab-guide",
+      "width": 742.6875,
+      "scroll": 743,
+      "overflow": "visible",
+      "minWidth": "auto",
+      "html": "<details class=\"lab-guide\" open=\"\"><summary>Hướng dẫn chạy &amp; notebook</summary><p>Dùng Python 3."
+    },
+    {
+      "tag": "CODE",
+      "class": "",
+      "width": 175.234375,
+      "scroll": 0,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<code>requirements-curriculum.txt</code>"
+    },
+    {
+      "tag": "CODE",
+      "class": "",
+      "width": 34.484375,
+      "scroll": 0,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<code>labs</code>"
+    },
+    {
+      "tag": "DIV",
+      "class": "codeblock",
+      "width": 742.6875,
+      "scroll": 741,
+      "overflow": "hidden",
+      "minWidth": "0px",
+      "html": "<div class=\"codeblock\"><div class=\"cb-bar\"><span>powershell</span><button type=\"button\" aria-label=\""
+    },
+    {
+      "tag": "DIV",
+      "class": "cb-bar",
+      "width": 740.6875,
+      "scroll": 741,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<div class=\"cb-bar\"><span>powershell</span><button type=\"button\" aria-label=\"Sao chép code\"><svg cla"
+    },
+    {
+      "tag": "PRE",
+      "class": "",
+      "width": 740.6875,
+      "scroll": 741,
+      "overflow": "auto",
+      "minWidth": "0px",
+      "html": "<pre><code>py -3.12 -m venv .venv\n.venv\\Scripts\\python.exe -m pip install -r requirements-curriculum"
+    },
+    {
+      "tag": "CODE",
+      "class": "",
+      "width": 708.6875,
+      "scroll": 0,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<code>py -3.12 -m venv .venv\n.venv\\Scripts\\python.exe -m pip install -r requirements-curriculum.txt\n"
+    },
+    {
+      "tag": "CODE",
+      "class": "",
+      "width": 156.875,
+      "scroll": 0,
+      "overflow": "visible",
+      "minWidth": "0px",
+      "html": "<code>python3.12 -m venv .venv</code>"
+    }
+  ]
+}

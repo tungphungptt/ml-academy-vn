@@ -49,3 +49,5 @@ Tính lồi nối hình học, đạo hàm và bảo đảm toàn cục. Luôn x
 ## Nguồn tham khảo
 - [ML cơ bản: tập lồi và hàm lồi](https://machinelearningcoban.com/2017/03/12/convexity/).
 - [Tối ưu lồi](https://machinelearningcoban.com/2017/03/19/convexopt/) và [duality](https://machinelearningcoban.com/2017/04/02/duality/); snapshot nguồn được ghi trong audit.
+
+[Đối chiếu định nghĩa, first-order và second-order convexity trong D2L](https://d2l.ai/chapter_optimization/convexity.html). Ví dụ KKT trong bài có thể kiểm tra độc lập bằng bốn điều kiện đã nêu.

@@ -4,7 +4,8 @@ export async function POST(r: Request) {
   const v = validateQuestion(await r.json().catch(() => null)); if (!v.ok) return Response.json({ error: v.errors.join("; ") }, { status: 400 });
   if (!(await db.lesson.findUnique({ where: { id: v.data.lessonId } }))) return Response.json({ error: "Không tìm thấy bài học" }, { status: 404 });
   const quiz = await db.quiz.upsert({ where: { lessonId: v.data.lessonId }, update: {}, create: { lessonId: v.data.lessonId } });
-  const n = await db.quizQuestion.count({ where: { quizId: quiz.id } });
+  const last = await db.quizQuestion.aggregate({ where: { quizId: quiz.id }, _max: { order: true } });
+  const n = (last._max.order ?? -1) + 1;
   return Response.json(await db.quizQuestion.create({ data: { quizId: quiz.id, order: n, prompt: v.data.prompt, optionsJson: JSON.stringify(v.data.options), correctIndex: v.data.correct, explanation: v.data.explanation } }));
 }
 export async function DELETE(r: Request) {

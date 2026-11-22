@@ -56,3 +56,11 @@ Bayes dùng cả prior và likelihood; MLE tối ưu likelihood, MAP tối ưu m
 ## Nguồn tham khảo
 - [ML cơ bản: xác suất](https://machinelearningcoban.com/2017/07/09/prob/).
 - [ML cơ bản: MLE và MAP](https://machinelearningcoban.com/2017/07/17/mlemap/) — đối chiếu bản nguồn Git và permalink đã kiểm tra; chi tiết revision trong audit.
+
+## Tự kiểm chứng từng phép tính
+
+```neuralclone
+bayes
+```
+
+Mặc định n=4,k=3,prior Beta(2,2): posterior Beta(5,3), MLE=.75, mean=.625, MAP=2/3. Đặt n=0: chưa chọn được MLE duy nhất; prior Beta(1,1) còn cho MAP không duy nhất. Demo giới hạn prior nguyên ≥1; không áp dụng mode nội điểm cho mọi Beta. [Marco Taboga, Beta distribution](https://www.statlect.com/probability-distributions/beta-distribution).

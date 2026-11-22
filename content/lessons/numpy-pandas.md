@@ -56,3 +56,11 @@ Broadcasting căn shape từ bên phải: mỗi cặp chiều phải bằng nhau
 - [NumPy: Absolute Beginners Guide](https://numpy.org/doc/stable/user/absolute_beginners.html).
 - [pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html).
 - [Matplotlib User Guide](https://matplotlib.org/stable/users/index.html).
+
+## Tự kiểm chứng từng phép tính
+
+```neuralclone
+moments
+```
+
+Mặc định (2,4,6): mean=4, tổng bình phương lệch=8; ddof=0 cho variance=8/3, ddof=1 cho variance=4. Đổi cả ba thành 4: std=0, không thể chia để tính z-score. NumPy dùng ddof=0 mặc định. [Quy tắc broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html): căn chiều từ bên phải, mỗi cặp phải bằng nhau hoặc có một chiều bằng 1.

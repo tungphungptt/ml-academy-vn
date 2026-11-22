@@ -1,0 +1,321 @@
+{
+  "checkedAt": "2026-10-29T06:08:32.078Z",
+  "scope": "Anonymous read-only local/public first load + reload; no retry. Python editor/worker changes are client-only.",
+  "cases": [
+    {
+      "origin": "http://localhost:3000",
+      "attempts": [
+        {
+          "slug": "derivatives",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:04:49.877Z",
+          "status": 200,
+          "output": {
+            "f": 1,
+            "derivative": 2,
+            "forward": 2.5,
+            "central": 2
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-derivatives.png",
+          "finishedAt": "2026-10-29T06:05:02.785Z"
+        },
+        {
+          "slug": "derivatives",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:05:02.786Z",
+          "status": 200,
+          "output": {
+            "f": 1,
+            "derivative": 2,
+            "forward": 2.5,
+            "central": 2
+          },
+          "finishedAt": "2026-10-29T06:05:10.268Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:05:10.268Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-linear-regression.png",
+          "finishedAt": "2026-10-29T06:05:21.228Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:05:21.228Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "finishedAt": "2026-10-29T06:05:32.293Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:05:32.293Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "stepped": {
+            "w": 1.4666666666666666,
+            "b": 0.2,
+            "loss": 0.9407407407407412,
+            "dw": -4.177777777777779,
+            "db": -1.7333333333333338,
+            "steps": 1
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-gradient-descent.png",
+          "finishedAt": "2026-10-29T06:05:41.964Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:05:41.964Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "stepped": {
+            "w": 1.4666666666666666,
+            "b": 0.2,
+            "loss": 0.9407407407407412,
+            "dw": -4.177777777777779,
+            "db": -1.7333333333333338,
+            "steps": 1
+          },
+          "finishedAt": "2026-10-29T06:05:51.898Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:05:51.898Z",
+          "status": 200,
+          "output": {
+            "a": 2,
+            "h": 2,
+            "prediction": 6,
+            "loss": 0.5,
+            "dw1": 3,
+            "dw2": 2
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-backpropagation.png",
+          "finishedAt": "2026-10-29T06:05:58.490Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:05:58.490Z",
+          "status": 200,
+          "output": {
+            "a": 2,
+            "h": 2,
+            "prediction": 6,
+            "loss": 0.5,
+            "dw1": 3,
+            "dw2": 2
+          },
+          "finishedAt": "2026-10-29T06:06:06.042Z"
+        }
+      ],
+      "errors": [],
+      "failed": [],
+      "httpErrors": [],
+      "hmr": {
+        "handshakes": [
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101
+        ],
+        "frames": 124
+      }
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "attempts": [
+        {
+          "slug": "derivatives",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:06:09.195Z",
+          "status": 200,
+          "output": {
+            "f": 1,
+            "derivative": 2,
+            "forward": 2.5,
+            "central": 2
+          },
+          "screenshot": "docs/screenshots/expansion-live/public-derivatives.png",
+          "finishedAt": "2026-10-29T06:06:32.552Z"
+        },
+        {
+          "slug": "derivatives",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:06:32.552Z",
+          "status": 200,
+          "output": {
+            "f": 1,
+            "derivative": 2,
+            "forward": 2.5,
+            "central": 2
+          },
+          "finishedAt": "2026-10-29T06:06:55.432Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:06:55.432Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "screenshot": "docs/screenshots/expansion-live/public-linear-regression.png",
+          "finishedAt": "2026-10-29T06:07:15.391Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:07:15.391Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "finishedAt": "2026-10-29T06:07:36.385Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:07:36.385Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "stepped": {
+            "w": 1.4666666666666666,
+            "b": 0.2,
+            "loss": 0.9407407407407412,
+            "dw": -4.177777777777779,
+            "db": -1.7333333333333338,
+            "steps": 1
+          },
+          "screenshot": "docs/screenshots/expansion-live/public-gradient-descent.png",
+          "finishedAt": "2026-10-29T06:07:53.856Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:07:53.856Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "stepped": {
+            "w": 1.4666666666666666,
+            "b": 0.2,
+            "loss": 0.9407407407407412,
+            "dw": -4.177777777777779,
+            "db": -1.7333333333333338,
+            "steps": 1
+          },
+          "finishedAt": "2026-10-29T06:08:10.383Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:08:10.383Z",
+          "status": 200,
+          "output": {
+            "a": 2,
+            "h": 2,
+            "prediction": 6,
+            "loss": 0.5,
+            "dw1": 3,
+            "dw2": 2
+          },
+          "screenshot": "docs/screenshots/expansion-live/public-backpropagation.png",
+          "finishedAt": "2026-10-29T06:08:19.573Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:08:19.573Z",
+          "status": 200,
+          "output": {
+            "a": 2,
+            "h": 2,
+            "prediction": 6,
+            "loss": 0.5,
+            "dw1": 3,
+            "dw2": 2
+          },
+          "finishedAt": "2026-10-29T06:08:29.242Z"
+        }
+      ],
+      "errors": [],
+      "failed": [],
+      "httpErrors": [],
+      "hmr": {
+        "handshakes": [
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101
+        ],
+        "frames": 145
+      }
+    }
+  ]
+}

@@ -5,7 +5,14 @@ import { courseProgress, nextLesson } from "@/lib/progress";
 import PageHeading from "@/components/PageHeading";
 import ProgressRing from "@/components/ProgressRing";
 import Icon from "@/components/Icon";
+import { pageMetadata } from "@/lib/metadata";
 export const dynamic = "force-dynamic";
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const course = await db.course.findFirst({ where: { slug, published: true }, select: { title: true, description: true } });
+  if (!course) notFound();
+  return pageMetadata(course.title, course.description, `/courses/${slug}`);
+}
 export default async function Course({ params: pendingParams }: { params: Promise<{ slug: string }> }) {
   const params = await pendingParams;
   const c = await db.course.findUnique({ where: { slug: params.slug }, include: { modules: { orderBy: { order: "asc" }, include: { lessons: { orderBy: { order: "asc" } } } } } });

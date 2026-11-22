@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-29T06:06:10.734Z",
+  "transport": "Unchanged official CDN bytes downloaded with Python platform TLS validation; not direct browser CDN verification",
+  "assets": [
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js",
+      "bytes": 14767,
+      "sha256": "037907919d58ac79dbee2eee57e96507b79fad58260ab847dc6200443915c20f"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide-lock.json",
+      "bytes": 105980,
+      "sha256": "0cb7ca8faf9c35af92b4d261996ddd51dd9a6c1074ee59279f1570d67af29644"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/python_stdlib.zip",
+      "bytes": 2341761,
+      "sha256": "0dd443755a0244ae3052f2e0834413d68c43f362c651edd47b785ea9d26e4853"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.js",
+      "bytes": 1229628,
+      "sha256": "704e56d209d8b867c8dd42e754a246db0175e448d59a46530803bdddfdfc78e0"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.asm.wasm",
+      "bytes": 10087885,
+      "sha256": "8f631d8453672664131b2d4c9c41f3adf5d32e9efda2cb421d3fdf38cab57a21"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/numpy-1.26.4-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "bytes": 11959233,
+      "sha256": "c10c9f822e30a4d266da8af4538c528517886756ef4bda847777eda7a104142b"
+    }
+  ],
+  "status": "Lỗi.",
+  "alert": [
+    "Traceback (most recent call last):\n  File \"/lib/python312.zip/_pyodide/_base.py\", line 596, in eval_code_async\n    await CodeRunner(\n          ^^^^^^^^^^^\n  File \"/lib/python312.zip/_pyodide/_base.py\", line 284, in __init__\n    self.ast = next(self._gen)\n               ^^^^^^^^^^^^^^^\n  File \"/lib/python312.zip/_pyodide/_base.py\", line 148, in _parse_and_compile_gen\n    mod = compile(source, filename, mode, flags | ast.PyCF_ONLY_AST)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<exec>\", line 64\n    print(\"EXPANSION_PARITY_OK\")import numpy as np\n                                ^^^^^^\nSyntaxError: invalid syntax\n"
+  ],
+  "output": "Nhấn Run để thực thi code. Kết quả thật sẽ xuất hiện tại đây.",
+  "passed": false
+}

@@ -13,36 +13,45 @@ export function makeBlobs(centers: Pt[], per = 30, sd = 1, seed = 3): LPt[] {
   const r = rng(seed);
   return centers.flatMap((c, label) => Array.from({ length: per }, () => ({ x: c.x + gauss(r) * sd, y: c.y + gauss(r) * sd, label })));
 }
-export const mse = (d: Pt[], w: number, b: number) => d.reduce((s, p) => s + (w * p.x + b - p.y) ** 2, 0) / d.length;
+export const mse = (d: Pt[], w: number, b: number) => {
+  if (!d.length) throw new RangeError("MSE cần ít nhất một điểm dữ liệu.");
+  return d.reduce((s, p) => s + (w * p.x + b - p.y) ** 2, 0) / d.length;
+};
 export function gradientDescent(d: Pt[], lr: number, epochs: number) {
+  if (!Number.isFinite(lr) || lr <= 0 || !Number.isInteger(epochs) || epochs < 0) throw new RangeError("Learning rate phải dương và số bước phải là số nguyên không âm.");
   let w = 0, b = 0; const losses = [mse(d, w, b)]; let diverged = false;
   for (let e = 0; e < epochs; e++) {
     let gw = 0, gb = 0;
     for (const p of d) { const err = w * p.x + b - p.y; gw += 2 * err * p.x; gb += 2 * err; }
-    w -= (lr * gw) / d.length; b -= (lr * gb) / d.length;
-    const L = mse(d, w, b);
+    const nextW = w - (lr * gw) / d.length, nextB = b - (lr * gb) / d.length;
+    const L = mse(d, nextW, nextB);
     if (!Number.isFinite(L) || L > 1e12) { diverged = true; break; }
+    w = nextW; b = nextB;
     losses.push(L);
   }
   return { w, b, losses, diverged };
 }
 export function olsFit(d: Pt[]) {
+  if (!d.length) throw new RangeError("OLS cần ít nhất một điểm dữ liệu.");
   const n = d.length, mx = d.reduce((s, p) => s + p.x, 0) / n, my = d.reduce((s, p) => s + p.y, 0) / n;
   let sxy = 0, sxx = 0; for (const p of d) { sxy += (p.x - mx) * (p.y - my); sxx += (p.x - mx) ** 2; }
-  const w = sxy / sxx; return { w, b: my - w * mx };
+  const w = sxx === 0 ? 0 : sxy / sxx; return { w, b: my - w * mx };
 }
 export function knnPredict(train: LPt[], q: Pt, k: number, classes: number) {
+  if (!train.length || !Number.isInteger(k) || k < 1 || !Number.isInteger(classes) || classes < 1 || train.some(p => !Number.isInteger(p.label) || p.label < 0 || p.label >= classes)) throw new RangeError("KNN cần dữ liệu có nhãn hợp lệ và K nguyên dương.");
   const nb = train.map(p => ({ l: p.label, d: (p.x - q.x) ** 2 + (p.y - q.y) ** 2 })).sort((a, c) => a.d - c.d).slice(0, k);
   const votes = new Array(classes).fill(0); nb.forEach(n => votes[n.l]++);
   const best = Math.max(...votes);
   return nb.find(n => votes[n.l] === best)!.l; // hòa phiếu: chọn lớp của láng giềng gần nhất
 }
 export function kmeansInit(pts: Pt[], k: number, seed = 1): Pt[] {
+  if (!pts.length || !Number.isInteger(k) || k < 1) throw new RangeError("K-Means cần dữ liệu và số cụm nguyên dương.");
   const r = rng(seed), idx = new Set<number>();
   while (idx.size < Math.min(k, pts.length)) idx.add(Math.floor(r() * pts.length));
   return [...idx].map(i => ({ x: pts[i].x, y: pts[i].y }));
 }
 export function kmeansStep(pts: Pt[], cents: Pt[]) {
+  if (!pts.length || !cents.length) throw new RangeError("K-Means cần điểm dữ liệu và tâm cụm.");
   const assign = pts.map(p => { let bi = 0, bd = Infinity; cents.forEach((c, i) => { const d = (p.x - c.x) ** 2 + (p.y - c.y) ** 2; if (d < bd) { bd = d; bi = i; } }); return bi; });
   const next = cents.map((c, i) => { const m = pts.filter((_, j) => assign[j] === i); return m.length ? { x: m.reduce((s, p) => s + p.x, 0) / m.length, y: m.reduce((s, p) => s + p.y, 0) / m.length } : c; });
   const inertia = pts.reduce((s, p, j) => s + (p.x - next[assign[j]].x) ** 2 + (p.y - next[assign[j]].y) ** 2, 0);

@@ -1,6 +1,14 @@
-# ML Academy VN
+# NeuralClone
 
-Nền tảng học Machine Learning và Deep Learning bằng tiếng Việt: **59 bài học, 133 câu quiz, 13 lab và 27 notebook**. Có công thức KaTeX, playground thuật toán, Code Lab Python, tìm kiếm, tiến độ, bookmark/ghi chú và quản trị nội dung. Quiz được chấm phía server; tài khoản dùng mật khẩu băm và session cookie httpOnly.
+Nền tảng học Machine Learning và Deep Learning bằng tiếng Việt: **67 bài học, 157 câu quiz, 15 lab và 29 notebook**. Có công thức KaTeX, playground thuật toán, Code Lab Python, tìm kiếm, tiến độ, bookmark/ghi chú và quản trị nội dung. Quiz được chấm phía server; tài khoản dùng mật khẩu băm và session cookie httpOnly.
+
+Nhận diện NeuralClone hiện dùng nền xanh đen/giấy ấm, điểm nhấn hổ phách, Be Vietnam Pro và Lora tự lưu dạng WOFF2 (giấy phép OFL). Xem [thiết kế hiện hành](DESIGN.md) và [rà soát hệ thống 21/11/2026](docs/system-audit-2026-11-21.md). [Báo cáo nâng cấp ban đầu](docs/neuralclone-audit.md) được giữ làm lịch sử.
+
+Đợt kiểm tra tiếp theo ngày 27/10/2026: [sửa typography tiếng Việt và bằng chứng font thực tế](docs/neuralclone-typography-fix.md), [kiểm toán toàn bộ nội dung](docs/neuralclone-content-audit.md), [8 bài mới, 2 lab và kết quả QA](docs/neuralclone-content-update.md). Các báo cáo này bổ sung và sửa giới hạn của QA trước đó.
+
+Đợt hoàn thiện ngày 28/10/2026: [HMR, luồng học và kiểm chứng CPU/notebook](docs/neuralclone-final-polish.md). Đã sửa allowlist domain cho HMR, giữ đích bài học qua đăng nhập, URL chọn lab và các trường hợp biên. Kết quả transfer CPU có sai khác giữa môi trường, được giữ nguyên và ghi riêng thay vì sửa output để khớp.
+
+Với database dự án đã có schema hợp lệ, chạy `npm run content:update` để thêm nội dung còn thiếu, rồi `npm run content:repair` để sửa metadata lỗi đã xác định. Hai lệnh kiểm tra đường dẫn DB, sao lưu trước khi ghi và có thể chạy lặp lại; không reset dữ liệu hoặc thay chỉnh sửa khác của admin. Production cần restart sau khi cập nhật nội dung do cache; xem báo cáo cập nhật trước khi vận hành.
 
 ## Công nghệ và cấu trúc
 
@@ -17,7 +25,7 @@ Next.js 16 / React 19 / TypeScript strict; Prisma **5.20.0** với SQLite; Markd
 
 ## Yêu cầu
 
-- **Node.js 24 LTS** (`>=24.0.0 <25`); môi trường kiểm thử dùng **24.19.0, npm 11.9.0**. Giữ `package-lock.json`, dùng `npm ci`.
+- **Node.js 24 LTS** (`>=24.0.0 <25`); lượt kiểm thử ngày 28/10 dùng **24.19.0, npm 11.17.0**. Giữ `package-lock.json`, dùng `npm ci`.
 - Git; PowerShell trên Windows hoặc shell tương đương. Chạy lệnh từ thư mục repository trên ổ đĩa local, không từ `C:\` hoặc thư mục đồng bộ mạng.
 - Kết nối HTTPS để cài dependency/Prisma engines; Code Lab cần CDN khi tải Python lần đầu.
 - Docker Engine + Compose plugin nếu chạy container. Python 3 chỉ cần cho kiểm tra nội dung/lab ngoài browser; xem [thực hành curriculum](docs/curriculum-practice.md).
@@ -85,7 +93,9 @@ python scripts/audit_spec.py
 
 `verify` chạy route typegen, TypeScript strict và unit/integration tests, gồm math rendering và seed/persistence trên DB tạm riêng. `build` chỉ build, không khởi động server. Xem [kết quả kiểm chứng hiện tại](docs/deployment-validation.md).
 
-Browser tests có ghi dữ liệu và thử đổi trạng thái publication: **chỉ dùng DB tạm riêng**. Xem [hướng dẫn E2E cô lập](docs/self-hosted-deployment.md#browser-tests-tren-database-rieng); không trỏ chúng vào database cá nhân/production. Cài browser bằng `npx playwright install chromium`, rồi chạy `npm run e2e` khi fixture server đã khỏe mạnh.
+`npm run e2e` tự tạo database riêng dưới `.local/ml-curriculum-e2e-*`, migrate/seed fixture không có admin và build vào `.next-e2e`. Server kiểm thử mặc định ở `http://127.0.0.1:3100`; không tái sử dụng server cá nhân hay cổng 3000. Cài browser bằng `npx playwright install chromium` hoặc dùng Chrome có sẵn: `$env:PLAYWRIGHT_CHANNEL="chrome"; npm run e2e`. Các guard từ chối database không phải fixture và URL bên ngoài loopback. Xem [hướng dẫn E2E](docs/self-hosted-deployment.md#browser-tests-tren-database-rieng).
+
+`build`/`local` chỉ generate Prisma Client khi phiên bản hoặc schema thay đổi, tránh lỗi khóa DLL trên Windows khi server khác đang dùng client. Sau khi sửa schema, có thể chạy `npm run db:generate` khi các server sử dụng client đã dừng. Build không migrate hoặc seed database.
 
 ## Docker local
 
@@ -111,4 +121,4 @@ Truy cập http://127.0.0.1:3000. Named volume `mldata` lưu SQLite và lesson o
 
 ## Máy chủ riêng sau này
 
-Chưa có VPS/domain nào được cấu hình. [Self-hosted deployment](docs/self-hosted-deployment.md) hướng dẫn Linux, Node/Docker, DNS, HTTPS/reverse proxy, backup/restore, storage, migration và rollback. Chỉ mở ứng dụng qua HTTPS, không expose SQLite, giữ secrets ngoài Git/image và chỉ chạy một instance ghi SQLite. Cần kiểm thử riêng firewall, TLS, dung lượng và khôi phục trên máy chủ thật trước public.
+Tên miền dự kiến của ứng dụng là https://neuralclone.site; ứng dụng vẫn cần được vận hành bằng quy trình production phù hợp. [Self-hosted deployment](docs/self-hosted-deployment.md) hướng dẫn Linux, Node/Docker, DNS, HTTPS/reverse proxy, backup/restore, storage, migration và rollback. Chỉ mở ứng dụng qua HTTPS, không expose SQLite, giữ secrets ngoài Git/image và chỉ chạy một instance ghi SQLite. Cần kiểm thử riêng firewall, TLS, dung lượng và khôi phục trên máy chủ thật trước public.

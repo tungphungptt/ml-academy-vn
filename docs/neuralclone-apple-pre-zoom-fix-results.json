@@ -1,0 +1,495 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.apple.config.ts"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.apple.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "apple-design.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "apple-design.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "apple-design.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "apple-design.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {
+            "channel": "chrome"
+          },
+          "browserName": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "apple-design.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "apple-design.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/neuralclone-apple-after-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "apple-design.spec.ts",
+      "file": "apple-design.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "interruptible navigation, mobile TOC, keyboard math and enlarged text remain usable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8533,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:25:218",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                      "column": 218,
+                      "line": 25
+                    },
+                    "snippet": "  23 |  await expect(page.locator('#mo-hinh-va-cong-thuc')).toBeFocused();\n  24 |  expect(await page.locator('#mo-hinh-va-cong-thuc').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThanOrEqual(64);\n> 25 |  await page.goto('/learn/llm-foundations');const formula=page.locator('.katex-display').first();await formula.focus();await page.keyboard.press('ArrowRight');await expect.poll(()=>formula.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);\n     |                                                                                                                                                                                                                          ^\n  26 |  for(const route of ['/courses','/learn/llm-foundations','/lab?lab=cnn_cpu','/playground#threshold','/login']){\n  27 |   await page.goto(route);if(route.includes('playground'))await expect(page.locator('#threshold h2')).toBeVisible();\n  28 |   await page.evaluate(()=>document.documentElement.style.fontSize='200%');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                        "column": 218,
+                        "line": 25
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  23 |  await expect(page.locator('#mo-hinh-va-cong-thuc')).toBeFocused();\n  24 |  expect(await page.locator('#mo-hinh-va-cong-thuc').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThanOrEqual(64);\n> 25 |  await page.goto('/learn/llm-foundations');const formula=page.locator('.katex-display').first();await formula.focus();await page.keyboard.press('ArrowRight');await expect.poll(()=>formula.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);\n     |                                                                                                                                                                                                                          ^\n  26 |  for(const route of ['/courses','/learn/llm-foundations','/lab?lab=cnn_cpu','/playground#threshold','/login']){\n  27 |   await page.goto(route);if(route.includes('playground'))await expect(page.locator('#threshold h2')).toBeVisible();\n  28 |   await page.evaluate(()=>document.documentElement.style.fontSize='200%');\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:25:218"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:48:17.520Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design\\apple-design-interruptible-a29af-enlarged-text-remain-usable-chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                    "column": 218,
+                    "line": 25
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-485d0bc93cb98a3b48be",
+          "file": "apple-design.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "representative learning screens in both themes and four widths",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29690,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:48:27.139Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-e056a1256c7745b60c8f",
+          "file": "apple-design.spec.ts",
+          "line": 42,
+          "column": 5
+        },
+        {
+          "title": "interruptible navigation, mobile TOC, keyboard math and enlarged text remain usable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8407,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:25:218",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                      "column": 218,
+                      "line": 25
+                    },
+                    "snippet": "  23 |  await expect(page.locator('#mo-hinh-va-cong-thuc')).toBeFocused();\n  24 |  expect(await page.locator('#mo-hinh-va-cong-thuc').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThanOrEqual(64);\n> 25 |  await page.goto('/learn/llm-foundations');const formula=page.locator('.katex-display').first();await formula.focus();await page.keyboard.press('ArrowRight');await expect.poll(()=>formula.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);\n     |                                                                                                                                                                                                                          ^\n  26 |  for(const route of ['/courses','/learn/llm-foundations','/lab?lab=cnn_cpu','/playground#threshold','/login']){\n  27 |   await page.goto(route);if(route.includes('playground'))await expect(page.locator('#threshold h2')).toBeVisible();\n  28 |   await page.evaluate(()=>document.documentElement.style.fontSize='200%');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                        "column": 218,
+                        "line": 25
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  23 |  await expect(page.locator('#mo-hinh-va-cong-thuc')).toBeFocused();\n  24 |  expect(await page.locator('#mo-hinh-va-cong-thuc').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThanOrEqual(64);\n> 25 |  await page.goto('/learn/llm-foundations');const formula=page.locator('.katex-display').first();await formula.focus();await page.keyboard.press('ArrowRight');await expect.poll(()=>formula.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);\n     |                                                                                                                                                                                                                          ^\n  26 |  for(const route of ['/courses','/learn/llm-foundations','/lab?lab=cnn_cpu','/playground#threshold','/login']){\n  27 |   await page.goto(route);if(route.includes('playground'))await expect(page.locator('#threshold h2')).toBeVisible();\n  28 |   await page.evaluate(()=>document.documentElement.style.fontSize='200%');\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:25:218"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:48:57.911Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design\\apple-design-interruptible-a29af-enlarged-text-remain-usable-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                    "column": 218,
+                    "line": 25
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-ab61ec9d535178ee8a4c",
+          "file": "apple-design.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "representative learning screens in both themes and four widths",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31348,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:49:07.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-d2b09eca7747d1fea48d",
+          "file": "apple-design.spec.ts",
+          "line": 42,
+          "column": 5
+        },
+        {
+          "title": "interruptible navigation, mobile TOC, keyboard math and enlarged text remain usable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8668,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:25:218",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                      "column": 218,
+                      "line": 25
+                    },
+                    "snippet": "  23 |  await expect(page.locator('#mo-hinh-va-cong-thuc')).toBeFocused();\n  24 |  expect(await page.locator('#mo-hinh-va-cong-thuc').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThanOrEqual(64);\n> 25 |  await page.goto('/learn/llm-foundations');const formula=page.locator('.katex-display').first();await formula.focus();await page.keyboard.press('ArrowRight');await expect.poll(()=>formula.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);\n     |                                                                                                                                                                                                                          ^\n  26 |  for(const route of ['/courses','/learn/llm-foundations','/lab?lab=cnn_cpu','/playground#threshold','/login']){\n  27 |   await page.goto(route);if(route.includes('playground'))await expect(page.locator('#threshold h2')).toBeVisible();\n  28 |   await page.evaluate(()=>document.documentElement.style.fontSize='200%');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                        "column": 218,
+                        "line": 25
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  23 |  await expect(page.locator('#mo-hinh-va-cong-thuc')).toBeFocused();\n  24 |  expect(await page.locator('#mo-hinh-va-cong-thuc').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThanOrEqual(64);\n> 25 |  await page.goto('/learn/llm-foundations');const formula=page.locator('.katex-display').first();await formula.focus();await page.keyboard.press('ArrowRight');await expect.poll(()=>formula.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);\n     |                                                                                                                                                                                                                          ^\n  26 |  for(const route of ['/courses','/learn/llm-foundations','/lab?lab=cnn_cpu','/playground#threshold','/login']){\n  27 |   await page.goto(route);if(route.includes('playground'))await expect(page.locator('#threshold h2')).toBeVisible();\n  28 |   await page.evaluate(()=>document.documentElement.style.fontSize='200%');\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:25:218"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:49:41.123Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design\\apple-design-interruptible-a29af-enlarged-text-remain-usable-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                    "column": 218,
+                    "line": 25
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-13d0328b15ee0de788ce",
+          "file": "apple-design.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "representative learning screens in both themes and four widths",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 47069,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:49:50.465Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-e64adb7e1d89a7b1c127",
+          "file": "apple-design.spec.ts",
+          "line": 42,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T08:48:05.563Z",
+    "duration": 152473.566,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

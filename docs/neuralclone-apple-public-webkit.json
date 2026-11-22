@@ -1,0 +1,126 @@
+{
+  "checkedAt": "2026-10-28T09:04:35.861Z",
+  "engines": [
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "cases": [
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/lab?lab=threshold_cost",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Code Lab",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/playground#threshold",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Playground thuật toán",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Học máy.Hiểu từ gốc.",
+          "overflow": false,
+          "mathErrors": 0
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "websocketFrames": 397,
+      "websocketErrors": [],
+      "failure": "TimeoutError: page.waitForFunction: Timeout 390000ms exceeded."
+    }
+  ]
+}

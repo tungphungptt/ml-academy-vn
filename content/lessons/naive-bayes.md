@@ -48,3 +48,7 @@ Giả định là độc lập các feature **có điều kiện theo lớp**, k
 
 ## Nguồn tham khảo
 - [scikit-learn: Naive Bayes](https://scikit-learn.org/stable/modules/naive_bayes.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Ví dụ xác suất từ là biến rời rạc; code Iris có số đo liên tục nên dùng GaussianNB. Với count văn bản, dùng CountVectorizer và MultinomialNB; không dùng cùng likelihood cho mọi kiểu feature. [Naive Bayes User Guide](https://scikit-learn.org/stable/modules/naive_bayes.html).

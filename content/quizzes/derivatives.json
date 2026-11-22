@@ -1,22 +1,22 @@
 [
- {
-  "prompt": "Đạo hàm của $f(x)=(3x+1)^2$ tại $x=1$ là bao nhiêu?",
-  "options": [
-   "24",
-   "8",
-   "6"
-  ],
-  "correct": 0,
-  "explanation": "$2(3x+1)\\cdot3=2\\cdot4\\cdot3=24$."
- },
- {
-  "prompt": "Gradient chỉ hướng nào?",
-  "options": [
-   "Hướng làm f tăng nhanh nhất",
-   "Hướng làm f giảm nhanh nhất",
-   "Hướng vuông góc với trục x"
-  ],
-  "correct": 0,
-  "explanation": "Vì vậy gradient descent đi theo hướng ngược lại."
- }
+  {
+    "prompt": "Đạo hàm của $f(x)=(3x+1)^2$ tại $x=1$ là bao nhiêu?",
+    "options": [
+      "24",
+      "8",
+      "6"
+    ],
+    "correct": 0,
+    "explanation": "$2(3x+1)\\cdot3=24$ tại x=1. Chọn 8 là quên đạo hàm của lớp trong (3); chọn 6 là chỉ nhân các hệ số mà bỏ giá trị 3x+1=4."
+  },
+  {
+    "prompt": "Với chuẩn Euclid và gradient khác 0, gradient chỉ hướng nào tại chỗ?",
+    "options": [
+      "Hướng làm f tăng nhanh nhất",
+      "Hướng làm f giảm nhanh nhất",
+      "Hướng vuông góc với trục x"
+    ],
+    "correct": 0,
+    "explanation": "Với gradient khác 0 và chuẩn Euclid, hướng gradient là hướng tăng nhanh nhất tại chỗ. Hướng giảm là đối dấu. Không có quy tắc luôn vuông góc trục x; tại gradient bằng 0 không có hướng tăng bậc nhất duy nhất."
+  }
 ]

@@ -1,0 +1,33 @@
+.learning-experiment{margin:2rem 0;padding:1.25rem;border:1px solid var(--control-border);border-radius:var(--radius);background:var(--bg2);min-width:0}
+.learning-experiment>button{display:block;margin-top:1rem}.learning-experiment h3{margin-top:1.25rem}.experiment-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-block:1.25rem}
+.experiment-field{display:grid;grid-template-columns:1fr auto;gap:.5rem;font-size:.875rem}.experiment-field input{grid-column:1/-1;width:100%;min-height:44px}.experiment-field output{font-variant-numeric:tabular-nums;color:var(--ac)}
+.learning-experiment button,.learning-experiment summary{min-height:44px}.learning-experiment summary{cursor:pointer;padding:.5rem 0}.learning-experiment button[aria-pressed=true]{background:var(--acbg);border-color:var(--ac)}
+.learning-experiment svg{display:block;width:100%;height:auto}.learning-experiment svg text{font:14px var(--font-body);fill:var(--fg)}.learning-experiment figcaption{font-size:.8125rem}.learning-experiment figure{margin:1rem 0}
+.experiment-scroll{max-width:100%;overflow:auto}.experiment-scroll table{width:100%;white-space:nowrap;font-size:.8125rem;border-collapse:collapse}.experiment-scroll td,.experiment-scroll th{padding:.65rem;border-bottom:1px solid var(--bd);text-align:right}.experiment-scroll caption{text-align:left;white-space:normal}
+.markdown-table-scroll{max-width:100%;overflow-x:auto;margin-block:var(--space-5)}
+.lesson :is(.markdown-table-scroll,.experiment-scroll) table{display:table;overflow:visible}
+.experiment-output{background:var(--surface-2);padding:1rem;border-radius:.5rem;overflow:auto;font: .8125rem/1.7 var(--font-code)}
+.reading-page .related-practice .btn{max-width:100%;flex-wrap:wrap;white-space:normal;overflow-wrap:anywhere}
+.reading-page .pager a{min-width:0;overflow-wrap:anywhere}
+.learning-experiment .cb-bar{flex-wrap:wrap}
+.experiment-field input{min-width:0;margin-inline:0;box-sizing:border-box}
+.experiment-field select{grid-column:1/-1;min-height:44px;max-width:100%;font:inherit}
+.experiment-metrics{display:flex;flex-wrap:wrap;gap:1rem 2rem;padding-block:1rem;border-block:1px solid var(--bd);margin-block:1.5rem}
+.experiment-metrics dt{font-size:.875rem;color:var(--mut)}.experiment-metrics dd{margin:0;font-size:1.25rem;font-weight:600;font-variant-numeric:tabular-nums}
+.learning-experiment :is(p,summary,caption){overflow-wrap:anywhere}
+.experiment-plot-scroll,.threshold-plot-scroll{overflow-x:auto;max-width:100%}
+.plot-scroll-hint{font-size:.8125rem;color:var(--mut);margin-block:.5rem}
+.learning-experiment figure svg{min-width:440px}
+.threshold-chart .threshold-plot{min-width:400px}
+.experiment-downloads{margin-top:1rem}
+.experiment-legend{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;list-style:none;padding:0;margin:1rem 0;font-size:.8125rem}
+.experiment-legend li{display:flex;align-items:center;gap:.5rem}
+.learning-experiment .experiment-legend svg{width:32px;height:12px;min-width:0;flex-shrink:0;margin:0}
+.lesson :is(p,li,blockquote) a,.prerequisites a,.lesson-sources a,.lab-description a,.lab-related a{ text-decoration:underline;text-decoration-thickness:.075em;text-underline-offset:.2em }
+:is(main p,main li,main blockquote,main figcaption,.notice) a:not(.btn):not(.icon-button){text-decoration:underline;text-decoration-thickness:.075em;text-underline-offset:.2em}
+.reading-body>.prerequisites{margin:0 0 var(--space-6);padding:0 0 var(--space-5);border-top:0}
+.lab-panel[data-state=stale]{border-color:var(--warning)}
+@media(max-width:600px){.reading-body .lesson{font-size:1rem}.learning-experiment .experiment-field{font-size:1rem}.learning-experiment .experiment-field select{font-size:1rem}}
+@media(max-width:600px){.learning-experiment{padding:.75rem}.experiment-fields{grid-template-columns:minmax(0,1fr)}.learning-experiment .actions{flex-wrap:wrap}.learning-experiment svg text{font-size:16px}}
+@media(prefers-contrast:more){.learning-experiment{border-color:var(--fg)}}
+@media(min-width:1051px){.site-nav .nav-menu{min-width:0}.site-nav .nav-links{min-width:0;overflow-x:auto}.site-nav .nav-utilities{flex-shrink:0}}

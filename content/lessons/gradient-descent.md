@@ -34,6 +34,45 @@ Mỗi bước nhân $\theta$ với $1-2\eta=0.8$, nên $\theta_t = 4\cdot 0.8^t 
 - **SGD:** dùng 1 mẫu mỗi bước: nhanh, nhiễu, loss dao động.
 - **Mini-batch GD:** dùng một lô nhỏ (ví dụ 32 mẫu): cân bằng, là lựa chọn phổ biến trong Deep Learning.
 
+
+## Từ gradient đến một bước cập nhật kiểm chứng được
+
+Hãy nối với [hồi quy tuyến tính](/learn/linear-regression): giữ $x=(1,2,3)$, $y=(2,4,6)$, $w=1,b=0$. MSE ban đầu là $14/3$; gradient là $(dw,db)=(-28/3,-4)$. Với $\eta=0.05$, tính **cả hai** tham số mới từ trạng thái cũ:
+
+$$
+w_{new}=1-0.05(-28/3)=22/15,\qquad
+b_{new}=0-0.05(-4)=1/5.
+$$
+
+Dự đoán mới là $5/3,47/15,23/5$; residual là $-1/3,-13/15,-7/5$. Do đó loss mới bằng $127/135\approx0.940741$. Hãy tự cộng ba bình phương rồi chia ba. Bước này nhỏ hơn loss ban đầu, nhưng không được lấy một lần giảm loss làm bảo đảm cho mọi bước học.
+
+[Google MLCC: Gradient descent](https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent) minh họa chuỗi loss → gradient → tham số mới. Ví dụ ở đây dùng dữ liệu nhỏ khác và MSE không có hệ số 1/2. `descent` gọi `linear` đúng một lần cho gradient cũ, sau đó tính w,b mới đồng thời; nó không tính lại db sau khi đã đổi w.
+
+## Phòng thí nghiệm cập nhật từng bước
+
+```neuralclone
+descent
+```
+
+Đặt lại, bấm “Chạy một bước”: đối chiếu w=1.466667, b=0.2 và loss≈0.940741. Dãy loss lưu cả bước 0. “Phát từng bước” áp dụng chính phép tính ấy cách nhau 600ms, tối đa 30 bước; dừng khi ngoài viewport hoặc tab ẩn. Reduced motion vẫn cho chạy từng bước và đọc toàn bộ số. Tham số được cập nhật bằng float, phần hiển thị mới làm tròn.
+
+Thử learning rate bằng 0: state được quan sát qua thêm một bước nhưng w,b và loss không đổi. Thử 0.5 sau khi đặt lại: w mới bằng $17/3$, b mới bằng 2, loss bằng $2594/27\approx96.074074$, lớn hơn rất nhiều. Không phải gradient bị sai: bước đã đi quá xa. Nếu bước kế tiếp vượt giới hạn số của minh họa, giao diện dừng trước khi áp dụng và thông báo rõ, không ép loss vào một giá trị “đẹp”.
+
+## Đào sâu: ngưỡng ổn định phụ thuộc độ cong
+
+Với bài toán ba điểm này, đặt $\theta=(w,b)^T$. Hessian của MSE là:
+
+$$
+H=\begin{pmatrix}28/3&4\\4&2\end{pmatrix},\qquad
+\lambda_{max}=\frac{17+\sqrt{265}}3\approx11.092940.
+$$
+
+Các sai lệch theo từng hướng riêng được nhân với $1-\eta\lambda$. Vì H xác định dương, một learning rate hằng bảo đảm hội tụ từ mọi điểm ban đầu trong số học chính xác khi $0<\eta<2/\lambda_{max}\approx0.180295$. Đây là kết luận tự suy từ bài toán bậc hai **cụ thể này**, không phải learning rate chuẩn cho mọi mô hình. Bài $L(\theta)=\theta^2$ ở phần trên có độ cong 2, nên điều kiện $0<\eta<1$ khác một cách hợp lý. Đổi scale của x sẽ đổi H và ngưỡng bước học.
+
+[CS231n, effect of step size](https://cs231n.github.io/optimization-1/) giải thích vì sao hướng đi đúng vẫn có thể làm loss tăng khi bước quá dài. Với mạng phi tuyến, điều kiện còn phụ thuộc cấu trúc hàm; không dùng công thức ngưỡng của ba điểm để bảo đảm hội tụ mạng sâu.
+
+Tự kiểm tra: (1) Vì sao eta=0 không phải “hội tụ thành công”? Tham số đứng yên dù gradient có thể khác 0. (2) 30 bước trên ba điểm này tương đương bao nhiêu epoch batch đầy đủ? 30, mỗi bước xem cả ba mẫu; điều này không đúng cho mini-batch. (3) Nếu dùng nửa MSE, Hessian và gradient đều giảm một nửa; ngưỡng bước học tăng gấp đôi. Phần code NumPy cũ phía dưới bổ sung ví dụ nhiều mẫu, nơi cần phân biệt epoch và update.
+
 ## Code và cách chạy
 Bài thực hành `Linear Regression` ở trang **Code Lab** (`labs/linear_regression/scratch.py`) cài đặt đúng công thức trên bằng NumPy; kết quả kỳ vọng $w\approx2,\ b\approx0$. Ở trang **Playground**, kéo learning rate lên cao để thấy loss phân kỳ.
 
@@ -93,3 +132,8 @@ for batch_size in (1, 8, 64):
 print(result)
 ```
 Kết quả kỳ vọng (đã chạy CPU): `[(1, 1600, 0.0071), (8, 200, 0.0071), (64, 25, 0.3715)]`. Bộ ba là batch size, số update và MSE train. Cùng 25 epoch nhưng số update khác nhau; khi so sánh convergence cần thêm budget update/time và validation, không chọn batch size bằng test.
+
+## Nguồn cho phần thí nghiệm và đào sâu
+
+- [Linear regression: Gradient descent](https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent) — Google for Developers, Machine Learning Crash Course. Phần đã đọc: Calculate MSE, Weight derivative, Bias derivative, Move weights and bias. Truy cập 28/10/2026.
+- [CS231n: Optimization (part 1)](https://cs231n.github.io/optimization-1/) — Stanford CS231n course notes. Phần đã đọc: Computing the gradient numerically with finite differences, Effect of step size, Gradient descent. Truy cập 28/10/2026.

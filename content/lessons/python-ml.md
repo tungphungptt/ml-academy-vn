@@ -48,3 +48,7 @@ Hàm số học nên tách khỏi việc đọc/ghi file để kiểm thử bằ
 
 ## Nguồn tham khảo
 - [Python Tutorial (docs.python.org)](https://docs.python.org/3/tutorial/).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Generator chỉ duyệt một lần: sau list(g), lần list(g) tiếp theo rỗng. Gán b=a chia sẻ cùng list; b=a.copy() chỉ sao chép lớp ngoài, phần tử lồng nhau vẫn có thể dùng chung. Đây là khác biệt với sao chép sâu, không phải mọi phép gán đều sao chép dữ liệu. [Python Data Structures](https://docs.python.org/3/tutorial/datastructures.html).

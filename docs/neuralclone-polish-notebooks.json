@@ -1,0 +1,109 @@
+{
+ "runtime": {
+  "nbformat": "5.10.4",
+  "nbclient": "0.10.2",
+  "ipykernel": "6.30.1"
+ },
+ "method": "Fresh real IPython kernel per notebook; schema, sequential cells and original recorded stdout checked without regeneration",
+ "notebooks": [
+  {
+   "file": "public\\notebooks\\mlp_torch_library.ipynb",
+   "sha256": "f7f76988f7802a7881270face4454e6f22c84c1512966504c36e2d4dc261b462",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "loss=0.0002 pred=[0, 1, 1, 0]\n"
+   ],
+   "recordedStdout": [
+    "loss=0.0002 pred=[0, 1, 1, 0]\n"
+   ],
+   "matchesRecorded": true,
+   "passed": true
+  },
+  {
+   "file": "public\\notebooks\\tabular_pipeline_library.ipynb",
+   "sha256": "92ed6c51d1a2f21cdbf3595fc00ca6d9ac39e5ec530c9eedd34d7084b98b913f",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}\n"
+   ],
+   "recordedStdout": [
+    "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}\n"
+   ],
+   "matchesRecorded": true,
+   "passed": true
+  },
+  {
+   "file": "public\\notebooks\\cnn_cpu_library.ipynb",
+   "sha256": "ea13362d758e4b9d6e45d8bfab37523ecb6e4c3c3de7d1a53d438c1668827176",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n"
+   ],
+   "recordedStdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n"
+   ],
+   "matchesRecorded": true,
+   "passed": true
+  },
+  {
+   "file": "public\\notebooks\\sequence_cpu_library.ipynb",
+   "sha256": "5446388bfb5305c1a759a392b76fac9b83f85a09c18dae7c48293c1bc4b93bdf",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}\n"
+   ],
+   "recordedStdout": [
+    "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}\n"
+   ],
+   "matchesRecorded": true,
+   "passed": true
+  },
+  {
+   "file": "public\\notebooks\\neural_recommendation_library.ipynb",
+   "sha256": "d79fd8d14e561f14d206f6933a98d0e5f1d70f5f00343c190c7147d71efb3e0d",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}\n"
+   ],
+   "recordedStdout": [
+    "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}\n"
+   ],
+   "matchesRecorded": true,
+   "passed": true
+  },
+  {
+   "file": "public\\notebooks\\autoencoder_cpu_library.ipynb",
+   "sha256": "1373ad2499c3c74c480c0dcabe81b9afc72e5e78d593bc6599ac563aa207be26",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}\n"
+   ],
+   "recordedStdout": [
+    "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}\n"
+   ],
+   "matchesRecorded": true,
+   "passed": true
+  },
+  {
+   "file": "public\\notebooks\\transfer_cpu_library.ipynb",
+   "sha256": "3f1db0ba79362c99185150e2e9dc4515cc7729eb30afda1dd51c2e25d924ff53",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+   ],
+   "recordedStdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+   ],
+   "matchesRecorded": false,
+   "passed": false,
+   "error": "AssertionError: Output mismatch: actual=['{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\\n'], recorded=['{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\\n']"
+  }
+ ]
+}

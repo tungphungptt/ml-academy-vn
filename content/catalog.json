@@ -789,6 +789,105 @@
        "level": "Intermediate"
       }
      ]
+    },
+    {
+     "key": "modern-practice",
+     "title": "Ensemble và ML có trách nhiệm",
+     "lessons": [
+      {
+       "s": "gradient-boosting",
+       "t": "Gradient Boosting: học từ phần dư",
+       "f": "gradient-boosting.md",
+       "src": [
+        {
+         "title": "scikit-learn: Gradient boosting",
+         "url": "https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "decision-tree",
+        "gradient-descent",
+        "cross-validation"
+       ],
+       "minutes": 45,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "imbalanced-learning",
+       "t": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+       "f": "imbalanced-learning.md",
+       "src": [
+        {
+         "title": "scikit-learn: Threshold tuning",
+         "url": "https://scikit-learn.org/stable/modules/classification_threshold.html"
+        },
+        {
+         "title": "scikit-learn: Calibration",
+         "url": "https://scikit-learn.org/stable/modules/calibration.html"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "logistic-regression",
+        "metrics",
+        "cross-validation",
+        "feature-leakage"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "mlops-reproducibility",
+       "t": "MLOps: tái lập thí nghiệm, versioning và drift",
+       "f": "mlops-reproducibility.md",
+       "src": [
+        {
+         "title": "Google MLCC: Monitoring",
+         "url": "https://developers.google.com/machine-learning/crash-course/production-ml-systems/monitoring"
+        },
+        {
+         "title": "PyTorch: Reproducibility",
+         "url": "https://docs.pytorch.org/docs/stable/notes/randomness.html"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "ml-project-workflow",
+        "model-deployment",
+        "feature-leakage"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "responsible-ai",
+       "t": "Responsible AI: fairness, privacy và model cards",
+       "f": "responsible-ai.md",
+       "src": [
+        {
+         "title": "Google MLCC: Fairness",
+         "url": "https://developers.google.com/machine-learning/crash-course/fairness/demographic-parity"
+        },
+        {
+         "title": "Model Cards",
+         "url": "https://arxiv.org/abs/1810.03993"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "metrics",
+        "imbalanced-learning",
+        "mlops-reproducibility"
+       ],
+       "minutes": 45,
+       "kind": "lesson",
+       "level": "Intermediate"
+      }
+     ]
     }
    ]
   },
@@ -1283,6 +1382,108 @@
        ],
        "minutes": 50,
        "kind": "practice",
+       "level": "Advanced"
+      }
+     ]
+    },
+    {
+     "key": "modern-ai",
+     "title": "LLM: nền tảng, thích nghi và ứng dụng",
+     "lessons": [
+      {
+       "s": "llm-foundations",
+       "t": "Nền tảng LLM: tokenization, pretraining và suy luận",
+       "f": "llm-foundations.md",
+       "src": [
+        {
+         "title": "Hugging Face: BPE",
+         "url": "https://huggingface.co/learn/llm-course/chapter6/5"
+        },
+        {
+         "title": "Hugging Face: Causal language modeling",
+         "url": "https://huggingface.co/learn/llm-course/chapter7/6"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "transformer-architecture",
+        "embeddings",
+        "text-classification"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "efficient-finetuning",
+       "t": "PEFT, LoRA và lượng tử hóa mô hình",
+       "f": "efficient-finetuning.md",
+       "src": [
+        {
+         "title": "LoRA paper",
+         "url": "https://arxiv.org/abs/2106.09685"
+        },
+        {
+         "title": "QLoRA paper",
+         "url": "https://arxiv.org/abs/2305.14314"
+        }
+       ],
+       "tier": "Intermediate",
+       "prerequisites": [
+        "llm-foundations",
+        "transfer-learning",
+        "linear-algebra-decompositions"
+       ],
+       "minutes": 55,
+       "kind": "lesson",
+       "level": "Advanced"
+      },
+      {
+       "s": "rag-vector-search",
+       "t": "RAG và vector search: truy xuất có bằng chứng",
+       "f": "rag-vector-search.md",
+       "src": [
+        {
+         "title": "RAG paper",
+         "url": "https://arxiv.org/abs/2005.11401"
+        },
+        {
+         "title": "scikit-learn: Text features",
+         "url": "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "llm-foundations",
+        "text-classification",
+        "vectors-matrices"
+       ],
+       "minutes": 50,
+       "kind": "lesson",
+       "level": "Intermediate"
+      },
+      {
+       "s": "llm-evaluation-security",
+       "t": "Đánh giá LLM, hallucination và prompt injection",
+       "f": "llm-evaluation-security.md",
+       "src": [
+        {
+         "title": "Indirect Prompt Injection",
+         "url": "https://arxiv.org/abs/2302.12173"
+        },
+        {
+         "title": "NIST AI RMF",
+         "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        }
+       ],
+       "tier": "Core",
+       "prerequisites": [
+        "rag-vector-search",
+        "metrics",
+        "feature-leakage"
+       ],
+       "minutes": 45,
+       "kind": "lesson",
        "level": "Advanced"
       }
      ]

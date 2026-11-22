@@ -49,3 +49,7 @@ Một outlier thống kê có thể là lỗi đo hoặc sự kiện quan trọn
 
 ## Nguồn tham khảo
 - [scikit-learn: Novelty and Outlier Detection](https://scikit-learn.org/stable/modules/outlier_detection.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Ví dụ dùng std tổng thể ddof=0. MAD chưa nhân hệ số scale; ngưỡng chỉ gắn cờ để điều tra, không chứng minh một điểm là gian lận. [NIST Outliers](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm).

@@ -14,5 +14,5 @@ export default function KMeans() {
     <p>Bước {st.it}{st.assign ? `, inertia = ${st.inertia.toFixed(2)}` : " (tâm cụm khởi tạo ngẫu nhiên từ dữ liệu)"}{st.done ? ". Đã hội tụ." : ""}</p>
     <Plot d={{ xmin: 0, xmax: 10, ymin: 0, ymax: 10 }} label="K-Means">{(sx, sy) => <>
       {pts.map((p: Pt, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3} fill={st.assign ? COLORS[st.assign[i]] : "var(--mut)"} opacity={0.8} />)}
-      {st.cents.map((c, i) => <rect key={i} x={sx(c.x) - 6} y={sy(c.y) - 6} width={12} height={12} fill={COLORS[i]} stroke="#000" strokeWidth={2} />)}</>}</Plot></section>;
+      {st.cents.map((c, i) => <rect key={i} x={sx(c.x) - 6} y={sy(c.y) - 6} width={12} height={12} fill={COLORS[i]} stroke="var(--fg)" strokeWidth={2} />)}</>}</Plot><p className="plot-legend">Chấm: điểm dữ liệu · Hình vuông: tâm cụm · Inertia: tổng bình phương khoảng cách đến tâm được gán</p><p className="demo-question">Đổi cách khởi tạo tâm rồi chạy từng bước. Vì sao cùng K có thể cho kết quả khác nhau?</p></section>;
 }

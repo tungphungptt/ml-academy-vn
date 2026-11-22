@@ -42,3 +42,15 @@ Thống kê mô tả phản ánh mẫu đang có; suy luận về quần thể c
 
 ## Nguồn tham khảo
 - [Dive into Deep Learning: Probability and Statistics](https://d2l.ai/chapter_preliminaries/probability.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Ký hiệu phương sai chia N mô tả chính bộ giá trị đang có, không tự là variance thật của quần thể. MLE Gaussian với variance dương cần dữ liệu có độ phân tán: nếu mọi quan sát bằng nhau, likelihood tăng không bị chặn khi variance tiến về 0; không có maximizer với variance dương. ddof=1 chỉ dùng khi N>1. [NumPy std](https://numpy.org/doc/stable/reference/generated/numpy.std.html).
+
+## Tự kiểm chứng từng phép tính
+
+```neuralclone
+moments
+```
+
+Mặc định (2,4,6): mean=4, tổng bình phương lệch=8; ddof=0 cho variance=8/3, ddof=1 cho variance=4. Đổi cả ba thành 4: std=0, không thể chia để tính z-score. NumPy dùng ddof=0 mặc định. [Quy tắc broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html): căn chiều từ bên phải, mỗi cặp phải bằng nhau hoặc có một chiều bằng 1.

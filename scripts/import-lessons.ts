@@ -1,4 +1,4 @@
-import { importLegacyLessons } from "../src/lib/lessonFiles";
+import { importLegacyLessons } from "./legacy-lessons";
 
 const source = process.argv[2];
 if (!source) throw new Error("Usage: npm run content:import -- /absolute/path/to/backed-up/lessons");

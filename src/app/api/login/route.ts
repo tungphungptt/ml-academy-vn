@@ -1,5 +1,5 @@
 import { z } from "zod"; import bcrypt from "bcryptjs"; import { db } from "@/lib/db"; import { createSession } from "@/lib/auth"; import { clientIp, loginLimiter } from "@/lib/rateLimit";
-const S = z.object({ email: z.string().email(), password: z.string().min(1) });
+const S = z.object({ email: z.string().trim().email().max(200), password: z.string().min(1).max(100) });
 export async function POST(r: Request) {
   const ip = clientIp(r.headers); const rl = loginLimiter.check(ip);
   if (!rl.ok) return Response.json({ error: `Thử quá nhiều lần. Hãy đợi ${rl.retryAfter} giây.` }, { status: 429, headers: { "Retry-After": String(rl.retryAfter) } });

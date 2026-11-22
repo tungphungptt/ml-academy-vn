@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Khi vector query và document đều chuẩn L2, cosine bằng?",
+  "options": [
+   "Khoảng cách Manhattan",
+   "Dot product",
+   "Tổng các norm",
+   "Xác suất document đúng"
+  ],
+  "correct": 1,
+  "explanation": "Khi norm đều 1, công thức cosine rút thành tích vô hướng."
+ },
+ {
+  "prompt": "Top-3 lấy được 2 trong tổng 4 nguồn relevant: Recall@3 là?",
+  "options": [
+   "2/3",
+   "1/4",
+   "1/2",
+   "1"
+  ],
+  "correct": 2,
+  "explanation": "Recall lấy số relevant truy xuất được chia tổng relevant; precision ở đây là 2/3."
+ },
+ {
+  "prompt": "RAG nên áp quyền truy cập tài liệu ở đâu?",
+  "options": [
+   "Sau khi gửi mọi tài liệu vào prompt",
+   "Ở truy xuất/trước khi nội dung vào context, với cache có scope đúng",
+   "Nhờ model tự giữ bí mật",
+   "Không cần nếu có citation"
+  ],
+  "correct": 1,
+  "explanation": "Authorization thuộc hệ thống đáng tin; prompt không là ranh giới bảo mật."
+ }
+]

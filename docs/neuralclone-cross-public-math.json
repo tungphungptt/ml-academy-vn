@@ -1,0 +1,169 @@
+{
+  "checkedAt": "2026-10-28T07:54:33.473Z",
+  "engines": [
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "cases": [
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 13,
+            "scrollWidth": 441,
+            "clientWidth": 337
+          }
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 0,
+            "scrollWidth": 758,
+            "clientWidth": 758
+          }
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 6,
+            "scrollWidth": 441,
+            "clientWidth": 337
+          }
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 0,
+            "scrollWidth": 758,
+            "clientWidth": 758
+          }
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "websocketFrames": 28,
+      "websocketErrors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "cases": [
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 40,
+            "scrollWidth": 441,
+            "clientWidth": 337
+          }
+        },
+        {
+          "origin": "http://localhost:3000",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 0,
+            "scrollWidth": 758,
+            "clientWidth": 758
+          }
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "dark",
+          "width": 375,
+          "status": 200,
+          "emulation": "WebKit desktop with touch/viewport emulation; not physical iOS",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 40,
+            "scrollWidth": 441,
+            "clientWidth": 337
+          }
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "route": "/learn/llm-foundations",
+          "theme": "light",
+          "width": 1440,
+          "status": 200,
+          "emulation": "Desktop engine with viewport size",
+          "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "overflow": false,
+          "mathErrors": 0,
+          "formula": {
+            "tabIndex": 0,
+            "role": "region",
+            "scrollLeft": 0,
+            "scrollWidth": 758,
+            "clientWidth": 758
+          }
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "websocketFrames": 28,
+      "websocketErrors": []
+    }
+  ]
+}

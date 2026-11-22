@@ -53,3 +53,7 @@ EM tối đa hóa likelihood thông qua phân bố biến ẩn; mỗi bước E/
 
 ## Nguồn tham khảo
 - [scikit-learn: Gaussian mixture models](https://scikit-learn.org/stable/modules/mixture.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Các trọng số trộn không âm và tổng bằng 1; covariance cần xác định dương để density Gaussian thông thường xác định. [Gaussian mixture](https://scikit-learn.org/stable/modules/mixture.html).

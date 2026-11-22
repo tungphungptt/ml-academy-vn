@@ -1,0 +1,366 @@
+{
+  "checkedAt": "2026-10-28T12:25:57.158Z",
+  "scope": "Only this studio refinement; historical Apple/cross/Transfer results are separate reference data.",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "version": "Windows 11 Home",
+    "node": "v24.19.0",
+    "playwright": "1.64.1",
+    "browsers": [
+      {
+        "engine": "chrome",
+        "version": "156.0.8078.49"
+      },
+      {
+        "engine": "firefox",
+        "version": "157.0"
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2"
+      }
+    ],
+    "execution": "Headless Windows desktop engines; mobile viewport/touch emulation, no physical devices"
+  },
+  "skill": {
+    "source": "https://github.com/emilkowalski/skills/blob/main/skills/apple-design/SKILL.md",
+    "sha256": "406aea9e67f0700a6b281a27e3c596ca187626591355ad49348fd865c43f819f"
+  },
+  "unit": {
+    "command": "npm run verify",
+    "passed": 67,
+    "failed": 0,
+    "typecheck": true,
+    "log": ".local/refinement-verify-final.log"
+  },
+  "suites": {
+    "ui": {
+      "artifact": "docs/neuralclone-refinement-after-results.json",
+      "stats": {
+        "startTime": "2026-10-28T12:15:10.872Z",
+        "duration": 171259.71600000001,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "cross": {
+      "artifact": "docs/neuralclone-refinement-cross-results.json",
+      "stats": {
+        "startTime": "2026-10-28T12:00:48.264Z",
+        "duration": 211267.341,
+        "expected": 12,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "regression": {
+      "artifact": "docs/neuralclone-refinement-regression-results.json",
+      "stats": {
+        "startTime": "2026-10-28T11:56:51.764Z",
+        "duration": 196425.66,
+        "expected": 29,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "motion": {
+      "artifact": "docs/neuralclone-refinement-motion-results.json",
+      "stats": {
+        "startTime": "2026-10-28T12:08:14.027Z",
+        "duration": 35758.322,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "productionBuild": {
+    "passed": true,
+    "command": "node scripts/e2e-server.mjs 3100 -> next build -> next start",
+    "outputDirectory": ".next-e2e",
+    "database": "Isolated ml-curriculum-e2e-* SQLite fixtures; real port 3000 remains Next dev"
+  },
+  "staticReview": {
+    "typescriptUnusedCheck": {
+      "command": "npx tsc --noEmit --noUnusedLocals --noUnusedParameters",
+      "log": ".local/refinement-unused.log",
+      "passed": true
+    },
+    "whitespace": {
+      "command": "git -c core.safecrlf=false diff --check",
+      "passed": true,
+      "log": ".local/refinement-diff-check-normal.log"
+    },
+    "generatedNextEnvRestored": true,
+    "eslint": "Not configured; not claimed as run"
+  },
+  "visual": {
+    "beforePages": 88,
+    "after": [
+      {
+        "engine": "chrome",
+        "version": "156.0.8078.49",
+        "pages": 88,
+        "errors": [],
+        "failedRequests": []
+      },
+      {
+        "engine": "firefox",
+        "version": "157.0",
+        "pages": 88,
+        "errors": [],
+        "failedRequests": []
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "pages": 88,
+        "errors": [],
+        "failedRequests": []
+      }
+    ],
+    "widths": [
+      375,
+      768,
+      1440,
+      1920
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "fontTrials": "docs/neuralclone-refinement-type-trials.json",
+    "fontBuild": "docs/neuralclone-refinement-font-build.json",
+    "strictChromiumSpecimens": 3360,
+    "realNFDSelectors": 40,
+    "otherEngines": "FontFaceSet, computed styles, NFC/NFD geometry and images; no native actual-font API claim",
+    "manualReview": "Opened hero desktop/mobile, library, lesson mobile, quiz tablet, lab desktop across selected themes/engines; not every image manually viewed"
+  },
+  "motion": {
+    "trace": "docs/traces/neuralclone-refinement-chrome.zip",
+    "video": "docs/videos/refinement/page@f8578d50a526439acd047dad8bb21d4c.webm",
+    "checks": "Presentation currentTime retained through pause/resume, manual steps/restart, offscreen stop, reduced-motion static alternative; menu spring interruption in UI suite"
+  },
+  "pyodide": {
+    "total": 14,
+    "passed": 14,
+    "transport": "Direct Chromium CDN",
+    "report": "docs/neuralclone-refinement-pyodide.json"
+  },
+  "touch": {
+    "checkedAt": "2026-10-28T12:01:00.517Z",
+    "scope": "Windows headless touchscreen/viewport emulation, not physical iOS/Android",
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "156.0.8078.49",
+        "errors": [],
+        "menuTap": true,
+        "navigationTap": true,
+        "themeTap": true
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "errors": [],
+        "menuTap": true,
+        "navigationTap": true,
+        "themeTap": true
+      }
+    ]
+  },
+  "contrast": {
+    "passed": 18,
+    "report": "docs/neuralclone-refinement-contrast-after.json",
+    "scope": "Selected rendered token pairs and diagram text, not a full accessibility certification"
+  },
+  "layout": {
+    "report": "docs/neuralclone-refinement-layout-observation.json",
+    "clsRange": [
+      0.00161309,
+      0.006643728600019289
+    ],
+    "scope": "Chromium desktop cold contexts, 250ms artificial font delay; lab observation, not field Core Web Vitals or a device test"
+  },
+  "runtime": {
+    "report": "docs/neuralclone-refinement-runtime-trace.json",
+    "plannedCases": 4,
+    "allCompletedExactOutput": true,
+    "unreproducedHistorical502": true,
+    "rootCause": "Unknown; no historical Next/tunnel stdout, RAM pressure is only an unconfirmed hypothesis",
+    "logs": "docs/neuralclone-refinement-log-availability.json"
+  },
+  "publicUI": {
+    "report": "docs/neuralclone-refinement-public-ui.json",
+    "cases": 4,
+    "localAndPublicComputedStylesMatch": true,
+    "actualFontReport": "docs/neuralclone-refinement-public-rendered-fonts.json",
+    "actualFontSelectors": 20,
+    "intendedCustomFacesConfirmed": true
+  },
+  "hmr": {
+    "report": "docs/neuralclone-refinement-hmr.json",
+    "restored": true,
+    "cases": [
+      {
+        "origin": "http://localhost:3000",
+        "handshake101": true,
+        "frames": 51,
+        "changedWithoutReload": true,
+        "restoredWithoutReload": true,
+        "errors": []
+      },
+      {
+        "origin": "https://neuralclone.site",
+        "handshake101": true,
+        "frames": 46,
+        "changedWithoutReload": true,
+        "restoredWithoutReload": true,
+        "errors": []
+      }
+    ]
+  },
+  "data": {
+    "backup": ".local/refinement-start/before.db",
+    "unchanged": true,
+    "quickCheck": {
+      "quick_check": "ok"
+    },
+    "tables": [
+      {
+        "table": "Bookmark",
+        "rows": 0,
+        "unchanged": true
+      },
+      {
+        "table": "Course",
+        "rows": 3,
+        "unchanged": true
+      },
+      {
+        "table": "Dataset",
+        "rows": 4,
+        "unchanged": true
+      },
+      {
+        "table": "Lesson",
+        "rows": 67,
+        "unchanged": true
+      },
+      {
+        "table": "LessonProgress",
+        "rows": 0,
+        "unchanged": true
+      },
+      {
+        "table": "Module",
+        "rows": 12,
+        "unchanged": true
+      },
+      {
+        "table": "Note",
+        "rows": 0,
+        "unchanged": true
+      },
+      {
+        "table": "PasswordReset",
+        "rows": 0,
+        "unchanged": true
+      },
+      {
+        "table": "Project",
+        "rows": 8,
+        "unchanged": true
+      },
+      {
+        "table": "Quiz",
+        "rows": 67,
+        "unchanged": true
+      },
+      {
+        "table": "QuizAttempt",
+        "rows": 0,
+        "unchanged": true
+      },
+      {
+        "table": "QuizQuestion",
+        "rows": 157,
+        "unchanged": true
+      },
+      {
+        "table": "Resource",
+        "rows": 8,
+        "unchanged": true
+      },
+      {
+        "table": "SourceReference",
+        "rows": 99,
+        "unchanged": true
+      },
+      {
+        "table": "StudyTime",
+        "rows": 0,
+        "unchanged": true
+      },
+      {
+        "table": "User",
+        "rows": 0,
+        "unchanged": true
+      }
+    ]
+  },
+  "preservation": {
+    "baselineFiles": 2452,
+    "untouchedFiles": 2442,
+    "allowedExistingFilesChanged": [
+      "e2e/apple-design.spec.ts",
+      "e2e/cross-browser.spec.ts",
+      "e2e/final-polish.spec.ts",
+      "e2e/typography.spec.ts",
+      "playwright.apple.config.ts",
+      "playwright.config.ts",
+      "src/app/design-tokens.css",
+      "src/app/fonts.css",
+      "src/app/layout.tsx",
+      "src/components/Landing.tsx"
+    ],
+    "oldReportsContentLabsNotebooksConfigAndDependenciesUnchanged": true
+  },
+  "dependencies": {
+    "applicationAdded": [],
+    "packageAndLockUnchanged": true,
+    "fontBuild": "Uses existing private FontTools environment; no global font installation"
+  },
+  "transfer": {
+    "rerun": false,
+    "status": "Historical strict FAIL preserved",
+    "windowsCorrect": 334,
+    "total": 360,
+    "historicalInferredCorrect": 335,
+    "expectedChanged": false,
+    "limitation": "No original predictions/checkpoint/environment metadata; unresolved"
+  },
+  "knownToolIssue": {
+    "webkit": "Repeated page replacements stalled screenshot document.fonts.ready. Fresh pages complete 88 cases with native font wait still enabled; underlying engine/utility-world cause not established.",
+    "screenshotCaret": "The first public/local dev capture mutated input caret-color before React hydration; wait for the mounted reduced-motion effect and keep caret initial. Final four comparisons have no console errors; no application warning suppression.",
+    "rawFailedAttempts": [
+      "docs/neuralclone-refinement-initial-results.json",
+      "docs/neuralclone-refinement-ui-second-attempt.json",
+      "docs/neuralclone-refinement-webkit-diagnosis.json",
+      "docs/neuralclone-refinement-public-ui-first-attempt.json"
+    ]
+  },
+  "limitations": [
+    "No physical Safari/iOS/Android or Safari on macOS",
+    "200% CSS text-size reflow, not physical Dynamic Type or browser toolbar zoom",
+    "Reduced transparency/contrast through Chromium CDP; not a full OS preference/screen-reader audit",
+    "Lab CLS observation, not field Core Web Vitals or a Lighthouse score",
+    "Historical timeout/502 cause remains unconfirmed; bounded probes cannot guarantee future availability"
+  ]
+}

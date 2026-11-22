@@ -21,11 +21,13 @@ $\mathbf w=(3,4),b=-5$: $\lVert\mathbf w\rVert=5$, lề $=2/5=0.4$; điểm $(3,
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 X, y = load_iris(return_X_y=True)
 Xa, Xb, ya, yb = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
-print(round(SVC(kernel="rbf").fit(Xa, ya).score(Xb, yb), 3))
+print(round(make_pipeline(StandardScaler(), SVC(kernel="rbf")).fit(Xa, ya).score(Xb, yb), 3))
 ```
-Kết quả kỳ vọng (đã chạy cục bộ): `0.956`. Tập test chỉ có 45 mẫu nên chênh lệch vài điểm phần trăm giữa các mô hình chưa có ý nghĩa thống kê.
+Kết quả kỳ vọng (đã chạy cục bộ): `0.933`. Tập test chỉ có 45 mẫu nên chênh lệch vài điểm phần trăm giữa các mô hình chưa có ý nghĩa thống kê.
 
 ## Lỗi thường gặp
 Không chuẩn hóa đặc trưng; để $C$ hoặc `gamma` quá lớn gây overfit; dùng SVM kernel cho dữ liệu hàng triệu mẫu (chậm).

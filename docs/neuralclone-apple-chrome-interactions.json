@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-28T09:26:48.470Z",
+  "engine": "chrome",
+  "version": "156.0.8078.49",
+  "platform": "win32",
+  "checks": [
+    {
+      "springInterrupted": true,
+      "observedIntermediatePosition": 0.7218929066013586
+    },
+    {
+      "route": "/courses",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/learn/llm-foundations",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/lab?lab=cnn_cpu",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/playground#threshold",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "route": "/login",
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "reducedTransparencyAndIncreasedContrast": "Chromium CDP emulation; not OS hardware preference test"
+    }
+  ],
+  "errors": []
+}

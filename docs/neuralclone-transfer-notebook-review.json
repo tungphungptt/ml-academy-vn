@@ -1,0 +1,25 @@
+{
+ "runtime": {
+  "nbformat": "5.10.4",
+  "nbclient": "0.10.2",
+  "ipykernel": "6.30.1"
+ },
+ "method": "Fresh real IPython kernel per notebook; schema, sequential cells and original recorded stdout checked without regeneration",
+ "notebooks": [
+  {
+   "file": "public\\notebooks\\transfer_cpu_library.ipynb",
+   "sha256": "3f1db0ba79362c99185150e2e9dc4515cc7729eb30afda1dd51c2e25d924ff53",
+   "executed": true,
+   "cells": 1,
+   "stdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+   ],
+   "recordedStdout": [
+    "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\n"
+   ],
+   "matchesRecorded": false,
+   "passed": false,
+   "error": "AssertionError: Output mismatch: actual=['{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9278, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\\n'], recorded=['{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}\\n']"
+  }
+ ]
+}

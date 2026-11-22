@@ -51,3 +51,11 @@ Tích vô hướng/cosine cần hai vector cùng số chiều; cosine không xá
 
 ## Nguồn tham khảo
 - [Dive into Deep Learning: Linear Algebra](https://d2l.ai/chapter_preliminaries/linear-algebra.html).
+
+## Tự kiểm chứng từng phép tính
+
+```neuralclone
+vectors
+```
+
+Thử a=(1,0), b=(1,1): dot=1, cosine=1/√2. Đặt a=(0,0): cosine không xác định. Độ dài và cosine khác nhau; vector cùng hướng chưa chắc cùng norm.

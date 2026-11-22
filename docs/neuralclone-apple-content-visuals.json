@@ -1,0 +1,6156 @@
+{
+  "checkedAt": "2026-10-28T09:06:22.535Z",
+  "screens": [
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 31
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 42
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 39
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 42
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 30
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 31
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 42
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 39
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 42
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 30
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Segoe UI Semibold",
+            "postScriptName": "SegoeUI-Semibold",
+            "isCustomFont": false,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "screens": 64,
+    "overflow": 0,
+    "mathErrors": 0,
+    "mixedHeadingFonts": 0
+  }
+}

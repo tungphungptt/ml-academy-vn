@@ -1,0 +1,696 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.cross-browser.config.ts",
+      "--reporter=list,json"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.cross-browser.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-control",
+        "name": "chrome-control",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome-control",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "cross-browser.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {
+            "channel": "chrome"
+          },
+          "browserName": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome-control"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "cross-browser.spec.ts",
+      "file": "cross-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "quiz waits for delayed hydration, then records the first pointer and keyboard selections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3036,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:00:03.262Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-1092adf74ed008981906",
+          "file": "cross-browser.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:00:06.928Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-ae2bc304b0110290e828",
+          "file": "cross-browser.spec.ts",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24454,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:00:22.024Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-56870aaba40ee81d81d4",
+          "file": "cross-browser.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 43098,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:179:44",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                      "column": 44,
+                      "line": 179
+                    },
+                    "snippet": "  177 |     await slider.fill('0.35');await expect(demo.locator('[data-metric=cost]')).toHaveText('3');\n  178 |     await demo.getByRole('slider',{name:'Chi phí false positive',exact:true}).fill('0');await demo.getByRole('slider',{name:'Chi phí false negative',exact:true}).fill('0');\n> 179 |     await expect(demo.getByRole('status')).toContainText('mọi ngưỡng');await noOverflow(page,'threshold boundary');\n      |                                            ^\n  180 |   }finally{evidence.finish();}\n  181 | });\n  182 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                        "column": 44,
+                        "line": 179
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n\n\n  177 |     await slider.fill('0.35');await expect(demo.locator('[data-metric=cost]')).toHaveText('3');\n  178 |     await demo.getByRole('slider',{name:'Chi phí false positive',exact:true}).fill('0');await demo.getByRole('slider',{name:'Chi phí false negative',exact:true}).fill('0');\n> 179 |     await expect(demo.getByRole('status')).toContainText('mọi ngưỡng');await noOverflow(page,'threshold boundary');\n      |                                            ^\n  180 |   }finally{evidence.finish();}\n  181 | });\n  182 |\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:179:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:00:46.493Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-Pyodide-NumP-5485a-oundaries-execute-correctly-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                    "column": 44,
+                    "line": 179
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-4bc4564b9212bcf27bf4",
+          "file": "cross-browser.spec.ts",
+          "line": 159,
+          "column": 5
+        },
+        {
+          "title": "quiz waits for delayed hydration, then records the first pointer and keyboard selections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:01:30.578Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-92385b6e1dae3bd2e10d",
+          "file": "cross-browser.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 65055,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:01:32.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-78634a8db556821ccadc",
+          "file": "cross-browser.spec.ts",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 37304,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:02:37.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-b785c7d6cab0d0cfaeb2",
+          "file": "cross-browser.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 110815,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    3) <output>0</output> aka getByRole('status', { name: 'Chi phí FN' })\n    4) <p role=\"status\" class=\"notice\">Cả hai chi phí bằng 0: mọi ngưỡng đều có tổng chi…</p> aka getByText('Cả hai chi phí bằng 0: mọi ng')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    3) <output>0</output> aka getByRole('status', { name: 'Chi phí FN' })\n    4) <p role=\"status\" class=\"notice\">Cả hai chi phí bằng 0: mọi ngưỡng đều có tổng chi…</p> aka getByText('Cả hai chi phí bằng 0: mọi ng')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:179:44",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                      "column": 44,
+                      "line": 179
+                    },
+                    "snippet": "  177 |     await slider.fill('0.35');await expect(demo.locator('[data-metric=cost]')).toHaveText('3');\n  178 |     await demo.getByRole('slider',{name:'Chi phí false positive',exact:true}).fill('0');await demo.getByRole('slider',{name:'Chi phí false negative',exact:true}).fill('0');\n> 179 |     await expect(demo.getByRole('status',{name:'Chi phí bằng 0'})).toContainText('mọi ngưỡng');await noOverflow(page,'threshold boundary');\n      |                                            ^\n  180 |   }finally{evidence.finish();}\n  181 | });\n  182 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                        "column": 44,
+                        "line": 179
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    3) <output>0</output> aka getByRole('status', { name: 'Chi phí FN' })\n    4) <p role=\"status\" class=\"notice\">Cả hai chi phí bằng 0: mọi ngưỡng đều có tổng chi…</p> aka getByText('Cả hai chi phí bằng 0: mọi ng')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n\n\n  177 |     await slider.fill('0.35');await expect(demo.locator('[data-metric=cost]')).toHaveText('3');\n  178 |     await demo.getByRole('slider',{name:'Chi phí false positive',exact:true}).fill('0');await demo.getByRole('slider',{name:'Chi phí false negative',exact:true}).fill('0');\n> 179 |     await expect(demo.getByRole('status',{name:'Chi phí bằng 0'})).toContainText('mọi ngưỡng');await noOverflow(page,'threshold boundary');\n      |                                            ^\n  180 |   }finally{evidence.finish();}\n  181 | });\n  182 |\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:179:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:03:15.074Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-Pyodide-NumP-5485a-oundaries-execute-correctly-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                    "column": 44,
+                    "line": 179
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-c24655ae04a16a2854bc",
+          "file": "cross-browser.spec.ts",
+          "line": 159,
+          "column": 5
+        },
+        {
+          "title": "quiz waits for delayed hydration, then records the first pointer and keyboard selections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2647,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:05:06.445Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-a86a3b466d532e88ccb6",
+          "file": "cross-browser.spec.ts",
+          "line": 29,
+          "column": 5
+        },
+        {
+          "title": "registration/login return to quiz; lab navigation and real stdlib Python preserve the learning path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22795,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:05:09.411Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-de14bc1f83281074a47d",
+          "file": "cross-browser.spec.ts",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "both themes and four widths preserve Vietnamese NFC/NFD, formulas, SVG, code, focus and mobile navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:05:32.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-6cde4883ae3262a95c1d",
+          "file": "cross-browser.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "Pyodide NumPy/sklearn, stop/reset/error recovery and threshold boundaries execute correctly",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-control",
+              "projectName": "chrome-control",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 77881,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    3) <output>0</output> aka getByRole('status', { name: 'Chi phí FN' })\n    4) <p role=\"status\" class=\"notice\">Cả hai chi phí bằng 0: mọi ngưỡng đều có tổng chi…</p> aka getByText('Cả hai chi phí bằng 0: mọi ng')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    3) <output>0</output> aka getByRole('status', { name: 'Chi phí FN' })\n    4) <p role=\"status\" class=\"notice\">Cả hai chi phí bằng 0: mọi ngưỡng đều có tổng chi…</p> aka getByText('Cả hai chi phí bằng 0: mọi ng')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:179:44",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                      "column": 44,
+                      "line": 179
+                    },
+                    "snippet": "  177 |     await slider.fill('0.35');await expect(demo.locator('[data-metric=cost]')).toHaveText('3');\n  178 |     await demo.getByRole('slider',{name:'Chi phí false positive',exact:true}).fill('0');await demo.getByRole('slider',{name:'Chi phí false negative',exact:true}).fill('0');\n> 179 |     await expect(demo.getByRole('status',{name:'Chi phí bằng 0'})).toContainText('mọi ngưỡng');await noOverflow(page,'threshold boundary');\n      |                                            ^\n  180 |   }finally{evidence.finish();}\n  181 | });\n  182 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                        "column": 44,
+                        "line": 179
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#threshold').getByRole('status')\nExpected substring: \u001b[32m\"mọi ngưỡng\"\u001b[39m\nError: strict mode violation: locator('#threshold').getByRole('status') resolved to 4 elements:\n    1) <output>0.35</output> aka getByRole('status', { name: 'Ngưỡng' })\n    2) <output>0</output> aka getByRole('status', { name: 'Chi phí FP' })\n    3) <output>0</output> aka getByRole('status', { name: 'Chi phí FN' })\n    4) <p role=\"status\" class=\"notice\">Cả hai chi phí bằng 0: mọi ngưỡng đều có tổng chi…</p> aka getByText('Cả hai chi phí bằng 0: mọi ng')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#threshold').getByRole('status') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#threshold').getByRole('status')\u001b[22m\n\n\n  177 |     await slider.fill('0.35');await expect(demo.locator('[data-metric=cost]')).toHaveText('3');\n  178 |     await demo.getByRole('slider',{name:'Chi phí false positive',exact:true}).fill('0');await demo.getByRole('slider',{name:'Chi phí false negative',exact:true}).fill('0');\n> 179 |     await expect(demo.getByRole('status',{name:'Chi phí bằng 0'})).toContainText('mọi ngưỡng');await noOverflow(page,'threshold boundary');\n      |                                            ^\n  180 |   }finally{evidence.finish();}\n  181 | });\n  182 |\n    at D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts:179:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T09:05:59.111Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\cross-browser\\cross-browser-Pyodide-NumP-5485a-oundaries-execute-correctly-chrome-control\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\cross-browser.spec.ts",
+                    "column": 44,
+                    "line": 179
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "988e5ab7a922d34581e7-4e9cbca2c78d2b37d17e",
+          "file": "cross-browser.spec.ts",
+          "line": 159,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T08:59:52.280Z",
+    "duration": 445493.52400000003,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

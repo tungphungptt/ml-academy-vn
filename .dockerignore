@@ -1,5 +1,6 @@
 node_modules
 .next
+.next-e2e
 .git
 .env
 .env.*
@@ -11,3 +12,8 @@ playwright-report
 coverage
 prisma/*.db*
 *.log
+docs/screenshots
+docs/traces
+docs/videos
+**/__pycache__
+**/*.pyc

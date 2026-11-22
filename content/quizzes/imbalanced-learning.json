@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Với xác suất phù hợp và chi phí sai FP=2, FN=8, quyết định đúng không mất phí, ngưỡng lý thuyết là?",
+  "options": [
+   "0.5",
+   "0.8",
+   "0.2",
+   "8"
+  ],
+  "correct": 2,
+  "explanation": "Ngưỡng bằng C_FP/(C_FP+C_FN)=2/10=0.2, dưới các giả định xác suất và chi phí đã nêu."
+ },
+ {
+  "prompt": "Đổi threshold có làm thay đổi thứ hạng score không?",
+  "options": [
+   "Có, luôn đảo thứ hạng",
+   "Không; chỉ thay quyết định từ cùng score",
+   "Có, vì huấn luyện lại weights",
+   "Chỉ khi dữ liệu có hai lớp"
+  ],
+  "correct": 1,
+  "explanation": "Threshold không thay score/ranking hoặc tự hiệu chỉnh xác suất."
+ },
+ {
+  "prompt": "Oversample toàn bộ dữ liệu rồi mới chia train/test có rủi ro gì?",
+  "options": [
+   "Không có vì tăng số mẫu",
+   "Chắc chắn cải thiện calibration",
+   "Có thể đưa bản sao/thông tin của test vào train",
+   "Làm mọi metric không xác định"
+  ],
+  "correct": 2,
+  "explanation": "Resampling phải nằm trong phần train/fold; làm trước split có thể gây leakage."
+ }
+]

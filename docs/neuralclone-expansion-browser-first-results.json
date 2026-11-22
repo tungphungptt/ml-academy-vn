@@ -1,0 +1,555 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.learning.config.ts"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.learning.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "learning-experiments.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "learning-experiments.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "learning-experiments.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "learning-experiments.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {
+            "channel": "chrome"
+          },
+          "browserName": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "learning-experiments.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "learning-experiments.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/neuralclone-expansion-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "learning-experiments.spec.ts",
+      "file": "learning-experiments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "formula, shared code, plot and tables respond to controls, steps and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4047,
+                  "error": {
+                    "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByRole('slider', { name: 'Learning rate η' })\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"0.5\" value=\"0\" step=\"0.01\" type=\"range\" aria-label=\"Learning rate η\"/>\u001b[22m\n\u001b[2m    - fill(\".05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                    "stack": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByRole('slider', { name: 'Learning rate η' })\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"0.5\" value=\"0\" step=\"0.01\" type=\"range\" aria-label=\"Learning rate η\"/>\u001b[22m\n\u001b[2m    - fill(\".05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:12:206",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 206,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   if(slug==='gradient-descent'){await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).loss).toBeCloseTo(127/135,10);expect((await output()).w).toBeCloseTo(22/15,10);\n  11 |    await page.getByRole('button',{name:'Đặt lại',exact:true}).click();await page.getByRole('slider',{name:'Learning rate η'}).fill('0');await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).w).toBe(1);expect((await output()).loss).toBeCloseTo(14/3,10);\n> 12 |    await expect(page.getByRole('button',{name:'Phát từng bước',exact:true})).toBeDisabled();await page.emulateMedia({reducedMotion:'no-preference'});await page.getByRole('slider',{name:'Learning rate η'}).fill('.05');await page.getByRole('button',{name:'Phát từng bước',exact:true}).click();await expect.poll(async()=>(await output()).steps).toBeGreaterThan(0);await page.getByRole('button',{name:'Tạm dừng',exact:true}).click();const steps=(await output()).steps;await page.waitForTimeout(800);expect((await output()).steps).toBe(steps);await page.emulateMedia({reducedMotion:'reduce'});\n     |                                                                                                                                                                                                              ^\n  13 |   }\n  14 |   if(slug==='backpropagation'){await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('-2');expect((await output()).loss).toBe(12.5);expect((await output()).dw1).toBe(0);await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('0');await expect(page.getByRole('note')).toContainText('không có đạo hàm cổ điển');await page.getByRole('button',{name:'Nút h',exact:true}).focus();await page.keyboard.press('Enter');await expect(page.getByRole('button',{name:'Nút h',exact:true})).toHaveAttribute('aria-pressed','true');}\n  15 |  }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 206,
+                        "line": 12
+                      },
+                      "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByRole('slider', { name: 'Learning rate η' })\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"0.5\" value=\"0\" step=\"0.01\" type=\"range\" aria-label=\"Learning rate η\"/>\u001b[22m\n\u001b[2m    - fill(\".05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n  10 |   if(slug==='gradient-descent'){await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).loss).toBeCloseTo(127/135,10);expect((await output()).w).toBeCloseTo(22/15,10);\n  11 |    await page.getByRole('button',{name:'Đặt lại',exact:true}).click();await page.getByRole('slider',{name:'Learning rate η'}).fill('0');await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).w).toBe(1);expect((await output()).loss).toBeCloseTo(14/3,10);\n> 12 |    await expect(page.getByRole('button',{name:'Phát từng bước',exact:true})).toBeDisabled();await page.emulateMedia({reducedMotion:'no-preference'});await page.getByRole('slider',{name:'Learning rate η'}).fill('.05');await page.getByRole('button',{name:'Phát từng bước',exact:true}).click();await expect.poll(async()=>(await output()).steps).toBeGreaterThan(0);await page.getByRole('button',{name:'Tạm dừng',exact:true}).click();const steps=(await output()).steps;await page.waitForTimeout(800);expect((await output()).steps).toBe(steps);await page.emulateMedia({reducedMotion:'reduce'});\n     |                                                                                                                                                                                                              ^\n  13 |   }\n  14 |   if(slug==='backpropagation'){await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('-2');expect((await output()).loss).toBe(12.5);expect((await output()).dw1).toBe(0);await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('0');await expect(page.getByRole('note')).toContainText('không có đạo hàm cổ điển');await page.getByRole('button',{name:'Nút h',exact:true}).focus();await page.keyboard.press('Enter');await expect(page.getByRole('button',{name:'Nút h',exact:true})).toHaveAttribute('aria-pressed','true');}\n  15 |  }\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:12:206"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:02:44.672Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-formu-2b1cf-ls-steps-and-reduced-motion-chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 206,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-8ceb275cc9af7cf140cc",
+          "file": "learning-experiments.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "expanded lessons retain readable Vietnamese, math and keyboard tables in both themes at four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2882,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:264",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 264,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                        ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 264,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                        ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:264"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:02:49.570Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-expan-a17ea--both-themes-at-four-widths-chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 264,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-aeddec2f639f78b7a269",
+          "file": "learning-experiments.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "formula, shared code, plot and tables respond to controls, steps and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8136,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:02:53.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-9a41089e814790aeeb98",
+          "file": "learning-experiments.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "expanded lessons retain readable Vietnamese, math and keyboard tables in both themes at four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5194,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:264",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 264,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                        ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 264,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                        ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:264"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:03:02.252Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-expan-a17ea--both-themes-at-four-widths-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 264,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-4ffd828c1292ed9360f2",
+          "file": "learning-experiments.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "formula, shared code, plot and tables respond to controls, steps and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5560,
+                  "error": {
+                    "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByRole('slider', { name: 'Learning rate η' })\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"0.5\" value=\"0\" step=\"0.01\" type=\"range\" aria-label=\"Learning rate η\"/>\u001b[22m\n\u001b[2m    - fill(\".05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                    "stack": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByRole('slider', { name: 'Learning rate η' })\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"0.5\" value=\"0\" step=\"0.01\" type=\"range\" aria-label=\"Learning rate η\"/>\u001b[22m\n\u001b[2m    - fill(\".05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:12:206",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 206,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   if(slug==='gradient-descent'){await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).loss).toBeCloseTo(127/135,10);expect((await output()).w).toBeCloseTo(22/15,10);\n  11 |    await page.getByRole('button',{name:'Đặt lại',exact:true}).click();await page.getByRole('slider',{name:'Learning rate η'}).fill('0');await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).w).toBe(1);expect((await output()).loss).toBeCloseTo(14/3,10);\n> 12 |    await expect(page.getByRole('button',{name:'Phát từng bước',exact:true})).toBeDisabled();await page.emulateMedia({reducedMotion:'no-preference'});await page.getByRole('slider',{name:'Learning rate η'}).fill('.05');await page.getByRole('button',{name:'Phát từng bước',exact:true}).click();await expect.poll(async()=>(await output()).steps).toBeGreaterThan(0);await page.getByRole('button',{name:'Tạm dừng',exact:true}).click();const steps=(await output()).steps;await page.waitForTimeout(800);expect((await output()).steps).toBe(steps);await page.emulateMedia({reducedMotion:'reduce'});\n     |                                                                                                                                                                                                              ^\n  13 |   }\n  14 |   if(slug==='backpropagation'){await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('-2');expect((await output()).loss).toBe(12.5);expect((await output()).dw1).toBe(0);await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('0');await expect(page.getByRole('note')).toContainText('không có đạo hàm cổ điển');await page.getByRole('button',{name:'Nút h',exact:true}).focus();await page.keyboard.press('Enter');await expect(page.getByRole('button',{name:'Nút h',exact:true})).toHaveAttribute('aria-pressed','true');}\n  15 |  }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 206,
+                        "line": 12
+                      },
+                      "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByRole('slider', { name: 'Learning rate η' })\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"0.5\" value=\"0\" step=\"0.01\" type=\"range\" aria-label=\"Learning rate η\"/>\u001b[22m\n\u001b[2m    - fill(\".05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n  10 |   if(slug==='gradient-descent'){await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).loss).toBeCloseTo(127/135,10);expect((await output()).w).toBeCloseTo(22/15,10);\n  11 |    await page.getByRole('button',{name:'Đặt lại',exact:true}).click();await page.getByRole('slider',{name:'Learning rate η'}).fill('0');await page.getByRole('button',{name:'Chạy một bước',exact:true}).click();expect((await output()).w).toBe(1);expect((await output()).loss).toBeCloseTo(14/3,10);\n> 12 |    await expect(page.getByRole('button',{name:'Phát từng bước',exact:true})).toBeDisabled();await page.emulateMedia({reducedMotion:'no-preference'});await page.getByRole('slider',{name:'Learning rate η'}).fill('.05');await page.getByRole('button',{name:'Phát từng bước',exact:true}).click();await expect.poll(async()=>(await output()).steps).toBeGreaterThan(0);await page.getByRole('button',{name:'Tạm dừng',exact:true}).click();const steps=(await output()).steps;await page.waitForTimeout(800);expect((await output()).steps).toBe(steps);await page.emulateMedia({reducedMotion:'reduce'});\n     |                                                                                                                                                                                                              ^\n  13 |   }\n  14 |   if(slug==='backpropagation'){await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('-2');expect((await output()).loss).toBe(12.5);expect((await output()).dw1).toBe(0);await page.getByRole('slider',{name:'Trọng số w₁',exact:true}).fill('0');await expect(page.getByRole('note')).toContainText('không có đạo hàm cổ điển');await page.getByRole('button',{name:'Nút h',exact:true}).focus();await page.keyboard.press('Enter');await expect(page.getByRole('button',{name:'Nút h',exact:true})).toHaveAttribute('aria-pressed','true');}\n  15 |  }\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:12:206"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:03:08.493Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-formu-2b1cf-ls-steps-and-reduced-motion-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 206,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-58193e745a0463000291",
+          "file": "learning-experiments.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "expanded lessons retain readable Vietnamese, math and keyboard tables in both themes at four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7374,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:264",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 264,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                        ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 264,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                        ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:264"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:03:14.590Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-expan-a17ea--both-themes-at-four-widths-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 264,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-440f7bc31b3adfef2ac8",
+          "file": "learning-experiments.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T13:02:30.057Z",
+    "duration": 52461.818,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

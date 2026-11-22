@@ -1,0 +1,100 @@
+{
+  "recordedAt": "2026-10-27T14:18:05.983Z",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "win32",
+    "browser": "Installed Google Chrome via Playwright",
+    "framework": "Next.js 16.4.3 / React 19.3.1 / Prisma 5.20.0"
+  },
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "note": "Final production build passed; Prisma client unchanged; no whole-project tracing warnings."
+  },
+  "typecheck": {
+    "command": "npm run verify; tsc --noEmit --noUnusedLocals --noUnusedParameters",
+    "passed": true
+  },
+  "unitIntegration": {
+    "passed": 56,
+    "failed": 0
+  },
+  "e2e": {
+    "command": "PLAYWRIGHT_CHANNEL=chrome npm run e2e (PowerShell environment assignment)",
+    "passed": 21,
+    "failed": 0,
+    "durationMinutes": 2.1,
+    "widths": [
+      375,
+      768,
+      1440,
+      1920
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "isolatedDatabase": true,
+    "isolatedBuild": ".next-e2e",
+    "isolatedPort": 3100
+  },
+  "pyodide": {
+    "transport": "Direct Chromium CDN",
+    "passed": 12,
+    "failed": 0
+  },
+  "sourceLinks": {
+    "total": 80,
+    "passed": 80,
+    "failed": 0
+  },
+  "visual": {
+    "pages": 16,
+    "overflow": 0,
+    "unloadedFonts": 0,
+    "brokenImages": [],
+    "runtimeErrors": [],
+    "consoleErrors": []
+  },
+  "curriculumStructure": {
+    "lessons": 59,
+    "errors": 0,
+    "registryMappings": "52/52"
+  },
+  "pythonMath": {
+    "command": "python -X utf8 scripts/check_curriculum_math.py",
+    "passed": 4,
+    "blocked": 2,
+    "reason": "ModuleNotFoundError: No module named 'torch'; Python 3.14 environment, curriculum CPU recommends Python 3.12."
+  },
+  "auditProductionDependencies": {
+    "command": "npm audit --omit=dev --json",
+    "reportedVulnerabilities": 0
+  },
+  "lint": {
+    "available": false,
+    "note": "No lint script/config in the repository; strict TypeScript and unused checks run instead."
+  },
+  "live": {
+    "status": 200,
+    "title": "Học AI từ gốc | NeuralClone",
+    "canonical": "https://neuralclone.site"
+  },
+  "data": {
+    "initiallyEmpty": true,
+    "restoredFromRepository": true,
+    "backupDirectory": ".local/backups",
+    "courses": 3,
+    "lessons": 59,
+    "projects": 8,
+    "datasets": 4,
+    "resources": 8,
+    "applicationUsers": 0
+  },
+  "limits": [
+    "CPU PyTorch lab/notebook execution incomplete: torch unavailable.",
+    "No physical Android/iOS or Safari/Firefox test.",
+    "Live existing development process retained; no external deployment/DNS/Cloudflare changes.",
+    "CSP remains Report-Only; performance measurements are local lab observations without field INP."
+  ]
+}

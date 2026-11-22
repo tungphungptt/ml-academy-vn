@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Cùng demographic parity có bảo đảm cùng equal opportunity không?",
+  "options": [
+   "Có, hai tên cùng một metric",
+   "Không, selection rate và TPR có điều kiện khác nhau",
+   "Có nếu cùng số mẫu",
+   "Chỉ cần bỏ cột nhóm"
+  ],
+  "correct": 1,
+  "explanation": "Ví dụ có selection rate 0.5 cho cả hai nhưng TPR 0.5 và 1.0."
+ },
+ {
+  "prompt": "Bỏ tên người dùng và cột nhóm có đủ bảo đảm privacy/fairness không?",
+  "options": [
+   "Có",
+   "Không; còn proxy, khả năng liên kết và dữ liệu/nhãn",
+   "Có nếu accuracy cao",
+   "Có nếu không công khai weights"
+  ],
+  "correct": 1,
+  "explanation": "Pseudonymization và bỏ cột không tự ngăn suy ra thông tin hoặc thiên lệch qua proxy."
+ },
+ {
+  "prompt": "Model card nên ghi điều gì?",
+  "options": [
+   "Chỉ điểm tốt nhất",
+   "Mục đích, phiên bản, protocol/metric có mẫu số và giới hạn",
+   "Số benchmark tự ước lượng",
+   "Mật khẩu của môi trường train"
+  ],
+  "correct": 1,
+  "explanation": "Minh bạch mục đích và giới hạn cần số liệu có bằng chứng, không chứa secrets."
+ }
+]

@@ -1,0 +1,34 @@
+/* Full faces preserve Vietnamese combining clusters and shaping tables. */
+@font-face { font-family: "Lora"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("/fonts/neural-lora-normal-v1.woff2") format("woff2"); }
+@font-face { font-family: "Lora"; font-style: italic; font-weight: 400 700; font-display: swap; src: url("/fonts/neural-lora-italic-v1.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/be-vietnam-pro-italic-400-v3.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: italic; font-weight: 600; font-display: swap; src: url("/fonts/be-vietnam-pro-italic-600-v3.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-style: italic; font-weight: 700; font-display: swap; src: url("/fonts/be-vietnam-pro-italic-700-v3.woff2") format("woff2"); }
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/be-vietnam-pro-full-400-v2.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/be-vietnam-pro-full-500-v2.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/be-vietnam-pro-full-600-v2.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/be-vietnam-pro-full-700-v2.woff2") format("woff2");
+}

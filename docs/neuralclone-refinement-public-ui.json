@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-28T12:14:25.749Z",
+  "scope": "Four planned anonymous read-only pages; no retries or auth writes on live data",
+  "cases": [
+    {
+      "origin": "http://localhost:3000",
+      "theme": "light",
+      "width": 1440,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(244, 241, 234)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/local-light-1440.png"
+    },
+    {
+      "origin": "http://localhost:3000",
+      "theme": "dark",
+      "width": 375,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(23, 31, 28)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/local-dark-375.png"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "theme": "light",
+      "width": 1440,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(244, 241, 234)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/public-light-1440.png"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "theme": "dark",
+      "width": 375,
+      "console": [],
+      "failed": [],
+      "http": 200,
+      "computed": {
+        "headingFont": "Lora, Georgia, serif",
+        "bodyFont": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "bg": "rgb(23, 31, 28)",
+        "overflow": false
+      },
+      "screenshot": "docs/screenshots/refinement-public/public-dark-375.png"
+    }
+  ]
+}

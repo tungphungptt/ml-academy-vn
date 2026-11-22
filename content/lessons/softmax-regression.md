@@ -51,3 +51,11 @@ Các lớp loại trừ lẫn nhau cần phân phối softmax tổng bằng 1. M
 [Code Lab Softmax](/lab?lab=softmax_regression) có NumPy from scratch và scikit-learn. Iris 150 mẫu, chia phân tầng 105 train / 45 test, seed 42; StandardScaler chỉ fit trên train. Scratch trừ max logits, tính mean gradient của cross-entropy rồi cập nhật toàn batch; bản thư viện có regularization L2 mặc định nên không phải hai solver cho cùng một objective.
 
 Chạy `python labs/softmax_regression/scratch.py` và `python labs/softmax_regression/library.py`. Thực đo accuracy test tương ứng **0,867** và **0,911**. Không dùng chênh lệch trên 45 mẫu để kết luận thư viện luôn tốt hơn; muốn chọn LR/regularization cần validation/CV trên train. Bài tập mở rộng: kiểm tra gradient finite-difference tại một bộ weights nhỏ, rồi so sánh cả hai với cùng penalty và ngân sách tối ưu.
+
+## Tự kiểm chứng từng phép tính
+
+```neuralclone
+softmax
+```
+
+Mặc định logits=(2,1,0), nhãn 0: probability≈(.665241,.244728,.090031), loss≈.407606; tổng gradient logits bằng 0. Trừ max trước exp và tính loss bằng log-sum-exp. T mặc định bằng 1; khi thay T, gradient theo logits gốc có thêm hệ số 1/T. [D2L Softmax Regression](https://d2l.ai/chapter_linear-classification/softmax-regression.html).

@@ -39,7 +39,8 @@ print(json.dumps({'url':u,'status':s,'type':t,'file':str(f),'sha256':hashlib.sha
     for (const variant of lab.variants) {
       await page.getByRole('button', { name: variant === 'scratch' ? 'From Scratch' : 'Library-based', exact: true }).click();
       await page.getByRole('button', { name: '▶ Run' }).click();
-      await page.getByText('Hoàn tất.', { exact: true }).waitFor({ timeout: 85_000 });
+      await page.waitForFunction(() => /Hoàn tất\.|Lỗi\.|Đã dừng\./.test(document.querySelector('.lab-status')?.textContent ?? ''), {}, { timeout: 390_000 });
+      if (!(await page.locator('.lab-status').innerText()).includes('Hoàn tất.')) throw new Error((await page.locator('.lab-side [role=alert]').allTextContents()).join('\n'));
       const stdout = (await page.getByRole('heading', { name: 'Output', exact: true }).locator('xpath=following-sibling::pre[1]').innerText()).trim();
       const pass = stdout === lab.expected[variant];
       results.push({ id: lab.id, variant, stdout, expected: lab.expected[variant], pass });

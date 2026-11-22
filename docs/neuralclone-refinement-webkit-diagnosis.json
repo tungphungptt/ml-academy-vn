@@ -1,0 +1,215 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.apple.config.ts",
+      "--project",
+      "webkit",
+      "--grep",
+      "representative",
+      "--reporter=list,json"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.apple.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "apple-design.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "apple-design.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "apple-design.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "apple-design.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "apple-design.spec.ts",
+      "file": "apple-design.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "representative learning screens in both themes and four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 28051,
+                  "error": {
+                    "message": "TimeoutError: page.screenshot: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n",
+                    "stack": "TimeoutError: page.screenshot: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:72:44",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                      "column": 44,
+                      "line": 72
+                    },
+                    "snippet": "  70 |     await expect(p.locator('.katex-error')).toHaveCount(0);\n  71 |     expect(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${name}/${theme}/${width}`).toBe(true);\n> 72 |     currentCase.phase='screenshot';await p.screenshot({path:`${folder}/${name}-${theme}-${width}.png`,timeout:20000});\n     |                                            ^\n  73 |     if(name==='threshold')await p.locator('#threshold').screenshot({path:`${folder}/threshold-detail-${theme}-${width}.png`});\n  74 |     cases.push({name,theme,width,url});\n  75 |    }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                        "column": 44,
+                        "line": 72
+                      },
+                      "message": "TimeoutError: page.screenshot: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\n\n  70 |     await expect(p.locator('.katex-error')).toHaveCount(0);\n  71 |     expect(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${name}/${theme}/${width}`).toBe(true);\n> 72 |     currentCase.phase='screenshot';await p.screenshot({path:`${folder}/${name}-${theme}-${width}.png`,timeout:20000});\n     |                                            ^\n  73 |     if(name==='threshold')await p.locator('#threshold').screenshot({path:`${folder}/threshold-detail-${theme}-${width}.png`});\n  74 |     cases.push({name,theme,width,url});\n  75 |    }\n    at D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts:72:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T11:43:20.868Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\apple-design\\apple-design-representativ-ad1b3-both-themes-and-four-widths-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\apple-design.spec.ts",
+                    "column": 44,
+                    "line": 72
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a3b0356a19d16b4e1f5c-e64adb7e1d89a7b1c127",
+          "file": "apple-design.spec.ts",
+          "line": 43,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T11:43:05.632Z",
+    "duration": 43880.04,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

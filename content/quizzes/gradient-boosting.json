@@ -1,0 +1,35 @@
+[
+ {
+  "prompt": "Với squared loss, cây ở vòng boosting tiếp theo học mục tiêu nào?",
+  "options": [
+   "Nhãn gốc không phụ thuộc predictor hiện tại",
+   "Phần dư của predictor hiện tại",
+   "Nhãn dự đoán của tập test",
+   "Chỉ số thứ tự của mẫu"
+  ],
+  "correct": 1,
+  "explanation": "Phần dư bằng y trừ F hiện tại là negative gradient với squared loss theo quy ước trong bài."
+ },
+ {
+  "prompt": "Trong ví dụ bốn điểm, learning rate 0.5 làm MSE train từ 1 thành bao nhiêu?",
+  "options": [
+   "0",
+   "0.25",
+   "0.5",
+   "2"
+  ],
+  "correct": 1,
+  "explanation": "Sai số còn ±0.5 nên mean bình phương bằng 0.25; chưa nói gì về test."
+ },
+ {
+  "prompt": "Chọn số cây để tránh tuning trên test như thế nào?",
+  "options": [
+   "Chọn theo test thấp nhất",
+   "Chọn train error bằng 0",
+   "Chọn bằng validation/CV rồi chốt trước test",
+   "Luôn dùng 1000 cây"
+  ],
+  "correct": 2,
+  "explanation": "Số vòng là hyperparameter; chọn trên train/validation hoặc CV, test để đánh giá cuối."
+ }
+]

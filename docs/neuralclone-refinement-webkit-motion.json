@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-28T12:08:49.421Z",
+  "browser": "webkit",
+  "version": "27.2",
+  "pausedSamples": [
+    {
+      "time": 171,
+      "state": "paused"
+    },
+    {
+      "time": 171,
+      "state": "paused"
+    },
+    {
+      "time": 171,
+      "state": "paused"
+    },
+    {
+      "time": 171,
+      "state": "paused"
+    }
+  ],
+  "offscreenStep": "3",
+  "errors": [],
+  "scope": "Windows desktop engine, no physical device test"
+}

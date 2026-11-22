@@ -1,22 +1,22 @@
 [
- {
-  "prompt": "Trong ví dụ bài ($x=1,w_1=2,w_2=3,t=5$), $\\partial L/\\partial w_2$ bằng bao nhiêu?",
-  "options": [
-   "2",
-   "3",
-   "6"
-  ],
-  "correct": 0,
-  "explanation": "$(\\hat y-t)h=1\\cdot2=2$."
- },
- {
-  "prompt": "Nguyên lý toán học của backpropagation là gì?",
-  "options": [
-   "Chain rule",
-   "Định lý Bayes",
-   "Phân rã giá trị suy biến"
-  ],
-  "correct": 0,
-  "explanation": "Gradient được nhân dần theo chain rule từ loss về tham số."
- }
+  {
+    "prompt": "Trong ví dụ bài ($x=1,w_1=2,w_2=3,t=5$), $\\partial L/\\partial w_2$ bằng bao nhiêu?",
+    "options": [
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": 0,
+    "explanation": "∂L/∂w₂=(ŷ−t)h=1×2=2. Số 3 là gradient tới h, không phải w₂; số 6 là dự đoán ŷ, không phải đạo hàm. Giữ loss một nửa bình phương như bài."
+  },
+  {
+    "prompt": "Nguyên lý toán học của backpropagation là gì?",
+    "options": [
+      "Chain rule",
+      "Định lý Bayes",
+      "Phân rã giá trị suy biến"
+    ],
+    "correct": 0,
+    "explanation": "Backprop áp dụng chain rule và tái sử dụng giá trị forward. Các nhánh cùng đi vào một biến phải cộng gradient. Bayes mô tả cập nhật xác suất; SVD là phân rã ma trận, không phải quy tắc truyền gradient."
+  }
 ]

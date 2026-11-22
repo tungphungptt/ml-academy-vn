@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-28T10:07:52.723Z",
+  "candidates": [
+    {
+      "family": "Lora",
+      "body": "Be Vietnam Pro",
+      "specimens": 96,
+      "maxNFCNFDWidthDelta": 0,
+      "fonts": [
+        "Lora",
+        "Lora-SemiBold",
+        "LoraItalic-Italic",
+        "LoraItalic-Bold-Italic",
+        "BeVietnamPro-Regular",
+        "BeVietnamPro-SemiBold",
+        "BeVietnamPro-Italic",
+        "BeVietnamPro-BoldItalic"
+      ]
+    },
+    {
+      "family": "Newsreader",
+      "body": "Be Vietnam Pro",
+      "specimens": 96,
+      "maxNFCNFDWidthDelta": 0,
+      "fonts": [
+        "NewsreaderRoman",
+        "NewsreaderRoman-SemiBold",
+        "NewsreaderItalic-Italic",
+        "NewsreaderItalic-Bold-Italic",
+        "BeVietnamPro-Regular",
+        "BeVietnamPro-SemiBold",
+        "BeVietnamPro-Italic",
+        "BeVietnamPro-BoldItalic"
+      ]
+    }
+  ]
+}

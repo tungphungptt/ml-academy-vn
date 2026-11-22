@@ -1,0 +1,3436 @@
+{
+  "lessons": [
+    {
+      "slug": "python-ml",
+      "title": "Python cho ML",
+      "course": "python-math",
+      "objective": "nắm phần Python cần cho ML: hàm, list comprehension, generator, môi trường ảo.",
+      "prerequisites": [],
+      "words": 561,
+      "headings": [
+        "Vấn đề thực tế",
+        "Khái niệm chính",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://docs.python.org/3/tutorial/"
+      ],
+      "codeBlocks": [
+        "python",
+        "bash"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "numpy-pandas",
+      "title": "NumPy, pandas và Matplotlib",
+      "course": "python-math",
+      "objective": "dùng NumPy (broadcasting, chuẩn hóa), pandas (groupby) và Matplotlib để làm việc với dữ liệu.",
+      "prerequisites": [
+        "python-ml"
+      ],
+      "words": 574,
+      "headings": [
+        "Vấn đề thực tế",
+        "Khái niệm chính",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://numpy.org/doc/stable/user/absolute_beginners.html",
+        "https://pandas.pydata.org/docs/user_guide/index.html",
+        "https://matplotlib.org/stable/users/index.html"
+      ],
+      "codeBlocks": [
+        "python",
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Quy tắc broadcasting",
+          "/img/numpy-pandas.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "vectors-matrices",
+      "title": "Vector và ma trận",
+      "course": "python-math",
+      "objective": "hiểu tích vô hướng, chuẩn, độ tương đồng cosine, nhân ma trận và quy tắc về shape.",
+      "prerequisites": [
+        "numpy-pandas"
+      ],
+      "words": 502,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_preliminaries/linear-algebra.html"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hai vector và góc giữa chúng",
+          "/img/vectors-matrices.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "linear-algebra-decompositions",
+      "title": "Không gian vector, trị riêng và SVD",
+      "course": "python-math",
+      "objective": "giải thích không gian con, hạng, trị riêng và SVD; dùng phân rã để giải least squares khi ma trận suy biến.",
+      "prerequisites": [
+        "vectors-matrices"
+      ],
+      "words": 708,
+      "headings": [
+        "Từ tọa độ đến không gian con",
+        "Trị riêng và hình học",
+        "SVD áp dụng cả ma trận chữ nhật",
+        "Ví dụ có thể chạy",
+        "Khi nào dùng và lỗi thường gặp",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2017/06/07/svd/",
+        "https://machinelearningcoban.com/math/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "derivatives",
+      "title": "Đạo hàm và gradient",
+      "course": "python-math",
+      "objective": "hiểu đạo hàm, gradient, chain rule và kiểm tra bằng sai phân số học.",
+      "prerequisites": [
+        "vectors-matrices"
+      ],
+      "words": 444,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế của kiểm tra số học",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://cs231n.github.io/optimization-1/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Tiếp tuyến của parabol",
+          "/img/derivatives.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Đọc sâu, mở rộng và kiểm chứng số học",
+      "gap": "Chưa nối số trung gian với điều khiển/hình/code trong bài"
+    },
+    {
+      "slug": "probability",
+      "title": "Xác suất cơ bản",
+      "course": "python-math",
+      "objective": "hiểu kỳ vọng, phương sai, phân phối nhị thức và chuẩn, và trực giác Maximum Likelihood.",
+      "prerequisites": [
+        "python-ml"
+      ],
+      "words": 545,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_preliminaries/probability.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Phân phối chuẩn và khoảng một sigma",
+          "/img/probability.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "statistics",
+      "title": "Thống kê mô tả và ước lượng tham số",
+      "course": "python-math",
+      "objective": "tóm tắt dữ liệu bằng thống kê mô tả, phân biệt phương sai mẫu và tổng thể, và hiểu ước lượng Maximum Likelihood cho phân phối chuẩn.",
+      "prerequisites": [
+        "probability"
+      ],
+      "words": 542,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_preliminaries/probability.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Biểu đồ chấm với trung bình và trung vị",
+          "/img/statistics.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "bayesian-estimation",
+      "title": "Bayes, Maximum Likelihood và MAP",
+      "course": "python-math",
+      "objective": "phân biệt likelihood với posterior, suy ra MLE/MAP cho Bernoulli và hiểu regularization từ prior.",
+      "prerequisites": [
+        "probability",
+        "statistics"
+      ],
+      "words": 707,
+      "headings": [
+        "Một phép kiểm tra dương chưa phải xác suất mắc bệnh",
+        "MLE và MAP tối ưu những đại lượng khác nhau",
+        "Ví dụ và code CPU",
+        "Từ prior đến regularization",
+        "Điều kiện và lỗi thường gặp",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2017/07/09/prob/",
+        "https://machinelearningcoban.com/2017/07/17/mlemap/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "convex-optimization",
+      "title": "Tập lồi, hàm lồi và điều kiện tối ưu",
+      "course": "python-math",
+      "objective": "nhận ra bài toán lồi, phân biệt lồi/strictly convex và liên hệ điều kiện tối ưu với hồi quy, Logistic Regression, SVM.",
+      "prerequisites": [
+        "derivatives",
+        "linear-algebra-decompositions"
+      ],
+      "words": 667,
+      "headings": [
+        "Tập lồi và đoạn thẳng",
+        "Gradient, Hessian và điều kiện áp dụng",
+        "Ràng buộc và duality ở mức nhập môn",
+        "Ví dụ có thể kiểm tra",
+        "Cơ chế tối ưu và giới hạn",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2017/03/12/convexity/",
+        "https://machinelearningcoban.com/2017/03/19/convexopt/",
+        "https://machinelearningcoban.com/2017/04/02/duality/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "data-preparation",
+      "title": "Chuẩn bị dữ liệu: train/validation/test và dữ liệu thiếu",
+      "course": "python-math",
+      "objective": "chia dữ liệu train/validation/test, chuẩn hóa đúng cách và xử lý dữ liệu thiếu.",
+      "prerequisites": [
+        "numpy-pandas",
+        "statistics"
+      ],
+      "words": 551,
+      "headings": [
+        "Vấn đề thực tế",
+        "Quy tắc",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/preprocessing.html",
+        "https://scikit-learn.org/stable/modules/impute.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Chia train/validation/test",
+          "/img/data-preparation.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "metrics",
+      "title": "Metrics đánh giá mô hình",
+      "course": "python-math",
+      "objective": "đọc confusion matrix và chọn metric phù hợp.",
+      "prerequisites": [
+        "probability"
+      ],
+      "words": 497,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Khi nào dùng",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/model_evaluation.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Ma trận nhầm lẫn",
+          "/img/confusion-matrix.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "ml-intro",
+      "title": "AI, Machine Learning và Deep Learning",
+      "course": "ml-fundamentals",
+      "objective": "phân biệt AI, Machine Learning và Deep Learning, và nhận diện các dạng bài toán học máy.",
+      "prerequisites": [
+        "python-ml"
+      ],
+      "words": 606,
+      "headings": [
+        "Vấn đề thực tế",
+        "Các dạng bài toán",
+        "Quy trình chung",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/getting_started.html",
+        "https://machinelearningcoban.com/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Quan hệ giữa AI, ML và DL",
+          "/img/ml-intro.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "linear-regression",
+      "title": "Linear Regression",
+      "course": "ml-fundamentals",
+      "objective": "hiểu mô hình tuyến tính, hàm mất mát MSE và cách tìm tham số.",
+      "prerequisites": [
+        "vectors-matrices",
+        "derivatives",
+        "ml-intro"
+      ],
+      "words": 772,
+      "headings": [
+        "Vấn đề thực tế",
+        "Mô hình và công thức",
+        "Gradient: biết cần sửa trọng số theo hướng nào",
+        "Ví dụ từng bước",
+        "Code from scratch",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Tóm tắt",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/linear_model.html",
+        "https://d2l.ai/chapter_linear-regression/linear-regression.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đường hồi quy và sai số",
+          "/img/linear-regression.svg"
+        ]
+      ],
+      "labs": [
+        "linear_regression"
+      ],
+      "notebooks": [
+        "public/notebooks/linear_regression_library.ipynb",
+        "public/notebooks/linear_regression_scratch.ipynb"
+      ],
+      "depthReview": "Đọc sâu, mở rộng và kiểm chứng số học",
+      "gap": "Chưa nối số trung gian với điều khiển/hình/code trong bài"
+    },
+    {
+      "slug": "loss-functions",
+      "title": "Loss Functions: MSE, MAE, Huber, Cross-Entropy",
+      "course": "ml-fundamentals",
+      "objective": "hiểu và chọn hàm mất mát: MSE, MAE, Huber, Binary Cross-Entropy, Cross-Entropy.",
+      "prerequisites": [
+        "linear-regression",
+        "probability"
+      ],
+      "words": 672,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_linear-regression/index.html",
+        "https://cs231n.github.io/linear-classify/"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "So sánh MSE, MAE và Huber",
+          "/img/loss-functions.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "gradient-descent",
+      "title": "Gradient Descent",
+      "course": "ml-fundamentals",
+      "objective": "hiểu quy tắc cập nhật của Gradient Descent, vai trò của learning rate và khác biệt giữa Batch, SGD, Mini-batch.",
+      "prerequisites": [
+        "linear-regression",
+        "loss-functions",
+        "derivatives"
+      ],
+      "words": 1005,
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Ba biến thể",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo",
+        "Thực nghiệm Batch, SGD và mini-batch từ đầu"
+      ],
+      "sources": [
+        "https://cs231n.github.io/optimization-1/",
+        "https://scikit-learn.org/stable/modules/sgd.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hoạt ảnh Gradient Descent trên parabol",
+          "/img/gradient-descent.svg"
+        ]
+      ],
+      "labs": [
+        "linear_regression"
+      ],
+      "notebooks": [
+        "public/notebooks/linear_regression_library.ipynb",
+        "public/notebooks/linear_regression_scratch.ipynb"
+      ],
+      "depthReview": "Đọc sâu, mở rộng và kiểm chứng số học",
+      "gap": "Chưa nối số trung gian với điều khiển/hình/code trong bài"
+    },
+    {
+      "slug": "ridge-lasso",
+      "title": "Ridge và Lasso",
+      "course": "ml-fundamentals",
+      "objective": "hiểu regularization L2 (Ridge) và L1 (Lasso).",
+      "prerequisites": [
+        "linear-regression",
+        "gradient-descent"
+      ],
+      "words": 595,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+        "https://scikit-learn.org/stable/modules/linear_model.html#lasso"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hệ số Ridge và Lasso theo lambda",
+          "/img/ridge-lasso.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "polynomial-regression",
+      "title": "Polynomial Regression",
+      "course": "ml-fundamentals",
+      "objective": "hiểu cách mô hình tuyến tính khớp được đường cong bằng đặc trưng đa thức.",
+      "prerequisites": [
+        "ridge-lasso"
+      ],
+      "words": 474,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/linear_model.html#polynomial-regression-extending-linear-models-with-basis-functions"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đường thẳng và parabol trên cùng dữ liệu",
+          "/img/polynomial-regression.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "bias-variance",
+      "title": "Bias-Variance và Overfitting",
+      "course": "ml-fundamentals",
+      "objective": "phân biệt underfitting và overfitting qua bias và variance, và đọc được chênh lệch giữa lỗi train và test.",
+      "prerequisites": [
+        "linear-regression",
+        "statistics"
+      ],
+      "words": 707,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Cách xử lý",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Lỗi train và test theo độ phức tạp",
+          "/img/bias-variance.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "logistic-regression",
+      "title": "Logistic Regression",
+      "course": "ml-fundamentals",
+      "objective": "hiểu sigmoid, cross-entropy và cách huấn luyện phân loại nhị phân.",
+      "prerequisites": [
+        "gradient-descent",
+        "probability",
+        "loss-functions"
+      ],
+      "words": 483,
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác và công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+      ],
+      "codeBlocks": [],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đường sigmoid và ranh giới quyết định",
+          "/img/logistic-regression.svg"
+        ]
+      ],
+      "labs": [
+        "logistic_regression"
+      ],
+      "notebooks": [
+        "public/notebooks/logistic_regression_library.ipynb",
+        "public/notebooks/logistic_regression_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Không có code inline; cần cân nhắc ví dụ chạy được khi phù hợp"
+    },
+    {
+      "slug": "softmax-regression",
+      "title": "Softmax Regression",
+      "course": "ml-fundamentals",
+      "objective": "hiểu softmax, cross-entropy đa lớp và gradient $p-y$.",
+      "prerequisites": [
+        "logistic-regression"
+      ],
+      "words": 589,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo",
+        "Thực hành hai cách triển khai"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression",
+        "https://d2l.ai/chapter_linear-classification/index.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Logits và xác suất softmax",
+          "/img/softmax-regression.svg"
+        ]
+      ],
+      "labs": [
+        "softmax_regression"
+      ],
+      "notebooks": [
+        "public/notebooks/softmax_regression_library.ipynb",
+        "public/notebooks/softmax_regression_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "knn",
+      "title": "KNN",
+      "course": "ml-fundamentals",
+      "objective": "hiểu KNN phân loại thế nào, tác động của $K$ lên ranh giới quyết định, và khi nào KNN gặp khó.",
+      "prerequisites": [
+        "vectors-matrices",
+        "data-preparation",
+        "metrics"
+      ],
+      "words": 720,
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Ảnh hưởng của K, decision boundary và đánh giá",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "So sánh",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/neighbors.html",
+        "https://cs231n.github.io/classification/"
+      ],
+      "codeBlocks": [],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Minh họa KNN với K=3",
+          "/img/knn.svg"
+        ]
+      ],
+      "labs": [
+        "knn"
+      ],
+      "notebooks": [
+        "public/notebooks/knn_library.ipynb",
+        "public/notebooks/knn_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Không có code inline; cần cân nhắc ví dụ chạy được khi phù hợp"
+    },
+    {
+      "slug": "decision-tree",
+      "title": "Decision Tree",
+      "course": "ml-fundamentals",
+      "objective": "hiểu cách cây chọn điểm chia bằng Gini và vì sao cây dễ overfit.",
+      "prerequisites": [
+        "metrics",
+        "data-preparation"
+      ],
+      "words": 493,
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác và công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/tree.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Cây quyết định và độ giảm Gini",
+          "/img/decision-tree.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "naive-bayes",
+      "title": "Naive Bayes",
+      "course": "ml-fundamentals",
+      "objective": "hiểu định lý Bayes và giả định độc lập có điều kiện.",
+      "prerequisites": [
+        "bayesian-estimation"
+      ],
+      "words": 469,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/naive_bayes.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Xác suất trước và sau khi thấy từ",
+          "/img/naive-bayes.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "svm",
+      "title": "SVM",
+      "course": "ml-fundamentals",
+      "objective": "hiểu lề (margin), hinge loss và kernel trick.",
+      "prerequisites": [
+        "logistic-regression",
+        "convex-optimization"
+      ],
+      "words": 730,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Objective và dự đoán đa lớp",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/svm.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Siêu phẳng và lề của SVM",
+          "/img/svm.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "random-forest",
+      "title": "Random Forest",
+      "course": "ml-fundamentals",
+      "objective": "hiểu bagging, tính ngẫu nhiên của Random Forest và vì sao ensemble giảm phương sai.",
+      "prerequisites": [
+        "decision-tree"
+      ],
+      "words": 586,
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác và công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Ba cây bỏ phiếu",
+          "/img/random-forest.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "k-means",
+      "title": "K-Means",
+      "course": "ml-fundamentals",
+      "objective": "hiểu thuật toán K-Means, hàm mục tiêu inertia và các hạn chế của nó.",
+      "prerequisites": [
+        "vectors-matrices"
+      ],
+      "words": 646,
+      "headings": [
+        "Vấn đề thực tế",
+        "Trực giác",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+      ],
+      "codeBlocks": [],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Kết quả K-Means với ba cụm",
+          "/img/kmeans.svg"
+        ]
+      ],
+      "labs": [
+        "kmeans"
+      ],
+      "notebooks": [
+        "public/notebooks/kmeans_library.ipynb",
+        "public/notebooks/kmeans_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Không có code inline; cần cân nhắc ví dụ chạy được khi phù hợp"
+    },
+    {
+      "slug": "pca",
+      "title": "PCA",
+      "course": "ml-fundamentals",
+      "objective": "hiểu PCA tìm hướng có phương sai lớn nhất.",
+      "prerequisites": [
+        "linear-algebra-decompositions",
+        "data-preparation"
+      ],
+      "words": 483,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Các thành phần chính trong PCA",
+          "/img/pca.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "lda",
+      "title": "Linear Discriminant Analysis: giảm chiều có giám sát",
+      "course": "ml-fundamentals",
+      "objective": "phân biệt giảm chiều không giám sát với Linear Discriminant Analysis có giám sát; hiểu giả định Gaussian chung covariance.",
+      "prerequisites": [
+        "pca",
+        "bayesian-estimation"
+      ],
+      "words": 647,
+      "headings": [
+        "Phương sai lớn không nhất thiết giúp phân lớp",
+        "Fisher criterion và giới hạn số chiều",
+        "LDA như classifier xác suất",
+        "Thực hành CPU trên Iris",
+        "Lỗi thường gặp và trường hợp sử dụng",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2017/06/30/lda/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "gmm",
+      "title": "Gaussian Mixture Models",
+      "course": "ml-fundamentals",
+      "objective": "hiểu mô hình hỗn hợp Gauss và \"trách nhiệm\" (responsibility), khác biệt với K-Means.",
+      "prerequisites": [
+        "k-means",
+        "bayesian-estimation"
+      ],
+      "words": 567,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/mixture.html"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hai thành phần Gauss",
+          "/img/gmm.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "anomaly-detection",
+      "title": "Anomaly Detection",
+      "course": "ml-fundamentals",
+      "objective": "phát hiện giá trị bất thường bằng z-score, IQR và z-score bền vững (median/MAD), và hiểu vì sao ngoại lai có thể \"che giấu\" chính nó.",
+      "prerequisites": [
+        "pca",
+        "statistics"
+      ],
+      "words": 543,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Các hướng khác",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/outlier_detection.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Ngoại lai trên trục số",
+          "/img/anomaly-detection.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "cross-validation",
+      "title": "Cross-validation",
+      "course": "ml-fundamentals",
+      "objective": "hiểu K-fold cross-validation và dùng nó để chọn mô hình, siêu tham số.",
+      "prerequisites": [
+        "data-preparation",
+        "metrics",
+        "linear-regression"
+      ],
+      "words": 615,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/cross_validation.html"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Sơ đồ 5-fold cross-validation",
+          "/img/kfold.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "feature-leakage",
+      "title": "Feature Engineering và Data Leakage",
+      "course": "ml-fundamentals",
+      "objective": "nhận ra và tránh rò rỉ dữ liệu (data leakage) khi tiền xử lý và chọn đặc trưng.",
+      "prerequisites": [
+        "cross-validation"
+      ],
+      "words": 723,
+      "headings": [
+        "Vấn đề thực tế",
+        "Nguyên tắc",
+        "Ví dụ từng bước (thí nghiệm trên dữ liệu nhiễu thuần túy)",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Feature Engineering ngắn gọn",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/common_pitfalls.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Rò rỉ dữ liệu so với pipeline đúng",
+          "/img/feature-leakage.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "tabular-pipeline",
+      "title": "Thực hành dữ liệu bảng: EDA, encoding và pipeline",
+      "course": "ml-fundamentals",
+      "objective": "xây pipeline dữ liệu bảng có cột số/categorical, xử lý thiếu và category mới mà không nhìn nhãn test.",
+      "prerequisites": [
+        "feature-leakage",
+        "logistic-regression"
+      ],
+      "words": 798,
+      "headings": [
+        "Bài toán và hợp đồng dữ liệu",
+        "Quy trình có thể tái lập",
+        "Thực hành và kết quả quan sát",
+        "Giả định, ưu nhược điểm và lỗi thường gặp",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/tabml_book/ch_intro/main_contents.html",
+        "https://machinelearningcoban.com/general/2017/02/06/featureengineering/"
+      ],
+      "codeBlocks": [
+        "bash"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [
+        "tabular_pipeline"
+      ],
+      "notebooks": [
+        "public/notebooks/tabular_pipeline_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "recommendation",
+      "title": "Recommendation Systems",
+      "course": "ml-fundamentals",
+      "objective": "hiểu collaborative filtering dựa trên người dùng.",
+      "prerequisites": [
+        "knn",
+        "linear-algebra-decompositions"
+      ],
+      "words": 775,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Content-based: từ đặc trưng tới điểm gợi ý",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Dự đoán đánh giá còn thiếu",
+          "/img/recommendation.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "title": "Hyperparameter Tuning",
+      "course": "ml-fundamentals",
+      "objective": "chọn siêu tham số bằng Grid Search kết hợp cross-validation.",
+      "prerequisites": [
+        "cross-validation",
+        "svm"
+      ],
+      "words": 551,
+      "headings": [
+        "Vấn đề thực tế",
+        "Phương pháp",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/grid_search.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Lưới siêu tham số",
+          "/img/hyperparameter-tuning.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "ml-project-workflow",
+      "title": "Quy trình dự án Machine Learning",
+      "course": "ml-fundamentals",
+      "objective": "nắm quy trình một dự án ML từ đầu đến cuối.",
+      "prerequisites": [
+        "tabular-pipeline",
+        "hyperparameter-tuning"
+      ],
+      "words": 574,
+      "headings": [
+        "Các bước",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/compose.html",
+        "https://scikit-learn.org/stable/model_persistence.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Các bước của dự án ML",
+          "/img/ml-project-workflow.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "model-deployment",
+      "title": "Lưu mô hình và triển khai",
+      "course": "ml-fundamentals",
+      "objective": "lưu mô hình đã huấn luyện, nạp lại để suy luận và hiểu các bước đưa mô hình vào dịch vụ.",
+      "prerequisites": [
+        "ml-project-workflow"
+      ],
+      "words": 1004,
+      "headings": [
+        "Vấn đề thực tế",
+        "Nguyên tắc",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo",
+        "Serving CPU hoàn chỉnh để kiểm tra hợp đồng"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/model_persistence.html",
+        "https://fastapi.tiangolo.com/"
+      ],
+      "codeBlocks": [
+        "python",
+        ""
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Quy trình lưu và triển khai mô hình",
+          "/img/model-deployment.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "gradient-boosting",
+      "title": "Gradient Boosting: học từ phần dư",
+      "course": "ml-fundamentals",
+      "objective": "giải thích boosting tuần tự, tự tính một bước sửa phần dư và chọn số bước bằng validation.",
+      "prerequisites": [
+        "decision-tree",
+        "gradient-descent",
+        "cross-validation"
+      ],
+      "words": 826,
+      "headings": [
+        "Một mô hình học từ sai lầm của mô hình trước",
+        "Từ phần dư đến negative gradient",
+        "Ví dụ tự tính và kiểm chứng",
+        "Từ ví dụ đến thực hành với thư viện",
+        "Lỗi thường gặp và hiểu lầm",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting",
+        "https://scikit-learn.org/stable/common_pitfalls.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Một bước boosting sửa phần dư của dự đoán ban đầu",
+          "/img/gradient-boosting.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "imbalanced-learning",
+      "title": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+      "course": "ml-fundamentals",
+      "objective": "phân biệt ranking, calibration và quyết định; chọn ngưỡng trên validation theo chi phí; đánh giá lệch lớp không làm rò rỉ test.",
+      "prerequisites": [
+        "logistic-regression",
+        "metrics",
+        "cross-validation",
+        "feature-leakage"
+      ],
+      "words": 908,
+      "headings": [
+        "Accuracy cao có thể che giấu điều gì?",
+        "Quyết định theo chi phí",
+        "Một bảng điểm minh họa",
+        "Protocol tránh tự đánh lừa",
+        "Lỗi thường gặp và hiểu lầm",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/classification_threshold.html",
+        "https://scikit-learn.org/stable/modules/calibration.html",
+        "https://scikit-learn.org/stable/modules/model_evaluation.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Ngưỡng thay đổi false positive, false negative và chi phí",
+          "/img/imbalanced-learning.svg"
+        ]
+      ],
+      "labs": [
+        "threshold_cost"
+      ],
+      "notebooks": [
+        "public/notebooks/threshold_cost_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "title": "MLOps: tái lập thí nghiệm, versioning và drift",
+      "course": "ml-fundamentals",
+      "objective": "tạo manifest thí nghiệm có thể truy vết; phân biệt seed với tái lập; thiết kế monitoring và rollback trước khi cần huấn luyện lại.",
+      "prerequisites": [
+        "ml-project-workflow",
+        "model-deployment",
+        "feature-leakage"
+      ],
+      "words": 1060,
+      "headings": [
+        "Mô hình là một phần của hệ thống",
+        "Manifest tối thiểu",
+        "Seed không phải phép màu",
+        "Drift và suy giảm chất lượng khác nhau",
+        "Từ artifact đến vòng phản hồi",
+        "Lỗi thường gặp và hiểu lầm",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://developers.google.com/machine-learning/crash-course/production-ml-systems/monitoring",
+        "https://docs.pytorch.org/docs/stable/notes/randomness.html",
+        "https://scikit-learn.org/stable/model_persistence.html"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Vòng đời dữ liệu, thí nghiệm, registry, serving và giám sát",
+          "/img/mlops-reproducibility.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "responsible-ai",
+      "title": "Responsible AI: fairness, privacy và model cards",
+      "course": "ml-fundamentals",
+      "objective": "đặt câu hỏi về tác động trước metric; tính hai tiêu chí fairness khác nhau; nhận diện giới hạn privacy và ghi lại mục đích/giới hạn của mô hình.",
+      "prerequisites": [
+        "metrics",
+        "imbalanced-learning",
+        "mlops-reproducibility"
+      ],
+      "words": 1335,
+      "headings": [
+        "Bắt đầu từ ai chịu tác động",
+        "Fairness có nhiều định nghĩa",
+        "Ví dụ: cùng selection rate, khác TPR",
+        "Bỏ cột nhạy cảm không tự xóa bias",
+        "Privacy và model security",
+        "Tài liệu hóa để người khác đánh giá được",
+        "Lỗi thường gặp khi kết luận fairness và privacy",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://developers.google.com/machine-learning/crash-course/fairness/demographic-parity",
+        "https://www.nist.gov/itl/ai-risk-management-framework",
+        "https://arxiv.org/abs/1810.03993",
+        "https://arxiv.org/abs/1803.09010",
+        "https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hai nhóm có cùng tỷ lệ chọn nhưng khác tỷ lệ phát hiện dương tính",
+          "/img/responsible-ai.svg"
+        ]
+      ],
+      "labs": [
+        "threshold_cost"
+      ],
+      "notebooks": [
+        "public/notebooks/threshold_cost_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "perceptron",
+      "title": "Perceptron",
+      "course": "deep-learning",
+      "objective": "hiểu luật cập nhật Perceptron và điều kiện hội tụ.",
+      "prerequisites": [
+        "logistic-regression"
+      ],
+      "words": 483,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế, so sánh",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/linear_model.html#perceptron",
+        "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+      ],
+      "codeBlocks": [],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đường phân tách của Perceptron",
+          "/img/perceptron.svg"
+        ]
+      ],
+      "labs": [
+        "perceptron"
+      ],
+      "notebooks": [
+        "public/notebooks/perceptron_library.ipynb",
+        "public/notebooks/perceptron_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Không có code inline; cần cân nhắc ví dụ chạy được khi phù hợp"
+    },
+    {
+      "slug": "activations",
+      "title": "Activation Functions",
+      "course": "deep-learning",
+      "objective": "biết các hàm kích hoạt phổ biến và ưu nhược điểm của từng loại.",
+      "prerequisites": [
+        "perceptron",
+        "derivatives"
+      ],
+      "words": 552,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Cách chọn",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_multilayer-perceptrons/index.html",
+        "https://cs231n.github.io/neural-networks-1/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đồ thị sigmoid, tanh và ReLU",
+          "/img/activations.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "mlp",
+      "title": "MLP",
+      "course": "deep-learning",
+      "objective": "hiểu forward pass của MLP và tensor shape.",
+      "prerequisites": [
+        "perceptron",
+        "activations"
+      ],
+      "words": 471,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_multilayer-perceptrons/index.html"
+      ],
+      "codeBlocks": [],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Sơ đồ mạng MLP 2-3-1",
+          "/img/mlp.svg"
+        ]
+      ],
+      "labs": [
+        "mlp_torch"
+      ],
+      "notebooks": [
+        "public/notebooks/mlp_torch_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Không có code inline; cần cân nhắc ví dụ chạy được khi phù hợp"
+    },
+    {
+      "slug": "backpropagation",
+      "title": "Backpropagation",
+      "course": "deep-learning",
+      "objective": "tính gradient qua mạng bằng chain rule.",
+      "prerequisites": [
+        "mlp",
+        "derivatives"
+      ],
+      "words": 473,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://cs231n.github.io/optimization-2/"
+      ],
+      "codeBlocks": [],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đồ thị tính toán forward và backward",
+          "/img/backpropagation.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Đọc sâu, mở rộng và kiểm chứng số học",
+      "gap": "Chưa nối số trung gian với điều khiển/hình/code trong bài"
+    },
+    {
+      "slug": "autograd",
+      "title": "Automatic Differentiation (Autograd)",
+      "course": "deep-learning",
+      "objective": "hiểu automatic differentiation: xây đồ thị tính toán rồi lan truyền gradient ngược.",
+      "prerequisites": [
+        "backpropagation"
+      ],
+      "words": 690,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức và ý tưởng",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://docs.pytorch.org/tutorials/",
+        "https://cs231n.github.io/optimization-2/"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đồ thị autograd cho f = a·b + c",
+          "/img/autograd.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "optimizers",
+      "title": "Optimizers",
+      "course": "deep-learning",
+      "objective": "hiểu Momentum và Adam khác gì Gradient Descent thuần.",
+      "prerequisites": [
+        "gradient-descent",
+        "backpropagation"
+      ],
+      "words": 597,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_optimization/index.html",
+        "https://arxiv.org/abs/1412.6980"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Quỹ đạo GD và Momentum",
+          "/img/optimizers.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "training-diagnostics",
+      "title": "Chẩn đoán huấn luyện: khởi tạo, gradient và normalization",
+      "course": "deep-learning",
+      "objective": "chẩn đoán loss không giảm, NaN và gradient bất thường; chọn khởi tạo, normalization, split và metric có căn cứ.",
+      "prerequisites": [
+        "autograd",
+        "optimizers"
+      ],
+      "words": 798,
+      "headings": [
+        "Bắt đầu từ hợp đồng, không bắt đầu từ mạng lớn",
+        "Khởi tạo và gradient",
+        "BatchNorm và LayerNorm",
+        "Kiểm tra interface chạy được, không phải benchmark",
+        "Checklist thí nghiệm",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+        "https://d2l.ai/chapter_attention-mechanisms-and-transformers/transformer.html",
+        "https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "dl-regularization",
+      "title": "Regularization và Learning Rate Scheduling",
+      "course": "deep-learning",
+      "objective": "hiểu Dropout, Batch Normalization, Weight Decay, Early Stopping và lập lịch learning rate.",
+      "prerequisites": [
+        "training-diagnostics",
+        "optimizers"
+      ],
+      "words": 752,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức và ý tưởng",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_multilayer-perceptrons/index.html",
+        "https://cs231n.github.io/neural-networks-3/"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Dropout và BatchNorm",
+          "/img/dl-regularization.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "pytorch-practice",
+      "title": "Thực hành PyTorch: MLP và CNN",
+      "course": "deep-learning",
+      "objective": "biết khung huấn luyện chuẩn của PyTorch và cách tính shape khi xây CNN.",
+      "prerequisites": [
+        "dl-regularization",
+        "autograd"
+      ],
+      "words": 554,
+      "headings": [
+        "Vòng lặp huấn luyện",
+        "Ví dụ tính shape cho CNN (ảnh xám 28×28)",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://docs.pytorch.org/tutorials/"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Shape qua các lớp của CNN",
+          "/img/pytorch-practice.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "embeddings",
+      "title": "Embeddings và biểu diễn văn bản",
+      "course": "deep-learning",
+      "objective": "biểu diễn văn bản thành vector: Bag-of-Words, TF-IDF và ý tưởng embedding.",
+      "prerequisites": [
+        "vectors-matrices",
+        "knn"
+      ],
+      "words": 601,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Ma trận tương đồng TF-IDF",
+          "/img/embeddings.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "cnn",
+      "title": "CNN",
+      "course": "deep-learning",
+      "objective": "hiểu phép tích chập, padding, stride, pooling và cách tính kích thước.",
+      "prerequisites": [
+        "mlp",
+        "training-diagnostics"
+      ],
+      "words": 519,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://cs231n.github.io/convolutional-networks/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hoạt ảnh phép tích chập",
+          "/img/conv.svg"
+        ]
+      ],
+      "labs": [
+        "cnn_cpu"
+      ],
+      "notebooks": [
+        "public/notebooks/cnn_cpu_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "cnn-practice",
+      "title": "Thực hành CNN: bộ lọc tích chập làm đặc trưng",
+      "course": "deep-learning",
+      "objective": "dùng bộ lọc tích chập, ReLU và max pooling như một bước trích xuất đặc trưng trên ảnh chữ số thật, rồi so sánh với việc dùng thẳng điểm ảnh.",
+      "prerequisites": [
+        "cnn",
+        "logistic-regression"
+      ],
+      "words": 732,
+      "headings": [
+        "Vấn đề thực tế",
+        "Quy trình",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://cs231n.github.io/convolutional-networks/",
+        "https://scikit-learn.org/stable/datasets/toy_dataset.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Hoạt ảnh phép tích chập",
+          "/img/conv.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "cnn-cpu",
+      "title": "Thực hành CNN thật trên CPU với Digits",
+      "course": "deep-learning",
+      "objective": "huấn luyện bộ lọc convolution thực sự trên CPU, chọn checkpoint bằng validation và so sánh với baseline.",
+      "prerequisites": [
+        "cnn",
+        "pytorch-practice"
+      ],
+      "words": 757,
+      "headings": [
+        "Bài này khác bộ lọc chọn tay thế nào?",
+        "Dữ liệu, kiến trúc và phép đếm",
+        "Quy trình thực nghiệm CPU",
+        "Kết quả thực đo và cách diễn giải",
+        "Lỗi thường gặp và giới hạn",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2018/10/03/conv2d",
+        "https://cs231n.stanford.edu/",
+        "https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+      ],
+      "codeBlocks": [
+        "bash"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [
+        "cnn_cpu"
+      ],
+      "notebooks": [
+        "public/notebooks/cnn_cpu_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "rnn-lstm",
+      "title": "RNN và LSTM",
+      "course": "deep-learning",
+      "objective": "hiểu trạng thái ẩn của RNN và cổng của LSTM.",
+      "prerequisites": [
+        "mlp",
+        "backpropagation"
+      ],
+      "words": 511,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_recurrent-neural-networks/index.html",
+        "https://d2l.ai/chapter_recurrent-modern/index.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "RNN trải theo thời gian",
+          "/img/rnn-lstm.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "sequence-models-cpu",
+      "title": "Thực hành GRU: dự báo chuỗi trên CPU",
+      "course": "deep-learning",
+      "objective": "huấn luyện GRU dự báo một bước, kiểm soát ranh giới thời gian và so sánh với dự báo giá trị cuối.",
+      "prerequisites": [
+        "rnn-lstm",
+        "pytorch-practice"
+      ],
+      "words": 726,
+      "headings": [
+        "Bài toán và dữ liệu tự sinh",
+        "GRU và BPTT trong code",
+        "Chạy thí nghiệm hoàn chỉnh",
+        "Kết quả và giới hạn",
+        "Lỗi thường gặp",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://d2l.ai/chapter_recurrent-modern/gru.html",
+        "https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+      ],
+      "codeBlocks": [
+        "bash"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [
+        "sequence_cpu"
+      ],
+      "notebooks": [
+        "public/notebooks/sequence_cpu_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "attention-transformer",
+      "title": "Attention và Transformer",
+      "course": "deep-learning",
+      "objective": "hiểu scaled dot-product attention. Bài này tập trung vào attention; multi-head và positional encoding chỉ được giới thiệu ngắn.",
+      "prerequisites": [
+        "softmax-regression",
+        "mlp"
+      ],
+      "words": 626,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1706.03762",
+        "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Trọng số attention",
+          "/img/attention.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "transformer-architecture",
+      "title": "Kiến trúc Transformer",
+      "course": "deep-learning",
+      "objective": "hiểu các thành phần của một khối Transformer: multi-head attention, positional encoding, feed-forward, kết nối tắt và chuẩn hóa.",
+      "prerequisites": [
+        "attention-transformer",
+        "embeddings",
+        "training-diagnostics"
+      ],
+      "words": 1272,
+      "headings": [
+        "Vấn đề thực tế",
+        "Các thành phần",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Từ Transformer gốc đến các biến thể hiện đại",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo",
+        "Kiểm tra encoder, position, padding và causal mask bằng PyTorch",
+        "Kiểm tra decoder và cross-attention trên CPU"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2104.09864",
+        "https://arxiv.org/abs/1706.03762",
+        "https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html"
+      ],
+      "codeBlocks": [
+        "python",
+        "python",
+        "python",
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Sơ đồ khối Transformer",
+          "/img/transformer-architecture.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "autoencoder",
+      "title": "Autoencoder",
+      "course": "deep-learning",
+      "objective": "hiểu autoencoder, lỗi tái tạo, và mối liên hệ với PCA.",
+      "prerequisites": [
+        "pca",
+        "mlp",
+        "backpropagation"
+      ],
+      "words": 795,
+      "headings": [
+        "Vấn đề thực tế",
+        "Công thức",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2017/06/07/svd/",
+        "https://d2l.ai/",
+        "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+      ],
+      "codeBlocks": [
+        "python",
+        "bash"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Cấu trúc autoencoder",
+          "/img/autoencoder.svg"
+        ]
+      ],
+      "labs": [
+        "autoencoder_cpu"
+      ],
+      "notebooks": [
+        "public/notebooks/autoencoder_cpu_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "transfer-learning",
+      "title": "Transfer Learning",
+      "course": "deep-learning",
+      "objective": "hiểu khi nào và làm thế nào tái sử dụng mô hình đã huấn luyện sẵn (pretrained).",
+      "prerequisites": [
+        "cnn-cpu",
+        "optimizers"
+      ],
+      "words": 1115,
+      "headings": [
+        "Vấn đề thực tế",
+        "Hai chiến lược",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo",
+        "Thực nghiệm feature extraction và fine-tuning trên CPU"
+      ],
+      "sources": [
+        "https://cs231n.github.io/transfer-learning/",
+        "https://docs.pytorch.org/tutorials/"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Đóng băng thân và huấn luyện lớp mới",
+          "/img/transfer-learning.svg"
+        ]
+      ],
+      "labs": [
+        "transfer_cpu"
+      ],
+      "notebooks": [
+        "public/notebooks/transfer_cpu_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "gan-vae-diffusion",
+      "title": "GAN, VAE và Diffusion",
+      "course": "deep-learning",
+      "objective": "nắm ý tưởng chính của GAN, VAE và Diffusion ở mức nhập môn. Bài này không có bài thực hành huấn luyện.",
+      "prerequisites": [
+        "autoencoder",
+        "bayesian-estimation"
+      ],
+      "words": 646,
+      "headings": [
+        "Vấn đề thực tế",
+        "Ba hướng tiếp cận",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Ưu điểm, hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1406.2661",
+        "https://arxiv.org/abs/1312.6114",
+        "https://arxiv.org/abs/2006.11239"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "GAN, VAE và Diffusion",
+          "/img/gan-vae-diffusion.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "text-classification",
+      "title": "Phân loại cảm xúc văn bản",
+      "course": "deep-learning",
+      "objective": "xây một bộ phân loại cảm xúc văn bản đơn giản bằng TF-IDF và Logistic Regression, và nhìn đúng giới hạn của nó.",
+      "prerequisites": [
+        "embeddings",
+        "logistic-regression"
+      ],
+      "words": 713,
+      "headings": [
+        "Vấn đề thực tế",
+        "Ví dụ từng bước",
+        "Code và cách chạy",
+        "Lỗi thường gặp",
+        "Hạn chế",
+        "Bài tập",
+        "Tóm tắt",
+        "Điều kiện áp dụng và kiểm tra kết luận",
+        "Đáp án và tiêu chí chấm",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 2,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Pipeline phân loại văn bản",
+          "/img/text-classification.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "neural-recommendation",
+      "title": "Thực hành recommender với embedding học được",
+      "course": "deep-learning",
+      "objective": "học embedding người dùng/mục trên các rating đã quan sát; phân biệt rating regression, ranking và cold start.",
+      "prerequisites": [
+        "embeddings",
+        "recommendation",
+        "optimizers"
+      ],
+      "words": 805,
+      "headings": [
+        "Từ bảng thưa tới tham số học được",
+        "Dữ liệu và split của lab",
+        "Chạy thực nghiệm",
+        "Kết quả thực đo",
+        "Cold start, ranking và representation",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://machinelearningcoban.com/2017/05/31/matrixfactorization/",
+        "https://machinelearningcoban.com/tabml_book/ch_embedding/embedding.html",
+        "https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "https://docs.pytorch.org/docs/2.14/generated/torch.optim.AdamW.html"
+      ],
+      "codeBlocks": [
+        "bash"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [],
+      "labs": [
+        "neural_recommendation"
+      ],
+      "notebooks": [
+        "public/notebooks/neural_recommendation_library.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "llm-foundations",
+      "title": "Nền tảng LLM: tokenization, pretraining và suy luận",
+      "course": "deep-learning",
+      "objective": "nối tokenizer, embedding, causal Transformer và next-token loss; phân biệt pretraining, fine-tuning và inference; đọc giới hạn của một language model.",
+      "prerequisites": [
+        "transformer-architecture",
+        "embeddings",
+        "text-classification"
+      ],
+      "words": 1031,
+      "headings": [
+        "Từ chuỗi chữ đến bài toán dự đoán",
+        "Token không đồng nghĩa từ, ký tự hay byte",
+        "Mục tiêu next-token và teacher forcing",
+        "Pretraining, fine-tuning và sử dụng mô hình",
+        "Giới hạn và mở rộng đa phương thức",
+        "Lỗi thường gặp và hiểu lầm",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://huggingface.co/learn/llm-course/chapter6/5",
+        "https://huggingface.co/learn/llm-course/chapter7/6",
+        "https://developers.google.com/machine-learning/crash-course/llm"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Pipeline token IDs, embedding, causal Transformer và logits",
+          "/img/llm-foundations.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "efficient-finetuning",
+      "title": "PEFT, LoRA và lượng tử hóa mô hình",
+      "course": "deep-learning",
+      "objective": "tính shape/số tham số của LoRA, hiểu giới hạn lượng tử hóa và phân biệt ví dụ đại số với một thí nghiệm fine-tuning hoàn chỉnh.",
+      "prerequisites": [
+        "llm-foundations",
+        "transfer-learning",
+        "linear-algebra-decompositions"
+      ],
+      "words": 1014,
+      "headings": [
+        "Khi không đủ tài nguyên để cập nhật mọi trọng số",
+        "LoRA: cập nhật hạng thấp",
+        "Kiểm chứng số tham số và phép merge",
+        "Quantization và QLoRA khác nhau ở đâu?",
+        "Thiết kế thí nghiệm thực tế",
+        "Lỗi thường gặp khi diễn giải kết quả",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2106.09685",
+        "https://arxiv.org/abs/2305.14314",
+        "https://huggingface.co/docs/peft/main/en/conceptual_guides/lora",
+        "https://huggingface.co/docs/transformers/quantization/bitsandbytes"
+      ],
+      "codeBlocks": [
+        "python",
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Một nhánh trọng số cố định và một nhánh cập nhật LoRA",
+          "/img/efficient-finetuning.svg"
+        ]
+      ],
+      "labs": [],
+      "notebooks": [],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "rag-vector-search",
+      "title": "RAG và vector search: truy xuất có bằng chứng",
+      "course": "deep-learning",
+      "objective": "xây sơ đồ RAG có nguồn và quyền truy cập; tính cosine/Recall@k; tách lỗi truy xuất khỏi lỗi trả lời.",
+      "prerequisites": [
+        "llm-foundations",
+        "text-classification",
+        "vectors-matrices"
+      ],
+      "words": 1048,
+      "headings": [
+        "Vì sao không chỉ hỏi mô hình?",
+        "Hai pipeline, hai loại lỗi",
+        "Lexical search, dense vector và hybrid",
+        "Ví dụ tính được, không giả lập một LLM",
+        "Thiết kế đánh giá có ích",
+        "Ranh giới bảo mật cần có",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2005.11401",
+        "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction",
+        "https://arxiv.org/abs/2302.12173"
+      ],
+      "codeBlocks": [
+        "python"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Pipeline truy xuất có ranh giới quyền và kiểm tra bằng chứng",
+          "/img/rag-vector-search.svg"
+        ]
+      ],
+      "labs": [
+        "rag_retrieval"
+      ],
+      "notebooks": [
+        "public/notebooks/rag_retrieval_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "title": "Đánh giá LLM, hallucination và prompt injection",
+      "course": "deep-learning",
+      "objective": "lập bộ eval có rubric và trường hợp từ chối; phân biệt hallucination với prompt injection; đặt kiểm soát quyền ở ngoài mô hình.",
+      "prerequisites": [
+        "rag-vector-search",
+        "metrics",
+        "feature-leakage"
+      ],
+      "words": 1107,
+      "headings": [
+        "Trả lời hay chưa đủ để đưa vào sử dụng",
+        "Tách các tầng đánh giá",
+        "Coverage và độ chính xác có điều kiện",
+        "Prompt injection là vấn đề ranh giới tin cậy",
+        "Bộ kiểm thử tối thiểu và vận hành",
+        "Bài tập tự đánh giá",
+        "Đáp án và tiêu chí chấm",
+        "Tổng kết",
+        "Nguồn tham khảo"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2302.12173",
+        "https://www.nist.gov/itl/ai-risk-management-framework",
+        "https://arxiv.org/abs/1810.03993"
+      ],
+      "codeBlocks": [
+        "python",
+        "text"
+      ],
+      "quizCount": 3,
+      "quizExplanations": true,
+      "images": [
+        [
+          "Dữ liệu không tin cậy đi qua mô hình nhưng không vượt ranh giới cấp quyền",
+          "/img/llm-evaluation-security.svg"
+        ]
+      ],
+      "labs": [
+        "rag_retrieval"
+      ],
+      "notebooks": [
+        "public/notebooks/rag_retrieval_scratch.ipynb"
+      ],
+      "depthReview": "Kiểm kê cấu trúc; chưa xác nhận mọi khẳng định khoa học trong lượt này",
+      "gap": "Cần kiểm chứng thêm độ sâu và tương tác theo chủ đề; giữ nguyên"
+    }
+  ],
+  "labs": [
+    {
+      "id": "linear_regression",
+      "title": "Linear Regression",
+      "description": "Hồi quy tuyến tính với $\\hat y=wx+b$, tối thiểu hóa $L=\\frac1N\\sum_i(\\hat y_i-y_i)^2$ trên dữ liệu $y=2x$. So sánh bản NumPy với scikit-learn.",
+      "runtime": "pyodide",
+      "variants": [
+        "scratch",
+        "library"
+      ],
+      "expected": {
+        "scratch": "w=1.999 b=0.002 mse=0.000000",
+        "library": "w=2.000 b=0.000"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/linear_regression_scratch.ipynb",
+        "library": "/notebooks/linear_regression_library.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "136922455bb124db0d4ee4ce69319e0cadb8dc4b9ee872c7cbdc7c68599e004d",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        },
+        "library": {
+          "sha256": "91cee6bce8ccffd893e0ce1d16b6993eafcfc1209143edddab889f5e2c68b061",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "linear-regression",
+        "gradient-descent"
+      ]
+    },
+    {
+      "id": "knn",
+      "title": "K-Nearest Neighbors",
+      "description": "Phân loại 2 lớp bằng KNN, đánh giá trên tập test.",
+      "runtime": "pyodide",
+      "variants": [
+        "scratch",
+        "library"
+      ],
+      "expected": {
+        "scratch": "Do chinh xac KNN (k=5): 1.000",
+        "library": "Do chinh xac KNN (k=5): 1.000"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/knn_scratch.ipynb",
+        "library": "/notebooks/knn_library.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "3959c6b7d963bdaaeb21d440c531a5a844c34e97e3ae413017f00e0ab1d56c7e",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        },
+        "library": {
+          "sha256": "d9b7ed79680f6acd69a27ff39815884e9a76d0bf89c954053c79ccd01fdebaa9",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "knn"
+      ]
+    },
+    {
+      "id": "kmeans",
+      "title": "K-Means",
+      "description": "Phân cụm 3 nhóm, báo cáo inertia.",
+      "runtime": "pyodide",
+      "variants": [
+        "scratch",
+        "library"
+      ],
+      "expected": {
+        "scratch": "Inertia: 69.24",
+        "library": "Inertia: 69.24"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/kmeans_scratch.ipynb",
+        "library": "/notebooks/kmeans_library.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "991b0fce7f16cf5f50840b93ab8c7192ce6544d7436a650566bcafdef9e39104",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        },
+        "library": {
+          "sha256": "22df9afea011d8326c1fa9428d98128259321b65f4361fa307379f992b456f04",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "k-means"
+      ]
+    },
+    {
+      "id": "logistic_regression",
+      "title": "Logistic Regression",
+      "description": "Phân loại nhị phân: sigmoid, cross-entropy và gradient descent.",
+      "runtime": "pyodide",
+      "variants": [
+        "scratch",
+        "library"
+      ],
+      "expected": {
+        "scratch": "loss=0.0575 accuracy=0.980",
+        "library": "accuracy=0.980"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/logistic_regression_scratch.ipynb",
+        "library": "/notebooks/logistic_regression_library.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "c223cca8ac7229f1acc462b684b304b71fed5421b7b1b368198eb8ee1fbc91ec",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        },
+        "library": {
+          "sha256": "ed8515d09084ffd6cff4930037598bee1df601b6575b3e59bd228ce4896e9356",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "logistic-regression"
+      ]
+    },
+    {
+      "id": "perceptron",
+      "title": "Perceptron",
+      "description": "Luật cập nhật Perceptron trên dữ liệu khả tách tuyến tính.",
+      "runtime": "pyodide",
+      "variants": [
+        "scratch",
+        "library"
+      ],
+      "expected": {
+        "scratch": "epoch=2 loi_cuoi_epoch=0 accuracy=1.000",
+        "library": "accuracy=1.000"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/perceptron_scratch.ipynb",
+        "library": "/notebooks/perceptron_library.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "45cdca190a6497a8cd5c95a91157a411e9b4c3b8af656bcfc6a4bfb06e7b7d6d",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        },
+        "library": {
+          "sha256": "95640e8aace1db2a13587e10c1bbc744b49ad443b4993163d98921f8e9e0cc51",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "perceptron"
+      ]
+    },
+    {
+      "id": "mlp_torch",
+      "title": "MLP với PyTorch (XOR)",
+      "description": "Forward, loss, backward, optimizer. Cần PyTorch nên chỉ chạy local/Colab.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "loss=0.0002 pred=[0, 1, 1, 0]"
+      },
+      "notebooks": {
+        "library": "/notebooks/mlp_torch_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "b4468d3c3aa2127fcefe5b4d6b3e757c90cc50f7c1e1e95c8cebcdd57a8c970c",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "mlp"
+      ]
+    },
+    {
+      "id": "softmax_regression",
+      "title": "Softmax Regression: NumPy và scikit-learn",
+      "description": "Iris 3 lớp; scaling chỉ fit train; so sánh softmax tự viết với LogisticRegression.",
+      "runtime": "pyodide",
+      "variants": [
+        "scratch",
+        "library"
+      ],
+      "expected": {
+        "scratch": "test_accuracy=0.867",
+        "library": "test_accuracy=0.911"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/softmax_regression_scratch.ipynb",
+        "library": "/notebooks/softmax_regression_library.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "c1c33efb4a81a58fb67fa2b01c808e8f97ad71c7757446a2bbcf86c155154759",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        },
+        "library": {
+          "sha256": "9080aa2684166509f1a0369adaf48cad146edfff752ad24f2271d4ec60d39232",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "softmax-regression"
+      ]
+    },
+    {
+      "id": "tabular_pipeline",
+      "title": "Pipeline dữ liệu bảng",
+      "description": "EDA trên train, missing/outlier, encoding và chọn đặc trưng nằm trong cross-validation.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "{\"baseline_auc\": 0.5, \"cv_auc_mean\": 0.9855, \"test_auc\": 0.9247, \"test_f1\": 0.9048, \"test_samples\": 125, \"train_outlier_flags\": 19, \"train_samples\": 375}"
+      },
+      "notebooks": {
+        "library": "/notebooks/tabular_pipeline_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "d9c234dc3c6137b898c12f009891b2dabb3e0f99f9e1c7f1d6a6bf5256bf8c0a",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "tabular-pipeline"
+      ]
+    },
+    {
+      "id": "cnn_cpu",
+      "title": "CNN ảnh nhỏ trên CPU",
+      "description": "Digits 8×8: baseline, train/validation/test, scheduler, clipping, checkpoint và reload.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}"
+      },
+      "notebooks": {
+        "library": "/notebooks/cnn_cpu_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "810e7844efad8ea354eb0d2fb108643a5108e7ff2f9e5cf4ea015e72abdd6a02",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "cnn-cpu",
+        "cnn"
+      ]
+    },
+    {
+      "id": "sequence_cpu",
+      "title": "Dự đoán chuỗi bằng GRU",
+      "description": "Chuỗi tổng hợp, chronological split, persistence baseline và scaling train-only.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "{\"baseline_mse\": 0.004598, \"best_epoch\": 38, \"test_mse\": 0.001828, \"test_samples\": 160, \"train_samples\": 628, \"val_samples\": 160}"
+      },
+      "notebooks": {
+        "library": "/notebooks/sequence_cpu_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "4cd1a1ddc5b09f3689b95aecc58d3634d91ae1088bf147e5a10f1324d05232f3",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "sequence-models-cpu"
+      ]
+    },
+    {
+      "id": "neural_recommendation",
+      "title": "Embedding recommendation",
+      "description": "Ratings tổng hợp, warm-start split, mean baseline và validation checkpoint.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "{\"baseline_rmse\": 0.8339, \"test_ratings\": 108, \"test_rmse\": 0.0392, \"train_ratings\": 504, \"val_ratings\": 108}"
+      },
+      "notebooks": {
+        "library": "/notebooks/neural_recommendation_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "bae12206cd79f564e0c6a1710b8e5b91db7ccedb5b98e852990f364322954bd6",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "neural-recommendation"
+      ]
+    },
+    {
+      "id": "autoencoder_cpu",
+      "title": "Autoencoder với Iris",
+      "description": "Bottleneck 2 chiều, train-only scaling, validation và so sánh PCA trên test.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "{\"pca_test_mse\": 0.0257, \"test_mse\": 0.0279, \"test_samples\": 30, \"train_samples\": 90, \"val_samples\": 30}"
+      },
+      "notebooks": {
+        "library": "/notebooks/autoencoder_cpu_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "1decfb86823a09afa487f25ba711d784301efca493e545071422478c16b6c4e8",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "autoencoder"
+      ]
+    },
+    {
+      "id": "transfer_cpu",
+      "title": "Feature extraction và fine-tuning CPU",
+      "description": "Pretrain Digits, chuyển sang parity cùng miền; xác nhận backbone đóng băng và fine-tune riêng.",
+      "runtime": "local",
+      "variants": [
+        "library"
+      ],
+      "expected": {
+        "library": "{\"augmentation\": false, \"baseline_accuracy\": 0.9639, \"best_epoch\": 16, \"reload_equal\": true, \"test_accuracy\": 0.95, \"test_samples\": 360, \"train_samples\": 1149, \"val_samples\": 288}\n{\"backbone_unchanged_when_frozen\": true, \"fine_tune_accuracy\": 0.9306, \"frozen_accuracy\": 0.9167, \"target\": \"digit parity; same-domain transfer\"}"
+      },
+      "notebooks": {
+        "library": "/notebooks/transfer_cpu_library.ipynb"
+      },
+      "verification": {
+        "library": {
+          "sha256": "27f9b7547d1d660b992942f7a7224220c95afb07b4b93bf96b8faf235beee811",
+          "versions": {
+            "python": "3.12.14",
+            "numpy": "2.3.5",
+            "pandas": "2.2.3",
+            "matplotlib": "3.10.8",
+            "scikit-learn": "1.8.0",
+            "torch": "2.14.1+cpu"
+          }
+        }
+      },
+      "lessonSlugs": [
+        "transfer-learning"
+      ]
+    },
+    {
+      "id": "threshold_cost",
+      "title": "Ngưỡng quyết định và chi phí FP/FN",
+      "description": "Tính confusion counts và chi phí trên tám score tự tạo. Không huấn luyện mô hình hoặc dùng test để chọn ngưỡng.",
+      "lessonSlugs": [
+        "imbalanced-learning",
+        "responsible-ai"
+      ],
+      "runtime": "pyodide",
+      "variants": [
+        "scratch"
+      ],
+      "expected": {
+        "scratch": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/threshold_cost_scratch.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "903f0ae016cbd9f430497c77e1df0c74aba2df228346fbb5baea17b012efa593",
+          "python": "3.14.7",
+          "command": "python labs/threshold_cost/scratch.py",
+          "passed": true
+        }
+      }
+    },
+    {
+      "id": "rag_retrieval",
+      "title": "Truy xuất văn bản: baseline TF-IDF",
+      "description": "Truy xuất thật bằng TF-IDF/cosine trên ba tài liệu tự biên soạn, áp allowed IDs và từ chối khi không có từ vựng chung. Không có mô hình sinh câu trả lời.",
+      "lessonSlugs": [
+        "rag-vector-search",
+        "llm-evaluation-security"
+      ],
+      "runtime": "pyodide",
+      "variants": [
+        "scratch"
+      ],
+      "expected": {
+        "scratch": "retrieved=split\nunknown_query=abstain acl_check=passed"
+      },
+      "notebooks": {
+        "scratch": "/notebooks/rag_retrieval_scratch.ipynb"
+      },
+      "verification": {
+        "scratch": {
+          "sha256": "df60b3563bfb73be307c34bc97d59c6bd47649c916bac1ebb8c07eb2e3b8b655",
+          "python": "3.14.7",
+          "command": "python labs/rag_retrieval/scratch.py",
+          "passed": true
+        }
+      }
+    }
+  ],
+  "scope": "Baseline inventory of full Markdown/quiz files and catalog mappings; deep semantic verification is limited to the four selected lessons."
+}

@@ -1,0 +1,156 @@
+{
+  "checkedDate": "2026-10-27",
+  "method": "Read primary documentation/original papers through web tools; HTTP link check is separate and does not prove every claim.",
+  "sources": [
+    {
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://www.tensorflow.org/tutorials",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://huggingface.co/learn",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/index",
+      "classification": "curriculum",
+      "purpose": "Đối chiếu phạm vi nền tảng và chương trình học"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/classification_threshold.html",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/calibration.html",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://developers.google.com/machine-learning/crash-course/production-ml-systems/monitoring",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/notes/randomness.html",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter6/5",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter7/6",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/quantization/bitsandbytes",
+      "classification": "practice",
+      "purpose": "Phương pháp phổ biến; API và backend cần khóa phiên bản"
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.09685",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.14314",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://arxiv.org/abs/2005.11401",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://arxiv.org/abs/2104.09864",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://arxiv.org/abs/1810.03993",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://arxiv.org/abs/1803.09010",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf",
+      "classification": "original-research",
+      "purpose": "Công trình gốc; không dùng benchmark ngoài làm kết quả NeuralClone"
+    },
+    {
+      "url": "https://arxiv.org/abs/2302.12173",
+      "classification": "evolving",
+      "purpose": "Đánh giá, prompt injection và API đang phát triển; cần kiểm chứng theo ứng dụng"
+    },
+    {
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "classification": "evolving",
+      "purpose": "Đánh giá, prompt injection và API đang phát triển; cần kiểm chứng theo ứng dụng"
+    },
+    {
+      "url": "https://huggingface.co/docs/peft/main/en/conceptual_guides/lora",
+      "classification": "evolving",
+      "purpose": "Đánh giá, prompt injection và API đang phát triển; cần kiểm chứng theo ứng dụng"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/53/iris",
+      "classification": "dataset-provenance",
+      "purpose": "Kiểm tra nguồn/giấy phép riêng của dữ liệu"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+      "classification": "dataset-provenance",
+      "purpose": "Kiểm tra nguồn/giấy phép riêng của dữ liệu"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/datasets/toy_dataset.html",
+      "classification": "dataset-provenance",
+      "purpose": "Kiểm tra nguồn/giấy phép riêng của dữ liệu"
+    },
+    {
+      "url": "https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html",
+      "classification": "dataset-provenance",
+      "purpose": "Kiểm tra nguồn/giấy phép riêng của dữ liệu"
+    }
+  ],
+  "limitations": [
+    "PEFT stable conceptual URL unavailable; main documentation used explicitly.",
+    "UCI Digits page could not be read; no dataset license inferred.",
+    "Not an exhaustive survey of all research published through October 2026."
+  ]
+}

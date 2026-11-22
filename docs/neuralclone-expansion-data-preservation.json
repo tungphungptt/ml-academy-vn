@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-10-29T06:16:00.025Z",
+  "backup": ".local/expansion-start/before.db",
+  "integrity": {
+    "quick_check": "ok"
+  },
+  "tables": [
+    {
+      "table": "Bookmark",
+      "rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "Course",
+      "rows": 3,
+      "unchanged": true
+    },
+    {
+      "table": "Dataset",
+      "rows": 4,
+      "unchanged": true
+    },
+    {
+      "table": "Lesson",
+      "rows": 67,
+      "unchanged": true
+    },
+    {
+      "table": "LessonProgress",
+      "rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "Module",
+      "rows": 12,
+      "unchanged": true
+    },
+    {
+      "table": "Note",
+      "rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "PasswordReset",
+      "rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "Project",
+      "rows": 8,
+      "unchanged": true
+    },
+    {
+      "table": "Quiz",
+      "rows": 67,
+      "unchanged": true
+    },
+    {
+      "table": "QuizAttempt",
+      "rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "QuizQuestion",
+      "rows": 157,
+      "unchanged": false
+    },
+    {
+      "table": "Resource",
+      "rows": 8,
+      "unchanged": true
+    },
+    {
+      "table": "SourceReference",
+      "rows": 99,
+      "unchanged": true
+    },
+    {
+      "table": "StudyTime",
+      "rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "User",
+      "rows": 0,
+      "unchanged": true
+    }
+  ],
+  "questionChanges": [
+    {
+      "id": "cmvqqvazb001jv5ryq8b7id2x",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvazb001lv5rycvmbiv28",
+      "fields": [
+        "prompt",
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb0a0040v5ry5c8kk0hz",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb0b0042v5rypnqksfqv",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb0g004qv5rypvyqh0ha",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb0h004sv5ryjhcnjwd4",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb0h004uv5ryxmxxi1zr",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb3x00crv5ry4f8d0c8f",
+      "fields": [
+        "explanation"
+      ]
+    },
+    {
+      "id": "cmvqqvb3y00ctv5ryvy0yc7x8",
+      "fields": [
+        "explanation"
+      ]
+    }
+  ],
+  "allOtherDataAndQuestionKeysPreserved": true,
+  "baselineFiles": 3231,
+  "priorUncommittedWorkPreserved": true
+}

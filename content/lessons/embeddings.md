@@ -30,7 +30,7 @@ Kết quả kỳ vọng (đã chạy cục bộ): `(3, 9) 0.634 0.0`.
 Fit TF-IDF trên cả tập test (rò rỉ); bỏ qua tách từ tiếng Việt (từ ghép như "học máy" bị tách thành hai từ ở đây); coi TF-IDF nắm được nghĩa (nó chỉ dựa trên từ trùng nhau, "tốt" và "xuất sắc" không liên quan).
 
 ## Ưu điểm, hạn chế
-TF-IDF đơn giản, mạnh làm baseline. Không nắm trật tự từ và ngữ nghĩa; embedding học từ dữ liệu lớn khắc phục điểm này nhưng cần huấn luyện (xem [lab embedding user/item](/learn/neural-recommendation), không nhầm với embedding từ ngữ).
+TF-IDF đơn giản, mạnh làm baseline. TF-IDF unigram bỏ qua thứ tự từ. Embedding có thể học quan hệ ngữ cảnh, nhưng bảng vector tĩnh không tự mô hình hóa thứ tự câu; cần mô hình chuỗi hoặc thông tin vị trí. N-gram giữ được một phần thứ tự cục bộ. Embedding học được cần huấn luyện (xem [lab embedding user/item](/learn/neural-recommendation), không nhầm với embedding từ ngữ).
 
 ## Bài tập
 1. (Dễ) Tính cosine của $(1,0)$ và $(1,1)$. 2. (Vừa) Thêm một câu mới và xem ma trận tương đồng. 3. (Khó) Huấn luyện Logistic Regression phân loại cảm xúc trên TF-IDF.

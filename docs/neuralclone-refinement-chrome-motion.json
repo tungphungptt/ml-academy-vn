@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-28T12:08:30.857Z",
+  "browser": "chrome",
+  "version": "156.0.8078.49",
+  "video": "D:\\Projects\\ml-academy-vn\\docs\\videos\\refinement\\page@f8578d50a526439acd047dad8bb21d4c.webm",
+  "pausedSamples": [
+    {
+      "time": 116.52000000181717,
+      "state": "paused"
+    },
+    {
+      "time": 116.52000000181717,
+      "state": "paused"
+    },
+    {
+      "time": 116.52000000181717,
+      "state": "paused"
+    },
+    {
+      "time": 116.52000000181717,
+      "state": "paused"
+    }
+  ],
+  "offscreenStep": "0",
+  "errors": [],
+  "scope": "Windows desktop engine, no physical device test"
+}

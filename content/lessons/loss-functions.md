@@ -21,6 +21,45 @@ Hình dùng đường $\tfrac12e^2$ (nhãn “½·MSE”) để so với nhánh 
 ## Ví dụ từng bước
 $y=3,\hat y=5$ ($e=2$): MSE (dạng $e^2$) $=4$, MAE $=2$, Huber với $\delta=1$ $=1\cdot(2-0.5)=1.5$. BCE khi $y=1,p=0.8$: $-\ln0.8\approx0.2231$; khi $y=0,p=0.8$: $-\ln0.2\approx1.6094$ (dự đoán tự tin nhưng sai bị phạt nặng). Với 4 sai số $(1,1,1,10)$: MSE trung bình $=25.75$, MAE trung bình $=3.25$: một ngoại lai chi phối MSE.
 
+## Một loss cho một mẫu, một objective cho cả tập
+
+Các biểu thức $e^2$, $|e|$ và Huber ở trên là loss **mỗi mẫu**. Với $N$ mẫu có cùng trọng số, objective trung bình là $L=N^{-1}\sum_i\ell_i$. Không bỏ mẫu dự đoán sai hoặc chia cho số mẫu có lỗi. Chẳng hạn residual $(0,0,3)$ cho MSE bằng $(0+0+9)/3=3$, không phải 9. Khi đổi từ mean sang sum, gradient nhân $N$; giữ nguyên learning rate sẽ đổi độ dài bước cập nhật.
+
+Loss đo sai lệch trên nhãn có sẵn; nó không tự đo khả năng tổng quát hóa. Hai mô hình có cùng train loss vẫn có thể khác validation loss. Với MSE, bình phương còn đổi đơn vị: nếu residual là mét thì MSE là mét vuông. Không so MSE của hai mục tiêu khác đơn vị mà chưa chuẩn hóa ý nghĩa.
+
+## Huber thay đổi lực kéo của ngoại lai thế nào?
+
+Đạo hàm theo residual chính là đạo hàm theo dự đoán khi giữ nhãn cố định, vì $e=\hat y-y$ và $\partial e/\partial\hat y=1$:
+
+$$
+\frac{\partial\ell_{Huber}}{\partial e}=
+\begin{cases}e,&|e|\le\delta\\\delta\,\operatorname{sign}(e),&|e|>\delta.\end{cases}
+$$
+
+Tại $e=2,\delta=1$, Huber bằng 1.5 và đạo hàm bằng 1; MSE bằng 4 và đạo hàm bằng 4; MAE bằng 2 và đạo hàm bằng 1. Với $e=10$, gradient Huber vẫn bằng 1, trong khi gradient MSE tăng lên 20. Huber giới hạn **độ lớn gradient theo residual**, không giới hạn giá trị loss: loss vẫn tăng khi sai số tăng.
+
+Hai nhánh nối tại $|e|=\delta$ với cùng giá trị $\delta^2/2$ và cùng đạo hàm. MAE không có đạo hàm cổ điển tại 0; mọi số trong $[-1,1]$ là subgradient tại đó. Bảng thí nghiệm ghi rõ “không khả vi” thay vì gán nhầm một đạo hàm duy nhất.
+
+```neuralclone
+loss
+```
+
+Đổi residual qua −δ, 0 và δ; so sánh giá trị loss với đạo hàm, rồi tăng δ. Hình vẽ dùng **MSE đầy đủ $e^2$**, khác hình tĩnh ½·MSE phía trên. Mỗi điểm, bảng và JSON lấy từ `regressionLoss(error, delta)`. Delta phải dương; 0 không phải cấu hình Huber hợp lệ. [Tài liệu HuberLoss của PyTorch](https://docs.pytorch.org/docs/2.15/generated/torch.nn.HuberLoss.html) cũng phân biệt Huber với SmoothL1: nói chung hai loss khác nhau một hệ số δ, chỉ trùng khi δ=1.
+
+## BCE từ logits: giữ đúng số trước khi lấy log
+
+Với $p=\sigma(z)$ và nhãn $y\in\{0,1\}$, thay sigmoid vào BCE rồi thu gọn cho:
+
+$$
+\ell(z,y)=\max(z,0)-yz+\log(1+\exp(-|z|)).
+$$
+
+Trong biểu thức này, số mũ luôn không dương. Với nhãn nhị phân, phần tuyến tính còn có thể viết thành $\max(-z,0)$ khi y=1 và $\max(z,0)$ khi y=0; code dùng dạng này. `log1p(u)` tính $\log(1+u)$ chính xác hơn khi u rất nhỏ.
+
+Ví dụ $z=1000,y=0$ có loss xấp xỉ 1000, dù sigmoid trên máy đã có thể làm tròn thành 1. Nếu lấy `log(1-p)` từ probability đã làm tròn, phép tính sẽ hỏng. Khi $z=1000,y=1$, loss gần 0; đây là giới hạn số học, không phải lý do bỏ mẫu. [BCEWithLogitsLoss](https://docs.pytorch.org/docs/2.15/generated/torch.nn.BCEWithLogitsLoss.html) gộp sigmoid và BCE để ổn định số. Công thức ở đây không dùng trọng số lớp hoặc label smoothing; các biến thể đó cần diễn giải riêng.
+
+Tự kiểm tra: residual (0,0,3) có MAE trung bình bao nhiêu? **1**. Huber δ=1 tại e=−2 có gradient theo dự đoán bao nhiêu? **−1**, nên bước đi ngược gradient sẽ tăng dự đoán. Đổi mean thành sum mà giữ learning rate có cho cùng update không? **Không**, trừ khi gradient bằng 0 hoặc đã điều chỉnh hệ số tương ứng.
+
 ## Code và cách chạy
 ```python
 from math import log

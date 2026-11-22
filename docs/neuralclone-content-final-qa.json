@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-27T15:33:57.044Z",
+  "build": {
+    "passed": true,
+    "log": ".local/neuralclone-final-build.log"
+  },
+  "typecheck": {
+    "passed": true,
+    "unusedChecks": true
+  },
+  "unitIntegration": {
+    "passed": 59,
+    "failed": 0,
+    "log": ".local/neuralclone-final-verify.log"
+  },
+  "e2e": {
+    "passed": 25,
+    "failed": 0,
+    "lastRun": {
+      "status": "passed",
+      "failedTests": []
+    }
+  },
+  "proseExamples": {
+    "passed": 11,
+    "total": 11
+  },
+  "pyodide": {
+    "passed": 14,
+    "total": 14
+  },
+  "links": {
+    "passed": 104,
+    "total": 104
+  },
+  "typography": {
+    "specimens": 384,
+    "fallbackBefore": 144,
+    "fallbackAfter": 0
+  },
+  "visuals": {
+    "screens": 64,
+    "overflow": 0,
+    "mathErrors": 0,
+    "fallbackHeadings": 0
+  },
+  "liveContentMatches": true,
+  "localDatabase": {
+    "lessons": 67,
+    "questions": 157,
+    "users": 0,
+    "progress": 0,
+    "notes": 0,
+    "attempts": 0,
+    "bookmarks": 0,
+    "newQuizSourceMatches": true,
+    "datasetMetadataMatches": true
+  },
+  "reportLinksExist": true,
+  "gitDiffCheck": true,
+  "lint": "No configured ESLint script; not claimed.",
+  "browserConsole": {
+    "pages": 26,
+    "pageHttpErrors": 0,
+    "localErrors": 0,
+    "liveHmr502": 12,
+    "otherErrors": 0,
+    "limitation": "Public development HMR WebSocket returns 502; server/tunnel configuration kept unchanged."
+  }
+}

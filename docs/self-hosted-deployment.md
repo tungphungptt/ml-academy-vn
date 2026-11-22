@@ -1,4 +1,4 @@
-# Vận hành ML Academy trên máy chủ riêng
+# Vận hành NeuralClone trên máy chủ riêng
 
 Tài liệu chuẩn bị cho tương lai; không cấp phát VPS, thay DNS hay triển khai từ môi trường kiểm thử. Bằng chứng đã chạy local được ghi riêng tại [deployment validation](deployment-validation.md); các lệnh trên VPS, chứng chỉ, firewall, systemd và DNS dưới đây cần được kiểm chứng trên máy chủ thật.
 
@@ -96,7 +96,7 @@ location / {
 }
 ```
 
-Chỉ nhận Host domain đã cấu hình; redirect HTTP sang HTTPS. Kiểm tra cookie có Secure/HttpOnly/SameSite và Origin write validation qua proxy, đăng nhập/admin/progress/quiz ở HTTPS thật; không suy ra từ kết quả HTTP local. Không cache response có session. CSP hiện report-only; cần theo dõi rồi thử policy enforce riêng, không tuyên bố hardened đầy đủ.
+Chỉ nhận Host domain đã cấu hình; redirect HTTP sang HTTPS. Kiểm tra cookie có Secure/HttpOnly/SameSite và Origin write validation qua proxy, đăng nhập/admin/progress/quiz ở HTTPS thật; không suy ra từ kết quả HTTP local. Không cache response có session. CSP hiện được enforce trong `next.config.js`; cho phép CDN Pyodide và Cloudflare analytics theo allowlist hiện có.
 
 ## 6. Backup và phục hồi
 
@@ -115,7 +115,7 @@ Tạo tên backup mới, giữ nhiều phiên bản và bản ngoài máy chủ;
 1. Chốt release SHA, đọc diff/migration, kiểm tra verify/build, backup và khôi phục bản sao trước.
 2. Chạy release mới trên bản sao DB + overrides với secret/port test riêng, xác minh auth, học, quiz, search, admin.
 3. Pending migration khiến startup dừng. Chỉ operator chạy `npm run db:migrate` sau review SQL/maintenance/backup; không `db push`, reset hay data-loss flags. Nếu migration thất bại, dùng quy trình recovery Prisma đã review, không tự đánh dấu thành công.
-4. Với DB legacy chưa có migration history: **không** áp initial migration mù quáng. Trên bản sao riêng, so sánh `prisma migrate diff --from-url <copy-url> --to-schema-datamodel prisma/schema.prisma --exit-code`. Chỉ khi không khác biệt mới xem xét baseline `20261026000000_initial` bằng `migrate resolve --applied`, với `DATABASE_URL` trỏ **bản sao trên mọi lệnh**. Thiết kế chuyển dữ liệu riêng nếu khác biệt.
+4. Với DB legacy chưa có migration history: **không** áp initial migration mù quáng. Tạo database tham chiếu trống từ SQL `20261026000000_initial/migration.sql`, rồi so sánh bản sao legacy với database tham chiếu bằng `prisma migrate diff --from-url <copy-url> --to-url <reference-url> --exit-code`. Chỉ khi không khác biệt mới baseline `20261026000000_initial` bằng `migrate resolve --applied`, rồi `migrate deploy` các migration tiếp theo. `DATABASE_URL` phải trỏ bản sao trong toàn bộ lần thử. Không đối chiếu initial với schema mới rồi bỏ qua khác biệt; migration `20261121000000_query_indexes` bổ sung 12 chỉ mục nên schema hiện tại khác initial một cách có chủ đích.
 5. Bootstrap dang dở: đọc log, backup, kiểm tra không còn initializer. Pending marker cần recovery rõ ràng `npm run db:initialize -- --resume-bootstrap`; không xóa marker/lock tùy tiện.
 6. Dừng writer, cập nhật release/image nhưng giữ đúng volume/đường dẫn và secret. Health `GET /api/health` phải 200 + `{"ok":true}`. Kiểm tra restart còn user/progress/overrides; health chỉ thử DB connection, không thay functional checks.
 7. Rollback code chỉ an toàn khi tương thích schema hiện tại. Nếu schema đã đổi, theo kế hoạch rollback đã thử trên bản sao; có thể cần restore backup cả DB + overrides khi dừng writer, chấp nhận mất write sau mốc backup. Không tự chạy migration ngược phá dữ liệu.
@@ -124,20 +124,16 @@ Tạo tên backup mới, giữ nhiều phiên bản và bản ngoài máy chủ;
 
 ## Browser tests trên database riêng
 
-Các E2E có ghi dữ liệu, kiểm tra quyền và ẩn khóa học tạm; chỉ chạy trên fixture. Ví dụ PowerShell (terminal thứ nhất, từ repository, sau setup), tạo **DB mới riêng**:
+Các E2E có ghi dữ liệu, kiểm tra quyền và ẩn khóa học tạm. Cấu hình hiện tại tự cô lập trên cả Windows và Linux; không cần mở fixture server thủ công.
 
 ```powershell
-$fixture = Join-Path ([IO.Path]::GetTempPath()) ("ml-curriculum-e2e-" + [guid]::NewGuid())
-New-Item -ItemType Directory $fixture | Out-Null
-$env:DATABASE_URL = "file:" + (($fixture -replace '\\','/') + "/app.db")
-$env:LESSON_CONTENT_DIR = Join-Path $fixture "overrides"
-$env:SESSION_SECRET = node -e "console.log(require('node:crypto').randomBytes(32).toString('hex'))"
-$env:ADMIN_EMAIL = ""
-$env:ADMIN_PASSWORD = ""
-$env:COOKIE_SECURE = "false"
-$env:PORT = "3286"
-npm run db:initialize
-npm run deploy:local
+# Sau npm run setup; dùng Chrome đã cài hoặc cài Chromium bằng Playwright.
+$env:PLAYWRIGHT_CHANNEL="chrome"
+npm run e2e
 ```
 
-Terminal thứ hai cần cùng `DATABASE_URL`/`LESSON_CONTENT_DIR` của fixture (không phải `.env` cá nhân) và `$env:E2E_BASE_URL="http://127.0.0.1:3286"`. Trên Windows native, chỉ chạy nhóm không ghi DB: `npx --no-install playwright test e2e/ui.spec.ts -g "all main screens|keyboard navigation|lab editing|PCA projection"`. Bộ đầy đủ `npm run e2e` hiện có guard test ghi DB yêu cầu đường dẫn Linux `/tmp/ml-curriculum-e2e-*`; chạy trên Linux/WSL với fixture mới dưới `/tmp`, không bỏ guard để dùng DB người dùng. Các bước shell Linux tương ứng là `export DATABASE_URL="file:/tmp/ml-curriculum-e2e-<unique>/app.db"`, `export LESSON_CONTENT_DIR="/tmp/ml-curriculum-e2e-<unique>/overrides"`, cấu hình secret/COOKIE_SECURE/PORT cho fixture, `npm run db:initialize`, `npm run deploy:local`, rồi terminal thứ hai cùng fixture chạy `E2E_BASE_URL=http://127.0.0.1:3286 npm run e2e`. Thay `<unique>` bằng thư mục mới có thật do bạn tạo; không dùng lại DB cá nhân. Cài Chromium bằng `npx playwright install chromium` hoặc chỉ định `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` cho browser tương thích đã cài. Xác minh health trước, để test không fallback khởi động dev server với DB khác. Sau test, Ctrl+C fixture server; xóa biến môi trường trong shell khi trở lại DB cá nhân. Những tài khoản test không bao giờ được seed vào production.
+Playwright tạo `.local/ml-curriculum-e2e-<timestamp>/app.db`, secret ngẫu nhiên chỉ trong process và thư mục lesson overrides riêng. Script fixture chỉ migrate/seed database này, không truyền admin credentials; build vào `.next-e2e` và chạy production trên loopback cổng 3100. Server fixture được Playwright dừng khi xong; dữ liệu fixture được giữ dưới `.local` để kiểm tra, không commit.
+
+Không tái sử dụng server đang chạy. Guard từ chối URL ngoài loopback, cổng 3000 và `DATABASE_URL` không có thư mục fixture đúng dạng. Nếu shell đang có `DATABASE_URL` cá nhân, bỏ biến này khỏi **shell kiểm thử** trước khi chạy; không chỉnh `.env` cá nhân. Để chọn cổng khác, đặt `E2E_BASE_URL=http://127.0.0.1:3101`. Không trỏ kiểm thử vào server đang public qua Tunnel.
+
+Để ghi ảnh QA: `$env:UI_SCREENSHOT_DIR="docs/screenshots/e2e"`. Có thể chỉ định `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` thay cho channel khi dùng browser tương thích đã cài. Các tài khoản kiểm thử chỉ nằm trong fixture; không được seed vào database ứng dụng.

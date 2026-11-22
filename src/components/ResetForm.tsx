@@ -10,6 +10,6 @@ export default function ResetForm({ token }: { token: string }) {
     } catch { setMsg({ ok: false, t: "Chưa kết nối được. Hãy thử lại." }); }
     finally { setBusy(false); }
   }
-  return <form onSubmit={submit} className="account-form"><label>Mật khẩu mới (8 ký tự trở lên)<input name="next" type="password" minLength={8} required autoComplete="new-password" /></label>
+  return <form onSubmit={submit} className="account-form"><label>Mật khẩu mới (8 ký tự trở lên)<input name="next" type="password" minLength={8} maxLength={100} required autoComplete="new-password" /></label>
     <button className="primary" disabled={busy}>{busy ? "Đang lưu..." : "Đặt lại mật khẩu"}</button>{msg && <p className={`notice ${msg.ok ? "success" : "error"}`} role={msg.ok ? "status" : "alert"}>{msg.t} {msg.ok && <a href="/login">Đăng nhập</a>}</p>}</form>;
 }

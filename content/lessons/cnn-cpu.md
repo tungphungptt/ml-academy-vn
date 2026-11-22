@@ -4,7 +4,7 @@
 ## Bài này khác bộ lọc chọn tay thế nào?
 Bài CNN practice cũ giữ kernel cố định và chỉ học bộ phân loại. Ở đây `Conv2d` có tham số được cập nhật bởi backpropagation cùng với lớp cuối. Việc mạng chạy đúng shape chưa chứng minh nó đã học; cần kiểm tra loss, validation và test không tham gia lựa chọn mô hình.
 
-Digits tích hợp scikit-learn chứa 1.797 ảnh xám 8×8, 10 lớp. Không tải mạng khi chạy; chỉ lấy dataset đã đi kèm thư viện. Nguồn gốc là bộ optical digits của UCI; license upstream chưa được xác minh trực tiếp trong môi trường này, nên không phát lại một bản CSV riêng hoặc gán license thay cho tác giả dữ liệu.
+Digits tích hợp scikit-learn chứa 1.797 ảnh xám 8×8, 10 lớp. Không tải mạng khi chạy; chỉ lấy dataset đã đi kèm thư viện. Nguồn gốc là bộ optical digits của UCI; trang UCI công bố CC BY 4.0 (E. Alpaydin, C. Kaynak; DOI 10.24432/C50P49).
 
 ## Dữ liệu, kiến trúc và phép đếm
 Giá trị pixel 0–16 được chia cho hằng 16 (không ước lượng bằng test). Chia có phân tầng: train 1.149, validation 288, test 360. Tensor đầu vào $(N,1,8,8)$ qua Conv $3\times3$, padding 1, 8 kênh rồi ReLU và max pooling $2\times2$ thành $(N,8,4,4)$; flatten 128 giá trị, Linear 128→10 cho logits.
@@ -45,3 +45,7 @@ Một CNN chạy được trên CPU không cần tải MNIST hay GPU. Quy trình
 - [ML cơ bản: convolution 2D](https://machinelearningcoban.com/2018/10/03/conv2d), đối chiếu snapshot nguồn.
 - [Stanford CS231n](https://cs231n.stanford.edu/).
 - [PyTorch: tối ưu mô hình](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html), nguồn chính thức đã đọc.
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Nguồn UCI ghi giấy phép CC BY 4.0, tác giả E. Alpaydin và C. Kaynak, DOI 10.24432/C50P49. Ví dụ dùng bản dữ liệu tích hợp của sklearn. [UCI Optical Recognition of Handwritten Digits](https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits).

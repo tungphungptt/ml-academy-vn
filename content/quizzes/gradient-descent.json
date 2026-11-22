@@ -1,32 +1,32 @@
 [
- {
-  "prompt": "Với $L(\\theta)=\\theta^2$, $\\theta_0=4$, $\\eta=0.1$, giá trị $\\theta_1$ là bao nhiêu?",
-  "options": [
-   "3.2",
-   "3.6",
-   "0.8"
-  ],
-  "correct": 0,
-  "explanation": "$\\theta_1=4-0.1\\cdot(2\\cdot4)=3.2$."
- },
- {
-  "prompt": "Vì sao có dấu trừ trong $\\theta\\leftarrow\\theta-\\eta\\nabla L$?",
-  "options": [
-   "Để θ luôn dương",
-   "Gradient chỉ hướng L tăng nhanh nhất, ta đi ngược lại",
-   "Để tăng learning rate"
-  ],
-  "correct": 1,
-  "explanation": "Ta muốn giảm L nên đi ngược hướng gradient."
- },
- {
-  "prompt": "Dấu hiệu learning rate quá lớn là gì?",
-  "options": [
-   "Loss giảm rất chậm",
-   "Loss tăng hoặc dao động mạnh",
-   "Loss luôn bằng 0"
-  ],
-  "correct": 1,
-  "explanation": "Bước quá dài khiến vượt qua cực tiểu, loss có thể tăng hoặc phân kỳ."
- }
+  {
+    "prompt": "Với $L(\\theta)=\\theta^2$, $\\theta_0=4$, $\\eta=0.1$, giá trị $\\theta_1$ là bao nhiêu?",
+    "options": [
+      "3.2",
+      "3.6",
+      "0.8"
+    ],
+    "correct": 0,
+    "explanation": "Gradient là 2θ=8, bước thay đổi η∇L=0.8 nên θ mới=3.2. 3.6 quên hệ số 2; 0.8 chỉ là độ lớn bước, chưa trừ khỏi θ ban đầu."
+  },
+  {
+    "prompt": "Vì sao có dấu trừ trong $\\theta\\leftarrow\\theta-\\eta\\nabla L$?",
+    "options": [
+      "Để θ luôn dương",
+      "Gradient chỉ hướng L tăng nhanh nhất, ta đi ngược lại",
+      "Để tăng learning rate"
+    ],
+    "correct": 1,
+    "explanation": "Với bước đủ nhỏ, đi ngược gradient giảm loss tại chỗ. Dấu trừ không buộc θ dương và không làm learning rate tăng. Bước quá lớn vẫn có thể làm loss tăng."
+  },
+  {
+    "prompt": "Dấu hiệu learning rate quá lớn là gì?",
+    "options": [
+      "Loss giảm rất chậm",
+      "Loss tăng hoặc dao động mạnh",
+      "Loss luôn bằng 0"
+    ],
+    "correct": 1,
+    "explanation": "Loss tăng hoặc dao động mạnh có thể do bước quá dài; cũng cần kiểm tra dữ liệu/gradient. Giảm rất chậm thường gợi ý bước nhỏ hoặc độ cong khác nhau; loss bằng 0 không phải dấu hiệu chung của learning rate lớn."
+  }
 ]

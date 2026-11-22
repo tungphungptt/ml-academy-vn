@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-28T05:45:25.908Z",
+  "probes": [
+    {
+      "url": "http://localhost:3000/_next/hmr",
+      "origin": "http://localhost:3000",
+      "host": "localhost:3000",
+      "status": 101,
+      "upgraded": true,
+      "headers": {}
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/hmr",
+      "origin": "https://neuralclone.site",
+      "host": "neuralclone.site",
+      "status": 101,
+      "upgraded": true,
+      "headers": {}
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/hmr",
+      "origin": "https://untrusted.example",
+      "host": "neuralclone.site",
+      "error": "Parse Error: Expected HTTP/, RTSP/ or ICE/",
+      "rawResponse": "Unauthorized"
+    },
+    {
+      "url": "https://neuralclone.site/_next/hmr",
+      "origin": "https://neuralclone.site",
+      "host": "neuralclone.site",
+      "status": 101,
+      "upgraded": true,
+      "headers": {
+        "server": "cloudflare"
+      }
+    }
+  ],
+  "tunnel": {
+    "status": 200,
+    "ingress": [
+      {
+        "hostname": "neuralclone.site",
+        "service": "http://localhost:3000"
+      },
+      {
+        "hostname": "",
+        "service": "http_status:404"
+      }
+    ],
+    "keys": [
+      "version",
+      "config"
+    ]
+  }
+}

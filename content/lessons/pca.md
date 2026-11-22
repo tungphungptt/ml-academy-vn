@@ -49,3 +49,7 @@ SVD của dữ liệu centered cho cùng không gian chính, tránh tạo covari
 
 ## Nguồn tham khảo
 - [scikit-learn: PCA](https://scikit-learn.org/stable/modules/decomposition.html#pca).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+PCA của sklearn tự center nhưng không tự scale. Số 92,46% trong code dùng Iris raw; PCA trên dữ liệu chuẩn hóa có thể cho tỷ lệ khác. Chọn covariance PCA hay standardized PCA theo ý nghĩa đơn vị, không mặc định mọi PCA phải scale. [PCA](https://scikit-learn.org/stable/modules/decomposition.html#pca). [Thử PCA](/playground#pca).

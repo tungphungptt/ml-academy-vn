@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-10-29T06:03:12.572Z",
+  "scope": "Anonymous read-only local/public first load + reload; no retry. Python editor/worker changes are client-only.",
+  "cases": [
+    {
+      "origin": "http://localhost:3000",
+      "attempts": [
+        {
+          "slug": "derivatives",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T05:57:23.257Z",
+          "status": 200,
+          "output": {
+            "f": 1,
+            "derivative": 2,
+            "forward": 2.5,
+            "central": 2
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-derivatives.png",
+          "finishedAt": "2026-10-29T05:57:33.443Z"
+        },
+        {
+          "slug": "derivatives",
+          "mode": "reload",
+          "startedAt": "2026-10-29T05:57:33.443Z",
+          "status": 200,
+          "output": {
+            "f": 1,
+            "derivative": 2,
+            "forward": 2.5,
+            "central": 2
+          },
+          "finishedAt": "2026-10-29T05:57:41.730Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T05:57:41.730Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-linear-regression.png",
+          "finishedAt": "2026-10-29T05:57:50.600Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "reload",
+          "startedAt": "2026-10-29T05:57:50.600Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "finishedAt": "2026-10-29T05:57:58.920Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T05:57:58.920Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "stepped": {
+            "w": 1.4666666666666666,
+            "b": 0.2,
+            "loss": 0.9407407407407412,
+            "dw": -4.177777777777779,
+            "db": -1.7333333333333338,
+            "steps": 1
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-gradient-descent.png",
+          "finishedAt": "2026-10-29T05:58:05.941Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "reload",
+          "startedAt": "2026-10-29T05:58:05.941Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "stepped": {
+            "w": 1.4666666666666666,
+            "b": 0.2,
+            "loss": 0.9407407407407412,
+            "dw": -4.177777777777779,
+            "db": -1.7333333333333338,
+            "steps": 1
+          },
+          "finishedAt": "2026-10-29T05:58:12.669Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T05:58:12.669Z",
+          "status": 200,
+          "output": {
+            "a": 2,
+            "h": 2,
+            "prediction": 6,
+            "loss": 0.5,
+            "dw1": 3,
+            "dw2": 2
+          },
+          "screenshot": "docs/screenshots/expansion-live/local-backpropagation.png",
+          "finishedAt": "2026-10-29T05:58:17.483Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "reload",
+          "startedAt": "2026-10-29T05:58:17.483Z",
+          "status": 200,
+          "output": {
+            "a": 2,
+            "h": 2,
+            "prediction": 6,
+            "loss": 0.5,
+            "dw1": 3,
+            "dw2": 2
+          },
+          "finishedAt": "2026-10-29T05:58:22.384Z"
+        }
+      ],
+      "errors": [],
+      "failed": [],
+      "httpErrors": [],
+      "hmr": {
+        "handshakes": [
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101
+        ],
+        "frames": 132
+      },
+      "python": {
+        "status": "Lỗi.",
+        "output": "Nhấn Run để thực thi code. Kết quả thật sẽ xuất hiện tại đây.",
+        "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /EXPANSION_PARITY_OK/. Input:\n\n'Nhấn Run để thực thi code. Kết quả thật sẽ xuất hiện tại đây.'\n"
+      }
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "attempts": [
+        {
+          "slug": "derivatives",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T05:58:31.656Z",
+          "status": 200,
+          "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.experiment-output') to be visible\u001b[22m\n",
+          "finishedAt": "2026-10-29T05:59:11.706Z"
+        },
+        {
+          "slug": "derivatives",
+          "mode": "reload",
+          "startedAt": "2026-10-29T05:59:11.706Z",
+          "status": 200,
+          "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.experiment-output') to be visible\u001b[22m\n",
+          "finishedAt": "2026-10-29T05:59:49.245Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T05:59:49.245Z",
+          "status": 200,
+          "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.experiment-output') to be visible\u001b[22m\n",
+          "finishedAt": "2026-10-29T06:00:27.007Z"
+        },
+        {
+          "slug": "linear-regression",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:00:27.007Z",
+          "status": 200,
+          "output": {
+            "w": 1,
+            "b": 0,
+            "loss": 4.666666666666667,
+            "dw": -9.333333333333332,
+            "db": -4,
+            "steps": 0
+          },
+          "finishedAt": "2026-10-29T06:00:39.497Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:00:39.497Z",
+          "status": 200,
+          "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.experiment-output') to be visible\u001b[22m\n",
+          "finishedAt": "2026-10-29T06:01:19.705Z"
+        },
+        {
+          "slug": "gradient-descent",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:01:19.705Z",
+          "status": 200,
+          "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.experiment-output') to be visible\u001b[22m\n",
+          "finishedAt": "2026-10-29T06:02:00.893Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "first-load",
+          "startedAt": "2026-10-29T06:02:00.893Z",
+          "status": 200,
+          "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.experiment-output') to be visible\u001b[22m\n\u001b[2m    - waiting for \"https://neuralclone.site/learn/backpropagation\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://neuralclone.site/learn/backpropagation\"\u001b[22m\n",
+          "finishedAt": "2026-10-29T06:02:36.464Z"
+        },
+        {
+          "slug": "backpropagation",
+          "mode": "reload",
+          "startedAt": "2026-10-29T06:02:36.464Z",
+          "status": 200,
+          "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.learning-experiment>button')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"btn primary\">Mở thí nghiệm</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+          "finishedAt": "2026-10-29T06:03:10.701Z"
+        }
+      ],
+      "errors": [
+        "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\n%s%s https://react.dev/link/hydration-mismatch \n\n  ...\n    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>\n      <LoadingBoundary name=\"backpropag...\" loading={null}>\n        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>\n          <RedirectBoundary>\n            <RedirectErrorBoundary router={{...}}>\n              <InnerLayoutRouter url=\"/learn/bac...\" tree={[...]} params={{slug:\"back...\"}} renderTree={{...}} ...>\n                <SegmentViewNode type=\"page\" pagePath=\"learn/[slu...\">\n                  <SegmentTrieNode>\n                  <Lesson>\n                    <div className=\"reading-page\">\n                      <ReadingProgress>\n                      <nav>\n                      <header>\n                      <div className=\"reading-la...\">\n                        <Toc>\n                        <div className=\"reading-body\">\n                          <article className=\"lesson\">\n                            <p>\n                            <h2>\n                            <p>\n                            <h2>\n                            <p>\n                            <span>\n                            <figure>\n                            <h2>\n                            <p>\n                            <h2>\n                            <p>\n                            <p>\n                            <p>\n                            <ol>\n                            <p>\n                            <h2>\n                            <ExperimentLoader kind=\"backprop\" source={\"// Pure,...\"} python={\"\\\"\\\"\\\"Ne...\"}>\n                              <section className=\"learning-e...\" aria-label=\"Thí nghiệm...\">\n                                <p>\n                                <p>\n                                <a>\n                                <p>\n                                <button\n                                  className=\"btn primary\"\n                                  onClick={function onClick}\n-                                 disabled=\"\"\n                                >\n+                                 Mở thí nghiệm\n                                ...\n                            ...\n                          ...\n                ...\n              ...\n"
+      ],
+      "failed": [],
+      "httpErrors": [],
+      "hmr": {
+        "handshakes": [
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101,
+          101
+        ],
+        "frames": 262
+      }
+    }
+  ]
+}

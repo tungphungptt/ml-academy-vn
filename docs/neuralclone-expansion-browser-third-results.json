@@ -1,0 +1,495 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\ml-academy-vn\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.learning.config.ts"
+    ],
+    "configFile": "D:\\Projects\\ml-academy-vn\\playwright.learning.config.ts",
+    "rootDir": "D:/Projects/ml-academy-vn/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "learning-experiments.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "learning-experiments.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Projects/ml-academy-vn/test-results/learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/ml-academy-vn/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "learning-experiments.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "learning-experiments.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {
+            "channel": "chrome"
+          },
+          "browserName": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "learning-experiments.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "snapshotDir": "D:\\Projects\\ml-academy-vn\\e2e",
+        "testIgnore": [],
+        "testMatch": "learning-experiments.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3100",
+          "launchOptions": {},
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/neuralclone-expansion-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/e2e-server.mjs 3100",
+      "url": "http://127.0.0.1:3100/api/health",
+      "reuseExistingServer": false,
+      "timeout": 300000
+    }
+  },
+  "suites": [
+    {
+      "title": "learning-experiments.spec.ts",
+      "file": "learning-experiments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "formula, shared code, plot and tables respond to controls, steps and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10002,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:15:00.352Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-8ceb275cc9af7cf140cc",
+          "file": "learning-experiments.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "expanded lessons retain readable Vietnamese, math and keyboard tables in both themes at four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8716,
+                  "error": {
+                    "message": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:307",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 307,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${slug}/${theme}/${width}: 200% overflow`).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                                                                   ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 307,
+                        "line": 27
+                      },
+                      "message": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${slug}/${theme}/${width}: 200% overflow`).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                                                                   ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:307"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:15:10.965Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-expan-a17ea--both-themes-at-four-widths-chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 307,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-aeddec2f639f78b7a269",
+          "file": "learning-experiments.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "formula, shared code, plot and tables respond to controls, steps and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:15:21.243Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-9a41089e814790aeeb98",
+          "file": "learning-experiments.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "expanded lessons retain readable Vietnamese, math and keyboard tables in both themes at four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9115,
+                  "error": {
+                    "message": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:307",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 307,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${slug}/${theme}/${width}: 200% overflow`).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                                                                   ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 307,
+                        "line": 27
+                      },
+                      "message": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${slug}/${theme}/${width}: 200% overflow`).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                                                                   ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:307"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:15:36.573Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-expan-a17ea--both-themes-at-four-widths-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 307,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-4ffd828c1292ed9360f2",
+          "file": "learning-experiments.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "formula, shared code, plot and tables respond to controls, steps and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11514,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:15:47.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-58193e745a0463000291",
+          "file": "learning-experiments.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "expanded lessons retain readable Vietnamese, math and keyboard tables in both themes at four widths",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10720,
+                  "error": {
+                    "message": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:307",
+                    "location": {
+                      "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                      "column": 307,
+                      "line": 27
+                    },
+                    "snippet": "  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${slug}/${theme}/${width}: 200% overflow`).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                                                                   ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                        "column": 307,
+                        "line": 27
+                      },
+                      "message": "Error: backpropagation/light/375: 200% overflow\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  25 |   const table=page.locator('.experiment-scroll');await table.focus();await expect(table).toBeFocused();if(await table.evaluate(e=>e.scrollWidth>e.clientWidth)){await page.keyboard.press('ArrowRight');await expect.poll(()=>table.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}\n  26 |   await page.locator('.learning-experiment').screenshot({path:`${folder}/${slug}-${theme}-${width}.png`,caret:'initial',timeout:20000});\n> 27 |   await page.locator('.learning-experiment h3').evaluate(e=>e.textContent=e.textContent!.normalize('NFD'));await page.evaluate(()=>document.documentElement.style.fontSize='200%');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${slug}/${theme}/${width}: 200% overflow`).toBe(true);cases.push({slug,theme,width,scale200:true});await context.close();\n     |                                                                                                                                                                                                                                                                                                                   ^\n  28 |  }\n  29 |  fs.writeFileSync(`docs/neuralclone-expansion-${info.project.name}-visual.json`,JSON.stringify({checkedAt:new Date().toISOString(),version:browser.version(),cases,errors,failed},null,2)+'\\n');expect(errors).toEqual([]);expect(failed).toEqual([]);\n  30 | });\n    at D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts:27:307"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:15:59.424Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Projects\\ml-academy-vn\\test-results\\learning-expansion\\learning-experiments-expan-a17ea--both-themes-at-four-widths-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Projects\\ml-academy-vn\\e2e\\learning-experiments.spec.ts",
+                    "column": 307,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "999615794bf18580fbe0-440f7bc31b3adfef2ac8",
+          "file": "learning-experiments.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T13:14:38.926Z",
+    "duration": 92077.673,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

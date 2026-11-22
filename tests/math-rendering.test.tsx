@@ -21,6 +21,8 @@ $$`);
   assert.ok(html.includes("Đạo hàm"));
   assert.equal((html.match(/class="katex"/g) ?? []).length, 4);
   assert.equal((html.match(/class="katex-display"/g) ?? []).length, 2);
+  assert.equal((html.match(/tabindex="0" role="region"/g) ?? []).length, 2);
+  assert.ok(html.includes('aria-label="Công thức toán học; cuộn ngang để xem đầy đủ"'));
   assert.equal((html.match(/class="katex-mathml"/g) ?? []).length, 4);
   assert.ok(html.includes('class="katex-html" aria-hidden="true"'));
   assert.ok(html.includes("<mfrac>")); assert.ok(html.includes("<mtable"));
@@ -80,6 +82,8 @@ test("standalone lesson figures retain alt text and a caption with valid block n
   assert.ok(html.includes('<figure>'));
   assert.ok(html.includes('alt="Đường hồi quy và sai số"'));
   assert.ok(html.includes('<figcaption>Đường hồi quy và sai số</figcaption>'));
+  assert.ok(html.includes('href="/img/linear-regression.svg"'));
+  assert.ok(html.includes('aria-label="Xem hình đầy đủ: Đường hồi quy và sai số"'));
   assert.ok(!html.includes('<p><figure>'));
 });
 

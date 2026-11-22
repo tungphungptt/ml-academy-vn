@@ -1,0 +1,386 @@
+{
+  "checkedAt": "2026-10-28T07:59:39.504Z",
+  "scope": "New executions in the Firefox/WebKit/Transfer continuation, not copied baseline counts.",
+  "verification": {
+    "command": "npm run verify",
+    "typescript": true,
+    "unit": {
+      "passed": 65,
+      "failed": 0
+    },
+    "log": ".local/cross-review-final-verify.log"
+  },
+  "staticReview": {
+    "unusedCheck": "tsc --noEmit --noUnusedLocals --noUnusedParameters",
+    "passed": true,
+    "diffCheck": "git diff --check: exit 0 (existing LF/CRLF conversion notices only)",
+    "eslint": "No repository ESLint script configured; not claimed as run",
+    "generatedNextEnvRestored": true
+  },
+  "productionBuild": {
+    "command": "node node_modules/next/dist/bin/next build",
+    "via": "scripts/e2e-server.mjs",
+    "directory": ".next-e2e",
+    "port": 3100,
+    "isolatedDatabase": true,
+    "passed": true
+  },
+  "crossBrowser": {
+    "command": "npx --no-install playwright test --config playwright.cross-browser.config.ts",
+    "stats": {
+      "startTime": "2026-10-28T07:45:45.893Z",
+      "duration": 254880.083,
+      "expected": 12,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "browsers": [
+      {
+        "engine": "firefox",
+        "hydration": {
+          "version": "157.0",
+          "checkedAt": "2026-10-28T07:46:00.216Z",
+          "errors": 0,
+          "failedRequests": 0
+        },
+        "learning": {
+          "version": "157.0",
+          "checkedAt": "2026-10-28T07:46:19.464Z",
+          "errors": 0,
+          "failedRequests": 0
+        },
+        "visual": {
+          "version": "157.0",
+          "checkedAt": "2026-10-28T07:51:50.543Z",
+          "errors": 0,
+          "failedRequests": 0,
+          "cases": 48,
+          "specimens": 384
+        },
+        "compute": {
+          "version": "157.0",
+          "checkedAt": "2026-10-28T07:47:00.000Z",
+          "errors": 0,
+          "failedRequests": 0
+        }
+      },
+      {
+        "engine": "webkit",
+        "hydration": {
+          "version": "27.2",
+          "checkedAt": "2026-10-28T07:47:03.026Z",
+          "errors": 0,
+          "failedRequests": 0
+        },
+        "learning": {
+          "version": "27.2",
+          "checkedAt": "2026-10-28T07:47:18.588Z",
+          "errors": 0,
+          "failedRequests": 0
+        },
+        "visual": {
+          "version": "27.2",
+          "checkedAt": "2026-10-28T07:52:29.874Z",
+          "errors": 0,
+          "failedRequests": 0,
+          "cases": 48,
+          "specimens": 384
+        },
+        "compute": {
+          "version": "27.2",
+          "checkedAt": "2026-10-28T07:48:40.992Z",
+          "errors": 0,
+          "failedRequests": 0
+        }
+      },
+      {
+        "engine": "chrome-control",
+        "hydration": {
+          "version": "156.0.8078.49",
+          "checkedAt": "2026-10-28T07:48:44.494Z",
+          "errors": 0,
+          "failedRequests": 0
+        },
+        "learning": {
+          "version": "156.0.8078.49",
+          "checkedAt": "2026-10-28T07:49:06.339Z",
+          "errors": 0,
+          "failedRequests": 0
+        },
+        "visual": {
+          "version": "156.0.8078.49",
+          "checkedAt": "2026-10-28T07:52:57.833Z",
+          "errors": 0,
+          "failedRequests": 0,
+          "cases": 48,
+          "specimens": 384
+        },
+        "compute": {
+          "version": "156.0.8078.49",
+          "checkedAt": "2026-10-28T07:50:00.194Z",
+          "errors": 0,
+          "failedRequests": 0
+        }
+      }
+    ]
+  },
+  "additionalMathVisualRegression": {
+    "command": "npx --no-install playwright test --config playwright.cross-browser.config.ts --grep \"both themes\" --reporter=list,json",
+    "stats": {
+      "startTime": "2026-10-28T07:51:10.547Z",
+      "duration": 107944.23800000001,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "note": "Three visual tests rerun after adding keyboard access to display formulas; independent report, not extra unique tests."
+  },
+  "chromeRegression": {
+    "command": "npm run e2e -- --reporter=list,json",
+    "stats": {
+      "startTime": "2026-10-28T07:53:17.960Z",
+      "duration": 169006.78,
+      "expected": 29,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "pyodide": {
+    "passed": 14,
+    "total": 14,
+    "transport": "Direct Chromium CDN"
+  },
+  "publicProbe": [
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "pages": 16,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "hmrFrames": 92,
+      "websocketErrors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "pages": 16,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "hmrFrames": 126,
+      "websocketErrors": []
+    }
+  ],
+  "publicMathProbe": [
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "pages": 4,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "hmrFrames": 28,
+      "websocketErrors": [],
+      "formulaScrolls": [
+        {
+          "origin": "http://localhost:3000",
+          "width": 375,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 13,
+          "scrollWidth": 441,
+          "clientWidth": 337
+        },
+        {
+          "origin": "http://localhost:3000",
+          "width": 1440,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 0,
+          "scrollWidth": 758,
+          "clientWidth": 758
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "width": 375,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 6,
+          "scrollWidth": 441,
+          "clientWidth": 337
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "width": 1440,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 0,
+          "scrollWidth": 758,
+          "clientWidth": 758
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "pages": 4,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "hmrFrames": 28,
+      "websocketErrors": [],
+      "formulaScrolls": [
+        {
+          "origin": "http://localhost:3000",
+          "width": 375,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 40,
+          "scrollWidth": 441,
+          "clientWidth": 337
+        },
+        {
+          "origin": "http://localhost:3000",
+          "width": 1440,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 0,
+          "scrollWidth": 758,
+          "clientWidth": 758
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "width": 375,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 40,
+          "scrollWidth": 441,
+          "clientWidth": 337
+        },
+        {
+          "origin": "https://neuralclone.site",
+          "width": 1440,
+          "tabIndex": 0,
+          "role": "region",
+          "scrollLeft": 0,
+          "scrollWidth": 758,
+          "clientWidth": 758
+        }
+      ]
+    }
+  ],
+  "transfer": {
+    "newControlledRuns": 5,
+    "correct": 334,
+    "total": 360,
+    "frozenCorrect": 330,
+    "defaultRunsIdentical": 3,
+    "mkldnnOffRuns": 2,
+    "predictionDifferencesAcrossCurrentRuns": 0,
+    "uninstrumentedCLIExecuted": true,
+    "freshNotebookExecuted": true,
+    "strictNotebookMatchesHistorical": false,
+    "strictExit": 1,
+    "historicalRoundedAccuracy": 0.9306,
+    "historicalOutputsChanged": false,
+    "historicalCorrectCount": {
+      "value": 335,
+      "kind": "inferred, not a recorded raw count"
+    },
+    "rootCauseResolved": false,
+    "limitation": "No baseline sample predictions/checkpoint/build/CPU metadata or running original Linux environment"
+  },
+  "realDatabase": {
+    "backup": ".local/cross-review-start/before.db",
+    "counts": {
+      "lessons": 67,
+      "questions": 157,
+      "users": 0,
+      "progress": 0,
+      "attempts": 0,
+      "notes": 0,
+      "bookmarks": 0
+    },
+    "tables": [
+      {
+        "table": "Bookmark",
+        "unchanged": true
+      },
+      {
+        "table": "Course",
+        "unchanged": true
+      },
+      {
+        "table": "Dataset",
+        "unchanged": true
+      },
+      {
+        "table": "Lesson",
+        "unchanged": true
+      },
+      {
+        "table": "LessonProgress",
+        "unchanged": true
+      },
+      {
+        "table": "Module",
+        "unchanged": true
+      },
+      {
+        "table": "Note",
+        "unchanged": true
+      },
+      {
+        "table": "PasswordReset",
+        "unchanged": true
+      },
+      {
+        "table": "Project",
+        "unchanged": true
+      },
+      {
+        "table": "Quiz",
+        "unchanged": true
+      },
+      {
+        "table": "QuizAttempt",
+        "unchanged": true
+      },
+      {
+        "table": "QuizQuestion",
+        "unchanged": true
+      },
+      {
+        "table": "Resource",
+        "unchanged": true
+      },
+      {
+        "table": "SourceReference",
+        "unchanged": true
+      },
+      {
+        "table": "StudyTime",
+        "unchanged": true
+      },
+      {
+        "table": "User",
+        "unchanged": true
+      }
+    ],
+    "quickCheck": {
+      "quick_check": "ok"
+    },
+    "unchanged": true
+  },
+  "operational": {
+    "port3000Preserved": true,
+    "domain": "neuralclone.site",
+    "tunnelConfigurationChanged": false,
+    "productionSwitch": false
+  },
+  "limitations": [
+    "No physical Safari/iOS/Android devices; Windows WebKit and mobile emulation only",
+    "Transfer historical per-sample comparison and platform cause unresolved",
+    "No full assistive-technology audit or GPU experiment"
+  ]
+}

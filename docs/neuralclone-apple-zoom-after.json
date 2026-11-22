@@ -1,0 +1,26 @@
+[
+  {
+    "route": "/learn/llm-foundations",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/lab?lab=cnn_cpu",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/playground#threshold",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  },
+  {
+    "route": "/login",
+    "width": 375,
+    "scrollWidth": 375,
+    "elements": []
+  }
+]

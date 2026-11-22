@@ -1,0 +1,43 @@
+{
+  "accessedAt": "2026-10-29",
+  "scope": "Research notes only; no new teaching claims published in lessons",
+  "sources": [
+    {
+      "title": "BCEWithLogitsLoss",
+      "organization": "PyTorch contributors",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.BCEWithLogitsLoss.html",
+      "sections": "Log-sum-exp numerical stability; unreduced loss and reduction",
+      "lessons": [
+        "loss-functions",
+        "logistic-regression"
+      ]
+    },
+    {
+      "title": "HuberLoss",
+      "organization": "PyTorch contributors",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.HuberLoss.html",
+      "sections": "Piecewise loss; delta > 0; difference from SmoothL1Loss",
+      "lessons": [
+        "loss-functions"
+      ]
+    },
+    {
+      "title": "Linear Models — Logistic regression",
+      "organization": "scikit-learn contributors",
+      "url": "https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression",
+      "sections": "1.1.11 and 1.1.11.1, Bernoulli/logit, regularization, weighted objective",
+      "lessons": [
+        "logistic-regression"
+      ]
+    },
+    {
+      "title": "Neural Networks Part 1",
+      "organization": "Stanford CS231n",
+      "url": "https://cs231n.github.io/neural-networks-1/",
+      "sections": "Commonly used activation functions; sigmoid/tanh/ReLU/LeakyReLU; do not adopt historical recommendations as universal current rules",
+      "lessons": [
+        "activations"
+      ]
+    }
+  ]
+}

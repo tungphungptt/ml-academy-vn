@@ -1,0 +1,2115 @@
+{
+  "scope": "This typography/content continuation; excludes earlier redesign and ignored temporary files/backups.",
+  "deleted": [],
+  "moved": [],
+  "files": [
+    {
+      "action": "modified",
+      "file": "README.md",
+      "bytes": 11242
+    },
+    {
+      "action": "modified",
+      "file": "package.json",
+      "bytes": 1703
+    },
+    {
+      "action": "modified",
+      "file": "src/app/fonts.css",
+      "bytes": 837
+    },
+    {
+      "action": "modified",
+      "file": "src/app/globals.css",
+      "bytes": 54762
+    },
+    {
+      "action": "modified",
+      "file": "src/app/layout.tsx",
+      "bytes": 2952
+    },
+    {
+      "action": "modified",
+      "file": "src/app/playground/page.tsx",
+      "bytes": 824
+    },
+    {
+      "action": "modified",
+      "file": "src/components/PageHeading.tsx",
+      "bytes": 748
+    },
+    {
+      "action": "modified",
+      "file": "src/components/Landing.tsx",
+      "bytes": 4765
+    },
+    {
+      "action": "modified",
+      "file": "src/components/MarkdownContent.tsx",
+      "bytes": 2697
+    },
+    {
+      "action": "modified",
+      "file": "src/components/lab/CodeLab.tsx",
+      "bytes": 7028
+    },
+    {
+      "action": "modified",
+      "file": "src/components/playground/PlaygroundDemos.tsx",
+      "bytes": 1813
+    },
+    {
+      "action": "modified",
+      "file": "scripts/prepare-brand-fonts.mjs",
+      "bytes": 619
+    },
+    {
+      "action": "modified",
+      "file": "content/catalog.json",
+      "bytes": 39849
+    },
+    {
+      "action": "modified",
+      "file": "content/labs.json",
+      "bytes": 14989
+    },
+    {
+      "action": "modified",
+      "file": "content/datasets.json",
+      "bytes": 2920
+    },
+    {
+      "action": "modified",
+      "file": "content/lessons/transformer-architecture.md",
+      "bytes": 10111
+    },
+    {
+      "action": "modified",
+      "file": "content/lessons/gan-vae-diffusion.md",
+      "bytes": 4924
+    },
+    {
+      "action": "modified",
+      "file": "tests/curriculum.test.ts",
+      "bytes": 9080
+    },
+    {
+      "action": "modified",
+      "file": "tests/persistence.test.ts",
+      "bytes": 9276
+    },
+    {
+      "action": "modified",
+      "file": "tests/math-rendering.test.tsx",
+      "bytes": 5050
+    },
+    {
+      "action": "modified",
+      "file": "e2e/curriculum.spec.ts",
+      "bytes": 8100
+    },
+    {
+      "action": "created",
+      "file": "src/lib/normalizeProse.ts",
+      "bytes": 521
+    },
+    {
+      "action": "created",
+      "file": "src/lib/threshold.ts",
+      "bytes": 1236
+    },
+    {
+      "action": "created",
+      "file": "src/components/playground/Threshold.tsx",
+      "bytes": 3198
+    },
+    {
+      "action": "created",
+      "file": "tests/typography.test.tsx",
+      "bytes": 768
+    },
+    {
+      "action": "created",
+      "file": "tests/threshold.test.ts",
+      "bytes": 990
+    },
+    {
+      "action": "created",
+      "file": "e2e/typography.spec.ts",
+      "bytes": 2401
+    },
+    {
+      "action": "created",
+      "file": "e2e/content-update.spec.ts",
+      "bytes": 2977
+    },
+    {
+      "action": "created",
+      "file": "scripts/build-brand-fonts.py",
+      "bytes": 2965
+    },
+    {
+      "action": "created",
+      "file": "scripts/audit-typography.mjs",
+      "bytes": 5329
+    },
+    {
+      "action": "created",
+      "file": "scripts/audit-content-visuals.mjs",
+      "bytes": 2552
+    },
+    {
+      "action": "created",
+      "file": "scripts/check_modern_content.py",
+      "bytes": 1637
+    },
+    {
+      "action": "created",
+      "file": "scripts/gen_modern_visuals.mjs",
+      "bytes": 6219
+    },
+    {
+      "action": "created",
+      "file": "scripts/register-modern-labs.py",
+      "bytes": 2866
+    },
+    {
+      "action": "created",
+      "file": "scripts/update-neuralclone-content.ts",
+      "bytes": 4095
+    },
+    {
+      "action": "created",
+      "file": "scripts/repair-reviewed-metadata.ts",
+      "bytes": 3136
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/gradient-boosting.md",
+      "bytes": 5453
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/gradient-boosting.json",
+      "bytes": 1148
+    },
+    {
+      "action": "created",
+      "file": "public/img/gradient-boosting.svg",
+      "bytes": 2177
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/imbalanced-learning.md",
+      "bytes": 5854
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/imbalanced-learning.json",
+      "bytes": 1192
+    },
+    {
+      "action": "created",
+      "file": "public/img/imbalanced-learning.svg",
+      "bytes": 1947
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/mlops-reproducibility.md",
+      "bytes": 7490
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/mlops-reproducibility.json",
+      "bytes": 1209
+    },
+    {
+      "action": "created",
+      "file": "public/img/mlops-reproducibility.svg",
+      "bytes": 2371
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/responsible-ai.md",
+      "bytes": 8106
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/responsible-ai.json",
+      "bytes": 1229
+    },
+    {
+      "action": "created",
+      "file": "public/img/responsible-ai.svg",
+      "bytes": 2082
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/llm-foundations.md",
+      "bytes": 7041
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/llm-foundations.json",
+      "bytes": 1158
+    },
+    {
+      "action": "created",
+      "file": "public/img/llm-foundations.svg",
+      "bytes": 2082
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/efficient-finetuning.md",
+      "bytes": 7080
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/efficient-finetuning.json",
+      "bytes": 1026
+    },
+    {
+      "action": "created",
+      "file": "public/img/efficient-finetuning.svg",
+      "bytes": 2436
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/rag-vector-search.md",
+      "bytes": 6863
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/rag-vector-search.json",
+      "bytes": 1040
+    },
+    {
+      "action": "created",
+      "file": "public/img/rag-vector-search.svg",
+      "bytes": 2472
+    },
+    {
+      "action": "created",
+      "file": "content/lessons/llm-evaluation-security.md",
+      "bytes": 7580
+    },
+    {
+      "action": "created",
+      "file": "content/quizzes/llm-evaluation-security.json",
+      "bytes": 1215
+    },
+    {
+      "action": "created",
+      "file": "public/img/llm-evaluation-security.svg",
+      "bytes": 1969
+    },
+    {
+      "action": "created",
+      "file": "labs/threshold_cost/scratch.py",
+      "bytes": 611
+    },
+    {
+      "action": "created",
+      "file": "public/notebooks/threshold_cost_scratch.ipynb",
+      "bytes": 1769
+    },
+    {
+      "action": "created",
+      "file": "labs/rag_retrieval/scratch.py",
+      "bytes": 1771
+    },
+    {
+      "action": "created",
+      "file": "public/notebooks/rag_retrieval_scratch.ipynb",
+      "bytes": 3228
+    },
+    {
+      "action": "created",
+      "file": "public/fonts/be-vietnam-pro-full-400-v2.woff2",
+      "bytes": 35712
+    },
+    {
+      "action": "created",
+      "file": "public/fonts/be-vietnam-pro-full-500-v2.woff2",
+      "bytes": 37648
+    },
+    {
+      "action": "created",
+      "file": "public/fonts/be-vietnam-pro-full-600-v2.woff2",
+      "bytes": 37768
+    },
+    {
+      "action": "created",
+      "file": "public/fonts/be-vietnam-pro-full-700-v2.woff2",
+      "bytes": 38584
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-audit.md",
+      "bytes": 22344
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-console.json",
+      "bytes": 6148
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-final-qa.json",
+      "bytes": 1411
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-idempotency.json",
+      "bytes": 325
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-import.json",
+      "bytes": 588
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-inventory-before.json",
+      "bytes": 78063
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-links.json",
+      "bytes": 11338
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-pyodide.json",
+      "bytes": 2479
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-update.md",
+      "bytes": 14694
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-content-visuals.json",
+      "bytes": 152538
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-font-alphabet.json",
+      "bytes": 797
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-font-coverage.json",
+      "bytes": 1185
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-live-content-check.json",
+      "bytes": 10226
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-metadata-idempotency.json",
+      "bytes": 154
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-metadata-repair.json",
+      "bytes": 280
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-modern-execution.json",
+      "bytes": 2363
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-new-lab-execution.json",
+      "bytes": 494
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-new-topics.json",
+      "bytes": 2819
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-research-sources.json",
+      "bytes": 6553
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-typography-after.json",
+      "bytes": 180616
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-typography-before.json",
+      "bytes": 208983
+    },
+    {
+      "action": "created",
+      "file": "docs/neuralclone-typography-fix.md",
+      "bytes": 7418
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-dark-1440.png",
+      "bytes": 5311
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-dark-1920.png",
+      "bytes": 5311
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-dark-375.png",
+      "bytes": 3721
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-dark-768.png",
+      "bytes": 3727
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-light-1440.png",
+      "bytes": 5734
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-light-1920.png",
+      "bytes": 5734
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-light-375.png",
+      "bytes": 4000
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/heading-light-768.png",
+      "bytes": 4006
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-dark-1440.png",
+      "bytes": 296374
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-dark-1920.png",
+      "bytes": 304644
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-dark-375.png",
+      "bytes": 227009
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-dark-768.png",
+      "bytes": 274044
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-light-1440.png",
+      "bytes": 299117
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-light-1920.png",
+      "bytes": 307477
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-light-375.png",
+      "bytes": 227586
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/home-light-768.png",
+      "bytes": 275503
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/live-1440.png",
+      "bytes": 296409
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/local-1440.png",
+      "bytes": 298066
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-dark-1440.png",
+      "bytes": 408271
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-dark-1920.png",
+      "bytes": 408271
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-dark-375.png",
+      "bytes": 434439
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-dark-768.png",
+      "bytes": 406224
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-light-1440.png",
+      "bytes": 414695
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-light-1920.png",
+      "bytes": 414695
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-light-375.png",
+      "bytes": 440401
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-before/specimen-light-768.png",
+      "bytes": 413166
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-dark-1440.png",
+      "bytes": 5022
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-dark-1920.png",
+      "bytes": 5022
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-dark-375.png",
+      "bytes": 4036
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-dark-768.png",
+      "bytes": 4042
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-light-1440.png",
+      "bytes": 5401
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-light-1920.png",
+      "bytes": 5401
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-light-375.png",
+      "bytes": 4403
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/heading-light-768.png",
+      "bytes": 4410
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-dark-1440.png",
+      "bytes": 297248
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-dark-1920.png",
+      "bytes": 305727
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-dark-375.png",
+      "bytes": 227524
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-dark-768.png",
+      "bytes": 274332
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-light-1440.png",
+      "bytes": 300081
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-light-1920.png",
+      "bytes": 308579
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-light-375.png",
+      "bytes": 228436
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/home-light-768.png",
+      "bytes": 276445
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/live-1440.png",
+      "bytes": 297288
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/local-1440.png",
+      "bytes": 298972
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-dark-1440.png",
+      "bytes": 410759
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-dark-1920.png",
+      "bytes": 410759
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-dark-375.png",
+      "bytes": 439118
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-dark-768.png",
+      "bytes": 408125
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-light-1440.png",
+      "bytes": 417430
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-light-1920.png",
+      "bytes": 417430
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-light-375.png",
+      "bytes": 444463
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/typography-after/specimen-light-768.png",
+      "bytes": 415064
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-1440-figure.png",
+      "bytes": 34006
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-1440-heading.png",
+      "bytes": 165994
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-1920-figure.png",
+      "bytes": 34006
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-1920-heading.png",
+      "bytes": 169411
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-375-figure.png",
+      "bytes": 16759
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-375-heading.png",
+      "bytes": 68184
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-768-figure.png",
+      "bytes": 32059
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-dark-768-heading.png",
+      "bytes": 117493
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-1440-figure.png",
+      "bytes": 33551
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-1440-heading.png",
+      "bytes": 168769
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-1920-figure.png",
+      "bytes": 33551
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-1920-heading.png",
+      "bytes": 172423
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-375-figure.png",
+      "bytes": 16515
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-375-heading.png",
+      "bytes": 67573
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-768-figure.png",
+      "bytes": 31461
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/efficient-finetuning-light-768-heading.png",
+      "bytes": 120684
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-1440-figure.png",
+      "bytes": 20386
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-1440-heading.png",
+      "bytes": 167414
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-1920-figure.png",
+      "bytes": 20386
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-1920-heading.png",
+      "bytes": 170635
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-375-figure.png",
+      "bytes": 12829
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-375-heading.png",
+      "bytes": 77815
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-768-figure.png",
+      "bytes": 19941
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-dark-768-heading.png",
+      "bytes": 119883
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-1440-figure.png",
+      "bytes": 20444
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-1440-heading.png",
+      "bytes": 169875
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-1920-figure.png",
+      "bytes": 20444
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-1920-heading.png",
+      "bytes": 173379
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-375-figure.png",
+      "bytes": 12743
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-375-heading.png",
+      "bytes": 79736
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-768-figure.png",
+      "bytes": 19919
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/gradient-boosting-light-768-heading.png",
+      "bytes": 123163
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-1440-figure.png",
+      "bytes": 20408
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-1440-heading.png",
+      "bytes": 170326
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-1920-figure.png",
+      "bytes": 20408
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-1920-heading.png",
+      "bytes": 174000
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-375-figure.png",
+      "bytes": 13318
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-375-heading.png",
+      "bytes": 83647
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-768-figure.png",
+      "bytes": 19318
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-dark-768-heading.png",
+      "bytes": 116361
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-1440-figure.png",
+      "bytes": 20454
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-1440-heading.png",
+      "bytes": 172924
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-1920-figure.png",
+      "bytes": 20454
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-1920-heading.png",
+      "bytes": 176598
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-375-figure.png",
+      "bytes": 13106
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-375-heading.png",
+      "bytes": 83193
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-768-figure.png",
+      "bytes": 19378
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/imbalanced-learning-light-768-heading.png",
+      "bytes": 119941
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/live-evaluation-1440.png",
+      "bytes": 164834
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-1440-figure.png",
+      "bytes": 29365
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-1440-heading.png",
+      "bytes": 166549
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-1920-figure.png",
+      "bytes": 29365
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-1920-heading.png",
+      "bytes": 169820
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-375-figure.png",
+      "bytes": 17275
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-375-heading.png",
+      "bytes": 72696
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-768-figure.png",
+      "bytes": 27997
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-dark-768-heading.png",
+      "bytes": 121268
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-1440-figure.png",
+      "bytes": 29450
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-1440-heading.png",
+      "bytes": 169240
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-1920-figure.png",
+      "bytes": 29450
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-1920-heading.png",
+      "bytes": 172653
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-375-figure.png",
+      "bytes": 17179
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-375-heading.png",
+      "bytes": 74281
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-768-figure.png",
+      "bytes": 28046
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-evaluation-security-light-768-heading.png",
+      "bytes": 124835
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-1440-figure.png",
+      "bytes": 25578
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-1440-heading.png",
+      "bytes": 173885
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-1920-figure.png",
+      "bytes": 25578
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-1920-heading.png",
+      "bytes": 177415
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-375-figure.png",
+      "bytes": 15797
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-375-heading.png",
+      "bytes": 72309
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-768-figure.png",
+      "bytes": 24377
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-dark-768-heading.png",
+      "bytes": 123615
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-1440-figure.png",
+      "bytes": 25647
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-1440-heading.png",
+      "bytes": 176664
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-1920-figure.png",
+      "bytes": 25647
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-1920-heading.png",
+      "bytes": 180354
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-375-figure.png",
+      "bytes": 15676
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-375-heading.png",
+      "bytes": 71762
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-768-figure.png",
+      "bytes": 24386
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/llm-foundations-light-768-heading.png",
+      "bytes": 127589
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/local-evaluation-1440.png",
+      "bytes": 166549
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-1440-figure.png",
+      "bytes": 30134
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-1440-heading.png",
+      "bytes": 159492
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-1920-figure.png",
+      "bytes": 30134
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-1920-heading.png",
+      "bytes": 162860
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-375-figure.png",
+      "bytes": 17140
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-375-heading.png",
+      "bytes": 76888
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-768-figure.png",
+      "bytes": 29388
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-dark-768-heading.png",
+      "bytes": 115411
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-1440-figure.png",
+      "bytes": 29397
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-1440-heading.png",
+      "bytes": 161783
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-1920-figure.png",
+      "bytes": 29397
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-1920-heading.png",
+      "bytes": 165278
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-375-figure.png",
+      "bytes": 16885
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-375-heading.png",
+      "bytes": 78798
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-768-figure.png",
+      "bytes": 28561
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/mlops-reproducibility-light-768-heading.png",
+      "bytes": 118708
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-1440-figure.png",
+      "bytes": 30203
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-1440-heading.png",
+      "bytes": 168028
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-1920-figure.png",
+      "bytes": 30203
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-1920-heading.png",
+      "bytes": 171452
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-375-figure.png",
+      "bytes": 17184
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-375-heading.png",
+      "bytes": 62125
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-768-figure.png",
+      "bytes": 28512
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-dark-768-heading.png",
+      "bytes": 121086
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-1440-figure.png",
+      "bytes": 30141
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-1440-heading.png",
+      "bytes": 170781
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-1920-figure.png",
+      "bytes": 30141
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-1920-heading.png",
+      "bytes": 174467
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-375-figure.png",
+      "bytes": 16922
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-375-heading.png",
+      "bytes": 62827
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-768-figure.png",
+      "bytes": 28403
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/rag-vector-search-light-768-heading.png",
+      "bytes": 124762
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-1440-figure.png",
+      "bytes": 24768
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-1440-heading.png",
+      "bytes": 177487
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-1920-figure.png",
+      "bytes": 24768
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-1920-heading.png",
+      "bytes": 180913
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-375-figure.png",
+      "bytes": 13485
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-375-heading.png",
+      "bytes": 75419
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-768-figure.png",
+      "bytes": 22424
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-dark-768-heading.png",
+      "bytes": 117189
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-1440-figure.png",
+      "bytes": 24746
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-1440-heading.png",
+      "bytes": 179894
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-1920-figure.png",
+      "bytes": 24746
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-1920-heading.png",
+      "bytes": 183621
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-375-figure.png",
+      "bytes": 13442
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-375-heading.png",
+      "bytes": 76869
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-768-figure.png",
+      "bytes": 22437
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/new-content/responsible-ai-light-768-heading.png",
+      "bytes": 120244
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-dark-1440.png",
+      "bytes": 76478
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-dark-1920.png",
+      "bytes": 78881
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-dark-375.png",
+      "bytes": 44733
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-dark-768.png",
+      "bytes": 55278
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-light-1440.png",
+      "bytes": 76195
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-light-1920.png",
+      "bytes": 78625
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-light-375.png",
+      "bytes": 45238
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/admin-blocked-light-768.png",
+      "bytes": 55411
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-dark-1440.png",
+      "bytes": 86614
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-dark-1920.png",
+      "bytes": 88873
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-dark-375.png",
+      "bytes": 54561
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-dark-768.png",
+      "bytes": 67287
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-light-1440.png",
+      "bytes": 86246
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-light-1920.png",
+      "bytes": 88644
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-light-375.png",
+      "bytes": 55201
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/course-light-768.png",
+      "bytes": 67766
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-dark-1440.png",
+      "bytes": 84404
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-dark-1920.png",
+      "bytes": 86421
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-dark-375.png",
+      "bytes": 47133
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-dark-768.png",
+      "bytes": 62170
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-light-1440.png",
+      "bytes": 83530
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-light-1920.png",
+      "bytes": 85723
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-light-375.png",
+      "bytes": 46966
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/courses-light-768.png",
+      "bytes": 61789
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-dark-1440.png",
+      "bytes": 83415
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-dark-1920.png",
+      "bytes": 85604
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-dark-375.png",
+      "bytes": 42570
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-dark-768.png",
+      "bytes": 54038
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-light-1440.png",
+      "bytes": 84017
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-light-1920.png",
+      "bytes": 86203
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-light-375.png",
+      "bytes": 43554
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/dashboard-filled-light-768.png",
+      "bytes": 54759
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-dark-1440.png",
+      "bytes": 87827
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-dark-1920.png",
+      "bytes": 90403
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-dark-375.png",
+      "bytes": 62157
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-dark-768.png",
+      "bytes": 75109
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-light-1440.png",
+      "bytes": 87445
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-light-1920.png",
+      "bytes": 90015
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-light-375.png",
+      "bytes": 62102
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/datasets-light-768.png",
+      "bytes": 75106
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-dark-1440.png",
+      "bytes": 89477
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-dark-1920.png",
+      "bytes": 91758
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-dark-375.png",
+      "bytes": 52445
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-dark-768.png",
+      "bytes": 60901
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-light-1440.png",
+      "bytes": 89487
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-light-1920.png",
+      "bytes": 91749
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-light-375.png",
+      "bytes": 52516
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/home-light-768.png",
+      "bytes": 60946
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-dark-1440.png",
+      "bytes": 104514
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-dark-1920.png",
+      "bytes": 107100
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-dark-375.png",
+      "bytes": 51465
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-dark-768.png",
+      "bytes": 65624
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-light-1440.png",
+      "bytes": 103568
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-light-1920.png",
+      "bytes": 106227
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-light-375.png",
+      "bytes": 51889
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-cpu-light-768.png",
+      "bytes": 65774
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-dark-1440.png",
+      "bytes": 101768
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-dark-1920.png",
+      "bytes": 104389
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-dark-375.png",
+      "bytes": 60806
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-dark-768.png",
+      "bytes": 67364
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-light-1440.png",
+      "bytes": 101553
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-light-1920.png",
+      "bytes": 104177
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-light-375.png",
+      "bytes": 61053
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lab-light-768.png",
+      "bytes": 67443
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-dark-1440.png",
+      "bytes": 122753
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-dark-1920.png",
+      "bytes": 125783
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-dark-375.png",
+      "bytes": 65539
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-dark-768.png",
+      "bytes": 76982
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-light-1440.png",
+      "bytes": 122999
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-light-1920.png",
+      "bytes": 126099
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-light-375.png",
+      "bytes": 64479
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/lesson-light-768.png",
+      "bytes": 78029
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-dark-1440.png",
+      "bytes": 90190
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-dark-1920.png",
+      "bytes": 93020
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-dark-375.png",
+      "bytes": 46493
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-dark-768.png",
+      "bytes": 52281
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-light-1440.png",
+      "bytes": 87482
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-light-1920.png",
+      "bytes": 90089
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-light-375.png",
+      "bytes": 46344
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/login-light-768.png",
+      "bytes": 52185
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-dark-1440.png",
+      "bytes": 76478
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-dark-1920.png",
+      "bytes": 78881
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-dark-375.png",
+      "bytes": 44733
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-dark-768.png",
+      "bytes": 55278
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-light-1440.png",
+      "bytes": 76195
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-light-1920.png",
+      "bytes": 78625
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-light-375.png",
+      "bytes": 45238
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/not-found-light-768.png",
+      "bytes": 55411
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/pca-projections-dark.png",
+      "bytes": 45369
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/pca-projections-light.png",
+      "bytes": 45394
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-dark-1440.png",
+      "bytes": 84269
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-dark-1920.png",
+      "bytes": 86287
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-dark-375.png",
+      "bytes": 55524
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-dark-768.png",
+      "bytes": 63207
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-light-1440.png",
+      "bytes": 84337
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-light-1920.png",
+      "bytes": 86504
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-light-375.png",
+      "bytes": 56088
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/playground-light-768.png",
+      "bytes": 63565
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-dark-1440.png",
+      "bytes": 103500
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-dark-1920.png",
+      "bytes": 106200
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-dark-375.png",
+      "bytes": 56074
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-dark-768.png",
+      "bytes": 72808
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-light-1440.png",
+      "bytes": 103396
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-light-1920.png",
+      "bytes": 106180
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-light-375.png",
+      "bytes": 56323
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/projects-light-768.png",
+      "bytes": 73063
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/quiz-result-mobile.png",
+      "bytes": 49713
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-dark-1440.png",
+      "bytes": 85714
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-dark-1920.png",
+      "bytes": 88023
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-dark-375.png",
+      "bytes": 45594
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-dark-768.png",
+      "bytes": 54699
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-light-1440.png",
+      "bytes": 83506
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-light-1920.png",
+      "bytes": 85747
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-light-375.png",
+      "bytes": 45395
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/register-light-768.png",
+      "bytes": 54598
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-dark-1440.png",
+      "bytes": 71215
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-dark-1920.png",
+      "bytes": 73163
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-dark-375.png",
+      "bytes": 47653
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-dark-768.png",
+      "bytes": 51346
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-light-1440.png",
+      "bytes": 70983
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-light-1920.png",
+      "bytes": 73029
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-light-375.png",
+      "bytes": 47600
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/reset-light-768.png",
+      "bytes": 51306
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-dark-1440.png",
+      "bytes": 64613
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-dark-1920.png",
+      "bytes": 66913
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-dark-375.png",
+      "bytes": 47974
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-dark-768.png",
+      "bytes": 50536
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-light-1440.png",
+      "bytes": 64404
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-light-1920.png",
+      "bytes": 66718
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-light-375.png",
+      "bytes": 48399
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/resources-light-768.png",
+      "bytes": 50921
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-dark-1440.png",
+      "bytes": 102989
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-dark-1920.png",
+      "bytes": 105756
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-dark-375.png",
+      "bytes": 63729
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-dark-768.png",
+      "bytes": 87371
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-dark-1440.png",
+      "bytes": 85492
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-dark-1920.png",
+      "bytes": 87847
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-dark-375.png",
+      "bytes": 55516
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-dark-768.png",
+      "bytes": 64539
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-light-1440.png",
+      "bytes": 84885
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-light-1920.png",
+      "bytes": 87236
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-light-375.png",
+      "bytes": 55412
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-empty-light-768.png",
+      "bytes": 64201
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-light-1440.png",
+      "bytes": 103173
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-light-1920.png",
+      "bytes": 105993
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-light-375.png",
+      "bytes": 64177
+    },
+    {
+      "action": "created",
+      "file": "docs/screenshots/content-update/search-light-768.png",
+      "bytes": 87450
+    }
+  ],
+  "followUp": {
+    "checkedDate": "2026-10-28",
+    "report": "neuralclone-final-polish.md",
+    "manifest": "neuralclone-polish-change-manifest.json",
+    "note": "Original files array describes the earlier typography/content run; this polish has its own manifest."
+  },
+  "crossBrowserFollowUp": {
+    "checkedDate": "2026-10-28",
+    "report": "neuralclone-cross-browser-review.md",
+    "transferReport": "neuralclone-transfer-investigation.md",
+    "manifest": "neuralclone-cross-review-change-manifest.json",
+    "note": "Historical files/results preserved; follow-up has a separate working-tree snapshot and new execution artifacts."
+  }
+}

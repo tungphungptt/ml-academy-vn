@@ -1,0 +1,6156 @@
+{
+  "checkedAt": "2026-10-27T15:21:21.158Z",
+  "screens": [
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 52
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 39
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 42
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 52
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "dark",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 52
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 39
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 42
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 375,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 52
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 768,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 1440,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "gradient-boosting",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "imbalanced-learning",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 53
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "mlops-reproducibility",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 45
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 32
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "responsible-ai",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 28
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 25
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-foundations",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 50
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 43
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 34
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "efficient-finetuning",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 35
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 27
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 36
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "rag-vector-search",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 29
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 26
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 24
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    },
+    {
+      "slug": "llm-evaluation-security",
+      "theme": "light",
+      "width": 1920,
+      "status": 200,
+      "overflow": false,
+      "mathErrors": 0,
+      "fonts": [
+        [
+          {
+            "familyName": "Be Vietnam Pro SemiBold",
+            "postScriptName": "BeVietnamPro-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 38
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 22
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 37
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 44
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 33
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ],
+        [
+          {
+            "familyName": "Be Vietnam Pro",
+            "postScriptName": "BeVietnamPro-Bold",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "screens": 64,
+    "overflow": 0,
+    "mathErrors": 0,
+    "fallbackHeadings": 0
+  }
+}

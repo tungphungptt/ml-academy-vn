@@ -6,9 +6,15 @@ export async function POST(r: Request) {
   const rec = await db.passwordReset.findUnique({ where: { tokenHash: hashToken(v.data.token) } });
   if (!rec || !isUsable(rec)) return Response.json({ error: "Liên kết không hợp lệ hoặc đã hết hạn" }, { status: 400 });
   const hash = await bcrypt.hash(v.data.next, 12); const now = new Date();
-  await db.$transaction([
-    db.user.update({ where: { id: rec.userId }, data: { passwordHash: hash, tokenVersion: { increment: 1 } } }),
-    db.passwordReset.updateMany({ where: { userId: rec.userId, usedAt: null }, data: { usedAt: now } }),
-  ]);
+  const consumed = await db.$transaction(async tx => {
+    // Claim inside the same transaction as the password update. Concurrent
+    // requests that read the same unused token must not both succeed.
+    const claim = await tx.passwordReset.updateMany({ where: { id: rec.id, usedAt: null, expiresAt: { gt: now } }, data: { usedAt: now } });
+    if (claim.count !== 1) return false;
+    await tx.user.update({ where: { id: rec.userId }, data: { passwordHash: hash, tokenVersion: { increment: 1 } } });
+    await tx.passwordReset.updateMany({ where: { userId: rec.userId, usedAt: null }, data: { usedAt: now } });
+    return true;
+  });
+  if (!consumed) return Response.json({ error: "Liên kết không hợp lệ hoặc đã hết hạn" }, { status: 400 });
   return Response.json({ ok: true });
 }

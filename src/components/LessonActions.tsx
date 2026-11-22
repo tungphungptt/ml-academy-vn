@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import Icon from "./Icon";
-export default function LessonActions({ lessonId, initialDone, loggedIn }: { lessonId: string; initialDone: boolean; loggedIn: boolean }) {
+export default function LessonActions({ lessonId, initialDone, loggedIn, loginHref = "/login" }: { lessonId: string; initialDone: boolean; loggedIn: boolean; loginHref?: string }) {
   const [done, setDone] = useState(initialDone), [err, setErr] = useState(""), [busy, setBusy] = useState(false);
-  if (!loggedIn) return <p className="notice"><Icon name="bookmark" /><span><a href="/login">Đăng nhập</a> để lưu tiến độ và ghi chú của bạn.</span></p>;
+  if (!loggedIn) return <p className="notice"><Icon name="bookmark" /><span><a href={loginHref}>Đăng nhập</a> để lưu tiến độ và ghi chú của bạn.</span></p>;
   async function toggle() {
     if (busy) return;
     setErr(""); setBusy(true); const next = !done;

@@ -1,0 +1,539 @@
+{
+  "checkedAt": "2026-10-28T09:28:57.486Z",
+  "phase": "after",
+  "browser": "webkit",
+  "version": "27.2",
+  "platform": "win32",
+  "cases": [
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 375,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 375,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 375,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 375,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "dark",
+      "width": 375,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 375,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 375,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 375,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 375,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "dark",
+      "width": 375,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "dark",
+      "width": 375,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 768,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 768,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 768,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 768,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "dark",
+      "width": 768,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 768,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 768,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 768,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 768,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "dark",
+      "width": 768,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "dark",
+      "width": 768,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "dark",
+      "width": 1440,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "dark",
+      "width": 1920,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 375,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "light",
+      "width": 375,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 375,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 375,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "light",
+      "width": 375,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 375,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 375,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 375,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "light",
+      "width": 375,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "light",
+      "width": 375,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "light",
+      "width": 375,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 768,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "light",
+      "width": 768,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 768,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 768,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "light",
+      "width": 768,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 768,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 768,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 768,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "light",
+      "width": 768,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "light",
+      "width": 768,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "light",
+      "width": 768,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 1440,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "light",
+      "width": 1440,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 1440,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 1440,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "light",
+      "width": 1440,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 1440,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 1440,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 1440,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "light",
+      "width": 1440,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "light",
+      "width": 1440,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "light",
+      "width": 1440,
+      "url": "/account"
+    },
+    {
+      "name": "home",
+      "theme": "light",
+      "width": 1920,
+      "url": "/"
+    },
+    {
+      "name": "dashboard",
+      "theme": "light",
+      "width": 1920,
+      "url": "/"
+    },
+    {
+      "name": "courses",
+      "theme": "light",
+      "width": 1920,
+      "url": "/courses"
+    },
+    {
+      "name": "lesson",
+      "theme": "light",
+      "width": 1920,
+      "url": "/learn/llm-foundations"
+    },
+    {
+      "name": "quiz",
+      "theme": "light",
+      "width": 1920,
+      "url": "/learn/imbalanced-learning#quiz"
+    },
+    {
+      "name": "lab",
+      "theme": "light",
+      "width": 1920,
+      "url": "/lab?lab=linear_regression"
+    },
+    {
+      "name": "cpu",
+      "theme": "light",
+      "width": 1920,
+      "url": "/lab?lab=cnn_cpu"
+    },
+    {
+      "name": "threshold",
+      "theme": "light",
+      "width": 1920,
+      "url": "/playground#threshold"
+    },
+    {
+      "name": "login",
+      "theme": "light",
+      "width": 1920,
+      "url": "/login?next=%2Flearn%2Fllm-foundations%23quiz"
+    },
+    {
+      "name": "register",
+      "theme": "light",
+      "width": 1920,
+      "url": "/register"
+    },
+    {
+      "name": "account",
+      "theme": "light",
+      "width": 1920,
+      "url": "/account"
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

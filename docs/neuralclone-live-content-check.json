@@ -1,0 +1,404 @@
+{
+  "checkedAt": "2026-10-27T15:24:17.527Z",
+  "origins": [
+    {
+      "origin": "http://localhost:3000",
+      "lessons": [
+        {
+          "slug": "gradient-boosting",
+          "status": 200,
+          "heading": "Gradient Boosting: học từ phần dư",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "imbalanced-learning",
+          "status": 200,
+          "heading": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "mlops-reproducibility",
+          "status": 200,
+          "heading": "MLOps: tái lập thí nghiệm, versioning và drift",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "responsible-ai",
+          "status": 200,
+          "heading": "Responsible AI: fairness, privacy và model cards",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "llm-foundations",
+          "status": 200,
+          "heading": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "efficient-finetuning",
+          "status": 200,
+          "heading": "PEFT, LoRA và lượng tử hóa mô hình",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "rag-vector-search",
+          "status": 200,
+          "heading": "RAG và vector search: truy xuất có bằng chứng",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "llm-evaluation-security",
+          "status": 200,
+          "heading": "Đánh giá LLM, hallucination và prompt injection",
+          "matchesCatalog": true
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "KaTeX_AMS",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Caligraphic",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Caligraphic",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Fraktur",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Fraktur",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Math",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Math",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_SansSerif",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_SansSerif",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_SansSerif",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Script",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size1",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size2",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size3",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size4",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Typewriter",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "__nextjs-Geist",
+          "weight": "400 600",
+          "status": "unloaded"
+        },
+        {
+          "family": "__nextjs-Geist Mono",
+          "weight": "400 600",
+          "status": "unloaded"
+        },
+        {
+          "family": "__nextjs-Geist",
+          "weight": "400 600",
+          "status": "unloaded"
+        },
+        {
+          "family": "__nextjs-Geist Mono",
+          "weight": "400 600",
+          "status": "unloaded"
+        }
+      ],
+      "fontCSS": [
+        "/fonts/be-vietnam-pro-full-400-v2.woff2",
+        "/fonts/be-vietnam-pro-full-600-v2.woff2"
+      ]
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "lessons": [
+        {
+          "slug": "gradient-boosting",
+          "status": 200,
+          "heading": "Gradient Boosting: học từ phần dư",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "imbalanced-learning",
+          "status": 200,
+          "heading": "Dữ liệu mất cân bằng, calibration và ngưỡng quyết định",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "mlops-reproducibility",
+          "status": 200,
+          "heading": "MLOps: tái lập thí nghiệm, versioning và drift",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "responsible-ai",
+          "status": 200,
+          "heading": "Responsible AI: fairness, privacy và model cards",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "llm-foundations",
+          "status": 200,
+          "heading": "Nền tảng LLM: tokenization, pretraining và suy luận",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "efficient-finetuning",
+          "status": 200,
+          "heading": "PEFT, LoRA và lượng tử hóa mô hình",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "rag-vector-search",
+          "status": 200,
+          "heading": "RAG và vector search: truy xuất có bằng chứng",
+          "matchesCatalog": true
+        },
+        {
+          "slug": "llm-evaluation-security",
+          "status": 200,
+          "heading": "Đánh giá LLM, hallucination và prompt injection",
+          "matchesCatalog": true
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "KaTeX_AMS",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Caligraphic",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Caligraphic",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Fraktur",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Fraktur",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Main",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Math",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Math",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_SansSerif",
+          "weight": "700",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_SansSerif",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_SansSerif",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Script",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size1",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size2",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size3",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Size4",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "KaTeX_Typewriter",
+          "weight": "400",
+          "status": "unloaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "500",
+          "status": "loaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "weight": "700",
+          "status": "loaded"
+        },
+        {
+          "family": "__nextjs-Geist",
+          "weight": "400 600",
+          "status": "unloaded"
+        },
+        {
+          "family": "__nextjs-Geist Mono",
+          "weight": "400 600",
+          "status": "unloaded"
+        },
+        {
+          "family": "__nextjs-Geist",
+          "weight": "400 600",
+          "status": "unloaded"
+        },
+        {
+          "family": "__nextjs-Geist Mono",
+          "weight": "400 600",
+          "status": "unloaded"
+        }
+      ],
+      "fontCSS": [
+        "/fonts/be-vietnam-pro-full-400-v2.woff2",
+        "/fonts/be-vietnam-pro-full-600-v2.woff2"
+      ]
+    }
+  ],
+  "errors": []
+}

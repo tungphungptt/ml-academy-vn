@@ -1,12 +1,14 @@
+import { pageMetadata } from "@/lib/metadata";
 import PageHeading from "@/components/PageHeading";
 import CourseCard from "@/components/CourseCard";
 import EmptyState from "@/components/EmptyState";
 import { db } from "@/lib/db"; import { currentUser } from "@/lib/auth"; import { courseProgress } from "@/lib/progress";
 import { normalizeSearch } from "@/lib/search";
+import { singleQueryValues, type QueryParams } from "@/lib/queryParams";
+import Icon from "@/components/Icon";
 export const dynamic = "force-dynamic";
-type SP = { q?: string; level?: string; status?: string; sort?: string };
-export default async function Courses({ searchParams: pendingSearchParams }: { searchParams: Promise<SP> }) {
-  const searchParams = await pendingSearchParams;
+export default async function Courses({ searchParams: pendingSearchParams }: { searchParams: Promise<QueryParams> }) {
+  const searchParams = singleQueryValues(await pendingSearchParams);
   const q = normalizeSearch((searchParams.q ?? "").trim()), level = searchParams.level ?? "", status = searchParams.status ?? "";
   const u = await currentUser();
   const done = new Set(u ? (await db.lessonProgress.findMany({ where: { userId: u.id } })).map(p => p.lessonId) : []);
@@ -21,7 +23,7 @@ export default async function Courses({ searchParams: pendingSearchParams }: { s
   const sort = searchParams.sort ?? "curriculum";
   if (sort === "title") rows.sort((a, b) => a.c.title.localeCompare(b.c.title, "vi"));
   else if (sort === "progress" && u) rows.sort((a, b) => b.p.percent - a.p.percent);
-  return <><PageHeading eyebrow="LỘ TRÌNH HỌC" title="Khóa học" description="Đi từ nền tảng toán và Python đến những mô hình bạn có thể tự giải thích, xây dựng và đánh giá." />
+  return <><div className="catalog-intro"><PageHeading eyebrow="THƯ VIỆN NEURALCLONE" title="Chọn điều bạn muốn hiểu." description="Từ nền tảng toán và Python đến Machine Learning, Deep Learning và AI hiện đại. Mỗi lộ trình nối kiến thức với thực hành." /><aside className="catalog-start"><strong>Chưa biết nên học gì trước?</strong><p>Bắt đầu với cách học máy hoạt động, rồi chọn lộ trình phù hợp với nền tảng của bạn.</p><a className="text-link" href="/learn/ml-intro">Mở bài nhập môn<Icon name="arrow" /></a></aside></div>
     <form method="get" className="filters" role="search">
       <label className="filter-field query">Chủ đề<input name="q" defaultValue={searchParams.q ?? ""} placeholder="Tên khóa học hoặc chủ đề bạn muốn học" aria-label="Tìm kiếm" /></label>
       <label className="filter-field">Trình độ<select name="level" defaultValue={level} aria-label="Trình độ"><option value="">Mọi trình độ</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label>
@@ -29,6 +31,9 @@ export default async function Courses({ searchParams: pendingSearchParams }: { s
       <label className="filter-field">Sắp xếp<select name="sort" defaultValue={sort} aria-label="Sắp xếp"><option value="curriculum">Thứ tự lộ trình</option><option value="title">Tên A–Z</option>{u && <option value="progress">Tiến độ cao nhất</option>}</select></label>
       <button className="primary">Lọc</button><a className="filter-reset" href="/courses">Xóa bộ lọc</a>
     </form>
-    {rows.length === 0 ? <EmptyState title="Chưa tìm thấy lộ trình phù hợp" description="Thử một từ khóa khác hoặc bỏ bớt bộ lọc. Bạn có thể bắt đầu từ bất kỳ lộ trình đang xuất bản nào." href="/courses" action="Xem tất cả lộ trình" /> : <div className="course-grid">{rows.map(({ c, p, full }) => <CourseCard key={c.id} slug={c.slug} title={c.title} description={c.description} level={c.level} index={cs.findIndex(item => item.id === c.id)} lessons={full} modules={c.modules.length} progress={u ? p : undefined} />)}</div>}
+    <div className="catalog-summary"><h2>{q || level || status ? "Lộ trình phù hợp" : "Các lộ trình học"}</h2><span>{rows.length} lộ trình · {rows.reduce((total, row) => total + row.full, 0)} bài học</span></div>
+    {rows.length === 0 ? <EmptyState title="Chưa tìm thấy lộ trình phù hợp" description="Thử một từ khóa khác hoặc bỏ bớt bộ lọc. Bạn có thể bắt đầu từ bất kỳ lộ trình đang xuất bản nào." href="/courses" action="Xem tất cả lộ trình" /> : <div className="course-grid catalog-grid">{rows.map(({ c, p, full }) => <CourseCard key={c.id} slug={c.slug} title={c.title} description={c.description} level={c.level} index={cs.findIndex(item => item.id === c.id)} lessons={full} modules={c.modules.length} progress={u ? p : undefined} />)}</div>}
   </>;
 }
+
+export const metadata = pageMetadata("Lộ trình học", "Lộ trình từ toán và Python đến Machine Learning và Deep Learning. Chọn trình độ, theo dõi tiến độ và thực hành từng bước.", "/courses", false);

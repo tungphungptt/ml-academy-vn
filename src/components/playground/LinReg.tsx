@@ -11,10 +11,10 @@ export default function LinReg() {
   return <section><h2>Linear Regression + Gradient Descent</h2>
     <label>Learning rate: {lr.toFixed(3)} <input type="range" min={0.001} max={0.05} step={0.001} value={lr} onChange={e => setLr(+e.target.value)} /></label><br />
     <label>Số vòng lặp (epoch): {ep} <input type="range" min={1} max={300} value={ep} onChange={e => setEp(+e.target.value)} /></label>
-    {g.diverged && <p role="alert">Phân kỳ: learning rate quá lớn nên loss tăng vô hạn. Hãy giảm learning rate.</p>}
+    {g.diverged && <p role="alert">Đã dừng vì loss vượt ngưỡng an toàn (10¹²) hoặc không còn hữu hạn. Hãy giảm learning rate. Biểu đồ giữ bước hữu hạn cuối cùng.</p>}
     <p>w = {g.w.toFixed(3)}, b = {g.b.toFixed(3)}, MSE = {L[L.length - 1].toFixed(3)} (nghiệm đóng: w = {ols.w.toFixed(3)}, b = {ols.b.toFixed(3)})</p>
     <Plot d={dom} label="Dữ liệu và đường hồi quy">{(sx, sy) => <>{data.map((p, i) => <circle key={i} cx={sx(p.x)} cy={sy(p.y)} r={3} fill="var(--plot-1)" />)}
       <line x1={sx(0)} y1={sy(g.b)} x2={sx(10)} y2={sy(g.w * 10 + g.b)} stroke="var(--plot-2)" strokeWidth={2} /></>}</Plot>
-    <Plot d={{ xmin: 0, xmax: Math.max(L.length - 1, 1), ymin: 0, ymax: maxL }} label="Đường cong loss theo epoch">{(sx, sy) => <polyline fill="none" stroke="var(--plot-3)" strokeWidth={2} points={L.map((v, i) => `${sx(i)},${sy(v)}`).join(" ")} />}</Plot>
+    <Plot d={{ xmin: 0, xmax: Math.max(L.length - 1, 1), ymin: 0, ymax: maxL }} label="Đường cong mất mát theo epoch" xLabel="epoch" yLabel="MSE">{(sx, sy) => <polyline fill="none" stroke="var(--plot-3)" strokeWidth={2} points={L.map((v, i) => `${sx(i)},${sy(v)}`).join(" ")} />}</Plot><p className="plot-legend">Chấm: dữ liệu · Đường cam: dự đoán · Đường xanh lam: MSE, có bước 0</p><p className="demo-question">Thử learning rate = 0,05. Vì sao bước học lớn có thể khiến loss tăng thay vì giảm?</p>
   </section>;
 }

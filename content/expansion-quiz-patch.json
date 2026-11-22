@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "derivatives",
+    "order": 0,
+    "before": {
+      "prompt": "Đạo hàm của $f(x)=(3x+1)^2$ tại $x=1$ là bao nhiêu?",
+      "options": [
+        "24",
+        "8",
+        "6"
+      ],
+      "correct": 0,
+      "explanation": "$2(3x+1)\\cdot3=2\\cdot4\\cdot3=24$."
+    },
+    "after": {
+      "prompt": "Đạo hàm của $f(x)=(3x+1)^2$ tại $x=1$ là bao nhiêu?",
+      "options": [
+        "24",
+        "8",
+        "6"
+      ],
+      "correct": 0,
+      "explanation": "$2(3x+1)\\cdot3=24$ tại x=1. Chọn 8 là quên đạo hàm của lớp trong (3); chọn 6 là chỉ nhân các hệ số mà bỏ giá trị 3x+1=4."
+    }
+  },
+  {
+    "slug": "derivatives",
+    "order": 1,
+    "before": {
+      "prompt": "Gradient chỉ hướng nào?",
+      "options": [
+        "Hướng làm f tăng nhanh nhất",
+        "Hướng làm f giảm nhanh nhất",
+        "Hướng vuông góc với trục x"
+      ],
+      "correct": 0,
+      "explanation": "Vì vậy gradient descent đi theo hướng ngược lại."
+    },
+    "after": {
+      "prompt": "Với chuẩn Euclid và gradient khác 0, gradient chỉ hướng nào tại chỗ?",
+      "options": [
+        "Hướng làm f tăng nhanh nhất",
+        "Hướng làm f giảm nhanh nhất",
+        "Hướng vuông góc với trục x"
+      ],
+      "correct": 0,
+      "explanation": "Với gradient khác 0 và chuẩn Euclid, hướng gradient là hướng tăng nhanh nhất tại chỗ. Hướng giảm là đối dấu. Không có quy tắc luôn vuông góc trục x; tại gradient bằng 0 không có hướng tăng bậc nhất duy nhất."
+    }
+  },
+  {
+    "slug": "linear-regression",
+    "order": 0,
+    "before": {
+      "prompt": "Với dữ liệu (1,2),(2,4),(3,6), cặp $(w,b)$ nào cho MSE bằng 0?",
+      "options": [
+        "$w=1,b=0$",
+        "$w=2,b=0$",
+        "$w=0,b=2$"
+      ],
+      "correct": 1,
+      "explanation": "$y=2x$ khớp hoàn toàn nên sai số bằng 0."
+    },
+    "after": {
+      "prompt": "Với dữ liệu (1,2),(2,4),(3,6), cặp $(w,b)$ nào cho MSE bằng 0?",
+      "options": [
+        "$w=1,b=0$",
+        "$w=2,b=0$",
+        "$w=0,b=2$"
+      ],
+      "correct": 1,
+      "explanation": "$w=2,b=0$ cho dự đoán 2,4,6 nên cả ba residual bằng 0. w=1,b=0 cho MSE=14/3. w=0,b=2 dự đoán hằng 2, có MSE=20/3; chỉ khớp mẫu đầu không đủ."
+    }
+  },
+  {
+    "slug": "linear-regression",
+    "order": 1,
+    "before": {
+      "prompt": "Trong $L=\\frac1N\\sum_{i=1}^N(y_i-\\hat y_i)^2$, N là gì?",
+      "options": [
+        "Số đặc trưng",
+        "Số mẫu",
+        "Số vòng lặp"
+      ],
+      "correct": 1,
+      "explanation": "N là số mẫu dữ liệu; MSE là trung bình bình phương sai số trên N mẫu."
+    },
+    "after": {
+      "prompt": "Trong $L=\\frac1N\\sum_{i=1}^N(y_i-\\hat y_i)^2$, N là gì?",
+      "options": [
+        "Số đặc trưng",
+        "Số mẫu",
+        "Số vòng lặp"
+      ],
+      "correct": 1,
+      "explanation": "N là số mẫu đang lấy trung bình; ở ví dụ N=3. Số đặc trưng là số cột đầu vào, số vòng lặp là số lần cập nhật. Đổi sum thành mean làm gradient giảm N lần nếu dữ liệu giữ nguyên."
+    }
+  },
+  {
+    "slug": "gradient-descent",
+    "order": 0,
+    "before": {
+      "prompt": "Với $L(\\theta)=\\theta^2$, $\\theta_0=4$, $\\eta=0.1$, giá trị $\\theta_1$ là bao nhiêu?",
+      "options": [
+        "3.2",
+        "3.6",
+        "0.8"
+      ],
+      "correct": 0,
+      "explanation": "$\\theta_1=4-0.1\\cdot(2\\cdot4)=3.2$."
+    },
+    "after": {
+      "prompt": "Với $L(\\theta)=\\theta^2$, $\\theta_0=4$, $\\eta=0.1$, giá trị $\\theta_1$ là bao nhiêu?",
+      "options": [
+        "3.2",
+        "3.6",
+        "0.8"
+      ],
+      "correct": 0,
+      "explanation": "Gradient là 2θ=8, bước thay đổi η∇L=0.8 nên θ mới=3.2. 3.6 quên hệ số 2; 0.8 chỉ là độ lớn bước, chưa trừ khỏi θ ban đầu."
+    }
+  },
+  {
+    "slug": "gradient-descent",
+    "order": 1,
+    "before": {
+      "prompt": "Vì sao có dấu trừ trong $\\theta\\leftarrow\\theta-\\eta\\nabla L$?",
+      "options": [
+        "Để θ luôn dương",
+        "Gradient chỉ hướng L tăng nhanh nhất, ta đi ngược lại",
+        "Để tăng learning rate"
+      ],
+      "correct": 1,
+      "explanation": "Ta muốn giảm L nên đi ngược hướng gradient."
+    },
+    "after": {
+      "prompt": "Vì sao có dấu trừ trong $\\theta\\leftarrow\\theta-\\eta\\nabla L$?",
+      "options": [
+        "Để θ luôn dương",
+        "Gradient chỉ hướng L tăng nhanh nhất, ta đi ngược lại",
+        "Để tăng learning rate"
+      ],
+      "correct": 1,
+      "explanation": "Với bước đủ nhỏ, đi ngược gradient giảm loss tại chỗ. Dấu trừ không buộc θ dương và không làm learning rate tăng. Bước quá lớn vẫn có thể làm loss tăng."
+    }
+  },
+  {
+    "slug": "gradient-descent",
+    "order": 2,
+    "before": {
+      "prompt": "Dấu hiệu learning rate quá lớn là gì?",
+      "options": [
+        "Loss giảm rất chậm",
+        "Loss tăng hoặc dao động mạnh",
+        "Loss luôn bằng 0"
+      ],
+      "correct": 1,
+      "explanation": "Bước quá dài khiến vượt qua cực tiểu, loss có thể tăng hoặc phân kỳ."
+    },
+    "after": {
+      "prompt": "Dấu hiệu learning rate quá lớn là gì?",
+      "options": [
+        "Loss giảm rất chậm",
+        "Loss tăng hoặc dao động mạnh",
+        "Loss luôn bằng 0"
+      ],
+      "correct": 1,
+      "explanation": "Loss tăng hoặc dao động mạnh có thể do bước quá dài; cũng cần kiểm tra dữ liệu/gradient. Giảm rất chậm thường gợi ý bước nhỏ hoặc độ cong khác nhau; loss bằng 0 không phải dấu hiệu chung của learning rate lớn."
+    }
+  },
+  {
+    "slug": "backpropagation",
+    "order": 0,
+    "before": {
+      "prompt": "Trong ví dụ bài ($x=1,w_1=2,w_2=3,t=5$), $\\partial L/\\partial w_2$ bằng bao nhiêu?",
+      "options": [
+        "2",
+        "3",
+        "6"
+      ],
+      "correct": 0,
+      "explanation": "$(\\hat y-t)h=1\\cdot2=2$."
+    },
+    "after": {
+      "prompt": "Trong ví dụ bài ($x=1,w_1=2,w_2=3,t=5$), $\\partial L/\\partial w_2$ bằng bao nhiêu?",
+      "options": [
+        "2",
+        "3",
+        "6"
+      ],
+      "correct": 0,
+      "explanation": "∂L/∂w₂=(ŷ−t)h=1×2=2. Số 3 là gradient tới h, không phải w₂; số 6 là dự đoán ŷ, không phải đạo hàm. Giữ loss một nửa bình phương như bài."
+    }
+  },
+  {
+    "slug": "backpropagation",
+    "order": 1,
+    "before": {
+      "prompt": "Nguyên lý toán học của backpropagation là gì?",
+      "options": [
+        "Chain rule",
+        "Định lý Bayes",
+        "Phân rã giá trị suy biến"
+      ],
+      "correct": 0,
+      "explanation": "Gradient được nhân dần theo chain rule từ loss về tham số."
+    },
+    "after": {
+      "prompt": "Nguyên lý toán học của backpropagation là gì?",
+      "options": [
+        "Chain rule",
+        "Định lý Bayes",
+        "Phân rã giá trị suy biến"
+      ],
+      "correct": 0,
+      "explanation": "Backprop áp dụng chain rule và tái sử dụng giá trị forward. Các nhánh cùng đi vào một biến phải cộng gradient. Bayes mô tả cập nhật xác suất; SVD là phân rã ma trận, không phải quy tắc truyền gradient."
+    }
+  }
+]

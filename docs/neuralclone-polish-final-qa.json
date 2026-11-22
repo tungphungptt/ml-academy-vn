@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-10-28T06:29:15.231Z",
+  "scope": "Only this 2026-10-28 polish run; earlier test totals are not reused.",
+  "status": "Web/UI checks passed; one cross-environment transfer strict-output mismatch remains recorded.",
+  "javascript": {
+    "node": "24.19.0",
+    "unit": {
+      "passed": 62,
+      "failed": 0
+    },
+    "productionBuild": true,
+    "strictTypeScriptUnusedChecks": true,
+    "e2e": {
+      "passed": 29,
+      "failed": 0
+    },
+    "postEditMathRendering": {
+      "passed": 7
+    }
+  },
+  "python": {
+    "modern": 11,
+    "numericalRegressions": 6,
+    "pyodide": 14,
+    "transformer": 2,
+    "cpu": {
+      "total": 7,
+      "executed": 7,
+      "matchesRecorded": 6
+    },
+    "notebooks": {
+      "total": 7,
+      "executed": 7,
+      "strictMatches": 6,
+      "matchingNative": 7
+    },
+    "versions": {
+      "python": "3.12.10",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "matplotlib": "3.10.8",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.18.1",
+      "torch": "2.14.1+cpu"
+    }
+  },
+  "browser": {
+    "pages": 28,
+    "errors": [],
+    "failedRequests": [],
+    "websocket101": 28,
+    "touchEmulation": [
+      {
+        "origin": "http://localhost:3000",
+        "engine": "Chromium; touch/viewport emulation, no physical device",
+        "menuNavigation": "Khóa học",
+        "menuTarget": {
+          "x": 317,
+          "y": 14,
+          "width": 40,
+          "height": 40
+        },
+        "overflow": false
+      },
+      {
+        "origin": "https://neuralclone.site",
+        "engine": "Chromium; touch/viewport emulation, no physical device",
+        "menuNavigation": "Khóa học",
+        "menuTarget": {
+          "x": 317,
+          "y": 14,
+          "width": 40,
+          "height": 40
+        },
+        "overflow": false
+      }
+    ],
+    "available": {
+      "chrome": true,
+      "webkit": false,
+      "firefox": false
+    }
+  },
+  "hmr": {
+    "temporaryEditReverted": true,
+    "cases": [
+      {
+        "origin": "http://localhost:3000",
+        "status": 101,
+        "frames": 40,
+        "changed": true,
+        "restored": true
+      },
+      {
+        "origin": "https://neuralclone.site",
+        "status": 101,
+        "frames": 36,
+        "changed": true,
+        "restored": true
+      }
+    ]
+  },
+  "links": {
+    "passed": 104,
+    "total": 104
+  },
+  "data": {
+    "backup": ".local\\polish-start\\before.db",
+    "before": {
+      "lessons": 67,
+      "questions": 157,
+      "users": 0,
+      "progress": 0,
+      "attempts": 0,
+      "notes": 0,
+      "bookmarks": 0
+    },
+    "after": {
+      "lessons": 67,
+      "questions": 157,
+      "users": 0,
+      "progress": 0,
+      "attempts": 0,
+      "notes": 0,
+      "bookmarks": 0
+    },
+    "registryUnchanged": true,
+    "packageLockUnchanged": true,
+    "nextEnvRestored": true,
+    "landingRestored": true
+  },
+  "nativeNotebook": [
+    {
+      "lab": "mlp_torch",
+      "executed": true,
+      "matchesNative": true
+    },
+    {
+      "lab": "tabular_pipeline",
+      "executed": true,
+      "matchesNative": true
+    },
+    {
+      "lab": "cnn_cpu",
+      "executed": true,
+      "matchesNative": true
+    },
+    {
+      "lab": "sequence_cpu",
+      "executed": true,
+      "matchesNative": true
+    },
+    {
+      "lab": "neural_recommendation",
+      "executed": true,
+      "matchesNative": true
+    },
+    {
+      "lab": "autoencoder_cpu",
+      "executed": true,
+      "matchesNative": true
+    },
+    {
+      "lab": "transfer_cpu",
+      "executed": true,
+      "matchesNative": true
+    }
+  ],
+  "limitations": [
+    "Transfer fine-tune 0.9278 vs recorded 0.9306; strict CPU/notebook comparators correctly return exit code 1.",
+    "No physical Safari/iOS/Android devices; WebKit/Firefox binaries absent.",
+    "Production process not switched on public tunnel."
+  ]
+}

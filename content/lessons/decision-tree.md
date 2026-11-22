@@ -40,7 +40,7 @@ Dễ giải thích, không cần chuẩn hóa. Không ổn định với thay đ
 Cây chia dữ liệu theo tiêu chí giảm độ không thuần; cần giới hạn độ sâu.
 
 ## Điều kiện áp dụng và kiểm tra kết luận
-CART của sklearn chia nhị phân; classification có thể dùng Gini hoặc entropy, regression thường giảm squared error. Entropy $H=-\sum_c p_c\log_2p_c$ (quy ước $0\log 0=0$); information gain là entropy cha trừ entropy con có trọng số. ID3 dùng information gain, C4.5 thêm gain ratio để giảm thiên vị thuộc tính nhiều giá trị; không đồng nhất ba tên thuật toán. Cây không cần scale đơn điệu như KNN nhưng dễ overfit và có thể ưu tiên feature nhiều ngưỡng. Cắt tỉa/cost-complexity và giới hạn leaf/depth phải chọn bằng validation.
+CART của sklearn chia nhị phân; classification có thể dùng Gini hoặc entropy, regression thường giảm squared error. Entropy $H=-\sum_c p_c\log_2p_c$ (quy ước $0\log 0=0$); information gain là entropy cha trừ entropy con có trọng số. ID3 dùng information gain, C4.5 thêm gain ratio để giảm thiên vị thuộc tính nhiều giá trị; không đồng nhất ba tên thuật toán. Cây chia theo thứ tự giá trị nên thường không cần StandardScaler; KNN nhạy với thang đo nhưng dễ overfit và có thể ưu tiên feature nhiều ngưỡng. Cắt tỉa/cost-complexity và giới hạn leaf/depth phải chọn bằng validation.
 
 ## Đáp án và tiêu chí chấm
 1. Với hai lớp cân bằng, Gini $=0.5$ và entropy $=1$ bit. (2 điểm).

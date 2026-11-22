@@ -1,0 +1,294 @@
+{
+  "checkedAt": "2026-10-28T12:00:10.923Z",
+  "scope": "Selected rendered token pairs and diagram text, not a full accessibility certification",
+  "cases": [
+    {
+      "theme": "light",
+      "name": "body",
+      "fg": [
+        37,
+        55,
+        48
+      ],
+      "bg": [
+        244,
+        241,
+        234
+      ],
+      "min": 4.5,
+      "ratio": 11.16239119315887,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "reading",
+      "fg": [
+        37,
+        55,
+        48
+      ],
+      "bg": [
+        255,
+        252,
+        247
+      ],
+      "min": 4.5,
+      "ratio": 12.303043483700703,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "muted",
+      "fg": [
+        88,
+        104,
+        94
+      ],
+      "bg": [
+        244,
+        241,
+        234
+      ],
+      "min": 4.5,
+      "ratio": 5.2343051207188465,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "muted-card",
+      "fg": [
+        88,
+        104,
+        94
+      ],
+      "bg": [
+        255,
+        252,
+        247
+      ],
+      "min": 4.5,
+      "ratio": 5.769183537182335,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "muted-group",
+      "fg": [
+        88,
+        104,
+        94
+      ],
+      "bg": [
+        234,
+        236,
+        227
+      ],
+      "min": 4.5,
+      "ratio": 4.950062697002682,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "accent",
+      "fg": [
+        27,
+        98,
+        86
+      ],
+      "bg": [
+        226,
+        238,
+        227
+      ],
+      "min": 4.5,
+      "ratio": 6.001523182027671,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "primary",
+      "fg": [
+        255,
+        255,
+        255
+      ],
+      "bg": [
+        27,
+        98,
+        86
+      ],
+      "min": 4.5,
+      "ratio": 7.172002649066057,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "controls",
+      "fg": [
+        121,
+        135,
+        119
+      ],
+      "bg": [
+        255,
+        252,
+        247
+      ],
+      "min": 3,
+      "ratio": 3.7005206906083234,
+      "pass": true
+    },
+    {
+      "theme": "light",
+      "name": "inactive diagram numeric text",
+      "opacity": 1,
+      "ratio": 12.303043483700703,
+      "min": 4.5,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "body",
+      "fg": [
+        237,
+        241,
+        232
+      ],
+      "bg": [
+        23,
+        31,
+        28
+      ],
+      "min": 4.5,
+      "ratio": 14.68807702644311,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "reading",
+      "fg": [
+        237,
+        241,
+        232
+      ],
+      "bg": [
+        34,
+        44,
+        39
+      ],
+      "min": 4.5,
+      "ratio": 12.588118827543235,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "muted",
+      "fg": [
+        180,
+        192,
+        182
+      ],
+      "bg": [
+        23,
+        31,
+        28
+      ],
+      "min": 4.5,
+      "ratio": 8.93055131687656,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "muted-card",
+      "fg": [
+        180,
+        192,
+        182
+      ],
+      "bg": [
+        34,
+        44,
+        39
+      ],
+      "min": 4.5,
+      "ratio": 7.653748068581473,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "muted-group",
+      "fg": [
+        180,
+        192,
+        182
+      ],
+      "bg": [
+        48,
+        60,
+        52
+      ],
+      "min": 4.5,
+      "ratio": 6.124263645632359,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "accent",
+      "fg": [
+        159,
+        212,
+        178
+      ],
+      "bg": [
+        42,
+        66,
+        52
+      ],
+      "min": 4.5,
+      "ratio": 6.50356205136587,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "primary",
+      "fg": [
+        20,
+        45,
+        32
+      ],
+      "bg": [
+        159,
+        212,
+        178
+      ],
+      "min": 4.5,
+      "ratio": 8.790208837720037,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "controls",
+      "fg": [
+        130,
+        149,
+        132
+      ],
+      "bg": [
+        34,
+        44,
+        39
+      ],
+      "min": 3,
+      "ratio": 4.515228194423599,
+      "pass": true
+    },
+    {
+      "theme": "dark",
+      "name": "inactive diagram numeric text",
+      "opacity": 1,
+      "ratio": 12.588118827543235,
+      "min": 4.5,
+      "pass": true
+    }
+  ]
+}

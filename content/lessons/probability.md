@@ -46,3 +46,7 @@ Một mô hình xác suất cần chỉ rõ biến ngẫu nhiên, miền giá tr
 
 ## Nguồn tham khảo
 - [Dive into Deep Learning: Probability and Statistics](https://d2l.ai/chapter_preliminaries/probability.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+MLE k/n cần n>0. Nếu chưa có quan sát, likelihood bằng 1 với mọi p nên không chọn được một MLE duy nhất. Khi k=0 hoặc k=n, xét nghiệm biên p=0 hoặc 1; không đặt đạo hàm log có log(0) một cách máy móc. [D2L Probability](https://d2l.ai/chapter_preliminaries/probability.html).

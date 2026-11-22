@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-10-28T05:46:12.042Z",
+  "cases": [
+    {
+      "origin": "http://localhost:3000",
+      "handshakes": [
+        {
+          "status": 101
+        }
+      ],
+      "frames": [
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"turbopack-connected\",\"data\":{\"sessionId\":1296749086324308,\"hmrVersion\":\"0\"}}",
+        "\u0000\u0015zsi_OHnZi-1Cd1SqfjWxR:N1793166375531.4827\n3:\"$EObject.defineProperty(()=>{ctx.componentMod.preloadStyle(fullHref,ctx.renderOpts.crossOrigin,ctx.nonce)},\\\"name",
+        "\u0000\u0015zsi_OHnZi-1Cd1SqfjWxR",
+        "{\"type\":\"sync\",\"errors\":[],\"warnings\":[],\"hash\":\"\",\"versionInfo\":{\"staleness\":\"fresh\",\"installed\":\"16.4.3\"},\"hasVulnerabilityInsight\":false,\"debug\":{},\"devIndic",
+        "{\"type\":\"built\",\"hash\":\"0\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "{\"type\":\"built\",\"hash\":\"0\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"built\",\"hash\":\"0\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"building\"}",
+        "{\"type\":\"serverComponentChanges\",\"hmrVersion\":\"1\"}",
+        "{\"type\":\"built\",\"hash\":\"1\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "\u0000\b32940d14:N1793166381686.199\n",
+        "\u0000\b32940d141:[]\n6:[]\na:{\"name\":\"Loading\",\"key\":\"l\",\"env\":\"Server\",\"stack\":[],\"props\":{}}\nb:{\"time\":1.0124000000068918}\nc:[[\"Loading\",\"D:\\\\Projects\\\\ml-academy-vn",
+        "{\"type\":\"built\",\"hash\":\"1\",\"errors\":[],\"warnings\":[]}",
+        "\u0000\b32940d1473:[[\"currentUser\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",554,165,553,1,false],[\"Roo",
+        "\u0000\b32940d14dc:J{\"name\":\"\",\"start\":36.28500000000349,\"end\":39.93790000000445,\"env\":\"Server\",\"owner\":\"$da\",\"value\":\"$@dd\"}\nde:{\"time\":33.70339999999851}\ndf:[[\"Land",
+        "\u0000\b32940d141d7:[[\"Icon\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",478,270,465,1,false]]\n1d8:{\"time",
+        "\u0000\b32940d14",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "{\"type\":\"built\",\"hash\":\"1\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"serverComponentChanges\",\"hmrVersion\":\"2\"}",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "\u0000\b39943529:N1793166382710.8904\n",
+        "\u0000\b399435291:[]\n6:[]\na:{\"name\":\"Loading\",\"key\":\"l\",\"env\":\"Server\",\"stack\":[],\"props\":{}}\nb:{\"time\":0.5146999999997206}\nc:[[\"Loading\",\"D:\\\\Projects\\\\ml-academy-vn",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}",
+        "\u0000\b3994352973:[[\"currentUser\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",554,165,553,1,false],[\"Roo",
+        "\u0000\b39943529dc:J{\"name\":\"\",\"start\":38.81400000001304,\"end\":41.44220000000496,\"env\":\"Server\",\"owner\":\"$da\",\"value\":\"$@dd\"}\nde:{\"time\":36.08280000000377}\ndf:[[\"Land",
+        "\u0000\b399435291d7:[[\"Icon\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",478,270,465,1,false]]\n1d8:{\"time",
+        "\u0000\b39943529",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}"
+      ],
+      "errors": [],
+      "changedWithoutNavigation": true,
+      "restoredWithoutNavigation": true
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "handshakes": [
+        {
+          "status": 101
+        }
+      ],
+      "frames": [
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"turbopack-connected\",\"data\":{\"sessionId\":1296749086324308,\"hmrVersion\":\"0\"}}",
+        "\u0000\u00157d7RaUBP9lkRxoohJxQp8:N1793166377274.432\n3:\"$EObject.defineProperty(()=>{ctx.componentMod.preloadStyle(fullHref,ctx.renderOpts.crossOrigin,ctx.nonce)},\\\"name\\",
+        "\u0000\u00157d7RaUBP9lkRxoohJxQp8",
+        "{\"type\":\"sync\",\"errors\":[],\"warnings\":[],\"hash\":\"\",\"versionInfo\":{\"staleness\":\"fresh\",\"installed\":\"16.4.3\"},\"hasVulnerabilityInsight\":false,\"debug\":{},\"devIndic",
+        "{\"type\":\"built\",\"hash\":\"0\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"building\"}",
+        "{\"type\":\"serverComponentChanges\",\"hmrVersion\":\"1\"}",
+        "{\"type\":\"built\",\"hash\":\"1\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "{\"type\":\"built\",\"hash\":\"1\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "\u0000\b4ab640c8:N1793166381888.8894\n",
+        "\u0000\b4ab640c81:[]\n6:[]\na:{\"name\":\"Loading\",\"key\":\"l\",\"env\":\"Server\",\"stack\":[],\"props\":{}}\nb:{\"time\":0.5195999999996275}\nc:[[\"Loading\",\"D:\\\\Projects\\\\ml-academy-vn",
+        "\u0000\b4ab640c873:[[\"currentUser\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",554,165,553,1,false],[\"Roo",
+        "{\"type\":\"built\",\"hash\":\"1\",\"errors\":[],\"warnings\":[]}",
+        "\u0000\b4ab640c8dc:J{\"name\":\"\",\"start\":26.89329999999609,\"end\":30.063399999999092,\"env\":\"Server\",\"owner\":\"$da\",\"value\":\"$@dd\"}\nde:{\"time\":25.67859999999928}\ndf:[[\"Lan",
+        "\u0000\b4ab640c81d7:[[\"Icon\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",478,270,465,1,false]]\n1d8:{\"time",
+        "\u0000\b4ab640c8",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"serverComponentChanges\",\"hmrVersion\":\"2\"}",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"isrManifest\",\"data\":{}}",
+        "\u0000\ba29617ca:N1793166382819.607\n",
+        "\u0000\ba29617ca1:[]\n6:[]\na:{\"name\":\"Loading\",\"key\":\"l\",\"env\":\"Server\",\"stack\":[],\"props\":{}}\nb:{\"time\":0.3872000000119442}\nc:[[\"Loading\",\"D:\\\\Projects\\\\ml-academy-vn",
+        "\u0000\ba29617ca73:[[\"currentUser\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",554,165,553,1,false],[\"Roo",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}",
+        "\u0000\ba29617cadc:J{\"name\":\"\",\"start\":26.26020000000426,\"end\":29.367600000012317,\"env\":\"Server\",\"owner\":\"$da\",\"value\":\"$@dd\"}\nde:{\"time\":24.111200000013923}\ndf:[[\"La",
+        "\u0000\ba29617ca1d7:[[\"Icon\",\"D:\\\\Projects\\\\ml-academy-vn\\\\.next\\\\dev\\\\server\\\\chunks\\\\ssr\\\\[root-of-the-server]__0mvixk2bijwxg._.js\",478,270,465,1,false]]\n1d8:{\"time",
+        "\u0000\ba29617ca",
+        "{\"type\":\"isrManifest\",\"data\":{\"/\":false}}",
+        "{\"type\":\"built\",\"hash\":\"2\",\"errors\":[],\"warnings\":[]}"
+      ],
+      "errors": [],
+      "changedWithoutNavigation": true,
+      "restoredWithoutNavigation": true
+    }
+  ],
+  "restored": true
+}

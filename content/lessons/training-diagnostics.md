@@ -59,3 +59,5 @@ Một vòng huấn luyện đáng tin cần hợp đồng dữ liệu, gradient 
 - [D2L: Numerical stability and initialization](https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html).
 - [D2L: Transformer, residual và LayerNorm](https://d2l.ai/chapter_attention-mechanisms-and-transformers/transformer.html).
 - [PyTorch: optimization tutorial](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html), đã đọc nguồn chính thức qua GitHub; xem audit.
+
+Với CrossEntropyLoss, target long áp dụng cho nhãn dạng class index. API cũng nhận soft-target probability dạng float cùng shape logits; người dùng chịu trách nhiệm đảm bảo phân phối hợp lệ. BatchNorm dùng running stats ở eval khi track_running_stats=True; nếu False thì vẫn dùng batch stats. [CrossEntropyLoss](https://docs.pytorch.org/docs/2.14/generated/torch.nn.CrossEntropyLoss.html).

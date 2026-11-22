@@ -2,7 +2,7 @@
 **Mục tiêu:** hiểu các thành phần của một khối Transformer: multi-head attention, positional encoding, feed-forward, kết nối tắt và chuẩn hóa.
 
 ## Vấn đề thực tế
-Attention thuần không biết thứ tự từ, và một "đầu" attention chỉ nhìn một kiểu quan hệ. Transformer bổ sung các thành phần để khắc phục.
+Attention thuần không biết thứ tự từ, và mỗi head attention dùng các phép chiếu riêng; nhiều head kết hợp thông tin từ nhiều không gian biểu diễn, không có bảo đảm mỗi head ứng với đúng một quan hệ. Transformer bổ sung các thành phần để khắc phục.
 
 ## Các thành phần
 - **Multi-head attention:** chia $d_{\text{model}}$ thành $h$ đầu, mỗi đầu có $d_k=d_{\text{model}}/h$ chiều, chạy attention song song rồi ghép lại và chiếu bằng $W_O$. Mỗi đầu có thể học một kiểu quan hệ khác nhau.
@@ -32,7 +32,14 @@ print(4 * d_model ** 2, d_model // h)
 Kết quả kỳ vọng (đã chạy cục bộ): `1048576 64`.
 
 ## Lỗi thường gặp
-Quên positional encoding (mô hình coi câu như túi từ); quên mặt nạ khi sinh văn bản; nhầm $d_{\text{model}}$ với $d_k$.
+Quên cơ chế biểu diễn vị trí; quên mặt nạ khi sinh văn bản; nhầm $d_{\text{model}}$ với $d_k$. Self-attention không mask và không có thông tin vị trí là equivariant theo hoán vị: đổi thứ tự input làm thứ tự output đổi tương ứng. Điều này không có nghĩa từng output token giữ nguyên như một vector bag-of-words.
+
+## Từ Transformer gốc đến các biến thể hiện đại
+Sin/cos cộng vào embedding ở trên là một cách đưa thông tin vị trí, không phải yêu cầu mọi Transformer phải dùng cùng cách đó. RoPE quay các cặp tọa độ query/key theo vị trí; trong hai chiều, ma trận quay thỏa $R(p)^\top R(q)=R(q-p)$, nên tích vô hướng có thể phụ thuộc vị trí tương đối. Learned absolute position, relative bias và các biến thể khác có giả định riêng. Không chỉ đổi số context trong cấu hình rồi coi mô hình đã được đánh giá ngoài độ dài huấn luyện.
+
+Vị trí của normalization cũng có thể khác: công thức sơ đồ minh họa không khiến post-norm và pre-norm thành một kiến trúc duy nhất. Tách kiến trúc với recipe huấn luyện, tokenizer và objective. [Bài nền tảng LLM](/learn/llm-foundations) nối các khối này với next-token learning; [LoRA và quantization](/learn/efficient-finetuning) nói về thích nghi/tài nguyên, không đổi định nghĩa attention.
+
+Đối chiếu bổ sung ngày 27/10/2026: [RoFormer/RoPE, công trình gốc](https://arxiv.org/abs/2104.09864). Phần PyTorch bên dưới vẫn là kiểm tra cấu trúc của ví dụ cụ thể, không mô tả mọi decoder LLM hiện đại.
 
 ## Hạn chế
 Ví dụ encoder bên dưới kiểm tra cấu trúc/mask/backward trên CPU; chưa phải thí nghiệm huấn luyện một language model. Bài dự đoán chuỗi GRU cung cấp ví dụ sequence training hoàn chỉnh riêng.

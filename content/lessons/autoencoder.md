@@ -7,7 +7,7 @@ Cần biểu diễn nén của dữ liệu không nhãn (giảm chiều, khử n
 ## Công thức
 Encoder $\mathbf z=f_\theta(\mathbf x)$ nén đầu vào về mã (bottleneck) có chiều nhỏ; decoder $\hat{\mathbf x}=g_\phi(\mathbf z)$ khôi phục:
 $$
-L=\frac1N\sum_i\lVert\mathbf x_i-g_\phi(f_\theta(\mathbf x_i))\rVert^2
+L=\frac1{ND}\sum_i\lVert\mathbf x_i-g_\phi(f_\theta(\mathbf x_i))\rVert^2
 $$
 Ở nghiệm tối ưu toàn cục với dữ liệu đã centered (hoặc bias thích hợp), encoder/decoder tuyến tính và squared loss cho cùng không gian con chính với PCA; không bảo đảm mọi lần SGD đạt nghiệm đó. Thêm hàm kích hoạt phi tuyến cho phép học đa tạp cong. Phát hiện bất thường: mẫu có lỗi tái tạo lớn bất thường so với dữ liệu bình thường.
 
@@ -62,3 +62,7 @@ Tương đương PCA chỉ đúng về không gian con/projection ở nghiệm t
 - [ML cơ bản: SVD và xấp xỉ hạng thấp](https://machinelearningcoban.com/2017/06/07/svd/) — hỗ trợ bước chặn lỗi tái tạo trong lập luận trên; đã đọc lại trong final review.
 - [Dive into Deep Learning](https://d2l.ai/).
 - [scikit-learn: PCA](https://scikit-learn.org/stable/modules/decomposition.html#pca).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Trong công thức, D là số feature; bài báo MSE trung bình trên cả N mẫu và D feature, khớp np.mean và mse_loss mặc định. Nếu chỉ chia N, loss và gradient lớn hơn D lần, dù nghiệm tối thiểu không đổi. [PyTorch MSELoss](https://docs.pytorch.org/docs/2.14/generated/torch.nn.MSELoss.html).

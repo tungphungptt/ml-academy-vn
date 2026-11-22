@@ -33,7 +33,7 @@ Kết quả kỳ vọng (đã chạy cục bộ): `(1797, 18) 0.97 0.889 0.97`.
 Cách đọc: 18 đặc trưng tích chập + pooling giữ được độ chính xác $0.889$ (so với $0.97$ của 64 điểm ảnh thô), tức nén dữ liệu hơn 3 lần mà vẫn nhận ra hầu hết chữ số; ghép cả hai không cải thiện thêm trên tập này. Trên ảnh 8×8 rất nhỏ, điểm ảnh thô đã đủ tốt, nên bộ lọc chọn tay không thắng. Lợi thế của CNN xuất hiện với ảnh lớn hơn và khi các bộ lọc được học.
 
 ## Lỗi thường gặp
-Kết luận "tích chập không có ích" từ một thí nghiệm nhỏ; quên chia ảnh cho 16 (thang đo 0-16 của Digits); nhầm cross-correlation (không lật kernel) với tích chập toán học; rò rỉ dữ liệu khi chuẩn hóa trước khi chia.
+Kết luận "tích chập không có ích" từ một thí nghiệm nhỏ; quên chia ảnh cho 16 (thang đo 0-16 của Digits); nhầm cross-correlation (không lật kernel) với tích chập toán học; rò rỉ khi fit scaler hoặc chọn kernel bằng cả test; chia cho hằng 16 đã biết không sử dụng thống kê test.
 
 ## Hạn chế
 Đây không phải mạng CNN được huấn luyện: bộ lọc tích chập không học được và không có backpropagation qua nhiều lớp. Bộ phân loại Logistic Regression phía sau vẫn học các hệ số từ train. Kết quả chỉ trên một lần chia train/test cố định.
@@ -55,3 +55,7 @@ Bộ lọc cố định không được update nên “CNN feature extractor” 
 ## Nguồn tham khảo
 - [Stanford CS231n: Convolutional Networks](https://cs231n.github.io/convolutional-networks/).
 - [scikit-learn: Digits dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html).
+
+## Làm rõ điều kiện và cách kiểm chứng
+
+Chênh lệch accuracy trong một split chỉ cho thấy bộ lọc tay này không thắng pixel raw. Chưa đủ bằng chứng quy nguyên nhân cho kích thước ảnh hoặc kết luận về CNN có kernel học được.

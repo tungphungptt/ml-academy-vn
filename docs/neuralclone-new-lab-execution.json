@@ -1,0 +1,14 @@
+[
+  {
+    "lab": "threshold_cost",
+    "passed": true,
+    "stdout": "threshold=0.3 TP=3 FP=3 FN=0 cost=3\nthreshold=0.5 TP=2 FP=2 FN=1 cost=6\nthreshold=0.7 TP=1 FP=1 FN=2 cost=9",
+    "sha256": "903f0ae016cbd9f430497c77e1df0c74aba2df228346fbb5baea17b012efa593"
+  },
+  {
+    "lab": "rag_retrieval",
+    "passed": true,
+    "stdout": "retrieved=split\nunknown_query=abstain acl_check=passed",
+    "sha256": "df60b3563bfb73be307c34bc97d59c6bd47649c916bac1ebb8c07eb2e3b8b655"
+  }
+]

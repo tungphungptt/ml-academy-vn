@@ -34,7 +34,7 @@ if not args.notebooks:
         parser.error('Notebook files differ from the lab/project registries')
 results = []
 for file in files:
-    record = {'file': str(file.relative_to(ROOT)), 'sha256': hashlib.sha256(file.read_bytes()).hexdigest()}
+    record = {'file': str(file.relative_to(ROOT)), 'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'executed': False}
     manager = None
     client = None
     try:
@@ -57,6 +57,7 @@ for file in files:
                 client.execute(env=env)
                 actual = [''.join(o.get('text', '') for o in c.outputs if o.output_type == 'stream' and o.name == 'stdout')
                           for c in nb.cells if c.cell_type == 'code']
+                record.update(executed=True, cells=len(actual), stdout=actual, recordedStdout=expected, matchesRecorded=actual == expected)
                 assert actual == expected, f'Output mismatch: actual={actual!r}, recorded={expected!r}'
                 record.update(passed=True, cells=len(actual), stdout=actual)
             finally:

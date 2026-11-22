@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-28T12:03:18.303Z",
+  "browser": "webkit",
+  "version": "27.2",
+  "platform": "win32",
+  "kind": "compute",
+  "errors": [],
+  "failedRequests": [],
+  "cancelled": [
+    "/pyodide/v0.26.2/full/python_stdlib.zip",
+    "/pyodide/v0.26.2/full/pyodide.asm.wasm"
+  ]
+}

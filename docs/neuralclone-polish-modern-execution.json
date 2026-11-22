@@ -1,0 +1,93 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "results": [
+    {
+      "lesson": "gradient-boosting",
+      "block": 1,
+      "passed": true,
+      "stdout": "[1.5, 1.5, 2.5, 2.5] 1.0 0.25",
+      "expected": "[1.5, 1.5, 2.5, 2.5] 1.0 0.25",
+      "stderr": ""
+    },
+    {
+      "lesson": "imbalanced-learning",
+      "block": 1,
+      "passed": true,
+      "stdout": "0.3 3 3 0 3\n0.5 2 2 1 6\n0.7 1 1 2 9",
+      "expected": "0.3 3 3 0 3\n0.5 2 2 1 6\n0.7 1 1 2 9",
+      "stderr": ""
+    },
+    {
+      "lesson": "llm-foundations",
+      "block": 1,
+      "passed": true,
+      "stdout": "7 10 9",
+      "expected": "7 10 9",
+      "stderr": ""
+    },
+    {
+      "lesson": "llm-foundations",
+      "block": 2,
+      "passed": true,
+      "stdout": "1.0397 2.8284",
+      "expected": "1.0397 2.8284",
+      "stderr": ""
+    },
+    {
+      "lesson": "efficient-finetuning",
+      "block": 1,
+      "passed": true,
+      "stdout": "16777216 65536 0.390625\nTrue",
+      "expected": "16777216 65536 0.390625\nTrue",
+      "stderr": ""
+    },
+    {
+      "lesson": "efficient-finetuning",
+      "block": 2,
+      "passed": true,
+      "stdout": "[-7, -3, 1, 6] [-1.0, -0.4286, 0.1429, 0.8571]\n0.0571",
+      "expected": "[-7, -3, 1, 6] [-1.0, -0.4286, 0.1429, 0.8571]\n0.0571",
+      "stderr": ""
+    },
+    {
+      "lesson": "rag-vector-search",
+      "block": 1,
+      "passed": true,
+      "stdout": "['split', 'adapter'] 0.5",
+      "expected": "['split', 'adapter'] 0.5",
+      "stderr": ""
+    },
+    {
+      "lesson": "llm-evaluation-security",
+      "block": 1,
+      "passed": true,
+      "stdout": "0.6667 0.5 0.5",
+      "expected": "0.6667 0.5 0.5",
+      "stderr": ""
+    },
+    {
+      "lesson": "mlops-reproducibility",
+      "block": 1,
+      "passed": true,
+      "stdout": "True True",
+      "expected": "True True",
+      "stderr": ""
+    },
+    {
+      "lesson": "mlops-reproducibility",
+      "block": 2,
+      "passed": true,
+      "stdout": "0.3",
+      "expected": "0.3",
+      "stderr": ""
+    },
+    {
+      "lesson": "responsible-ai",
+      "block": 1,
+      "passed": true,
+      "stdout": "A 0.5 0.5\nB 0.5 1.0",
+      "expected": "A 0.5 0.5\nB 0.5 1.0",
+      "stderr": ""
+    }
+  ]
+}

@@ -47,3 +47,5 @@ Dataset 8 câu chỉ minh họa inference, không có ước lượng chất lư
 
 ## Nguồn tham khảo
 - [scikit-learn: Text feature extraction](https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction).
+
+Hai prediction minh họa không đủ đo chất lượng hoặc calibration. TF-IDF unigram có cả từ phủ định nếu chúng thuộc vocabulary, nhưng không biểu diễn trực tiếp phạm vi phủ định. [Bag-of-words limitations](https://scikit-learn.org/stable/modules/feature_extraction.html#limitations-of-the-bag-of-words-representation).

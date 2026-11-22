@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-10-27T15:31:16.420Z",
+  "pages": [
+    {
+      "origin": "http://localhost:3000",
+      "route": "/",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/courses",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/playground#threshold",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/lab?lab=rag_retrieval",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/datasets",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/gradient-boosting",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/imbalanced-learning",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/mlops-reproducibility",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/responsible-ai",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/llm-foundations",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/efficient-finetuning",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/rag-vector-search",
+      "status": 200
+    },
+    {
+      "origin": "http://localhost:3000",
+      "route": "/learn/llm-evaluation-security",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/courses",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/playground#threshold",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/lab?lab=rag_retrieval",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/datasets",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/gradient-boosting",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/imbalanced-learning",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/mlops-reproducibility",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/responsible-ai",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/llm-foundations",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/efficient-finetuning",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/rag-vector-search",
+      "status": 200
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "route": "/learn/llm-evaluation-security",
+      "status": 200
+    }
+  ],
+  "errors": [
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=vMiL7PLTTVOVmc4P-Ycqh' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=9-DPVkiHKF50mfMW9aux3' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=oehDFz3UotGLtfxN8yzj4' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=hsUt_sbtohUXuG-pn7yuV' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=wE0k0ctnXAaw1xyPqNROu' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=80FDX94qMBqPZzGElIIFW' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=80FDX94qMBqPZzGElIIFW' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=hXcYvkpa-0LIAJpP95Z3o' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=0HnW_3Hla_BhI9hRwFwQe' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=bmqxxZ2fMl2qXX-jj8pjd' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=mHSx6XsiL373chcskvzKD' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    },
+    {
+      "origin": "https://neuralclone.site",
+      "type": "console",
+      "message": "WebSocket connection to 'wss://neuralclone.site/_next/hmr?id=PJRINcGFZO3Tt1OzTDQtf' failed: Error during WebSocket handshake: Unexpected response code: 502"
+    }
+  ]
+}
